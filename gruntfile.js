@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 				livereload: true,
 			},
 			css: {
-				files: ['wp-content/resources/sass/**/*.scss'],
+				files: ['sass/**/*.scss'],
 				tasks: ['sass'],
 				options: {
 					spawn: false,
