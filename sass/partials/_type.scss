@@ -1,5 +1,30 @@
 // Type
+h1, h2{
+    font-family: $f-seroot-blck;
+    text-transform: uppercase;
+    &.light{
+        font-family: $f-seroot-lt;
+    }
+}
+
+h1 {
+    font-size: 4.688em;
+
+
+}
+
+p{
+    font-family: $f-seroot-lt;
+    text-transform: uppercase;
+    line-height: (40/33);
+
+    &.serif{
+        font-family: $f-merriweather-lt;
+        text-transform: none;
+    }
+}
+
 
 body{
-    
+    font-size: 21px;
 }

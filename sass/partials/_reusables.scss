@@ -1,0 +1,8 @@
+@function em($px, $context: $base-font-size) {
+	@return #{$px/$context}em;
+}
+
+@mixin font-size($sizeValue: $base-font-size) {
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue/$base-font-size) + rem;
+}
