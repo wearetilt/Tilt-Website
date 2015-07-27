@@ -9,21 +9,30 @@ h1, h2{
 
 h1 {
     font-size: 4.688em;
-
-
 }
 
 p{
-    font-family: $f-seroot-lt;
-    text-transform: uppercase;
-    line-height: (40/33);
 
-    &.serif{
-        font-family: $f-merriweather-lt;
-        text-transform: none;
+    font-family: $f-merriweather-lt;
+    text-transform: none;
+    line-height: (35/20);
+
+    &.first-para{
+        &:before{
+            content:"";
+            display: inline-block;
+            height: 15px;
+            width: 20px;
+            background-color: $c-tilt-pink;
+            margin-right: 10px;
+        }
+    }
+    &.sans-serif{
+        font-family: $f-seroot-lt;
+        line-height: (40/33);
+        text-transform: uppercase;
     }
 }
-
 
 body{
     font-size: 21px;
