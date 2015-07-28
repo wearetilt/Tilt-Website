@@ -1,0 +1,15 @@
+footer{
+
+    .project-navigation{
+        padding: percentage(15/1014) 0;
+        background-color: $c-tilt-pink;
+        width: 50%;
+        display: block;
+        float: left;
+        text-align: center;
+
+        &:hover{
+            background-color: $c-tilt-pink2;
+        }
+    }
+}

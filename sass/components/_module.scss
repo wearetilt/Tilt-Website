@@ -1,0 +1,39 @@
+.module{
+    position: relative;
+    &.module--dark{
+        background-color: $c-bg;
+        h2, p{
+            color: white;
+        }
+    }
+    .module__text{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 percentage(126/1016);
+    }
+}
+
+.module--2-1{
+    width: 100%;
+    padding-top: 50%;
+    background-color: blue;
+    clear: left;
+}
+
+.module--1-1{
+    width: 50%;
+    padding-top: 50%;
+    background-color: pink;
+    float: left;
+}
+
+#module-other{
+    background-color: yellow;
+}
+
+.module--2-2{
+    width: 100%;
+    padding-top: 100%;
+    background-color: green;
+}

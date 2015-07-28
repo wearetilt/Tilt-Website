@@ -1,0 +1,30 @@
+a{
+    &.button{
+        @include font-size(20);
+        position: relative;
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        padding: 20px;
+        &:after{
+            content: "=->";
+            display: inline-block;
+            margin-left: 50px;
+            color: $c-tilt-pink2;
+        }
+        &:hover{
+            color: $c-tilt-pink2;
+            border-color: $c-tilt-pink2;
+
+            &:after{
+                color: white;
+            }
+        }
+
+    }
+
+    footer &.project-navigation{
+        @include font-size(30);
+        color: white;
+    }
+}

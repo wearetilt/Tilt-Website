@@ -12,6 +12,10 @@ Version: 1.0
 @import 'partials/fonts';
 @import 'partials/reusables';
 @import 'partials/type';
+@import 'partials/helpers';
 
-
+@import 'components/buttons';
 @import 'components/container';
+@import 'components/headers';
+@import 'components/module';
+@import 'components/footer';

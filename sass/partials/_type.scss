@@ -1,19 +1,24 @@
 // Type
+body{
+    font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: $f-seroot-blck;
     text-transform: uppercase;
-    &.light{
+    &.light, & span.light{
         font-family: $f-seroot-lt;
     }
 
-    &.underlined{
+    &.underlined,  & span.underlined {
+
         &:after{
             content: "";
             height: 2px;
             display: block;
             background-color: black;
 
-            .container--dark &, .module--dark &{
+            .area-dark &{
                 background-color: white;
             }
         }
@@ -22,7 +27,7 @@ h1, h2, h3, h4, h5, h6{
 
 h1 {
     @include font-size(75);
-    &.underlined{
+    &.underlined, & span.underlined{
         &:after{
             margin-top: 0.2em;
             width: em(150,75);
@@ -50,7 +55,7 @@ p{
         margin-top: 1.8em;
     }
 
-    &.first-para{
+    &.first-para, &.tag{
         &:before{
             content:"";
             display: inline-block;
@@ -67,12 +72,19 @@ p{
         line-height: (33/25);
         text-transform: uppercase;
     }
+
+    &.tag{
+        font-family: $f-rooney-bd-it;
+        text-transform: uppercase;
+    }
+}
+
+a{
+    font-family: $f-seroot-lt;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 strong, b{
     font-family: $f-seroot-blck;
-}
-
-body{
-    font-size: 16px;
 }
