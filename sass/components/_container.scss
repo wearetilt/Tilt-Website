@@ -1,22 +1,24 @@
 section{
     @extend %clearfix;
 
-    &.text-section{
-        padding: percentage(123/876) percentage(127/2032);
-        h2{
-            float: left;
-            width: 50%;
-        }
-        .text-section__para{
-            float: right;
-            width: 50%;
-        }
-    }
-
     &.text-section--dark{
         background-color: $c-bg;
         h2, .text-section__para{
             color: white;
+        }
+    }
+
+    @media (min-width: $bp-desktop){
+        &.text-section{
+            padding: percentage(123/876) percentage(127/2032);
+            h2{
+                float: left;
+                width: 50%;
+            }
+            .text-section__para{
+                float: right;
+                width: 50%;
+            }
         }
     }
 }
@@ -25,19 +27,14 @@ section{
 
     .group{
         @extend %clearfix;
-        width: 50%;
     }
-    .group--left{
-        float: left;
-    }
-    .group--right{
-        float: right;
-    }
+
 
     .module--2-1{
         width: 100%;
         padding-top: 50%;
         background-color: blue;
+        clear: left;
     }
 
     .module--1-1{
@@ -55,5 +52,18 @@ section{
         width: 100%;
         padding-top: 100%;
         background-color: green;
+    }
+
+    @media (min-width: $bp-desktop){
+        .group{
+            width: 50%;
+        }
+
+        .group--left{
+            float: left;
+        }
+        .group--right{
+            float: right;
+        }
     }
 }
