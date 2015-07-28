@@ -5,14 +5,13 @@ Author URI: http://www.wearetilt.com
 Version: 1.0
 
 */
-
-@import 'components/container';
-
 @import 'partials/colours';
-
+@import 'partials/reset';
 @import 'partials/fonts-rooney-pro';
 @import 'partials/fonts-seroot';
 @import 'partials/fonts';
-@import 'partials/reset';
 @import 'partials/reusables';
 @import 'partials/type';
+
+
+@import 'components/container';

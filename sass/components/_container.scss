@@ -1,0 +1,59 @@
+section{
+    @extend %clearfix;
+
+    &.text-section{
+        padding: percentage(123/876) percentage(127/2032);
+        h2{
+            float: left;
+            width: 50%;
+        }
+        .text-section__para{
+            float: right;
+            width: 50%;
+        }
+    }
+
+    &.text-section--dark{
+        background-color: $c-bg;
+        h2, .text-section__para{
+            color: white;
+        }
+    }
+}
+
+.group-container{
+
+    .group{
+        @extend %clearfix;
+        width: 50%;
+    }
+    .group--left{
+        float: left;
+    }
+    .group--right{
+        float: right;
+    }
+
+    .module--2-1{
+        width: 100%;
+        padding-top: 50%;
+        background-color: blue;
+    }
+
+    .module--1-1{
+        width: 50%;
+        padding-top: 50%;
+        background-color: pink;
+        float: left;
+    }
+
+    #module-other{
+        background-color: yellow;
+    }
+
+    .module--2-2{
+        width: 100%;
+        padding-top: 100%;
+        background-color: green;
+    }
+}
