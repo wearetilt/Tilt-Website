@@ -1,16 +1,24 @@
-section{
-    @extend %clearfix;
+.container{
+    padding: percentage(123/876) percentage(127/2032);
 
-    &.text-section--dark{
+    &.container--no-padding{
+        padding: 0px;
+    }
+
+    &.container--dark{
         background-color: $c-bg;
         h2, .text-section__para{
             color: white;
         }
     }
+}
+
+section{
+    @extend %clearfix;
 
     @media (min-width: $bp-desktop){
         &.text-section{
-            padding: percentage(123/876) percentage(127/2032);
+
             h2{
                 float: left;
                 width: 50%;
@@ -24,11 +32,15 @@ section{
 }
 
 .group-container{
+    @extend %clearfix;
+
+    & + .text-section{
+        margin-top: percentage(126/2032);
+    }
 
     .group{
         @extend %clearfix;
     }
-
 
     .module--2-1{
         width: 100%;
