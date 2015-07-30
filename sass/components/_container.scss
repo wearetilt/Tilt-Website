@@ -3,18 +3,13 @@ html, body{
 }
 
 .container{
+    @extend %clearfix;
+    position: relative;
     padding: percentage(245/2032) percentage(127/2032);
 }
 
 .container--no-padding{
     padding: 0px;
-}
-
-.container--header{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    position: absolute;
-    bottom: percentage(242/2032);
 }
 
 section{
@@ -37,6 +32,7 @@ section{
  /* Group container also can be used a clearfix */
 .group-container{
     @extend %clearfix;
+/*     background-color: $c-bg; */
 
     & + .text-section{
         margin-top: percentage(126/2032);
