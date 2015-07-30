@@ -92,4 +92,7 @@ a{
 
 strong, b{
     font-family: $f-seroot-blck;
+    &.highlight{
+        color: $c-tilt-pink2;
+    }
 }
