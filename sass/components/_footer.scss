@@ -1,11 +1,11 @@
 footer{
 
     .container{
-        padding: percentage(124/628) percentage(381/2032);
+        padding: percentage(244/2032) percentage(381/2032);
     }
 
     .project-navigation{
-        padding: percentage(15/1014) 0;
+        padding: percentage(30/2032) 0;
         background-color: $c-tilt-pink;
         width: 50%;
         display: block;
@@ -20,7 +20,22 @@ footer{
     .first-para{
         &:before{
             height: 20px;
-            color: $c-tilt-pink2;
+            background-color: $c-tilt-pink2;
         }
     }
+
+    .telephone{
+        float: right;
+    }
+
+    .footnote{
+        border-top: 1px solid $c-grey-57;
+        padding-top: percentage(23/2032);
+        clear: both;
+    }
+}
+
+#signoff{
+    background-color: $c-bg;
+    padding: percentage(48/2032) percentage(126/2032);
 }

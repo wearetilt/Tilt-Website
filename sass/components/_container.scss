@@ -3,7 +3,7 @@ html, body{
 }
 
 .container{
-    padding: percentage(123/876) percentage(127/2032);
+    padding: percentage(245/2032) percentage(127/2032);
 }
 
 .container--no-padding{
@@ -14,7 +14,7 @@ html, body{
     padding-top: 0px;
     padding-bottom: 0px;
     position: absolute;
-    bottom: percentage(121/1011);
+    bottom: percentage(242/2032);
 }
 
 section{
@@ -34,7 +34,7 @@ section{
         }
     }
 }
-
+ /* Group container also can be used a clearfix */
 .group-container{
     @extend %clearfix;
 

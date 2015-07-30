@@ -1,6 +1,7 @@
 a{
     &.button{
         @include font-size(20);
+        border-radius: 5px;
         position: relative;
         border: 1px solid white;
         color: white;

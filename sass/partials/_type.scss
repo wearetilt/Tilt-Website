@@ -77,6 +77,11 @@ p{
         font-family: $f-rooney-bd-it;
         text-transform: uppercase;
     }
+
+    &.footnote{
+        font-family: $f-merriweather-lt;
+        color: $c-grey-57;
+    }
 }
 
 a{
