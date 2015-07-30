@@ -1,5 +1,9 @@
 footer{
 
+    .container{
+        padding: percentage(124/628) percentage(381/2032);
+    }
+
     .project-navigation{
         padding: percentage(15/1014) 0;
         background-color: $c-tilt-pink;
@@ -10,6 +14,13 @@ footer{
 
         &:hover{
             background-color: $c-tilt-pink2;
+        }
+    }
+
+    .first-para{
+        &:before{
+            height: 20px;
+            color: $c-tilt-pink2;
         }
     }
 }
