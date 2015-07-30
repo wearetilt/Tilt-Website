@@ -25,22 +25,33 @@ header{
     &.case-study{
         height: 100vh;
         .container--header{
-
             position: absolute;
             bottom: percentage(242/2032);
         }
     }
 
     &.work-item{
-        .header-text{
-            padding-bottom: percentage(100/2032);
+        .container--header{
+            padding-bottom: percentage(121/2032);
         }
         @media (min-width: $bp-desktop){
             .header-title{
                 width: 50%;
                 float: left;
-
             }
+        }
+    }
+    &.work-item--motion{
+        .container--header{
+            background-color: rgba(32,32,32,0.9);
+            position: absolute;
+            bottom: 0;
+            padding: percentage(80/2032);
+        }
+        .video-container{
+            height: 100vh;
+            background-image: url('../images/video-placeholder.png');
+            background-size: cover;
         }
     }
 
@@ -62,6 +73,8 @@ header{
     h1 + h2{
         margin-top: 30px;
     }
+
+
 }
 
 .header-text__module{
