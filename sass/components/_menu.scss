@@ -16,6 +16,7 @@
     background-color: pink;
     position: fixed;
     z-index: 2;
+    opacity: 0;
     display: none;
 }
 
@@ -29,7 +30,7 @@
     text-align: center;
 
     .menu__item{
-        display: inline;
+        display: inline-block;
 
         & + .menu__item{
             margin-left: 40px;
@@ -38,8 +39,20 @@
         a{
             color: white;
             padding-bottom: 15px;
+            &:after{
+                content: "";
+                display: block;
+                width: 0px;
+                height: 2px;
+                background-color: white;
+                transition: width 0.3s;
+                margin: 0 auto;
+                margin-top: 5px;
+            }
             &:hover{
-                border-bottom: 2px solid white;
+                &:after{
+                    width: 100%;
+                }
             }
         }
     }
