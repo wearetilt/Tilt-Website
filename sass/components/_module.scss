@@ -13,6 +13,12 @@
         transform: translateY(-50%);
         padding: 0 percentage(126/1016);
     }
+
+    &:hover{
+        .overlay{
+            display: block;
+        }
+    }
 }
 
 .module--2-1{
@@ -68,4 +74,27 @@
             transform: scale(1.2);
         }
     }
+}
+
+.overlay{
+    display: none;
+    font-size: 1em;
+    position:absolute;
+    background-color: rgba(32,32,32,0.7);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 percentage(126/1016);
+
+}
+
+.module--image{
+    padding-top: 0px;
 }
