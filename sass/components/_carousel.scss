@@ -1,0 +1,68 @@
+.carousel{
+    position: relative;
+    text-align: center;
+}
+
+.carousel-monitor{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-images{
+    position: absolute;
+    top: 4.8%;
+    left: 3.8%;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-image{
+    position: relative;
+    height: 98%;
+    width: 93%;
+    z-index: 1;
+    display: block;
+    float: left;
+}
+
+.carousel-controls{
+    position: absolute;
+    display: inline-block;
+    height: 15px;
+    width: 90px;
+    left: 0px;
+    right: 0px;
+    bottom: -50px;
+    margin: 0px auto;
+}
+
+.carousel-control{
+    border-radius: 20px;
+    height: 15px;
+    width: 15px;
+    background-color: $c-tilt-pink;
+    float: left;
+
+    & + .carousel-control{
+        margin-left: 10px;
+    }
+}
+
+#carousel-image-1{
+    background-color: goldenrod;
+}
+
+#carousel-image-2{
+    background-color: mistyrose;
+}
+
+#carousel-image-3{
+    background-color: orange;
+}
+
+#carousel-image-4{
+    background-color: cyan;
+}

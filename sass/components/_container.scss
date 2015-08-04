@@ -4,12 +4,23 @@ html, body{
 
 .wrapper{
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-bottom: 687px;
+    position: relative;
+    background-color: white;
+    z-index: 3;
 }
 
 .container{
     @extend %clearfix;
     position: relative;
     padding: percentage(245/2032) percentage(127/2032);
+    z-index: 1;
+}
+
+.text-container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .container--no-padding{
@@ -33,10 +44,11 @@ section{
         }
     }
 }
- /* Group container also can be used a clearfix */
+ /* Group container also can be used as a clearfix */
 .group-container{
     @extend %clearfix;
-/*     background-color: $c-bg; */
+    background: url('../images/tilt-logo.png') center no-repeat ;
+    background-color: $c-bg;
 
     & + .text-section{
         margin-top: percentage(126/2032);
@@ -58,4 +70,14 @@ section{
             float: right;
         }
     }
+}
+
+.group-container--light{
+    background: url('../images/tilt-logo-light.png') center no-repeat ;
+    background-color: white;
+}
+
+.group-container--no-bg{
+    background-color: transparent;
+    background-image: none;
 }

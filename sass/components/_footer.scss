@@ -1,16 +1,25 @@
 footer{
+    max-height: 687px;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
 
+    @media (min-width: $bp-desktop){
+
+    }
     .container{
-        padding: percentage(244/2032) percentage(381/2032);
+        padding: 0 percentage(381/2032);
+        height: 520px;
     }
 
     .project-navigation{
-        padding: percentage(30/2032) 0;
+        height: 50px;
         background-color: $c-tilt-pink;
         width: 50%;
         display: block;
         float: left;
         text-align: center;
+        line-height: 1.8;
 
         &:hover{
             background-color: $c-tilt-pink2;
@@ -37,5 +46,6 @@ footer{
 
 #signoff{
     background-color: $c-bg;
-    padding: percentage(48/2032) percentage(126/2032);
+    height: 117px;
+    padding: 0 percentage(126/2032);
 }
