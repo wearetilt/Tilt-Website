@@ -3,7 +3,7 @@
     width: 30px;
     position: fixed;
     background-color: black;
-    z-index: 3;
+    z-index: 6;
 }
 
 .header-item--menu{
@@ -15,7 +15,7 @@
     width: 100%;
     background-color: pink;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     opacity: 0;
     visibility: hidden;
     transform: scale(1.5, 1.5);
