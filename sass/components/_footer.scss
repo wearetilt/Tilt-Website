@@ -4,7 +4,7 @@ footer{
     bottom: 0;
     z-index: 0;
 
-    @media (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop){
 
     }
     .container{

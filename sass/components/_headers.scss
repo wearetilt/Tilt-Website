@@ -14,7 +14,7 @@ header{
         }
     }
 
-    @media (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop){
         .header-title{
             & + .header-text{
                 margin-top: 0px;
@@ -34,7 +34,7 @@ header{
         .container--header{
             padding-bottom: percentage(121/2032);
         }
-        @media (min-width: $bp-desktop){
+        @media handheld, screen and (min-width: $bp-desktop){
             .header-title{
                 width: 50%;
                 float: left;
@@ -55,7 +55,7 @@ header{
         }
     }
 
-    @media (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop){
         .header-text{
             float: right;
             width: 50%;

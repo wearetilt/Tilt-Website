@@ -30,7 +30,7 @@ html, body{
 section{
     @extend %clearfix;
 
-    @media (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop){
         &.text-section{
 
             h2{
@@ -58,7 +58,7 @@ section{
         @extend %clearfix;
     }
 
-    @media (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop){
         .group{
             width: 50%;
         }
