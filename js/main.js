@@ -42,11 +42,14 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
     carouselControl.onclick = function (){
         //grab the ID from the carousel control
         var imageToShow = this.getAttribute('ID').slice(-1);
+
         //Target the image with the matching ID and expand it while hiding all the others
         for(var iterator2 = 0; iterator2 < carouselImages.length; iterator2++){
             carouselImage = carouselImages[iterator2];
             carouselImage.style.height = 0;
+            carouselControls[iterator2].classList.remove("selected");
         }
         document.getElementById('carousel-image-' + imageToShow).style.height = '100%';
+        this.classList.add('selected');
     }
 }

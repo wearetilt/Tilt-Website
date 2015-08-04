@@ -1,6 +1,8 @@
 .carousel{
     position: relative;
     text-align: center;
+    margin: 0px auto;
+    max-width: 800px;
 }
 
 .carousel-monitor{
@@ -36,9 +38,8 @@
     width: 165px;
     left: 0px;
     right: 0px;
-    bottom: -50px;
+    bottom: -85px;
     margin: 0px auto;
-
 }
 
 .carousel-control{
@@ -48,6 +49,18 @@
     background-color: $c-tilt-pink;
     cursor: pointer;
     float: left;
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: $c-tilt-pink2;
+    }
+
+    &.selected{
+        background-color: pink;
+        &:hover{
+            background-color: pink;
+        }
+    }
 
     & + .carousel-control{
         margin-left: 15px;
