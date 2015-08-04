@@ -46,19 +46,21 @@
     border-radius: 30px;
     height: 30px;
     width: 30px;
-    background-color: $c-tilt-pink;
+    background-color: white;
     cursor: pointer;
     float: left;
     transition: all 0.5s;
+    border: 2px solid $c-tilt-pink2;
 
     &:hover{
         background-color: $c-tilt-pink2;
     }
 
     &.selected{
-        background-color: pink;
+        background-color: $c-tilt-pink2;
+
         &:hover{
-            background-color: pink;
+            background-color: $c-tilt-pink2;
         }
     }
 
