@@ -8,12 +8,14 @@ menuButton.onclick = function(){
         pageMenu.style.opacity = '0'
         setTimeout(function(){
             pageMenu.style.visibility = 'hidden';
-        },500);
+        },300);
         pageMenu.style.transform = "scale(1.5, 1.5)";
+        document.getElementById('footer').style.display = 'block';
     } else{
         pageMenu.style.visibility = 'inherit';
         pageMenu.style.opacity = 0.98;
         pageMenu.style.transform = "scale(1, 1)";
+        document.getElementById('footer').style.display = 'none';
     }
 }
 
@@ -26,7 +28,7 @@ for (var i = 0; i < allModules.length; i++){
         handler: function(){
             this.element.classList.add('module--visible');
         },
-        offset: 200
+        offset: '99%'
     });
 }
 

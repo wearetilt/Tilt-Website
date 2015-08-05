@@ -3,28 +3,41 @@ html, body{
 }
 
 .wrapper{
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
     margin-bottom: 687px;
     position: relative;
     background-color: white;
     z-index: 3;
 }
 
+.wrapper--navved{
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: scale(0.85, 0.85);
+}
+
 .container{
     @extend %clearfix;
     position: relative;
-    padding: percentage(245/2032) percentage(127/2032);
+    padding: percentage(245/2032) calc(100px + percentage(127/2032));
     z-index: 1;
+}
+
+.container--no-padding{
+    padding: 0px;
+}
+
+.container--carousel{
+    margin-bottom: 60px;
+}
+
+.container--image-block{
+    padding-top: percentage(120/2032);
 }
 
 .text-container{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.container--no-padding{
-    padding: 0px;
 }
 
 section{
@@ -47,8 +60,8 @@ section{
  /* Group container also can be used as a clearfix */
 .group-container{
     @extend %clearfix;
-    background: url('../images/tilt-logo.png') center no-repeat ;
-    background-color: $c-bg;
+    // background: url('../images/tilt-logo.png') center no-repeat ;
+    // background-color: $c-bg;
 
     & + .text-section{
         margin-top: percentage(126/2032);

@@ -19,7 +19,7 @@
     opacity: 0;
     visibility: hidden;
     transform: scale(1.5, 1.5);
-    transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+    transition: opacity 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 }
 
 .menu__items{
