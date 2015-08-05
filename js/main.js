@@ -32,7 +32,7 @@ for (var i = 0; i < allModules.length; i++){
 
 // Get all the carousel controls on the page and all the images on the page
 //TODO: Add a way where the controls are created based on the number of images
-//This might break centring
+//This might break centreing
 var carouselImages = document.getElementsByClassName('carousel-image');
 var carouselControls = document.getElementsByClassName('carousel-control');
 
