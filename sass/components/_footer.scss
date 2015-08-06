@@ -14,7 +14,8 @@ footer{
 
     .first-para{
         &:before{
-            height: 20px;
+            height: 18px;
+            width: 18px;
             background-color: $c-tilt-pink2;
         }
     }
@@ -57,7 +58,7 @@ footer{
 }
 
 .footer-icon{
-    height: 29px;
+    height: 30px;
     width: 29px;
     background-image: url('../images/icon-spritesheet.png');
     float: left;

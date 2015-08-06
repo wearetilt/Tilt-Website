@@ -1,6 +1,11 @@
-window.onload = function(){
+// window.onload = function(){
+//
+// }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log('I am ready!');
     document.body.setAttribute("class","loaded");
-}
+});
 
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');

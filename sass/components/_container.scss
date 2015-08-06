@@ -20,7 +20,7 @@ html, body{
 .container{
     @extend %clearfix;
     position: relative;
-    padding: percentage(245/2032) calc(100px + percentage(127/2032));
+    padding: percentage(245/2032) percentage(127/2032);
     z-index: 1;
 }
 
