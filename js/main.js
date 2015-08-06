@@ -1,3 +1,7 @@
+window.onload = function(){
+    document.body.setAttribute("class","loaded");
+}
+
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');
 menuButton.onclick = function(){
@@ -28,13 +32,13 @@ for (var i = 0; i < allModules.length; i++){
         handler: function(){
             this.element.classList.add('module--visible');
         },
-        offset: '99%'
+        offset: '100%'
     });
 }
 
 // Get all the carousel controls on the page and all the images on the page
 //TODO: Add a way where the controls are created based on the number of images
-//This might break centreing
+//This might break centering
 var carouselImages = document.getElementsByClassName('carousel-image');
 var carouselControls = document.getElementsByClassName('carousel-control');
 

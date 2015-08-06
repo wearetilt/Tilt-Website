@@ -9,21 +9,7 @@ footer{
     }
     .container{
         padding: 0 percentage(381/2032);
-        height: 520px;
-    }
-
-    .project-navigation{
-        height: 50px;
-        background-color: $c-tilt-pink;
-        width: 50%;
-        display: block;
-        float: left;
-        text-align: center;
-        line-height: 1.8;
-
-        &:hover{
-            background-color: $c-tilt-pink2;
-        }
+        height: 545px;
     }
 
     .first-para{
@@ -35,6 +21,7 @@ footer{
 
     .telephone{
         float: right;
+        font-size: 1.7rem;
     }
 
     .footnote{
@@ -46,6 +33,71 @@ footer{
 
 #signoff{
     background-color: $c-bg;
-    height: 117px;
+    height: 142px;
     padding: 0 percentage(126/2032);
+}
+
+.project-navigation{
+    height: 50px;
+    background-color: $c-tilt-pink;
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 1.8;
+
+    &:hover{
+        background-color: $c-tilt-pink2;
+    }
+}
+
+.footer-icons{
+    @extend %clearfix;
+    margin-bottom: 2%;
+}
+
+.footer-icon{
+    height: 29px;
+    width: 29px;
+    background-image: url('../images/icon-spritesheet.png');
+    float: left;
+
+    & + .footer-icon{
+        margin-left: 40px;
+    }
+}
+
+#footer-icon-1{
+    background-position: 0px 0px;
+    &:hover{
+        background-position: 0px  -29px;
+    }
+}
+
+#footer-icon-2{
+    background-position: -29px 0px;
+    &:hover{
+        background-position: -29px  -29px;
+    }
+}
+
+#footer-icon-3{
+    background-position: -58px 0px;
+    &:hover{
+        background-position: -58px  -29px;
+    }
+}
+
+#footer-icon-4{
+    background-position: -87px 0px;
+    &:hover{
+        background-position: -87px  -29px;
+    }
+}
+
+#footer-icon-5{
+    background-position: -116px 0px;
+    &:hover{
+        background-position: -116px  -29px;
+    }
 }

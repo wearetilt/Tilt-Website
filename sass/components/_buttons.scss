@@ -20,7 +20,7 @@ a{
 
     }
 
-    footer &.project-navigation{
+    &.project-navigation{
         @include font-size(30);
         color: white;
     }
@@ -48,9 +48,7 @@ a{
 /* The two faces of the cube */
 .flippety,.flop {
 	background: $c-bg;
-    border: 1px solid $c-tilt-pink2;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+    border: 1px solid white;
 	height: 30px;
 }
 
@@ -61,8 +59,13 @@ a{
 }
 
 .flop {
+    background-color: $c-tilt-pink2;
 	-webkit-transform: rotateX(-90deg) translateZ(-15px);
 	transform: rotateX(-90deg) translateZ(-15px);
+
+    p{
+        color: $c-bg;
+    }
 }
 
 /* Rotate the cube */
