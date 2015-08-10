@@ -194,7 +194,7 @@ Create your own skin at http://designer.videojs.com
     left: 0;
     height: 0.5em;
     width: 100%;
-    background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+    background: #ff0066 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
 }
 .vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
     width: 0.5em;
@@ -263,7 +263,7 @@ Create your own skin at http://designer.videojs.com
     top: 0;
 }
 .vjs-default-skin .vjs-play-progress {
-    background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+    background: #ff0066 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
 }
 .vjs-default-skin .vjs-load-progress {
     background: #646464;
@@ -770,4 +770,22 @@ body.vjs-full-window {
 .vjs-no-js a,
 .vjs-no-js a:visited {
     color: #f4a460;
+}
+
+
+img#vjs-logobrand-image {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	transition: visibility 0.1s ease 0s, opacity 0.1s ease 0s;
+    visibility: visible;
+}
+.vjs-user-inactive img#vjs-logobrand-image {
+	visibility: hidden;
+}
+.vjs-user-inactive.vjs-paused img#vjs-logobrand-image {
+	visibility: visible;
+}
+.vjs-ad-playing a#vjs-logobrand-image-destination {
+	display: none;
 }

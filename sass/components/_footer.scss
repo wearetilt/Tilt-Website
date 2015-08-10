@@ -63,6 +63,12 @@ footer{
     background-image: url('../images/icon-spritesheet.png');
     float: left;
 
+    a{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
     & + .footer-icon{
         margin-left: 40px;
     }
