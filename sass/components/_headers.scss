@@ -52,6 +52,7 @@ header{
 
     &.case-study{
         height: 1024px;
+        overflow: hidden;
         .container--header{
             position: absolute;
             bottom: percentage(242/2032);
