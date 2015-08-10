@@ -89,6 +89,18 @@
         transform: scale(1);
 
         header & {
+
+            position: absolute;
+            top: -9999px;
+            right: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            display: block;
+            min-width: 100%;
+            height: auto;
+            min-height: 100%;
+            margin: auto;
+
             &:hover{
                 transform: none;
             }
