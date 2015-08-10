@@ -88,10 +88,18 @@
         transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
         transform: scale(1);
 
+        header & {
+            &:hover{
+                transform: none;
+            }
+
+        }
+
         &:hover{
             transform: scale(1.05);
         }
     }
+
 }
 
 .overlay{

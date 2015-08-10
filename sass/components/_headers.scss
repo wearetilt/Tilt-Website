@@ -7,6 +7,7 @@ header{
         padding-top: 0px;
         padding-bottom: 0px;
         transform: translate3d(0,0,0);
+
         transition: all 0.5s ease 1s;
     }
 
@@ -48,7 +49,7 @@ header{
     }
 
     &.case-study{
-        height: 100vh;
+        height: 1024px;
         .container--header{
             position: absolute;
             bottom: percentage(242/2032);
@@ -75,7 +76,6 @@ header{
             padding: percentage(80/2032);
         }
         .video-container{
-            height: 120vh;
             background-image: url('../images/video-placeholder.jpg');
             background-size: cover;
         }
@@ -98,6 +98,19 @@ header{
 
     h1 + h2{
         margin-top: 30px;
+    }
+
+    .header-play{
+        height: 102px;
+        width:102px;
+        background-image: url('../images/play_button.png');
+        position: absolute;
+        z-index: 6;
+        cursor: pointer;
+        top: 45%;
+        left: 0px;
+        right: 0px;
+        margin: 0px auto;
     }
 }
 
