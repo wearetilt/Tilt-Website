@@ -1,3 +1,25 @@
+var menuButton = document.getElementById('menuButton');
+var pageMenu = document.getElementById('pageMenu');
+menuButton.onclick = function(){
+    [].map.call(document.querySelectorAll('.wrapper'), function(el){
+        el.classList.toggle('wrapper--navved');
+    });
+    if(pageMenu.style.visibility === 'inherit'){
+        pageMenu.style.opacity = '0'
+        setTimeout(function(){
+            pageMenu.style.visibility = 'hidden';
+        },300);
+        pageMenu.style.transform = "scale(1.5, 1.5)";
+        document.getElementById('footer').style.display = 'block';
+    } else{
+        pageMenu.style.visibility = 'inherit';
+        pageMenu.style.opacity = 0.98;
+        pageMenu.style.transform = "scale(1, 1)";
+        document.getElementById('footer').style.display = 'none';
+    }
+}
+
+
 var staff = document.getElementsByClassName('module');
 for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
     staffMember = staff[iterator3];
