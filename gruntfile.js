@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 		uglify: {
 			scripts: {
 				src: 'js/main.js',
-				dest: 'js/main.min.js'
+				dest: 'dist/js/main.min.js'
 			},
 		},
 
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/global.min.css': 'sass/global.scss',
+					'css/global.min.css': 'sass/global.scss'
 				}
 			}
 		},
@@ -34,17 +34,32 @@ module.exports = function(grunt) {
 				},
 			},
 
-		}
+		},
 
+		postcss: {
+			  options: {
+				map: true, // inline sourcemap
+
+				processors: [
+				  require('pixrem')(), // add fallbacks for rem units
+				  require('autoprefixer-core')({browsers: ['> 1%', 'IE 8']}), // add vendor prefixes
+				  require('cssnano')() // minify the result
+				]
+			  },
+			  dist: {
+				src: 'css/*.css'
+			  }
+			}
 	});
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-postcss');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['uglify',  'sass', 'watch']);
+	grunt.registerTask('default', ['uglify',  'sass', 'postcss' , 'watch']);
 
 
 }

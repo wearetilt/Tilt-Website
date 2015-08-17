@@ -62,6 +62,7 @@ section{
  /* Group container also can be used as a clearfix */
 .group-container{
     @extend %clearfix;
+    position: relative;
     // background: url('../images/tilt-logo.png') center no-repeat ;
     // background-color: $c-bg;
 
@@ -71,6 +72,7 @@ section{
 
     .group{
         @extend %clearfix;
+        position: relative;
     }
 
     @media handheld, screen and (min-width: $bp-desktop){
