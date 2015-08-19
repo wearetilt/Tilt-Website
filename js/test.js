@@ -28,11 +28,11 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         var staffBox = document.createElement('div');
         var staffBoxClose = document.createElement('div');
         var rect = this.getBoundingClientRect();
+        console.log(rect);
         var startingHeight = window.getComputedStyle(this).height;
         var startingWidth = window.getComputedStyle(this).width;
-        var rect = this.getBoundingClientRect();
-        var leftPosition = (rect['x'] + 'px');
-        var topPosition = (rect['y'] + 'px');
+        var leftPosition = (rect['left'] + 'px');
+        var topPosition = (rect['top'] + 'px');
         document.body.classList.add('stop-scrolling');
         staffBoxClose.onclick = function(){
             staffBox.style.height = startingHeight;
@@ -46,6 +46,9 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         }
         staffBox.setAttribute('ID', 'staffBox');
         staffBoxClose.setAttribute('ID', 'staffBoxClose');
+        staffBox.style.position = "fixed";
+        staffBox.style.left = leftPosition;
+        staffBox.style.top = topPosition;
         staffBox.style.height = startingHeight;
         staffBox.style.width = startingWidth;
         document.body.appendChild(staffBox);
@@ -55,9 +58,7 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         console.log(rect);
         console.log('I have been clicked');
         console.log(rect['x'], rect['y']);
-        staffBox.style.position = "fixed";
-        staffBox.style.left = leftPosition;
-        staffBox.style.top = topPosition;
+
         staffBox.style.backgroundColor = '#B2B2B2';
         staffBox.style.zIndex = '5';
         var staffMemberInfo = this.getAttribute('ID');
