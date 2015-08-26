@@ -1,5 +1,14 @@
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');
+var staffMember;
+var staffBox;
+var staffObject;
+var staffBoxClose;
+var startingHeight;
+var startingWidth;
+var leftPosition;
+var topPosition;
+
 menuButton.onclick = function(){
     [].map.call(document.querySelectorAll('.wrapper'), function(el){
         el.classList.toggle('wrapper--navved');
@@ -19,57 +28,89 @@ menuButton.onclick = function(){
     }
 }
 
+var lookUpStaffMember = function(staffMember){
+    return staffData[staffMember];
+}
+
+var fadeInStaffInfo = function(staffObject){
+    document.getElementById('staff-member__info').style.opacity = '1';
+    document.getElementById('staff-member__wrapper').style.opacity = '1';
+    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + staffObject.image + ')';
+}
+
+var populateAndSizeStaffInfo = function(staffBox, staffObject){
+    staffBox.style.height = '100vh';
+    staffBox.style.width = '100%';
+    staffBox.style.left = '0px';
+    staffBox.style.top = '0px';
+    // staffBox.style.transform = 'translate(' + left + ', ' + top + ')';
+    document.getElementById('staff-member__name').innerHTML = staffObject.name;
+    document.getElementById('staff-member__position').innerHTML = staffObject.position;
+    document.getElementById('staff-member__department').innerHTML = staffObject.department;
+    document.getElementById('staff-member__about').innerHTML = staffObject.about;
+    document.getElementById('staff-member__did-you-know').innerHTML = '<strong class="highlight">Did you know?</strong> ' + staffObject["did-you-know"];
+}
+
+var hideStaffBoxAndAllowScrolling = function(staffBox){
+    staffBox.style.display = 'none';
+    document.body.classList.remove('stop-scrolling');
+}
+
+var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPosition, topPosition){
+    staffBox.style.height = startingHeight;
+    staffBox.style.width = startingWidth;
+    staffBox.style.left = leftPosition;
+    staffBox.style.top = topPosition;
+}
+
 
 var staff = document.getElementsByClassName('module');
 for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
     staffMember = staff[iterator3];
 
     staffMember.onclick = function (){
-        var staffBox = document.createElement('div');
-        var staffBoxClose = document.createElement('div');
+        var staffMember = this.id;
+        var staffObject = lookUpStaffMember(staffMember);
+        var staffBox = document.getElementById('staff-member');
+        staffBox.style.display = 'block';
+        var staffBoxClose = document.getElementById('staff-member__close');
         var rect = this.getBoundingClientRect();
-        console.log(rect);
         var startingHeight = window.getComputedStyle(this).height;
         var startingWidth = window.getComputedStyle(this).width;
         var leftPosition = (rect['left'] + 'px');
         var topPosition = (rect['top'] + 'px');
         document.body.classList.add('stop-scrolling');
+
         staffBoxClose.onclick = function(){
-            staffBox.style.height = startingHeight;
-            staffBox.style.width = startingWidth;
-            staffBox.style.left = leftPosition;
-            staffBox.style.top = topPosition;
+            document.getElementById('staff-member__wrapper').style.opacity = '0';
+            document.getElementById('staff-member__info').style.opacity = '0';
+
             setTimeout(function(){
-                document.body.removeChild(staffBox);
-                document.body.classList.remove('stop-scrolling');
+                resetStaffBox(staffBox, startingHeight, startingWidth, leftPosition, topPosition);
             }, 500);
+
+            setTimeout(function(){
+                hideStaffBoxAndAllowScrolling(staffBox)
+            }, 1050);
         }
-        staffBox.setAttribute('ID', 'staffBox');
-        staffBoxClose.setAttribute('ID', 'staffBoxClose');
         staffBox.style.position = "fixed";
+        staffBox.style.transition = "all 0s ease";
         staffBox.style.left = leftPosition;
         staffBox.style.top = topPosition;
         staffBox.style.height = startingHeight;
         staffBox.style.width = startingWidth;
         document.body.appendChild(staffBox);
         staffBox.appendChild(staffBoxClose);
-        console.log(staffBox);
-        var self = staffBox;
-        console.log(rect);
-        console.log('I have been clicked');
-        console.log(rect['x'], rect['y']);
+        staffBox.style.backgroundColor = '#FF0066';
+        staffBox.style.zIndex = '6';
 
-        staffBox.style.backgroundColor = '#B2B2B2';
-        staffBox.style.zIndex = '5';
-        var staffMemberInfo = this.getAttribute('ID');
         setTimeout(function(){
-            console.log('firing');
-            self.style.height = '100vh';
-            self.style.width = '100%';
-            self.style.left = '0px';
-            self.style.top = '0px';
-
+            staffBox.style.transition = "all 0.5s ease";
+            populateAndSizeStaffInfo(staffBox, staffObject);
         }, 500);
+        setTimeout(function(){
+            fadeInStaffInfo(staffObject);
+        }, 1050);
 
     }
 }

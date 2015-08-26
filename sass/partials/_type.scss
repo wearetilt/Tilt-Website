@@ -99,6 +99,7 @@ a{
 strong, b{
     font-family: $f-seroot-blck;
     &.highlight{
-        color: $c-tilt-pink;
+        text-transform: uppercase;
+        color: $c-tilt-pink2;
     }
 }
