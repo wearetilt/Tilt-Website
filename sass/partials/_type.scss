@@ -52,6 +52,8 @@ p{
     font-family: $f-merriweather-lt;
     text-transform: none;
     line-height: (35/20);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     & + & {
         margin-top: 1.8em;

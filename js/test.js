@@ -8,6 +8,7 @@ var startingHeight;
 var startingWidth;
 var leftPosition;
 var topPosition;
+var rect;
 
 menuButton.onclick = function(){
     [].map.call(document.querySelectorAll('.wrapper'), function(el){
@@ -69,16 +70,16 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
     staffMember = staff[iterator3];
 
     staffMember.onclick = function (){
-        var staffMember = this.id;
-        var staffObject = lookUpStaffMember(staffMember);
-        var staffBox = document.getElementById('staff-member');
+        staffMember = this.id;
+        staffObject = lookUpStaffMember(staffMember);
+        staffBox = document.getElementById('staff-member');
         staffBox.style.display = 'block';
-        var staffBoxClose = document.getElementById('staff-member__close');
-        var rect = this.getBoundingClientRect();
-        var startingHeight = window.getComputedStyle(this).height;
-        var startingWidth = window.getComputedStyle(this).width;
-        var leftPosition = (rect['left'] + 'px');
-        var topPosition = (rect['top'] + 'px');
+        staffBoxClose = document.getElementById('staff-member__close');
+        rect = this.getBoundingClientRect();
+        startingHeight = window.getComputedStyle(this).height;
+        startingWidth = window.getComputedStyle(this).width;
+        leftPosition = (rect['left'] + 'px');
+        topPosition = (rect['top'] + 'px');
         document.body.classList.add('stop-scrolling');
 
         staffBoxClose.onclick = function(){
@@ -108,6 +109,7 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
             staffBox.style.transition = "all 0.5s ease";
             populateAndSizeStaffInfo(staffBox, staffObject);
         }, 500);
+        
         setTimeout(function(){
             fadeInStaffInfo(staffObject);
         }, 1050);
