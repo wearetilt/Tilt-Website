@@ -45,12 +45,20 @@
 
             var myMarker = 0;
 
+            var newMarker = {
+                url: 'images/marker.png',
+                size: new google.maps.Size(12, 12),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(6, 6),
+                scaledSize: new google.maps.Size(12, 12)
+            }
+
             if(!myMarker){
                 var image = new google.maps.MarkerImage('images/marker.png',
-                null, //size
-                null, //origin
-                new google.maps.Point(8,8),
-                new google.maps.Size(10,10)
+                new google.maps.Size(14,14), //size
+                new google.maps.Point(1,1), //origin
+                null,
+                new google.maps.Size(14,14)
                 );
 
                 myMarker = new google.maps.Marker({
