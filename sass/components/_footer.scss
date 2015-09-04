@@ -4,6 +4,11 @@ footer{
     bottom: 0;
     z-index: 0;
 
+    #contact & {
+        position: relative;
+        max-height: none;
+    }
+
     @media handheld, screen and (min-width: $bp-desktop){
 
     }
@@ -36,6 +41,11 @@ footer{
     background-color: $c-bg;
     height: 142px;
     padding: 0 percentage(126/2032);
+
+    #contact & {
+        height: auto;
+        padding: percentage(23/2032) percentage(126/2032);
+    }
 }
 
 .project-navigation{

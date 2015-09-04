@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Styleguide Components</title>
     <link rel="stylesheet" href="css/global.min.css">
-
-            <style type="text/css">
-                /* Set a size for our map container, the Google Map will take up 100% of this container */
-                #map {
-                    width: 100%;
-                    height: 500px;
-                }
-            </style>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXrz6wY5cdWYYsdOr041i9Cdb74DjOHns&sensor=false"></script>
 
     <script type="text/javascript">
@@ -90,7 +82,7 @@
         }
     </script>
 </head>
-<body>
+<body id="contact">
     <nav>
         <div class="header-item header-item--logo">
         </div>
@@ -193,8 +185,6 @@
     <header class="contact-page">
     </header>
 
-    <div id="map"></div>
-
     <div class="container area-dark">
         <section class="text-section">
             <h2>Welcome to Tilt</h2>
@@ -204,6 +194,29 @@
             </div>
         </section> <!-- /end text-section -->
     </div> <!-- /end container -->
+
+    <div class="container container--no-padding">
+        <div id="map">
+        </div>
+        <div class="map-overlay">
+            <h3 class="light marker">Call us</h3>
+            <span>+44(0)1273675700</span>
+            <h3 class="light marker">Our address</h3>
+            <span>Unit 1, Pullman haul,</span>
+            <span>41 New England Street,</span>
+            <span>Brighton, East Sussex,</span>
+            <span>BN1 4GQ, UK</span>
+            <div class="cube">
+                <div class="flippety">
+                    <p class="sans-serif">Contact Us</p>
+                </div>
+                <div class="flop">
+                    <p class="sans-serif">Please</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 <footer id="footer" class="area-dark">
 
