@@ -130,6 +130,7 @@ strong, b{
 
 span{
     .map-overlay & {
+        @include font-size(35);
         font-family: $f-seroot-lt;
         display: block;
         color: white;

@@ -46,19 +46,27 @@ a{
 }
 
 /* The two faces of the cube */
-.flippety,.flop {
+.cube--front,.cub--top {
 	background: $c-bg;
     border: 1px solid white;
 	height: 30px;
+
+    .map-overlay & {
+        background: transparent;
+
+        p {
+            color: white;
+        }
+    }
 }
 
 /* Position the faces */
-.flippety {
+.cube--front {
 	-webkit-transform: translateZ(15px);
 	transform: translateZ(15px);
 }
 
-.flop {
+.cub--top {
     background-color: white;
 	-webkit-transform: rotateX(-90deg) translateZ(-15px);
 	transform: rotateX(-90deg) translateZ(-15px);

@@ -1,6 +1,7 @@
 #map {
     width: 100%;
-    height: 600px;
+    height: 80vh;
+    background-color: black;
 }
 
 #map div[title="Our Office"] {
@@ -56,7 +57,7 @@
 
 .map-overlay{
     position: absolute;
-    top: 175px;
+    top: 10%;
     right: 100px;
 
     h3{
