@@ -1,0 +1,26 @@
+.monitor-holder{
+    max-width: 768px;
+    margin: 0px auto;
+    position: relative;
+    .monitor{
+        position: relative;
+        width: 100%;
+        max-width: 768px;
+        z-index: 2;
+    }
+
+    & + .text-section{
+        margin-top: 8%;
+    }
+}
+
+.monitor-screen{
+    position: absolute;
+    z-index: 1;
+    top: 4%;
+    left: 3.8%;
+    height: 69.5%;
+    width: 92.5%;
+    overflow: hidden;
+    background-color: darkorchid;
+}

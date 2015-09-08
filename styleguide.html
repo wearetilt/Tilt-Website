@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Styleguide Components</title>
     <link rel="stylesheet" href="css/global.min.css">
-    <script type="text/javascript" src="js/main.min.js"></script>
 </head>
 <body>
-<header class="case-study">
+    <nav>
+        <div class="header-item header-item--logo">
+        </div>
+        <div id="menuButton" class="header-item header-item--menu">
+        </div>
+        <div id="pageMenu" class="menu">
+            <ul class="menu__items">
+                <li class="menu__item"><a href="">Work</a></li>
+                <li class="menu__item"><a href="">About</a></li>
+                <li class="menu__item"><a href="">News</a></li>
+                <li class="menu__item"><a href="">Bakery</a></li>
+                <li class="menu__item"><a href="">Careers</a></li>
+                <li class="menu__item"><a href="">Contact</a></li>
+            </ul>
+        </div> <!-- /end menu -->
+    </nav>
+<!-- <header class="case-study">
+
     <div class="container container--header">
-        <div class="case-study__title">
+        <div class="header-title">
             <p class="tag">Motion: Case Study</p>
             <h1>Barclays <br />
                 <span class="light underlined">Integrity</span>
@@ -18,26 +35,109 @@
         </div>
     </div>
 </header>
-<div class="wrapper">
-    <div class="container">
-        <div class="group-container">
-            <div class="group group--left">
-            <div class="module module--2-2"></div>
+<header id="passion-pictures" class="work-item area-dark">
+    <div class="monitor">
+        <img class="centre-image" src="images/monitor.png" alt="">
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag">Interactive</p>
+            <h1>Passion Pictures<br />
+                <span class="light underlined">Earth a new world</span>
+            </h1>
+            <h2 class="light">VISUAL DESIGN | ILLUSTRATION | DEVELOPMENT</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padded">
+                <h2>The brief</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum, recusandae nobis nulla sapiente repellendus quia odio! Quibusdam veritatis placeat qui omnis doloremque rem veniam itaque tenetur inventore, amet, voluptates.</p>
             </div>
-            <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div id="module-other" class="module module--1-1"></div>
-                <div class="module module--2-1"></div>
+            <div class="header-text__module">
+                <h2>The solution</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic reiciendis perspiciatis voluptate numquam, laboriosam, incidunt accusantium quae, officia, doloremque eius? Vero deleniti soluta, totam nam ea quo recusandae cupiditate.</p>
             </div>
         </div>
+    </div>
+</header> -->
+<div class="wrapper">
+    <!-- <header class="work-item work-item--motion area-dark">
+        <div class="video-container">
+        </div>
+        <div class="container container--header">
+            <div class="header-title">
+                <p class="tag">Film</p>
+                <h1>Barclays<br />
+                    <span class="light underlined">Being Barclays</span>
+                </h1>
+                <h2 class="light">Content strategy | Film</h2>
+            </div>
+            <div class="header-text">
+                <div class="header-text__module header-text__module--padding">
+                    <h2>The brief</h2>
+                    <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum, recusandae nobis nulla sapiente repellendus quia odio! Quibusdam veritatis placeat qui omnis doloremque rem veniam itaque tenetur inventore, amet, voluptates.</p>
+                </div>
+                <div class="header-text__module header-text__module--padding">
+                    <h2>The solution</h2>
+                    <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic reiciendis perspiciatis voluptate numquam, laboriosam, incidunt accusantium quae, officia, doloremque eius? Vero deleniti soluta, totam nam ea quo recusandae cupiditate.</p>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <header class="case-study">
+        <div class="module--video module--header">
+            <div id="header-play" class="header-play">
+
+            </div>
+            <div class="ratio">
+                <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+                        <source id="header-video" src="video/test-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div> <!-- /end module--video-->
+        <div class="container container--header area-dark">
+            <div class="header-title">
+                <p class="tag">Motion: Case Study</p>
+                <h1>Barclays <br />
+                    <span class="light underlined">Integrity</span>
+                </h1>
+                <h2 class="light">FILM | MOTION | 3D</h2>
+            </div>
+        </div> <!-- /end container -->
+    </header>
+
+    <div class="container container--half-top">
+        <div class="group-container">
+            <div class="group group--left">
+                <div id="module-1" class="module module--2-2">
+                    <div class="overlay area-dark">
+                        <div class="overlay-text">
+                            <p class="tag">Motion: Case Study</p>
+                            <h2>Barclays <br />
+                                <span class="light underlined">Integrity</span>
+                            </h2>
+                            <p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
+                        </div> <!-- /end overlay-text -->
+                    </div> <!-- /end overlay -->
+                    <div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
+                    </div>
+                </div>
+            </div> <!-- /end group -->
+            <div class="group group--right">
+                <div class="module module--1-1"></div>
+                <div  class="module module--1-1"></div>
+                <div class="module module--2-1"></div>
+            </div> <!-- /end group -->
+        </div> <!-- /end group-container -->
         <section class="text-section">
             <h2>Welcome to Tilt</h2>
             <div class="text-section__para">
                 <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
             </div>
-        </section>
+        </section> <!-- /end text-section -->
     </div>
+
     <div class="container area-dark">
         <section class="text-section">
             <h2>Welcome to Tilt</h2>
@@ -45,27 +145,41 @@
                 <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
             </div>
-        </section>
-    </div>
+        </section> <!-- /end text-section -->
+    </div> <!-- /end container -->
+
+    <div class="container">
+        <div class="monitor-holder">
+            <img class="monitor centre-image" src="images/monitor.png" alt="">
+            <div class="monitor-screen"></div>
+        </div>
+        <section class="text-section">
+            <h2>Welcome to Tilt</h2>
+            <div class="text-section__para">
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            </div>
+        </section> <!-- /end text-section -->
+    </div> <!-- /end container -->
     <div class="container container--no-padding">
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                <div class="module module--2-2"></div>
+                <div id="module-5" class="module module--2-2"></div>
                 </div>
                 <div class="group group--right">
                     <div class="module module--1-1"></div>
-                    <div id="module-other" class="module module--1-1"></div>
+                    <div class="module module--1-1"></div>
                     <div class="module module--2-1 area-dark">
                         <div class="module__text">
                             <h2 class="underlined">The Process</h2>
                             <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> <!-- /end group -->
+            </div> <!-- /end group-container -->
         </section>
-    </div>
+    </div> <!-- /end container -->
     <div class="container area-dark">
         <section class="text-section">
             <h2>Welcome to Tilt</h2>
@@ -73,40 +187,97 @@
                 <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
             </div>
-        </section>
-    </div>
+        </section> <!-- /end text-section -->
+    </div> <!-- /end container -->
     <div class="container container--no-padding">
-        <section class="no-padding">
-            <div class="group-container">
+        <section>
+            <div class="group-container group-container--light">
                 <div class="group group--left">
-                    <div class="module module--2-1"></div>
-                    <div class="module module--1-1"></div>
-                    <div id="module-other" class="module module--1-1"></div>
-                </div>
+                    <div class="module module--2-1 module--video">
+                        <div class="ratio">
+                            <video class="hello" poster="images/test-screen-video.png" autoplay loop="true" muted="true">
+                                    <source src="video/test-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div> <!-- /end module -->
+                    <div class="module module--1-1 module--video">
+                        <div class="ratio">
+                            <video poster="images/test-screen-video.png" autoplay loop="true" muted="true">
+                                    <source src="video/test-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div> <!-- /end module -->
+                    <div  class="module module--1-1"></div>
+                </div> <!-- /end group -->
                 <div class="group group--right">
-                    <div class="module module--2-2"></div>
-                </div>
-            </div>
+                    <div class="module module--2-2 module--video">
+                        <div class="ratio">
+                            <video poster="images/test-screen-video.png" autoplay loop="true" muted="true">
+                                    <source src="video/test-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div> <!-- /end module -->
+                </div> <!-- /end group -->
+            </div> <!-- /end group-container -->
         </section>
+    </div> <!-- /end container -->
+    <div class="container container--carousel">
+        <section class="carousel">
+            <img class="carousel-monitor centre-image" src="images/monitor.png" alt="">
+            <div class="carousel-images">
+                <div id="carousel-image-1"class="carousel-image"></div>
+                <div id="carousel-image-2"class="carousel-image"></div>
+                <div id="carousel-image-3"class="carousel-image"></div>
+                <div id="carousel-image-4"class="carousel-image"></div>
+            </div> <!-- /end carousel-images -->
+            <div class="carousel-controls">
+                <div id="carousel-control-1" class="carousel-control selected"></div>
+                <div id="carousel-control-2" class="carousel-control"></div>
+                <div id="carousel-control-3" class="carousel-control"></div>
+                <div id="carousel-control-4" class="carousel-control"></div>
+            </div> <!-- /end carousel-controls -->
+        </section>
+    </div> <!-- /end container--carousel -->
+    <div class="group-container">
+        <a class="project-navigation" href="">< Previous Project</a>
+        <a class="project-navigation" href="">Next Project ></a>
     </div>
-    <footer class="area-dark">
-        <div class="group-container">
-            <a class="project-navigation" href="">Previous Project</a>
-            <a class="project-navigation" href="">Next Project</a>
+</div>
+
+<footer id="footer" class="area-dark">
+    <div class="container">
+        <div class="text-container">
+            <p class="first-para sans-serif"><strong class="highlight">Like what you see?</strong> NULLAM ID DOLOR ID NIBH ULTRICIES VEHICULA UT ID ELIT. DONEC ID ELIT NON MI PORTA GRAVIDA AT EGET METUS. CURABITUR BLANDIT TEMPUS PORTTITOR.</p>
+            <div class="cube">
+            	<div class="cube--front">
+            		<p class="sans-serif">Contact Us</p>
+            	</div>
+            	<div class="cub--top">
+            		<p class="sans-serif">Please</p>
+            	</div>
+            </div>
         </div>
-        <div class="container">
-                <p class="first-para sans-serif"><strong>LIKE WHAT YOU SEE?</strong> NULLAM ID DOLOR ID NIBH ULTRICIES VEHICULA UT ID ELIT. DONEC ID ELIT NON MI PORTA GRAVIDA AT EGET METUS. CURABITUR BLANDIT TEMPUS PORTTITOR.</p>
-                <a href="" class="button">Contact us</a>
-        </div>
-        <div id="signoff" class="group-container">
+    </div> <!-- /end container -->
+
+    <div id="signoff" class="group-container group-container--no-bg">
+        <div class="footer-icons">
+            <div id="footer-icon-1" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-2" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-3" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-4" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-5" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
             <div class="telephone">
                 <span>Tel: + 44(0)1273 675 700</span>
             </div>
-            <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather and Rooney Pro. All content copyright 2015 We Are Tilt Ltd. All rights reserved.</p>
-        </div>
+        </div> <!-- /end footer-icons -->
 
-        </div>
-    </footer>
-</div>
+        <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather and Rooney Pro. All content copyright 2015 We Are Tilt Ltd. All rights reserved.</p>
+    </div>
+
+</footer>
+<script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+<script src="http://vjs.zencdn.net/4.12/video.js"></script>
+<script src="js/TweenMax.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

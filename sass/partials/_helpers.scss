@@ -1,7 +1,31 @@
 .area-dark{
-    background-color: $c-bg !important;
+    background-color: $c-bg;
 
     h1,h2,h3,h4,h5,p,span,li{
         color: white;
     }
+
+    header.case-study & {
+        background: none;
+    }
+}
+
+.centre-image{
+    display: block;
+    margin: 0px auto;
+}
+
+.no-background{
+    background-color: transparent;
+}
+
+.centre-vertical{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }

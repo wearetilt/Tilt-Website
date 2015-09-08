@@ -6,7 +6,7 @@ a{
         border: 1px solid white;
         color: white;
         display: inline-block;
-        padding: 20px;
+        padding: 18px;
         &:after{
             content: ">";
             display: inline-block;
@@ -20,8 +20,64 @@ a{
 
     }
 
-    footer &.project-navigation{
+    &.project-navigation{
         @include font-size(30);
         color: white;
     }
+
+    p + & {
+        margin-top: 14px;
+    }
+}
+
+
+/* Container box to set the sides relative to */
+.cube {
+
+    display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	height: 30px;
+	-webkit-transition: -webkit-transform .33s;
+	transition: transform .33s; /* Animate the transform properties */
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d; /* <-NB */
+    margin-top: 30px;
+}
+
+/* The two faces of the cube */
+.cube--front,.cub--top {
+	background: $c-bg;
+    border: 1px solid white;
+	height: 30px;
+
+    .map-overlay & {
+        background: transparent;
+
+        p {
+            color: white;
+        }
+    }
+}
+
+/* Position the faces */
+.cube--front {
+	-webkit-transform: translateZ(15px);
+	transform: translateZ(15px);
+}
+
+.cub--top {
+    background-color: white;
+	-webkit-transform: rotateX(-90deg) translateZ(-15px);
+	transform: rotateX(-90deg) translateZ(-15px);
+
+    p{
+        color: $c-bg;
+    }
+}
+
+/* Rotate the cube */
+.cube:hover {
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg); /* Text bleed at 90º */
 }

@@ -17,6 +17,8 @@ h1, h2, h3, h4, h5, h6{
             height: 2px;
             display: block;
             background-color: black;
+            margin-top: 0.2em;
+            width: em(150,75);
 
             .area-dark &{
                 background-color: white;
@@ -45,11 +47,35 @@ h2{
     }
 }
 
+h3{
+    &.marker{
+        &:before{
+            content:"";
+            display: inline-block;
+            height: 12px;
+            width: 12px;
+            background-color: $c-tilt-pink;
+            margin-right: 13px;
+            margin-left: 2px;
+        }
+    }
+
+    .map-overlay & {
+        @include font-size(15);
+        color: $c-tilt-pink;
+        font-family: $f-merriweather-lt;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
 p{
-    @include font-size(20);
+    @include font-size(17.6);
     font-family: $f-merriweather-lt;
     text-transform: none;
     line-height: (35/20);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     & + & {
         margin-top: 1.8em;
@@ -59,8 +85,8 @@ p{
         &:before{
             content:"";
             display: inline-block;
-            height: 16px;
-            width: 26px;
+            height: 15px;
+            width: 15px;
             background-color: $c-tilt-pink;
             margin-right: 13px;
             margin-left: 2px;
@@ -88,8 +114,30 @@ a{
     font-family: $f-seroot-lt;
     text-transform: uppercase;
     text-decoration: none;
+
+    nav & {
+        font-size: 2.5em;
+    }
 }
 
 strong, b{
     font-family: $f-seroot-blck;
+    &.highlight{
+        text-transform: uppercase;
+        color: $c-tilt-pink2;
+    }
+}
+
+span{
+    .map-overlay & {
+        @include font-size(35);
+        font-family: $f-seroot-lt;
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        line-height: (33/25);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
 }

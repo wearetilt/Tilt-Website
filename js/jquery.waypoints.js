@@ -1,4 +1,3 @@
-// WAY POINTS script
 /*!
 Waypoints - 3.1.1
 Copyright © 2011-2015 Caleb Troughton
@@ -571,277 +570,78 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 ;(function() {
   'use strict'
 
+  var $ = window.jQuery
   var Waypoint = window.Waypoint
 
-  function isWindow(element) {
-    return element === element.window
+  function JQueryAdapter(element) {
+    this.$element = $(element)
   }
 
-  function getWindow(element) {
-    if (isWindow(element)) {
-      return element
+  $.each([
+    'innerHeight',
+    'innerWidth',
+    'off',
+    'offset',
+    'on',
+    'outerHeight',
+    'outerWidth',
+    'scrollLeft',
+    'scrollTop'
+  ], function(i, method) {
+    JQueryAdapter.prototype[method] = function() {
+      var args = Array.prototype.slice.call(arguments)
+      return this.$element[method].apply(this.$element, args)
     }
-    return element.defaultView
-  }
+  })
 
-  function NoFrameworkAdapter(element) {
-    this.element = element
-    this.handlers = {}
-  }
-
-  NoFrameworkAdapter.prototype.innerHeight = function() {
-    var isWin = isWindow(this.element)
-    return isWin ? this.element.innerHeight : this.element.clientHeight
-  }
-
-  NoFrameworkAdapter.prototype.innerWidth = function() {
-    var isWin = isWindow(this.element)
-    return isWin ? this.element.innerWidth : this.element.clientWidth
-  }
-
-  NoFrameworkAdapter.prototype.off = function(event, handler) {
-    function removeListeners(element, listeners, handler) {
-      for (var i = 0, end = listeners.length - 1; i < end; i++) {
-        var listener = listeners[i]
-        if (!handler || handler === listener) {
-          element.removeEventListener(listener)
-        }
-      }
-    }
-
-    var eventParts = event.split('.')
-    var eventType = eventParts[0]
-    var namespace = eventParts[1]
-    var element = this.element
-
-    if (namespace && this.handlers[namespace] && eventType) {
-      removeListeners(element, this.handlers[namespace][eventType], handler)
-      this.handlers[namespace][eventType] = []
-    }
-    else if (eventType) {
-      for (var ns in this.handlers) {
-        removeListeners(element, this.handlers[ns][eventType] || [], handler)
-        this.handlers[ns][eventType] = []
-      }
-    }
-    else if (namespace && this.handlers[namespace]) {
-      for (var type in this.handlers[namespace]) {
-        removeListeners(element, this.handlers[namespace][type], handler)
-      }
-      this.handlers[namespace] = {}
-    }
-  }
-
-  /* Adapted from jQuery 1.x offset() */
-  NoFrameworkAdapter.prototype.offset = function() {
-    if (!this.element.ownerDocument) {
-      return null
-    }
-
-    var documentElement = this.element.ownerDocument.documentElement
-    var win = getWindow(this.element.ownerDocument)
-    var rect = {
-      top: 0,
-      left: 0
-    }
-
-    if (this.element.getBoundingClientRect) {
-      rect = this.element.getBoundingClientRect()
-    }
-
-    return {
-      top: rect.top + win.pageYOffset - documentElement.clientTop,
-      left: rect.left + win.pageXOffset - documentElement.clientLeft
-    }
-  }
-
-  NoFrameworkAdapter.prototype.on = function(event, handler) {
-    var eventParts = event.split('.')
-    var eventType = eventParts[0]
-    var namespace = eventParts[1] || '__default'
-    var nsHandlers = this.handlers[namespace] = this.handlers[namespace] || {}
-    var nsTypeList = nsHandlers[eventType] = nsHandlers[eventType] || []
-
-    nsTypeList.push(handler)
-    this.element.addEventListener(eventType, handler)
-  }
-
-  NoFrameworkAdapter.prototype.outerHeight = function(includeMargin) {
-    var height = this.innerHeight()
-    var computedStyle
-
-    if (includeMargin && !isWindow(this.element)) {
-      computedStyle = window.getComputedStyle(this.element)
-      height += parseInt(computedStyle.marginTop, 10)
-      height += parseInt(computedStyle.marginBottom, 10)
-    }
-
-    return height
-  }
-
-  NoFrameworkAdapter.prototype.outerWidth = function(includeMargin) {
-    var width = this.innerWidth()
-    var computedStyle
-
-    if (includeMargin && !isWindow(this.element)) {
-      computedStyle = window.getComputedStyle(this.element)
-      width += parseInt(computedStyle.marginLeft, 10)
-      width += parseInt(computedStyle.marginRight, 10)
-    }
-
-    return width
-  }
-
-  NoFrameworkAdapter.prototype.scrollLeft = function() {
-    var win = getWindow(this.element)
-    return win ? win.pageXOffset : this.element.scrollLeft
-  }
-
-  NoFrameworkAdapter.prototype.scrollTop = function() {
-    var win = getWindow(this.element)
-    return win ? win.pageYOffset : this.element.scrollTop
-  }
-
-  NoFrameworkAdapter.extend = function() {
-    var args = Array.prototype.slice.call(arguments)
-
-    function merge(target, obj) {
-      if (typeof target === 'object' && typeof obj === 'object') {
-        for (var key in obj) {
-          if (obj.hasOwnProperty(key)) {
-            target[key] = obj[key]
-          }
-        }
-      }
-
-      return target
-    }
-
-    for (var i = 1, end = args.length; i < end; i++) {
-      merge(args[0], args[i])
-    }
-    return args[0]
-  }
-
-  NoFrameworkAdapter.inArray = function(element, array, i) {
-    return array == null ? -1 : array.indexOf(element, i)
-  }
-
-  NoFrameworkAdapter.isEmptyObject = function(obj) {
-    /* eslint no-unused-vars: 0 */
-    for (var name in obj) {
-      return false
-    }
-    return true
-  }
+  $.each([
+    'extend',
+    'inArray',
+    'isEmptyObject'
+  ], function(i, method) {
+    JQueryAdapter[method] = $[method]
+  })
 
   Waypoint.adapters.push({
-    name: 'noframework',
-    Adapter: NoFrameworkAdapter
+    name: 'jquery',
+    Adapter: JQueryAdapter
   })
-  Waypoint.Adapter = NoFrameworkAdapter
+  Waypoint.Adapter = JQueryAdapter
+}())
+;(function() {
+  'use strict'
+
+  var Waypoint = window.Waypoint
+
+  function createExtension(framework) {
+    return function() {
+      var waypoints = []
+      var overrides = arguments[0]
+
+      if (framework.isFunction(arguments[0])) {
+        overrides = framework.extend({}, arguments[1])
+        overrides.handler = arguments[0]
+      }
+
+      this.each(function() {
+        var options = framework.extend({}, overrides, {
+          element: this
+        })
+        if (typeof options.context === 'string') {
+          options.context = framework(this).closest(options.context)[0]
+        }
+        waypoints.push(new Waypoint(options))
+      })
+
+      return waypoints
+    }
+  }
+
+  if (window.jQuery) {
+    window.jQuery.fn.waypoint = createExtension(window.jQuery)
+  }
+  if (window.Zepto) {
+    window.Zepto.fn.waypoint = createExtension(window.Zepto)
+  }
 }())
 ;
-
-
-
-// window.onload = function(){
-//
-// }
-
-document.addEventListener("DOMContentLoaded", function(event) {
-    console.log('I am ready!');
-    document.body.setAttribute("class","loaded");
-});
-
-var menuButton = document.getElementById('menuButton');
-var pageMenu = document.getElementById('pageMenu');
-menuButton.onclick = function(){
-    [].map.call(document.querySelectorAll('.wrapper'), function(el){
-        el.classList.toggle('wrapper--navved');
-    });
-    if(pageMenu.style.visibility === 'inherit'){
-        pageMenu.style.opacity = '0'
-        setTimeout(function(){
-            pageMenu.style.visibility = 'hidden';
-        },300);
-        pageMenu.style.transform = "scale(1.5, 1.5)";
-        document.getElementById('footer').style.display = 'block';
-    } else{
-        pageMenu.style.visibility = 'inherit';
-        pageMenu.style.opacity = 0.98;
-        pageMenu.style.transform = "scale(1, 1)";
-        document.getElementById('footer').style.display = 'none';
-    }
-}
-
-var allModules = document.getElementsByClassName('module');
-
-for (var i = 0; i < allModules.length; i++){
-    var module = allModules[i];
-    new Waypoint({
-        element: module,
-        handler: function(){
-            this.element.classList.add('module--visible');
-        },
-        offset: '100%'
-    });
-}
-
-// Get all the carousel controls on the page and all the images on the page
-//TODO: Add a way where the controls are created based on the number of images
-//This might break centering
-var carouselImages = document.getElementsByClassName('carousel-image');
-var carouselControls = document.getElementsByClassName('carousel-control');
-
-// Loop through all the controls and add a click handler to all of them.
-for (var iterator = 0; iterator < carouselControls.length; iterator++){
-    var carouselControl = carouselControls[iterator];
-    carouselControl.onclick = function (){
-        //grab the ID from the carousel control
-        var imageToShow = this.getAttribute('ID').slice(-1);
-
-        //Target the image with the matching ID and expand it while hiding all the others
-        for(var iterator2 = 0; iterator2 < carouselImages.length; iterator2++){
-            carouselImage = carouselImages[iterator2];
-            carouselImage.style.height = 0;
-            carouselControls[iterator2].classList.remove("selected");
-        }
-        document.getElementById('carousel-image-' + imageToShow).style.height = '100%';
-        this.classList.add('selected');
-    }
-}
-
-var myPlayer =  videojs('header-video-player');
-
-document.getElementById('header-play').addEventListener('click', function(){
-        myPlayer.ready(function(){
-            myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
-            myPlayer.requestFullscreen();
-            myPlayer.play();
-            myPlayer.controls(true);
-            console.log(myPlayer.controls());
-        });
-});
-
-myPlayer.on('fullscreenchange', function(){
-    if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
-        myPlayer.src("video/test-video.mp4");
-        myPlayer.controls(false);
-        myPlayer.muted(false);
-    }
-});
-
-var staff = document.getElementsByClassName('module');
-for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
-    staffMember = staff[iterator3];
-
-    staffMember.onclick = function (){
-        var self = this;
-        var rect = this.getBoundingClientRect();
-        console.log(rect);
-        console.log('I have been clicked');
-        var staffMemberInfo = this.getAttribute('ID');
-        this.classList.add('module--selected');
-    }
-}

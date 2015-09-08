@@ -1,5 +1,11 @@
 .module{
+    // transform: scale(0.7, 0.7);
+    // visibility: hidden;
+    // overflow: hidden;
+    // opacity: 0;
+    // TODO: Uncomment this when done with new features.
     position: relative;
+    transition: all 0.5s ease;
     &.module--dark{
         background-color: $c-bg;
         h2, p{
@@ -12,6 +18,26 @@
         transform: translateY(-50%);
         padding: 0 percentage(126/1016);
     }
+
+    &:hover{
+        .overlay{
+            opacity: 1;
+        }
+    }
+
+    .ratio{
+        transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+        transform: scale(1);
+    }
+    &:hover .ratio{
+        transform: scale(1.05);
+    }
+}
+
+.module--visible{
+    transform: scale(1);
+    visibility: inherit;
+    opacity: 1;
 }
 
 .module--2-1{
@@ -36,4 +62,127 @@
     width: 100%;
     padding-top: 100%;
     background-color: green;
+}
+
+.module--staff{
+    width: 25%;
+    padding-top: 25%;
+    height: 1px;
+    background-color: #CCCCCC;
+    float: left;
+    border: 1px solid black;
+}
+
+.ratio{
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-size: cover;
+}
+
+.module--video{
+    overflow: hidden;
+    video{
+        position: absolute;
+        top: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        display: block;
+        min-width: 100%;
+        height: auto;
+        min-height: 100%;
+        margin: auto;
+        transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+        transform: scale(1);
+
+        header & {
+
+            position: absolute;
+            top: -9999px;
+            right: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            display: block;
+            min-width: 100%;
+            height: auto;
+            min-height: 100%;
+            margin: auto;
+
+            &:hover{
+                transform: none;
+            }
+
+        }
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+}
+
+.overlay{
+    font-size: 1em;
+    position:absolute;
+    background-color: rgba(32,32,32,0.7);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 percentage(126/1016);
+
+}
+
+.module--image{
+    padding-top: 0px;
+}
+
+#staff-member{
+    transition: all 0.5s ease;
+    display: none;
+}
+
+#staff-member__close{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    margin: 0px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#staff-member__info{
+    overflow: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    height: 100%;
+    width: 100%;
+    float: right;
+
+    @media handheld, screen and (min-width: $bp-desktop){
+
+    width: 50%;
+
+    }
+}
+
+#staff-member__wrapper{
+    @extend %clearfix;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }

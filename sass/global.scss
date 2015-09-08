@@ -14,9 +14,17 @@ Version: 1.0
 @import 'partials/helpers';
 @import 'partials/type';
 
-
 @import 'components/buttons';
 @import 'components/container';
 @import 'components/headers';
 @import 'components/module';
 @import 'components/footer';
+@import 'components/monitor';
+@import 'components/menu';
+@import 'components/carousel';
+@import 'components/video-js';
+@import 'components/map';
+
+
+/* Loaded in last for styling reasons */
+@import 'partials/individual-page';

@@ -1,31 +1,33 @@
 footer{
+    max-height: 687px;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
 
-    .container{
-        padding: percentage(244/2032) percentage(381/2032);
+    #contact & {
+        position: relative;
+        max-height: none;
     }
 
-    .project-navigation{
-        padding: percentage(30/2032) 0;
-        background-color: $c-tilt-pink;
-        width: 50%;
-        display: block;
-        float: left;
-        text-align: center;
+    @media handheld, screen and (min-width: $bp-desktop){
 
-        &:hover{
-            background-color: $c-tilt-pink2;
-        }
+    }
+    .container{
+        padding: 0 percentage(381/2032);
+        height: 545px;
     }
 
     .first-para{
         &:before{
-            height: 20px;
-            background-color: $c-tilt-pink2;
+            height: 18px;
+            width: 18px;
+            background-color: $c-tilt-pink;
         }
     }
 
     .telephone{
         float: right;
+        font-size: 1.7rem;
     }
 
     .footnote{
@@ -37,5 +39,82 @@ footer{
 
 #signoff{
     background-color: $c-bg;
-    padding: percentage(48/2032) percentage(126/2032);
+    height: 142px;
+    padding: 0 percentage(126/2032);
+
+    #contact & {
+        height: auto;
+        padding: percentage(46/2032) percentage(126/2032);
+    }
+}
+
+.project-navigation{
+    height: 50px;
+    background-color: $c-tilt-pink;
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 1.8;
+
+    &:hover{
+        background-color: $c-tilt-pink2;
+    }
+}
+
+.footer-icons{
+    @extend %clearfix;
+    margin-bottom: 2%;
+}
+
+.footer-icon{
+    height: 29px;
+    width: 29px;
+    background-image: url('../images/icon-spritesheet.png');
+    float: left;
+
+    a{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    & + .footer-icon{
+        margin-left: 40px;
+    }
+}
+
+#footer-icon-1{
+    background-position: 0px 0px;
+    &:hover{
+        background-position: 0px  -29px;
+    }
+}
+
+#footer-icon-2{
+    background-position: -29px 0px;
+    &:hover{
+        background-position: -29px  -29px;
+    }
+}
+
+#footer-icon-3{
+    background-position: -58px 0px;
+    &:hover{
+        background-position: -58px  -29px;
+    }
+}
+
+#footer-icon-4{
+    background-position: -87px 0px;
+    &:hover{
+        background-position: -87px  -29px;
+    }
+}
+
+#footer-icon-5{
+    background-position: -116px 0px;
+    &:hover{
+        background-position: -116px  -29px;
+    }
 }

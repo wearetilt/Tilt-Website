@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Styleguide Components</title>
+    <link rel="stylesheet" href="css/global.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXrz6wY5cdWYYsdOr041i9Cdb74DjOHns&sensor=false"></script>
+
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        officeLocation = new google.maps.LatLng(50.832132, -0.139421);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 14,
+
+                // The latitude and longitude to center the map (always required)
+                center: officeLocation, // New York
+                disableDefaultUI: false,
+                scrollwheel: false,
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            var myMarker = 0;
+
+            var newMarker = {
+                url: 'images/marker.png',
+                size: new google.maps.Size(12, 12),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(6, 6),
+                scaledSize: new google.maps.Size(12, 12)
+            }
+
+            if(!myMarker){
+                var image = new google.maps.MarkerImage('images/marker.png',
+                new google.maps.Size(14,14), //size
+                new google.maps.Point(1,1), //origin
+                null,
+                new google.maps.Size(14,14)
+                );
+
+                myMarker = new google.maps.Marker({
+                    flat: true,
+                    icon: image,
+                    map: map,
+                    optimized: false,
+                    position: officeLocation,
+                    title: 'Our Office',
+                    visible: true
+                });
+            }
+
+            // var iconBase = {
+            //     url: "images/marker.png",
+            //     size: new google.maps.Size(34,34),
+            //     origin: new google.maps.Point(0,0),
+            //     anchor: new google.maps.Point(17,17)
+            // };
+
+            // Let's also add a marker while we're at it
+
+            // var marker = new google.maps.Marker({
+            //     position: new google.maps.LatLng(50.832132, -0.139421),
+            //     map: map,
+            //     title: 'Our Office',
+            //     icon: iconBase
+            // });
+        }
+    </script>
+</head>
+<body id="contact">
+    <nav>
+        <div class="header-item header-item--logo">
+        </div>
+        <div id="menuButton" class="header-item header-item--menu">
+        </div>
+        <div id="pageMenu" class="menu">
+            <ul class="menu__items">
+                <li class="menu__item"><a href="">Work</a></li>
+                <li class="menu__item"><a href="">About</a></li>
+                <li class="menu__item"><a href="">News</a></li>
+                <li class="menu__item"><a href="">Bakery</a></li>
+                <li class="menu__item"><a href="">Careers</a></li>
+                <li class="menu__item"><a href="">Contact</a></li>
+            </ul>
+        </div> <!-- /end menu -->
+    </nav>
+<!-- <header class="case-study">
+
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag">Motion: Case Study</p>
+            <h1>Barclays <br />
+                <span class="light underlined">Integrity</span>
+            </h1>
+            <h2 class="light">FILM | MOTION | 3D</h2>
+        </div>
+    </div>
+</header>
+<header id="passion-pictures" class="work-item area-dark">
+    <div class="monitor">
+        <img class="centre-image" src="images/monitor.png" alt="">
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag">Interactive</p>
+            <h1>Passion Pictures<br />
+                <span class="light underlined">Earth a new world</span>
+            </h1>
+            <h2 class="light">VISUAL DESIGN | ILLUSTRATION | DEVELOPMENT</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padded">
+                <h2>The brief</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum, recusandae nobis nulla sapiente repellendus quia odio! Quibusdam veritatis placeat qui omnis doloremque rem veniam itaque tenetur inventore, amet, voluptates.</p>
+            </div>
+            <div class="header-text__module">
+                <h2>The solution</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic reiciendis perspiciatis voluptate numquam, laboriosam, incidunt accusantium quae, officia, doloremque eius? Vero deleniti soluta, totam nam ea quo recusandae cupiditate.</p>
+            </div>
+        </div>
+    </div>
+</header> -->
+<div class="wrapper">
+    <!-- <header class="work-item work-item--motion area-dark">
+        <div class="video-container">
+        </div>
+        <div class="container container--header">
+            <div class="header-title">
+                <p class="tag">Film</p>
+                <h1>Barclays<br />
+                    <span class="light underlined">Being Barclays</span>
+                </h1>
+                <h2 class="light">Content strategy | Film</h2>
+            </div>
+            <div class="header-text">
+                <div class="header-text__module header-text__module--padding">
+                    <h2>The brief</h2>
+                    <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum, recusandae nobis nulla sapiente repellendus quia odio! Quibusdam veritatis placeat qui omnis doloremque rem veniam itaque tenetur inventore, amet, voluptates.</p>
+                </div>
+                <div class="header-text__module header-text__module--padding">
+                    <h2>The solution</h2>
+                    <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic reiciendis perspiciatis voluptate numquam, laboriosam, incidunt accusantium quae, officia, doloremque eius? Vero deleniti soluta, totam nam ea quo recusandae cupiditate.</p>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- <header class="case-study">
+        <div class="module--video module--header">
+            <div id="header-play" class="header-play">
+
+            </div>
+            <div class="ratio">
+                <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+                        <source id="header-video" src="video/test-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="container container--header area-dark">
+            <div class="header-title">
+                <p class="tag">Motion: Case Study</p>
+                <h1>Barclays <br />
+                    <span class="light underlined">Integrity</span>
+                </h1>
+                <h2 class="light">FILM | MOTION | 3D</h2>
+            </div>
+        </div>
+    </header> -->
+
+    <header class="contact-page">
+    </header>
+
+    <div class="container area-dark">
+        <section class="text-section">
+            <h2>Welcome to Tilt</h2>
+            <div class="text-section__para">
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            </div>
+        </section> <!-- /end text-section -->
+    </div> <!-- /end container -->
+
+    <div class="container container--no-padding">
+        <div id="map">
+        </div>
+        <div class="map-overlay">
+            <h3 class="light marker">Call us</h3>
+            <span>+44(0)1273675700</span>
+            <h3 class="light marker">Our address</h3>
+            <span>Unit 1, Pullman haul,</span>
+            <span>41 New England Street,</span>
+            <span>Brighton, East Sussex,</span>
+            <span>BN1 4GQ, UK</span>
+            <div class="cube">
+                <div class="cube--front">
+                    <p class="sans-serif">Contact Us</p>
+                </div>
+                <div class="cub--top">
+                    <p class="sans-serif">Please</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<footer id="footer" class="area-dark">
+
+    <div id="signoff" class="group-container group-container--no-bg">
+        <div class="footer-icons">
+            <div id="footer-icon-1" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-2" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-3" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-4" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div id="footer-icon-5" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+            <div class="telephone">
+                <span>Tel: + 44(0)1273 675 700</span>
+            </div>
+        </div> <!-- /end footer-icons -->
+
+        <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather and Rooney Pro. All content copyright 2015 We Are Tilt Ltd. All rights reserved.</p>
+    </div>
+
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
