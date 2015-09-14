@@ -23,26 +23,15 @@
 
 <body <?php body_class(); ?>>
 	<div class="wrapper">
-	    <header class="work-item work-item--motion area-dark">
-	        <div class="video-container">
-	        </div>
-	        <div class="container container--header">
-	            <div class="header-title">
-	                <p class="tag">Film</p>
-	                <h1>Barclays<br />
-	                    <span class="light underlined">Being Barclays</span>
-	                </h1>
-	                <h2 class="light">Content strategy | Film</h2>
-	            </div>
-	            <div class="header-text">
-	                <div class="header-text__module header-text__module--padding">
-	                    <h2>The brief</h2>
-	                    <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum, recusandae nobis nulla sapiente repellendus quia odio! Quibusdam veritatis placeat qui omnis doloremque rem veniam itaque tenetur inventore, amet, voluptates.</p>
-	                </div>
-	                <div class="header-text__module header-text__module--padding">
-	                    <h2>The solution</h2>
-	                    <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic reiciendis perspiciatis voluptate numquam, laboriosam, incidunt accusantium quae, officia, doloremque eius? Vero deleniti soluta, totam nam ea quo recusandae cupiditate.</p>
-	                </div>
-	            </div>
-	        </div>
-	    </header>
+		<header class="case-study">
+
+		    <div class="container container--header">
+		        <div class="header-title">
+		            <p class="tag">Motion: Case Study</p>
+		            <h1>Barclays <br />
+		                <span class="light underlined">Integrity</span>
+		            </h1>
+		            <h2 class="light">FILM | MOTION | 3D</h2>
+		        </div>
+		    </div>
+		</header>
