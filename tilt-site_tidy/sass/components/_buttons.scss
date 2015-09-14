@@ -49,7 +49,9 @@ a{
 .cube--front,.cub--top {
 	background: $c-bg;
     border: 1px solid white;
-	height: 30px;
+	height: 50px;
+    border-radius: 2px;
+    padding: 10px 40px 10px 24px;
 
     .map-overlay & {
         background: transparent;
@@ -68,8 +70,8 @@ a{
 
 .cub--top {
     background-color: white;
-	-webkit-transform: rotateX(-90deg) translateZ(-15px);
-	transform: rotateX(-90deg) translateZ(-15px);
+	-webkit-transform: rotateX(-90deg) translateZ(-25px);
+	transform: rotateX(-90deg) translateZ(-25px);
 
     p{
         color: $c-bg;

@@ -23,15 +23,27 @@
 
 <body <?php body_class(); ?>>
 	<div class="wrapper">
-		<header class="case-study">
-
-		    <div class="container container--header">
-		        <div class="header-title">
-		            <p class="tag">Motion: Case Study</p>
-		            <h1>Barclays <br />
-		                <span class="light underlined">Integrity</span>
-		            </h1>
-		            <h2 class="light">FILM | MOTION | 3D</h2>
-		        </div>
-		    </div>
-		</header>
+		<header id="home-page" class="work-item work-item--motion area-dark">
+	        <div class="module--video module--header">
+	            <div id="header-play" class="header-play">
+	            </div>
+	            <div class="ratio">
+	                <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+	                        <source id="header-video" src="video/test-video.mp4" type="video/mp4">
+	                </video>
+	            </div>
+	        </div>
+	        <div class="container container--header">
+	            <div class="text-container">
+	                <p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+	                <div class="cube">
+	                	<div class="cube--front">
+	                		<p class="sans-serif">Contact Us</p>
+	                	</div>
+	                	<div class="cub--top">
+	                		<p class="sans-serif">Please</p>
+	                	</div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>

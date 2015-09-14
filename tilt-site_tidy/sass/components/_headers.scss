@@ -153,3 +153,23 @@ header{
         opacity: 1;
     }
 }
+
+#home-page{
+
+    @media handheld, screen and (min-width: $bp-desktop){
+
+    }
+
+    .first-para{
+        &:before{
+            height: 18px;
+            width: 18px;
+            background-color: $c-tilt-pink;
+        }
+    }
+
+    .container{
+        padding: 0 percentage(381/2032);
+        height: 545px;
+    }
+}
