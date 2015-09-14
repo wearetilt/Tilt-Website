@@ -97,6 +97,7 @@
         margin: auto;
         transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
         transform: scale(1);
+        overflow: hidden;
 
         header & {
 

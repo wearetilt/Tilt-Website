@@ -51,7 +51,11 @@ a{
     border: 1px solid white;
 	height: 50px;
     border-radius: 2px;
-    padding: 10px 40px 10px 24px;
+    padding: 10px 60px 10px 24px;
+
+    p{
+        text-align: left;
+    }
 
     .map-overlay & {
         background: transparent;
@@ -64,8 +68,8 @@ a{
 
 /* Position the faces */
 .cube--front {
-	-webkit-transform: translateZ(15px);
-	transform: translateZ(15px);
+	-webkit-transform: translateZ(25px);
+	transform: translateZ(25px);
 }
 
 .cub--top {
@@ -82,4 +86,8 @@ a{
 .cube:hover {
 	-webkit-transform: rotateX(90deg);
 	transform: rotateX(90deg); /* Text bleed at 90º */
+}
+
+.cube--front__no-bg{
+    background-color: transparent;
 }

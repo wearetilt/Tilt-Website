@@ -610,6 +610,7 @@ Create your own skin at http://designer.videojs.com
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    overflow: hidden;
 }
 .video-js .vjs-tech {
     position: absolute;
