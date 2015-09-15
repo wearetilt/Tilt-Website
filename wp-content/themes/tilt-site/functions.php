@@ -287,7 +287,7 @@ add_action( 'wp_enqueue_scripts', 'twentyfifteen_post_nav_background' );
  */
 function add_custom_taxonomies() {
   // Add new "Locations" taxonomy to Posts
-  register_taxonomy('work', 'work_item', array(
+  register_taxonomy('work', 'page', array(
     // Hierarchical taxonomy (like categories)
     'hierarchical' => true,
     // This array of options controls the labels displayed in the WordPress Admin UI
