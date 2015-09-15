@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<!-- <body <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 	<nav>
         <div class="header-item header-item--logo">
         </div>
@@ -36,9 +36,9 @@
                 <li class="menu__item"><a href="">Contact</a></li>
             </ul>
         </div> <!-- /end menu -->
-    <!--</nav>
+    </nav>
 	<div class="wrapper"> <!-- Open Wrapper -->
-		<!--<header id="home-page" class="work-item work-item--motion area-dark">
+		<header id="home-page" class="work-item work-item--motion area-dark">
 	        <div class="module--video module--header">
 				<div id="header-play" class="header-play">
 
@@ -74,4 +74,4 @@
 	                </div>
 	            </div>
 	        </div>
-	    </div> -->
+	    </div>

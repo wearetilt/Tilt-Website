@@ -280,6 +280,84 @@ function twentyfifteen_post_nav_background() {
 add_action( 'wp_enqueue_scripts', 'twentyfifteen_post_nav_background' );
 
 /**
+ * Add custom taxonomies
+ *
+ * Additional custom taxonomies can be defined here
+ * http://codex.wordpress.org/Function_Reference/register_taxonomy
+ */
+function add_custom_taxonomies() {
+  // Add new "Locations" taxonomy to Posts
+  register_taxonomy('work', 'work_item', array(
+    // Hierarchical taxonomy (like categories)
+    'hierarchical' => true,
+    // This array of options controls the labels displayed in the WordPress Admin UI
+    'labels' => array(
+      'name' => _x( 'Work Item Types', 'taxonomy general name' ),
+      'singular_name' => _x( 'Work Item Type', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Work Item Types' ),
+      'all_items' => __( 'All Work Item Types' ),
+      'parent_item' => __( 'None' ),
+      'parent_item_colon' => __( 'None:' ),
+      'edit_item' => __( 'Edit Work Item Type' ),
+      'update_item' => __( 'Update Work Item Type' ),
+      'add_new_item' => __( 'Add New Work Item Type' ),
+      'new_item_name' => __( 'New Work Item Name Type' ),
+      'menu_name' => __( 'Work Item Types' ),
+    ),
+    // Control the slugs used for this taxonomy
+    'rewrite' => array(
+      'slug' => 'work', // This controls the base slug that will display before each term
+      'with_front' => false, // Don't display the category base before "/locations/"
+      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+    ),
+  ));
+}
+add_action( 'init', 'add_custom_taxonomies', 0 );
+
+function work_item_post_type() {
+
+	$labels = array(
+		'name'                => 'Work Items',
+		'singular_name'       => 'Work Item',
+		'menu_name'           => 'Work Items',
+		'name_admin_bar'      => 'Work Items',
+		'parent_item_colon'   => 'Parent Item:',
+		'all_items'           => 'All Work Items',
+		'add_new_item'        => 'Add Work Item',
+		'add_new'             => 'Add New Work Item',
+		'new_item'            => 'New Work Item',
+		'edit_item'           => 'Edit Work Item',
+		'update_item'         => 'Update Work Item',
+		'view_item'           => 'View Work Item',
+		'search_items'        => 'Search  Work Item',
+		'not_found'           => 'Not found',
+		'not_found_in_trash'  => 'Not found in Trash',
+	);
+	$args = array(
+		'label'               => 'Work Item',
+		'description'         => 'Work Items go here',
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
+		'taxonomies'          => array( 'work' ),
+		'hierarchical'        => true,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'work_item', $args );
+
+}
+add_action( 'init', 'work_item_post_type', 0 );
+
+/**
  * Display descriptions in main navigation.
  *
  * @since Twenty Fifteen 1.0
@@ -311,6 +389,8 @@ function twentyfifteen_search_form_modify( $html ) {
 	return str_replace( 'class="search-submit"', 'class="search-submit screen-reader-text"', $html );
 }
 add_filter( 'get_search_form', 'twentyfifteen_search_form_modify' );
+
+
 
 /**
  * Implement the Custom Header feature.
