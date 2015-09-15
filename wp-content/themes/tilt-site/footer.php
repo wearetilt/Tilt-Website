@@ -10,23 +10,39 @@
  */
 ?>
 
-	</div><!-- .site-content -->
+<footer id="footer" class="area-dark">
+	<div class="container">
+		<div class="text-container">
+			<p class="first-para sans-serif"><strong class="highlight">Like what you see?</strong> NULLAM ID DOLOR ID NIBH ULTRICIES VEHICULA UT ID ELIT. DONEC ID ELIT NON MI PORTA GRAVIDA AT EGET METUS. CURABITUR BLANDIT TEMPUS PORTTITOR.</p>
+			<div class="cube">
+				<div class="cube--front">
+					<p class="sans-serif">Contact Us</p>
+				</div>
+				<div class="cub--top">
+					<p class="sans-serif">Please</p>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /end container -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<?php
-				/**
-				 * Fires before the Twenty Fifteen footer text for footer customization.
-				 *
-				 * @since Twenty Fifteen 1.0
-				 */
-				do_action( 'twentyfifteen_credits' );
-			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfifteen' ), 'WordPress' ); ?></a>
-		</div><!-- .site-info -->
-	</footer><!-- .site-footer -->
+	<div id="signoff" class="group-container group-container--no-bg">
+		<div class="footer-icons">
+			<div id="footer-icon-1" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+			<div id="footer-icon-2" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+			<div id="footer-icon-3" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+			<div id="footer-icon-4" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+			<div id="footer-icon-5" class="footer-icon"><a href="http://www.google.com" target="_blank" ></a></div>
+			<div class="telephone">
+				<span>Tel: + 44(0)1273 675 700</span>
+			</div>
+		</div> <!-- /end footer-icons -->
 
-</div><!-- .site -->
+		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather and Rooney Pro. All content copyright 2015 We Are Tilt Ltd. All rights reserved.</p>
+	</div>
+
+</footer>
+<script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+<script src="http://vjs.zencdn.net/4.12/video.js"></script>
 
 <?php wp_footer(); ?>
 
