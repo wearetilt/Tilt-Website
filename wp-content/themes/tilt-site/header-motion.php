@@ -45,7 +45,7 @@
 	            </div>
 	            <div class="ratio">
 	                <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-	                        <source id="header-video" src="video/test-video.mp4" type="video/mp4">
+	                        <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
 	                </video>
 	            </div>
 	        </div>
