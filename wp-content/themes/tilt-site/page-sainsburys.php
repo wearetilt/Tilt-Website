@@ -13,6 +13,5 @@
 
 get_header(); ?>
 
-<p>SAINSBURY'S</p>
 
 <?php get_footer(); ?>
