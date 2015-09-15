@@ -826,7 +826,7 @@ document.getElementById('header-play').addEventListener('click', function(){
 
 myPlayer.on('fullscreenchange', function(){
     if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
-        myPlayer.src("video/test-video.mp4");
+        myPlayer.src("/video/test-video.mp4");
         myPlayer.controls(false);
         myPlayer.muted(false);
     }

@@ -40,7 +40,7 @@ get_header(); ?>
 							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
-					<div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
+					<div class="ratio" style="background-image: url('<?php print(get_template_directory_uri()); ?>/images/video-placeholder.jpg')">
 					</div>
 				</div>
 			</div> <!-- /end group -->
@@ -62,7 +62,7 @@ get_header(); ?>
 							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
-					<div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
+					<div class="ratio" style="background-image: url('<?php print(get_template_directory_uri()); ?>/images/video-placeholder.jpg')">
 					</div>
 				</div>
 			</div>

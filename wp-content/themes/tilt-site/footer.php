@@ -41,7 +41,7 @@
 	</div>
 
 </footer>
-<script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+<script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
 <script src="http://vjs.zencdn.net/4.12/video.js"></script>
 
 <?php wp_footer(); ?>

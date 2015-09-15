@@ -40,6 +40,9 @@
 	<div class="wrapper"> <!-- Open Wrapper -->
 		<header id="home-page" class="work-item work-item--motion area-dark">
 	        <div class="module--video module--header">
+				<div id="header-play" class="header-play">
+
+				</div>
 	            <div class="ratio">
 	                <div class="container container--header strapline-container">
 	                    <h1>We Are <strong id="strapline-text" class="highlight">Time Travellers</strong></h1>
@@ -53,7 +56,7 @@
 	                    </div>
 	                </div>
 	                <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-	                        <source id="header-video" src="video/test-video.mp4" type="video/mp4">
+	                        <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
 	                </video>
 	            </div>
 	        </div>
