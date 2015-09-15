@@ -13,6 +13,6 @@
 
 get_header(); ?>
 
-<p>SDNPA</p>
+<p>ICAP</p>
 
 <?php get_footer(); ?>

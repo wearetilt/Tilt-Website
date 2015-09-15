@@ -13,6 +13,6 @@
 
 get_header(); ?>
 
-<p>SDNPA</p>
+<p>SAINSBURY'S</p>
 
 <?php get_footer(); ?>

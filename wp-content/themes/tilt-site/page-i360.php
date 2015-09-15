@@ -13,6 +13,6 @@
 
 get_header(); ?>
 
-<p>SDNPA</p>
+<p>I360</p>
 
 <?php get_footer(); ?>
