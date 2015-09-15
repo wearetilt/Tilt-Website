@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/global.min.css': 'sass/global.scss'
+					'../wp-content/themes/tilt-site/css/global.min.css': 'sass/global.scss'
 				}
 			}
 		},
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 				]
 			  },
 			  dist: {
-				src: 'css/*.css'
+				src: '../wp-content/themes/tilt-site/css/*.css'
 			  }
 			}
 	});

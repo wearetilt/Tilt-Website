@@ -5,6 +5,7 @@ Copyright © 2011-2015 Caleb Troughton
 Licensed under the MIT license.
 https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 */
+var resourceUri;
 (function() {
   'use strict'
 
@@ -813,6 +814,7 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
 }
 
 var myPlayer =  videojs('header-video-player');
+    myPlayer.play();
 
 document.getElementById('header-play').addEventListener('click', function(){
         myPlayer.ready(function(){
@@ -826,7 +828,7 @@ document.getElementById('header-play').addEventListener('click', function(){
 
 myPlayer.on('fullscreenchange', function(){
     if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
-        myPlayer.src("/video/test-video.mp4");
+        myPlayer.src("../video/test-video.mp4");
         myPlayer.controls(false);
         myPlayer.muted(false);
     }
