@@ -11,7 +11,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header('interactive'); ?>
+get_header(); ?>
 
 <header id="icap" class="work-item area-dark">
     <div class="monitor">
