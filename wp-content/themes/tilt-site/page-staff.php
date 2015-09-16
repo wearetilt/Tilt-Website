@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div class="container container--no-padding">
 		<div class="group-container">
-			<div id="Staff-1" class="module module--staff module--video module--staff__director" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-1" class="module module--staff module--video module--staff__director">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -23,7 +23,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-2" class="module module--staff module--video module--staff__director" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-2" class="module module--staff module--video module--staff__director">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -31,7 +31,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-3" class="module module--staff module--video module--staff__director" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-3" class="module module--staff module--video module--staff__director">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -39,7 +39,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-4" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-4" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -47,7 +47,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-5" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-5" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -55,7 +55,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-6" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-6" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -63,7 +63,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-7" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-7" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -71,7 +76,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-8" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-8" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -79,7 +89,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-9" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-9" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -87,7 +102,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-10" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-10" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -95,7 +115,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-11" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-11" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -103,7 +128,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-12" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-12" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -111,7 +141,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-13" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-13" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -119,7 +154,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-14" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-14" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -127,7 +167,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-15" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-15" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -135,7 +180,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-16" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-16" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -143,7 +193,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-17" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-17" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -151,7 +206,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-18" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-18" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>
@@ -159,7 +219,12 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			<div id="Staff-19" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/test-screen-video.png')">
+			<div id="Staff-19" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/test-screen-video.png'); background-size: cover; background-position: 50% 50%;">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Stig Coldham</h2>

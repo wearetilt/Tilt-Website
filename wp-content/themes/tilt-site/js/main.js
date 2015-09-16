@@ -930,20 +930,21 @@ var getScrollPosition = function(){
 var staff = document.getElementsByClassName('module');
 for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
     staffMember = staff[iterator3];
+
+
+    document.getElementById('Staff-' + (iterator3 + 1)).innerHTML = '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
+
     var ratio = staffMember.children[0];
     var video = ratio.children[0];
-
-    // video = document.getElementById('videoIWant');
+    //Some closure magic to get this working.
     (function(){
-        // var videoIWant = video;
-        var staffMemberIWant = staffMember;
+        var videoIWant = video;
         staffMember.addEventListener('mouseenter', function(event, video){
-                var videoToAppend = document.createElement('<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="/video/test-video.mp4" type="video/mp4"></video></div>');
-                staffMemberIWant.appendChild(videoToAppend);
+                videoIWant.play();
         });
 
         staffMember.addEventListener('mouseleave', function(event, video){
-                // videoIWant.pause();
+                videoIWant.pause();
         });
     })();
 
