@@ -863,6 +863,8 @@ var startingWidth;
 var leftPosition;
 var topPosition;
 var rect;
+var scrollPosition;
+var doc = document.documentElement;
 
 menuButton.onclick = function(){
     [].map.call(document.querySelectorAll('.wrapper'), function(el){
@@ -908,7 +910,8 @@ var populateAndSizeStaffInfo = function(staffBox, staffObject){
 
 var hideStaffBoxAndAllowScrolling = function(staffBox){
     staffBox.style.display = 'none';
-    document.body.classList.remove('stop-scrolling');
+    // document.body.classList.remove('stop-scrolling');
+    console.log("scrollPosition = " + scrollPosition);
 }
 
 var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPosition, topPosition){
@@ -916,6 +919,11 @@ var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPositi
     staffBox.style.width = startingWidth;
     staffBox.style.left = leftPosition;
     staffBox.style.top = topPosition;
+}
+
+var getScrollPosition = function(){
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+    return top;
 }
 
 
@@ -934,11 +942,14 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         startingWidth = window.getComputedStyle(this).width;
         leftPosition = (rect['left'] + 'px');
         topPosition = (rect['top'] + 'px');
-        document.body.classList.add('stop-scrolling');
+        // document.body.classList.add('stop-scrolling');
+        scrollPosition = getScrollPosition();
+        console.log("scrollPosition onClick = " + scrollPosition)
 
         staffBoxClose.onclick = function(){
             document.getElementById('staff-member__wrapper').style.opacity = '0';
             document.getElementById('staff-member__info').style.opacity = '0';
+            window.scrollTo(0, scrollPosition);
 
             setTimeout(function(){
                 resetStaffBox(staffBox, startingHeight, startingWidth, leftPosition, topPosition);

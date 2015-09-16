@@ -79,15 +79,6 @@ get_header(); ?>
 				</div>
 			</div>
 			<div id="Staff-10" class="module module--staff module--video">
-				<div class="overlay overlay--staff area-dark">
-					<div class="overlay-text">
-						<p class="tag">Motion: Case Study</p>
-						<h2>Barclays <br />
-							<span class="light underlined">Integrity</span>
-						</h2>
-						<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
-					</div> <!-- /end overlay-text -->
-				</div> <!-- /end overlay -->
 				<div class="ratio">
 					<video poster="images/test-screen-video.png" loop="false" muted="true">
 							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
@@ -157,18 +148,6 @@ get_header(); ?>
 					</video>
 				</div>
 			</div>
-			<div id="staff-member">
-				<div id="staff-member__wrapper">
-					<div id="staff-member__info" class="area-dark no-background">
-						<div id="staff-member__close"></div>
-						<h1 id="staff-member__name"></h1>
-						<h2 id="staff-member__position"></h2>
-						<h2 id="staff-member__department"></h2>
-						<p id="staff-member__about" class="first-para"></p>
-						<p id="staff-member__did-you-know" class="sans-serif"></p>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -199,6 +178,19 @@ get_header(); ?>
 	httpRequest.send(null);
 	</script>
 
+</div>
+
+<div id="staff-member">
+	<div id="staff-member__wrapper">
+		<div id="staff-member__info" class="area-dark no-background">
+			<div id="staff-member__close"></div>
+			<h1 id="staff-member__name"></h1>
+			<h2 id="staff-member__position"></h2>
+			<h2 id="staff-member__department"></h2>
+			<p id="staff-member__about" class="first-para"></p>
+			<p id="staff-member__did-you-know" class="sans-serif"></p>
+		</div>
+	</div>
 </div>
 
 <?php get_footer(); ?>
