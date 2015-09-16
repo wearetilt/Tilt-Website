@@ -930,6 +930,24 @@ var getScrollPosition = function(){
 var staff = document.getElementsByClassName('module');
 for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
     staffMember = staff[iterator3];
+    var ratio = staffMember.children[0];
+    var video = ratio.children[0];
+
+    // video = document.getElementById('videoIWant');
+    (function(){
+        // var videoIWant = video;
+        var staffMemberIWant = staffMember;
+        staffMember.addEventListener('mouseenter', function(event, video){
+                var videoToAppend = document.createElement('<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="/video/test-video.mp4" type="video/mp4"></video></div>');
+                staffMemberIWant.appendChild(videoToAppend);
+        });
+
+        staffMember.addEventListener('mouseleave', function(event, video){
+                // videoIWant.pause();
+        });
+    })();
+
+
 
     staffMember.onclick = function (){
         staffMember = this.id;
