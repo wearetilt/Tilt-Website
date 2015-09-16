@@ -31,6 +31,10 @@
     &:hover .ratio{
         transform: scale(1.05);
     }
+
+    &.module--staff:hover .ratio{
+        transform: scale(1);
+    }
 }
 
 .module--visible{
@@ -125,6 +129,14 @@
 
         &:hover{
             transform: scale(1.05);
+        }
+    }
+
+    &.module--staff{
+        video{
+            &:hover{
+                transform: scale(1);
+            }
         }
     }
 
