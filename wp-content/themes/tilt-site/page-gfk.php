@@ -13,6 +13,38 @@
 
 get_header('motion'); ?>
 
+<header class="work-item work-item--motion area-dark">
+    <div class="module--video module--header">
+        <div id="header-play" class="header-play">
+
+        </div>
+        <div class="ratio">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag tag--no-italic">Motion</p>
+            <h1>GFK<br />
+                <span class="light underlined">Brand Promo</span>
+            </h1>
+            <h2 class="light">CS | Motion | 3D</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padding">
+                <h2>The Challenge</h2>
+                <p class="first-para">How do you explain the many different services of a global company as complex and diverse as GfK in a single video piece? </p>
+            </div>
+            <div class="header-text__module header-text__module--padding">
+                <h2>The solution</h2>
+                <p class="first-para">Use motion graphics to keep things bold, clear and simple, telling the GfK story in just 90 seconds. </p>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div class="container container--half-top">
     <div class="group-container">
         <div class="group group--left">
@@ -44,8 +76,9 @@ get_header('motion'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <h2 class="underlined">What we did</h2>
+                        <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
+                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in. </p>
                     </div>
                 </div>
                 <div class="module module--2-1"></div>
@@ -63,8 +96,8 @@ get_header('motion'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <p>“Tilt helped us realise a great 90 second 3D animation with VO. The production allowed us to simplify our complete matrix portfolio in the rapidly changing market research industry. The project was well organised and the team a pleasure to work with.” </p>
+                        <p>Glenn Ward - Global Director, Digital Marketing at GfK</p>
                     </div>
                 </div>
             </div>

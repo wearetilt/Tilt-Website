@@ -13,6 +13,31 @@
 
 get_header('interactive'); ?>
 
+<header id="icap" class="work-item area-dark">
+    <div class="monitor">
+        <img class="centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag">Sainsbury&lsquo;s</p>
+            <h1>History Timelins<br />
+                <span class="light underlined">Interactive microsite for Earth - A New Wild</span>
+            </h1>
+            <h2 class="light">Design | Development | Motion | 3D</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padded">
+                <h2>The challenge</h2>
+                <p class="first-para">Convey Sainsbury’s prestigious history in a way that excites and engages people way beyond the usual flat and lifeless company timelines.</p>
+            </div>
+            <div class="header-text__module">
+                <h2>The solution</h2>
+                <p class="first-para">Flip the static corporate timeline on its head and take people on a journey through Sainsbury’s history via a user-controlled 3D perspective interface. </p>
+            </div>
+        </div>
+    </div>
+</header>
+
     <div class="container container--carousel">
         <section class="carousel">
             <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
@@ -37,8 +62,9 @@ get_header('interactive'); ?>
                 <div class="group group--left">
                     <div class="module module--2-1 area-dark">
                         <div class="module__text">
-                            <h2 class="underlined">The Process</h2>
-                            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                            <h2 class="underlined">What we did</h2>
+                            <p class="first-para">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
+                            <p>We created a unique iterative loader to deliver a smooth experience. And our modular approach to the timeline build makes it easy to embed on other sites.</p>
                         </div>
                     </div>
                     <div class="module module--2-1"></div>
@@ -56,8 +82,8 @@ get_header('interactive'); ?>
                 <div class="group group--left">
                     <div class="module module--2-1 area-dark">
                         <div class="module__text">
-                            <h2 class="underlined">The Process</h2>
-                            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                            <p>“We are really happy with the result and it has been getting great feedback internally. I am so pleased with the work you have produced, it would be really great if you were able to work with other teams in Sainsbury’s as well as L&amp;D.”</p>
+                            <p>Joe Kelly - Behavioural Specialist in Learning &amp; Development</p>
                         </div>
                     </div>
                 </div>

@@ -13,6 +13,31 @@
 
 get_header('interactive'); ?>
 
+<header id="icap" class="work-item area-dark">
+    <div class="monitor">
+        <img class="centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag">Interactive</p>
+            <h1>Alzheimer's Research UK<br />
+                <span class="light underlined">Interactive Website: The Lab</span>
+            </h1>
+            <h2 class="light">UX | DESIGN | DEVELOPMENT | MOTION | DEVELOPMENT</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padded">
+                <h2>The Challenge</h2>
+                <p class="first-para">How can you move people to really understand Alzheimer’s Disease, see the life-saving importance of drug development, and motivate them to donate?</p>
+            </div>
+            <div class="header-text__module">
+                <h2>The solution</h2>
+                <p class="first-para">Bring a dementia research lab to life. Help people understand through interaction. Pack an emotional punch by personalising the experience. Make it easy to share through social. </p>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div class="container container--carousel">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
@@ -37,8 +62,9 @@ get_header('interactive'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <h2 class="underlined">What we did</h2>
+                        <p class="first-para">We developed the Lab, an experiential site that takes users on a journey through the drug development process. The Lab opens with an emotive question: “What if you couldn’t remember your family and friends?”.</p>
+                        <p>The challenge then was how to create informative and interactive content that was bold enough to get people talking and practical enough to drive donations.</p>
                     </div>
                 </div>
                 <div class="module module--2-1"></div>
@@ -56,8 +82,9 @@ get_header('interactive'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <h2 class="underlined">Quote</h2>
+                        <p class="first-para">“Tilt created a sleek and engaging website, which really brought our ideas to life. Their creative thinking presented us with ideas and functionality beyond our expectations that worked superbly in making the Lab a captivating and interactive experience for visitors.”</p>
+                        <p>Laura Phipps, Science Communications Manager</p>
                     </div>
                 </div>
             </div>

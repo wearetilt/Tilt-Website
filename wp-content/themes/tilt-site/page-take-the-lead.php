@@ -13,6 +13,38 @@
 
 get_header('motion'); ?>
 
+<header class="work-item work-item--motion area-dark">
+    <div class="module--video module--header">
+        <div id="header-play" class="header-play">
+
+        </div>
+        <div class="ratio">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag tag--no-italic">Motion</p>
+            <h1>South Downs National Park<br />
+                <span class="light underlined">Take the lead</span>
+            </h1>
+            <h2 class="light">CS | Illustration | Motion</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padding">
+                <h2>The Challenge</h2>
+                <p class="first-para">How can you change the behaviour of irresponsible dog owners in the South Downs National Park, without being patronising?</p>
+            </div>
+            <div class="header-text__module header-text__module--padding">
+                <h2>The solution</h2>
+                <p class="first-para">Create an animated piece with a playful, warm tone that delivers serious messages underneath – the spoonful of sugar that helps the medicine go down.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div class="container container--half-top">
     <div class="group-container">
         <div class="group group--left">
@@ -44,8 +76,8 @@ get_header('motion'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <h2 class="underlined">What we did</h2>
+                        <p class="first-para">We created a Creature Comforts-inspired animated film with a light-hearted tone. We interviewed dog walkers on the South Downs about responsible dog ownership and then put their words into the mouths of animated pets. The client hoped to get 1,000 unique views within the first week, but the piece went viral and was watched more than 10,000 times in seven days.</p>
                     </div>
                 </div>
                 <div class="module module--2-1"></div>
@@ -63,8 +95,9 @@ get_header('motion'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <p>The finished film was seen by thousands and as a result we were commissioned to rebuild the main South Downs website.</p>
+                        <p>“Everyone thinks the film is really great and funny and I'm very impressed with the final product too!”</p>
+                        <p>Nick Stewart - Programme Manager</p>
                     </div>
                 </div>
             </div>

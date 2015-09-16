@@ -13,6 +13,38 @@
 
 get_header('motion'); ?>
 
+<header class="work-item work-item--motion area-dark">
+    <div class="module--video module--header">
+        <div id="header-play" class="header-play">
+
+        </div>
+        <div class="ratio">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag tag--no-italic">Film</p>
+            <h1>South Downs National Park<br />
+                <span class="light underlined">Discover Another Way</span>
+            </h1>
+            <h2 class="light">CS | Film | 3D</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padding">
+                <h2>The Challenge</h2>
+                <p class="first-para">How can you encourage people to take public transport to the beautiful South Downs National Park, and even make them excited to do so? </p>
+            </div>
+            <div class="header-text__module header-text__module--padding">
+                <h2>The solution</h2>
+                <p class="first-para">Merge film and motion graphics to create a magical experience that brings an entire journey to the South Downs to life through the eyes of a child. </p>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div class="container container--half-top">
     <div class="group-container">
         <div class="group group--left">
@@ -36,13 +68,6 @@ get_header('motion'); ?>
             <div class="module module--2-1"></div>
         </div> <!-- /end group -->
     </div> <!-- /end group-container -->
-    <section class="text-section">
-        <h2>Welcome to Tilt</h2>
-        <div class="text-section__para">
-            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
-        </div>
-    </section> <!-- /end text-section -->
 </div>
 
 <div class="container container--no-padding">
@@ -51,8 +76,8 @@ get_header('motion'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <h2 class="underlined">What we did</h2>
+                        <p class="first-para">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood. </p>
                     </div>
                 </div>
                 <div class="module module--2-1"></div>
@@ -70,8 +95,7 @@ get_header('motion'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <p>The client was delighted with the film and we have since been commissioned to produce other projects for South Downs National Park. The film has been viewed more than 25,000 times since launch – far exceeding expectations. </p>
                     </div>
                 </div>
             </div>

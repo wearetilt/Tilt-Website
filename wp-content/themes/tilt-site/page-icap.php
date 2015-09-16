@@ -13,6 +13,31 @@
 
 get_header('interactive'); ?>
 
+<header id="icap" class="work-item area-dark">
+    <div class="monitor">
+        <img class="centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag">Interactive</p>
+            <h1>ICAP<br />
+                <span class="light underlined">Graduate Portal</span>
+            </h1>
+            <h2 class="light">UX | VISUAL DESIGN | DEVELOPMENT</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padded">
+                <h2>The brief</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum, recusandae nobis nulla sapiente repellendus quia odio! Quibusdam veritatis placeat qui omnis doloremque rem veniam itaque tenetur inventore, amet, voluptates.</p>
+            </div>
+            <div class="header-text__module">
+                <h2>The solution</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic reiciendis perspiciatis voluptate numquam, laboriosam, incidunt accusantium quae, officia, doloremque eius? Vero deleniti soluta, totam nam ea quo recusandae cupiditate.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div class="container container--carousel">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
