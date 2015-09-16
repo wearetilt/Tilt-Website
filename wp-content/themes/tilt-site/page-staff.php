@@ -11,26 +11,152 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header('contact'); ?>
+get_header(); ?>
 
 	<div class="container container--no-padding">
 		<div class="group-container">
-			<div id="Staff-1" class="module module--staff"></div>
-			<div id="Staff-2" class="module module--staff"></div>
-			<div id="Staff-3" class="module module--staff"></div>
-			<div id="Staff-4" class="module module--staff"></div>
-			<div id="Staff-5" class="module module--staff"></div>
-			<div id="Staff-6" class="module module--staff"></div>
-			<div id="Staff-7" class="module module--staff"></div>
-			<div id="Staff-8" class="module module--staff"></div>
-			<div id="Staff-9" class="module module--staff"></div>
-			<div id="Staff-10" class="module module--staff"></div>
-			<div id="Staff-11" class="module module--staff"></div>
-			<div id="Staff-12" class="module module--staff"></div>
-			<div id="Staff-13" class="module module--staff"></div>
-			<div id="Staff-14" class="module module--staff"></div>
-			<div id="Staff-15" class="module module--staff"></div>
-			<div id="Staff-16" class="module module--staff"></div>
+			<div id="Staff-1" class="module module--staff module--video module--staff__director">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-2" class="module module--staff module--video module--staff__director">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-3" class="module module--staff module--video module--staff__director">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-4" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-5" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-6" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-7" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-8" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-9" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-10" class="module module--staff module--video">
+				<div class="overlay overlay--staff area-dark">
+					<div class="overlay-text">
+						<p class="tag">Motion: Case Study</p>
+						<h2>Barclays <br />
+							<span class="light underlined">Integrity</span>
+						</h2>
+						<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
+					</div> <!-- /end overlay-text -->
+				</div> <!-- /end overlay -->
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-11" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-12" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-13" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-14" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-15" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-16" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-17" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-18" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div id="Staff-19" class="module module--staff module--video">
+				<div class="ratio">
+					<video poster="images/test-screen-video.png" loop="false" muted="true">
+							<source src="<?php echo get_template_directory_uri();?>/video/test-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
 			<div id="staff-member">
 				<div id="staff-member__wrapper">
 					<div id="staff-member__info" class="area-dark no-background">
@@ -65,9 +191,14 @@ get_header('contact'); ?>
 	    }
 	};
 
-	httpRequest.open('GET', 'http://10.5.10.103/tilt-website/tilt-site_tidy/staff.json', true);
+	window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
+	console.log(window.directoryURI);
+
+	httpRequest.open('GET', 'http://localhost/tilt-website/tilt-site_tidy/staff.json', true);
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
 	</script>
+
+</div>
 
 <?php get_footer(); ?>

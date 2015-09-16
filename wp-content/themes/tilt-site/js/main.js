@@ -813,26 +813,30 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
     }
 }
 
-var myPlayer =  videojs('header-video-player');
-    myPlayer.play();
+if(document.getElementById('header-video-layer')){
+    var myPlayer =  videojs('header-video-player');
+        myPlayer.play();
 
-document.getElementById('header-play').addEventListener('click', function(){
-        myPlayer.ready(function(){
-            myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
-            myPlayer.requestFullscreen();
-            myPlayer.play();
-            myPlayer.controls(true);
-            console.log(myPlayer.controls());
-        });
-});
+    document.getElementById('header-play').addEventListener('click', function(){
+            myPlayer.ready(function(){
+                myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
+                myPlayer.requestFullscreen();
+                myPlayer.play();
+                myPlayer.controls(true);
+                console.log(myPlayer.controls());
+            });
+    });
 
-myPlayer.on('fullscreenchange', function(){
-    if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
-        myPlayer.src("../video/test-video.mp4");
-        myPlayer.controls(false);
-        myPlayer.muted(false);
-    }
-});
+    myPlayer.on('fullscreenchange', function(){
+        if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
+            myPlayer.src("../video/test-video.mp4");
+            myPlayer.controls(false);
+            myPlayer.muted(false);
+        }
+    });
+}
+
+
 
 var staff = document.getElementsByClassName('module');
 for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
@@ -886,7 +890,7 @@ var lookUpStaffMember = function(staffMember){
 var fadeInStaffInfo = function(staffObject){
     document.getElementById('staff-member__info').style.opacity = '1';
     document.getElementById('staff-member__wrapper').style.opacity = '1';
-    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + staffObject.image + ')';
+    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + window.directoryURI + '/' + staffObject.image + ')';
 }
 
 var populateAndSizeStaffInfo = function(staffBox, staffObject){

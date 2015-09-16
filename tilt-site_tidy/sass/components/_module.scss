@@ -3,7 +3,6 @@
     visibility: hidden;
     overflow: hidden;
     opacity: 0;
-    // TODO: Uncomment this when done with new features.
     position: relative;
     transition: all 0.5s ease;
     &.module--dark{
@@ -31,6 +30,10 @@
     }
     &:hover .ratio{
         transform: scale(1.05);
+    }
+
+    &.module--staff:hover .ratio{
+        transform: scale(1);
     }
 }
 
@@ -68,9 +71,15 @@
     width: 25%;
     padding-top: 25%;
     height: 1px;
+    float: left;
+}
+
+.module--staff__director{
+    width: 33.33333%;
+    padding-top: 33.33333%;
+    height: 1px;
     background-color: #CCCCCC;
     float: left;
-    border: 1px solid black;
 }
 
 .ratio{
@@ -120,6 +129,14 @@
 
         &:hover{
             transform: scale(1.05);
+        }
+    }
+
+    &.module--staff{
+        video{
+            &:hover{
+                transform: scale(1);
+            }
         }
     }
 
