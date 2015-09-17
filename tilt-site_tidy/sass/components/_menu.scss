@@ -3,16 +3,25 @@ nav{
 }
 
 .header-item{
-    height: 30px;
-    width: 30px;
     position: fixed;
-    background-color: black;
     z-index: 6;
     will-change: transform;
 }
 
+.header-item--logo{
+    margin-left: 20px;
+    margin-top: 20px;
+
+    img{
+        height: 36px;
+    }
+}
+
 .header-item--menu{
     right: 0;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .menu{

@@ -755,27 +755,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.body.setAttribute("class","loaded");
 });
 
-var menuButton = document.getElementById('menuButton');
-var pageMenu = document.getElementById('pageMenu');
-menuButton.onclick = function(){
-    [].map.call(document.querySelectorAll('.wrapper'), function(el){
-        el.classList.toggle('wrapper--navved');
-    });
-    if(pageMenu.style.visibility === 'inherit'){
-        pageMenu.style.opacity = '0'
-        setTimeout(function(){
-            pageMenu.style.visibility = 'hidden';
-        },300);
-        pageMenu.style.transform = "scale(1.5, 1.5)";
-        document.getElementById('footer').style.display = 'block';
-    } else{
-        pageMenu.style.visibility = 'inherit';
-        pageMenu.style.opacity = 0.98;
-        pageMenu.style.transform = "scale(1, 1)";
-        document.getElementById('footer').style.display = 'none';
-    }
-}
-
 var allModules = document.getElementsByClassName('module');
 
 for (var i = 0; i < allModules.length; i++){
@@ -879,6 +858,7 @@ menuButton.onclick = function(){
         },300);
         pageMenu.style.transform = "scale(1.5, 1.5)";
         document.getElementById('footer').style.display = 'block';
+
     } else{
         pageMenu.style.visibility = 'inherit';
         pageMenu.style.opacity = 0.98;
@@ -936,7 +916,7 @@ if(document.getElementById('staff-member')){
         staffMember = staff[iterator3];
 
 
-        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML += '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
+        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML += '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/Jonny_1_1_low.mp4" type="video/mp4"></video></div>';
 
         var ratio = staffMember.children[1];
         var video = ratio.children[0];
