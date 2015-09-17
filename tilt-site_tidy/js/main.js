@@ -5,6 +5,7 @@ Copyright © 2011-2015 Caleb Troughton
 Licensed under the MIT license.
 https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 */
+var resourceUri;
 (function() {
   'use strict'
 
@@ -812,25 +813,30 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
     }
 }
 
-var myPlayer =  videojs('header-video-player');
+if(document.getElementById('header-video-player')){
+    var myPlayer =  videojs('header-video-player');
+        myPlayer.play();
 
-document.getElementById('header-play').addEventListener('click', function(){
-        myPlayer.ready(function(){
-            myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
-            myPlayer.requestFullscreen();
-            myPlayer.play();
-            myPlayer.controls(true);
-            console.log(myPlayer.controls());
-        });
-});
+    document.getElementById('header-play').addEventListener('click', function(){
+            myPlayer.ready(function(){
+                myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
+                myPlayer.requestFullscreen();
+                myPlayer.play();
+                myPlayer.controls(true);
+                console.log(myPlayer.controls());
+            });
+    });
 
-myPlayer.on('fullscreenchange', function(){
-    if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
-        myPlayer.src("video/test-video.mp4");
-        myPlayer.controls(false);
-        myPlayer.muted(false);
-    }
-});
+    myPlayer.on('fullscreenchange', function(){
+        if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
+            myPlayer.src("../video/test-video.mp4");
+            myPlayer.controls(false);
+            myPlayer.muted(false);
+        }
+    });
+}
+
+
 
 var staff = document.getElementsByClassName('module');
 for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
@@ -844,4 +850,157 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         var staffMemberInfo = this.getAttribute('ID');
         this.classList.add('module--selected');
     }
+}
+
+var menuButton = document.getElementById('menuButton');
+var pageMenu = document.getElementById('pageMenu');
+var staffMember;
+var staffBox;
+var staffObject;
+var staffBoxClose;
+var startingHeight;
+var startingWidth;
+var leftPosition;
+var topPosition;
+var rect;
+var scrollPosition;
+var doc = document.documentElement;
+
+menuButton.onclick = function(){
+    [].map.call(document.querySelectorAll('.wrapper'), function(el){
+        el.classList.toggle('wrapper--navved');
+    });
+    if(pageMenu.style.visibility === 'inherit'){
+        pageMenu.style.opacity = '0'
+        setTimeout(function(){
+            pageMenu.style.visibility = 'hidden';
+        },300);
+        pageMenu.style.transform = "scale(1.5, 1.5)";
+        document.getElementById('footer').style.display = 'block';
+    } else{
+        pageMenu.style.visibility = 'inherit';
+        pageMenu.style.opacity = 0.98;
+        pageMenu.style.transform = "scale(1, 1)";
+        document.getElementById('footer').style.display = 'none';
+    }
+}
+
+var lookUpStaffMember = function(staffMember){
+    return staffData[staffMember];
+}
+
+var fadeInStaffInfo = function(staffObject){
+    document.getElementById('staff-member__info').style.opacity = '1';
+    document.getElementById('staff-member__wrapper').style.opacity = '1';
+    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + window.directoryURI + '/' + staffObject.image + ')';
+}
+
+var populateAndSizeStaffInfo = function(staffBox, staffObject){
+    staffBox.style.height = '100vh';
+    staffBox.style.width = '100%';
+    staffBox.style.left = '0px';
+    staffBox.style.top = '0px';
+    // staffBox.style.transform = 'translate(' + left + ', ' + top + ')';
+    document.getElementById('staff-member__name').innerHTML = staffObject.name;
+    document.getElementById('staff-member__position').innerHTML = staffObject.position;
+    document.getElementById('staff-member__department').innerHTML = staffObject.department;
+    document.getElementById('staff-member__about').innerHTML = staffObject.about;
+    document.getElementById('staff-member__did-you-know').innerHTML = '<strong class="highlight">Did you know?</strong> ' + staffObject["did-you-know"];
+}
+
+var hideStaffBoxAndAllowScrolling = function(staffBox){
+    staffBox.style.display = 'none';
+    // document.body.classList.remove('stop-scrolling');
+    console.log("scrollPosition = " + scrollPosition);
+}
+
+var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPosition, topPosition){
+    staffBox.style.height = startingHeight;
+    staffBox.style.width = startingWidth;
+    staffBox.style.left = leftPosition;
+    staffBox.style.top = topPosition;
+}
+
+var getScrollPosition = function(){
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+    return top;
+}
+
+
+var staff = document.getElementsByClassName('module');
+
+if(document.getElementById('staff-member')){
+    for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
+        staffMember = staff[iterator3];
+
+
+        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML = '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
+
+        var ratio = staffMember.children[0];
+        var video = ratio.children[0];
+        //Some closure magic to get this working.
+        (function(){
+            var videoIWant = video;
+            staffMember.addEventListener('mouseenter', function(event, video){
+                    videoIWant.play();
+            });
+
+            staffMember.addEventListener('mouseleave', function(event, video){
+                    videoIWant.pause();
+            });
+        })();
+
+
+
+        staffMember.onclick = function (){
+            staffMember = this.id;
+            staffObject = lookUpStaffMember(staffMember);
+            staffBox = document.getElementById('staff-member');
+            staffBox.style.display = 'block';
+            staffBoxClose = document.getElementById('staff-member__close');
+            rect = this.getBoundingClientRect();
+            startingHeight = window.getComputedStyle(this).height;
+            startingWidth = window.getComputedStyle(this).width;
+            leftPosition = (rect['left'] + 'px');
+            topPosition = (rect['top'] + 'px');
+            // document.body.classList.add('stop-scrolling');
+            scrollPosition = getScrollPosition();
+            console.log("scrollPosition onClick = " + scrollPosition)
+
+            staffBoxClose.onclick = function(){
+                document.getElementById('staff-member__wrapper').style.opacity = '0';
+                document.getElementById('staff-member__info').style.opacity = '0';
+                window.scrollTo(0, scrollPosition);
+
+                setTimeout(function(){
+                    resetStaffBox(staffBox, startingHeight, startingWidth, leftPosition, topPosition);
+                }, 500);
+
+                setTimeout(function(){
+                    hideStaffBoxAndAllowScrolling(staffBox)
+                }, 1050);
+            }
+            staffBox.style.position = "fixed";
+            staffBox.style.transition = "all 0s ease";
+            staffBox.style.left = leftPosition;
+            staffBox.style.top = topPosition;
+            staffBox.style.height = startingHeight;
+            staffBox.style.width = startingWidth;
+            document.body.appendChild(staffBox);
+            staffBox.appendChild(staffBoxClose);
+            staffBox.style.backgroundColor = '#FF0066';
+            staffBox.style.zIndex = '6';
+
+            setTimeout(function(){
+                staffBox.style.transition = "all 0.5s ease";
+                populateAndSizeStaffInfo(staffBox, staffObject);
+            }, 500);
+
+            setTimeout(function(){
+                fadeInStaffInfo(staffObject);
+            }, 1050);
+
+        }
+    }
+
 }

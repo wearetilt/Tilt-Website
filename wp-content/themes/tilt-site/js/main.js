@@ -813,7 +813,7 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
     }
 }
 
-if(document.getElementById('header-video-layer')){
+if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
         myPlayer.play();
 
@@ -928,75 +928,79 @@ var getScrollPosition = function(){
 
 
 var staff = document.getElementsByClassName('module');
-for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
-    staffMember = staff[iterator3];
+
+if(document.getElementById('staff-member')){
+    for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
+        staffMember = staff[iterator3];
 
 
-    document.getElementById('Staff-' + (iterator3 + 1)).innerHTML = '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
+        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML = '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
 
-    var ratio = staffMember.children[0];
-    var video = ratio.children[0];
-    //Some closure magic to get this working.
-    (function(){
-        var videoIWant = video;
-        staffMember.addEventListener('mouseenter', function(event, video){
-                videoIWant.play();
-        });
+        var ratio = staffMember.children[0];
+        var video = ratio.children[0];
+        //Some closure magic to get this working.
+        (function(){
+            var videoIWant = video;
+            staffMember.addEventListener('mouseenter', function(event, video){
+                    videoIWant.play();
+            });
 
-        staffMember.addEventListener('mouseleave', function(event, video){
-                videoIWant.pause();
-        });
-    })();
+            staffMember.addEventListener('mouseleave', function(event, video){
+                    videoIWant.pause();
+            });
+        })();
 
 
 
-    staffMember.onclick = function (){
-        staffMember = this.id;
-        staffObject = lookUpStaffMember(staffMember);
-        staffBox = document.getElementById('staff-member');
-        staffBox.style.display = 'block';
-        staffBoxClose = document.getElementById('staff-member__close');
-        rect = this.getBoundingClientRect();
-        startingHeight = window.getComputedStyle(this).height;
-        startingWidth = window.getComputedStyle(this).width;
-        leftPosition = (rect['left'] + 'px');
-        topPosition = (rect['top'] + 'px');
-        // document.body.classList.add('stop-scrolling');
-        scrollPosition = getScrollPosition();
-        console.log("scrollPosition onClick = " + scrollPosition)
+        staffMember.onclick = function (){
+            staffMember = this.id;
+            staffObject = lookUpStaffMember(staffMember);
+            staffBox = document.getElementById('staff-member');
+            staffBox.style.display = 'block';
+            staffBoxClose = document.getElementById('staff-member__close');
+            rect = this.getBoundingClientRect();
+            startingHeight = window.getComputedStyle(this).height;
+            startingWidth = window.getComputedStyle(this).width;
+            leftPosition = (rect['left'] + 'px');
+            topPosition = (rect['top'] + 'px');
+            // document.body.classList.add('stop-scrolling');
+            scrollPosition = getScrollPosition();
+            console.log("scrollPosition onClick = " + scrollPosition)
 
-        staffBoxClose.onclick = function(){
-            document.getElementById('staff-member__wrapper').style.opacity = '0';
-            document.getElementById('staff-member__info').style.opacity = '0';
-            window.scrollTo(0, scrollPosition);
+            staffBoxClose.onclick = function(){
+                document.getElementById('staff-member__wrapper').style.opacity = '0';
+                document.getElementById('staff-member__info').style.opacity = '0';
+                window.scrollTo(0, scrollPosition);
+
+                setTimeout(function(){
+                    resetStaffBox(staffBox, startingHeight, startingWidth, leftPosition, topPosition);
+                }, 500);
+
+                setTimeout(function(){
+                    hideStaffBoxAndAllowScrolling(staffBox)
+                }, 1050);
+            }
+            staffBox.style.position = "fixed";
+            staffBox.style.transition = "all 0s ease";
+            staffBox.style.left = leftPosition;
+            staffBox.style.top = topPosition;
+            staffBox.style.height = startingHeight;
+            staffBox.style.width = startingWidth;
+            document.body.appendChild(staffBox);
+            staffBox.appendChild(staffBoxClose);
+            staffBox.style.backgroundColor = '#FF0066';
+            staffBox.style.zIndex = '6';
 
             setTimeout(function(){
-                resetStaffBox(staffBox, startingHeight, startingWidth, leftPosition, topPosition);
+                staffBox.style.transition = "all 0.5s ease";
+                populateAndSizeStaffInfo(staffBox, staffObject);
             }, 500);
 
             setTimeout(function(){
-                hideStaffBoxAndAllowScrolling(staffBox)
+                fadeInStaffInfo(staffObject);
             }, 1050);
+
         }
-        staffBox.style.position = "fixed";
-        staffBox.style.transition = "all 0s ease";
-        staffBox.style.left = leftPosition;
-        staffBox.style.top = topPosition;
-        staffBox.style.height = startingHeight;
-        staffBox.style.width = startingWidth;
-        document.body.appendChild(staffBox);
-        staffBox.appendChild(staffBoxClose);
-        staffBox.style.backgroundColor = '#FF0066';
-        staffBox.style.zIndex = '6';
-
-        setTimeout(function(){
-            staffBox.style.transition = "all 0.5s ease";
-            populateAndSizeStaffInfo(staffBox, staffObject);
-        }, 500);
-
-        setTimeout(function(){
-            fadeInStaffInfo(staffObject);
-        }, 1050);
-
     }
+
 }
