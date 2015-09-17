@@ -817,15 +817,17 @@ if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
         myPlayer.play();
 
-    document.getElementById('header-play').addEventListener('click', function(){
-            myPlayer.ready(function(){
-                myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
-                myPlayer.requestFullscreen();
-                myPlayer.play();
-                myPlayer.controls(true);
-                console.log(myPlayer.controls());
+        if(document.getElementById('header-play')){
+            document.getElementById('header-play').addEventListener('click', function(){
+                    myPlayer.ready(function(){
+                        myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
+                        myPlayer.requestFullscreen();
+                        myPlayer.play();
+                        myPlayer.controls(true);
+                        console.log(myPlayer.controls());
+                    });
             });
-    });
+        }
 
     myPlayer.on('fullscreenchange', function(){
         if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
@@ -934,10 +936,12 @@ if(document.getElementById('staff-member')){
         staffMember = staff[iterator3];
 
 
-        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML = '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
+        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML += '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
 
-        var ratio = staffMember.children[0];
+        var ratio = staffMember.children[1];
         var video = ratio.children[0];
+        console.log(ratio);
+        console.log(video);
         //Some closure magic to get this working.
         (function(){
             var videoIWant = video;
@@ -1004,3 +1008,10 @@ if(document.getElementById('staff-member')){
     }
 
 }
+
+
+//footer stuff
+
+var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));
+var footer = document.getElementById('footer');
+    footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')"
