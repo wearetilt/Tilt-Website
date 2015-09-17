@@ -72,6 +72,21 @@ get_header(); ?>
 	</section>
 </div> <!-- /end container -->
 
+<div class="container area-dark">
+		<div class="mobile-holder">
+			<img class="mobile-phone centre-image" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
+			<div class="mobile-screen"></div>
+		</div>
+		<div class="mobile-holder">
+			<img class="mobile-phone centre-image" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
+			<div class="mobile-screen"></div>
+		</div>
+		<div class="mobile-holder">
+			<img class="mobile-phone centre-image" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
+			<div class="mobile-screen"></div>
+		</div>
+</div> <!-- /end container -->
+
 <div class="container container--no-padding">
 	<section>
 		<div class="group-container">
