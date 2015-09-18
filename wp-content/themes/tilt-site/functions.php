@@ -306,7 +306,7 @@ function add_custom_taxonomies() {
     ),
     // Control the slugs used for this taxonomy
     'rewrite' => array(
-      'slug' => 'work', // This controls the base slug that will display before each term
+	      'slug' => 'asdfg', // This controls the base slug that will display before each term
       'with_front' => false, // Don't display the category base before "/locations/"
       'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
     ),
@@ -351,6 +351,11 @@ function work_item_post_type() {
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
+		'rewrite' => array(
+	      'slug' => 'hellomiles', // This controls the base slug that will display before each term
+	      'with_front' => false, // Don't display the category base before "/locations/"
+	      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+	    ),
 	);
 	register_post_type( 'work_item', $args );
 
