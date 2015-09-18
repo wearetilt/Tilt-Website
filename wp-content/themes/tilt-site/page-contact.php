@@ -89,13 +89,17 @@ get_header('contact'); ?>
 	}
 </script>
 
+<header class="contact-page">
+</header>
+
 <div class="container area-dark">
-	<section class="text-section">
-		<h2>Welcome to Tilt</h2>
-		<div class="text-section__para">
-			<p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
-		</div>
+	<section class="text-section text-section--centre">
+		<h2 class="contact-title"><span class="light">Jobs &amp; Internships</span></h2>
+		<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
+		<h2 class="contact-title"><span class="light">New projects</span></h2>
+		<a class="contact-email" href="mailto:jonathan.helm@wearetilt.com">jonathan.helm@wearetilt.com</a>
+		<h2 class="contact-title"><span class="light">General Enquiries</span></h2>
+		<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
 	</section> <!-- /end text-section -->
 </div> <!-- /end container -->
 

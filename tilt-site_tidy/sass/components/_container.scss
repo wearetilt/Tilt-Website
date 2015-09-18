@@ -63,6 +63,28 @@ section{
             }
         }
     }
+
+    &.text-section--centre{
+        text-align: center;
+
+        h2 + a{
+            margin-top: 0.5%;
+        }
+
+        a + h2{
+            margin-top: 3%;
+        }
+
+        h2,a{
+            display: block;
+            float: none;
+            width: auto;
+        }
+
+        .contact-email{
+
+        }
+    }
 }
  /* Group container also can be used as a clearfix */
 .group-container{

@@ -118,6 +118,12 @@ a{
     nav & {
         font-size: 2.5em;
     }
+
+    &.contact-email{
+        @include font-size(36);
+        font-family: $f-seroot-blck;
+        color: $c-tilt-pink;
+    }
 }
 
 strong, b{
