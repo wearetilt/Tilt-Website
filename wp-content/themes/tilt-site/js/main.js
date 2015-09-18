@@ -801,12 +801,17 @@ if(document.getElementById('header-video-player')){
     var videoWaypoint = new Waypoint({
       element: document.getElementById('header-video-player'),
       handler: function(direction) {
-        myPlayer.pause();
+        if(direction === 'down'){
+            myPlayer.pause();
+        } else if(direction === 'up'){
+            myPlayer.play();
+        }
+
       },
       offset: function() {
         return -this.element.clientHeight
       }
-  });
+    });
 
     if(document.getElementById('header-play')){
         document.getElementById('header-play').addEventListener('click', function(){
