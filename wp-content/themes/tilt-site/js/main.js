@@ -751,7 +751,6 @@ var resourceUri;
 // }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    console.log('I am ready!');
     document.body.setAttribute("class","loaded");
 });
 
@@ -796,8 +795,6 @@ if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
         myPlayer.play();
 
-    console.log('Ready');
-
     var videoWaypoint = new Waypoint({
       element: document.getElementById('header-video-player'),
       handler: function(direction) {
@@ -820,7 +817,6 @@ if(document.getElementById('header-video-player')){
                     myPlayer.requestFullscreen();
                     myPlayer.play();
                     myPlayer.controls(true);
-                    console.log(myPlayer.controls());
                 });
         });
     }
@@ -843,8 +839,6 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
     staffMember.onclick = function (){
         var self = this;
         var rect = this.getBoundingClientRect();
-        console.log(rect);
-        console.log('I have been clicked');
         var staffMemberInfo = this.getAttribute('ID');
         this.classList.add('module--selected');
     }
@@ -910,7 +904,6 @@ var populateAndSizeStaffInfo = function(staffBox, staffObject){
 var hideStaffBoxAndAllowScrolling = function(staffBox){
     staffBox.style.display = 'none';
     // document.body.classList.remove('stop-scrolling');
-    console.log("scrollPosition = " + scrollPosition);
 }
 
 var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPosition, topPosition){
@@ -925,7 +918,6 @@ var getScrollPosition = function(){
     return top;
 }
 
-
 var staff = document.getElementsByClassName('module');
 
 if(document.getElementById('staff-member')){
@@ -937,8 +929,6 @@ if(document.getElementById('staff-member')){
 
         var ratio = staffMember.children[1];
         var video = ratio.children[0];
-        console.log(ratio);
-        console.log(video);
         //Some closure magic to get this working.
         (function(){
             var videoIWant = video;
@@ -966,7 +956,6 @@ if(document.getElementById('staff-member')){
             topPosition = (rect['top'] + 'px');
             // document.body.classList.add('stop-scrolling');
             scrollPosition = getScrollPosition();
-            console.log("scrollPosition onClick = " + scrollPosition)
 
             staffBoxClose.onclick = function(){
                 document.getElementById('staff-member__wrapper').style.opacity = '0';

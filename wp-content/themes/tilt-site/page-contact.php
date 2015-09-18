@@ -11,7 +11,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('contact'); ?>
 
 <script type="text/javascript">
 	// When the window has finished loading create our google map below
@@ -89,9 +89,6 @@ get_header(); ?>
 	}
 </script>
 
-<header class="contact-page">
-</header>
-
 <div class="container area-dark">
 	<section class="text-section">
 		<h2>Welcome to Tilt</h2>
@@ -122,6 +119,8 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+
+</div>
 
 </div>
 
