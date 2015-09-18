@@ -796,17 +796,29 @@ if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
         myPlayer.play();
 
-        if(document.getElementById('header-play')){
-            document.getElementById('header-play').addEventListener('click', function(){
-                    myPlayer.ready(function(){
-                        myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
-                        myPlayer.requestFullscreen();
-                        myPlayer.play();
-                        myPlayer.controls(true);
-                        console.log(myPlayer.controls());
-                    });
-            });
-        }
+    console.log('Ready');
+
+    var videoWaypoint = new Waypoint({
+      element: document.getElementById('header-video-player'),
+      handler: function(direction) {
+        myPlayer.pause();
+      },
+      offset: function() {
+        return -this.element.clientHeight
+      }
+  });
+
+    if(document.getElementById('header-play')){
+        document.getElementById('header-play').addEventListener('click', function(){
+                myPlayer.ready(function(){
+                    myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
+                    myPlayer.requestFullscreen();
+                    myPlayer.play();
+                    myPlayer.controls(true);
+                    console.log(myPlayer.controls());
+                });
+        });
+    }
 
     myPlayer.on('fullscreenchange', function(){
         if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
