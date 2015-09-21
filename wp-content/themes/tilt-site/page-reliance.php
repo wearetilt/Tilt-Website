@@ -20,32 +20,32 @@ get_header(); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/139331072.hd.mp4?s=738de3b614e46f5ed230d54ae60f15d7&profile_id=113" type="video/mp4">
+                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
             </video>
         </div>
     </div>
     <div class="container container--header">
         <div class="header-title">
             <p class="tag tag--no-italic">Film</p>
-            <h1>South Downs National Park<br />
-                <span class="light underlined">Discover Another Way</span>
+            <h1>Reliance<br />
+                <span class="light underlined">Discover</span>
             </h1>
-            <h2 class="light">CS | Film | 3D</h2>
+            <h2 class="light">Film</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para">How can you encourage people to take public transport to the beautiful South Downs National Park, and even make them excited to do so? </p>
+                <p class="first-para">How do you explain the many different services of a global company as complex and diverse as GfK in a single video piece? </p>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The solution</h2>
-                <p class="first-para">Merge film and motion graphics to create a magical experience that brings an entire journey to the South Downs to life through the eyes of a child. </p>
+                <p class="first-para">Use motion graphics to keep things bold, clear and simple, telling the GfK story in just 90 seconds. </p>
             </div>
         </div>
     </div>
 </header>
 
-<div class="container container--half-top">
+<div class="container container--half-top area-dark">
     <div class="group-container">
         <div class="group group--left">
             <div class="module module--2-2">
@@ -63,7 +63,7 @@ get_header(); ?>
             </div>
         </div> <!-- /end group -->
         <div class="group group--right">
-            <div class="module module--1-1"></div>
+            <div  class="module module--1-1"></div>
             <div  class="module module--1-1"></div>
             <div class="module module--2-1"></div>
         </div> <!-- /end group -->
@@ -77,7 +77,8 @@ get_header(); ?>
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood. </p>
+                        <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
+                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in. </p>
                     </div>
                 </div>
                 <div class="module module--2-1"></div>
@@ -93,9 +94,11 @@ get_header(); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1">
                     <div class="module__text">
-                        <p>The client was delighted with the film and we have since been commissioned to produce other projects for South Downs National Park. The film has been viewed more than 25,000 times since launch – far exceeding expectations. </p>
+                        <h2 class="underlined">What we did</h2>
+                        <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
+                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in. </p>
                     </div>
                 </div>
             </div>
@@ -105,33 +108,24 @@ get_header(); ?>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
-</div> <!-- /end container -->
+</div>
 
 <div class="container container--no-padding">
-    <section>
-        <div class="group-container">
-            <div class="group group--right">
-            <div id="module-5" class="module module--2-2"></div>
-            </div>
-            <div class="group group--left">
-                <div class="module module--2-1"></div>
-                <div class="module module--2-1"></div>
-            </div>
-        </div>
-    </section>
+    <div class="module module--2-1"></div>
 </div>
 
 <div class="container container--no-padding">
     <section>
         <div class="group-container">
             <div class="group group--left">
-            <div id="module-5" class="module module--2-2"></div>
+                <div class="module module--1-1"></div>
+                <div class="module module--1-1"></div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-1"></div>
-                <div class="module module--2-1"></div>
-            </div>
-        </div>
+                <div class="module module--1-1"></div>
+                <div class="module module--1-1"></div>
+            </div> <!-- /end group -->
+        </div> <!-- /end group-container -->
     </section>
 </div>
 

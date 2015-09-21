@@ -20,7 +20,7 @@ get_header(); ?>
     <div class="container container--header">
         <div class="header-title">
             <p class="tag">Interactive: Case Study</p>
-            <h1>Nikcelodeon<br />
+            <h1>Nickelodeon<br />
                 <span class="light underlined">Code-it</span>
             </h1>
             <h2 class="light">UX | Visual Design | Development | Motion</h2>
@@ -30,7 +30,7 @@ get_header(); ?>
 
 <div class="container">
     <div class="monitor-holder">
-        <img class="monitor centre-image" src="images/monitor.png" alt="">
+        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen"></div>
     </div>
     <section class="text-section">
@@ -59,7 +59,7 @@ get_header(); ?>
 
 <div class="container container--carousel">
     <section class="carousel">
-        <img class="carousel-monitor centre-image" src="images/monitor.png" alt="">
+        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
             <div id="carousel-image-1"class="carousel-image"></div>
             <div id="carousel-image-2"class="carousel-image"></div>
@@ -90,12 +90,12 @@ get_header(); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-2"></div>
-            </div>
-            <div class="group group--right">
                 <div class="module module--2-1"></div>
                 <div class="module module--1-1"></div>
                 <div class="module module--1-1"></div>
+            </div>
+            <div class="group group--right">
+                <div class="module module--2-2"></div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -157,7 +157,9 @@ get_header(); ?>
     </section>
 </div>
 
-<!-- TODO: Insert Image section here -->
+<div class="container container--no-padding">
+    <div class="module module--2-1"></div>
+</div>
 
 <div class="container area-dark">
     <section class="text-section">

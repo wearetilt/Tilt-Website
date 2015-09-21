@@ -13,10 +13,9 @@
 
 get_header(); ?>
 
-<header class="work-item work-item--motion area-dark">
+<header class="work-item area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
-
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
@@ -37,7 +36,7 @@ get_header(); ?>
 
 <div class="container container--half-top">
     <div class="monitor-holder">
-        <img class="monitor centre-image" src="images/monitor.png" alt="">
+        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen"></div>
     </div>
     <section class="text-section">
@@ -66,7 +65,7 @@ get_header(); ?>
 
 <div class="container container--carousel">
     <section class="carousel">
-        <img class="carousel-monitor centre-image" src="images/monitor.png" alt="">
+        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
             <div id="carousel-image-1"class="carousel-image"></div>
             <div id="carousel-image-2"class="carousel-image"></div>
@@ -94,7 +93,7 @@ get_header(); ?>
 
 <div class="container">
     <div class="monitor-holder">
-        <img class="monitor centre-image" src="images/monitor.png" alt="">
+        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen"></div>
     </div>
 </div>
@@ -126,7 +125,7 @@ get_header(); ?>
 
 <div class="container container--carousel">
     <section class="carousel">
-        <img class="carousel-monitor centre-image" src="images/monitor.png" alt="">
+        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
             <div id="carousel-image-1"class="carousel-image"></div>
             <div id="carousel-image-2"class="carousel-image"></div>
@@ -179,7 +178,7 @@ get_header(); ?>
 
 <div class="container container--carousel">
     <section class="carousel">
-        <img class="carousel-monitor centre-image" src="images/monitor.png" alt="">
+        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
             <div id="carousel-image-1"class="carousel-image"></div>
             <div id="carousel-image-2"class="carousel-image"></div>
@@ -205,11 +204,11 @@ get_header(); ?>
     </section>
 </div>
 
-<div class="container">
+<div class="container container--no-padding">
     <div class="module module--2-1"></div>
 </div>
 
-<div class="container">
+<div class="container container--no-padding">
     <div class="module module--2-1">
         <!-- TODO: Quote goes here -->
     </div>

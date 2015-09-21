@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<header class="work-item work-item--motion area-dark">
+<header class="work-item area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 
@@ -31,16 +31,6 @@ get_header(); ?>
                 <span class="light underlined">First Level Leaders: Stories</span>
             </h1>
             <h2 class="light">Content Strategy | Film</h2>
-        </div>
-        <div class="header-text">
-            <div class="header-text__module header-text__module--padding">
-                <h2>The Challenge</h2>
-                <p class="first-para">How can you change the behaviour of irresponsible dog owners in the South Downs National Park, without being patronising?</p>
-            </div>
-            <div class="header-text__module header-text__module--padding">
-                <h2>The solution</h2>
-                <p class="first-para">Create an animated piece with a playful, warm tone that delivers serious messages underneath – the spoonful of sugar that helps the medicine go down.</p>
-            </div>
         </div>
     </div>
 </header>
@@ -108,6 +98,10 @@ get_header(); ?>
         </section> <!-- /end text-section -->
     </div>
 
+    <div class="container container--no-padding">
+        <div class="module module--2-1"></div>
+    </div>
+
     <div class="container">
         <section class="text-section">
             <h2>Welcome to Tilt</h2>
@@ -116,6 +110,10 @@ get_header(); ?>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
             </div>
         </section>
+    </div>
+
+    <div class="container container--no-padding">
+        <div class="module module--2-1"></div>
     </div>
 
 
