@@ -13,6 +13,38 @@
 
 get_header(); ?>
 
+<header class="work-item work-item--motion area-dark">
+    <div class="module--video module--header">
+        <div id="header-play" class="header-play">
+
+        </div>
+        <div class="ratio">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+                    <source id="header-video" src="https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=119" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="container container--header">
+        <div class="header-title">
+            <p class="tag tag--no-italic">Film</p>
+            <h1>Barclays<br />
+                <span class="light underlined">Values &amp; Behaviours</span>
+            </h1>
+            <h2 class="light">Content Strategy | Film</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padding">
+                <h2>The Challenge</h2>
+                <p class="first-para">How can you change the behaviour of irresponsible dog owners in the South Downs National Park, without being patronising?</p>
+            </div>
+            <div class="header-text__module header-text__module--padding">
+                <h2>The solution</h2>
+                <p class="first-para">Create an animated piece with a playful, warm tone that delivers serious messages underneath – the spoonful of sugar that helps the medicine go down.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
     <div class="container container--half-top">
         <div class="group-container">
             <div class="group group--left">
@@ -109,6 +141,11 @@ get_header(); ?>
                 </div>
             </div>
         </section>
+    </div>
+
+    <div class="group-container">
+        <a class="project-navigation" href="">< Previous Project</a>
+        <a class="project-navigation" href="">Next Project ></a>
     </div>
 
 </div>

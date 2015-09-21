@@ -20,7 +20,7 @@ get_header(); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
+                    <source id="header-video" src="https://player.vimeo.com/external/139331070.hd.mp4?s=b2d4b3506fa6f57cee7b8cf917f32298&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>

@@ -859,6 +859,12 @@ var scrollPosition;
 var doc = document.documentElement;
 
 menuButton.onclick = function(){
+
+    if(document.getElementById('header-video-player')){
+
+    }
+
+
     [].map.call(document.querySelectorAll('.wrapper'), function(el){
         el.classList.toggle('wrapper--navved');
     });
@@ -870,11 +876,19 @@ menuButton.onclick = function(){
         pageMenu.style.transform = "scale(1.5, 1.5)";
         document.getElementById('footer').style.display = 'block';
 
+        if(document.getElementById('header-video-player')){
+            myPlayer.play();
+        }
+
     } else{
         pageMenu.style.visibility = 'inherit';
         pageMenu.style.opacity = 0.98;
         pageMenu.style.transform = "scale(1, 1)";
         document.getElementById('footer').style.display = 'none';
+
+        if(document.getElementById('header-video-player')){
+            myPlayer.pause();
+        }
     }
 }
 
