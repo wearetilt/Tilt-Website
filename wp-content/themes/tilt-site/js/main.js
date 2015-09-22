@@ -1255,18 +1255,27 @@ if(document.getElementById('work_all')){
                     el3.style.display = 'none';
                 });
 
-                document.getElementById(itemsToShow).style.opacity = 1;
-                document.getElementById(itemsToShow).style.display = 'block';
+                if(itemsToShow === 'all'){
 
-                [].map.call(document.querySelectorAll('.module'), function(el2){
-                    el2.classList.remove('module--visible');
-                    console.log(el2);
-                });
-                [].map.call(document.querySelectorAll('.module'), function(el4){
-                    setTimeout(function(){
-                        el4.classList.add('module--visible');
-                    }, 500);
-                });
+                    [].map.call(document.querySelectorAll('.work-container'), function(el3){
+                        el3.style.opacity = 1;
+                        el3.style.display = 'block';
+                    });
+
+                } else {
+                    document.getElementById(itemsToShow).style.opacity = 1;
+                    document.getElementById(itemsToShow).style.display = 'block';
+
+                    [].map.call(document.querySelectorAll('.module'), function(el2){
+                        el2.classList.remove('module--visible');
+                        console.log(el2);
+                    });
+                    [].map.call(document.querySelectorAll('.module'), function(el4){
+                        setTimeout(function(){
+                            el4.classList.add('module--visible');
+                        }, 500);
+                    });
+                }
         }
     });
 }
