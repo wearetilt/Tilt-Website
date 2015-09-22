@@ -28,7 +28,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1 {
-    @include font-size(75);
+    @include font-size(25);
+    @media handheld, screen and (min-width: $bp-desktop){
+        @include font-size(75);
+    }
     &.underlined, & span.underlined{
         &:after{
             margin-top: 0.2em;
@@ -38,7 +41,10 @@ h1 {
 }
 
 h2{
-    @include font-size(36);
+    @include font-size(18);
+    @media handheld, screen and (min-width: $bp-desktop){
+            @include font-size(36);
+    }
     &.underlined{
         &:after{
             margin-top: 0.4em;
@@ -70,7 +76,10 @@ h3{
 }
 
 p{
-    @include font-size(17.6);
+    @include font-size(10.6);
+    @media handheld, screen and (min-width: $bp-desktop){
+            @include font-size(17.6);
+    }
     font-family: $f-merriweather-lt;
     text-transform: none;
     line-height: (35/20);
@@ -85,15 +94,23 @@ p{
         &:before{
             content:"";
             display: inline-block;
-            height: 15px;
-            width: 15px;
+            @media handheld, screen and (min-width: $bp-desktop){
+                height: 15px;
+                width: 15px;
+                margin-right: 13px;
+            }
+            height: 9px;
+            width: 9px;
             background-color: $c-tilt-pink;
-            margin-right: 13px;
+            margin-right: 8px;
             margin-left: 2px;
         }
     }
     &.sans-serif{
-        @include font-size(25);
+        @include font-size(15);
+        @media handheld, screen and (min-width: $bp-desktop){
+                @include font-size(25);
+        }
         font-family: $f-seroot-lt;
         line-height: (33/25);
         text-transform: uppercase;
@@ -120,7 +137,10 @@ a{
     }
 
     &.contact-email{
-        @include font-size(36);
+        @include font-size(18);
+        @media handheld, screen and (min-width: $bp-desktop){
+            @include font-size(36);
+        }
         font-family: $f-seroot-blck;
         color: $c-tilt-pink;
     }
@@ -136,7 +156,11 @@ strong, b{
 
 span{
     .map-overlay & {
-        @include font-size(35);
+        @include font-size(17);
+        @media handheld, screen and (min-width: $bp-desktop){
+            @include font-size(35);
+        }
+
         font-family: $f-seroot-lt;
         display: block;
         color: white;
