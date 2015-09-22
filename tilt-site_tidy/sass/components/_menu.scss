@@ -100,13 +100,17 @@ nav{
 }
 
 .work-item-title{
-    display: inline-block;
+    display: block;
     cursor: pointer;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 24px;
-    width: 200px;
+    @media handheld, screen and (min-width: $bp-desktop){
+            width: 150px;
+            display: inline-block;
+    }
+
     @include font-size(19);
     &:hover{
         color: $c-tilt-pink2;
