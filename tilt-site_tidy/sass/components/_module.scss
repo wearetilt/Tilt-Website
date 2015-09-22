@@ -205,14 +205,15 @@
 }
 
 #staff-member__close{
-    height: 10px;
-    width: 10px;
+    height: 30px;
+    width: 30px;
     background-color: white;
     margin: 0px auto;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    right: 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
 #staff-member__info{

@@ -72,21 +72,6 @@ get_header(); ?>
 	</section>
 </div> <!-- /end container -->
 
-<div class="container area-dark">
-		<div class="mobile-holder">
-			<img class="mobile-phone centre-image" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
-			<div class="mobile-screen"></div>
-		</div>
-		<div class="mobile-holder">
-			<img class="mobile-phone centre-image" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
-			<div class="mobile-screen"></div>
-		</div>
-		<div class="mobile-holder">
-			<img class="mobile-phone centre-image" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
-			<div class="mobile-screen"></div>
-		</div>
-</div> <!-- /end container -->
-
 <div class="container container--no-padding">
 	<section>
 		<div class="group-container">
@@ -109,8 +94,8 @@ get_header(); ?>
 				<div class="module module--1-1"></div>
 				<div id="twitter__module" class="module module--1-1">
 					<div class="module__text">
-						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' search='from:MilesTincknell' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-						<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=MilesTincknell&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
+						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+						<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 					</div> <!-- /end text-section -->
 				</div>
 				<div class="module module--2-1 area-dark">

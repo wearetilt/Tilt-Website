@@ -11,7 +11,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('work-item'); ?>
 
 <header class="work-item work-item--motion area-dark">
     <div class="module--video module--header">

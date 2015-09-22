@@ -116,6 +116,10 @@ section{
     }
 }
 
+.work-container{
+    @extend %clearfix;
+}
+
 .group-container--light{
     background: url('../images/tilt-logo-light.png') center no-repeat ;
     background-color: white;

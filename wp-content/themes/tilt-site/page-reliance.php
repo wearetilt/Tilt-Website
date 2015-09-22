@@ -11,7 +11,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('work-item'); ?>
 
 <header class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
@@ -94,7 +94,7 @@ get_header(); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1">
+                <div class="module module--2-1 area-dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>

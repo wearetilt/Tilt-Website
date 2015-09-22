@@ -199,7 +199,7 @@ get_header(); ?>
 <div id="staff-member">
 	<div id="staff-member__wrapper">
 		<div id="staff-member__info" class="area-dark no-background">
-			<div id="staff-member__close"></div>
+			<div id="staff-member__close"><p class="vertical-align sans-serif">X</p></div>
 			<h1 id="staff-member__name"></h1>
 			<h2 id="staff-member__position"></h2>
 			<h2 id="staff-member__department"></h2>

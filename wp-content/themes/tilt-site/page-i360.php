@@ -11,7 +11,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('work-item'); ?>
 
 <div class="container container--carousel">
     <section class="carousel">

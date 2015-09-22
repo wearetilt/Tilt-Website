@@ -11,7 +11,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('work-item'); ?>
 
 <header id="icap" class="work-item area-dark">
     <div class="monitor">
