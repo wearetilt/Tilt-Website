@@ -27,6 +27,17 @@ html, body{
     position: relative;
     padding: percentage(245/2032) percentage(127/2032);
     z-index: 1;
+
+    #carreers & {
+        padding: percentage(245/2032) percentage(381/2032);
+    }
+}
+
+#carreers {
+    .text-container{
+        top: auto;
+        transform: none;
+    }
 }
 
 .container--no-padding{
@@ -39,6 +50,11 @@ html, body{
 
 .container--half-top{
     padding-top: percentage(120/2032);
+}
+
+.container--half-both{
+    padding: percentage(120/2032);
+    text-align: center;
 }
 
 .text-container{

@@ -35,6 +35,40 @@
     &.module--staff:hover .ratio{
         transform: scale(1);
     }
+
+    &.module--job{
+        text-align: center;
+        background-color: $c-bg;
+
+        h2 + p {
+            padding-top: 2%;
+        }
+
+        h2{
+            color: $c-tilt-pink;
+        }
+        &:hover{
+            background-color: $c-tilt-pink;
+
+            h2{
+                color: white;
+            }
+        }
+    }
+
+    & .module__description{
+        bottom: 100px;
+        top: auto;
+        transform: none;
+        padding: 0;
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+
+        img{
+            margin-bottom: 20%;
+        }
+    }
 }
 
 .module--visible{
