@@ -93,7 +93,7 @@ get_header(); ?>
 		<div class="group group--right">
 			<div class="module module--2-2 module--no-bg">
 				<div class="module__text text-align module__description">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/miles-image.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/dave-image.png" alt="">
 					<h2>Dave Weiss</h2>
 					<h3 class="light">Designer</h3>
 					<p>“Lorem ipsum dolor sit elur amet di tonitas sit amit”</p>
