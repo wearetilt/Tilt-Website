@@ -78,7 +78,7 @@ get_header(); ?>
 	<h1>From intern to fulltime</h1>
 	<div class="group-container">
 		<div class="group group--left">
-			<div class="module module--2-2">
+			<div class="module module--2-2 module--no-bg">
 				<div class="module__text text-align module__description">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/miles-image.png" alt="">
 					<h2>Miles Tincknell</h2>
@@ -91,7 +91,7 @@ get_header(); ?>
 			<p>Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed cone sectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. </p>
 		</div>
 		<div class="group group--right">
-			<div class="module module--2-2">
+			<div class="module module--2-2 module--no-bg">
 				<div class="module__text text-align module__description">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/miles-image.png" alt="">
 					<h2>Dave Weiss</h2>
