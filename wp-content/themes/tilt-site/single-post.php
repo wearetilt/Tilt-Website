@@ -7,7 +7,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('news'); ?>
 
 <div class="news-wrapper">
 	<div class="news-container">
@@ -55,8 +55,8 @@ get_header(); ?>
 </div>
 
 <div class="group-container">
-	<a class="project-navigation" href="">< Previous Project</a>
-	<a class="project-navigation" href="">Next Project ></a>
+	<a class="project-navigation" href="">< Previous News</a>
+	<a class="project-navigation" href="">Next News ></a>
 </div>
 
 </div>

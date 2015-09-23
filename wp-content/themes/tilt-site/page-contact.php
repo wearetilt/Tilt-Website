@@ -17,7 +17,7 @@ get_header('contact'); ?>
 	// When the window has finished loading create our google map below
 	google.maps.event.addDomListener(window, 'load', init);
 
-	officeLocation = new google.maps.LatLng(50.832132, -0.139421);
+	officeLocation = new google.maps.LatLng(50.8319498, -0.1392226);
 
 	function init() {
 		// Basic options for a simple Google Map
@@ -114,14 +114,16 @@ get_header('contact'); ?>
 		<span>41 New England Street,</span>
 		<span>Brighton, East Sussex,</span>
 		<span>BN1 4GQ, UK</span>
-		<div class="cube">
-			<div class="cube--front">
-				<p class="sans-serif">Contact Us</p>
+		<a href="https://www.google.co.uk/maps/dir//50.8319498,-0.1392226/@50.8321729,-0.1393055,19.51z/data=!4m2!4m1!3e0?hl=en">
+			<div class="cube">
+					<div class="cube--front">
+						<p class="sans-serif">Get Directions</p>
+					</div>
+					<div class="cub--top">
+						<p class="sans-serif">Come see</p>
+					</div>
 			</div>
-			<div class="cub--top">
-				<p class="sans-serif">Please</p>
-			</div>
-		</div>
+		</a>
 	</div>
 
 </div>
