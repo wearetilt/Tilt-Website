@@ -145,3 +145,12 @@ section{
     background-color: transparent;
     background-image: none;
 }
+
+.news-wrapper{
+    max-width: 1270px;
+    margin: 0px auto;
+}
+
+.news-container{
+    padding: 0 percentage(125/1270);
+}
