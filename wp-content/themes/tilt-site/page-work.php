@@ -291,7 +291,7 @@ get_header(); ?>
         						<div class="overlay-text">
         							<p class="tag">Motion: Case Study</p>
         							<h2>Barclays <br />
-        								<span class="light underlined">Integrity</span>
+        								<span class="light underlined">Integrity</span>w3
         							</h2>
         							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
         						</div> <!-- /end overlay-text -->

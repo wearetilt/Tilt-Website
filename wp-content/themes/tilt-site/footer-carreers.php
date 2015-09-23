@@ -11,7 +11,7 @@
 ?>
 
 
-<footer>
+<footer id="footer-careers">
 
 	<div id="signoff" class="group-container group-container--no-bg">
 		<div class="footer-icons">

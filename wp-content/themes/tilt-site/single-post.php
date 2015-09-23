@@ -9,40 +9,25 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="news-wrapper">
+	<div class="news-container">
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+	</div>
+	<div class="breakout">
 
-			/*
-			 * Include the post format-specific template for the content. If you want to
-			 * use this in a child theme, then include a file called called content-___.php
-			 * (where ___ is the post format) and that will be used instead.
-			 */
-			get_template_part( 'content', get_post_format() );
+	</div>
+	<div class="news-container">
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+	</div>
+</div>
 
-			// Previous/next post navigation.
-			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-			) );
+<div class="img-container">
 
-		// End the loop.
-		endwhile;
-		?>
+</div>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+<div class="group-container">
+	<a class="project-navigation" href="">< Previous Project</a>
+	<a class="project-navigation" href="">Next Project ></a>
+</div>	
 
 <?php get_footer(); ?>
