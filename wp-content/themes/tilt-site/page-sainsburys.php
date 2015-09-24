@@ -19,9 +19,9 @@ get_header('work-item'); ?>
     </div>
     <div class="container container--header">
         <div class="header-title">
-            <p class="tag">Sainsbury&lsquo;s</p>
-            <h1>History Timelins<br />
-                <span class="light underlined">Interactive microsite for Earth - A New Wild</span>
+            <p class="tag">Interactive</p>
+            <h1>Sainsbury&lsquo;s <br />
+                <span class="light underlined">History Timeline</span>
             </h1>
             <h2 class="light">Design | Development | Motion | 3D</h2>
         </div>

@@ -14,14 +14,16 @@ get_header(); ?>
 		<div class="ratio">
 			<div class="container container--header strapline-container">
 				<h1>We Are <strong id="strapline-text" class="highlight">Time Travellers</strong></h1>
-				<div class="cube">
-					<div class="cube--front cube--front__no-bg">
-						<p class="sans-serif">Contact Us</p>
+				<a href="<?php echo site_url(); ?>/contact">
+					<div class="cube">
+						<div class="cube--front cube--front__no-bg">
+							<p class="sans-serif">Contact Us</p>
+						</div>
+						<div class="cub--top cube--top__no-bg">
+							<p class="sans-serif">Please</p>
+						</div>
 					</div>
-					<div class="cub--top cube--top__no-bg">
-						<p class="sans-serif">Please</p>
-					</div>
-				</div>
+				</a>
 			</div>
 			<video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
 					<source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/graded_masthead4.mp4" type="video/mp4">
@@ -33,14 +35,16 @@ get_header(); ?>
 <div id="header-overlay" class="container container--header area-dark">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-		<div class="cube">
-			<div class="cube--front">
-				<p class="sans-serif">Contact Us</p>
+		<a href="<?php echo site_url(); ?>/contact">
+			<div class="cube">
+				<div class="cube--front">
+					<p class="sans-serif">Contact Us</p>
+				</div>
+				<div class="cub--top">
+					<p class="sans-serif">Please</p>
+				</div>
 			</div>
-			<div class="cub--top">
-				<p class="sans-serif">Please</p>
-			</div>
-		</div>
+		</a>
 	</div>
 </div>
 

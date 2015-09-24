@@ -39,7 +39,7 @@
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/staff">About</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/news">News</a></li>
                 <li class="menu__item"><a href="">Bakery</a></li>
-                <li class="menu__item"><a href="">Careers</a></li>
+                <li class="menu__item"><a href="<?php echo site_url(); ?>/carreers">Careers</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
             </ul>
         </div> <!-- /end menu -->
