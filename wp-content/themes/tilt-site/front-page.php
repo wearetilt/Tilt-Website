@@ -17,10 +17,10 @@ get_header(); ?>
 				<a href="<?php echo site_url(); ?>/contact">
 					<div class="cube">
 						<div class="cube--front cube--front__no-bg">
-							<p class="sans-serif">Contact Us</p>
+							<p class="sans-serif">View our Showreel</p>
 						</div>
 						<div class="cub--top cube--top__no-bg">
-							<p class="sans-serif">Please</p>
+							<p class="sans-serif">Your gonna love it</p>
 						</div>
 					</div>
 				</a>
@@ -51,25 +51,37 @@ get_header(); ?>
 <div class="container container--no-padding">
 	<section>
 		<div class="group-container">
-			<div class="group group--left">
+			<div class="group group--right">
+				<div class="module module--2-1">
+					
+					<div class="overlay area-dark">
+						<div class="overlay-text">
+							<p class="tag">Work</p>
+							<h2>Nickelodeon <br />
+								<span class="light underlined">Code-It</span>
+							</h2>
+						</div> <!-- /end overlay-text -->
+					</div> <!-- /end overlay -->
+					
+					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
+													
+				</div>
 				<div class="module module--1-1"></div>
-				<div class="module module--1-1"></div>
-				<div class="module module--2-1 area-dark">
+				<div class="module module--1-1 area-dark">
 				</div>
 			</div>
-			<div class="group group--right">
+			<div class="group group--left">
 				<div id="module-5" class="module module--2-2">
 					<div class="overlay area-dark">
 						<div class="overlay-text">
-							<p class="tag">Motion: Case Study</p>
-							<h2>Barclays <br />
-								<span class="light underlined">Integrity</span>
+							<p class="tag">Film: Case Study</p>
+							<h2>BP <br />
+								<span class="light underlined">First Level Leaders</span>
 							</h2>
-							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
+							<p class="sans-serif">Engage your audience on an emotional level</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/video-placeholder.jpg')">
-					</div>
+					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_01_ls.jpg')"></div>
 				</div>
 			</div> <!-- /end group -->
 		</div> <!-- /end group-container -->
@@ -79,22 +91,43 @@ get_header(); ?>
 <div class="container container--no-padding">
 	<section>
 		<div class="group-container">
-			<div class="group group--left">
+			<div class="group group--right">
+			
 				<div id="module-5" class="module module--2-2">
+					
 					<div class="overlay area-dark">
 						<div class="overlay-text">
-							<p class="tag">Motion: Case Study</p>
-							<h2>Barclays <br />
-								<span class="light underlined">Integrity</span>
+							<p class="tag">Web: Case Study</p>
+							<h2>BP <br />
+								<span class="light underlined">Discover BP</span>
 							</h2>
-							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
+							<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/video-placeholder.jpg')">
-					</div>
+					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_04_ls.jpg')"></div>
+					
 				</div>
+				
+				
 			</div>
-			<div class="group group--right">
+			<div class="group group--left">
+				
+				<div class="module module--2-1 area-dark">
+				
+					<div class="overlay area-dark">
+						<div class="overlay-text">
+							<p class="tag">Work</p>
+							<h2>GfK <br />
+								<span class="light underlined">Brand Video</span>
+							</h2>
+						</div> <!-- /end overlay-text -->
+					</div> <!-- /end overlay -->
+					
+					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_03_mr.jpg')"></div>
+				
+				</div>
+			
+			
 				<div class="module module--1-1"></div>
 				<div id="twitter__module" class="module module--1-1">
 					<div class="module__text">
@@ -102,8 +135,7 @@ get_header(); ?>
 						<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 					</div> <!-- /end text-section -->
 				</div>
-				<div class="module module--2-1 area-dark">
-				</div>
+				
 			</div> <!-- /end group -->
 		</div> <!-- /end group-container -->
 	</section>
