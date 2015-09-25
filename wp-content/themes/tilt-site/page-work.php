@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<header class="work-item work-item--motion area-dark">
+<header id="work-page" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
         </div>
@@ -36,7 +36,7 @@ get_header(); ?>
 	<section>
 		<div class="group-container">
 			<div class="group group--right">
-				
+
 				<div class="module module--2-1">
                     <a href="<?php get_site_url(); ?>sdnpa">
     					<div class="overlay area-dark">
@@ -149,7 +149,7 @@ get_header(); ?>
         					</div>
                         </a>
     				</div>
-    				
+
 			</div>
 			<div class="group group--right">
 				<div class="module module--2-2">

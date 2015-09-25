@@ -14,13 +14,13 @@ get_header(); ?>
 		<div class="ratio">
 			<div class="container container--header strapline-container">
 				<h1>We Are <strong id="strapline-text" class="highlight">Time Travellers</strong></h1>
-				<a href="<?php echo site_url(); ?>/contact">
+				<a href="<?php echo site_url(); ?>/work">
 					<div class="cube">
 						<div class="cube--front cube--front__no-bg">
 							<p class="sans-serif">View our Showreel</p>
 						</div>
 						<div class="cub--top cube--top__no-bg">
-							<p class="sans-serif">Your gonna love it</p>
+							<p class="sans-serif">You&rsquo;re gonna love it</p>
 						</div>
 					</div>
 				</a>
@@ -53,7 +53,7 @@ get_header(); ?>
 		<div class="group-container">
 			<div class="group group--right">
 				<div class="module module--2-1">
-					
+
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
@@ -62,9 +62,9 @@ get_header(); ?>
 							</h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
-					
+
 					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
-													
+
 				</div>
 				<div class="module module--1-1"></div>
 				<div class="module module--1-1 area-dark">
@@ -92,9 +92,9 @@ get_header(); ?>
 	<section>
 		<div class="group-container">
 			<div class="group group--right">
-			
+
 				<div id="module-5" class="module module--2-2">
-					
+
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Web: Case Study</p>
@@ -105,15 +105,15 @@ get_header(); ?>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
 					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_04_ls.jpg')"></div>
-					
+
 				</div>
-				
-				
+
+
 			</div>
 			<div class="group group--left">
-				
+
 				<div class="module module--2-1 area-dark">
-				
+
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
@@ -122,12 +122,12 @@ get_header(); ?>
 							</h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
-					
+
 					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_03_mr.jpg')"></div>
-				
+
 				</div>
-			
-			
+
+
 				<div class="module module--1-1"></div>
 				<div id="twitter__module" class="module module--1-1">
 					<div class="module__text">
@@ -135,7 +135,7 @@ get_header(); ?>
 						<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 					</div> <!-- /end text-section -->
 				</div>
-				
+
 			</div> <!-- /end group -->
 		</div> <!-- /end group-container -->
 	</section>
