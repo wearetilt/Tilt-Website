@@ -102,7 +102,10 @@ get_header('work-item'); ?>
                 </div>
             </div>
             <div class="group group--right">
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/video-placeholder.jpg')">
+                    </div>
+                </div>
                 <div class="module module--1-1"></div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->

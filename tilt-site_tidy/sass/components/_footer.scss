@@ -1,5 +1,5 @@
 footer{
-    max-height: 687px;
+    max-height: 704px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -35,20 +35,21 @@ footer{
         float: right;
         font-size: 1.7rem;
         color: white;
+        margin-top: 7px;
     }
 
     .footnote{
         border-top: 1px solid $c-grey-57;
-        padding-top: percentage(23/2032);
+        padding-top: 10px;
         clear: both;
     }
 }
 
 #signoff{
     background-color: $c-bg;
-    height: 142px;
-    padding: 0 percentage(126/2032);
-    padding-top: 2%;
+    height: 160px;
+    padding: 30px 6.20079% 0px;
+    border-top: 1px solid #171717;
 
     #contact & {
         height: auto;
