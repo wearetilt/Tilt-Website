@@ -146,6 +146,7 @@
 
 .module--video{
     overflow: hidden;
+    @extend %clearfix;
     video{
         position: absolute;
         top: -9999px;
@@ -182,6 +183,19 @@
 
         &:hover{
             transform: scale(1.05);
+        }
+    }
+
+    &.module--no-zoom{
+         .ratio{
+             &:hover{
+                transform: none;
+            }
+         }
+        video{
+            &:hover{
+                transform: none;
+            }
         }
     }
 
@@ -255,6 +269,7 @@
     right: 20px;
     text-align: center;
     cursor: pointer;
+    z-index: 7;
 }
 
 #staff-member__info{

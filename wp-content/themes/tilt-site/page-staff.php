@@ -167,7 +167,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
+
 			<div id="Staff-20" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_smoke_mel_ss.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -176,7 +176,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
+
 			<div id="Staff-21" class="module module--staff module--video" style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_smoke_matty_ss.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -185,9 +185,9 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
-			
-			
+
+
+
 		</div>
 	</div>
 
@@ -210,7 +210,7 @@ get_header(); ?>
 	    }
 	};
 
-	httpRequest.open('GET', 'http://http://localhost/~jonathanmalyon/tilt-website/tilt-site_tidy/staff.json', true);
+	httpRequest.open('GET', 'http://localhost/tilt-website/tilt-site_tidy/staff.json', true);
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
 	</script>
@@ -219,7 +219,8 @@ get_header(); ?>
 
 <div id="staff-member">
 	<div id="staff-member__wrapper">
-		<div id="staff-member__info" class="area-dark no-background">
+		<div id="blahblahblah" class="module"></div>
+		<div id="staff-member__info" class="area-dark no-background" style="position: relative; z-index: 7;">
 			<div id="staff-member__close"><p class="vertical-align sans-serif">X</p></div>
 			<h1 id="staff-member__name"></h1>
 			<h2 id="staff-member__position"></h2>

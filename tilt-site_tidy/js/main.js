@@ -816,8 +816,21 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
 if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
         myPlayer.play();
-        
+
     document.getElementById('header-play').addEventListener('click', function(){
+
+
+        switch(expression) {
+            case n:
+                //lol
+                break;
+            case n:
+                //lol
+                break;
+            default:
+                default //lol
+            }
+
             myPlayer.ready(function(){
                 myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
                 myPlayer.requestFullscreen();
