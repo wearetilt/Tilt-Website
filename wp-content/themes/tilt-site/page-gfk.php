@@ -20,7 +20,7 @@ get_header('work-item'); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
+                    <source id="header-video" src="https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
@@ -30,7 +30,7 @@ get_header('work-item'); ?>
             <h1>GFK<br />
                 <span class="light underlined">Brand Promo</span>
             </h1>
-            <h2 class="light">CS | Motion | 3D</h2>
+            <h2 class="light">Content Strategy | Motion | 3D</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
@@ -38,34 +38,30 @@ get_header('work-item'); ?>
                 <p class="first-para">How do you explain the many different services of a global company as complex and diverse as GfK in a single video piece? </p>
             </div>
             <div class="header-text__module header-text__module--padding">
-                <h2>The solution</h2>
-                <p class="first-para">Use motion graphics to keep things bold, clear and simple, telling the GfK story in just 90 seconds. </p>
+                <h2>The Big Idea</h2>
+                <p class="first-para">Use motion graphics to keep things bold, clear and simple, telling the GfK story in just 90 seconds.</p>
             </div>
         </div>
     </div>
 </header>
 
-<div class="container container--half-top">
+<div class="container container--half-top area-dark">
     <div class="group-container">
         <div class="group group--left">
             <div class="module module--2-2">
-                <div class="overlay area-dark">
-                    <div class="overlay-text">
-                        <p class="tag">Motion: Case Study</p>
-                        <h2>Barclays <br />
-                            <span class="light underlined">Integrity</span>
-                        </h2>
-                        <p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
-                    </div> <!-- /end overlay-text -->
-                </div> <!-- /end overlay -->
-                <div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
-                </div>
+                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_01_ls.jpg')"></div>
             </div>
         </div> <!-- /end group -->
         <div class="group group--right">
-            <div class="module module--1-1"></div>
-            <div  class="module module--1-1"></div>
-            <div class="module module--2-1"></div>
+            <div class="module module--1-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_02_ss.jpg')"></div>
+            </div>
+            <div  class="module module--1-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_03_ss.jpg')"></div>
+            </div>
+            <div class="module module--2-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_04_mr.jpg')"></div>
+            </div>
         </div> <!-- /end group -->
     </div> <!-- /end group-container -->
 </div>
@@ -78,13 +74,16 @@ get_header('work-item'); ?>
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
-                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in. </p>
                     </div>
                 </div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_05_mr.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_06_ls.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -96,21 +95,30 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 area-dark">
                     <div class="module__text">
-                        <p>“Tilt helped us realise a great 90 second 3D animation with VO. The production allowed us to simplify our complete matrix portfolio in the rapidly changing market research industry. The project was well organised and the team a pleasure to work with.” </p>
-                        <p>Glenn Ward - Global Director, Digital Marketing at GfK</p>
+                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in.</p>
                     </div>
                 </div>
             </div>
             <div class="group group--right">
                 <div class="module module--1-1">
-                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/video-placeholder.jpg')">
-                    </div>
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_07_ss.jpg')"></div>
                 </div>
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_08_ss.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
 </div> <!-- /end container -->
+
+<div class="container container--no-padding">
+	<div class="module module--2-1 area-dark area-dark--lighter">
+        <div class="module__text">
+            <p>“Tilt helped us realise a great 90 second 3D animation with VO. The production allowed us to simplify our complete matrix portfolio in the rapidly changing market research industry. The project was well organised and the team a pleasure to work with.” </p>
+            <p>Glenn Ward - Global Director, Digital Marketing at GfK</p>
+        </div>
+    </div>
+</div>
 
 <div class="group-container">
     <a class="project-navigation" href="">< Previous Project</a>
