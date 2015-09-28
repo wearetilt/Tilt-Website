@@ -42,9 +42,9 @@ get_header('work-item'); ?>
         <section class="carousel">
             <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
             <div class="carousel-images">
-                <div id="carousel-image-1"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_01_imacsmall.jpg')"></div>
-                <div id="carousel-image-2"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_02_imacsmall.jpg')"></div>
-                <div id="carousel-image-3"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_03_imacsmall.jpg')"></div>
+                <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_01_imacsmall.jpg')"></div>
+                <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_02_imacsmall.jpg')"></div>
+                <div id="carousel-image-3"  class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_03_imacsmall.jpg')"></div>
                 <div id="carousel-image-4"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_04_imacsmall.jpg')"></div>
             </div> <!-- /end carousel-images -->
             <div class="carousel-controls">
