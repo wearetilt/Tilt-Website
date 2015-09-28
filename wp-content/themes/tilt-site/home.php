@@ -17,27 +17,93 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-			</header><!-- .page-header -->
 
 			<?php
 			// Start the Loop.
+
+			$i = 0;
+
+			?>
+
+			<div class="container container--no-padding">
+
+			<?php
+
+			$tweetCounter = 0;
+
 			while ( have_posts() ) : the_post();
 
+				$i++;
+				if($i === 1){
+					?>
+						<div class="group-container">
+							<div class="group group--left">
+								<div class="module module--2-2">
+									<?php	get_template_part( 'content', 'blog-post' ); ?>
+								</div>
+					<?php
+				} else if($i === 2){
+					$tweet = $tweetCounter + 1;
+					?>
+						<div class="module module--1-1">
+							<div class="module__text">
+								<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+								<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
+							</div> <!-- /end text-section -->
+						</div>
+						<div class="module module--1-1">
+							<?php
+								get_template_part( 'content', 'blog-post' );
+							?>
+						</div>
+					<?php
+					$tweetCounter++;
+				} else if($i === 3){
+					$tweet = $tweetCounter - 1;
+					?>
+						</div>
+						<div class="group group--right">
+							<div class="module module--1-1">
+								<div class="module__text">
+									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+									<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
+								</div> <!-- /end text-section -->
+							</div>
+							<div class="module module--1-1">
+								<?php	get_template_part( 'content', 'blog-post' ); ?>
+							</div>
+					<?php
+					$tweetCounter++;
+				} else if($i === 4){
+					?>
+							<div class="module module--2-2">
+								<?php	get_template_part( 'content', 'blog-post' ); ?>
+							</div>
+						</div>
+					<?php
+				}
+				?>
+				<?php
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'content', get_post_format() );
 
 			// End the loop.
+
+			if($i === 4){
+				$i = 0;
+				?>
+					</div>
+				<?php
+			}
 			endwhile;
+
+			?>
+			</div>
+			<?php
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
@@ -53,7 +119,7 @@ get_header(); ?>
 		endif;
 		?>
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+
+</div>
 
 <?php get_footer(); ?>
