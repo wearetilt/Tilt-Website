@@ -70,7 +70,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark area-dark--lighter">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">We created a Creature Comforts-inspired animated film with a light-hearted tone. We interviewed dog walkers on the South Downs about responsible dog ownership and then put their words into the mouths of animated pets. The client hoped to get 1,000 unique views within the first week, but the piece went viral and was watched more than 10,000 times in seven days.</p>
@@ -93,7 +93,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark area-dark--lighter">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <p>The finished film was seen by thousands and as a result we were commissioned to rebuild the main South Downs website.</p>
                         <p>“Everyone thinks the film is really great and funny and I'm very impressed with the final product too!”</p>

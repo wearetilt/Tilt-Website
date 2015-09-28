@@ -60,7 +60,7 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-1 area-dark area-dark--lighter">
+                    <div class="module module--2-1 module--dark">
                         <div class="module__text">
                             <h2 class="underlined">What we did</h2>
                             <p class="first-para">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
@@ -84,7 +84,7 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-1 area-dark">
+                    <div class="module module--2-1 module--dark">
                         <div class="module__text">
                             <p>“We are really happy with the result and it has been getting great feedback internally. I am so pleased with the work you have produced, it would be really great if you were able to work with other teams in Sainsbury’s as well as L&amp;D.”</p>
                             <p>Joe Kelly - Behavioural Specialist in Learning &amp; Development</p>
@@ -93,7 +93,7 @@ get_header('work-item'); ?>
                 </div>
                 <div class="group group--right">
                     <div class="module module--1-1">
-	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_03_ss.jpg')"></div>	
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_03_ss.jpg')"></div>
                     </div>
                     <div class="module module--1-1">
 	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_04_ss.jpg')"></div>
@@ -102,12 +102,12 @@ get_header('work-item'); ?>
             </div> <!-- /end group-container -->
         </section>
     </div> <!-- /end container -->
-    
-         
-    <div class="container container--no-padding">
+
+
+    <div class="container container--no-padding image-container">
     	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_05_hz.jpg" alt="Sainbury's Cars" />
     </div>
-    
+
     <!-- TODO: Add Video and Images of Cars Thang -->
 
     <div class="group-container">

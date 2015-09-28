@@ -39,6 +39,14 @@ html, body{
     &.container--double-side-pad{
         padding: percentage(245/2032) percentage(381/2032);
     }
+
+    &.image-container{
+        font-size: 0;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
 
 #carreers {

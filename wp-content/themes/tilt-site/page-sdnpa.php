@@ -70,12 +70,12 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container ">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark area-dark--lighter">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood.</p>
                     </div>
-                     
+
                 </div>
                 <div class="module module--2-1">
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_05_mr.jpg')"></div>
@@ -94,7 +94,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark area-dark--lighter">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <p>The client was delighted with the film and we have since been commissioned to produce other projects for South Downs National Park. The film has been viewed more than 25,000 times since launch – far exceeding expectations.</p>
                     </div>
@@ -105,7 +105,7 @@ get_header('work-item'); ?>
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_07_ss.jpg')"></div>
                 </div>
                 <div class="module module--1-1">
-	                 <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_08_ss.jpg')"></div>  
+	                 <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_08_ss.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->

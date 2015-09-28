@@ -6,7 +6,7 @@
     position: relative;
     transition: all 0.5s ease;
     &.module--dark{
-        background-color: $c-bg;
+        background-color: $c-grey-25;
         h2, p{
             color: white;
         }
