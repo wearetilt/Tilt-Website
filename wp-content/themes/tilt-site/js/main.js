@@ -1223,6 +1223,10 @@ var getScrollPosition = function(){
 
 var staff = document.getElementsByClassName('module');
 
+// if(document.getElementById('staff-member')){
+//
+// }
+
 if(document.getElementById('staff-member')){
     for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         staffMember = staff[iterator3];
