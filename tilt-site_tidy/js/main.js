@@ -1,3 +1,241 @@
+/*
+ * classList.js: Cross-browser full element.classList implementation.
+ * 1.1.20150312
+ *
+ * By Eli Grey, http://eligrey.com
+ * License: Dedicated to the public domain.
+ *   See https://github.com/eligrey/classList.js/blob/master/LICENSE.md
+ */
+
+/*global self, document, DOMException */
+
+/*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
+
+if ("document" in self) {
+
+// Full polyfill for browsers with no classList support
+if (!("classList" in document.createElement("_"))) {
+
+(function (view) {
+
+"use strict";
+
+if (!('Element' in view)) return;
+
+var
+	  classListProp = "classList"
+	, protoProp = "prototype"
+	, elemCtrProto = view.Element[protoProp]
+	, objCtr = Object
+	, strTrim = String[protoProp].trim || function () {
+		return this.replace(/^\s+|\s+$/g, "");
+	}
+	, arrIndexOf = Array[protoProp].indexOf || function (item) {
+		var
+			  i = 0
+			, len = this.length
+		;
+		for (; i < len; i++) {
+			if (i in this && this[i] === item) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	// Vendors: please allow content code to instantiate DOMExceptions
+	, DOMEx = function (type, message) {
+		this.name = type;
+		this.code = DOMException[type];
+		this.message = message;
+	}
+	, checkTokenAndGetIndex = function (classList, token) {
+		if (token === "") {
+			throw new DOMEx(
+				  "SYNTAX_ERR"
+				, "An invalid or illegal string was specified"
+			);
+		}
+		if (/\s/.test(token)) {
+			throw new DOMEx(
+				  "INVALID_CHARACTER_ERR"
+				, "String contains an invalid character"
+			);
+		}
+		return arrIndexOf.call(classList, token);
+	}
+	, ClassList = function (elem) {
+		var
+			  trimmedClasses = strTrim.call(elem.getAttribute("class") || "")
+			, classes = trimmedClasses ? trimmedClasses.split(/\s+/) : []
+			, i = 0
+			, len = classes.length
+		;
+		for (; i < len; i++) {
+			this.push(classes[i]);
+		}
+		this._updateClassName = function () {
+			elem.setAttribute("class", this.toString());
+		};
+	}
+	, classListProto = ClassList[protoProp] = []
+	, classListGetter = function () {
+		return new ClassList(this);
+	}
+;
+// Most DOMException implementations don't allow calling DOMException's toString()
+// on non-DOMExceptions. Error's toString() is sufficient here.
+DOMEx[protoProp] = Error[protoProp];
+classListProto.item = function (i) {
+	return this[i] || null;
+};
+classListProto.contains = function (token) {
+	token += "";
+	return checkTokenAndGetIndex(this, token) !== -1;
+};
+classListProto.add = function () {
+	var
+		  tokens = arguments
+		, i = 0
+		, l = tokens.length
+		, token
+		, updated = false
+	;
+	do {
+		token = tokens[i] + "";
+		if (checkTokenAndGetIndex(this, token) === -1) {
+			this.push(token);
+			updated = true;
+		}
+	}
+	while (++i < l);
+
+	if (updated) {
+		this._updateClassName();
+	}
+};
+classListProto.remove = function () {
+	var
+		  tokens = arguments
+		, i = 0
+		, l = tokens.length
+		, token
+		, updated = false
+		, index
+	;
+	do {
+		token = tokens[i] + "";
+		index = checkTokenAndGetIndex(this, token);
+		while (index !== -1) {
+			this.splice(index, 1);
+			updated = true;
+			index = checkTokenAndGetIndex(this, token);
+		}
+	}
+	while (++i < l);
+
+	if (updated) {
+		this._updateClassName();
+	}
+};
+classListProto.toggle = function (token, force) {
+	token += "";
+
+	var
+		  result = this.contains(token)
+		, method = result ?
+			force !== true && "remove"
+		:
+			force !== false && "add"
+	;
+
+	if (method) {
+		this[method](token);
+	}
+
+	if (force === true || force === false) {
+		return force;
+	} else {
+		return !result;
+	}
+};
+classListProto.toString = function () {
+	return this.join(" ");
+};
+
+if (objCtr.defineProperty) {
+	var classListPropDesc = {
+		  get: classListGetter
+		, enumerable: true
+		, configurable: true
+	};
+	try {
+		objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
+	} catch (ex) { // IE 8 doesn't support enumerable:true
+		if (ex.number === -0x7FF5EC54) {
+			classListPropDesc.enumerable = false;
+			objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
+		}
+	}
+} else if (objCtr[protoProp].__defineGetter__) {
+	elemCtrProto.__defineGetter__(classListProp, classListGetter);
+}
+
+}(self));
+
+} else {
+// There is full or partial native classList support, so just check if we need
+// to normalize the add/remove and toggle APIs.
+
+(function () {
+	"use strict";
+
+	var testElement = document.createElement("_");
+
+	testElement.classList.add("c1", "c2");
+
+	// Polyfill for IE 10/11 and Firefox <26, where classList.add and
+	// classList.remove exist but support only one argument at a time.
+	if (!testElement.classList.contains("c2")) {
+		var createMethod = function(method) {
+			var original = DOMTokenList.prototype[method];
+
+			DOMTokenList.prototype[method] = function(token) {
+				var i, len = arguments.length;
+
+				for (i = 0; i < len; i++) {
+					token = arguments[i];
+					original.call(this, token);
+				}
+			};
+		};
+		createMethod('add');
+		createMethod('remove');
+	}
+
+	testElement.classList.toggle("c3", false);
+
+	// Polyfill for IE 10 and Firefox <24, where classList.toggle does not
+	// support the second argument.
+	if (testElement.classList.contains("c3")) {
+		var _toggle = DOMTokenList.prototype.toggle;
+
+		DOMTokenList.prototype.toggle = function(token, force) {
+			if (1 in arguments && !this.contains(token) === !force) {
+				return force;
+			} else {
+				return _toggle.call(this, token);
+			}
+		};
+
+	}
+
+	testElement = null;
+}());
+
+}
+
+}
+
 // WAY POINTS script
 /*!
 Waypoints - 3.1.1
@@ -751,30 +989,8 @@ var resourceUri;
 // }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    console.log('I am ready!');
     document.body.setAttribute("class","loaded");
 });
-
-var menuButton = document.getElementById('menuButton');
-var pageMenu = document.getElementById('pageMenu');
-menuButton.onclick = function(){
-    [].map.call(document.querySelectorAll('.wrapper'), function(el){
-        el.classList.toggle('wrapper--navved');
-    });
-    if(pageMenu.style.visibility === 'inherit'){
-        pageMenu.style.opacity = '0'
-        setTimeout(function(){
-            pageMenu.style.visibility = 'hidden';
-        },300);
-        pageMenu.style.transform = "scale(1.5, 1.5)";
-        document.getElementById('footer').style.display = 'block';
-    } else{
-        pageMenu.style.visibility = 'inherit';
-        pageMenu.style.opacity = 0.98;
-        pageMenu.style.transform = "scale(1, 1)";
-        document.getElementById('footer').style.display = 'none';
-    }
-}
 
 var allModules = document.getElementsByClassName('module');
 
@@ -817,28 +1033,86 @@ if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
         myPlayer.play();
 
-    document.getElementById('header-play').addEventListener('click', function(){
+		var theHeader = document.getElementsByTagName('header');
+		//This assumes there is only one header element per page.
+		var headerID = theHeader[0].getAttribute('ID');
 
+		switch (headerID) {
+			//work-page
+			case "work-page":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
 
-        switch(expression) {
-            case n:
-                //lol
-                break;
-            case n:
-                //lol
-                break;
-            default:
-                default //lol
-            }
+			case "film-bp":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
 
-            myPlayer.ready(function(){
-                myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
-                myPlayer.requestFullscreen();
-                myPlayer.play();
-                myPlayer.controls(true);
-                console.log(myPlayer.controls());
-            });
+			case "":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
+			case "":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
+			case "":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
+			case "":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
+			case "":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
+			case "":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
+			case "":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
+			default:
+				// do nothing
+		}
+
+    var videoWaypoint = new Waypoint({
+      element: document.getElementById('header-video-player'),
+      handler: function(direction) {
+        if(direction === 'down'){
+            myPlayer.pause();
+        } else if(direction === 'up'){
+            myPlayer.play();
+        }
+
+      },
+      offset: function() {
+        return -this.element.clientHeight
+      }
     });
+
+    if(document.getElementById('header-play')){
+        document.getElementById('header-play').addEventListener('click', function(){
+                myPlayer.ready(function(){
+                    myPlayer.src("https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112");
+                    myPlayer.requestFullscreen();
+                    myPlayer.play();
+                    myPlayer.controls(true);
+                });
+        });
+    }
 
     myPlayer.on('fullscreenchange', function(){
         if((myPlayer.currentSrc() === "https://player.vimeo.com/external/92928961.sd.mp4?s=bd3f2a5c11bedaf02acb301919c9d47f&profile_id=112") && (!myPlayer.isFullscreen())){
@@ -858,8 +1132,6 @@ for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
     staffMember.onclick = function (){
         var self = this;
         var rect = this.getBoundingClientRect();
-        console.log(rect);
-        console.log('I have been clicked');
         var staffMemberInfo = this.getAttribute('ID');
         this.classList.add('module--selected');
     }
@@ -880,6 +1152,8 @@ var scrollPosition;
 var doc = document.documentElement;
 
 menuButton.onclick = function(){
+
+
     [].map.call(document.querySelectorAll('.wrapper'), function(el){
         el.classList.toggle('wrapper--navved');
     });
@@ -890,11 +1164,20 @@ menuButton.onclick = function(){
         },300);
         pageMenu.style.transform = "scale(1.5, 1.5)";
         document.getElementById('footer').style.display = 'block';
+
+        if(document.getElementById('header-video-player')){
+            myPlayer.play();
+        }
+
     } else{
         pageMenu.style.visibility = 'inherit';
         pageMenu.style.opacity = 0.98;
         pageMenu.style.transform = "scale(1, 1)";
         document.getElementById('footer').style.display = 'none';
+
+        if(document.getElementById('header-video-player')){
+            myPlayer.pause();
+        }
     }
 }
 
@@ -924,7 +1207,6 @@ var populateAndSizeStaffInfo = function(staffBox, staffObject){
 var hideStaffBoxAndAllowScrolling = function(staffBox){
     staffBox.style.display = 'none';
     // document.body.classList.remove('stop-scrolling');
-    console.log("scrollPosition = " + scrollPosition);
 }
 
 var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPosition, topPosition){
@@ -939,17 +1221,112 @@ var getScrollPosition = function(){
     return top;
 }
 
-
 var staff = document.getElementsByClassName('module');
 
 if(document.getElementById('staff-member')){
     for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         staffMember = staff[iterator3];
 
+		var staffMemberID = 'Staff-' + (iterator3 + 1);
+		var staffVideoSrc = '';
+		var staffFullScreenVid= '';
+		console.log(staffMemberID);
+		console.log(staffFullScreenVid);
 
-        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML = '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + window.directoryURI + '/video/test-video.mp4" type="video/mp4"></video></div>';
+		switch (staffMemberID) {
+			//work-page
+			case "Staff-1":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403279.sd.mp4?s=5c6b2cbfb2ef0f48e4d4c2d7a2c3656a&profile_id=112";
+			break;
 
-        var ratio = staffMember.children[0];
+			case "Staff-2":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403284.sd.mp4?s=09bc9929175c10c46ec8fb7dc62a119b&profile_id=112";
+			break;
+
+			case "Staff-3":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403285.sd.mp4?s=1c80332d3883f4581f7a584c83826da7&profile_id=112";
+			break;
+
+			case "Staff-4":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403277.sd.mp4?s=29c1365532165fa7c8d7138eec8e163c&profile_id=112";
+			break;
+
+			case "Staff-5":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403273.sd.mp4?s=91b80135b2f7602578df0f11bd9b8e18&profile_id=112";
+			break;
+
+			case "Staff-6":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403276.sd.mp4?s=ea179e3f47a824b0c5f4868ff97393aa&profile_id=112";
+			break;
+
+			case "Staff-7":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403270.sd.mp4?s=0206047835fecf68feef275f56b33cef&profile_id=112";
+			break;
+
+			case "Staff-8":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403275.sd.mp4?s=1eb2bc24302d7fc2a8ab2993feab5586&profile_id=112";
+			break;
+
+			case "Staff-9":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403281.sd.mp4?s=35498172b93da64e3aa8d15a894cafa6&profile_id=112";
+			break;
+
+			case "Staff-10":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403288.sd.mp4?s=eb9ce38ce409022ac660aac48376a250&profile_id=112";
+			break;
+
+			case "Staff-11":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403296.sd.mp4?s=f1f19de8ff8f3870ac0fde5132f4fad9&profile_id=112";
+			break;
+
+			case "Staff-12":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403294.sd.mp4?s=b27782cf9097d798e9956d3e4285a205&profile_id=112";
+			break;
+
+			case "Staff-13":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403278.sd.mp4?s=87cf89bfeb39d10c65e49d88de1b1cbd&profile_id=112";
+			break;
+
+			case "Staff-14":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403289.sd.mp4?s=f04cff5c4ee7456ece6f61632d6fdef1&profile_id=112";
+			break;
+
+			case "Staff-15":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403280.sd.mp4?s=d8b4e6a74d8135f5e091f254344c5901&profile_id=112";
+			break;
+
+			case "Staff-16":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403290.sd.mp4?s=0e1e564e06cc5b284c190a8b0d20791e&profile_id=112";
+			break;
+
+			case "Staff-17":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403272.sd.mp4?s=3bcc352281b93bbd8fc66df067156493&profile_id=112";
+			break;
+
+			case "Staff-18":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403274.sd.mp4?s=f7ea813281b01caf596bfb5c00adca74&profile_id=112";
+			break;
+
+			case "Staff-19":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403271.sd.mp4?s=541308d08653d1fb132ab55203ce4e82&profile_id=112";
+			break;
+
+			case "Staff-20":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403295.sd.mp4?s=b1daa0f944cda8009b47296f821189cd&profile_id=112";
+			break;
+
+			case "Staff-21":
+				var staffVideoSrc = "https://player.vimeo.com/external/140403286.sd.mp4?s=6af207b741e9c1b261384d91132861c1&profile_id=112";
+			break;
+
+			default:
+				// do nothing
+		}
+
+
+        document.getElementById('Staff-' + (iterator3 + 1)).innerHTML += '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+
+        var ratio = staffMember.children[1];
         var video = ratio.children[0];
         //Some closure magic to get this working.
         (function(){
@@ -967,6 +1344,7 @@ if(document.getElementById('staff-member')){
 
         staffMember.onclick = function (){
             staffMember = this.id;
+			staffFullScreenVid = this.dataset.fullvideo;
             staffObject = lookUpStaffMember(staffMember);
             staffBox = document.getElementById('staff-member');
             staffBox.style.display = 'block';
@@ -978,7 +1356,6 @@ if(document.getElementById('staff-member')){
             topPosition = (rect['top'] + 'px');
             // document.body.classList.add('stop-scrolling');
             scrollPosition = getScrollPosition();
-            console.log("scrollPosition onClick = " + scrollPosition)
 
             staffBoxClose.onclick = function(){
                 document.getElementById('staff-member__wrapper').style.opacity = '0';
@@ -1003,8 +1380,10 @@ if(document.getElementById('staff-member')){
             staffBox.appendChild(staffBoxClose);
             staffBox.style.backgroundColor = '#FF0066';
             staffBox.style.zIndex = '6';
+			document.getElementById('blahblahblah').innerHTML += '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video poster="images/test-screen-video.png" autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
 
             setTimeout(function(){
+				console.log('Hello');
                 staffBox.style.transition = "all 0.5s ease";
                 populateAndSizeStaffInfo(staffBox, staffObject);
             }, 500);
@@ -1017,3 +1396,47 @@ if(document.getElementById('staff-member')){
     }
 
 }
+
+if(document.getElementById('work_all')){
+
+    [].map.call(document.querySelectorAll('.work-item-title'), function(el){
+        el.onclick = function(){
+                itemsToShow = el.id;
+                itemsToShow = itemsToShow.slice(5);
+                console.log(itemsToShow);
+                [].map.call(document.querySelectorAll('.work-container'), function(el3){
+                    el3.style.opacity = 0;
+                    el3.style.display = 'none';
+                });
+
+                if(itemsToShow === 'all'){
+
+                    [].map.call(document.querySelectorAll('.work-container'), function(el3){
+                        el3.style.opacity = 1;
+                        el3.style.display = 'block';
+                    });
+
+                } else {
+                    document.getElementById(itemsToShow).style.opacity = 1;
+                    document.getElementById(itemsToShow).style.display = 'block';
+
+                    [].map.call(document.querySelectorAll('.module'), function(el2){
+                        el2.classList.remove('module--visible');
+                        console.log(el2);
+                    });
+                    [].map.call(document.querySelectorAll('.module'), function(el4){
+                        setTimeout(function(){
+                            el4.classList.add('module--visible');
+                        }, 500);
+                    });
+                }
+        }
+    });
+}
+
+
+//footer stuff
+
+var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));
+var footer = document.getElementById('footer');
+    footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')";

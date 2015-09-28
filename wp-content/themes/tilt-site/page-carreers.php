@@ -13,7 +13,7 @@
 
 get_header(); ?>
 <div id="carreers" class="area-dark">
-	<div class="container">
+	<div class="container container--double-side-pad">
 		<div class="text-container">
 			<p class="first-para sans-serif"><strong class="highlight">Get a job you&lsquo;ll love.</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque esse sequi dolorem ullam adipisci asperiores doloribus, inventore maxime! Deserunt velit repellendus quia earum quae cum? Quibusdam illum, expedita numquam.</p>
 			<a href="<?php echo site_url(); ?>/contact">

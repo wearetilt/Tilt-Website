@@ -13,6 +13,24 @@
 
 get_header(); ?>
 
+<div class="area-dark">
+	<div class="container container--double-side-pad">
+		<div class="text-container">
+			<p class="first-para sans-serif"><strong class="highlight">Chaos, Schizophrenia &amp; Paranoia. </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque esse sequi dolorem ullam adipisci asperiores doloribus, inventore maxime! Deserunt velit repellendus quia earum quae cum? Quibusdam illum, expedita numquam.</p>
+			<a href="<?php echo site_url(); ?>/contact">
+				<div class="cube">
+					<div class="cube--front">
+						<p class="sans-serif">Contact Us</p>
+					</div>
+					<div class="cub--top">
+						<p class="sans-serif">Please</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div> <!-- /end container -->
+</div>
+
 	<div class="container container--no-padding">
 		<div class="group-container">
 			<div id="Staff-1" class="module module--staff module--video module--staff__director" data-fullvideo='https://player.vimeo.com/external/140429651.hd.mp4?s=7ed21df5431baf6a0644362b0d5f9409&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_smoke_jon_bs.jpg'); background-size: cover; background-position: 50% 50%;">
