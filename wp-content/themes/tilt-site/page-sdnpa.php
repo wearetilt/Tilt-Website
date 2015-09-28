@@ -30,60 +30,61 @@ get_header('work-item'); ?>
             <h1>South Downs National Park<br />
                 <span class="light underlined">Discover Another Way</span>
             </h1>
-            <h2 class="light">CS | Film | 3D</h2>
+            <h2 class="light">Content Strategy | Film | 3D</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para">How can you encourage people to take public transport to the beautiful South Downs National Park, and even make them excited to do so? </p>
+                <p class="first-para">How can you encourage people to take public transport to the beautiful South Downs National Park, and even make them excited to do so?</p>
             </div>
             <div class="header-text__module header-text__module--padding">
-                <h2>The solution</h2>
-                <p class="first-para">Merge film and motion graphics to create a magical experience that brings an entire journey to the South Downs to life through the eyes of a child. </p>
+                <h2>The Big Idea</h2>
+                <p class="first-para">Merge film and motion graphics to create a magical experience that brings an entire journey to the South Downs to life through the eyes of a child.</p>
             </div>
         </div>
     </div>
 </header>
 
-<div class="container container--half-top">
+<div class="container container--half-top area-dark">
     <div class="group-container">
         <div class="group group--left">
             <div class="module module--2-2">
-                <div class="overlay area-dark">
-                    <div class="overlay-text">
-                        <p class="tag">Motion: Case Study</p>
-                        <h2>Barclays <br />
-                            <span class="light underlined">Integrity</span>
-                        </h2>
-                        <p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
-                    </div> <!-- /end overlay-text -->
-                </div> <!-- /end overlay -->
-                <div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
-                </div>
+                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_01_ls.jpg')"></div>
             </div>
         </div> <!-- /end group -->
         <div class="group group--right">
-            <div class="module module--1-1"></div>
-            <div  class="module module--1-1"></div>
-            <div class="module module--2-1"></div>
+            <div class="module module--1-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_02_ss.jpg')"></div>
+            </div>
+            <div  class="module module--1-1">
+	             <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_03_ss.jpg')"></div>
+            </div>
+            <div class="module module--2-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_04_mr.jpg')"></div>
+            </div>
         </div> <!-- /end group -->
     </div> <!-- /end group-container -->
 </div>
 
 <div class="container container--no-padding">
     <section>
-        <div class="group-container">
+        <div class="group-container ">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 area-dark--lighter">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood. </p>
+                        <p class="first-para">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood.</p>
                     </div>
+                     
                 </div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_05_mr.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_06_ls.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -93,15 +94,19 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 area-dark--lighter">
                     <div class="module__text">
-                        <p>The client was delighted with the film and we have since been commissioned to produce other projects for South Downs National Park. The film has been viewed more than 25,000 times since launch – far exceeding expectations. </p>
+                        <p>The client was delighted with the film and we have since been commissioned to produce other projects for South Downs National Park. The film has been viewed more than 25,000 times since launch – far exceeding expectations.</p>
                     </div>
                 </div>
             </div>
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_07_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                 <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_08_ss.jpg')"></div>  
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -111,11 +116,17 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--right">
-            <div id="module-5" class="module module--2-2"></div>
+            <div id="module-5" class="module module--2-2">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_11_ls.jpg')"></div>
+            </div>
             </div>
             <div class="group group--left">
-                <div class="module module--2-1"></div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_09_mr.jpg')"></div>
+                </div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_10_mr.jpg')"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -125,11 +136,17 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-            <div id="module-5" class="module module--2-2"></div>
+            <div id="module-5" class="module module--2-2">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_12_ls.jpg')"></div>
+            </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-1"></div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_13_mr.jpg')"></div>
+                </div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_sd/film_sd_14_mr.jpg')"></div>
+                </div>
             </div>
         </div>
     </section>
