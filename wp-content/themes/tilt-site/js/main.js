@@ -1223,10 +1223,6 @@ var getScrollPosition = function(){
 
 var staff = document.getElementsByClassName('module');
 
-// if(document.getElementById('staff-member')){
-//
-// }
-
 if(document.getElementById('staff-member')){
     for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         staffMember = staff[iterator3];
@@ -1443,4 +1439,4 @@ if(document.getElementById('work_all')){
 
 var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));
 var footer = document.getElementById('footer');
-    footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')"
+    footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')";
