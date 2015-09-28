@@ -60,7 +60,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark--lighter">
+                <div class="module module--2-1 area-dark area-dark--lighter">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">We developed the Lab, an experiential site that takes users on a journey through the drug development process. The Lab opens with an emotive question: “What if you couldn’t remember your family and friends?”.</p>
@@ -84,7 +84,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark--lighter">
+                <div class="module module--2-1 area-dark area-dark--lighter">
                     <div class="module__text">
                         <p>If logged in through Facebook, users can see a photo album filled with pictures of their own friends. This reminds people of the devastating effects of Alzheimer’s and reinforces the need to invest in research.</p>
                         <p>The piece ends with a call to action to donate. The Lab gained national press coverage and won the Association of Medical Research Charities’ <a href="http://www.amrc.org.uk/our-work/science-communication-awards" target="_blank">Science Communication Award</a>.</p>
@@ -104,7 +104,7 @@ get_header('work-item'); ?>
 </div> <!-- /end container -->
 
 <div class="container container--no-padding">
-	<div class="module module--2-1 area-dark--lighter">
+	<div class="module module--2-1 area-dark area-dark--lighter">
         <div class="module__text">
             <p>“Tilt created a sleek and engaging website, which really brought our ideas to life. Their creative thinking presented us with ideas and functionality beyond our expectations that worked superbly in making the Lab a captivating and interactive experience for visitors.”</p>
 			<p>Laura Phipps, Science Communications Manager</p>
