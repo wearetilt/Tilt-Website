@@ -1223,12 +1223,19 @@ var getScrollPosition = function(){
 
 var staff = document.getElementsByClassName('module');
 
+// if(document.getElementById('staff-member')){
+//
+// }
+
 if(document.getElementById('staff-member')){
     for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         staffMember = staff[iterator3];
 
 		var staffMemberID = 'Staff-' + (iterator3 + 1);
 		var staffVideoSrc = '';
+		var staffFullScreenVid= '';
+		console.log(staffMemberID);
+		console.log(staffFullScreenVid);
 
 		switch (staffMemberID) {
 			//work-page
@@ -1341,6 +1348,7 @@ if(document.getElementById('staff-member')){
 
         staffMember.onclick = function (){
             staffMember = this.id;
+			staffFullScreenVid = this.dataset.fullvideo;
             staffObject = lookUpStaffMember(staffMember);
             staffBox = document.getElementById('staff-member');
             staffBox.style.display = 'block';
@@ -1376,12 +1384,12 @@ if(document.getElementById('staff-member')){
             staffBox.appendChild(staffBoxClose);
             staffBox.style.backgroundColor = '#FF0066';
             staffBox.style.zIndex = '6';
+			document.getElementById('blahblahblah').innerHTML += '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video poster="images/test-screen-video.png" autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
 
             setTimeout(function(){
 				console.log('Hello');
                 staffBox.style.transition = "all 0.5s ease";
                 populateAndSizeStaffInfo(staffBox, staffObject);
-				document.getElementById('blahblahblah').innerHTML += '<div class="module module--video module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video poster="images/test-screen-video.png" autoplay muted="true"><source src="https://player.vimeo.com/external/140429640.hd.mp4?s=173560769853be64276a145330dcee5e&profile_id=119" type="video/mp4"></video></div></div>';
             }, 500);
 
             setTimeout(function(){
