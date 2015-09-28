@@ -1222,15 +1222,15 @@ var getScrollPosition = function(){
 }
 
 var staff = document.getElementsByClassName('module');
+var videoFunction = '';
 
 if(document.getElementById('staff-member')){
     for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         staffMember = staff[iterator3];
 
 		var staffMemberID = 'Staff-' + (iterator3 + 1);
-		var staffVideoSrc = '';
-		var staffFullScreenVid= '';
-		var videoFunction = '';
+		var staffVideoSrc;
+		var staffFullScreenVid;
 		var videoIWant;
 		console.log(staffMemberID);
 		console.log(staffFullScreenVid);
@@ -1331,17 +1331,16 @@ if(document.getElementById('staff-member')){
 						// do nothing
 				}
 					console.log('Mouse has entered');
-					var videoFunction = setTimeout(function(){
+					videoFunction = setTimeout(function(){
 							if(!that.children[1]){
-								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="images/test-screen-video.png" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+								console.log(thisStaffID);
+								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
 							}
 							var ratio2 = that.children[1];
 							var video2 = ratio2.children[0];
-							console.log(ratio2);
-							console.log(video2);
 							videoIWant = video2;
 	                    	videoIWant.play();
-						}, 250);
+						}, 100);
 
             });
 
@@ -1353,7 +1352,7 @@ if(document.getElementById('staff-member')){
             });
         })();
 
-
+        staffBoxClose = document.getElementById('staff-member__close');
 
         staffMember.onclick = function (){
             staffMember = this.id;
@@ -1361,7 +1360,6 @@ if(document.getElementById('staff-member')){
             staffObject = lookUpStaffMember(staffMember);
             staffBox = document.getElementById('staff-member');
             staffBox.style.display = 'block';
-            staffBoxClose = document.getElementById('staff-member__close');
             rect = this.getBoundingClientRect();
             startingHeight = window.getComputedStyle(this).height;
             startingWidth = window.getComputedStyle(this).width;
@@ -1370,19 +1368,7 @@ if(document.getElementById('staff-member')){
             // document.body.classList.add('stop-scrolling');
             scrollPosition = getScrollPosition();
 
-            staffBoxClose.onclick = function(){
-                document.getElementById('staff-member__wrapper').style.opacity = '0';
-                document.getElementById('staff-member__info').style.opacity = '0';
-                window.scrollTo(0, scrollPosition);
 
-                setTimeout(function(){
-                    resetStaffBox(staffBox, startingHeight, startingWidth, leftPosition, topPosition);
-                }, 500);
-
-                setTimeout(function(){
-                    hideStaffBoxAndAllowScrolling(staffBox)
-                }, 1050);
-            }
             staffBox.style.position = "fixed";
             staffBox.style.transition = "all 0s ease";
             staffBox.style.left = leftPosition;
@@ -1393,7 +1379,7 @@ if(document.getElementById('staff-member')){
             staffBox.appendChild(staffBoxClose);
             staffBox.style.backgroundColor = '#FF0066';
             staffBox.style.zIndex = '6';
-			document.getElementById('blahblahblah').innerHTML += '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video poster="images/test-screen-video.png" autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
+			document.getElementById('blahblahblah').innerHTML = '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video poster="images/test-screen-video.png" autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
 
             setTimeout(function(){
 				console.log('Hello');
@@ -1406,6 +1392,21 @@ if(document.getElementById('staff-member')){
             }, 1050);
 
         }
+
+		staffBoxClose.onclick = function(){
+			document.getElementById('staff-member__wrapper').style.opacity = '0';
+			document.getElementById('staff-member__info').style.opacity = '0';
+			window.scrollTo(0, scrollPosition);
+
+			setTimeout(function(){
+				resetStaffBox(staffBox, startingHeight, startingWidth, leftPosition, topPosition);
+			}, 500);
+
+			setTimeout(function(){
+				hideStaffBoxAndAllowScrolling(staffBox)
+				document.getElementById('blahblahblah').innerHTML = '';	
+			}, 1050);
+		}
     }
 
 }
