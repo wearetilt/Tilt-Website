@@ -30,7 +30,7 @@ get_header('work-item'); ?>
             <h1>South Downs National Park<br />
                 <span class="light underlined">Take the lead</span>
             </h1>
-            <h2 class="light">CS | Illustration | Motion</h2>
+            <h2 class="light">Content Strategy | Illustration | Motion</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
@@ -38,34 +38,30 @@ get_header('work-item'); ?>
                 <p class="first-para">How can you change the behaviour of irresponsible dog owners in the South Downs National Park, without being patronising?</p>
             </div>
             <div class="header-text__module header-text__module--padding">
-                <h2>The solution</h2>
+                <h2>The Big Idea</h2>
                 <p class="first-para">Create an animated piece with a playful, warm tone that delivers serious messages underneath – the spoonful of sugar that helps the medicine go down.</p>
             </div>
         </div>
     </div>
 </header>
 
-<div class="container container--half-top">
+<div class="container container--half-top area-dark">
     <div class="group-container">
-        <div class="group group--left">
+        <div class="group group--right">
             <div class="module module--2-2">
-                <div class="overlay area-dark">
-                    <div class="overlay-text">
-                        <p class="tag">Motion: Case Study</p>
-                        <h2>Barclays <br />
-                            <span class="light underlined">Integrity</span>
-                        </h2>
-                        <p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
-                    </div> <!-- /end overlay-text -->
-                </div> <!-- /end overlay -->
-                <div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
-                </div>
+                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_04_ls.jpg')"></div>
             </div>
         </div> <!-- /end group -->
-        <div class="group group--right">
-            <div class="module module--1-1"></div>
-            <div  class="module module--1-1"></div>
-            <div class="module module--2-1"></div>
+        <div class="group group--left">
+            <div class="module module--2-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_01_mr.jpg')"></div>
+            </div>
+            <div class="module module--1-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_02_ss.jpg')"></div>
+            </div>
+            <div  class="module module--1-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_03_ss.jpg')"></div>
+            </div>
         </div> <!-- /end group -->
     </div> <!-- /end group-container -->
 </div>
@@ -74,16 +70,20 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 area-dark area-dark--lighter">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">We created a Creature Comforts-inspired animated film with a light-hearted tone. We interviewed dog walkers on the South Downs about responsible dog ownership and then put their words into the mouths of animated pets. The client hoped to get 1,000 unique views within the first week, but the piece went viral and was watched more than 10,000 times in seven days.</p>
                     </div>
                 </div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_05_mr.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_06_ls.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -93,7 +93,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 area-dark area-dark--lighter">
                     <div class="module__text">
                         <p>The finished film was seen by thousands and as a result we were commissioned to rebuild the main South Downs website.</p>
                         <p>“Everyone thinks the film is really great and funny and I'm very impressed with the final product too!”</p>
@@ -102,8 +102,12 @@ get_header('work-item'); ?>
                 </div>
             </div>
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+	            	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_07_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_08_ss.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>

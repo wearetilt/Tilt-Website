@@ -27,11 +27,11 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
-                <h2>The challenge</h2>
+                <h2>The Challenge</h2>
                 <p class="first-para">Convey Sainsbury’s prestigious history in a way that excites and engages people way beyond the usual flat and lifeless company timelines.</p>
             </div>
             <div class="header-text__module">
-                <h2>The solution</h2>
+                <h2>The Big Idea</h2>
                 <p class="first-para">Flip the static corporate timeline on its head and take people on a journey through Sainsbury’s history via a user-controlled 3D perspective interface. </p>
             </div>
         </div>
@@ -42,10 +42,10 @@ get_header('work-item'); ?>
         <section class="carousel">
             <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
             <div class="carousel-images">
-                <div id="carousel-image-1"class="carousel-image"></div>
-                <div id="carousel-image-2"class="carousel-image"></div>
-                <div id="carousel-image-3"class="carousel-image"></div>
-                <div id="carousel-image-4"class="carousel-image"></div>
+                <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_01_imacsmall.jpg')"></div>
+                <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_02_imacsmall.jpg')"></div>
+                <div id="carousel-image-3"  class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_03_imacsmall.jpg')"></div>
+                <div id="carousel-image-4"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_04_imacsmall.jpg')"></div>
             </div> <!-- /end carousel-images -->
             <div class="carousel-controls">
                 <div id="carousel-control-1" class="carousel-control selected"></div>
@@ -60,17 +60,21 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-1 area-dark">
+                    <div class="module module--2-1 area-dark area-dark--lighter">
                         <div class="module__text">
                             <h2 class="underlined">What we did</h2>
                             <p class="first-para">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
                             <p>We created a unique iterative loader to deliver a smooth experience. And our modular approach to the timeline build makes it easy to embed on other sites.</p>
                         </div>
                     </div>
-                    <div class="module module--2-1"></div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_01_mr.jpg')"></div>
+                    </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--2-2"></div>
+                    <div class="module module--2-2">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_02_ls.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
@@ -88,13 +92,22 @@ get_header('work-item'); ?>
                     </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--1-1"></div>
-                    <div class="module module--1-1"></div>
+                    <div class="module module--1-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_03_ss.jpg')"></div>	
+                    </div>
+                    <div class="module module--1-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_04_ss.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
     </div> <!-- /end container -->
-
+    
+         
+    <div class="container container--no-padding">
+    	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_05_hz.jpg" alt="Sainbury's Cars" />
+    </div>
+    
     <!-- TODO: Add Video and Images of Cars Thang -->
 
     <div class="group-container">
