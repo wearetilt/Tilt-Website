@@ -88,7 +88,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark area-dark--lighter">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">Leadership is about dealing with setbacks as much as it is about success. Initially we created a series of films featuring iconic leaders from around the world. But we then decided to focus solely on Steve Jobs because his personality, leadership style and rollercoaster ride to the top have all the ingredients for a compelling story.</p>
@@ -111,7 +111,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark area-dark--lighter">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <p>We blended together 2D, 3D and live action film to tell the story of Steve Job’s legacy, interspersed with BP leaders sharing their views on what makes a great leader. The film created a buzz during the event, and has been viewed many times within BP as an example for leaders, new and old.</p>
                     </div>
