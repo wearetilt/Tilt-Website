@@ -191,7 +191,7 @@ get_header(); ?>
                         </a>
                     </div>
     				<div class="module module--1-1">
-                        <a href="<?php get_site_url(); ?>barclays-legacy">
+                        <a href="<?php get_site_url(); ?>legacy">
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
