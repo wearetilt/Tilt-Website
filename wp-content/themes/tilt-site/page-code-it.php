@@ -46,12 +46,20 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_01_ls.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-1"></div>
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_02_mr.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_03_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_04_ss.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -61,10 +69,10 @@ get_header('work-item'); ?>
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
-            <div id="carousel-image-1"class="carousel-image"></div>
-            <div id="carousel-image-2"class="carousel-image"></div>
-            <div id="carousel-image-3"class="carousel-image"></div>
-            <div id="carousel-image-4"class="carousel-image"></div>
+            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_01_ipad.jpg')"></div>
+            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_02_ipad.jpg')"></div>
+            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_03_ipad.jpg')"></div>
+            <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_04_ipad.jpg')"></div>
         </div> <!-- /end carousel-images -->
         <div class="carousel-controls">
             <div id="carousel-control-1" class="carousel-control selected"></div>
@@ -90,12 +98,20 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1"></div>
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_05_mr.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_06_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_07_ss.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+                	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_08_ls.jpg')"></div>
+				</div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -115,10 +131,14 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_09_ls.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_10_ls.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -138,10 +158,14 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_11_ls.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_12_ls.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -158,7 +182,9 @@ get_header('work-item'); ?>
 </div>
 
 <div class="container container--no-padding">
-    <div class="module module--2-1"></div>
+    <div class="module module--2-1">
+	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_13_hz.jpg')"></div>
+    </div>
 </div>
 
 <div class="container area-dark">
