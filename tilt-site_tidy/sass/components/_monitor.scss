@@ -23,6 +23,10 @@
     width: 92.5%;
     overflow: hidden;
     background-color: darkorchid;
+
+    &.monitor-screen--video{
+        z-index: 10;
+    }
 }
 
 .mobile-holder{
