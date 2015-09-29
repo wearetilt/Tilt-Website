@@ -13,38 +13,55 @@
 
 get_header('work-item'); ?>
 
-<header class="work-item area-dark">
+<header class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/139330951.hd.mp4?s=3d1c83178ba678c46e7f01baebb21bff&profile_id=113" type="video/mp4">
+                    <source id="header-video" src="https://player.vimeo.com/external/140671448.hd.mp4?s=11802c7bbdf0509d90de0511e89bc72c&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
     <div class="container container--header">
         <div class="header-title">
-            <p class="tag tag--no-italic">Motion: Case Study</p>
+            <p class="tag tag--no-italic">Motion</p>
             <h1>Barclays<br />
                 <span class="light underlined">Integrity</span>
             </h1>
-            <h2 class="light">Film | Motion | 3D</h2>
+            <h2 class="light">Motion | 3D | Film</h2>
+        </div>
+        <div class="header-text">
+            <div class="header-text__module header-text__module--padding">
+                <h2>The Challenge</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="header-text__module header-text__module--padding">
+                <h2>The Big Idea</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
         </div>
     </div>
 </header>
 
-    <div class="container container--half-top">
+    <div class="container container--half-top area-dark">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
+                	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_01_ls.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
-                <div class="module module--2-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_02_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_03_ss.jpg')"></div>
+                </div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_04_mr.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
@@ -61,12 +78,19 @@ get_header('work-item'); ?>
             <div class="group-container">
                 <div class="group group--left">
                     <div class="module module--2-1 area-dark">
+                    	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_05_mr.jpg')"></div>
                     </div>
-                    <div class="module module--1-1"></div>
-                    <div class="module module--1-1"></div>
+                    <div class="module module--1-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_06_ss.jpg')"></div>
+                    </div>
+                    <div class="module module--1-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_07_ss_v2.jpg')"></div>
+                    </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--2-2"></div>
+                    <div class="module module--2-2">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_08_ls.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
@@ -76,12 +100,19 @@ get_header('work-item'); ?>
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
+                	 <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_09_ls.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
             <div class="group group--right">
-                <div class="module module--2-1"></div>
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_10_mr.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_11_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_12_ss.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
@@ -97,30 +128,43 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-1"></div>
-                    <div class="module module--2-1"></div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_13_mr_v2.jpg')"></div>
+                    </div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_14_mr.jpg')"></div>
+                    </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--2-2"></div>
+                    <div class="module module--2-2">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_15_ls.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
     </div> <!-- /end container -->
 
-    <div class="container container--half-top">
+    <div class="container container--half-top area-dark">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
+                	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_16_lg.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
-                <div class="module module--2-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_16_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_17_ss.jpg')"></div>
+                </div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_18_mr.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
-            <h2>Background</h2>
+            <h2>Solution (Film)</h2>
             <div class="text-section__para">
                 <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
@@ -132,11 +176,17 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-1"></div>
-                    <div class="module module--2-1"></div>
+                    <div class="module module--2-1">
+	                     <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_19_mr.jpg')"></div>
+                    </div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_20_mr.jpg')"></div>
+                    </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--2-2"></div>
+                    <div class="module module--2-2">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_21_ls.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
@@ -144,7 +194,7 @@ get_header('work-item'); ?>
 
     <div class="container">
         <section class="text-section">
-            <h2>Welcome to Tilt</h2>
+            <h2>Moore Info</h2>
             <div class="text-section__para">
                 <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
@@ -157,10 +207,14 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-2"></div>
+                    <div class="module module--2-2">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_22_ls.jpg')"></div>
+                    </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--2-2"></div>
+                    <div class="module module--2-2">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/mo_integrity_23_ls.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
@@ -168,7 +222,7 @@ get_header('work-item'); ?>
 
     <div class="container area-dark">
         <section class="text-section">
-            <h2>Welcome to Tilt</h2>
+            <h2>Feedback from Barclays</h2>
             <div class="text-section__para">
                 <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>

@@ -221,7 +221,7 @@ get_header(); ?>
 			</div>
 			<div class="group group--left">
     				<div class="module module--2-2">
-                        <a href="<?php get_site_url(); ?>integrity">
+                        <a href="<?php get_site_url(); ?>barclays-integrity">
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Motion: Case Study</p>
