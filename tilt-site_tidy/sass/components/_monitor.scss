@@ -57,11 +57,17 @@
 
 header {
     .monitor-holder{
+        z-index: 1;
         padding-top: 5%;
     }
 
     .monitor-screen{
         top: 18.5%;
         height: 58.5%;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
     }
 }
