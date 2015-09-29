@@ -17,14 +17,14 @@ get_header('work-item'); ?>
     <div class="monitor-holder">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen">
-            <img src="http://placehold.it/350x150" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_pbs/int_pbs_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
         </div>
     </div>
     <div class="container container--header">
         <div class="header-title">
             <p class="tag">Interactive</p>
             <h1>Passion Pictures<br />
-                <span class="light underlined">Interactive microsite for Earth - A New Wild</span>
+                <span class="light underlined">Earth - A New Wild</span>
             </h1>
             <h2 class="light">Design | Illustration | DEVELOPMENT</h2>
         </div>
