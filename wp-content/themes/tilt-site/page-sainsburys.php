@@ -14,8 +14,11 @@
 get_header('work-item'); ?>
 
 <header id="icap" class="work-item area-dark">
-    <div class="monitor">
-        <img class="centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+    <div class="monitor-holder">
+        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+        <div class="monitor-screen">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+        </div>
     </div>
     <div class="container container--header">
         <div class="header-title">
