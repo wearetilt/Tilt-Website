@@ -19,7 +19,7 @@ get_header(); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="https://vimeo.com/wearetilt/review/139889786/34a330da56" type="video/mp4">
+                    <source id="header-video" src="https://player.vimeo.com/external/140788639.hd.mp4?s=7f87950eb610f53ad40024d72f1eedc0&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
