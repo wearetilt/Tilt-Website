@@ -22,6 +22,9 @@ get_header(); ?>
 			<?php
 			// Start the Loop.
 
+			$numberOfPosts = $wp_query->post_count;
+			$postsLeftOver = $numberOfPosts % 8;
+
 			$i = 0;
 
 			?>
@@ -29,8 +32,11 @@ get_header(); ?>
 			<div class="container container--no-padding">
 
 			<?php
-
-			$tweetCounter = 0;
+			if($paged === 0){
+				$tweetCounter = 0;
+			} else {
+				$tweetCounter =  4 * ($paged - 1);
+			}
 
 			while ( have_posts() ) : the_post();
 
@@ -101,6 +107,36 @@ get_header(); ?>
 			}
 			endwhile;
 
+			if($postsLeftOver != 0){
+				$amountOfBoxes =  8 - $postsLeftOver;
+
+				switch ($amountOfBoxes) {
+				    case 1:
+				        echo "Hello1";
+				        break;
+				    case 2:
+				        echo "Hello2";
+				        break;
+				    case 3:
+				        echo "Hello3";
+				        break;
+					case 4;
+						echo "Hello3";
+						break;
+					case 5:
+						echo "Hello3";
+						break;
+					case 6:
+						echo "Hello3";
+						break;
+					case 7:
+						echo "Hello3";
+						break;
+				    default:
+				        echo "Blaaaaaaah";
+				}
+			}
+
 			?>
 			</div>
 			<?php
@@ -118,8 +154,6 @@ get_header(); ?>
 
 		endif;
 		?>
-
-
 </div>
 
 <?php get_footer(); ?>
