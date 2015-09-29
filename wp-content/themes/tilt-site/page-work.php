@@ -273,7 +273,7 @@ get_header(); ?>
                         </a>
     				</div>
     				<div class="module module--1-1">
-                        <a href="<?php get_site_url(); ?>discover-bp">
+                        <a href="<?php get_site_url(); ?>i360">
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
@@ -289,7 +289,7 @@ get_header(); ?>
 			</div>
 			<div class="group group--right">
     				<div class="module module--2-2">
-                        <a href="<?php get_site_url(); ?>i360">
+                        <a href="<?php get_site_url(); ?>discover-bp">
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Web: Case Study</p>
