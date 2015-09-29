@@ -20,7 +20,7 @@ get_header('work-item'); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=119" type="video/mp4">
+                    <source id="header-video" src="https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
@@ -35,62 +35,68 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para">How can you change the behaviour of irresponsible dog owners in the South Downs National Park, without being patronising?</p>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
             <div class="header-text__module header-text__module--padding">
-                <h2>The solution</h2>
-                <p class="first-para">Create an animated piece with a playful, warm tone that delivers serious messages underneath – the spoonful of sugar that helps the medicine go down.</p>
+                <h2>The Big Idea</h2>
+                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
         </div>
     </div>
 </header>
 
-    <div class="container container--half-top">
+    <div class="container container--half-top area-dark">
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-2">
-                    <div class="overlay area-dark">
-                        <div class="overlay-text">
-                            <p class="tag">Motion: Case Study</p>
-                            <h2>Barclays <br />
-                                <span class="light underlined">Integrity</span>
-                            </h2>
-                            <p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
-                        </div> <!-- /end overlay-text -->
-                    </div> <!-- /end overlay -->
-                    <div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
-                    </div>
+                <div class="module module--1-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_01_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_02_ss.jpg')"></div>
+                </div>
+                <div class="module module--2-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_04_mr.jpg')"></div>
+                </div>
+                 <div class="module module--1-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_05_ss.jpg')"></div>
+                </div>
+                 <div class="module module--1-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_06_ss.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div  class="module module--1-1"></div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_03_mr.jpg')"></div>
+                </div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_07_ls.jpg')"></div>
+                </div>  
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
-        <section class="text-section">
-            <h2>Welcome to Tilt</h2>
-            <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
-            </div>
-        </section> <!-- /end text-section -->
+        
     </div>
 
     <div class="container container--no-padding">
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-1 area-dark">
-                        <div class="module__text">
-                            <h2 class="underlined">The Process</h2>
-                            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
-                        </div>
+                    <div class="module module--2-1 module--dark">
+                      
+						<div class="module__text">
+							<h2 class="underlined">What we did</h2>
+							<p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</div>
+                        
                     </div>
-                    <div class="module module--2-1"></div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_08_mr.jpg')"></div>
+                    </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--2-2"></div>
+                    <div class="module module--2-2">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_09_ls.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
@@ -100,7 +106,7 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                    <div class="module module--2-1 area-dark">
+                    <div class="module module--2-1 module--dark">
                         <div class="module__text">
                             <h2 class="underlined">The Process</h2>
                             <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
@@ -108,8 +114,12 @@ get_header('work-item'); ?>
                     </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--1-1"></div>
-                    <div class="module module--1-1"></div>
+                    <div class="module module--1-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_10_ss.jpg')"></div>
+                    </div>
+                    <div class="module module--1-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_11_ss.jpg')"></div>
+                    </div>
                 </div> <!-- /end group -->
             </div> <!-- /end group-container -->
         </section>
@@ -119,11 +129,17 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--right">
-                <div id="module-5" class="module module--2-2"></div>
+                <div id="module-5" class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_14_ls.jpg')"></div>
+                </div>
                 </div>
                 <div class="group group--left">
-                    <div class="module module--2-1"></div>
-                    <div class="module module--2-1"></div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_12_mr.jpg')"></div>
+                    </div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_13_mr.jpg')"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,11 +149,17 @@ get_header('work-item'); ?>
         <section>
             <div class="group-container">
                 <div class="group group--left">
-                <div id="module-5" class="module module--2-2"></div>
+                <div id="module-5" class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_15_ls.jpg')"></div>
+                </div>
                 </div>
                 <div class="group group--right">
-                    <div class="module module--2-1"></div>
-                    <div class="module module--2-1"></div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_16_mr.jpg')"></div>
+                    </div>
+                    <div class="module module--2-1">
+	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_17_mr.jpg')"></div>
+                    </div>
                 </div>
             </div>
         </section>

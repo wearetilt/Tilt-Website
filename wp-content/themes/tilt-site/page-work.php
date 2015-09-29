@@ -66,7 +66,7 @@ get_header(); ?>
                     </a>
 				</div>
 				<div class="module module--1-1 area-dark">
-                    <a href="<?php get_site_url(); ?>elwoods">
+                    <a href="<?php get_site_url(); ?>barclays-values">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
     							<p class="tag">Work</p>
