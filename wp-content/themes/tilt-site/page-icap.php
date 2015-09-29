@@ -14,8 +14,11 @@
 get_header('work-item'); ?>
 
 <header id="icap" class="work-item area-dark">
-    <div class="monitor">
-        <img class="centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+    <div class="monitor-holder">
+        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+        <div class="monitor-screen">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+        </div>
     </div>
     <div class="container container--header">
         <div class="header-title">
@@ -42,10 +45,10 @@ get_header('work-item'); ?>
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
-            <div id="carousel-image-1"class="carousel-image"></div>
-            <div id="carousel-image-2"class="carousel-image"></div>
-            <div id="carousel-image-3"class="carousel-image"></div>
-            <div id="carousel-image-4"class="carousel-image"></div>
+            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_01_imacsmall.jpg')"></div>
+            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_02_imacsmall.jpg')"></div>
+            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_03_imacsmall.jpg')"></div>
+            <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_04_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
         <div class="carousel-controls">
             <div id="carousel-control-1" class="carousel-control selected"></div>
@@ -74,20 +77,24 @@ get_header('work-item'); ?>
     </section>
 </div>
 
-<div class="container container--no-padding">
+<div class="container container--no-padding module-dark">
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">The Process</h2>
                         <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
                     </div>
                 </div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_01_mr.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_02_ls.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -97,7 +104,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">The Process</h2>
                         <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
@@ -105,14 +112,22 @@ get_header('work-item'); ?>
                 </div>
             </div>
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_03_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_04_ss.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
 </div> <!-- /end container -->
-<!-- TODO: Add the fear-o-meter thang -->
 
+<div class="container container--no-padding">
+    <div class="module module--2-1">
+	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_05_hz.jpg')"></div>
+    </div>
+</div>
 
 <div class="group-container">
     <a class="project-navigation" href="">< Previous Project</a>

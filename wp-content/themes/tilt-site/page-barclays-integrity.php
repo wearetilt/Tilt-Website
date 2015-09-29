@@ -13,7 +13,8 @@
 
 get_header('work-item'); ?>
 
-<header class="work-item work-item--motion area-dark">
+
+<header class="work-item area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 
@@ -26,21 +27,11 @@ get_header('work-item'); ?>
     </div>
     <div class="container container--header">
         <div class="header-title">
-            <p class="tag tag--no-italic">Motion</p>
+            <p class="tag tag--no-italic">Motion: Case Study</p>
             <h1>Barclays<br />
                 <span class="light underlined">Integrity</span>
             </h1>
-            <h2 class="light">Motion | 3D | Film</h2>
-        </div>
-        <div class="header-text">
-            <div class="header-text__module header-text__module--padding">
-                <h2>The Challenge</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="header-text__module header-text__module--padding">
-                <h2>The Big Idea</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+            <h2 class="light">Content Strategy | Motion | 3D | Film</h2>
         </div>
     </div>
 </header>

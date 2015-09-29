@@ -13,7 +13,7 @@
 
 get_header('work-item'); ?>
 
-<header id="icap" class="work-item area-dark">
+<header id="pbs" class="work-item area-dark">
     <div class="monitor-holder">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen">
