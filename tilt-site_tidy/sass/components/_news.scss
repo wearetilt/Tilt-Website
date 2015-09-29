@@ -1,0 +1,42 @@
+nav{
+    &.navigation{
+
+    background-color: $c-tilt-pink;
+    text-align: center;
+
+    .nav-links{
+        display: inline-block;
+        margin-bottom: 0.5%;
+        margin-top: 1%;
+    }
+
+    .page-numbers{
+        color: $c-pink-3;
+        @include font-size(25);
+        font-family: $f-seroot-lt;
+
+        & + * {
+            margin-left: 10px;
+        }
+
+        &.current, &.next, &.prev{
+            color: white;
+
+            &:hover{
+                color: $c-pink-3;
+            }
+        }
+
+        &.next {
+            margin-left: 25px;
+        }
+
+
+    }
+
+        h2{
+            text-indent: -999999px;
+            font-size: 0;
+        }
+    }
+}
