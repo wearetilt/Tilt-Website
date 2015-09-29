@@ -20,7 +20,7 @@ get_header('work-item'); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/test-video.mp4" type="video/mp4">
+                    <source id="header-video" src="https://player.vimeo.com/external/139331071.hd.mp4?s=9d1090404ff15a8fba76c4e4c46c2a5f&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
@@ -49,42 +49,42 @@ get_header('work-item'); ?>
     <div class="group-container">
         <div class="group group--left">
             <div class="module module--2-2">
-                <div class="overlay area-dark">
-                    <div class="overlay-text">
-                        <p class="tag">Motion: Case Study</p>
-                        <h2>Barclays <br />
-                            <span class="light underlined">Integrity</span>
-                        </h2>
-                        <p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
-                    </div> <!-- /end overlay-text -->
-                </div> <!-- /end overlay -->
-                <div class="ratio" style="background-image: url('images/video-placeholder.jpg')">
-                </div>
+            	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_01_ls.jpg')"></div>
             </div>
         </div> <!-- /end group -->
         <div class="group group--right">
-            <div  class="module module--1-1"></div>
-            <div  class="module module--1-1"></div>
-            <div class="module module--2-1"></div>
+            <div  class="module module--1-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_02_ss.jpg')"></div>
+            </div>
+            <div  class="module module--1-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_03_ss.jpg')"></div>
+            </div>
+            <div class="module module--2-1">
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_04_mr.jpg')"></div>
+            </div>
         </div> <!-- /end group -->
     </div> <!-- /end group-container -->
 </div>
 
-<div class="container container--no-padding">
+<div class="container container--no-padding area-dark area-dark">
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
                         <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in. </p>
                     </div>
                 </div>
-                <div class="module module--2-1"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_05_mr.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--2-2"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_06_ls.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -94,7 +94,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 area-dark">
+                <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
@@ -103,27 +103,41 @@ get_header('work-item'); ?>
                 </div>
             </div>
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_07_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_08_ss.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
 </div>
 
 <div class="container container--no-padding">
-    <div class="module module--2-1"></div>
+    <div class="module module--2-1">
+	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_09_hz.jpg')"></div>
+    </div>
 </div>
 
 <div class="container container--no-padding">
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_10_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_11_ss.jpg')"></div>
+                </div>
             </div>
             <div class="group group--right">
-                <div class="module module--1-1"></div>
-                <div class="module module--1-1"></div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_12_ss.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_13_ss.jpg')"></div>
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
