@@ -9,16 +9,17 @@
 
 get_header('news'); ?>
 
+<?php echo $post_id = get_the_id(); ?>
+
 <div class="news-wrapper">
 	<div class="news-container">
 		<header id="news" class="work-item area-dark">
 		    <div class="container container--header">
 		        <div class="header-title">
 		            <p class="tag">News</p>
-		            <h1 class="underlined">Tilt Develop Fun Ecosystem games for pbs
-		            </h1>
+		            <h1 class="underlined"><? the_title(); ?></h1>
 					<div>
-		            	<h2 class="light">3 August By Jonathan Helm</h2>
+		            	<h2 class="light"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id ); echo get_the_author_meta('display_name', $post_author_id);?></h2>
 						<h2>Share: Email Facebook Twitter</h2>
 					</div>
 

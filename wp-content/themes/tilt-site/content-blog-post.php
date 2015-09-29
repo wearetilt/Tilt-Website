@@ -21,7 +21,7 @@
 		<div class="overlay-text">
 			<p class="tag"><?php echo get_the_date('F Y'); ?></p>
 			<h2><?php the_title( ); ?></h2>
-			<p class="sans-serif"><?php the_excerpt(); ?></p>
+			<p class="blog-post-test" class="sans-serif"><?php echo get_the_excerpt(); ?></p>
 		</div> <!-- /end overlay-text -->
 	</div> <!-- /end overlay -->
 	<div class="ratio" style="background-image: url('<?php echo $attachedImg[0]; ?>')">

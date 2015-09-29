@@ -177,11 +177,11 @@ get_header('work-item'); ?>
         <div class="text-section__para">
             <p class="first-para">Among other things, we created:</p>
             <ul>
-				<li><strong>Headline films.</strong> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</li> 
-				<li><strong>The Business of BP.</strong> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</li> 
-				<li><strong>Profile films.</strong> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</li> 
+				<li><strong>Headline films.</strong> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</li>
+				<li><strong>The Business of BP.</strong> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</li>
+				<li><strong>Profile films.</strong> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</li>
 				<li><strong>Infosheets and factsheets.</strong> Turning traditional copy content into highly visual, easy-to-absorb pieces. Infosheets help communicate journeys and processes, while factsheets convey stat-heavy info.</li>
-				<li><strong>Leader films.</strong> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</li> 
+				<li><strong>Leader films.</strong> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</li>
             </ul>
         </div>
     </section>
@@ -205,7 +205,7 @@ get_header('work-item'); ?>
                 <div class="module module--1-1">
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/web_discover_11_ss.jpg')"></div>
                 </div>
-                
+
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -215,7 +215,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>RESULTS: 16x EXPECTED UPTAKE</h2>
         <div class="text-section__para">
-            <p class="first-para">Initially, BP hoped to achieve 6,000 unique hits in the first year – it generated 100,000 within twelve months.</p> 
+            <p class="first-para">Initially, BP hoped to achieve 6,000 unique hits in the first year – it generated 100,000 within twelve months.</p>
 			<p>Three years on from the initial deployment, we have just finished a design refresh and made the site fully responsive. Discover BP continues to be one of the organisation’s most successful communication projects, and has led to Tilt becoming involved in other high-profile BP projects.</p>
         </div>
     </section>
