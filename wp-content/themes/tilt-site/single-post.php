@@ -27,7 +27,7 @@ get_header('news'); ?>
 		    </div>
 		</header>
 		<div class="intro-text">
-			<p>Tilt have developed a series of advanced HTML5 games for Earth A New Wild, a new series currently airing on American television network PBS. Produced by National Geographic and Passion Planet, the series takes a fresh look at humankind’s relationship to the planet’s wildest places and most fascinating species.</p>
+			<p><?php echo get_post_meta($post_id, 'intro_text', true); ?></p>
 		</div>
 	</div>
 	<div class="container container--no-padding">
