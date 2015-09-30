@@ -136,8 +136,8 @@ get_header('work-item'); ?>
 <!-- TODO: Add the fear-o-meter thang -->
 
 <div class="group-container">
-    <a class="project-navigation" href="">< Previous Project</a>
-    <a class="project-navigation" href="">Next Project ></a>
+    <a class="project-navigation" href="../sainsburys">< Previous Project</a>
+    <a class="project-navigation" href="../alzheimers">Next Project ></a>
 </div>
 
 </div>

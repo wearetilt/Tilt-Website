@@ -121,8 +121,8 @@ get_header('work-item'); ?>
 </div>
 
 <div class="group-container">
-    <a class="project-navigation" href="">< Previous Project</a>
-    <a class="project-navigation" href="">Next Project ></a>
+    <a class="project-navigation" href="../legacy">< Previous Project</a>
+    <a class="project-navigation" href="../barclays-integrity">Next Project ></a>
 </div>
 
 </div>
