@@ -136,8 +136,8 @@
  <!-- TODO: Add the fear-o-meter thang -->
 
  <div class="group-container">
-     <a class="project-navigation" href="">< Previous Project</a>
-     <a class="project-navigation" href="">Next Project ></a>
+     <a class="project-navigation" href="../discover-bp">< Previous Project</a>
+     <a class="project-navigation" href="../icap">Next Project ></a>
  </div>
 
  </div>
