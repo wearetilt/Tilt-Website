@@ -82,7 +82,7 @@ get_header(); ?>
 			</div>
 			<div class="group group--left">
 				<div class="module module--2-2">
-                    <a href="<?php get_site_url(); ?>bp-fll/">
+                    <a href="<?php get_site_url(); ?>bp-fll-stories/">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
     							<p class="tag">Film: Case Study</p>
