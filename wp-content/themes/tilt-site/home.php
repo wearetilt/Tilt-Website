@@ -353,7 +353,6 @@ get_header(); ?>
 					<?php
 						break;
 				    default:
-				        echo "Blaaaaaaah";
 				}
 			}
 
