@@ -52,6 +52,12 @@ h2{
             width: em(76, 36);
         }
     }
+
+    &.news-date{
+        @include font-size(20);
+        font-family: $f-seroot-lt;
+        color: $c-grey-94;
+    }
 }
 
 h3{
@@ -127,6 +133,11 @@ p{
         font-family: $f-merriweather-lt;
         color: $c-grey-57;
     }
+
+    .intro-text &{
+     @include font-size(35);
+     font-family: $f-seroot-lt;
+    }
 }
 
 a{
@@ -170,6 +181,10 @@ span{
         line-height: (33/25);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+    }
+
+    &.author-name{
+        color: $c-tilt-pink;
     }
 
 }

@@ -118,6 +118,14 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+
+						<?php the_posts_pagination( array(
+							'prev_text'          => __( '< Prev', 'twentyfifteen' ),
+							'next_text'          => __( 'Next >', 'twentyfifteen' ),
+							'screen_reader_text' => __( '' )
+						) );
+
+						?>
 						<?php
 				        break;
 				    case 2:
@@ -140,6 +148,14 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
+
+				<?php the_posts_pagination( array(
+					'prev_text'          => __( '< Prev', 'twentyfifteen' ),
+					'next_text'          => __( 'Next >', 'twentyfifteen' ),
+					'screen_reader_text' => __( '' )
+				) );
+
+				?>
 					<?php
 				        break;
 				    case 3:
@@ -170,6 +186,14 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+
+						<?php the_posts_pagination( array(
+							'prev_text'          => __( '< Prev', 'twentyfifteen' ),
+							'next_text'          => __( 'Next >', 'twentyfifteen' ),
+							'screen_reader_text' => __( '' )
+						) );
+
+						?>
 					<?php
 				        break;
 					case 4;
@@ -203,6 +227,14 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+
+						<?php the_posts_pagination( array(
+							'prev_text'          => __( '< Prev', 'twentyfifteen' ),
+							'next_text'          => __( 'Next >', 'twentyfifteen' ),
+							'screen_reader_text' => __( '' )
+						) );
+
+						?>
 					<?php
 						break;
 					case 5:
@@ -241,6 +273,15 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+
+						<?php the_posts_pagination( array(
+							'prev_text'          => __( '< Prev', 'twentyfifteen' ),
+							'next_text'          => __( 'Next >', 'twentyfifteen' ),
+							'screen_reader_text' => __( '' )
+						) );
+
+						?>
+
 					<?php
 						break;
 					case 6:
@@ -291,6 +332,14 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
+
+				<?php the_posts_pagination( array(
+					'prev_text'          => __( '< Prev', 'twentyfifteen' ),
+					'next_text'          => __( 'Next >', 'twentyfifteen' ),
+					'screen_reader_text' => __( '' )
+				) );
+
+				?>
 					<?php
 						break;
 					case 7:
@@ -349,6 +398,13 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
+				<?php the_posts_pagination( array(
+					'prev_text'          => __( '< Prev', 'twentyfifteen' ),
+					'next_text'          => __( 'Next >', 'twentyfifteen' ),
+					'screen_reader_text' => __( '' )
+				) );
+
+				?>
 
 					<?php
 						break;
