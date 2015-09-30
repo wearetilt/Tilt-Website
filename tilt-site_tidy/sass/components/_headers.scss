@@ -141,6 +141,11 @@ header{
         height: 80vh;
         min-height: 80vh;
     }
+
+    .news-wrapper{
+        @extend %clearfix;
+        background-color: $c-bg;
+    }
 }
 
 .header-text__module{

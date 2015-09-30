@@ -47,6 +47,11 @@ html, body{
             width: 100%;
         }
     }
+
+    #news &.container--header-news{
+        padding: 0;
+        opacity: 1 !important;
+    }
 }
 
 #carreers {
