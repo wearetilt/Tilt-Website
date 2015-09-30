@@ -9,7 +9,7 @@
 
 get_header('news'); ?>
 
-<?php echo $post_id = get_the_id();
+<?php $post_id = get_the_id();
 
 	$attachedImg = '';
 	if(has_post_thumbnail()){
@@ -25,10 +25,6 @@ get_header('news'); ?>
 				<div class="header-title">
 					<p class="tag">News</p>
 					<h1 class="underlined"><? the_title(); ?></h1>
-					<div>
-						<h2 class="light"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id ); echo get_the_author_meta('display_name', $post_author_id);?></h2>
-						<h2>Share: Email Facebook Twitter</h2>
-					</div>
 
 				</div>
 			</div>
@@ -38,6 +34,10 @@ get_header('news'); ?>
 
 <div class="news-wrapper">
 	<div class="news-container">
+		<div>
+			<h2 class="light news-date"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id );?> BY <span class="author-name"><?php echo get_the_author_meta('display_name', $post_author_id);?></span></h2>
+			<h2>Share: Email Facebook Twitter</h2>
+		</div>
 		<div class="intro-text">
 			<p><?php the_field('intro_text'); ?></p>
 		</div>
