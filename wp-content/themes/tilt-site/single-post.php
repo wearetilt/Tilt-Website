@@ -27,31 +27,31 @@ get_header('news'); ?>
 		    </div>
 		</header>
 		<div class="intro-text">
-			<p><?php echo get_post_meta($post_id, 'intro_text', true); ?></p>
+			<p><?php the_field('intro_text'); ?></p>
 		</div>
 	</div>
 	<div class="container container--no-padding">
 		<div class="group-container">
 			<div class="group group--left">
 				<div class="module module--2-2">
-					<div class="ratio" style="background-image: url('<?php $image_1 = get_post_meta($post_id, 'image_1');?>');">
+					<div class="ratio" style="background-image: url('<?php the_field('image_1'); ?>');">
 
 					</div>
 				</div>
 			</div>
 			<div class="group group--right">
 				<div class="module module--1-1">
-					<div class="ratio" style="background-image: url('<?php $image_2 = get_post_meta($post_id, 'image_2');?>');">
+					<div class="ratio" style="background-image: url('<?php the_field('image_2'); ?>');">
 
 					</div>
 				</div>
 				<div class="module module--1-1">
-					<div class="ratio" style="background-image: url('<?php $image_3 = get_post_meta($post_id, 'image_3');?>');">
+					<div class="ratio" style="background-image: url('<?php the_field('image_3'); ?>');">
 
 					</div>
 				</div>
 				<div class="module module--2-1">
-					<div class="ratio" style="background-image: url('<?php $image_4 = get_post_meta($post_id, 'image_4'); var_dump($image_4);?>');">
+					<div class="ratio" style="background-image: url('<?php the_field('image_4'); ?>');">
 
 					</div>
 				</div>
@@ -59,12 +59,12 @@ get_header('news'); ?>
 		</div>
 	</div>
 	<div class="news-container">
-		<?php echo get_post_meta($post_id, 'main_body_of_text', true); ?>
+		<p><?php the_field('main_body_of_text'); ?></p>
 	</div>
 </div>
 
 <div class="img-container">
-	<img src="<?php $image_5 = get_post_meta($post_id, 'image_5', true); echo $image_5; ?>" alt="">
+	<img src="<?php the_field('image_5'); ?>" alt="">
 </div>
 
 <div class="group-container">
