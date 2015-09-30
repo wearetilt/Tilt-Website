@@ -14,7 +14,7 @@
 get_header('work-item'); ?>
 
 
-<header class="work-item area-dark">
+<header id="page_barclays_integrity" class="work-item area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 
@@ -164,11 +164,11 @@ get_header('work-item'); ?>
     </div>
 
 	<div class="container container--no-padding">
-	
+
 	    <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/film_poster_image.jpg" width="100%" height="100%" >
 	            <source src="https://player.vimeo.com/external/76713650.hd.mp4?s=3ad9d9530c4124f58d7db18bd46ddd8c&profile_id=113" type="video/mp4">
 	    </video>
-	
+
 	</div> <!-- /end container -->
 
     <div class="container container--no-padding">

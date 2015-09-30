@@ -13,7 +13,7 @@
 
 get_header('work-item'); ?>
 
-<header class="work-item area-dark">
+<header id="page_bp_fll_stories" class="work-item area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 

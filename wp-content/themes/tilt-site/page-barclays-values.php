@@ -13,7 +13,7 @@
 
 get_header('work-item'); ?>
 
-<header class="work-item work-item--motion area-dark">
+<header id="page_barclays_values" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 
@@ -70,10 +70,10 @@ get_header('work-item'); ?>
                 </div>
                 <div class="module module--2-2">
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_07_ls.jpg')"></div>
-                </div>  
+                </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
-        
+
     </div>
 
     <div class="container container--no-padding">
@@ -81,13 +81,13 @@ get_header('work-item'); ?>
             <div class="group-container">
                 <div class="group group--left">
                     <div class="module module--2-1 module--dark">
-                      
+
 						<div class="module__text">
 							<h2 class="underlined">What we did</h2>
 							<p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 						</div>
-                        
+
                     </div>
                     <div class="module module--2-1">
 	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_values/film_values_08_mr.jpg')"></div>
