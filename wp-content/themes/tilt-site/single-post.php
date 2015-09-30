@@ -9,23 +9,31 @@
 
 get_header('news'); ?>
 
-<?php echo $post_id = get_the_id(); ?>
+<?php echo $post_id = get_the_id();
+
+	$attachedImg = '';
+	if(has_post_thumbnail()){
+		$attachmentID = get_post_thumbnail_id($postID);
+		$attachedImg = wp_get_attachment_image_src($attachmentID);
+	}
+
+?>
+<header id="news" class="work-item area-dark" style="background-image: url('<?php the_field('header_image'); ?>');">
+	<div class="container container--header">
+		<div class="header-title">
+			<p class="tag">News</p>
+			<h1 class="underlined"><? the_title(); ?></h1>
+			<div>
+				<h2 class="light"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id ); echo get_the_author_meta('display_name', $post_author_id);?></h2>
+				<h2>Share: Email Facebook Twitter</h2>
+			</div>
+
+		</div>
+	</div>
+</header>
 
 <div class="news-wrapper">
 	<div class="news-container">
-		<header id="news" class="work-item area-dark">
-		    <div class="container container--header">
-		        <div class="header-title">
-		            <p class="tag">News</p>
-		            <h1 class="underlined"><? the_title(); ?></h1>
-					<div>
-		            	<h2 class="light"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id ); echo get_the_author_meta('display_name', $post_author_id);?></h2>
-						<h2>Share: Email Facebook Twitter</h2>
-					</div>
-
-		        </div>
-		    </div>
-		</header>
 		<div class="intro-text">
 			<p><?php the_field('intro_text'); ?></p>
 		</div>

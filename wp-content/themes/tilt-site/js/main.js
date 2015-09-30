@@ -1049,6 +1049,11 @@ if(document.getElementById('header-video-player')){
 				var fullVideoSrc = "";
 			break;
 
+			case "bp-fll":
+				var clipVideoSrc = "";
+				var fullVideoSrc = "";
+			break;
+
 			case "":
 				var clipVideoSrc = "";
 				var fullVideoSrc = "";
