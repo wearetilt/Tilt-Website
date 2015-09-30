@@ -19,15 +19,19 @@ get_header('news'); ?>
 
 ?>
 <header id="news" class="work-item area-dark" style="background-image: url('<?php the_field('header_image'); ?>');">
-	<div class="container container--header">
-		<div class="header-title">
-			<p class="tag">News</p>
-			<h1 class="underlined"><? the_title(); ?></h1>
-			<div>
-				<h2 class="light"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id ); echo get_the_author_meta('display_name', $post_author_id);?></h2>
-				<h2>Share: Email Facebook Twitter</h2>
-			</div>
+	<div class="container container--header container--header-news">
+		<div class="news-wrapper news-wrapper--header">
+			<div class="news-container">
+				<div class="header-title">
+					<p class="tag">News</p>
+					<h1 class="underlined"><? the_title(); ?></h1>
+					<div>
+						<h2 class="light"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id ); echo get_the_author_meta('display_name', $post_author_id);?></h2>
+						<h2>Share: Email Facebook Twitter</h2>
+					</div>
 
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
