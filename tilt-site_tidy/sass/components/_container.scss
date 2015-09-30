@@ -51,6 +51,14 @@ html, body{
     #news &.container--header-news{
         padding: 0;
         opacity: 1 !important;
+        .header-title{
+            padding-top: percentage(55/1270);
+            width: 100%;
+
+            .tag{
+                padding-bottom: percentage(18/1270);
+            }
+        }
     }
 }
 
@@ -178,7 +186,8 @@ section{
 }
 
 .news-container{
-    padding: 0 percentage(62/1270);
+    @extend %clearfix;
+    padding: 0 percentage(64/1270);
 }
 
 .img-container{

@@ -108,16 +108,16 @@
      <section class="carousel">
          <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
          <div class="carousel-images">
-             <div id="carousel-image-1"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_01_imacsmall.jpg')"></div>
-             <div id="carousel-image-2"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_02_imacsmall.jpg')"></div>
-             <div id="carousel-image-3"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_03_imacsmall.jpg')"></div>
-             <div id="carousel-image-4"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_04_imacsmall.jpg')"></div>
+             <div id="carousel-image-5"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_01_imacsmall.jpg')"></div>
+             <div id="carousel-image-6"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_02_imacsmall.jpg')"></div>
+             <div id="carousel-image-7"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_03_imacsmall.jpg')"></div>
+             <div id="carousel-image-8"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_04_imacsmall.jpg')"></div>
          </div> <!-- /end carousel-images -->
          <div class="carousel-controls">
-             <div id="carousel-control-1" class="carousel-control selected"></div>
-             <div id="carousel-control-2" class="carousel-control"></div>
-             <div id="carousel-control-3" class="carousel-control"></div>
-             <div id="carousel-control-4" class="carousel-control"></div>
+             <div id="carousel-control-5" class="carousel-control selected"></div>
+             <div id="carousel-control-6" class="carousel-control"></div>
+             <div id="carousel-control-7" class="carousel-control"></div>
+             <div id="carousel-control-8" class="carousel-control"></div>
          </div> <!-- /end carousel-controls -->
      </section>
  </div>
