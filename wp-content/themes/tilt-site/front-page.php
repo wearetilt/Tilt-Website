@@ -9,6 +9,26 @@
 
 get_header(); ?>
 
+<?php
+ $args = array(
+	 'posts_per_page' => 1,
+	 'order_by' => 'date',
+	 'post_type' => 'post',
+	 'post_status' => 'publish'
+ );
+
+ $posts_array = get_posts( $args );
+
+ $post = $posts_array[0];
+ $postID = $post->ID;
+
+ if (has_post_thumbnail( $postID ) ){
+	 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
+ }
+
+
+?>
+
 <header id="home-page" class="work-item work-item--motion area-dark">
 	<div class="module--video module--header">
 		<div class="ratio">
@@ -68,6 +88,15 @@ get_header(); ?>
 				</div>
 				<div class="module module--1-1"></div>
 				<div class="module module--1-1 area-dark">
+					<a href="<?php echo $post->guid; ?>">
+						<div class="overlay area-dark">
+							<div class="overlay-text">
+								<p class="tag">News</p>
+								<h2><?php echo $post->post_name; ?></h2>
+							</div> <!-- /end overlay-text -->
+						</div> <!-- /end overlay -->
+						<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+					</a>
 				</div>
 			</div>
 			<div class="group group--left">
