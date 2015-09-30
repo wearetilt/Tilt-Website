@@ -11,17 +11,17 @@
         "image": "images/staff/chris_cooke.jpg",
         "name": "Chris Cooke2",
         "position": "Founder / Creative Director:",
-        "department": "Brand & interactive",
-        "about": "After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris played a key role in the development of a variety of creative, arts and media organisations, including the famous music publications Mixmag and The Word. Chris’s skills include creative direction, branding and typography, information architecture and user-centred design. As Creative Director at Tilt, Chris has built a reputation for creating beautiful print and digital brand experiences for our clients. With fifteen years design experience, Chris now spends a good deal of time mentoring the next generation of young designers.",
-        "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
+        "department": "Brand, Interactive & Design",
+        "about": "<p>Pixel-perfectionist Chris is the creative inspiration behind our brand and interactive team.</p><p>After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris brought his eye for branding to arts and media organisations, including iconic music magazines Mixmag and The Word.</p><p>Equally at home with information architecture as he is with branding and typography, Chris is great at seeing the bigger design picture for our clients. And, drawing on 15 years of design experience, Chris now devotes some of his time to mentoring the next generation of young creatives.</p>",
+        "did-you-know": "Gym-fanatic Chris plays 436 sports, including kabaddi, quidditch and Segway polo."
     },
     "Staff-3": {
-        "image": "images/staff/chris_cooke.jpg",
-        "name": "Chris Cooke3",
+        "image": "images/staff/dan_evans.jpg",
+        "name": "Dan Evans",
         "position": "Founder / Creative Director:",
-        "department": "Brand & interactive",
-        "about": "After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris played a key role in the development of a variety of creative, arts and media organisations, including the famous music publications Mixmag and The Word. Chris’s skills include creative direction, branding and typography, information architecture and user-centred design. As Creative Director at Tilt, Chris has built a reputation for creating beautiful print and digital brand experiences for our clients. With fifteen years design experience, Chris now spends a good deal of time mentoring the next generation of young designers.",
-        "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
+        "department": "Film & Motion",
+        "about": "<p>If you had to describe the ideal creative director, you’d be describing Dan. A totally irrepressible creative force, Dan heads up our motion and film teams, making sure they push themselves to the limit with every project.</p><p>At art school, Dan studied under legendary printmaker Brendan Neiland and soon gravitated towards the creative application of visual and music technology. As Art Director for a pioneering London-based digital agency, he learned how to create innovative, award-winning interactive motion work. Dan loves to push boundaries and expectations, dipping into his seemingly never-ending well of creative ideas.</p>",
+        "did-you-know": "If you happened to be at a Fatboy Slim gig sometime in the early 2000s, then you were probably hit square in the face by Dan’s video mashups on the big screen. Far out, man."
     },
     "Staff-4": {
         "image": "images/staff/chris_cooke.jpg",
@@ -40,20 +40,20 @@
         "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
     },
     "Staff-6": {
-        "image": "images/staff/chris_cooke.jpg",
-        "name": "Chris Cooke6",
-        "position": "Founder / Creative Director:",
-        "department": "Brand & interactive",
-        "about": "After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris played a key role in the development of a variety of creative, arts and media organisations, including the famous music publications Mixmag and The Word. Chris’s skills include creative direction, branding and typography, information architecture and user-centred design. As Creative Director at Tilt, Chris has built a reputation for creating beautiful print and digital brand experiences for our clients. With fifteen years design experience, Chris now spends a good deal of time mentoring the next generation of young designers.",
-        "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
+        "image": "images/staff/tristan_vanger.jpg",
+        "name": "Tristan Vanger",
+        "position": "Senior Creative:",
+        "department": "Strategy, Motion & Design",
+        "about": "<p>Whether with pixels or ink, Tristan has a talent for creating bold and brilliant graphics and illustrations. One of our lead motion artists, Tristan is also a key member of the wider creative team, getting involved in pretty much any project right from the earliest discussions and brainstorms. He always brings a fresh perspective, whether we’re talking motion design, branding & identity, or illustration.</p><p>Though Tristan is behind for some of our most successful digital work, he still has a passion for analogue techniques of the ink and paint variety. (In fact, some of his artwork can be seen on wall murals around Brighton.)</p>",
+        "did-you-know": "Tristan owns a beard of fluctuating length. It is believed that the length correlates with project deadline proximity."
     },
     "Staff-7": {
-        "image": "images/staff/chris_cooke.jpg",
-        "name": "Chris Cooke7",
-        "position": "Founder / Creative Director:",
-        "department": "Brand & interactive",
-        "about": "After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris played a key role in the development of a variety of creative, arts and media organisations, including the famous music publications Mixmag and The Word. Chris’s skills include creative direction, branding and typography, information architecture and user-centred design. As Creative Director at Tilt, Chris has built a reputation for creating beautiful print and digital brand experiences for our clients. With fifteen years design experience, Chris now spends a good deal of time mentoring the next generation of young designers.",
-        "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
+        "image": "images/staff/bill_mackenzie.jpg",
+        "name": "Bill MacKenzie",
+        "position": "Creative Producer:",
+        "department": "Film & Motion",
+        "about": "<p>Canada born and bred, Bill arrived in the UK with more than 15 years experience in film production, including 12 years in broadcast marketing. After learning how to use a camera at the Vancouver Film School, Bill headed east to Toronto to carve out a career in creative mischief.</p><p>Bill’s commitment to attention grabbing hooks and ultra-punchy storytelling saw him pick up awards for ads, TV promos and campaigns. Love brought him to the UK, and fate brought him to Tilt. Bill now brings his Canuck charm and knack for the killer idea to our film and creative projects.</p>",
+        "did-you-know": "Bill was once a professional snowboarder, nicknamed “The Plank of Fury”. Only 50% of this statement is true."
     },
     "Staff-8": {
         "image": "images/staff/chris_cooke.jpg",
@@ -64,12 +64,12 @@
         "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
     },
     "Staff-9": {
-        "image": "images/staff/chris_cooke.jpg",
-        "name": "Chris Cooke7",
-        "position": "Founder / Creative Director:",
-        "department": "Brand & interactive",
-        "about": "After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris played a key role in the development of a variety of creative, arts and media organisations, including the famous music publications Mixmag and The Word. Chris’s skills include creative direction, branding and typography, information architecture and user-centred design. As Creative Director at Tilt, Chris has built a reputation for creating beautiful print and digital brand experiences for our clients. With fifteen years design experience, Chris now spends a good deal of time mentoring the next generation of young designers.",
-        "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
+        "image": "images/staff/dave_weiss.jpg",
+        "name": "Dave Weiss",
+        "position": "Senior Designer:",
+        "department": "Design & Interactive",
+        "about": "<p>Austria’s finest export since Schwarzenegger, Dave graduated in web design from the SAE Institute Vienna. After a period working at a creative agency high in the Alps, Dave descended from the mountains and travelled to England to start an intern position at Tilt. His design flair, approach to the creative process and all-round niceness made offering him a permanent position a no-brainer.</p><p>Dave keeps up with all the latest in contemporary web design, typography, UX, concepting and development, meaning we can always rely on him to put a fresh spin on client projects.</p>",
+        "did-you-know": "Dave is officially the coolest guy in the office, though some say he has to paint his jeans on every morning."
     },
     "Staff-10": {
         "image": "images/staff/chris_cooke.jpg",
@@ -96,20 +96,20 @@
         "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
     },
     "Staff-13": {
-        "image": "images/staff/chris_cooke.jpg",
-        "name": "Chris Cooke7",
-        "position": "Founder / Creative Director:",
-        "department": "Brand & interactive",
-        "about": "After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris played a key role in the development of a variety of creative, arts and media organisations, including the famous music publications Mixmag and The Word. Chris’s skills include creative direction, branding and typography, information architecture and user-centred design. As Creative Director at Tilt, Chris has built a reputation for creating beautiful print and digital brand experiences for our clients. With fifteen years design experience, Chris now spends a good deal of time mentoring the next generation of young designers.",
-        "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
+        "image": "images/staff/rachel_bilski.jpg",
+        "name": "Rachel Bilski",
+        "position": "Senior Developer:",
+        "department": "Development",
+        "about": "<p>If Rachel can’t build it, then it probably can’t be built. A graduate in Computer Science from the University of Portsmouth, Rachel started her working life in tech support and later in the computer games industry, before discovering that her heart lay in web development.</p><p>Rachel is a problem solver by nature: the bigger the problem, the greater the challenge, the more she thrives. Her technical skills, rigorous approach, and epic collection of desktop Thundercats figures helped her fit right in at Tilt. Indeed, Rachel progressed from a junior to a critical member of the development team in about the time it takes to run a database query.</p>",
+        "did-you-know": "Rachel’s an opera aficionada (the singing thing, not the browser). #geekjoke"
     },
     "Staff-14": {
-        "image": "images/staff/chris_cooke.jpg",
-        "name": "Chris Cooke7",
-        "position": "Founder / Creative Director:",
-        "department": "Brand & interactive",
-        "about": "After gaining a degree in European Advertising and a postgraduate degree in Experimental Typography at the London College of Communication, Chris played a key role in the development of a variety of creative, arts and media organisations, including the famous music publications Mixmag and The Word. Chris’s skills include creative direction, branding and typography, information architecture and user-centred design. As Creative Director at Tilt, Chris has built a reputation for creating beautiful print and digital brand experiences for our clients. With fifteen years design experience, Chris now spends a good deal of time mentoring the next generation of young designers.",
-        "did-you-know": "Lcras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet."
+        "image": "images/staff/miles_tincknell.jpg",
+        "name": "Miles Tincknell",
+        "position": "Developer:",
+        "department": "Development",
+        "about": "<p>Calling Miles a developer is like calling Mozart a piano tuner.</p><p>As much a creative as he is a coder, Miles fell in love with the web at an early age. The idea of a platform that connected the entire planet with new ideas and experiences was too much to resist, leading Miles to study Digital Media Development at Brighton University.</p><p>Miles is equipped with an arsenal of digital skills, from coding in all key web languages, to UX and graphic design. With no single focus on front or back-end development, Miles prides himself in being a full stack developer where no problem is too big, or issue too small to demand his attention. In other words, the ideal Tilter.</p>",
+        "did-you-know": "Miles is obsessed by Ultimate Frisbee, and can throw a dinner plate through a letterbox at fifty paces."
     },
     "Staff-15": {
         "image": "images/staff/chris_cooke.jpg",
