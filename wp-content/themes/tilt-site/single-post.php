@@ -27,32 +27,44 @@ get_header('news'); ?>
 		    </div>
 		</header>
 		<div class="intro-text">
-			<p><?php echo get_post_meta($post_id, 'intro_text', true); ?></p>
+			<p><?php the_field('intro_text'); ?></p>
 		</div>
 	</div>
 	<div class="container container--no-padding">
 		<div class="group-container">
 			<div class="group group--left">
 				<div class="module module--2-2">
+					<div class="ratio" style="background-image: url('<?php the_field('image_1'); ?>');">
 
+					</div>
 				</div>
 			</div>
 			<div class="group group--right">
-				<div class="module module--1-1"></div>
-				<div class="module module--1-1"></div>
-				<div class="module module--2-1"></div>
+				<div class="module module--1-1">
+					<div class="ratio" style="background-image: url('<?php the_field('image_2'); ?>');">
+
+					</div>
+				</div>
+				<div class="module module--1-1">
+					<div class="ratio" style="background-image: url('<?php the_field('image_3'); ?>');">
+
+					</div>
+				</div>
+				<div class="module module--2-1">
+					<div class="ratio" style="background-image: url('<?php the_field('image_4'); ?>');">
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="news-container">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum nulla iste illo, voluptas itaque, eius? Temporibus provident perferendis vitae eaque eum dignissimos iure illum modi cum, molestiae delectus vel. Laboriosam similique vitae in consequuntur corporis aliquid necessitatibus quos atque, doloribus cupiditate dolor magnam beatae cumque dolore, tempore ad. Tempore mollitia iure a dolorem sed ratione enim nemo voluptate. Ipsam! Debitis asperiores repudiandae animi doloremque fugiat delectus, impedit ad, sint eaque, esse quisquam eum ab accusamus sunt nemo.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum nulla iste illo, voluptas itaque, eius? Temporibus provident perferendis vitae eaque eum dignissimos iure illum modi cum, molestiae delectus vel. Laboriosam similique vitae in consequuntur corporis aliquid necessitatibus quos atque, doloribus cupiditate dolor magnam beatae cumque dolore, tempore ad. Tempore mollitia iure a dolorem sed ratione enim nemo voluptate. Ipsam! Debitis asperiores repudiandae animi doloremque fugiat delectus, impedit ad, sint eaque, esse quisquam eum ab accusamus sunt nemo.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum nulla iste illo, voluptas itaque, eius? Temporibus provident perferendis vitae eaque eum dignissimos iure illum modi cum, molestiae delectus vel. Laboriosam similique vitae in consequuntur corporis aliquid necessitatibus quos atque, doloribus cupiditate dolor magnam beatae cumque dolore, tempore ad. Tempore mollitia iure a dolorem sed ratione enim nemo voluptate. Ipsam! Debitis asperiores repudiandae animi doloremque fugiat delectus, impedit ad, sint eaque, esse quisquam eum ab accusamus sunt nemo.</p>
+		<p><?php the_field('main_body_of_text'); ?></p>
 	</div>
 </div>
 
 <div class="img-container">
-	<img src="<?php echo get_template_directory_uri(); ?>/images/news-image.png" alt="">
+	<img src="<?php the_field('image_5'); ?>" alt="">
 </div>
 
 <div class="group-container">
