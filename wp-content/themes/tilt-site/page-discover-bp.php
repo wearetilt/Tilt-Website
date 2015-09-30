@@ -256,8 +256,8 @@ get_header('work-item'); ?>
 </div>
 
     <div class="group-container">
-        <a class="project-navigation" href="">< Previous Project</a>
-        <a class="project-navigation" href="">Next Project ></a>
+        <a class="project-navigation" href="../i360">< Previous Project</a>
+        <a class="project-navigation" href="../bp-fll">Next Project ></a>
     </div>
 
 </div>
