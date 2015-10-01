@@ -114,6 +114,58 @@ get_header('work-item'); ?>
     </section>
 </div>
 
+
+
+
+
+
+<div class="container container--no-padding">
+    <section>
+        <div class="group-container">
+            <div class="group group--left">
+                <div class="module module--2-1 module--dark module--video">
+                    <div class="ratio">
+                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/codeit_poster_frame.jpg" muted="true">
+                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="module module--2-1 module--dark module--video">
+                    <div class="ratio">
+                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/codeit_poster_frame.jpg" muted="true">
+                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="group group--right">
+                <div class="module module--2-1 module--dark module--video">
+                    <div class="ratio">
+                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/codeit_poster_frame.jpg" muted="true">
+                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="module module--2-1 module--dark module--video">
+                    <div class="ratio">
+                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/codeit_poster_frame.jpg" muted="true">
+                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div> <!-- /end group -->
+        </div> <!-- /end group-container -->
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
 <div class="container container--no-padding">
     <div class="module module--2-1">
 	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_09_hz.jpg')"></div>
