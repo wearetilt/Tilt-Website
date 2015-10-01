@@ -41,7 +41,28 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div class="container container--carousel">
+<div class="container">
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphones/web_i360_01_iphone.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphones/web_i360_02_iphone.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphones/web_i360_03_iphone.jpg" alt="">
+            </div>
+        </div>
+</div> <!-- /end container -->
+
+<div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_background.jpg')">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
