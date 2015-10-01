@@ -19,8 +19,8 @@ get_header('work-item'); ?>
 
         </div>
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="<?php echo get_template_directory_uri(); ?>/video/Discover_10_Cut_1.mp4" type="video/mp4">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" >
+                    <source id="header-video" src="https://player.vimeo.com/external/141048772.hd.mp4?s=9410c4302324a7d77893874178f3ec83&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
