@@ -1045,8 +1045,8 @@ if(document.getElementById('header-video-player')){
 			break;
 
 			case "page_barclays_values":
-				var clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
-				var fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
+				var clipVideoSrc = "https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=113";
+				var fullVideoSrc = "https://player.vimeo.com/external/88791766.hd.mp4?s=01c82c0c307c791f78f402a0b264fbf0&profile_id=113";
 			break;
 
 			case "bp-fll":
