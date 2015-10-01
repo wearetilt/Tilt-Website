@@ -123,36 +123,24 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--16-9 module--video">
+                <div class="module module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                    	<video controls muted="true">
+                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/roma_poster_image.jpg" >
                                 <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
                         </video>
                     </div>
                 </div>
-                <div class="module module--16-9 module--video">
-                    <div class="ratio">
-                    	<video controls muted="true">
-                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+                
             </div>
             <div class="group group--right">
-                <div class="module module--16-9 module--video">
+                <div class="module module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                    	<video controls muted="true">
-                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
+                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/sanjay_poster_image.jpg">
+                                <source src="https://player.vimeo.com/external/132110057.sd.mp4?s=014d1219cbdb5fe08f8cf02299846a59&profile_id=112" type="video/mp4">
                         </video>
                     </div>
                 </div>
-                <div class="module module--16-9 module--video">
-                    <div class="ratio">
-                    	<video controls  muted="true">
-                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+                
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
