@@ -158,7 +158,7 @@ get_header(); ?>
 
 
 				<div class="module module--1-1"></div>
-				<div id="twitter__module" class="module module--1-1">
+				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
 						<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
