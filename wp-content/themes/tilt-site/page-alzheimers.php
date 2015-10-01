@@ -41,7 +41,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div class="container container--carousel">
+<div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/gallery/int_alz_gallery_background.jpg')">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
