@@ -104,7 +104,7 @@
      </section>
  </div> <!-- /end container -->
 
- <div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/gallery/web_fll_gallery_background_2.jpg')">
+ <div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/gallery/web_fll_gallery_background.jpg')">
      <section class="carousel">
          <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
          <div class="carousel-images">

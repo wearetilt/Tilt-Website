@@ -28,9 +28,13 @@
         transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
         transform: scale(1);
     }
-    &:hover .ratio{
-        transform: scale(1.05);
+
+    a {
+        &:hover .ratio{
+            transform: scale(1.05);
+        }
     }
+
 
     &.module--staff:hover .ratio{
         transform: scale(1);
