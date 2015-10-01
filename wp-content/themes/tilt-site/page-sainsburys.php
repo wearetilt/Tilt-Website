@@ -41,9 +41,10 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-    <div class="container container--carousel">
+    <div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_background.jpg')">
         <section class="carousel">
             <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+            <img id="carousel-girl" src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_girl.png" alt="">
             <div class="carousel-images">
                 <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_01_imacsmall.jpg')"></div>
                 <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_sain/gallery/int_sain_gallery_02_imacsmall.jpg')"></div>
