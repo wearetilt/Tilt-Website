@@ -69,9 +69,13 @@ get_header('work-item'); ?>
                         <p class="first-para">Earth - A New Wild is a nature documentary that shows young audiences that ecosystems often hang in a delicate balance and are easily disrupted by the actions of man. The producer, Passion Pictures, approached us to create an engaging digital experience to support the show. The original brief asked for a microsite with an overview of each show, but we saw an opportunity to do much more...</p>
                     </div>
                 </div>
-                <div class="module module--2-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_pbs/int_pbs_01_mr.jpg')"></div>
-                </div>
+               <div class="module module--2-1 module--video">
+                    <div class="ratio">
+                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/int_pbs/pbs_poster_frame.jpg" autoplay loop="true" muted="true">
+                                <source src="https://player.vimeo.com/external/141036692.sd.mp4?s=6ae8f4865db147de7dc1c1a3ca0794b9&profile_id=112" type="video/mp4">
+                        </video>
+                    </div>
+                </div> <!-- /end module -->
             </div>
             <div class="group group--right">
                 <div class="module module--2-2">
