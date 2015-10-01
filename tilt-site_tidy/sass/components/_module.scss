@@ -76,6 +76,14 @@
     &.module--no-bg{
         background-color: transparent;
     }
+
+    &.module--no-zoom{
+         .ratio{
+             &:hover{
+                transform: none;
+            }
+         }
+     }
 }
 
 .module--visible{
@@ -89,6 +97,12 @@
     padding-top: 50%;
     background-color: blue;
     clear: left;
+}
+
+.module--16-9{
+    width: 100%;
+    clear: left;
+    padding-top: 56%;
 }
 
 .module--1-1{
@@ -150,6 +164,19 @@
 .module--video{
     overflow: hidden;
     @extend %clearfix;
+
+    .ratio{
+        &:hover{
+           transform: none;
+       }
+    }
+
+    video{
+        &:hover{
+            transform: none;
+        }
+    }
+
     video{
         position: absolute;
         top: -9999px;
@@ -182,23 +209,6 @@
                 transform: none;
             }
 
-        }
-
-        &:hover{
-            transform: scale(1.05);
-        }
-    }
-
-    &.module--no-zoom{
-         .ratio{
-             &:hover{
-                transform: none;
-            }
-         }
-        video{
-            &:hover{
-                transform: none;
-            }
         }
     }
 
