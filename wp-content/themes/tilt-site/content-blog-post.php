@@ -13,7 +13,7 @@
 	$attachedImg = '';
 	if(has_post_thumbnail()){
 		$attachmentID = get_post_thumbnail_id(get_the_id());
-		$attachedImg = wp_get_attachment_image_src($attachmentID);
+		$attachedImg = wp_get_attachment_image_src($attachmentID, 'large');
 	}
 ?>
 <a href="<?php echo get_permalink(get_the_id()); ?>">
