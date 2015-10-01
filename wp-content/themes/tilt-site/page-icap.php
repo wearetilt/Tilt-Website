@@ -41,7 +41,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div class="container container--carousel">
+<div class="container container--carousel" style="background-image: url('')">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
@@ -59,23 +59,26 @@ get_header('work-item'); ?>
     </section>
 </div>
 
-<div class="container container--carousel">
-    <section class="carousel">
-        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-        <div class="carousel-images">
-            <div id="carousel-image-1"class="carousel-image"></div>
-            <div id="carousel-image-2"class="carousel-image"></div>
-            <div id="carousel-image-3"class="carousel-image"></div>
-            <div id="carousel-image-4"class="carousel-image"></div>
-        </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
-            <div id="carousel-control-1" class="carousel-control selected"></div>
-            <div id="carousel-control-2" class="carousel-control"></div>
-            <div id="carousel-control-3" class="carousel-control"></div>
-            <div id="carousel-control-4" class="carousel-control"></div>
-        </div> <!-- /end carousel-controls -->
-    </section>
-</div>
+<div class="container">
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/iphone/web_icap_01_iphone.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/iphone/web_icap_02_iphone.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/iphone/web_icap_03_iphone.jpg" alt="">
+            </div>
+        </div>
+</div> <!-- /end container -->
 
 <div class="container container--no-padding module-dark">
     <section>
