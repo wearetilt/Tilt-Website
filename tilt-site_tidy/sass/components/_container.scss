@@ -75,6 +75,11 @@ html, body{
 
 .container--carousel{
     background-size: cover;
+    background-position: 50% 50%;
+}
+
+#iCap-carousel {
+    background-position: 50% 97%;
 }
 
 .container--half-top{
