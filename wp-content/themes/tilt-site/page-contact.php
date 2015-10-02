@@ -108,9 +108,7 @@ get_header('contact'); ?>
 
 		<fieldset class="contact-form__fieldset">
 			<div class="form-info-holder">
-				<div id="field1-container" class="contact-form__field f_100">
 					 <label  class="contact-form__label" for="field1">What is the name of your brand/company?</label><input class="contact-form__input" name="company_name" id="field1" required="required" type="text">
-				</div>
 
 
 				<div id="field3-container" class="contact-form__field f_100">
