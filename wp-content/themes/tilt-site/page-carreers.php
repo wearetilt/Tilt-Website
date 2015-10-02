@@ -36,19 +36,19 @@ get_header(); ?>
 	</div>
 	<div class="group-container">
 		<div class="group group--left">
-			<a href="mailto:recruitment@wearetilt.com">
+			<a href="https://www.wearetilt.com/downloads/tilt_interactive_designer_20150918.pdf" target="_blank">
 				<div class="module module--1-1 module--job module--visible area-dark">
 						<div class="module__text">
-							<h2 class="light">Lorim Admin</h2>
-							<p>Cras mattis consectetur purus sit sinitu sdi sati amet fermentum farami sini esici blamond is sik us samarisdi no esi.</p>
+							<h2 class="light">Interactive Designer</h2>
+							<p>We are looking for a talented Interactive Designer with a proven track record in producing breath taking digital content. Download the job description.</p>
 						</div>
 				</div>
 			</a>
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
 						<div class="module__text">
-							<h2 class="light">Etonis Designer</h2>
-							<p>Cras mattis consectetur purus sit sinitu sdi sati amet fermentum farami sini esici blamond is sik us samarisdi no esi.</p>
+							<h2 class="light">Freelance Web Designers</h2>
+							<p>If you are a web designer looking for freelance work then we would love to hear from you. Get in touch and send us your portfolio.</p>
 						</div>
 				</div>
 			</a>
@@ -57,16 +57,16 @@ get_header(); ?>
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
 						<div class="module__text">
-							<h2 class="light">Lorem developer</h2>
-							<p>Cras mattis consectetur purus sit sinitu sdi sati amet fermentum farami sini esici blamond is sik us samarisdi no esi.</p>
+							<h2 class="light">Motion Freelancers</h2>
+							<p>We are on the look out for animators. If this is you and you are looking for freelance work then send us your showreel.</p>
 						</div>
 				</div>
 			</a>
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<h2 class="light">Motion Ipsum</h2>
-						<p>Cras mattis consectetur purus sit sinitu sdi sati amet fermentum farami sini esici blamond is sik us samarisdi no esi.</p>
+						<h2 class="light">Motion Intern</h2>
+						<p>We are looking for an enthusiastic intern to work within our motion graphics department.  This opportunity is ideal for someone who is looking at getting into the world of motion graphics. Send us your showreel</p>
 					</div>
 				</div>
 			</a>
