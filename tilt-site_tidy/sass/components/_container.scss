@@ -86,6 +86,10 @@
     padding-top: percentage(120/2032);
 }
 
+.container--no-top{
+    padding-top: 0;
+}
+
 .container--half-both{
     padding: percentage(120/2032);
     text-align: center;

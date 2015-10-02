@@ -130,7 +130,7 @@ get_header('work-item'); ?>
     </section>
 </div> <!-- /end container -->
 
-<div class="container container--no-padding">
+<div class="container container--no-top">
     <div class="module module--2-1">
 	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_05_hz.jpg')"></div>
     </div>

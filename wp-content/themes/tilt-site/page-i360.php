@@ -104,7 +104,7 @@ get_header('work-item'); ?>
     </section>
 </div> <!-- /end container -->
 
-<div class="container container--no-padding ">
+<div class="container container--no-top">
     <section>
         <div class="group-container">
             <div class="group group--left">
