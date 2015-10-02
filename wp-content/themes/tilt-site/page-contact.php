@@ -367,7 +367,7 @@ get_header('contact'); ?>
 				</div>
 			</div>
 
-			<div id="funky-border-3" class="funky-border-shizz"></div>
+			<div id="funky-border-4" class="funky-border-shizz"></div>
 
 		</fieldset>
 

@@ -1473,11 +1473,12 @@ if(document.getElementById('contact-form')){
 			});
 
 			inputIWant.addEventListener('focus', function(event){
-				var clientRect = this.getBoundingClientRect();
+				var fieldSet123 = this.parentElement;
+				var clientRect = fieldSet123.getBoundingClientRect();
+				console.log(fieldSet123);
 				var newFunkyBorderHeight = clientRect.top - clientRect.height;
 				var funkyBorderToChange = document.getElementById('funky-border-1');
 				console.log(newFunkyBorderHeight);
-				console.log(funkyBorderToChange);
 				funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
 			});
 		})();
