@@ -19,7 +19,7 @@ get_header('work-item'); ?>
 
         </div>
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" >
                     <source id="header-video" src="https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=113" type="video/mp4">
             </video>
         </div>
@@ -101,7 +101,52 @@ get_header('work-item'); ?>
             </div> <!-- /end group-container -->
         </section>
     </div> <!-- /end container -->
-
+	
+	
+	<div class="container container--no-padding">
+	    <section>
+	        <div class="group-container">
+	            <div class="group group--left">
+	                <div class="module module--16-9 module--video module--nozoom">
+	                    <div class="ratio">
+	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_values/harish_poster_image.jpg" >
+	                                <source src="https://player.vimeo.com/external/88791772.sd.mp4?s=dc9ba217fd78b585bddab86b37b9888a&profile_id=112" type="video/mp4">
+	                        </video>
+	                    </div>
+	                </div>
+	                
+	                <div class="module module--16-9 module--video module--nozoom">
+	                    <div class="ratio">
+	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_values/donna_poster_image.jpg" >
+	                                <source src="https://player.vimeo.com/external/88791769.sd.mp4?s=0dde794c593c0a9a8d299e93ad8f0f92&profile_id=112" type="video/mp4">
+	                        </video>
+	                    </div>
+	                </div>
+	                
+	            </div>
+	            <div class="group group--right">
+	                <div class="module module--16-9 module--video module--nozoom">
+	                    <div class="ratio">
+	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_values/mindi_poster_image.jpg" >
+	                                <source src="https://player.vimeo.com/external/88791770.sd.mp4?s=7a89154320c5104267d0aa6474b00921&profile_id=112" type="video/mp4">
+	                        </video>
+	                    </div>
+	                </div>
+	                
+	                <div class="module module--16-9 module--video module--nozoom">
+	                    <div class="ratio">
+	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_values/jason_poster_image.jpg">
+	                                <source src="https://player.vimeo.com/external/88791768.sd.mp4?s=6c5e1cdae5809b91a06727f2dbb7b27b&profile_id=112" type="video/mp4">
+	                        </video>
+	                    </div>
+	                </div>
+	                
+	            </div> <!-- /end group -->
+	        </div> <!-- /end group-container -->
+	    </section>
+	</div>
+	
+	
     <div class="container container--no-padding">
         <section>
             <div class="group-container">
@@ -124,7 +169,7 @@ get_header('work-item'); ?>
             </div> <!-- /end group-container -->
         </section>
     </div> <!-- /end container -->
-
+	
     <div class="container container--no-padding">
         <section>
             <div class="group-container">
