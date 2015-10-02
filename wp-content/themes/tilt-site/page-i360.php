@@ -81,7 +81,7 @@ get_header('work-item'); ?>
 </div>
 
 
-<div class="container container--no-padding">
+<div class="container container--no-padding area-dark">
     <section>
         <div class="group-container">
             <div class="group group--left">
@@ -91,11 +91,15 @@ get_header('work-item'); ?>
                         <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
                     </div>
                 </div>
-                <div class="module module--2-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/web_i360_01_mr.jpg')"></div>
-                </div>
+                <div class="module module--2-1 module--video">
+                    <div class="ratio">
+                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphone_poster_frame.jpg" autoplay loop="true" muted="true">
+                                <source src="https://player.vimeo.com/external/141169001.sd.mp4?s=a3333fb671bc35d39e72113bf3341783&profile_id=112" type="video/mp4">
+                        </video>
+                    </div>
+                </div> <!-- /end module -->
             </div>
-            <div class="group group--right">
+            <div class="group group--right module--dark">
                 <div class="module module--2-2">
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/web_i360_02_ls.jpg')"></div>
                 </div>
