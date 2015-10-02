@@ -1464,9 +1464,12 @@ if(document.getElementById('contact-form')){
 			inputIWant.addEventListener('blur', function(){
 				if(this.value !== ""){
 					var inputID = this.id;
-					console.log(inputID);
 					var inputLabel = document.getElementById(inputID).previousSibling;
 					inputLabel.classList.add('contact-form__label--completed');
+				} else if ((this.value === "")){
+					var inputID = this.id;
+					var inputLabel = document.getElementById(inputID).previousSibling;
+					inputLabel.classList.remove('contact-form__label--completed');
 				}
 			});
 		})();

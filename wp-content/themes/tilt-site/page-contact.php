@@ -113,10 +113,7 @@ get_header('contact'); ?>
 
 
 			<div id="field3-container" class="contact-form__field f_100">
-				 <label class="contact-form__label" for="field3">
-					  Please describe your brand/company?
-				 </label>
-				 <textarea class="contact-form__input" rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
+				 <label class="contact-form__label" for="field3">Please describe your brand/company?</label><textarea class="contact-form__input" rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
 			</div>
 
 
