@@ -134,7 +134,7 @@ get_header('contact'); ?>
 				</div>
 			</div>
 
-			<div class="funky-border-shizz"></div>
+			<div id="funky-border-1" class="funky-border-shizz"></div>
 		</fieldset>
 
 		<fieldset class="contact-form__fieldset">
@@ -270,7 +270,7 @@ get_header('contact'); ?>
 			</div>
 
 
-			<div class="funky-border-shizz"></div>
+			<div id="funky-border-2" class="funky-border-shizz"></div>
 
 		</fieldset>
 
@@ -367,7 +367,7 @@ get_header('contact'); ?>
 				</div>
 			</div>
 
-			<div class="funky-border-shizz"></div>
+			<div id="funky-border-3" class="funky-border-shizz"></div>
 
 		</fieldset>
 
