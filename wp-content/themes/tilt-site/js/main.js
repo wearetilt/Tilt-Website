@@ -1070,8 +1070,8 @@ if(document.getElementById('header-video-player')){
 			break;
 
 			case "page_legacy":
-				var clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
-				var fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
+				var clipVideoSrc = "https://player.vimeo.com/external/140664772.hd.mp4?s=916c756982174f097892598f2bf7d363&profile_id=113";
+				var fullVideoSrc = "https://player.vimeo.com/external/66887877.hd.mp4?s=2034f6e85b9906fd2f487b48a6b3fa4f&profile_id=113";
 			break;
 
 			case "page_reliace":
