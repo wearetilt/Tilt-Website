@@ -1133,20 +1133,6 @@ if(document.getElementById('header-video-player')){
     });
 }
 
-
-
-var staff = document.getElementsByClassName('module');
-for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
-    staffMember = staff[iterator3];
-
-    staffMember.onclick = function (){
-        var self = this;
-        var rect = this.getBoundingClientRect();
-        var staffMemberInfo = this.getAttribute('ID');
-        this.classList.add('module--selected');
-    }
-}
-
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');
 var staffMember;
@@ -1231,21 +1217,29 @@ var getScrollPosition = function(){
     return top;
 }
 
-var staff = document.getElementsByClassName('module');
+var staff = document.getElementsByClassName('module--staff');
 var videoFunction = '';
 
 if(document.getElementById('staff-member')){
     for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         staffMember = staff[iterator3];
 
+		staffMember.onclick = function (){
+			var rect = this.getBoundingClientRect();
+			var staffMemberInfo = this.getAttribute('ID');
+			this.classList.add('module--selected');
+		}
+
 		var staffMemberID = 'Staff-' + (iterator3 + 1);
 		var staffVideoSrc;
 		var staffFullScreenVid;
 		var videoIWant;
-		console.log(staffMemberID);
 		console.log(staffFullScreenVid);
         //Some closure magic to get this working. - MT
 		//I came back to this comment...It was not helpful... - MT
+
+
+
         (function(){
             staffMember.addEventListener('mouseenter', function(event){
 				var that = this;
@@ -1340,12 +1334,12 @@ if(document.getElementById('staff-member')){
 					default:
 						// do nothing
 				}
-					console.log('Mouse has entered');
+					// console.log('Mouse has entered');
 					videoFunction = setTimeout(function(){
-							if(!that.children[1]){
-								console.log(thisStaffID);
-								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
-							}
+						if(!that.children[1]){
+							console.log(thisStaffID);
+							document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+						}
 							var ratio2 = that.children[1];
 							var video2 = ratio2.children[0];
 							videoIWant = video2;
@@ -1355,9 +1349,9 @@ if(document.getElementById('staff-member')){
             });
 
             staffMember.addEventListener('mouseleave', function(event, video){
-					console.log("Mouse has exited");
+					// console.log("Mouse has exited");
 					clearTimeout(videoFunction);
-					console.log(videoIWant);
+					// console.log(videoIWant);
 					videoIWant.pause();
             });
         })();
