@@ -1452,6 +1452,27 @@ if(document.getElementById('work_all')){
     });
 }
 
+if(document.getElementById('contact-form')){
+
+	var inputs = document.getElementsByClassName('contact-form__input');
+	console.log(inputs);
+
+	for (var iterator5 = 0; iterator5 < inputs.length; iterator5++){
+		var inputIWant = inputs[iterator5];
+		(function(){
+			console.log(inputIWant);
+			inputIWant.addEventListener('blur', function(){
+				if(this.value !== ""){
+					var inputID = this.id;
+					console.log(inputID);
+					var inputLabel = document.getElementById(inputID).previousSibling;
+					inputLabel.classList.add('contact-form__label--completed');
+				}
+			});
+		})();
+	}
+}
+
 
 //footer stuff
 

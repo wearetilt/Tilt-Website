@@ -104,51 +104,48 @@ get_header('contact'); ?>
 </div> <!-- /end container -->
 
 <div class="container area-dark">
-	<form class="contact-form" action="process_form.php" method="post" novalidate="">
+	<form id="contact-form" class="contact-form" action="process_form.php" method="post" novalidate="">
 
 		<fieldset class="contact-form__fieldset">
-			<div id="field1-container" class="field f_100">
-				 <label class="contact-form__label contact-form__label--completed" for="field1">
-					  What is the name of your brand/company?
-				 </label>
-				 <input name="company_name" id="field1" required="required" type="text">
+			<div id="field1-container" class="contact-form__field f_100">
+				 <label class="contact-form__label" for="field1">What is the name of your brand/company?</label><input class="contact-form__input" name="company_name" id="field1" required="required" type="text">
 			</div>
 
 
-			<div id="field3-container" class="field f_100">
+			<div id="field3-container" class="contact-form__field f_100">
 				 <label class="contact-form__label" for="field3">
 					  Please describe your brand/company?
 				 </label>
-				 <textarea rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
+				 <textarea class="contact-form__input" rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
 			</div>
 
 
-			<div id="field4-container" class="field f_50">
+			<div id="field4-container" class="contact-form__field f_50">
 				 <label class="contact-form__label" for="field4">
 					  Name
 				 </label>
-				 <input name="contact_name" id="field4" required="required" type="text">
+				 <input class="contact-form__input" name="contact_name" id="field4" required="required" type="text">
 			</div>
 
 
-			<div id="field5-container" class="field f_50">
+			<div id="field5-container" class="contact-form__field f_50">
 				 <label class="contact-form__label" for="field5">
 					  Job Role
 				 </label>
-				 <input name="job_role" id="field5" required="required" type="text">
+				 <input class="contact-form__input" name="job_role" id="field5" required="required" type="text">
 			</div>
 		</fieldset>
 
 		<fieldset class="contact-form__fieldset">
 
-			<div id="field6-container" class="field f_100 checkbox-group required">
+			<div id="field6-container" class="contact-form__field f_100 checkbox-group required">
 				 <label class="contact-form__label" for="field6-1">
 					  What are the key criteria/objectives of the project?
 				 </label>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="field6-1" value="Increase online revenue"
+					  <input class="contact-form__input" class="contact-form__input" name="key_objectives" id="field6-1" value="Increase online revenue"
 					  type="checkbox">
 					  <span class="option-title">
 						   Increase online revenue
@@ -158,7 +155,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="field6-2" value="Revitalise brand identity"
+					  <input class="contact-form__input" name="key_objectives" id="field6-2" value="Revitalise brand identity"
 					  type="checkbox">
 					  <span class="option-title">
 						   Revitalise brand identity
@@ -168,7 +165,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="field6-3" value="Improve internal communications"
+					  <input class="contact-form__input" name="key_objectives" id="field6-3" value="Improve internal communications"
 					  type="checkbox">
 					  <span class="option-title">
 						   Improve internal communications
@@ -178,7 +175,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="field6-4" value="Update & future-proof design"
+					  <input class="contact-form__input" name="key_objectives" id="field6-4" value="Update & future-proof design"
 					  type="checkbox">
 					  <span class="option-title">
 						   Update & future-proof design
@@ -188,7 +185,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="field6-5" value="Rethink & improve existing branding"
+					  <input class="contact-form__input" name="key_objectives" id="field6-5" value="Rethink & improve existing branding"
 					  type="checkbox">
 					  <span class="option-title">
 						   Rethink & improve existing branding
@@ -198,7 +195,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="field6-6" value="Create/aid marketing campaign"
+					  <input class="contact-form__input" name="key_objectives" id="field6-6" value="Create/aid marketing campaign"
 					  type="checkbox">
 					  <span class="option-title">
 						   Create/aid marketing campaign
@@ -208,7 +205,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="field6-7" value="Improve security" type="checkbox">
+					  <input class="contact-form__input" name="key_objectives" id="field6-7" value="Improve security" type="checkbox">
 					  <span class="option-title">
 						   Improve security
 					  </span>
@@ -217,7 +214,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="key_objectives-8" value="Boost creativity"
+					  <input class="contact-form__input" name="key_objectives" id="key_objectives-8" value="Boost creativity"
 					  type="checkbox">
 					  <span class="option-title">
 						   Boost creativity
@@ -227,7 +224,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="key_objectives-9" value="Optimise our digital platform"
+					  <input class="contact-form__input" name="key_objectives" id="key_objectives-9" value="Optimise our digital platform"
 					  type="checkbox">
 					  <span class="option-title">
 						   Optimise our digital platform
@@ -237,7 +234,7 @@ get_header('contact'); ?>
 
 
 				 <div class="option clearfix">
-					  <input name="key_objectives" id="key_objectives-10" value="Other" type="checkbox">
+					  <input class="contact-form__input" name="key_objectives" id="key_objectives-10" value="Other" type="checkbox">
 					  <span class="option-title">
 						   Other
 					  </span>
@@ -246,38 +243,38 @@ get_header('contact'); ?>
 			</div>
 
 
-			<div id="field8-container" class="field f_100">
+			<div id="field8-container" class="contact-form__field f_100">
 				 <label class="contact-form__label" for="field8">
 					  If other, please specify
 				 </label>
-				 <input name="other_objective" id="field8" required="required" type="text">
+				 <input class="contact-form__input" name="other_objective" id="field8" required="required" type="text">
 			</div>
 
 
-			<div id="field9-container" class="field f_100">
+			<div id="field9-container" class="contact-form__field f_100">
 				 <label class="contact-form__label" for="field9">
 					  Who are the target audience? (please provide as much detail as possible)
 				 </label>
-				 <textarea rows="5" cols="20" name="target_audience" id="field9" required="required"></textarea>
+				 <textarea class="contact-form__input" rows="5" cols="20" name="target_audience" id="field9" required="required"></textarea>
 			</div>
 
 
-			<div id="field10-container" class="field f_100">
+			<div id="field10-container" class="contact-form__field f_100">
 				 <label class="contact-form__label" for="field10">
 					  Please outline any other notes you would like us to consider
 				 </label>
-				 <textarea rows="5" cols="20" name="other_notes" id="field10" required="required"></textarea>
+				 <textarea class="contact-form__input" rows="5" cols="20" name="other_notes" id="field10" required="required"></textarea>
 			</div>
 
 		</fieldset>
 
 		<fieldset class="contact-form__fieldset">
 
-			<div id="field11-container" class="field f_25">
+			<div id="field11-container" class="contact-form__field f_25">
 				 <label class="contact-form__label" for="field11">
 					  Select
 				 </label>
-				 <select name="field11" id="field11" required="required">
+				 <select class="contact-form__input" name="field11" id="field11" required="required">
 					  <option id="field11-1" value="Option 1">
 						   Option 1
 					  </option>
@@ -291,11 +288,11 @@ get_header('contact'); ?>
 			</div>
 
 
-			<div id="field12-container" class="field f_25">
+			<div id="field12-container" class="contact-form__field f_25">
 				 <label class="contact-form__label" for="field12">
 					  Select
 				 </label>
-				 <select name="field12" id="field12" required="required">
+				 <select class="contact-form__input" name="field12" id="field12" required="required">
 					  <option id="field12-1" value="Option 1">
 						   Option 1
 					  </option>
@@ -309,11 +306,11 @@ get_header('contact'); ?>
 			</div>
 
 
-			<div id="field13-container" class="field f_25">
+			<div id="field13-container" class="contact-form__field f_25">
 				 <label class="contact-form__label" for="field13">
 					  Select
 				 </label>
-				 <select name="field13" id="field13" required="required">
+				 <select class="contact-form__input" name="field13" id="field13" required="required">
 					  <option id="field13-1" value="Option 1">
 						   Option 1
 					  </option>
@@ -327,11 +324,11 @@ get_header('contact'); ?>
 			</div>
 
 
-			<div id="field14-container" class="field f_25">
+			<div id="field14-container" class="contact-form__field f_25">
 				 <label class="contact-form__label" for="field14">
 					  Select
 				 </label>
-				 <select name="field14" id="field14" required="required">
+				 <select class="contact-form__input" name="field14" id="field14" required="required">
 					  <option id="field14-1" value="Option 1">
 						   Option 1
 					  </option>
@@ -345,11 +342,11 @@ get_header('contact'); ?>
 			</div>
 
 
-			<div id="field15-container" class="field f_50">
+			<div id="field15-container" class="contact-form__field f_50">
 				 <label class="contact-form__label" for="field15">
 					  Select
 				 </label>
-				 <select name="field15" id="field15" required="required">
+				 <select class="contact-form__input" name="field15" id="field15" required="required">
 					  <option id="field15-1" value="Option 1">
 						   Option 1
 					  </option>
@@ -364,7 +361,7 @@ get_header('contact'); ?>
 
 		</fieldset>
 
-		<div id="form-submit" class="field f_100 clearfix submit">
+		<div id="form-submit" class="contact-form__field f_100 clearfix submit">
 			 <input value="Submit" type="submit">
 		</div>
 
