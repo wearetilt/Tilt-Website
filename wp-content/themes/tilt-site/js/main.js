@@ -1455,7 +1455,6 @@ if(document.getElementById('work_all')){
 if(document.getElementById('contact-form')){
 
 	var inputs = document.getElementsByClassName('contact-form__input');
-	console.log(inputs);
 
 	for (var iterator5 = 0; iterator5 < inputs.length; iterator5++){
 		var inputIWant = inputs[iterator5];
@@ -1472,8 +1471,15 @@ if(document.getElementById('contact-form')){
 					inputLabel.classList.remove('contact-form__label--completed');
 				}
 			});
+
+			inputIWant.addEventListener('focus', function(event){
+				var clientRect = this.getBoundingClientRect();
+				console.log(clientRect);
+			});
 		})();
 	}
+
+
 }
 
 
