@@ -1,4 +1,22 @@
-fieldset{
+.contact-form{
+    textarea{
+        width: 100%;
+    }
+
+    input, textarea {
+
+        border: 1px solid $c-grey-5e;
+        background-color: $c-grey-25;
+        padding: 10px;
+        color: white;
+
+        &:focus{
+            border: 1px solid $c-tilt-pink;
+        }
+    }
+}
+
+.contact-form__fieldset{
     padding: 5%;
     background-color: $c-grey-25;
     color: white;
@@ -21,5 +39,24 @@ fieldset{
             margin: 0px auto;
             transition: all 0.5s ease;
         }
+    }
+}
+
+.contact-form__label {
+    display: block;
+
+    & + * {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.contact-form__label--completed{
+    &:after{
+        content: '';
+        height: 10px;
+        width: 10px;
+        background-color: $c-tilt-pink;
+        display: inline-block;
     }
 }

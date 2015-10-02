@@ -104,11 +104,11 @@ get_header('contact'); ?>
 </div> <!-- /end container -->
 
 <div class="container area-dark">
-	<form action="process_form.php" method="post" novalidate="">
+	<form class="contact-form" action="process_form.php" method="post" novalidate="">
 
-		<fieldset>
+		<fieldset class="contact-form__fieldset">
 			<div id="field1-container" class="field f_100">
-				 <label for="field1">
+				 <label class="contact-form__label contact-form__label--completed" for="field1">
 					  What is the name of your brand/company?
 				 </label>
 				 <input name="company_name" id="field1" required="required" type="text">
@@ -116,15 +116,15 @@ get_header('contact'); ?>
 
 
 			<div id="field3-container" class="field f_100">
-				 <label for="field3">
+				 <label class="contact-form__label" for="field3">
 					  Please describe your brand/company?
 				 </label>
-				 <textarea rows="5" cols="20" name="company_description" id="field3" required="required"></textarea>
+				 <textarea rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
 			</div>
 
 
 			<div id="field4-container" class="field f_50">
-				 <label for="field4">
+				 <label class="contact-form__label" for="field4">
 					  Name
 				 </label>
 				 <input name="contact_name" id="field4" required="required" type="text">
@@ -132,17 +132,17 @@ get_header('contact'); ?>
 
 
 			<div id="field5-container" class="field f_50">
-				 <label for="field5">
+				 <label class="contact-form__label" for="field5">
 					  Job Role
 				 </label>
 				 <input name="job_role" id="field5" required="required" type="text">
 			</div>
 		</fieldset>
 
-		<fieldset>
+		<fieldset class="contact-form__fieldset">
 
 			<div id="field6-container" class="field f_100 checkbox-group required">
-				 <label for="field6-1">
+				 <label class="contact-form__label" for="field6-1">
 					  What are the key criteria/objectives of the project?
 				 </label>
 
@@ -247,7 +247,7 @@ get_header('contact'); ?>
 
 
 			<div id="field8-container" class="field f_100">
-				 <label for="field8">
+				 <label class="contact-form__label" for="field8">
 					  If other, please specify
 				 </label>
 				 <input name="other_objective" id="field8" required="required" type="text">
@@ -255,7 +255,7 @@ get_header('contact'); ?>
 
 
 			<div id="field9-container" class="field f_100">
-				 <label for="field9">
+				 <label class="contact-form__label" for="field9">
 					  Who are the target audience? (please provide as much detail as possible)
 				 </label>
 				 <textarea rows="5" cols="20" name="target_audience" id="field9" required="required"></textarea>
@@ -263,7 +263,7 @@ get_header('contact'); ?>
 
 
 			<div id="field10-container" class="field f_100">
-				 <label for="field10">
+				 <label class="contact-form__label" for="field10">
 					  Please outline any other notes you would like us to consider
 				 </label>
 				 <textarea rows="5" cols="20" name="other_notes" id="field10" required="required"></textarea>
@@ -271,10 +271,10 @@ get_header('contact'); ?>
 
 		</fieldset>
 
-		<fieldset>
+		<fieldset class="contact-form__fieldset">
 
 			<div id="field11-container" class="field f_25">
-				 <label for="field11">
+				 <label class="contact-form__label" for="field11">
 					  Select
 				 </label>
 				 <select name="field11" id="field11" required="required">
@@ -292,7 +292,7 @@ get_header('contact'); ?>
 
 
 			<div id="field12-container" class="field f_25">
-				 <label for="field12">
+				 <label class="contact-form__label" for="field12">
 					  Select
 				 </label>
 				 <select name="field12" id="field12" required="required">
@@ -310,7 +310,7 @@ get_header('contact'); ?>
 
 
 			<div id="field13-container" class="field f_25">
-				 <label for="field13">
+				 <label class="contact-form__label" for="field13">
 					  Select
 				 </label>
 				 <select name="field13" id="field13" required="required">
@@ -328,7 +328,7 @@ get_header('contact'); ?>
 
 
 			<div id="field14-container" class="field f_25">
-				 <label for="field14">
+				 <label class="contact-form__label" for="field14">
 					  Select
 				 </label>
 				 <select name="field14" id="field14" required="required">
@@ -346,7 +346,7 @@ get_header('contact'); ?>
 
 
 			<div id="field15-container" class="field f_50">
-				 <label for="field15">
+				 <label class="contact-form__label" for="field15">
 					  Select
 				 </label>
 				 <select name="field15" id="field15" required="required">
