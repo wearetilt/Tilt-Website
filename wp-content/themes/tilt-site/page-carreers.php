@@ -46,20 +46,20 @@ get_header(); ?>
 			</a>
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
-						<div class="module__text">
-							<h2 class="light">Freelance Web Designers</h2>
-							<p>If you are a web designer looking for freelance work then we would love to hear from you. Get in touch and send us your portfolio.</p>
-						</div>
+					<div class="module__text">
+						<h2 class="light">Freelance Web Designers</h2>
+						<p>If you are a web designer looking for freelance work then we would love to hear from you. Get in touch and send us your portfolio.</p>
+					</div>
 				</div>
 			</a>
 		</div>
 		<div class="group group--right">
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
-						<div class="module__text">
-							<h2 class="light">Motion Freelancers</h2>
-							<p>We are on the look out for animators. If this is you and you are looking for freelance work then send us your showreel.</p>
-						</div>
+					<div class="module__text">
+						<h2 class="light">Motion Freelancers</h2>
+						<p>We are on the look out for animators. If this is you and you are looking for freelance work then send us your showreel.</p>
+					</div>
 				</div>
 			</a>
 			<a href="mailto:recruitment@wearetilt.com">
