@@ -1455,7 +1455,6 @@ if(document.getElementById('work_all')){
 if(document.getElementById('contact-form')){
 
 	var inputs = document.getElementsByClassName('contact-form__input');
-	console.log(inputs);
 
 	for (var iterator5 = 0; iterator5 < inputs.length; iterator5++){
 		var inputIWant = inputs[iterator5];
@@ -1464,13 +1463,25 @@ if(document.getElementById('contact-form')){
 			inputIWant.addEventListener('blur', function(){
 				if(this.value !== ""){
 					var inputID = this.id;
-					console.log(inputID);
 					var inputLabel = document.getElementById(inputID).previousSibling;
 					inputLabel.classList.add('contact-form__label--completed');
+				} else if ((this.value === "")){
+					var inputID = this.id;
+					var inputLabel = document.getElementById(inputID).previousSibling;
+					inputLabel.classList.remove('contact-form__label--completed');
 				}
+			});
+
+			inputIWant.addEventListener('focus', function(event){
+				var clientRect = this.getBoundingClientRect();
+				var newFunkyBorderHeight = clientRect.top + clientRect.height;
+				var funkyBorderToChange = document.getElementById('funky-border-1');
+				funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
 			});
 		})();
 	}
+
+
 }
 
 
