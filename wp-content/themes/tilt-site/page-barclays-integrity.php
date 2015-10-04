@@ -21,7 +21,7 @@ get_header('work-item'); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/140671448.hd.mp4?s=11802c7bbdf0509d90de0511e89bc72c&profile_id=113" type="video/mp4">
+            	<source id="header-video" src="https://player.vimeo.com/external/141174440.hd.mp4?s=4f32dd0a8cda06b1dfa13e74d2fc5abf&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>

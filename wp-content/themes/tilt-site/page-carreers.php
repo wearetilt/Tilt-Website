@@ -38,10 +38,10 @@ get_header(); ?>
 		<div class="group group--left">
 			<a href="https://www.wearetilt.com/downloads/tilt_interactive_designer_20150918.pdf" target="_blank">
 				<div class="module module--1-1 module--job module--visible area-dark">
-						<div class="module__text">
-							<h2 class="light">Interactive Designer</h2>
-							<p>We are looking for a talented Interactive Designer with a proven track record in producing breath taking digital content. Download the job description.</p>
-						</div>
+					<div class="module__text">
+						<h2 class="light">Interactive Designer</h2>
+						<p>We are looking for a talented Interactive Designer with a proven track record in producing breath taking digital content. Download the job description.</p>
+					</div>
 				</div>
 			</a>
 			<a href="mailto:recruitment@wearetilt.com">
