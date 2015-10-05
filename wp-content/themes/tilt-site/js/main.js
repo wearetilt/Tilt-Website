@@ -1473,8 +1473,16 @@ if(document.getElementById('contact-form')){
 			});
 
 			inputIWant.addEventListener('focus', function(event){
-				var clientRect = this.getBoundingClientRect();
-				var newFunkyBorderHeight = clientRect.top + clientRect.height;
+				var inputsParent = this.parentNode;
+				var inputsParentPosition = inputsParent.getBoundingClientRect();
+				var inputPosition = this.getBoundingClientRect();
+
+				console.log(inputsParent);
+				console.log(inputPosition);
+				console.log(inputsParentPosition);
+				console.log(this);
+				var newFunkyBorderHeight = inputPosition.top - inputsParentPosition.top + inputPosition.height;
+				console.log(newFunkyBorderHeight);
 				var funkyBorderToChange = document.getElementById('funky-border-1');
 				funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
 			});

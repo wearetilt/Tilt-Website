@@ -108,28 +108,10 @@ get_header('contact'); ?>
 
 		<fieldset class="contact-form__fieldset">
 			<div class="form-info-holder">
-					 <label  class="contact-form__label" for="field1">What is the name of your brand/company?</label><input class="contact-form__input" name="company_name" id="field1" required="required" type="text">
-
-
-				<div id="field3-container" class="contact-form__field f_100">
-					 <label class="contact-form__label" for="field3">Please describe your brand/company?</label><textarea class="contact-form__input" rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
-				</div>
-
-
-				<div id="field4-container" class="contact-form__field f_50">
-					 <label class="contact-form__label" for="field4">
-						  Name
-					 </label>
-					 <input class="contact-form__input" name="contact_name" id="field4" required="required" type="text">
-				</div>
-
-
-				<div id="field5-container" class="contact-form__field f_50">
-					 <label class="contact-form__label" for="field5">
-						  Job Role
-					 </label>
-					 <input class="contact-form__input" name="job_role" id="field5" required="required" type="text">
-				</div>
+				 <label  class="contact-form__label" for="field1">What is the name of your brand/company?</label><input class="contact-form__input" name="company_name" id="field1" required="required" type="text">
+				 <label class="contact-form__label" for="field3">Please describe your brand/company?</label><textarea class="contact-form__input" rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
+				 <label class="contact-form__label" for="field4">Name</label><input class="contact-form__input" name="contact_name" id="field4" required="required" type="text">
+				 <label class="contact-form__label" for="field5">Job Role</label><input class="contact-form__input" name="job_role" id="field5" required="required" type="text">
 			</div>
 
 			<div id="funky-border-1" class="funky-border-shizz"></div>
