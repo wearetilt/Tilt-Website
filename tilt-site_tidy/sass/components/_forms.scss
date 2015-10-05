@@ -30,11 +30,13 @@
 
 .contact-form__fieldset--completed{
 
+    border-bottom: 1px solid $c-grey-5e;
+
         &:before{
             content: '';
             display: block;
             position: absolute;
-            height: 100px;
+            height: 62px;
             width: 1px;
             background-color: $c-grey-5e;
             bottom: -62px;

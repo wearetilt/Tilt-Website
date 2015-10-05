@@ -1145,6 +1145,13 @@ var leftPosition;
 var topPosition;
 var rect;
 var scrollPosition;
+var inputsParent;
+var inputsParentPosition;
+var inputPosition;
+var newFunkyBorderHeight;
+var funkyBorder;
+var funkyBorderToChange;
+var formHolders;
 var doc = document.documentElement;
 
 menuButton.onclick = function(){
@@ -1452,6 +1459,26 @@ if(document.getElementById('work_all')){
     });
 }
 
+var controlContactBorder = function(inputClicked, borderToChange){
+	inputsParent = inputClicked.parentNode;
+	inputsParentPosition = inputsParent.getBoundingClientRect();
+	inputPosition = inputClicked.getBoundingClientRect();
+	newFunkyBorderHeight = inputPosition.top - inputsParentPosition.top + inputPosition.height;
+	funkyBorder = 'funky-border-' + borderToChange;
+	funkyBorderToChange = document.getElementById(funkyBorder);
+	funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
+}
+
+var completeBorder = function(inputClicked){
+	inputsParent = inputClicked.parentNode;
+	if(inputsParent.id === "form-holder-1"){
+		formHolders = document.getElementsByClassName('form-info-holder');
+		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
+			formHolders[iterator6].parentNode.classList.remove('contact-form__fieldset--completed');
+		}
+	}
+}
+
 if(document.getElementById('contact-form')){
 
 	var inputs = document.getElementsByClassName('contact-form__input');
@@ -1473,18 +1500,8 @@ if(document.getElementById('contact-form')){
 			});
 
 			inputIWant.addEventListener('focus', function(event){
-				var inputsParent = this.parentNode;
-				var inputsParentPosition = inputsParent.getBoundingClientRect();
-				var inputPosition = this.getBoundingClientRect();
-
-				console.log(inputsParent);
-				console.log(inputPosition);
-				console.log(inputsParentPosition);
-				console.log(this);
-				var newFunkyBorderHeight = inputPosition.top - inputsParentPosition.top + inputPosition.height;
-				console.log(newFunkyBorderHeight);
-				var funkyBorderToChange = document.getElementById('funky-border-1');
-				funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
+				controlContactBorder(this, 1);
+				completeBorder(this);
 			});
 		})();
 	}

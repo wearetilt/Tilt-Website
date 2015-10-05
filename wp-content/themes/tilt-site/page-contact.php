@@ -90,6 +90,11 @@ get_header('contact'); ?>
 </script>
 
 <header class="contact-page">
+	<div class="module module--16-5 module--video">
+			 <video poster="" loop="true" muted="true">
+					 <source src="https://player.vimeo.com/external/141399412.hd.mp4?s=3f1574fa69a9ae469f325e2b05972a6e&profile_id=113" type="video/mp4">
+			 </video>
+	 </div> <!-- /end module -->
 </header>
 
 <div class="container area-dark">
@@ -106,8 +111,8 @@ get_header('contact'); ?>
 <div class="container area-dark">
 	<form id="contact-form" class="contact-form" action="process_form.php" method="post" novalidate="">
 
-		<fieldset class="contact-form__fieldset">
-			<div class="form-info-holder">
+		<fieldset class="contact-form__fieldset contact-form__fieldset--completed">
+			<div id="form-holder-1" class="form-info-holder">
 				 <label  class="contact-form__label" for="field1">What is the name of your brand/company?</label><input class="contact-form__input" name="company_name" id="field1" required="required" type="text">
 				 <label class="contact-form__label" for="field3">Please describe your brand/company?</label><textarea class="contact-form__input" rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
 				 <label class="contact-form__label" for="field4">Name</label><input class="contact-form__input" name="contact_name" id="field4" required="required" type="text">
@@ -119,163 +124,51 @@ get_header('contact'); ?>
 
 		<fieldset class="contact-form__fieldset">
 
-			<div class="form-info-holder">
-				<div id="field6-container" class="contact-form__field f_100 checkbox-group required">
-					 <label class="contact-form__label" for="field6-1">
-						  What are the key criteria/objectives of the project?
-					 </label>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" class="contact-form__input" name="key_objectives" id="field6-1" value="Increase online revenue"
-						  type="checkbox">
-						  <span class="option-title">
-							   Increase online revenue
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="field6-2" value="Revitalise brand identity"
-						  type="checkbox">
-						  <span class="option-title">
-							   Revitalise brand identity
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="field6-3" value="Improve internal communications"
-						  type="checkbox">
-						  <span class="option-title">
-							   Improve internal communications
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="field6-4" value="Update & future-proof design"
-						  type="checkbox">
-						  <span class="option-title">
-							   Update & future-proof design
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="field6-5" value="Rethink & improve existing branding"
-						  type="checkbox">
-						  <span class="option-title">
-							   Rethink & improve existing branding
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="field6-6" value="Create/aid marketing campaign"
-						  type="checkbox">
-						  <span class="option-title">
-							   Create/aid marketing campaign
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="field6-7" value="Improve security" type="checkbox">
-						  <span class="option-title">
-							   Improve security
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="key_objectives-8" value="Boost creativity"
-						  type="checkbox">
-						  <span class="option-title">
-							   Boost creativity
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="key_objectives-9" value="Optimise our digital platform"
-						  type="checkbox">
-						  <span class="option-title">
-							   Optimise our digital platform
-						  </span>
-						  <br>
-					 </div>
-
-
-					 <div class="option clearfix">
-						  <input class="contact-form__input" name="key_objectives" id="key_objectives-10" value="Other" type="checkbox">
-						  <span class="option-title">
-							   Other
-						  </span>
-						  <br>
-					 </div>
-				</div>
-
-
-				<div id="field8-container" class="contact-form__field f_100">
-					 <label class="contact-form__label" for="field8">
-						  If other, please specify
-					 </label>
-					 <input class="contact-form__input" name="other_objective" id="field8" required="required" type="text">
-				</div>
-
-
-				<div id="field9-container" class="contact-form__field f_100">
-					 <label class="contact-form__label" for="field9">
-						  Who are the target audience? (please provide as much detail as possible)
-					 </label>
-					 <textarea class="contact-form__input" rows="5" cols="20" name="target_audience" id="field9" required="required"></textarea>
-				</div>
-
-
-				<div id="field10-container" class="contact-form__field f_100">
-					 <label class="contact-form__label" for="field10">
-						  Please outline any other notes you would like us to consider
-					 </label>
-					 <textarea class="contact-form__input" rows="5" cols="20" name="other_notes" id="field10" required="required"></textarea>
-				</div>
+			<div id="form-holder-2" class="form-info-holder">
+				<label class="contact-form__label" for="field6-1">What are the key criteria/objectives of the project?</label><input class="contact-form__input" class="contact-form__input" name="key_objectives" id="field6-1" value="Increase online revenue" type="checkbox"><span class="option-title">Increase online revenue</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="field6-2" value="Revitalise brand identity" type="checkbox"><span class="option-title">Revitalise brand identity</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="field6-3" value="Improve internal communications" type="checkbox"><span class="option-title">Improve internal communications</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="field6-4" value="Update & future-proof design" type="checkbox"><span class="option-title">Update & future-proof design</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="field6-5" value="Rethink & improve existing branding" type="checkbox"><span class="option-title">Rethink & improve existing branding</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="field6-6" value="Create/aid marketing campaign"type="checkbox"><span class="option-title">Create/aid marketing campaign</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="field6-7" value="Improve security" type="checkbox"><span class="option-title">Improve security</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="key_objectives-8" value="Boost creativity"type="checkbox"><span class="option-title">Boost creativity</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="key_objectives-9" value="Optimise our digital platform" type="checkbox"><span class="option-title">Optimise our digital platform</span>
+				<br />
+				<input class="contact-form__input" name="key_objectives" id="key_objectives-10" value="Other" type="checkbox"><span class="option-title">Other</span>
+				<br />
+				<label class="contact-form__label" for="field8">If other, please specify</label><input class="contact-form__input" name="other_objective" id="field8" required="required" type="text">
+				<label class="contact-form__label" for="field9">Who are the target audience? (please provide as much detail as possible)</label><textarea class="contact-form__input" rows="5" cols="20" name="target_audience" id="field9" required="required"></textarea>
+				<label class="contact-form__label" for="field10">Please outline any other notes you would like us to consider</label><textarea class="contact-form__input" rows="5" cols="20" name="other_notes" id="field10" required="required"></textarea>
 			</div>
-
 
 			<div id="funky-border-2" class="funky-border-shizz"></div>
 
 		</fieldset>
 
 		<fieldset class="contact-form__fieldset">
-
-			<div class="form-info-holder">
-				<div id="field11-container" class="contact-form__field f_25">
-					 <label class="contact-form__label" for="field11">
-						  Select
-					 </label>
+			<div id="form-holder-2" class="form-info-holder">
+				<label class="contact-form__label" for="field11">Select</label>
 					 <select class="contact-form__input" name="field11" id="field11" required="required">
-						  <option id="field11-1" value="Option 1">
+						<option id="field11-1" value="Option 1">
 							   Option 1
-						  </option>
-						  <option id="field11-2" value="Option 2">
-							   Option 2
-						  </option>
-						  <option id="field11-3" value="Option 3">
-							   Option 3
-						  </option>
+						</option>
+						<option id="field11-2" value="Option 2">
+						Option 2
+						</option>
+						option id="field11-3" value="Option 3">
+						Option 3
+					  	</option>
 					 </select>
-				</div>
 
-
-				<div id="field12-container" class="contact-form__field f_25">
 					 <label class="contact-form__label" for="field12">
 						  Select
 					 </label>
@@ -290,10 +183,8 @@ get_header('contact'); ?>
 							   Option 3
 						  </option>
 					 </select>
-				</div>
 
 
-				<div id="field13-container" class="contact-form__field f_25">
 					 <label class="contact-form__label" for="field13">
 						  Select
 					 </label>
@@ -308,10 +199,7 @@ get_header('contact'); ?>
 							   Option 3
 						  </option>
 					 </select>
-				</div>
 
-
-				<div id="field14-container" class="contact-form__field f_25">
 					 <label class="contact-form__label" for="field14">
 						  Select
 					 </label>
@@ -326,10 +214,7 @@ get_header('contact'); ?>
 							   Option 3
 						  </option>
 					 </select>
-				</div>
 
-
-				<div id="field15-container" class="contact-form__field f_50">
 					 <label class="contact-form__label" for="field15">
 						  Select
 					 </label>
@@ -344,7 +229,6 @@ get_header('contact'); ?>
 							   Option 3
 						  </option>
 					 </select>
-				</div>
 			</div>
 
 			<div id="funky-border-4" class="funky-border-shizz"></div>
