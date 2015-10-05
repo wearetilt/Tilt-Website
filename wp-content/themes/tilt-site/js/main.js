@@ -1473,18 +1473,19 @@ var controlContactBorder = function(inputClicked, borderToChange){
 }
 
 var handleBorderTiming = function(inputsParent){
+	var borderID = inputsParent.id.slice(-1);
+	var borderToSelect = "funky-border-" + borderID;
+	var borderToAffect = document.getElementById(borderToSelect);
+
 	if(inputsParent.classList.contains('inUse')){
-		var borderID = inputsParent.id.slice(-1);
-		console.log(borderID);
-		var borderToSelect = "funky-border-" + borderID;
-		var borderToAffect = document.getElementById(borderToSelect);
-		console.log(borderToSelect);
 		borderToAffect.style.transitionDelay = '0s';
 	} else {
 		for(var iterator7 = 0; iterator7 < formHolders.length; iterator7++){
 			formBorders[iterator7].classList.remove('inUse');
+			formBorders[iterator7].style.transitionDelay = '0s';
 		}
 		inputsParent.classList.add('inUse');
+		borderToAffect.style.transitionDelay = '0.2s';
 	}
 }
 
@@ -1498,6 +1499,7 @@ var completeBorder = function(inputsParent){
 	} else if(inputsParent.id === "form-holder-2"){
 		handleBorderTiming(inputsParent);
 		document.getElementById('funky-border-1').style.height = '100%';
+		document.getElementById('funky-border-3').style.height = '0%';
 		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
 		formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
 		formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');

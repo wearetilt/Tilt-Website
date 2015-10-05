@@ -112,7 +112,7 @@ get_header('contact'); ?>
 	<form id="contact-form" class="contact-form" action="process_form.php" method="post" novalidate="">
 
 		<fieldset class="contact-form__fieldset">
-			<div id="form-holder-1" class="form-info-holder">
+			<div id="form-holder-1" class="form-info-holder inUse">
 				 <label  class="contact-form__label" for="field1">What is the name of your brand/company?</label><input class="contact-form__input" name="company_name" id="field1" required="required" type="text">
 				 <label class="contact-form__label" for="field3">Please describe your brand/company?</label><textarea class="contact-form__input" rows="5" cols="80" name="company_description" id="field3" required="required"></textarea>
 				 <label class="contact-form__label" for="field4">Name</label><input class="contact-form__input" name="contact_name" id="field4" required="required" type="text">
