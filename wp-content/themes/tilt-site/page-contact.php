@@ -150,7 +150,7 @@ get_header('contact'); ?>
 				<label class="contact-form__label" for="field10">Please outline any other notes you would like us to consider</label><textarea class="contact-form__input" rows="5" cols="20" name="other_notes" id="field10" required="required"></textarea>
 			</div>
 
-			<div id="funky-border-2" class="funky-border-shizz"></div>
+			<div id="funky-border-2" class="funky-border-shizz inUse"></div>
 
 		</fieldset>
 

@@ -1472,18 +1472,37 @@ var controlContactBorder = function(inputClicked, borderToChange){
 	funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
 }
 
+var handleBorderTiming = function(inputsParent){
+	if(inputsParent.classList.contains('inUse')){
+		var borderID = inputsParent.id.slice(-1);
+		console.log(borderID);
+		var borderToSelect = "funky-border-" + borderID;
+		var borderToAffect = document.getElementById(borderToSelect);
+		console.log(borderToSelect);
+		borderToAffect.style.transitionDelay = '0s';
+	} else {
+		for(var iterator7 = 0; iterator7 < formHolders.length; iterator7++){
+			formBorders[iterator7].classList.remove('inUse');
+		}
+		inputsParent.classList.add('inUse');
+	}
+}
+
 var completeBorder = function(inputsParent){
 	if(inputsParent.id === "form-holder-1"){
+			handleBorderTiming(inputsParent);
 		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
 			formHolders[iterator6].parentNode.classList.remove('contact-form__fieldset--completed');
 			formBorders[iterator6].style.height = '0px';
 		}
 	} else if(inputsParent.id === "form-holder-2"){
+		handleBorderTiming(inputsParent);
 		document.getElementById('funky-border-1').style.height = '100%';
 		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
 		formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
 		formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
 	} else if(inputsParent.id === "form-holder-3"){
+		handleBorderTiming(inputsParent);
 		document.getElementById('funky-border-1').style.height = '100%';
 		document.getElementById('funky-border-2').style.height = '100%';
 		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
@@ -1514,7 +1533,6 @@ if(document.getElementById('contact-form')){
 
 			inputIWant.addEventListener('focus', function(event){
 				inputsParent = this.parentNode;
-				console.log(inputsParent.id);
 				switch (inputsParent.id) {
 					case "form-holder-1":
 						borderToChange = 1;
