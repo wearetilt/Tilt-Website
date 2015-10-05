@@ -1481,7 +1481,7 @@ var handleBorderTiming = function(inputsParent){
 		borderToAffect.style.transitionDelay = '0s';
 	} else {
 		for(var iterator7 = 0; iterator7 < formHolders.length; iterator7++){
-			formBorders[iterator7].classList.remove('inUse');
+			formHolders[iterator7].classList.remove('inUse');
 			formBorders[iterator7].style.transitionDelay = '0s';
 		}
 		inputsParent.classList.add('inUse');
