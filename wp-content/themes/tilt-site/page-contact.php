@@ -91,7 +91,7 @@ get_header('contact'); ?>
 
 <header class="contact-page">
 	<div class="module module--16-5 module--video module--visible">
-			 <video poster="" loop="true" muted="true">
+			 <video poster="" autoplay="true" loop="true" muted="true">
 					 <source src="https://player.vimeo.com/external/141399412.hd.mp4?s=3f1574fa69a9ae469f325e2b05972a6e&profile_id=113" type="video/mp4">
 			 </video>
 	 </div> <!-- /end module -->
