@@ -31,7 +31,6 @@
 .contact-form__fieldset--completed{
 
     border-bottom: 1px solid $c-grey-5e;
-
         &:before{
             content: '';
             display: block;
@@ -58,6 +57,12 @@
 }
 
 .contact-form__label--completed{
+
+    & + input, & + textarea{
+        background-color: $c-grey-2d;
+    }
+
+
     &:after{
         content: '';
         height: 10px;

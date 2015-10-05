@@ -1460,7 +1460,9 @@ if(document.getElementById('work_all')){
 }
 
 var controlContactBorder = function(inputClicked, borderToChange){
+	console.log(inputClicked);
 	inputsParent = inputClicked.parentNode;
+	console.log(inputsParent);
 	inputsParentPosition = inputsParent.getBoundingClientRect();
 	inputPosition = inputClicked.getBoundingClientRect();
 	newFunkyBorderHeight = inputPosition.top - inputsParentPosition.top + inputPosition.height;
@@ -1476,17 +1478,24 @@ var completeBorder = function(inputClicked){
 		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
 			formHolders[iterator6].parentNode.classList.remove('contact-form__fieldset--completed');
 		}
+	} else if(inputsParent.id === "form-holder-2"){
+		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
+		formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
+		formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
+	} else if(inputsParent.id === "form-holder-3"){
+		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
+		formHolders[1].parentNode.classList.add('contact-form__fieldset--completed');
 	}
 }
 
 if(document.getElementById('contact-form')){
 
 	var inputs = document.getElementsByClassName('contact-form__input');
+		formHolders = document.getElementsByClassName('form-info-holder');
 
 	for (var iterator5 = 0; iterator5 < inputs.length; iterator5++){
 		var inputIWant = inputs[iterator5];
 		(function(){
-			console.log(inputIWant);
 			inputIWant.addEventListener('blur', function(){
 				if(this.value !== ""){
 					var inputID = this.id;
