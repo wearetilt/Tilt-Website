@@ -1152,6 +1152,7 @@ var newFunkyBorderHeight;
 var funkyBorder;
 var funkyBorderToChange;
 var formHolders;
+var formBorders;
 var doc = document.documentElement;
 
 menuButton.onclick = function(){
@@ -1473,9 +1474,9 @@ var controlContactBorder = function(inputClicked, borderToChange){
 
 var completeBorder = function(inputsParent){
 	if(inputsParent.id === "form-holder-1"){
-		formHolders = document.getElementsByClassName('form-info-holder');
 		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
 			formHolders[iterator6].parentNode.classList.remove('contact-form__fieldset--completed');
+			formBorders[iterator6].style.height = '0px';
 		}
 	} else if(inputsParent.id === "form-holder-2"){
 		document.getElementById('funky-border-1').style.height = '100%';
@@ -1492,6 +1493,7 @@ if(document.getElementById('contact-form')){
 
 	var inputs = document.getElementsByClassName('contact-form__input');
 		formHolders = document.getElementsByClassName('form-info-holder');
+		formBorders = document.getElementsByClassName('funky-border-shizz');
 
 	for (var iterator5 = 0; iterator5 < inputs.length; iterator5++){
 		var inputIWant = inputs[iterator5];
@@ -1527,8 +1529,8 @@ if(document.getElementById('contact-form')){
 					default:
 
 				}
-				controlContactBorder(this, borderToChange);
 				completeBorder(inputsParent);
+				controlContactBorder(this, borderToChange);
 			});
 		})();
 	}
