@@ -1461,24 +1461,24 @@ if(document.getElementById('work_all')){
 
 var controlContactBorder = function(inputClicked, borderToChange){
 	console.log(inputClicked);
-	inputsParent = inputClicked.parentNode;
 	console.log(inputsParent);
 	inputsParentPosition = inputsParent.getBoundingClientRect();
 	inputPosition = inputClicked.getBoundingClientRect();
 	newFunkyBorderHeight = inputPosition.top - inputsParentPosition.top + inputPosition.height;
 	funkyBorder = 'funky-border-' + borderToChange;
 	funkyBorderToChange = document.getElementById(funkyBorder);
+	console.log(funkyBorderToChange);
 	funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
 }
 
-var completeBorder = function(inputClicked){
-	inputsParent = inputClicked.parentNode;
+var completeBorder = function(inputsParent){
 	if(inputsParent.id === "form-holder-1"){
 		formHolders = document.getElementsByClassName('form-info-holder');
 		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
 			formHolders[iterator6].parentNode.classList.remove('contact-form__fieldset--completed');
 		}
 	} else if(inputsParent.id === "form-holder-2"){
+		document.getElementById('funky-border-1').style.height = '100%';
 		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
 		formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
 		formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
@@ -1509,8 +1509,26 @@ if(document.getElementById('contact-form')){
 			});
 
 			inputIWant.addEventListener('focus', function(event){
-				controlContactBorder(this, 1);
-				completeBorder(this);
+				inputsParent = this.parentNode;
+				console.log(inputsParent.id);
+				switch (inputsParent.id) {
+					case "form-holder-1":
+						borderToChange = 1;
+					break;
+
+					case "form-holder-2":
+						borderToChange = 2;
+					break;
+
+					case "form-holder-3":
+						borderToChange = 3;
+					break;
+
+					default:
+
+				}
+				controlContactBorder(this, borderToChange);
+				completeBorder(inputsParent);
 			});
 		})();
 	}
