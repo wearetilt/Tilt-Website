@@ -1493,22 +1493,32 @@ var completeBorder = function(inputsParent){
 	if(inputsParent.id === "form-holder-1"){
 			handleBorderTiming(inputsParent);
 		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
-			formHolders[iterator6].parentNode.classList.remove('contact-form__fieldset--completed');
+			setTimeout(function(){
+				formHolders[0].parentNode.classList.remove('contact-form__fieldset--completed');
+				formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
+				formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
+			}, 200);
 			formBorders[iterator6].style.height = '0px';
 		}
 	} else if(inputsParent.id === "form-holder-2"){
 		handleBorderTiming(inputsParent);
 		document.getElementById('funky-border-1').style.height = '100%';
 		document.getElementById('funky-border-3').style.height = '0%';
-		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
-		formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
-		formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
+		setTimeout(function(){
+			formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
+			formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
+			formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
+		}, 200);
+
 	} else if(inputsParent.id === "form-holder-3"){
 		handleBorderTiming(inputsParent);
 		document.getElementById('funky-border-1').style.height = '100%';
 		document.getElementById('funky-border-2').style.height = '100%';
-		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
-		formHolders[1].parentNode.classList.add('contact-form__fieldset--completed');
+		setTimeout(function(){
+			formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
+			formHolders[1].parentNode.classList.add('contact-form__fieldset--completed');
+		}, 200);
+
 	}
 }
 
