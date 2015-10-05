@@ -1484,6 +1484,8 @@ var completeBorder = function(inputsParent){
 		formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
 		formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
 	} else if(inputsParent.id === "form-holder-3"){
+		document.getElementById('funky-border-1').style.height = '100%';
+		document.getElementById('funky-border-2').style.height = '100%';
 		formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
 		formHolders[1].parentNode.classList.add('contact-form__fieldset--completed');
 	}

@@ -155,83 +155,13 @@ get_header('contact'); ?>
 		</fieldset>
 
 		<fieldset class="contact-form__fieldset">
-			<div id="form-holder-2" class="form-info-holder">
-				<label class="contact-form__label" for="field11">Select</label>
-					 <select class="contact-form__input" name="field11" id="field11" required="required">
-						<option id="field11-1" value="Option 1">
-							   Option 1
-						</option>
-						<option id="field11-2" value="Option 2">
-						Option 2
-						</option>
-						option id="field11-3" value="Option 3">
-						Option 3
-					  	</option>
-					 </select>
-
-					 <label class="contact-form__label" for="field12">
-						  Select
-					 </label>
-					 <select class="contact-form__input" name="field12" id="field12" required="required">
-						  <option id="field12-1" value="Option 1">
-							   Option 1
-						  </option>
-						  <option id="field12-2" value="Option 2">
-							   Option 2
-						  </option>
-						  <option id="field12-3" value="Option 3">
-							   Option 3
-						  </option>
-					 </select>
-
-
-					 <label class="contact-form__label" for="field13">
-						  Select
-					 </label>
-					 <select class="contact-form__input" name="field13" id="field13" required="required">
-						  <option id="field13-1" value="Option 1">
-							   Option 1
-						  </option>
-						  <option id="field13-2" value="Option 2">
-							   Option 2
-						  </option>
-						  <option id="field13-3" value="Option 3">
-							   Option 3
-						  </option>
-					 </select>
-
-					 <label class="contact-form__label" for="field14">
-						  Select
-					 </label>
-					 <select class="contact-form__input" name="field14" id="field14" required="required">
-						  <option id="field14-1" value="Option 1">
-							   Option 1
-						  </option>
-						  <option id="field14-2" value="Option 2">
-							   Option 2
-						  </option>
-						  <option id="field14-3" value="Option 3">
-							   Option 3
-						  </option>
-					 </select>
-
-					 <label class="contact-form__label" for="field15">
-						  Select
-					 </label>
-					 <select class="contact-form__input" name="field15" id="field15" required="required">
-						  <option id="field15-1" value="Option 1">
-							   Option 1
-						  </option>
-						  <option id="field15-2" value="Option 2">
-							   Option 2
-						  </option>
-						  <option id="field15-3" value="Option 3">
-							   Option 3
-						  </option>
-					 </select>
+			<div id="form-holder-3" class="form-info-holder">
+				<label class="contact-form__label" for="field11">Preferred start date</label><input class="contact-form__input" name="preferred_start" id="field11" required="required" type="text">
+				<label class="contact-form__label" for="field12">Preferred end date</label><input class="contact-form__input" name="preferred_end" id="field12" required="required" type="text">
+				<label class="contact-form__label" for="field13">Estimated Budget</label><input class="contact-form__input" name="estimated_budget" id="field13" required="required" type="text">
 			</div>
 
-			<div id="funky-border-4" class="funky-border-shizz"></div>
+			<div id="funky-border-3" class="funky-border-shizz"></div>
 
 		</fieldset>
 

@@ -54,6 +54,20 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
+    &:after{
+        content: '';
+        height: 31px;
+        width: 31px;
+        background-color: transparent;
+        margin-left: 20px;
+        display: inline-block;
+        margin-bottom: -10px;
+        background-image: url('../images/icon-spritesheet.png');
+        background-position: 31px 0px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
 
 .contact-form__label--completed{
@@ -63,11 +77,7 @@
     }
 
     &:after{
-        content: '';
-        height: 10px;
-        width: 10px;
-        background-color: $c-tilt-pink;
-        display: inline-block;
+        opacity: 1;
     }
 }
 
