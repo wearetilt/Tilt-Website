@@ -107,7 +107,15 @@ get_header('work-item'); ?>
         </section>
     </div> <!-- /end container -->
 
+	
+	<div class="container container--no-padding">
 
+	    <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/film_poster_image.jpg" width="100%" height="100%" >
+	            <source src="https://player.vimeo.com/external/141178728.hd.mp4?s=ab67b1dcea7b7d9f5049c8a2723878ae&profile_id=113" type="video/mp4">
+	    </video>
+
+	</div> <!-- /end container -->
+	
     <div class="container container--no-padding image-container">
     	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_05_hz.jpg" alt="Sainbury's Cars" />
     </div>
