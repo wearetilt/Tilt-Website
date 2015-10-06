@@ -24,9 +24,9 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag">Interactive</p>
             <h1>Alzheimer's Research UK<br />
-                <span class="light underlined">Interactive Website: The Lab</span>
+                <span class="light underlined">The Lab</span>
             </h1>
-            <h2 class="light">UX | DESIGN | DEVELOPMENT | MOTION | DEVELOPMENT</h2>
+            <h2 class="light">UX | DESIGN | DEVELOPMENT | MOTION</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
