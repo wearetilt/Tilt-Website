@@ -33,7 +33,7 @@ get_header(); ?>
 
 	<div class="container container--no-padding">
 		<div class="group-container">
-			<div id="Staff-1" class="module module--staff module--video module--staff__director" data-fullvideo='https://player.vimeo.com/external/140429668.hd.mp4?s=9a2247ed048e91413e5cc2769f43d7f1&profile_id=119' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-1.jpg'); background-size: cover; background-position: 50% 50%;">
+			<div id="Staff-1" class="module module--staff module--video module--staff__director" data-fullvideo='https://player.vimeo.com/external/140429651.hd.mp4?s=7ed21df5431baf6a0644362b0d5f9409&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-1.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Jonathan Malyon</h2>
@@ -148,8 +148,8 @@ get_header(); ?>
 			<div id="Staff-15" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429661.hd.mp4?s=bbd10ebfa60c6e62df15a6bd4afccbbd&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-15.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
-						<h2 class="underlined">Barry Bloye</h2>
-						<p class="sans-serif">Web Developer</p>
+						<h2 class="underlined">Ian Harrison</h2>
+						<p class="sans-serif">3D Specialist</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -253,7 +253,7 @@ get_header(); ?>
 	    }
 	};
 
-	httpRequest.open('GET', 'http://localhost/tilt-website/tilt-site_tidy/staff.json', true);
+	httpRequest.open('GET', 'http://localhost/~jonathanmalyon/tilt-website/tilt-site_tidy/staff.json', true);
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
 	</script>
