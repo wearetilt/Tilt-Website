@@ -107,6 +107,14 @@ get_header('work-item'); ?>
 </div> <!-- /end container -->
 
 <div class="container container--no-padding">
+
+	    <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/alz_poster_image.jpg" width="100%" height="100%" >
+	            <source src="https://player.vimeo.com/external/141178728.hd.mp4?s=ab67b1dcea7b7d9f5049c8a2723878ae&profile_id=113" type="video/mp4">
+	    </video>
+
+	</div> <!-- /end container -->
+
+<div class="container container--no-padding">
 	<div class="module module--2-1 area-dark module--dark">
         <div class="module__text">
             <p>“Tilt created a sleek and engaging website, which really brought our ideas to life. Their creative thinking presented us with ideas and functionality beyond our expectations that worked superbly in making the Lab a captivating and interactive experience for visitors.”</p>
