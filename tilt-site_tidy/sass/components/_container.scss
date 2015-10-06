@@ -158,7 +158,6 @@ section{
     @extend %clearfix;
     position: relative;
     // background: url('../images/tilt-logo.png') center no-repeat ;
-    // background-color: $c-bg;
 
     & + .text-section{
         margin-top: percentage(126/2032);

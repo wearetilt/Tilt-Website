@@ -87,7 +87,9 @@ get_header(); ?>
 
 				</div>
 				<div class="module module--1-1">
-                    <div id="instagram_box_1" class="ratio"></div>
+                    <a id="instagram_link_1" href="#" target="_blank">
+                        <div id="instagram_box_1" class="ratio instagram-box"></div>
+                    </a>
 				</div>
 				<div class="module module--1-1 area-dark">
 					<a href="<?php echo $post->guid; ?>">
@@ -160,7 +162,10 @@ get_header(); ?>
 
 
 				<div class="module module--1-1">
-				    <div id="instagram_box_2" class="ratio"></div>
+                    <a id="instagram_link_2" href="#" target="_blank">
+				        <div id="instagram_box_2" class="ratio instagram-box"></div>
+                    </a>
+
 				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
@@ -197,10 +202,15 @@ function doPicture(pictureData){
     console.log(pictureData);
 
     var instagramImage1 = pictureData.data[0].images.standard_resolution.url;
+    var instagramLink1 = pictureData.data[0].link;
     var instagramImage2 =  pictureData.data[1].images.standard_resolution.url;
+    var instagramLink2 = pictureData.data[1].link;
+
     console.log(instagramImage1);
     document.getElementById('instagram_box_1').style.backgroundImage = "url('" + instagramImage1 + "')";
     document.getElementById('instagram_box_2').style.backgroundImage = "url('" + instagramImage2 + "')";
+    document.getElementById('instagram_link_1').href = instagramLink1;
+    document.getElementById('instagram_link_2').href = instagramLink2;
 
 
 }
