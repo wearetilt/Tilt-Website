@@ -24,18 +24,18 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag">Web</p>
             <h1>i360<br />
-                <span class="light underlined">Website design and development</span>
+                <span class="light underlined">Promotional Website</span>
             </h1>
             <h2 class="light">Design | Development</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The challenge</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="first-para">Create a new website to help attract support from investors and the local community for an ambitious new project – the i360, the world’s tallest moving observation platform.</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="first-para">Build a website that unapologetically conveys the scale, ambition and sheer excitement of the i360 – and give a sneak preview of the awe-inspiring views.</p>
             </div>
         </div>
     </div>
@@ -87,8 +87,8 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <h2 class="underlined">What We Did</h2>
+                        <p class="first-para">The i360, developed by the team behind the London Eye, was designed to give Brighton and Hove a truly international-class tourist attraction. While the idea initially gained a lot of attention, project delays affected public support. The website needed an upgrade in order to help gain more positive PR. The site also needed to help facilitate the i360 team’s blogging and social media outreach strategy.</p>
                     </div>
                 </div>
                 <div class="module module--2-1 module--video">
@@ -114,7 +114,7 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--dark">
                     <div class="module__text">
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <p>The site uses a clean, responsive scrolling experience that recreates a sense of moving up and down the tower. Through 3D-rendered graphics and photography, we illustrated what visitors can expect to see from the top, and how the tower will look against the Brighton skyline. As part of an ongoing promotional campaign, the website has helped tip the balance in favour of the project, with a real sense of anticipation building in the city for launch in 2016.</p>
                     </div>
                 </div>
             </div>

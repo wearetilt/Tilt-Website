@@ -24,9 +24,9 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag">Interactive</p>
             <h1>Alzheimer's Research UK<br />
-                <span class="light underlined">Interactive Website: The Lab</span>
+                <span class="light underlined">The Lab</span>
             </h1>
-            <h2 class="light">UX | DESIGN | DEVELOPMENT | MOTION | DEVELOPMENT</h2>
+            <h2 class="light">UX | DESIGN | DEVELOPMENT | MOTION</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
@@ -105,6 +105,14 @@ get_header('work-item'); ?>
         </div> <!-- /end group-container -->
     </section>
 </div> <!-- /end container -->
+
+<div class="container container--no-padding">
+
+	    <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/alz_poster_image.jpg" width="100%" height="100%" >
+	            <source src="https://player.vimeo.com/external/141178728.hd.mp4?s=ab67b1dcea7b7d9f5049c8a2723878ae&profile_id=113" type="video/mp4">
+	    </video>
+
+	</div> <!-- /end container -->
 
 <div class="container container--no-padding">
 	<div class="module module--2-1 area-dark module--dark">

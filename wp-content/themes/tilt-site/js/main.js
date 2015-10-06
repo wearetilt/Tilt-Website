@@ -1090,8 +1090,8 @@ if(document.getElementById('header-video-player')){
 			break;
 
 			case "work_page":
-				var clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
-				var fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
+				var clipVideoSrc = "https://player.vimeo.com/external/140804257.hd.mp4?s=255cf3e987a7650036484ab6a1768d7b&profile_id=119";
+				var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113";
 			break;
 
 			default:

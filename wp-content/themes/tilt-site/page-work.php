@@ -18,8 +18,8 @@ get_header(); ?>
         <div id="header-play" class="header-play">
         </div>
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/140804257.hd.mp4?s=255cf3e987a7650036484ab6a1768d7b&profile_id=119" type="video/mp4">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" >
+                    <source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
@@ -231,7 +231,7 @@ get_header(); ?>
         							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
-        					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_01_ls.jpg')">
+        					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_01_ls_v2.jpg')">
         					</div>
                         </a>
     				</div>

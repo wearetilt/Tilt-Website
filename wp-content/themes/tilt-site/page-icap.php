@@ -30,12 +30,12 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
-                <h2>The brief</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum, recusandae nobis nulla sapiente repellendus quia odio! Quibusdam veritatis placeat qui omnis doloremque rem veniam itaque tenetur inventore, amet, voluptates.</p>
+                <h2>The Challenge</h2>
+                <p class="first-para">How can an onboarding portal help communicate the new brand and ethos behind one of the world’s leader providers of trading technologies?</p>
             </div>
             <div class="header-text__module">
-                <h2>The solution</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic reiciendis perspiciatis voluptate numquam, laboriosam, incidunt accusantium quae, officia, doloremque eius? Vero deleniti soluta, totam nam ea quo recusandae cupiditate.</p>
+                <h2>The Big Idea</h2>
+                <p class="first-para">Put people front and centre to create a engaging experience that lets graduate recruits tell the story of what it’s like to work at ICAP.</p>
             </div>
         </div>
     </div>
@@ -86,8 +86,8 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <h2 class="underlined">What We Did</h2>
+                        <p class="first-para">ICAP wanted to move away from an “eat what you kill” trader mentality to something that reflected the true nature of their target demographic. Think “potential Google engineer” rather than “Gordon Gecko”. This new direction needed to be built into the branding and structure of their graduate onboarding portal. In part, this meant telling ICAP’s story through first person films and profiles featuring graduate recruits from all around the world.</p>
                     </div>
                 </div>
                <div class="module module--2-1 module--video">
@@ -113,8 +113,7 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--dark">
                     <div class="module__text">
-                        <h2 class="underlined">The Process</h2>
-                        <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo. Quisquam voluptates magnam aspernatur itaque molestiae error debitis delectus sunt, est non pariatur assumenda accusantium vel maxime optio placeat sint enim explicabo voluptate asperiores natus.</p>
+                        <p>We carried out a strategic audit of ICAP’s available site content and re-wrote the site copy. We then created a responsive framework, suitable for the highly mobile-centric young audience. The design direction was bold, active and made use of ambient background header videos to convey the ‘feel’ of an ICAP office environment. The result is a portal that expresses the thrill and adventure behind a career at ICAP without resorting to marketing clichés. Finally, we produced a series of print marketing collateral for use at global graduate events.</p>
                     </div>
                 </div>
             </div>
