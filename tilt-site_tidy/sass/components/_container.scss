@@ -90,6 +90,10 @@
     padding-top: percentage(120/2032);
 }
 
+.container--half-bot{
+    padding-bottom: percentage(120/2032);
+}
+
 .container--no-top{
     padding-top: 0;
 }
@@ -115,7 +119,7 @@ section{
 
     @media handheld, screen and (min-width: $bp-desktop){
         &.text-section{
-
+            position: relative;
             h2{
                 float: left;
                 width: 50%;

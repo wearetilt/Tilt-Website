@@ -1533,6 +1533,8 @@ var completeBorder = function(inputsParent){
 
 if(document.getElementById('contact-form')){
 
+	var worksheetButtonOpen = document.getElementById('form_open');
+	var worksheetButtonClose = document.getElementById('form_close');
 	var inputs = document.getElementsByClassName('contact-form__input');
 		formHolders = document.getElementsByClassName('form-info-holder');
 		formBorders = document.getElementsByClassName('funky-border-shizz');
@@ -1576,6 +1578,15 @@ if(document.getElementById('contact-form')){
 		})();
 	}
 
+	worksheetButtonOpen.addEventListener('click', function(){
+		worksheetButtonClose.style.display = 'inline-block';
+		this.style.display = 'none';
+	});
+
+	worksheetButtonClose.addEventListener('click', function(){
+		worksheetButtonOpen.style.display = 'inline-block';
+		this.style.display = 'none';
+	});
 
 }
 
