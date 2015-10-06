@@ -1494,9 +1494,9 @@ var completeBorder = function(inputsParent){
 			handleBorderTiming(inputsParent);
 		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
 			formHolders[0].parentNode.style.borderTop = '1px solid #5e5e5e';
-			formHolders[1].parentNode.style.borderTop = 'none';
-			formHolders[2].parentNode.style.borderTop = 'none';
 			setTimeout(function(){
+				formHolders[1].parentNode.style.borderTop = 'none';
+				formHolders[2].parentNode.style.borderTop = 'none';
 				formHolders[0].parentNode.classList.remove('contact-form__fieldset--completed');
 				formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
 				formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
