@@ -1493,6 +1493,9 @@ var completeBorder = function(inputsParent){
 	if(inputsParent.id === "form-holder-1"){
 			handleBorderTiming(inputsParent);
 		for(var iterator6 = 0; iterator6 < formHolders.length; iterator6++){
+			formHolders[0].parentNode.style.borderTop = '1px solid #5e5e5e';
+			formHolders[1].parentNode.style.borderTop = 'none';
+			formHolders[2].parentNode.style.borderTop = 'none';
 			setTimeout(function(){
 				formHolders[0].parentNode.classList.remove('contact-form__fieldset--completed');
 				formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
@@ -1505,6 +1508,9 @@ var completeBorder = function(inputsParent){
 		document.getElementById('funky-border-1').style.height = '100%';
 		document.getElementById('funky-border-3').style.height = '0%';
 		setTimeout(function(){
+			formHolders[0].parentNode.style.borderTop = '1px solid #5e5e5e';
+			formHolders[1].parentNode.style.borderTop = '1px solid #5e5e5e';
+			formHolders[2].parentNode.style.borderTop = 'none';
 			formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
 			formHolders[1].parentNode.classList.remove('contact-form__fieldset--completed');
 			formHolders[2].parentNode.classList.remove('contact-form__fieldset--completed');
@@ -1515,6 +1521,9 @@ var completeBorder = function(inputsParent){
 		document.getElementById('funky-border-1').style.height = '100%';
 		document.getElementById('funky-border-2').style.height = '100%';
 		setTimeout(function(){
+			formHolders[0].parentNode.style.borderTop = '1px solid #5e5e5e';
+			formHolders[1].parentNode.style.borderTop = '1px solid #5e5e5e';
+			formHolders[2].parentNode.style.borderTop = '1px solid #5e5e5e';
 			formHolders[0].parentNode.classList.add('contact-form__fieldset--completed');
 			formHolders[1].parentNode.classList.add('contact-form__fieldset--completed');
 		}, 200);
