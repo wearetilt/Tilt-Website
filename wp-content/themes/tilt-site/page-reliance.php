@@ -28,18 +28,18 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag tag--no-italic">Film</p>
             <h1>Reliance<br />
-                <span class="light underlined">Discover</span>
+                <span class="light underlined">Onboarding Portal</span>
             </h1>
             <h2 class="light">Film</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para">How do you explain the many different services of a global company as complex and diverse as GfK in a single video piece? </p>
+                <p class="first-para">How can you convey the values, vision and the individual personalities behind India’s largest private company?</p>
             </div>
             <div class="header-text__module header-text__module--padding">
-                <h2>The solution</h2>
-                <p class="first-para">Use motion graphics to keep things bold, clear and simple, telling the GfK story in just 90 seconds. </p>
+                <h2>The Big Idea</h2>
+                <p class="first-para">Step away from the film studio to bring people’s stories to life in a more natural setting. Have faith in the interviewee, and let the pace of Mumbai life add depth to each piece.</p>
             </div>
         </div>
     </div>
@@ -73,8 +73,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
-                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in. </p>
+                        <p class="first-para">We proposed an approach in contrast to the client’s usual preference for studio sets and large camera crews. Instead, we wanted to create an intimate documentary style. Armed with only top-end DSLRs and sound equipment, our lightweight style allowed us to film at a rapid pace, and capture authentic scenes from the Reliance campus and around Mumbai. In total we filmed 25 interviewees in less than 10 days, including Chairman Ambani, an iconic figure in India, and one of the top 50 richest people in the world.</p>
                     </div>
                 </div>
                 <div class="module module--2-1">
@@ -96,9 +95,7 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--dark">
                     <div class="module__text">
-                        <h2 class="underlined">What we did</h2>
-                        <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
-                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in. </p>
+                         <p>Using a team of eight editors, we pieced together profile films for each interviewee, plus a series of ‘headline films’ – high impact collages consisting of interview snippets, motion graphic footage and general views from Mumbai and Reliance. The result is a suite of films that live, breathe and feel truly ‘Reliance’, and that have been met with huge enthusiasm by new joiners at the organisation.</p>
                     </div>
                 </div>
             </div>
