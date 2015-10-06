@@ -105,10 +105,19 @@ get_header('contact'); ?>
 		<a class="contact-email" href="mailto:jonathan.helm@wearetilt.com">jonathan.helm@wearetilt.com</a>
 		<h2 class="contact-title"><span class="light">General Enquiries</span></h2>
 		<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
+		<div class="worksheet-button-container">
+			<p>Try our handy worksheet to help you define your project.</p>
+			<a id="form_open" class="button" href="#">Open worksheet</a>
+			<a id="form_close" class="button" href="#">Close worksheet</a>
+		</div>
 	</section> <!-- /end text-section -->
 </div> <!-- /end container -->
 
-<div class="container area-dark">
+
+<div class="container container--no-top area-dark">
+	<section class="text-section text-section--centre">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui sem, congue non consequat accumsan, finibus sit amet lacus. Sed pulvinar placerat tortor, at tincidunt enim.</p>
+	</section>
 	<form id="contact-form" class="contact-form" action="process_form.php" method="post" novalidate="">
 
 		<fieldset class="contact-form__fieldset">
