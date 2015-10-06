@@ -145,8 +145,8 @@ get_header('work-item'); ?>
             <div class="group group--right">
                 <div class="module module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                    	<video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_montage_poster.jpg" width="100%" height="100%" >
-							 <source src="https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113" type="video/mp4">
+                    	<video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/madeline_poster_image.jpg" width="100%" height="100%" >
+							 <source src="https://player.vimeo.com/external/141536383.sd.mp4?s=ec76d68e3231addfe57b47c24dadc826&profile_id=112" type="video/mp4">
 						</video>
                     </div>
                 </div>
