@@ -46,26 +46,18 @@ get_header('news'); ?>
 		<div class="group-container">
 			<div class="group group--left">
 				<div class="module module--2-2">
-					<div class="ratio" style="background-image: url('<?php the_field('image_1'); ?>');">
-
-					</div>
+					<div class="ratio" style="background-image: url('<?php the_field('image_1'); ?>');"></div>
 				</div>
 			</div>
 			<div class="group group--right">
 				<div class="module module--1-1">
-					<div class="ratio" style="background-image: url('<?php the_field('image_2'); ?>');">
-
-					</div>
+					<div class="ratio" style="background-image: url('<?php the_field('image_2'); ?>');"></div>
 				</div>
 				<div class="module module--1-1">
-					<div class="ratio" style="background-image: url('<?php the_field('image_3'); ?>');">
-
-					</div>
+					<div class="ratio" style="background-image: url('<?php the_field('image_3'); ?>');"></div>
 				</div>
 				<div class="module module--2-1">
-					<div class="ratio" style="background-image: url('<?php the_field('image_4'); ?>');">
-
-					</div>
+					<div class="ratio" style="background-image: url('<?php the_field('image_4'); ?>');"></div>
 				</div>
 			</div>
 		</div>
