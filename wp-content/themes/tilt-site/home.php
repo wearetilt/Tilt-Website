@@ -55,7 +55,7 @@ get_header(); ?>
 						<div class="module module--1-1">
 							<div class="module__text">
 								<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-								<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
+								
 							</div> <!-- /end text-section -->
 						</div>
 						<div class="module module--1-1">
@@ -73,7 +73,7 @@ get_header(); ?>
 							<div class="module module--1-1">
 								<div class="module__text">
 									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-									<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
+									
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1">
@@ -84,7 +84,7 @@ get_header(); ?>
 				} else if($i === 4){
 					?>
 							<div class="module module--2-2">
-								<?php	get_template_part( 'content', 'blog-post' ); ?>
+								<?php get_template_part( 'content', 'blog-post' ); ?>
 							</div>
 						</div>
 					<?php
@@ -136,7 +136,6 @@ get_header(); ?>
 							<div class="module module--1-1">
 								<div class="module__text">
 									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-									<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1 module--dark">
@@ -164,7 +163,6 @@ get_header(); ?>
 					<div class="module module--1-1">
 						<div class="module__text">
 							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-							<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -174,7 +172,6 @@ get_header(); ?>
 									<div class="module module--1-1">
 										<div class="module__text">
 											<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-											<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 										</div> <!-- /end text-section -->
 									</div>
 									<div class="module module--1-1 module--dark">
@@ -205,7 +202,6 @@ get_header(); ?>
 					<div class="module module--1-1">
 						<div class="module__text">
 							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-							<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -215,7 +211,6 @@ get_header(); ?>
 									<div class="module module--1-1">
 										<div class="module__text">
 											<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-											<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 										</div> <!-- /end text-section -->
 									</div>
 									<div class="module module--1-1 module--dark">
@@ -251,7 +246,6 @@ get_header(); ?>
 					<div class="module module--1-1">
 						<div class="module__text">
 							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-							<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -261,7 +255,6 @@ get_header(); ?>
 									<div class="module module--1-1">
 										<div class="module__text">
 											<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-											<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 										</div> <!-- /end text-section -->
 									</div>
 									<div class="module module--1-1 module--dark">
@@ -291,7 +284,6 @@ get_header(); ?>
 					<div class="module module--1-1">
 						<div class="module__text">
 							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-							<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -310,7 +302,6 @@ get_header(); ?>
 			<div class="module module--1-1">
 				<div class="module__text">
 					<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-					<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 				</div> <!-- /end text-section -->
 			</div>
 			<div class="module module--1-1 module--dark">
@@ -320,7 +311,6 @@ get_header(); ?>
 							<div class="module module--1-1">
 								<div class="module__text">
 									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-									<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1 module--dark">
@@ -347,7 +337,6 @@ get_header(); ?>
 					<div class="module module--1-1">
 						<div class="module__text">
 							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-							<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -357,7 +346,6 @@ get_header(); ?>
 					<div class="module module--1-1">
 						<div class="module__text">
 							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-							<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -376,7 +364,6 @@ get_header(); ?>
 			<div class="module module--1-1">
 				<div class="module__text">
 					<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-					<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 				</div> <!-- /end text-section -->
 			</div>
 			<div class="module module--1-1 module--dark">
@@ -386,7 +373,6 @@ get_header(); ?>
 							<div class="module module--1-1">
 								<div class="module__text">
 									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-									<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1 module--dark">
