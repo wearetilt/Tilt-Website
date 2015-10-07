@@ -17,13 +17,10 @@ get_header(); ?>
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
         
-        	 <div class="container container--reel">
-        
-				 <p>REEL 2015</p>
-      
-			</div>
+        	 
         
         </div>
+        <div class="container container--reel"> <p>REEL 2015</p></div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" >
                     <source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
