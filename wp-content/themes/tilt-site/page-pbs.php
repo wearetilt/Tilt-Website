@@ -63,7 +63,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">Earth - A New Wild is a nature documentary that shows young audiences that ecosystems often hang in a delicate balance and are easily disrupted by the actions of man. The producer, Passion Pictures, approached us to create an engaging digital experience to support the show. The original brief asked for a microsite with an overview of each show, but we saw an opportunity to do much more...</p>
@@ -90,7 +90,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <p>We created Ecosystem Explorer, a portal jam-packed with videos, games and infographics designed to take students deep into three thrilling ecosystems based on the lives of vultures, wolves and sharks. Built using Create JS and HTML5, the games work in any browser and feature original artwork, illustrations and sound effects created by our team.</p>
                     </div>

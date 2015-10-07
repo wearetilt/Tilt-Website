@@ -70,7 +70,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">We proposed an approach in contrast to the client’s usual preference for studio sets and large camera crews. Instead, we wanted to create an intimate documentary style. Armed with only top-end DSLRs and sound equipment, our lightweight style allowed us to film at a rapid pace, and capture authentic scenes from the Reliance campus and around Mumbai. In total we filmed 25 interviewees in less than 10 days, including Chairman Ambani, an iconic figure in India, and one of the top 50 richest people in the world.</p>
@@ -93,7 +93,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                          <p>Using a team of eight editors, we pieced together profile films for each interviewee, plus a series of ‘headline films’ – high impact collages consisting of interview snippets, motion graphic footage and general views from Mumbai and Reliance. The result is a suite of films that live, breathe and feel truly ‘Reliance’, and that have been met with huge enthusiasm by new joiners at the organisation.</p>
                     </div>
@@ -127,7 +127,7 @@ get_header('work-item'); ?>
                         </video>
                     </div>
                 </div>
-                
+
             </div>
             <div class="group group--right">
                 <div class="module module--16-9 module--video module--nozoom">
@@ -137,7 +137,7 @@ get_header('work-item'); ?>
                         </video>
                     </div>
                 </div>
-                
+
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>

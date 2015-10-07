@@ -290,6 +290,14 @@
     padding-top: 0px;
 }
 
+.module--text-pad{
+    padding-top: 100%;
+    @media handheld, screen and (min-width: $bp-desktop){
+        padding-top: 50%;
+    }
+
+}
+
 #staff-member{
     transition: all 0.5s ease;
     display: none;

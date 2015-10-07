@@ -70,7 +70,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
@@ -93,7 +93,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in.</p>
                     </div>
@@ -112,7 +112,7 @@ get_header('work-item'); ?>
 </div> <!-- /end container -->
 
 <div class="container container--no-padding">
-	<div class="module module--2-1 module--dark">
+	<div class="module module--2-1 module--text-pad module--dark">
         <div class="module__text">
             <p>“Tilt helped us realise a great 90 second 3D animation with VO. The production allowed us to simplify our complete matrix portfolio in the rapidly changing market research industry. The project was well organised and the team a pleasure to work with.” </p>
             <p>Glenn Ward - Global Director, Digital Marketing at GfK</p>
