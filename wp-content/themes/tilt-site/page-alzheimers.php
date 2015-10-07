@@ -17,6 +17,8 @@ get_header('work-item'); ?>
     <div class="monitor-holder">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen">
+            <div class="overlay area-dark">
+            </div>
             <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
         </div>
     </div>
