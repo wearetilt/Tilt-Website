@@ -16,9 +16,9 @@ get_header(); ?>
 <header id="work_page" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
-        
-        	 
-        
+
+
+
         </div>
         <div class="container container--reel"> <p>REEL 2015</p></div>
         <div class="ratio">
@@ -27,12 +27,12 @@ get_header(); ?>
             </video>
         </div>
     </div>
-    
-    
-   
-    
-    
-    
+
+
+
+
+
+
     <div class="container container--header container--work-list">
         <span id="work_all" class="work-item-title">All</span>
         <span id="work_film"class="work-item-title">Film</span>
@@ -293,6 +293,10 @@ get_header(); ?>
 		</div> <!-- /end group-container -->
 	</section>
 </div> <!-- /end container -->
+
+<div class="container container--half-top container--half-bot image-container">
+	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />
+</div>
 
 </div>
 
