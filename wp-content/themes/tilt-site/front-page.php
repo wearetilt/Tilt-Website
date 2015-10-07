@@ -80,7 +80,7 @@ get_header(); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
-							<h2><span class="light underlined">Nickelodeon<br />Code-It</span></h2>
+							<h2><span class="light">Nickelodeon<br />Code-It</span></h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
 
