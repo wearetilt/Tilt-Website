@@ -75,6 +75,31 @@ header{
             }
         }
     }
+    
+    &.work-item{
+        .container--reel{
+        	padding:0;
+            position: absolute;
+            bottom:25%;
+            width: 100%;
+            text-align:center;
+            
+            p {
+	            font-family: $f-seroot-thn;
+				@include font-size(45);
+				letter-spacing:15px;
+            }
+           
+        }
+        @media handheld, screen and (min-width: $bp-desktop){
+            .header-title{
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+    
+    
     &.work-item--motion{
         .container--header{
             background-color: #202020;

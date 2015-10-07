@@ -23,6 +23,16 @@ get_header(); ?>
             </video>
         </div>
     </div>
+    
+    
+    <div class="container container--reel">
+        
+            <p>REEL 2015</p>
+      
+    </div>
+    
+    
+    
     <div class="container container--header container--work-list">
         <span id="work_all" class="work-item-title">All</span>
         <span id="work_film"class="work-item-title">Film</span>
@@ -272,7 +282,7 @@ get_header(); ?>
         							<h2>BP <br />
         								<span class="underlined">Discover BP</span>
         							</h2>
-        							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
+        							<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_web_04_ss.jpg')">
