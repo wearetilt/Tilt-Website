@@ -7,7 +7,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
 <?php
  $args = array(

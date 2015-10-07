@@ -6,7 +6,7 @@
     transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
     margin-bottom: 687px;
     position: relative;
-    background-color: white;
+    background-color: $c-bg;
     z-index: 3;
     overflow: hidden;
 
@@ -35,9 +35,14 @@
     position: relative;
     padding: percentage(245/2032) percentage(127/2032);
     z-index: 1;
+    background-color: white;
 
     #carreers & {
         padding: percentage(245/2032) percentage(381/2032);
+    }
+
+    #homePage & {
+        background-color: transparent;
     }
 
     &.container--double-side-pad{
