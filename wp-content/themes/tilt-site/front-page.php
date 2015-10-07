@@ -45,7 +45,7 @@ get_header(); ?>
 					</div>
 				</a>
 			</div>
-			<video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+			<video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/home/header_poster_image.jpg">
 					<source id="header-video" src="https://player.vimeo.com/external/141682673.hd.mp4?s=25836ba3052d2612dc5eb10231468d7c&profile_id=113" type="video/mp4">
 			</video>
 		</div>
