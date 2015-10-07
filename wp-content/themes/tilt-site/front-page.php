@@ -80,7 +80,7 @@ get_header('home'); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
-							<h2><span class="light">Nickelodeon<br />Code-It</span></h2>
+							<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
 
@@ -98,7 +98,7 @@ get_header('home'); ?>
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag">News</p>
-								<h2><span class="light"><?php echo $post->post_name; ?></span></h2>
+								<h2><?php echo $post->post_name; ?></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
 						<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -110,7 +110,7 @@ get_header('home'); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Case Study</p>
-							<h2>BP First Level Leaders<br /><span class="underlined">Stories</span></h2>
+							<h2>BP First Level Leaders<br /><span class="underlined light">Stories</span></h2>
 							<p class="sans-serif">Engage your audience on an emotional level</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
@@ -131,7 +131,7 @@ get_header('home'); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Case Study</p>
-							<h2>BP<br /><span class="underlined">Discover BP</span></h2>
+							<h2>BP<br /><span class="underlined light">Discover BP</span></h2>
 							<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
@@ -148,7 +148,7 @@ get_header('home'); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
-							<h2><span class="light underlined">GfK<br />Brand Video</span></h2>
+							<h2>GfK<br /><span class="light underlined">Brand Video</span></h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
 
