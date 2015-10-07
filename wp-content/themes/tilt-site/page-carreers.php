@@ -40,15 +40,15 @@ get_header(); ?>
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<h2 class="light">Interactive Designer</h2>
-						<p>We are looking for a talented Interactive Designer with a proven track record in producing breath taking digital content. Download the job description.</p>
+						<p>Are you a talented Designer with a track record in producing beautiful digital content?</p>
 					</div>
 				</div>
 			</a>
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<h2 class="light">Freelance Web Designers</h2>
-						<p>If you are a web designer looking for freelance work then we would love to hear from you. Get in touch and send us your portfolio.</p>
+						<h2 class="light">Design Freelancers</h2>
+						<p>Are you a web designer looking for freelance work? Send us your portfolio.</p>
 					</div>
 				</div>
 			</a>
@@ -58,15 +58,15 @@ get_header(); ?>
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<h2 class="light">Motion Freelancers</h2>
-						<p>We are on the look out for animators. If this is you and you are looking for freelance work then send us your showreel.</p>
+						<p>We are on the look out for freelance animators. Send us your showreel.</p>
 					</div>
 				</div>
 			</a>
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<h2 class="light">Motion Intern</h2>
-						<p>We are looking for an enthusiastic intern to work within our motion graphics department.  This opportunity is ideal for someone who is looking at getting into the world of motion graphics. Send us your showreel</p>
+						<h2 class="light">Motion Intern</h2>						
+						<p>Looking for a career in motion and animation? Enthusiastic? Show us!</p>
 					</div>
 				</div>
 			</a>
