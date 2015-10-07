@@ -42,9 +42,7 @@ get_header(); ?>
     					<div class="overlay area-dark">
     						<div class="overlay-text">
     							<p class="tag">Work</p>
-    							<h2>South Downs National Park<br />
-    								<span class="light">Discover Another Way</span>
-    							</h2>
+    							<h2><span class="light">South Downs<br />Discover Another Way</span></h2>
     						</div> <!-- /end overlay-text -->
     					</div> <!-- /end overlay -->
     					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_02_mr.jpg')">
@@ -56,9 +54,7 @@ get_header(); ?>
     					<div class="overlay area-dark">
     						<div class="overlay-text">
     							<p class="tag">Work</p>
-    							<h2>Reliance<br />
-    								<span class="light">Discover Reliance</span>
-    							</h2>
+    							<h2><span class="light">Reliance<br />Onboarding</span></h2>
     						</div> <!-- /end overlay-text -->
     					</div> <!-- /end overlay -->
     					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_03_ss.jpg')">
@@ -70,9 +66,7 @@ get_header(); ?>
     					<div class="overlay area-dark">
     						<div class="overlay-text">
     							<p class="tag">Work</p>
-    							<h2>Barclays <br />
-    								<span class="light">Barclays Values</span>
-    							</h2>
+    							<h2><span class="light">Barclays<br />Values</span></h2>
     						</div> <!-- /end overlay-text -->
     					</div> <!-- /end overlay -->
     					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_04_ss.jpg')">
@@ -85,9 +79,9 @@ get_header(); ?>
                     <a href="<?php get_site_url(); ?>bp-fll-stories/">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
-    							<p class="tag">Film: Case Study</p>
-    							<h2>BP <br />
-    								<span class="light underlined">First Level Leaders</span>
+    							<p class="tag">Case Study</p>
+    							<h2>BP First Level Leaders<br />
+    								<span class="underlined">Stories</span>
     							</h2>
     							<p class="sans-serif">Engage your audience on an emotional level.</p>
     						</div> <!-- /end overlay-text -->
@@ -110,10 +104,8 @@ get_header(); ?>
                         <a href="<?php get_site_url(); ?>code-it">
         					<div class="overlay area-dark">
         						<div class="overlay-text">
-        							<p class="tag">Interactive: Case Study</p>
-        							<h2>Nickelodeon <br />
-        								<span class="light">Code-It</span>
-        							</h2>
+        							<p class="tag">Case Study</p>
+        							<h2><span class="light">Nickelodeon<br />Code-It</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_int_01_ss.jpg')">
@@ -126,9 +118,7 @@ get_header(); ?>
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
-        							<h2>Sainsburys<br />
-        								<span class="light">History Timeline</span>
-        							</h2>
+        							<h2><span class="light">Sainsburys<br />History</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_int_02_ss.jpg')">
@@ -140,9 +130,7 @@ get_header(); ?>
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
-        							<h2>Passion Pictures<br />
-        								<span class="light">PBS</span>
-        							</h2>
+        							<h2><span class="light">Passion Pictures<br />PBS</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_int_03_ss.jpg')">
@@ -156,9 +144,9 @@ get_header(); ?>
                     <a href="<?php get_site_url(); ?>alzheimers">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
-    							<p class="tag">Interactive: Case Study</p>
-    							<h2>Alzheimer's Research UK <br />
-    								<span class="light underlined">The Lab</span>
+    							<p class="tag">Work</p>
+    							<h2>Alzheimer's <br />
+    								<span class="underlined">The Lab</span>
     							</h2>
     							<p class="sans-serif">How can you move people to really understand Alzheimer’s Disease?</p>
     						</div> <!-- /end overlay-text -->
@@ -181,9 +169,7 @@ get_header(); ?>
                             <div class="overlay area-dark">
                                 <div class="overlay-text">
                                     <p class="tag">Work</p>
-                                    <h2>South Downs National Park <br />
-                                        <span class="light">Take the Lead</span>
-                                    </h2>
+                                    <h2><span class="light">South Downs<br />Take the Lead</span></h2>
                                 </div> <!-- /end overlay-text -->
                             </div> <!-- /end overlay -->
                             <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_02_ss.jpg')">
@@ -195,9 +181,7 @@ get_header(); ?>
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
-        							<h2>BP <br />
-        								<span class="light">Legacy</span>
-        							</h2>
+        							<h2><span class="light">BP<br />Legacy</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_03_ss.jpg')">
@@ -209,9 +193,7 @@ get_header(); ?>
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
-        							<h2>GfK <br />
-        								<span class="light">Brand Video</span>
-        							</h2>
+        							<h2><span class="light">GfK<br />Brand Video</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_04_ss.jpg')">
@@ -224,9 +206,9 @@ get_header(); ?>
                         <a href="<?php get_site_url(); ?>barclays-integrity">
         					<div class="overlay area-dark">
         						<div class="overlay-text">
-        							<p class="tag">Motion: Case Study</p>
+        							<p class="tag">Case Study</p>
         							<h2>Barclays <br />
-        								<span class="light underlined">Integrity</span>
+        								<span class="underlined">Integrity</span>
         							</h2>
         							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
         						</div> <!-- /end overlay-text -->
@@ -249,9 +231,7 @@ get_header(); ?>
                             <div class="overlay area-dark">
                                 <div class="overlay-text">
                                     <p class="tag">Work</p>
-                                    <h2>BP <br />
-                                        <span class="light">First Level Leaders</span>
-                                    </h2>
+                                    <h2><span class="light">BP First Level Leaders<br />Portal</span></h2>
                                 </div> <!-- /end overlay-text -->
                             </div> <!-- /end overlay -->
                             <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_web_01_mr.jpg')">
@@ -263,9 +243,7 @@ get_header(); ?>
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
-        							<h2>ICAP <br />
-        								<span class="light">Graduate Recruitment</span>
-        							</h2>
+        							<h2><span class="light">ICAP<br />Graduate Recruitment</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_web_02_ss.jpg')">
@@ -277,9 +255,7 @@ get_header(); ?>
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag">Work</p>
-        							<h2>i360 <br />
-        								<span class="light">Website</span>
-        							</h2>
+        							<h2><span class="light">i360<br />Website</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_web_03_ss.jpg')">
@@ -294,7 +270,7 @@ get_header(); ?>
         						<div class="overlay-text">
         							<p class="tag">Web: Case Study</p>
         							<h2>BP <br />
-        								<span class="light underlined">Discover BP</span>
+        								<span class="underlined">Discover BP</span>
         							</h2>
         							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
         						</div> <!-- /end overlay-text -->

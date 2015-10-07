@@ -80,9 +80,7 @@ get_header(); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
-							<h2>Nickelodeon <br />
-								<span class="light underlined">Code-It</span>
-							</h2>
+							<h2><span class="light underlined">Nickelodeon<br />Code-It</span></h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
 
@@ -99,7 +97,7 @@ get_header(); ?>
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag">News</p>
-								<h2><?php echo $post->post_name; ?></h2>
+								<h2><span class="light"><?php echo $post->post_name; ?></span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
 						<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -110,10 +108,8 @@ get_header(); ?>
 				<div id="module-5" class="module module--2-2">
 					<div class="overlay area-dark">
 						<div class="overlay-text">
-							<p class="tag">Film: Case Study</p>
-							<h2>BP <br />
-								<span class="light underlined">First Level Leaders</span>
-							</h2>
+							<p class="tag">Case Study</p>
+							<h2>BP First Level Leaders<br /><span class="underlined">Stories</span></h2>
 							<p class="sans-serif">Engage your audience on an emotional level</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
@@ -133,10 +129,8 @@ get_header(); ?>
 
 					<div class="overlay area-dark">
 						<div class="overlay-text">
-							<p class="tag">Web: Case Study</p>
-							<h2>BP <br />
-								<span class="light underlined">Discover BP</span>
-							</h2>
+							<p class="tag">Case Study</p>
+							<h2>BP<br /><span class="underlined">Discover BP</span></h2>
 							<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
@@ -153,9 +147,7 @@ get_header(); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
-							<h2>GfK <br />
-								<span class="light underlined">Brand Video</span>
-							</h2>
+							<h2><span class="light underlined">GfK<br />Brand Video</span></h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
 
@@ -173,7 +165,7 @@ get_header(); ?>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-						<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
+						
 					</div> <!-- /end text-section -->
 				</div>
 
