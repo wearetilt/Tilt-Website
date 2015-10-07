@@ -16,13 +16,23 @@ get_header(); ?>
 <header id="work_page" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
+        
+        	 
+        
         </div>
+        <div class="container container--reel"> <p>REEL 2015</p></div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" >
                     <source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
+    
+    
+   
+    
+    
+    
     <div class="container container--header container--work-list">
         <span id="work_all" class="work-item-title">All</span>
         <span id="work_film"class="work-item-title">Film</span>
@@ -272,7 +282,7 @@ get_header(); ?>
         							<h2>BP <br />
         								<span class="underlined">Discover BP</span>
         							</h2>
-        							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
+        							<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_web_04_ss.jpg')">
