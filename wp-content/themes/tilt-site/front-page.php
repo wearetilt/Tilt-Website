@@ -94,7 +94,7 @@ get_header(); ?>
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag">News</p>
-								<h2><?php echo $post->post_name; ?></h2>
+								<h2><span class="light"><?php echo $post->post_name; ?></span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
 						<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
