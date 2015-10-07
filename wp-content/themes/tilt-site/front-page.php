@@ -220,50 +220,6 @@ script.src = 'https://api.instagram.com/v1/users/search?q=we_are_tilt&client_id=
 
 document.getElementsByTagName('head')[0].appendChild(script);
 
-
-// function getInstagramMedia() {
-//
-//     console.log("In here");
-//
-//     function createCORSRequest(method, url){
-//         console.log("Now in here");
-//     var xhr = new XMLHttpRequest();
-//     if ("withCredentials" in xhr){
-//         xhr.open(method, url, true);
-//     } else if (typeof XDomainRequest != "undefined"){
-//         xhr = new XDomainRequest();
-//         xhr.open(method, url);
-//     } else {
-//         xhr = null;
-//     }
-//     return xhr;
-//     }
-//
-//     var request = createCORSRequest("get", 'https://api.instagram.com/v1/users/' + user + '/media/recent?client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doPicture');
-//
-//     if (request){
-//         console.log("Now in here here");
-//         request.onload = function() {
-//             console.log("on load");
-//             var instagramInfo = request.responseText;
-//             console.log(instagramInfo);
-//         };
-//         request.onreadystatechange = function() {
-//             console.log(request.readyState);
-//             if(request.readyState == 4){
-//                 console.log("on ready stage");
-//                 instagramInfo= request.responseText;
-//                 console.log(instagramInfo);
-//             } else {
-//                 console.log('wtf');
-//             }
-//         }
-//         request.send();
-//     }
-// }
-
-// getInstagramMedia();
-
 </script>
 
 <?php get_footer(); ?>
