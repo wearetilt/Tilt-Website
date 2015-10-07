@@ -144,7 +144,7 @@ get_header(); ?>
                     <a href="<?php get_site_url(); ?>alzheimers">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
-    							<p class="tag">Case Study</p>
+    							<p class="tag">Work</p>
     							<h2>Alzheimer's <br />
     								<span class="underlined">The Lab</span>
     							</h2>
