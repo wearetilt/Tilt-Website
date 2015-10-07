@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6{
             .area-dark &, .module--dark &{
                 background-color: white;
             }
-
         }
     }
 }
@@ -33,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
 h1 {
     @include font-size(25);
     @media handheld, screen and (min-width: $bp-desktop){
-        @include font-size(75);
+        @include font-size(45);
     }
     &.underlined, & span.underlined{
         &:after{
@@ -130,7 +129,7 @@ p{
         font-family: $f-merriweather-lt;
         text-transform: uppercase;
         color:$c-tilt-pink;
-        
+
     }
 
     &.footnote{

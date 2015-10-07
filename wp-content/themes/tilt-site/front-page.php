@@ -88,9 +88,10 @@ get_header(); ?>
 
 				</div>
 				<div class="module module--1-1">
-                    <a id="instagram_link_1" href="#" target="_blank">
-                        <div id="instagram_box_1" class="ratio instagram-box"></div>
-                    </a>
+                        <a id="instagram_link_1" href="#" target="_blank">
+                            <div class="overlay area-dark"></div>
+                            <div id="instagram_box_1" class="ratio instagram-box"></div>
+                        </a>
 				</div>
 				<div class="module module--1-1 area-dark">
 					<a href="<?php echo $post->guid; ?>">
@@ -158,9 +159,9 @@ get_header(); ?>
 
 				<div class="module module--1-1">
                     <a id="instagram_link_2" href="#" target="_blank">
+                        <div class="overlay area-dark"></div>
 				        <div id="instagram_box_2" class="ratio instagram-box"></div>
                     </a>
-
 				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
