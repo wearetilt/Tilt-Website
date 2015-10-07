@@ -84,7 +84,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What We Did</h2>
                         <p class="first-para">ICAP wanted to move away from an “eat what you kill” trader mentality to something that reflected the true nature of their target demographic. Think “potential Google engineer” rather than “Gordon Gecko”. This new direction needed to be built into the branding and structure of their graduate onboarding portal. In part, this meant telling ICAP’s story through first person films and profiles featuring graduate recruits from all around the world.</p>
@@ -111,7 +111,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <p>We carried out a strategic audit of ICAP’s available site content and re-wrote the site copy. We then created a responsive framework, suitable for the highly mobile-centric young audience. The design direction was bold, active and made use of ambient background header videos to convey the ‘feel’ of an ICAP office environment. The result is a portal that expresses the thrill and adventure behind a career at ICAP without resorting to marketing clichés. Finally, we produced a series of print marketing collateral for use at global graduate events.</p>
                     </div>

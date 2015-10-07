@@ -43,6 +43,13 @@
     &.module--job{
         text-align: center;
         background-color: $c-bg;
+        width: 100%;
+        padding-top: 100%;
+
+        @media handheld, screen and (min-width: $bp-desktop){
+            width: 50%;
+            padding-top: 50%;
+        }
 
         h2 + p {
             padding-top: 2%;
@@ -121,9 +128,6 @@
     padding-top: 50%;
     background-color: $c-bg;
     float: left;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 #module-other{
@@ -134,6 +138,7 @@
     width: 100%;
     padding-top: 100%;
     background-color: green;
+    float: left;
 }
 
 .module--staff{
@@ -170,6 +175,20 @@
     right: 0px;
     top: 0px;
     background-size: cover;
+}
+
+.instagram-box{
+    &:after{
+        content:"";
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        background-image: url('../images/icon-spritesheet.png');
+        opacity: 0.5;
+        background-position: -78px 0;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 .module--video{
@@ -276,6 +295,14 @@
 
 .module--image{
     padding-top: 0px;
+}
+
+.module--text-pad{
+    padding-top: 100%;
+    @media handheld, screen and (min-width: $bp-desktop){
+        padding-top: 50%;
+    }
+
 }
 
 #staff-member{

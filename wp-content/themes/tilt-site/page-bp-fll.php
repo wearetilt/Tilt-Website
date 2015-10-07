@@ -63,7 +63,7 @@
      <section>
          <div class="group-container">
              <div class="group group--left">
-                 <div class="module module--2-1 module--dark">
+                 <div class="module module--2-1 module--text-pad module--dark">
                      <div class="module__text">
                          <h2 class="underlined">What we did</h2>
                          <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -86,7 +86,7 @@
      <section>
          <div class="group-container">
              <div class="group group--left">
-                 <div class="module module--2-1 module--dark">
+                 <div class="module module--2-1 module--text-pad module--dark">
                      <div class="module__text">
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                      </div>

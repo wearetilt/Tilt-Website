@@ -1,4 +1,21 @@
 .contact-form{
+
+    max-width: 1200px;
+    margin: 0px auto;
+
+    &:before{
+        content: '';
+        height: 100px;
+        width: 1px;
+        background-color: $c-grey-5e;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+        top: -50px;
+    }
+
+
     textarea{
         width: 100%;
     }
@@ -99,4 +116,12 @@
 .form-info-holder{
     position: relative;
     z-index: 2;
+}
+
+.form-intro{
+    padding: 0 5%;
+    margin: 0px auto;
+    margin-bottom: 8%;
+    max-width: 1000px;
+    position: relative;
 }

@@ -57,8 +57,8 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
-			
+
+
 			<div id="Staff-16" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429654.hd.mp4?s=0cae44a120603e193d8569d9e039118b&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-16.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -91,8 +91,8 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
-			
+
+
 			<div id="Staff-4" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429643.hd.mp4?s=30295a2f49b7a474324019b97bf59d52&profile_id=113s' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-4.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -125,7 +125,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
+
 			<div id="Staff-15" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429661.hd.mp4?s=bbd10ebfa60c6e62df15a6bd4afccbbd&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-15.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -134,7 +134,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
+
 			<div id="Staff-12" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429640.hd.mp4?s=173560769853be64276a145330dcee5e&profile_id=119' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-12.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -159,7 +159,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
+
 			<div id="Staff-9" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429666.hd.mp4?s=a02c663a08602bca85da33a1d4cb9bfa&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-9.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -168,7 +168,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
+
 			<div id="Staff-8" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429639.hd.mp4?s=9ad4e7bcdcaa5475e72e7bb15c4181d9&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-8.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -177,7 +177,7 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
+
 			<div id="Staff-10" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429650.hd.mp4?s=ddee9a8ed18303e67eeac8d5fa3ce9fe&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-10.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -194,9 +194,9 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-			
-			
-			
+
+
+
 
 			<div id="Staff-20" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429640.hd.mp4?s=173560769853be64276a145330dcee5e&profile_id=119' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-20.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
@@ -230,12 +230,28 @@ get_header(); ?>
 						<a href="https://twitter.com/intent/follow?region=follow_link&screen_name=wearetilt&tw_p=followbutton" target="_blank" class="twitter-folow">&#xf243;&#xf2c7;</a>
 					</div> <!-- /end text-section -->
 				</div>
-				<div class="module module--1-1"></div>
-				<div class="module module--2-2"></div>
+				<div class="module module--1-1">
+					<a id="instagram_link_1" href="#" target="_blank">
+				        <div id="instagram_box_1" class="ratio instagram-box"></div>
+                    </a>
+				</div>
+				<div class="module module--2-2">
+					<a id="instagram_link_2" href="#" target="_blank">
+				        <div id="instagram_box_2" class="ratio instagram-box"></div>
+                    </a>
+				</div>
 			</div>
 			<div class="group group--right">
-				<div class="module module--2-2"></div>
-				<div class="module module--1-1"></div>
+				<div class="module module--2-2">
+					<a id="instagram_link_3" href="#" target="_blank">
+				        <div id="instagram_box_3" class="ratio instagram-box"></div>
+                    </a>
+				</div>
+				<div class="module module--1-1">
+					<a id="instagram_link_4" href="#" target="_blank">
+				        <div id="instagram_box_4" class="ratio instagram-box"></div>
+                    </a>
+				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='1' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
@@ -268,6 +284,50 @@ get_header(); ?>
 	httpRequest.open('GET', 'http://localhost/~jonathanmalyon/tilt-website/tilt-site_tidy/staff.json', true);
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
+
+	var user;
+
+	function doData(data){
+	    console.log(data.data[0]['username']);
+	    for(i in data.data){
+	        if(data.data[i].username === 'we_are_tilt'){
+	            user = data.data[i].id;
+	            var script2 = document.createElement('script');
+	            script2.src = 'https://api.instagram.com/v1/users/' + user + '/media/recent?client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doPicture';
+	            document.getElementsByTagName('head')[0].appendChild(script2);
+	        }
+	    }
+	}
+
+	function doPicture(pictureData){
+
+	    console.log(pictureData);
+
+	    var instagramImage1 = pictureData.data[2].images.standard_resolution.url;
+	    var instagramLink1 = pictureData.data[2].link;
+	    var instagramImage2 =  pictureData.data[3].images.standard_resolution.url;
+	    var instagramLink2 = pictureData.data[3].link;
+		var instagramImage3 = pictureData.data[4].images.standard_resolution.url;
+		var instagramLink3 = pictureData.data[4].link;
+		var instagramImage4 =  pictureData.data[5].images.standard_resolution.url;
+		var instagramLink4 = pictureData.data[5].link;
+
+	    document.getElementById('instagram_box_1').style.backgroundImage = "url('" + instagramImage1 + "')";
+	    document.getElementById('instagram_box_2').style.backgroundImage = "url('" + instagramImage2 + "')";
+	    document.getElementById('instagram_link_1').href = instagramLink1;
+	    document.getElementById('instagram_link_2').href = instagramLink2;
+		document.getElementById('instagram_box_3').style.backgroundImage = "url('" + instagramImage3 + "')";
+		document.getElementById('instagram_box_4').style.backgroundImage = "url('" + instagramImage4 + "')";
+		document.getElementById('instagram_link_3').href = instagramLink3;
+		document.getElementById('instagram_link_4').href = instagramLink4;
+
+
+	}
+
+	var script = document.createElement('script');
+	script.src = 'https://api.instagram.com/v1/users/search?q=we_are_tilt&client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doData';
+
+	document.getElementsByTagName('head')[0].appendChild(script);
 	</script>
 
 </div>

@@ -97,7 +97,7 @@ get_header('contact'); ?>
 	 </div> <!-- /end module -->
 </header>
 
-<div class="container area-dark">
+<div class="container container--half-bot area-dark">
 	<section class="text-section text-section--centre">
 		<h2 class="contact-title"><span class="light">Jobs &amp; Internships</span></h2>
 		<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
@@ -116,7 +116,7 @@ get_header('contact'); ?>
 
 <div class="container container--no-top area-dark">
 	<section class="text-section text-section--centre">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui sem, congue non consequat accumsan, finibus sit amet lacus. Sed pulvinar placerat tortor, at tincidunt enim.</p>
+		<p class="form-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui sem, congue non consequat accumsan, finibus sit amet lacus. Sed pulvinar placerat tortor, at tincidunt enim.</p>
 	</section>
 	<form id="contact-form" class="contact-form" action="process_form.php" method="post" novalidate="">
 

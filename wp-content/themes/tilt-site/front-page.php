@@ -86,7 +86,11 @@ get_header(); ?>
 					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
 
 				</div>
-				<div class="module module--1-1"></div>
+				<div class="module module--1-1">
+                    <a id="instagram_link_1" href="#" target="_blank">
+                        <div id="instagram_box_1" class="ratio instagram-box"></div>
+                    </a>
+				</div>
 				<div class="module module--1-1 area-dark">
 					<a href="<?php echo $post->guid; ?>">
 						<div class="overlay area-dark">
@@ -157,7 +161,12 @@ get_header(); ?>
 				</div>
 
 
-				<div class="module module--1-1"></div>
+				<div class="module module--1-1">
+                    <a id="instagram_link_2" href="#" target="_blank">
+				        <div id="instagram_box_2" class="ratio instagram-box"></div>
+                    </a>
+
+				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
@@ -171,5 +180,90 @@ get_header(); ?>
 </div> <!-- /end container -->
 
 </div> <!-- Close Wrapper -->
+
+<script type="text/javascript">
+
+var user;
+
+function doData(data){
+    console.log(data.data[0]['username']);
+    for(i in data.data){
+        if(data.data[i].username === 'we_are_tilt'){
+            user = data.data[i].id;
+            var script2 = document.createElement('script');
+            script2.src = 'https://api.instagram.com/v1/users/' + user + '/media/recent?client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doPicture';
+            document.getElementsByTagName('head')[0].appendChild(script2);
+        }
+    }
+}
+
+function doPicture(pictureData){
+
+    console.log(pictureData);
+
+    var instagramImage1 = pictureData.data[0].images.standard_resolution.url;
+    var instagramLink1 = pictureData.data[0].link;
+    var instagramImage2 =  pictureData.data[1].images.standard_resolution.url;
+    var instagramLink2 = pictureData.data[1].link;
+
+    console.log(instagramImage1);
+    document.getElementById('instagram_box_1').style.backgroundImage = "url('" + instagramImage1 + "')";
+    document.getElementById('instagram_box_2').style.backgroundImage = "url('" + instagramImage2 + "')";
+    document.getElementById('instagram_link_1').href = instagramLink1;
+    document.getElementById('instagram_link_2').href = instagramLink2;
+
+
+}
+
+var script = document.createElement('script');
+script.src = 'https://api.instagram.com/v1/users/search?q=we_are_tilt&client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doData';
+
+document.getElementsByTagName('head')[0].appendChild(script);
+
+
+// function getInstagramMedia() {
+//
+//     console.log("In here");
+//
+//     function createCORSRequest(method, url){
+//         console.log("Now in here");
+//     var xhr = new XMLHttpRequest();
+//     if ("withCredentials" in xhr){
+//         xhr.open(method, url, true);
+//     } else if (typeof XDomainRequest != "undefined"){
+//         xhr = new XDomainRequest();
+//         xhr.open(method, url);
+//     } else {
+//         xhr = null;
+//     }
+//     return xhr;
+//     }
+//
+//     var request = createCORSRequest("get", 'https://api.instagram.com/v1/users/' + user + '/media/recent?client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doPicture');
+//
+//     if (request){
+//         console.log("Now in here here");
+//         request.onload = function() {
+//             console.log("on load");
+//             var instagramInfo = request.responseText;
+//             console.log(instagramInfo);
+//         };
+//         request.onreadystatechange = function() {
+//             console.log(request.readyState);
+//             if(request.readyState == 4){
+//                 console.log("on ready stage");
+//                 instagramInfo= request.responseText;
+//                 console.log(instagramInfo);
+//             } else {
+//                 console.log('wtf');
+//             }
+//         }
+//         request.send();
+//     }
+// }
+
+// getInstagramMedia();
+
+</script>
 
 <?php get_footer(); ?>

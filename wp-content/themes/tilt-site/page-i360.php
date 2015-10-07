@@ -85,7 +85,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What We Did</h2>
                         <p class="first-para">The i360, developed by the team behind the London Eye, was designed to give Brighton and Hove a truly international-class tourist attraction. While the idea initially gained a lot of attention, project delays affected public support. The website needed an upgrade in order to help gain more positive PR. The site also needed to help facilitate the i360 team’s blogging and social media outreach strategy.</p>
@@ -112,7 +112,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--dark">
+                <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <p>The site uses a clean, responsive scrolling experience that recreates a sense of moving up and down the tower. Through 3D-rendered graphics and photography, we illustrated what visitors can expect to see from the top, and how the tower will look against the Brighton skyline. As part of an ongoing promotional campaign, the website has helped tip the balance in favour of the project, with a real sense of anticipation building in the city for launch in 2016.</p>
                     </div>
