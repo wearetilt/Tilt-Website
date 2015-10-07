@@ -53,6 +53,9 @@ get_header(); ?>
 </header>
 
 <div id="header-overlay" class="container container--header area-dark">
+    <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">
+        <span class="sans-serif">About this video</span>
+    </a>
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
 		<a href="<?php echo site_url(); ?>/contact">

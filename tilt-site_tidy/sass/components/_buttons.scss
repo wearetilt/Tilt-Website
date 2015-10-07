@@ -22,6 +22,22 @@ a{
             border-color: $c-tilt-pink2;
         }
 
+        &.button--no-border{
+            border: none;
+            & span {
+                &:hover{
+                    color: $c-tilt-pink2;
+                }
+            }
+
+            &:after{
+                content: ">";
+                display: inline-block;
+                margin-left: 5px;
+                color: $c-tilt-pink2;
+            }
+        }
+
     }
 
     &.project-navigation{
@@ -36,6 +52,12 @@ a{
 
 #form_close{
     display: none;
+}
+
+#blog_button{
+    position: absolute;
+    top: -50px;
+    right: 50px;
 }
 
 
