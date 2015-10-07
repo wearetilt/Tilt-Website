@@ -73,12 +73,16 @@ get_header('news'); ?>
 	<div class="news-container">
 		<p><?php the_field('main_body_of_text'); ?></p>
 	</div>
-</div>
 
-<div class="img-container">
-	<img src="<?php the_field('image_5'); ?>" alt="">
+	<?php $value = get_field('video');
+		  if($value){ ?>
+			  <div class="container container--no-padding">
+				  <video class="video-js vjs-default-skin" controls width="100%" height="100%" >
+						  <source src="<?php the_field('video');?>" type="video/mp4">
+				  </video>
+			  </div>
+	<?php  } ?>
 </div>
-
 <div class="group-container">
 	<a class="project-navigation" href="">< Previous News</a>
 	<a class="project-navigation" href="">Next News ></a>
