@@ -30,7 +30,7 @@ get_header(); ?>
 ?>
 
 <header id="home-page" class="work-item work-item--motion area-dark">
-	<div class="module--video module--header">
+	<div class="module--video module--16-9 module--header">
 		<div class="ratio">
 			<div class="container container--header strapline-container">
 				<h1>We Are <strong id="strapline-text" class="highlight">Time Travellers</strong></h1>
@@ -88,9 +88,10 @@ get_header(); ?>
 
 				</div>
 				<div class="module module--1-1">
-                    <a id="instagram_link_1" href="#" target="_blank">
-                        <div id="instagram_box_1" class="ratio instagram-box"></div>
-                    </a>
+                        <a id="instagram_link_1" href="#" target="_blank">
+                            <div class="overlay area-dark"></div>
+                            <div id="instagram_box_1" class="ratio instagram-box"></div>
+                        </a>
 				</div>
 				<div class="module module--1-1 area-dark">
 					<a href="<?php echo $post->guid; ?>">
@@ -158,14 +159,14 @@ get_header(); ?>
 
 				<div class="module module--1-1">
                     <a id="instagram_link_2" href="#" target="_blank">
+                        <div class="overlay area-dark"></div>
 				        <div id="instagram_box_2" class="ratio instagram-box"></div>
                     </a>
-
 				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-						
+
 					</div> <!-- /end text-section -->
 				</div>
 

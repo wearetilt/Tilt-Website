@@ -232,11 +232,13 @@ get_header(); ?>
 				</div>
 				<div class="module module--1-1">
 					<a id="instagram_link_1" href="#" target="_blank">
+                        <div class="overlay area-dark"></div>
 				        <div id="instagram_box_1" class="ratio instagram-box"></div>
                     </a>
 				</div>
 				<div class="module module--2-2">
 					<a id="instagram_link_2" href="#" target="_blank">
+                        <div class="overlay area-dark"></div>
 				        <div id="instagram_box_2" class="ratio instagram-box"></div>
                     </a>
 				</div>
@@ -244,11 +246,13 @@ get_header(); ?>
 			<div class="group group--right">
 				<div class="module module--2-2">
 					<a id="instagram_link_3" href="#" target="_blank">
+                        <div class="overlay area-dark"></div>
 				        <div id="instagram_box_3" class="ratio instagram-box"></div>
                     </a>
 				</div>
 				<div class="module module--1-1">
 					<a id="instagram_link_4" href="#" target="_blank">
+                        <div class="overlay area-dark"></div>
 				        <div id="instagram_box_4" class="ratio instagram-box"></div>
                     </a>
 				</div>
