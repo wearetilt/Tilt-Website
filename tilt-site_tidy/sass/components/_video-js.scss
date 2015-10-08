@@ -755,3 +755,8 @@ img#vjs-logobrand-image {
 .vjs-ad-playing a#vjs-logobrand-image-destination {
 	display: none;
 }
+
+.monitor-screen .vjs-default-skin .vjs-big-play-button{
+    top: -50%;
+    transform: translateY(-33%);;
+}

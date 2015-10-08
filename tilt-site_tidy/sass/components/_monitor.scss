@@ -35,6 +35,11 @@
     overflow: hidden;
     background-color: darkorchid;
 
+    video{
+        height: 100%;
+        width: 100%;
+    }
+
     &.monitor-screen--video{
         z-index: 10;
     }

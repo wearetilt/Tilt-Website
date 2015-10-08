@@ -113,20 +113,22 @@ get_header('work-item'); ?>
 </div> <!-- /end container -->
 
 <div class="container container--no-padding">
-
-	    <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/alz_poster_image.jpg" width="100%" height="100%" >
-	            <source src="https://player.vimeo.com/external/141651535.hd.mp4?s=901b115cf38db8ba32e762e7c227e7a3&profile_id=113" type="video/mp4">
-	    </video>
-
-	</div> <!-- /end container -->
-
-<div class="container container--no-padding">
-	<div class="module module--2-1 module--text-pad area-dark module--dark">
-        <div class="module__text">
-            <p>“Tilt created a sleek and engaging website, which really brought our ideas to life. Their creative thinking presented us with ideas and functionality beyond our expectations that worked superbly in making the Lab a captivating and interactive experience for visitors.”</p>
-			<p>Laura Phipps, Science Communications Manager</p>
+    <div class="group-container">
+        <div class="module module--16-9 module--video module--nozoom">
+            <div class="ratio">
+                <video controls class="video-js vjs-default-skin page-video" poster="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/alz_poster_image.jpg" width="100%" height="100%" >
+                        <source src="https://player.vimeo.com/external/141651535.hd.mp4?s=901b115cf38db8ba32e762e7c227e7a3&profile_id=113" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="container quote-container area-dark">
+    <section class="text-section">
+            <blockquote>“Tilt created a sleek and engaging website, which really brought our ideas to life. Their creative thinking presented us with ideas and functionality beyond our expectations that worked superbly in making the Lab a captivating and interactive experience for visitors.”</blockquote>
+            <p class="sans-serif quote-attribute"><strong class="highlight">Laura Phipps,</strong> Science Communications Manager</p>
+    </section>
 </div>
 
 <div class="group-container">
