@@ -53,12 +53,12 @@ h2{
             width: em(76, 36);
         }
     }
-    
+
     &.services{
-    	@include font-size(15);	
+    	@include font-size(15);
     	margin-top:13px;
     	@media handheld, screen and (min-width: $bp-desktop){
-    		@include font-size(23);	
+    		@include font-size(23);
 			margin-top:18px;
 		}
     }
@@ -124,9 +124,9 @@ p{
             margin-left: 2px;
         }
     }
-    
+
     &.first-para { margin-top:5px; }
-    
+
     &.sans-serif{
         @include font-size(25);
         @media handheld, screen and (min-width: $bp-desktop){
@@ -152,6 +152,10 @@ p{
     .intro-text &{
      @include font-size(35);
      font-family: $f-seroot-lt;
+    }
+
+    &.quote-attribute{
+        @include font-size(18);
     }
 }
 
@@ -208,6 +212,13 @@ blockquote{
     font-family: $f-merriweather-lt;
     @include font-size(35);
     color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: (25/20);
+
+    & + p {
+        margin-top: 20px;
+    }
 }
 
 .work-container p.sans-serif { margin:10px 0px 0px 0px; }

@@ -261,7 +261,7 @@ get_header('work-item'); ?>
 <div class="container quote-container area-dark">
     <section class="text-section">
             <blockquote>“Thank you all for an extraordinary effort in making this all come together -on time! Truly I was staggered.”</blockquote>
-            <p>Shane Samarawikrema Learning &amp; Performance BP</p>
+            <p class="sans-serif quote-attribute"><strong class="highlight">Shane Samarawikrema</strong> Learning &amp; Performance BP</p>
     </section>
 </div>
 

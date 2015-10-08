@@ -123,22 +123,28 @@
  </div>
 
  <div class="container container--no-padding">
+     <div class="group-container">
+         <div class="module module--16-9 module--video module--nozoom">
+             <div class="ratio">
+                 <video controls class="video-js vjs-default-skin page-video" width="100%" height="100%" >
+                         <source src="https://player.vimeo.com/external/129132162.hd.mp4?s=f52155809a57c8520d28a9ab04c3b9fe&profile_id=113" type="video/mp4">
+                 </video>
+             </div>
+         </div>
+     </div>
+</div>
 
-    <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/leadership_mistakes_poster_image.jpg" width="100%" height="100%" >
-            <source src="https://player.vimeo.com/external/129132162.hd.mp4?s=f52155809a57c8520d28a9ab04c3b9fe&profile_id=113" type="video/mp4">
-    </video>
+<div class="group-container">
+    <a class="project-navigation" href="../discover-bp">< Previous Project</a>
+    <a class="project-navigation" href="../icap">Next Project ></a>
+</div>
 
-</div> <!-- /end container -->
+</div><!-- /end container -->
 
 
 
 
  <!-- TODO: Add the fear-o-meter thang -->
-
- <div class="group-container">
-     <a class="project-navigation" href="../discover-bp">< Previous Project</a>
-     <a class="project-navigation" href="../icap">Next Project ></a>
- </div>
 
  </div>
 
