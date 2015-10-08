@@ -118,6 +118,7 @@
             padding-top: 7.5%;
         }
         
+        .careers & {  @extend %clearfix; }
         /* .careers & { margin:0 0 50px 0; } */
         
     }
