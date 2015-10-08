@@ -12,8 +12,8 @@
  */
 
 get_header(); ?>
-<div id="carreers" class="area-dark">
-	<div class="container container--double-side-pad">
+<div id="carreers">
+	<div class="container container--double-side-pad area-dark">
 		<div class="text-container">
 			<p class="first-para sans-serif"><strong class="highlight">Get a job you&lsquo;ll love.</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque esse sequi dolorem ullam adipisci asperiores doloribus, inventore maxime! Deserunt velit repellendus quia earum quae cum? Quibusdam illum, expedita numquam.</p>
 			<a href="<?php echo site_url(); ?>/contact">
@@ -30,7 +30,7 @@ get_header(); ?>
 	</div> <!-- /end container -->
 </div>
 
-<div class="container container--no-padding">
+<div class="container container--no-padding area-dark">
 	<div class="container container--half-both area-dark">
 		<h1>Job-board</h1>
 	</div>
@@ -65,7 +65,7 @@ get_header(); ?>
 			<a href="mailto:recruitment@wearetilt.com">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text admin">
-						<h2 class="light">Motion Intern</h2>						
+						<h2 class="light">Motion Intern</h2>
 						<p>Looking for a career in motion and animation? Enthusiastic? Show us!</p>
 					</div>
 				</div>
