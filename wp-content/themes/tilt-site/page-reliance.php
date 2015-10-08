@@ -30,7 +30,7 @@ get_header('work-item'); ?>
             <h1>Reliance<br />
                 <span class="light underlined">Onboarding Portal</span>
             </h1>
-            <h2 class="light">Film</h2>
+            <h2 class="light services">Strategy | Film</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
@@ -39,7 +39,7 @@ get_header('work-item'); ?>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The Big Idea</h2>
-                <p class="first-para">Step away from the film studio to bring people’s stories to life in a more natural setting. Have faith in the interviewee, and let the pace of Mumbai life add depth to each piece.</p>
+                <p class="first-para">Bring people’s stories to life in a more natural setting. Have faith in the interviewee, and let the pace of Mumbai life add depth to each piece.</p>
             </div>
         </div>
     </div>

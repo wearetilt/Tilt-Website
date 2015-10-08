@@ -26,7 +26,7 @@ get_header('work-item'); ?>
             <h1>i360<br />
                 <span class="light underlined">Promotional Website</span>
             </h1>
-            <h2 class="light">Design | Development</h2>
+            <h2 class="light services">Design | Dev</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">

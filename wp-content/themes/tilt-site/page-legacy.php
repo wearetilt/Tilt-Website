@@ -30,7 +30,7 @@ get_header('work-item'); ?>
             <h1>BP<br />
                 <span class="light underlined">Legacy - Steve Jobs</span>
             </h1>
-            <h2 class="light">Content Strategy | Motion | 3D</h2>
+            <h2 class="light services">Strategy | Motion | 3D | Film</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">

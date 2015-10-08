@@ -31,7 +31,7 @@ get_header('work-item'); ?>
             <h1>Barclays<br />
                 <span class="light underlined">Integrity</span>
             </h1>
-            <h2 class="light">Content Strategy | Motion | 3D | Film</h2>
+            <h2 class="light services">Strategy | Motion | 3D | Film</h2>
         </div>
     </div>
 </header>

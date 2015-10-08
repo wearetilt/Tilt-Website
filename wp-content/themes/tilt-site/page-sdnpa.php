@@ -27,10 +27,10 @@ get_header('work-item'); ?>
     <div class="container container--header">
         <div class="header-title">
             <p class="tag tag--no-italic">Film</p>
-            <h1>South Downs National Park<br />
+            <h1>South Downs<br />
                 <span class="light underlined">Discover Another Way</span>
             </h1>
-            <h2 class="light">Content Strategy | Film | 3D</h2>
+            <h2 class="light services">Strategy | Film | Motion| 3D</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">

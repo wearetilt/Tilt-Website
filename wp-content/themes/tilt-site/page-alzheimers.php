@@ -25,10 +25,10 @@ get_header('work-item'); ?>
     <div class="container container--header">
         <div class="header-title">
             <p class="tag">Interactive</p>
-            <h1>Alzheimer's Research UK<br />
+            <h1>Alzheimer's<br />
                 <span class="light underlined">The Lab</span>
             </h1>
-            <h2 class="light">UX | DESIGN | DEVELOPMENT | MOTION</h2>
+            <h2 class="light services">Strategy | UX | Design | Dev | Motion | 3D</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
@@ -37,7 +37,7 @@ get_header('work-item'); ?>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para">Bring a dementia research lab to life. Help people understand through interaction. Pack an emotional punch by personalising the experience. Make it easy to share through social media.</p>
+                <p class="first-para">Bring a dementia research lab to life. Help people understand through interaction. Pack an emotional punch by personalising the experience.</p>
             </div>
         </div>
     </div>

@@ -36,7 +36,7 @@ h1 {
     }
     &.underlined, & span.underlined{
         &:after{
-            margin-top: 0.2em;
+            margin-top: 0.3em;
             width: em(150,75);
         }
     }
@@ -52,6 +52,15 @@ h2{
             margin-top: 0.4em;
             width: em(76, 36);
         }
+    }
+    
+    &.services{
+    	@include font-size(15);	
+    	margin-top:13px;
+    	@media handheld, screen and (min-width: $bp-desktop){
+    		@include font-size(23);	
+			margin-top:18px;
+		}
     }
 
     &.news-date{
@@ -115,6 +124,9 @@ p{
             margin-left: 2px;
         }
     }
+    
+    &.first-para { margin-top:5px; }
+    
     &.sans-serif{
         @include font-size(25);
         @media handheld, screen and (min-width: $bp-desktop){

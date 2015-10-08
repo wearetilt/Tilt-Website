@@ -26,7 +26,7 @@ get_header('work-item'); ?>
             <h1>Sainsbury&lsquo;s <br />
                 <span class="light underlined">History Timeline</span>
             </h1>
-            <h2 class="light">Design | Development | Motion | 3D</h2>
+            <h2 class="light services">Strategy | Design | Dev | Motion</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
@@ -35,7 +35,7 @@ get_header('work-item'); ?>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para">Flip the static corporate timeline on its head and take people on a journey through Sainsbury’s history via a user-controlled 3D perspective interface. </p>
+                <p class="first-para">Flip the static corporate timeline on its head and take people on a journey through time via a user-controlled 3D perspective interface. </p>
             </div>
         </div>
     </div>

@@ -26,7 +26,7 @@ get_header('work-item'); ?>
             <h1>ICAP<br />
                 <span class="light underlined">Graduate Portal</span>
             </h1>
-            <h2 class="light">UX | VISUAL DESIGN | DEVELOPMENT</h2>
+            <h2 class="light services">Strategy | UX | Design | Dev</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">

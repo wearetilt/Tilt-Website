@@ -30,7 +30,7 @@ get_header('work-item'); ?>
             <h1>Barclays<br />
                 <span class="light underlined">Values &amp; Behaviours</span>
             </h1>
-            <h2 class="light">Content Strategy | Film</h2>
+            <h2 class="light services">Strategy | Film</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
