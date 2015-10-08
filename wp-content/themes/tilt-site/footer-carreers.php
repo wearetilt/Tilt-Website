@@ -30,7 +30,7 @@
 </footer>
 <script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
 <script src="http://vjs.zencdn.net/4.12/video.js"></script>
-
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
 <?php wp_footer(); ?>
 
 </body>
