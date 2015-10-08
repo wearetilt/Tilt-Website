@@ -13,7 +13,7 @@
 
 get_header('work-item'); ?>
 
-<header id="page_discover_bp" class="work-item work-item--motion area-dark">
+<header id="page_discover_bp" class="work-item area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 
@@ -30,17 +30,7 @@ get_header('work-item'); ?>
             <h1>BP<br />
                 <span class="light underlined">Discover BP</span>
             </h1>
-            <h2 class="light">Strategy | UX | Design | Dev | Film | Motion | 3D</h2>
-        </div>
-        <div class="header-text">
-            <div class="header-text__module header-text__module--padding">
-                <h2>The Challenge</h2>
-                <p class="first-para">The onboarding F2F programme became became a non-mandatory requirement. The challenge we faced was to encourage new joiners to spend time learning about the company despite this.</p>
-            </div>
-            <div class="header-text__module header-text__module--padding">
-                <h2>The Big Idea</h2>
-                <p class="first-para">Create a learning experience that emulated the experience and content that users choose to interact with in their free time.</p>
-            </div>
+            <h2 class="light services">Strategy | UX | Design | Dev | Film | Motion | 3D</h2>
         </div>
     </div>
 </header>

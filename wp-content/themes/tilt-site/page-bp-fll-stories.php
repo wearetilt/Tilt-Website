@@ -28,9 +28,9 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag tag--no-italic">Film: Case Study</p>
             <h1>BP<br />
-                <span class="light underlined">First Level Leaders: Stories</span>
+                <span class="light underlined">Leaders: Stories</span>
             </h1>
-            <h2 class="light">Content Strategy | Film</h2>
+            <h2 class="light services">Strategy | Film</h2>
         </div>
     </div>
 </header>

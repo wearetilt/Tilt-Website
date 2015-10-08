@@ -26,7 +26,7 @@ get_header('work-item'); ?>
             <h1>Passion Pictures<br />
                 <span class="light underlined">Earth - A New Wild</span>
             </h1>
-            <h2 class="light">Design | Illustration | DEVELOPMENT</h2>
+            <h2 class="light services">Strategy | Design | Dev</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
