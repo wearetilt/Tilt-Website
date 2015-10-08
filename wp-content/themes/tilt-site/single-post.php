@@ -69,7 +69,7 @@ get_header('news'); ?>
 	<?php $value = get_field('video');
 		  if($value){ ?>
 			  <div class="container container--no-padding">
-				  <video class="video-js vjs-default-skin" controls width="100%" height="100%" >
+				  <video class="video-js vjs-default-skin page-video" controls width="100%" height="100%" >
 						  <source src="<?php the_field('video');?>" type="video/mp4">
 				  </video>
 			  </div>
