@@ -112,42 +112,25 @@ get_header('work-item'); ?>
     <div class="monitor-holder">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen monitor-screen--video">
-	        <video id="video-1" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_poster.jpg" class="video-js vjs-default-skin page-video" width="100%" height="100%" >
+	        <video id="video-1" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_poster.jpg" class="video-js vjs-tech vjs-default-skin page-video" width="100%" height="100%" >
             	<source src="https://player.vimeo.com/external/89606431.hd.mp4?s=7974e855095d51f7807c4ac87e8c3c5d&profile_id=113" type="video/mp4">
 			</video>
         </div>
     </div>
 </div>
 
+
 <div class="container container--no-padding">
-    <section>
-        <div class="group-container">
-            <div class="group group--left">
-                <div class="module module--16-9 module--video module--nozoom">
-                    <div class="ratio">
-                    	 <video id="video-2" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_montage_poster.jpg" class="video-js vjs-default-skin page-video" width="100%" height="100%" >
-							 <source src="https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113" type="video/mp4">
-						 </video>
-                    </div>
-                </div>
-
+    <div class="group-container">
+        <div class="module module--16-9 module--video module--nozoom">
+            <div class="ratio">
+                <video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_montage_poster.jpg" class="video-js vjs-default-skin page-video" width="100%" height="100%" >
+                        <source src="https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113" type="video/mp4">
+                </video>
             </div>
-            <div class="group group--right">
-                <div class="module module--16-9 module--video module--nozoom">
-                    <div class="ratio">
-                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/madeline_poster_image.jpg" class="video-js vjs-default-skin page-video" width="100%" height="100%" >
-							<source src="https://player.vimeo.com/external/141536383.sd.mp4?s=ec76d68e3231addfe57b47c24dadc826&profile_id=112" type="video/mp4">
-						</video>
-                    </div>
-                </div>
-
-            </div> <!-- /end group -->
-        </div> <!-- /end group-container -->
-    </section>
+        </div>
+    </div>
 </div>
-
-
-
 
 
 <div class="container area-dark">
@@ -155,7 +138,7 @@ get_header('work-item'); ?>
         <h2>BEAUTIFULLY SIMPLE UX</h2>
         <div class="text-section__para">
             <p class="first-para">Through workshops and guided sessions, we mapped out the key messages that BP wanted to communicate through the portal, and the main goals for site users. We organised this information into categories that made sense to new joiners, resulting in a portal designed to be:</p>
-            <ul>
+            <ul class="standard-list">
             	<li>Process content (suitable for infosheets, infographics)</li>
 				<li>People content (profile films, headline montages)</li>
 				<li>Business content (animations, factsheets, interactive timelines)</li>
@@ -184,17 +167,17 @@ get_header('work-item'); ?>
     </section>
 </div> <!-- /end container--carousel -->
 
-<div class="container area-dark">
+<div class="container">
     <section class="text-section">
         <h2>WHAT WE MADE</h2>
         <div class="text-section__para">
             <p class="first-para">Among other things, we created:</p>
             <ul>
-				<li><strong>Headline films.</strong> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</li>
-				<li><strong>The Business of BP.</strong> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</li>
-				<li><strong>Profile films.</strong> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</li>
-				<li><strong>Infosheets and factsheets.</strong> Turning traditional copy content into highly visual, easy-to-absorb pieces. Infosheets help communicate journeys and processes, while factsheets convey stat-heavy info.</li>
-				<li><strong>Leader films.</strong> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</li>
+				<li><span class="serif">Headline films:</span> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</li>
+				<li><span class="serif">The Business of BP:</span> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</li>
+				<li><span class="serif">Profile films:</span> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</li>
+				<li><span class="serif">Infosheets and factsheets:</span> Turning traditional copy content into highly visual, easy-to-absorb pieces. Infosheets help communicate journeys and processes, while factsheets convey stat-heavy info.</li>
+				<li><span class="serif">Leader films:</span> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</li>
             </ul>
         </div>
     </section>
@@ -226,7 +209,7 @@ get_header('work-item'); ?>
 
 <div class="container">
     <section class="text-section">
-        <h2>RESULTS: 16x EXPECTED UPTAKE</h2>
+        <h2>16 Times the expected results</h2>
         <div class="text-section__para">
             <p class="first-para">Initially, BP hoped to achieve 6,000 unique hits in the first year – it generated 100,000 within twelve months.</p>
 			<p>Three years on from the initial deployment, we have just finished a design refresh and made the site fully responsive. Discover BP continues to be one of the organisation’s most successful communication projects, and has led to Tilt becoming involved in other high-profile BP projects.</p>
@@ -234,23 +217,20 @@ get_header('work-item'); ?>
     </section>
 </div>
 
-<div class="container container--carousel">
-    <section class="carousel">
-        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-        <div class="carousel-images">
-            <div id="carousel-image-13"class="carousel-image"></div>
-            <div id="carousel-image-14"class="carousel-image"></div>
-            <div id="carousel-image-15"class="carousel-image"></div>
-            <div id="carousel-image-16"class="carousel-image"></div>
-        </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
-            <div id="carousel-control-13" class="carousel-control selected"></div>
-            <div id="carousel-control-14" class="carousel-control"></div>
-            <div id="carousel-control-15" class="carousel-control"></div>
-            <div id="carousel-control-16" class="carousel-control"></div>
-        </div> <!-- /end carousel-controls -->
-    </section>
-</div> <!-- /end container--carousel -->
+<div class="container area-dark">
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen"></div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen"></div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen"></div>
+        </div>
+</div> <!-- /end container -->
 
 <div class="container container--no-padding">
     <div class="module module--2-1">
