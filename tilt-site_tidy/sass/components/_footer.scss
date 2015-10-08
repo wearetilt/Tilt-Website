@@ -20,8 +20,12 @@ footer{
     }
     .container{
         padding: 0 percentage(381/2032);
-        height: 545px;
+        height: 480px;
         background-color: transparent;
+
+        @media handheld, screen and (min-width: $bp-desktop){
+            height: 545px;
+        }
     }
 
     .first-para{
@@ -33,10 +37,18 @@ footer{
     }
 
     .telephone{
-        float: right;
-        font-size: 1.7rem;
+        float: left;
+        font-size: 1.3rem;
         color: white;
-        margin-top: 7px;
+        margin-top: 15px;
+        clear: both;
+        @media handheld, screen and (min-width: $bp-desktop){
+            float: right;
+            clear: none;
+            margin-top: 7px;
+            font-size: 1.7em;
+        }
+
     }
 
     .footnote{
@@ -44,13 +56,29 @@ footer{
         padding-top: 10px;
         clear: both;
     }
+
+    p.sans-serif{
+        @include font-size(16);
+
+        @media handheld, screen and (min-width: $bp-desktop){
+
+            @include font-size(25);
+
+        }
+    }
 }
 
 #signoff{
     background-color: $c-bg;
-    height: 160px;
+    height: 225px;
     padding: 30px 6.20079% 0px;
     border-top: 1px solid #171717;
+
+    @media handheld, screen and (min-width: $bp-desktop){
+
+        height: 160px;
+
+    }
 
     #contact & {
         height: auto;
@@ -90,8 +118,16 @@ footer{
     }
 
     & + .footer-icon{
-        margin-left: 40px;
+        margin-left: 15px;
     }
+
+    @media handheld, screen and (min-width: $bp-desktop){
+        & + .footer-icon{
+            margin-left: 40px;
+        }
+    }
+
+
 }
 
 #footer-icon-1{

@@ -147,6 +147,15 @@ p{
     &.footnote{
         font-family: $f-merriweather-lt;
         color: $c-grey-57;
+        font-size: 0.65rem;
+
+        @media handheld, screen and (min-width: 420px){
+            font-size: 0.95em;
+        }
+
+        @media handheld, screen and (min-width: $bp-desktop){
+            font-size: 1em;
+        }
     }
 
     .intro-text &{

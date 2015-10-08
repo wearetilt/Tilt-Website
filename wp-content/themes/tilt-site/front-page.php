@@ -148,7 +148,7 @@ get_header('home'); ?>
 					<div class="overlay area-dark">
 						<div class="overlay-text">
 							<p class="tag">Work</p>
-							<h2>GfK<br /><span class="light underlined">Brand Video</span></h2>
+							<h2>GFK<br /><span class="light underlined">Brand Video</span></h2>
 						</div> <!-- /end overlay-text -->
 					</div> <!-- /end overlay -->
 
@@ -165,7 +165,7 @@ get_header('home'); ?>
 				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
-						<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 
 					</div> <!-- /end text-section -->
 				</div>

@@ -113,8 +113,12 @@
     position: relative;
 
     footer & {
-        top: 50%;
+        top: 58%;
         transform: translateY(-50%);
+        @media handheld, screen and (min-width: $bp-desktop){
+            top: 50%;
+        }
+
     }
     // top: 50%;
     // transform: translateY(-50%);
