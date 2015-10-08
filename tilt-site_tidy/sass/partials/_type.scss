@@ -175,6 +175,14 @@ p{
     &.quote-attribute{
         @include font-size(18);
     }
+    
+    .careers & { margin:0 0 30px 0; }
+}
+
+.careers p.first-para { 
+	margin:0;
+	font-family: $f-merriweather;
+    font-weight:700;
 }
 
 a{
