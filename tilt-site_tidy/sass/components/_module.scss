@@ -117,8 +117,9 @@
             padding-bottom: 7.5%;
             padding-top: 7.5%;
         }
+   
     }
-
+    
     &.module--no-bg{
         background-color: transparent;
     }
@@ -131,6 +132,9 @@
          }
      }
 }
+
+.careers .module__description { margin:0px 0px 10px 0px; }
+	
 
 .module--visible{
     transform: scale(1);

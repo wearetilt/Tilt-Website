@@ -87,7 +87,8 @@ h3{
     .map-overlay & {
         @include font-size(15);
         color: $c-tilt-pink;
-        font-family: $f-merriweather-lt;
+        font-family: $f-merriweather;
+        font-weight: 300;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -98,7 +99,8 @@ p{
     @media handheld, screen and (min-width: $bp-desktop){
             @include font-size(16);
     }
-    font-family: $f-merriweather-lt;
+    font-family: $f-merriweather;
+        font-weight: 300;
     text-transform: none;
     line-height: (35/20);
     -webkit-font-smoothing: antialiased;
@@ -138,14 +140,16 @@ p{
     }
 
     &.tag{
-        font-family: $f-merriweather-lt;
+        font-family: $f-merriweather;
+        font-weight: 300;
         text-transform: uppercase;
         color:$c-tilt-pink;
 
     }
 
     &.footnote{
-        font-family: $f-merriweather-lt;
+        font-family: $f-merriweather;
+        font-weight: 300;
         color: $c-grey-57;
     }
 
@@ -153,6 +157,16 @@ p{
      @include font-size(35);
      font-family: $f-seroot-lt;
     }
+    
+    .careers & { margin-top: 0; }
+    
+    
+}
+
+.careers p.first-para { 
+	margin-top:1.8em; 
+	font-family: $f-merriweather;
+	font-weight:700;
 }
 
 a{
@@ -205,7 +219,8 @@ span{
 }
 
 blockquote{
-    font-family: $f-merriweather-lt;
+   font-family: $f-merriweather;
+   font-weight: 300;
     @include font-size(35);
     color: white;
 }
