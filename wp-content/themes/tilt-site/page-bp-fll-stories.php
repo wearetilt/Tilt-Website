@@ -57,7 +57,7 @@ get_header('work-item'); ?>
         </section> <!-- /end text-section -->
     </div>
 
-  
+
 <div class="container container--no-padding">
         <section>
             <div class="group-container">
@@ -76,10 +76,10 @@ get_header('work-item'); ?>
                     <div class="module module--2-2">
 	                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_06_ls.jpg')"></div>
                     </div>
-                </div> 
-            </div> 
+                </div>
+            </div>
         </section>
-    </div> 
+    </div>
 
 
     <!--
@@ -89,32 +89,32 @@ get_header('work-item'); ?>
                 <div class="module module--2-2">
                 	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_07_ls.jpg')"></div>
                 </div>
-            </div> 
+            </div>
             <div class="group group--right">
                 <div class="module module--2-2">
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_08_ls.jpg')"></div>
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
                 	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_09_MASTER_ls.jpg')"></div>
                 </div>
-            </div> 
+            </div>
             <div class="group group--right">
                 <div class="module module--2-2">
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_10_ls.jpg')"></div>
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
         <section class="text-section">
             <h2>Solution</h2>
             <div class="text-section__para">
                 <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
             </div>
-        </section> 
+        </section>
     </div>
 -->
 
@@ -133,45 +133,45 @@ get_header('work-item'); ?>
             </div>
         </section>
     </div>
-    
+
     <div class="container container--no-padding">
 	    <section>
 	        <div class="group-container">
 	            <div class="group group--left">
 	                <div class="module module--16-9 module--video module--nozoom">
 	                    <div class="ratio">
-	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_one.jpg" >
+	                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_one.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
 	                                <source src="https://player.vimeo.com/external/119737587.sd.mp4?s=294e9d730fdcad356aed33a466f13a37&profile_id=112" type="video/mp4">
 	                        </video>
 	                    </div>
 	                </div>
-	                
+
 	                <div class="module module--16-9 module--video module--nozoom">
 	                    <div class="ratio">
-	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_two.jpg" >
+	                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_two.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
 	                                <source src="https://player.vimeo.com/external/119737599.sd.mp4?s=b79eadae8fb310615049315ef27d200d&profile_id=112" type="video/mp4">
 	                        </video>
 	                    </div>
 	                </div>
-	                
+
 	            </div>
 	            <div class="group group--right">
 	                <div class="module module--16-9 module--video module--nozoom">
 	                    <div class="ratio">
-	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_three.jpg" >
+	                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_three.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
 	                                <source src="https://player.vimeo.com/external/119737601.sd.mp4?s=135e638aba84634defefb8536e5364ce&profile_id=112" type="video/mp4">
 	                        </video>
 	                    </div>
 	                </div>
-	                
+
 	                <div class="module module--16-9 module--video module--nozoom">
 	                    <div class="ratio">
-	                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_four.jpg">
+	                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/poster_image_four.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
 	                                <source src="https://player.vimeo.com/external/119737600.sd.mp4?s=764622b8186087a602b10e8cb2e603d4&profile_id=112" type="video/mp4">
 	                        </video>
 	                    </div>
 	                </div>
-	                
+
 	            </div> <!-- /end group -->
 	        </div> <!-- /end group-container -->
 	    </section>
