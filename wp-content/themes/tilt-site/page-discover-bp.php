@@ -122,7 +122,7 @@ get_header('work-item'); ?>
     <div class="monitor-holder">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen monitor-screen--video">
-	        <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_poster.jpg" width="100%" height="100%" >
+	        <video id="video-1" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_poster.jpg" class="video-js vjs-default-skin page-video" width="100%" height="100%" >
             	<source src="https://player.vimeo.com/external/89606431.hd.mp4?s=7974e855095d51f7807c4ac87e8c3c5d&profile_id=113" type="video/mp4">
 			</video>
         </div>
@@ -135,22 +135,22 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                    	 <video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_montage_poster.jpg" width="100%" height="100%" >
+                    	 <video id="video-2" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/bobp_montage_poster.jpg" class="video-js vjs-default-skin page-video" width="100%" height="100%" >
 							 <source src="https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113" type="video/mp4">
 						 </video>
                     </div>
                 </div>
-                
+
             </div>
             <div class="group group--right">
                 <div class="module module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                    	<video class="video-js vjs-default-skin" controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/madeline_poster_image.jpg" width="100%" height="100%" >
-							 <source src="https://player.vimeo.com/external/141536383.sd.mp4?s=ec76d68e3231addfe57b47c24dadc826&profile_id=112" type="video/mp4">
+                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/madeline_poster_image.jpg" class="video-js vjs-default-skin page-video" width="100%" height="100%" >
+							<source src="https://player.vimeo.com/external/141536383.sd.mp4?s=ec76d68e3231addfe57b47c24dadc826&profile_id=112" type="video/mp4">
 						</video>
                     </div>
                 </div>
-                
+
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -178,18 +178,18 @@ get_header('work-item'); ?>
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
-            <div id="carousel-image-1"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_01_imacsmall.jpg')"></div>
-            <div id="carousel-image-2"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_02_imacsmall.jpg')"></div>
-            <div id="carousel-image-3"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_03_imacsmall.jpg')"></div>
-            <div id="carousel-image-4"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_04_imacsmall.jpg')"></div>
-            <div id="carousel-image-5"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_05_imacsmall.jpg')"></div>
+            <div id="carousel-image-8"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_01_imacsmall.jpg')"></div>
+            <div id="carousel-image-9"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_02_imacsmall.jpg')"></div>
+            <div id="carousel-image-10"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_03_imacsmall.jpg')"></div>
+            <div id="carousel-image-11"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_04_imacsmall.jpg')"></div>
+            <div id="carousel-image-12"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_05_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
         <div class="carousel-controls">
-            <div id="carousel-control-1" class="carousel-control selected"></div>
-            <div id="carousel-control-2" class="carousel-control"></div>
-            <div id="carousel-control-3" class="carousel-control"></div>
-            <div id="carousel-control-4" class="carousel-control"></div>
-            <div id="carousel-control-5" class="carousel-control"></div>
+            <div id="carousel-control-8" class="carousel-control selected"></div>
+            <div id="carousel-control-9" class="carousel-control"></div>
+            <div id="carousel-control-10" class="carousel-control"></div>
+            <div id="carousel-control-11" class="carousel-control"></div>
+            <div id="carousel-control-12" class="carousel-control"></div>
         </div> <!-- /end carousel-controls -->
     </section>
 </div> <!-- /end container--carousel -->
@@ -248,34 +248,31 @@ get_header('work-item'); ?>
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
-            <div id="carousel-image-1"class="carousel-image"></div>
-            <div id="carousel-image-2"class="carousel-image"></div>
-            <div id="carousel-image-3"class="carousel-image"></div>
-            <div id="carousel-image-4"class="carousel-image"></div>
+            <div id="carousel-image-13"class="carousel-image"></div>
+            <div id="carousel-image-14"class="carousel-image"></div>
+            <div id="carousel-image-15"class="carousel-image"></div>
+            <div id="carousel-image-16"class="carousel-image"></div>
         </div> <!-- /end carousel-images -->
         <div class="carousel-controls">
-            <div id="carousel-control-1" class="carousel-control selected"></div>
-            <div id="carousel-control-2" class="carousel-control"></div>
-            <div id="carousel-control-3" class="carousel-control"></div>
-            <div id="carousel-control-4" class="carousel-control"></div>
+            <div id="carousel-control-13" class="carousel-control selected"></div>
+            <div id="carousel-control-14" class="carousel-control"></div>
+            <div id="carousel-control-15" class="carousel-control"></div>
+            <div id="carousel-control-16" class="carousel-control"></div>
         </div> <!-- /end carousel-controls -->
     </section>
 </div> <!-- /end container--carousel -->
-
-<div class="container area-dark">
-    <section class="text-section">
-        <h2>Feedback from BP</h2>
-        <div class="text-section__para">
-            <p class="first-para">“Thank you all for an extraordinary effort in making this all come together -on time! Truly I was staggered.”</p>
-            <p>Shane Samarawikrema Learning & Performance BP</p>
-        </div>
-    </section>
-</div>
 
 <div class="container container--no-padding">
     <div class="module module--2-1">
 	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/web_discover_hz.jpg')"></div>
     </div>
+</div>
+
+<div class="container quote-container area-dark">
+    <section class="text-section">
+            <blockquote>“Thank you all for an extraordinary effort in making this all come together -on time! Truly I was staggered.”</blockquote>
+            <p>Shane Samarawikrema Learning &amp; Performance BP</p>
+    </section>
 </div>
 
     <div class="group-container">

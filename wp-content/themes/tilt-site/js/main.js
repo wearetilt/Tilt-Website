@@ -1133,6 +1133,14 @@ if(document.getElementById('header-video-player')){
     });
 }
 
+if(document.getElementsByClassName('page-video')){
+	var pageVideos = document.getElementsByClassName('page-video');
+
+	for(var iterator8 = 0; iterator8 < pageVideos.length; iterator8 ++){
+		videojs(pageVideos[iterator8]);
+	}
+}
+
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');
 var staffMember;
@@ -1185,50 +1193,52 @@ menuButton.onclick = function(){
     }
 }
 
-var lookUpStaffMember = function(staffMember){
-    return staffData[staffMember];
-}
-
-var fadeInStaffInfo = function(staffObject){
-    document.getElementById('staff-member__info').style.opacity = '1';
-    document.getElementById('staff-member__wrapper').style.opacity = '1';
-    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + window.directoryURI + '/' + staffObject.image + ')';
-}
-
-var populateAndSizeStaffInfo = function(staffBox, staffObject){
-    staffBox.style.height = '100vh';
-    staffBox.style.width = '100%';
-    staffBox.style.left = '0px';
-    staffBox.style.top = '0px';
-    // staffBox.style.transform = 'translate(' + left + ', ' + top + ')';
-    document.getElementById('staff-member__name').innerHTML = staffObject.name;
-    document.getElementById('staff-member__position').innerHTML = staffObject.position;
-    document.getElementById('staff-member__department').innerHTML = staffObject.department;
-    document.getElementById('staff-member__about').innerHTML = staffObject.about;
-    document.getElementById('staff-member__did-you-know').innerHTML = '<strong class="highlight">Did you know?</strong> ' + staffObject["did-you-know"];
-}
-
-var hideStaffBoxAndAllowScrolling = function(staffBox){
-    staffBox.style.display = 'none';
-    // document.body.classList.remove('stop-scrolling');
-}
-
-var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPosition, topPosition){
-    staffBox.style.height = startingHeight;
-    staffBox.style.width = startingWidth;
-    staffBox.style.left = leftPosition;
-    staffBox.style.top = topPosition;
-}
-
-var getScrollPosition = function(){
-    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-    return top;
-}
-
-var staff = document.getElementsByClassName('module--staff');
 var videoFunction = '';
 
 if(document.getElementById('staff-member')){
+
+	var lookUpStaffMember = function(staffMember){
+	    return staffData[staffMember];
+	}
+
+	var fadeInStaffInfo = function(staffObject){
+	    document.getElementById('staff-member__info').style.opacity = '1';
+	    document.getElementById('staff-member__wrapper').style.opacity = '1';
+	    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + window.directoryURI + '/' + staffObject.image + ')';
+	}
+
+	var populateAndSizeStaffInfo = function(staffBox, staffObject){
+	    staffBox.style.height = '100vh';
+	    staffBox.style.width = '100%';
+	    staffBox.style.left = '0px';
+	    staffBox.style.top = '0px';
+	    // staffBox.style.transform = 'translate(' + left + ', ' + top + ')';
+	    document.getElementById('staff-member__name').innerHTML = staffObject.name;
+	    document.getElementById('staff-member__position').innerHTML = staffObject.position;
+	    document.getElementById('staff-member__department').innerHTML = staffObject.department;
+	    document.getElementById('staff-member__about').innerHTML = staffObject.about;
+	    document.getElementById('staff-member__did-you-know').innerHTML = '<strong class="highlight">Did you know?</strong> ' + staffObject["did-you-know"];
+	}
+
+	var hideStaffBoxAndAllowScrolling = function(staffBox){
+	    staffBox.style.display = 'none';
+	    // document.body.classList.remove('stop-scrolling');
+	}
+
+	var resetStaffBox = function(staffBox, startingHeight, startingWidth, leftPosition, topPosition){
+	    staffBox.style.height = startingHeight;
+	    staffBox.style.width = startingWidth;
+	    staffBox.style.left = leftPosition;
+	    staffBox.style.top = topPosition;
+	}
+
+	var getScrollPosition = function(){
+	    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+	    return top;
+	}
+
+	var staff = document.getElementsByClassName('module--staff');
+
     for (var iterator3 = 0; iterator3 < staff.length; iterator3++){
         staffMember = staff[iterator3];
 

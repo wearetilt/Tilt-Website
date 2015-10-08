@@ -101,6 +101,10 @@ header{
         }
     }
 
+    .header-play{
+        top: 44%;
+    }
+
 
     &.work-item--motion{
         .container--header{
@@ -146,19 +150,6 @@ header{
         margin-top: 30px;
     }
 
-    .header-play{
-        height: 102px;
-        width:102px;
-        background-image: url('../images/play_button.png');
-        position: absolute;
-        z-index: 6;
-        cursor: pointer;
-        top: 44%;
-        left: 0px;
-        right: 0px;
-        margin: 0px auto;
-    }
-
     &.contact-page{
         height: 31.3333%;
         min-height: 400px;
@@ -173,6 +164,18 @@ header{
         @extend %clearfix;
         background-color: $c-bg;
     }
+}
+
+.header-play{
+    height: 102px;
+    width:102px;
+    background-image: url('../images/play_button.png');
+    position: absolute;
+    z-index: 6;
+    cursor: pointer;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
 }
 
 .header-text__module{

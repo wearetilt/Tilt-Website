@@ -192,4 +192,10 @@ span{
 
 }
 
+blockquote{
+    font-family: $f-merriweather-lt;
+    @include font-size(35);
+    color: white;
+}
+
 .work-container p.sans-serif { margin:10px 0px 0px 0px; }
