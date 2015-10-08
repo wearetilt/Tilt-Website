@@ -321,7 +321,7 @@
     background-color: rgba(0,0,0,0.5);
 
     & h2.underlined{
-        margin-bottom: 20px;
+        margin-bottom:0px;
         &:after{
             width: em(300,75);
         }
