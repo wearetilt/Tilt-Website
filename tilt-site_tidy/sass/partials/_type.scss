@@ -156,7 +156,6 @@ p{
         font-family: $f-merriweather;
         font-weight: 300;
         color: $c-grey-57;
-<<<<<<< HEAD
         font-size: 0.65rem;
 
         @media handheld, screen and (min-width: 420px){
@@ -166,9 +165,6 @@ p{
         @media handheld, screen and (min-width: $bp-desktop){
             font-size: 1em;
         }
-=======
-
->>>>>>> b71b8cb3a322d6f568dcabfff7192ac716b73b79
     }
 
     .intro-text &{

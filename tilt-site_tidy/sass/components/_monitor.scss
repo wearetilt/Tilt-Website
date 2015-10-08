@@ -9,6 +9,12 @@
         z-index: 2;
     }
 
+    &:hover{
+        .overlay{
+            opacity: 1;
+        }
+    }
+
     & + .text-section{
         margin-top: 8%;
     }
