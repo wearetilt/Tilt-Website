@@ -37,10 +37,11 @@ get_header('work-item'); ?>
         <div class="monitor-screen"></div>
     </div>
     <section class="text-section">
-        <h2>Overview</h2>
+        <h2>GIVING KIDS THE POWER TO WRITE CODE</h2>
         <div class="text-section__para">
-            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            <p class="first-para">Coding is now part of the national curriculum – yet online lessons aren’t always very child-friendly. Nickelodeon approached us to help create something fun and interactive to help get kids coding.</p>
+            <p>The solution needed to be simple and intuitive, yet complex enough to keep more advanced users engaged, perhaps with just a little support from a parent.</p>
+			<p>But what’s the best way to fire the imagination of younger kids?</p>
         </div>
     </section> <!-- /end text-section -->
 </div> <!-- /end container -->
@@ -92,10 +93,9 @@ get_header('work-item'); ?>
 
 <div class="container area-dark">
     <section class="text-section">
-        <h2>Welcome to Tilt</h2>
+        <h2>SPONGEBOB TO THE RESCUE</h2>
         <div class="text-section__para">
-            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            <p class="first-para">Let’s face it; raw code doesn’t get many children fired up. So, we decided give kids the power to animate their favourite cartoons within minutes. Using Haxe and HTML5, we created Code-It – an interactive platform with a drag-and-drop interface that allows kids to select classic Nick characters, including the Teenage Mutant Ninja Turtles and the mighty SpongeBob Squarepants.</p>
         </div>
     </section>
 </div>
@@ -126,10 +126,10 @@ get_header('work-item'); ?>
 
 <div class="container area-dark">
     <section class="text-section">
-        <h2>Branding</h2>
+        <h2>LEARN THROUGH DOING</h2>
         <div class="text-section__para">
-            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            <p class="first-para">The fun, colourful and intuitive interface lets kids get started quickly. Each action is supported by tutorials and glossaries to help children learn while doing. Code-It goes beyond straight education and encourages kids to explore the application and develop their skills with awards, challenges and a bustling coding community. Kids gain awards by completing coding challenges or mastering specific elements of coding.</p>
+            <p>When kids complete an animation, they can share their work, check out their friend’s animations, and “Like” each other’s efforts. Kids can even choose animations to edit and build something new – and see how the original cartoon was made.</p>
         </div>
     </section>
 </div>
@@ -153,10 +153,16 @@ get_header('work-item'); ?>
 
 <div class="container area-dark">
     <section class="text-section">
-        <h2>Intuitive User Experience</h2>
+        <h2>LIFTING THE SQUAREPANTS</h2>
         <div class="text-section__para">
-            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            <p class="first-para">We used several in-house skills to create this project:</p>
+            <ul>
+            	<li>HTML5 wizardry</li>
+            	<li>UX design</li>
+            	<li>Bright icon design</li>
+            	<li>Engaging content</li>
+            	<li>Bespoke programming language</li>
+            </ul>
         </div>
     </section>
 </div>
@@ -180,10 +186,19 @@ get_header('work-item'); ?>
 
 <div class="container">
     <section class="text-section">
-        <h2>Advanced HTML 5</h2>
+        <h2>WHAT WE DID</h2>
         <div class="text-section__para">
-            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            <p class="first-para">HTML5</p>
+            <p>Animations are created and played back to the user in real time, as they create them using HTML5.</p>
+            <p class="first-para">UX Design</p>
+            <p>A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
+            
+            <p class="first-para">Content & design</p>
+            <p>A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
+            
+            <p class="first-para">Bespoke programming</p>
+            <p>The application is built in Haxe and HTML5, but we developed a new simplified coding language in a visual format so kids could use building blocks to create animations. This language / syntax is a blend of Haxe and JavaScript, but with the complexities and idiosyncrasies hidden from view. This approach means that kids can learn the core principles of programming without having to worry about the details.</p>
+            
         </div>
     </section>
 </div>
@@ -196,10 +211,10 @@ get_header('work-item'); ?>
 
 <div class="container area-dark">
     <section class="text-section">
-        <h2>Feedback from Nickelodeon</h2>
+        <h2>RESULTS AND AWARDS</h2>
         <div class="text-section__para">
-            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+            <p class="first-para">The Nickelodeon team loved the final product and the uptake from users has been fantastic. Nickelodeon has already commissioned us to develop further ideas and scenarios for the Code-It piece.</p>
+            <p>The piece also caught national attention, picking up a nomination for Best Digital Children’s Content at the Broadcast Digital Awards.</p>
         </div>
     </section>
 </div>
