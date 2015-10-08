@@ -53,12 +53,12 @@ h2{
             width: em(76, 36);
         }
     }
-    
+
     &.services{
-    	@include font-size(15);	
+    	@include font-size(15);
     	margin-top:13px;
     	@media handheld, screen and (min-width: $bp-desktop){
-    		@include font-size(23);	
+    		@include font-size(23);
 			margin-top:18px;
 		}
     }
@@ -87,8 +87,7 @@ h3{
     .map-overlay & {
         @include font-size(15);
         color: $c-tilt-pink;
-        font-family: $f-merriweather;
-        font-weight: 300;
+        font-family: $f-merriweather-lt;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -99,8 +98,7 @@ p{
     @media handheld, screen and (min-width: $bp-desktop){
             @include font-size(16);
     }
-    font-family: $f-merriweather;
-        font-weight: 300;
+    font-family: $f-merriweather-lt;
     text-transform: none;
     line-height: (35/20);
     -webkit-font-smoothing: antialiased;
@@ -126,9 +124,9 @@ p{
             margin-left: 2px;
         }
     }
-    
+
     &.first-para { margin-top:5px; }
-    
+
     &.sans-serif{
         @include font-size(25);
         @media handheld, screen and (min-width: $bp-desktop){
@@ -140,16 +138,14 @@ p{
     }
 
     &.tag{
-        font-family: $f-merriweather;
-        font-weight: 300;
+        font-family: $f-merriweather-lt;
         text-transform: uppercase;
         color:$c-tilt-pink;
 
     }
 
     &.footnote{
-        font-family: $f-merriweather;
-        font-weight: 300;
+        font-family: $f-merriweather-lt;
         color: $c-grey-57;
     }
 
@@ -157,16 +153,10 @@ p{
      @include font-size(35);
      font-family: $f-seroot-lt;
     }
-    
-    .careers & { margin-top: 0; }
-    
-    
-}
 
-.careers p.first-para { 
-	margin-top:1.8em; 
-	font-family: $f-merriweather;
-	font-weight:700;
+    &.quote-attribute{
+        @include font-size(18);
+    }
 }
 
 a{
@@ -219,10 +209,16 @@ span{
 }
 
 blockquote{
-   font-family: $f-merriweather;
-   font-weight: 300;
+    font-family: $f-merriweather-lt;
     @include font-size(35);
     color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: (25/20);
+
+    & + p {
+        margin-top: 20px;
+    }
 }
 
 .work-container p.sans-serif { margin:10px 0px 0px 0px; }
