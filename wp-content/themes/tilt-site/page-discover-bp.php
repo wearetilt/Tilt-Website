@@ -35,7 +35,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div class="container container--half-top">
+<div class="container container--half-top container--discover-bp-gradient">
     <div class="monitor-holder">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen"></div>
@@ -147,7 +147,7 @@ get_header('work-item'); ?>
     </section>
 </div>
 
-<div class="container container--carousel">
+<div class="container container--carousel container--discover-bp-gradient">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
@@ -217,7 +217,7 @@ get_header('work-item'); ?>
     </section>
 </div>
 
-<div class="container area-dark">
+<div class="container area-dark container--discover-bp-gradient">
         <div class="mobile-holder">
             <img class="mobile-phone" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
             <div class="mobile-screen"></div>

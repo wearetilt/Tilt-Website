@@ -13,7 +13,7 @@
 
 get_header('work-item'); ?>
 
-<header id="i360" class="work-item area-dark">
+<header id="i360" class="work-item area-dark container--i360-gradient">
     <div class="monitor-holder">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="monitor-screen">
@@ -41,7 +41,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div class="container">
+<div class="container container--i360-spot-bg">
         <div class="mobile-holder">
             <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
             <div class="mobile-screen">

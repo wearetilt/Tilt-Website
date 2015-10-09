@@ -1,4 +1,4 @@
-<?php
+    <?php
 /**
  * The template for displaying pages
  *
@@ -36,7 +36,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-    <div class="container container--half-top area-dark">
+    <div class="container container--half-top container--CS-motion-bg">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
@@ -135,7 +135,7 @@ get_header('work-item'); ?>
         </section>
     </div> <!-- /end container -->
 
-    <div class="container container--half-top area-dark">
+    <div class="container container--half-top container--CS-motion-bg">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">

@@ -35,7 +35,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-    <div class="container container--half-top">
+    <div class="container container--half-top container--CS-film">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
@@ -58,7 +58,7 @@ get_header('work-item'); ?>
     </div>
 
 
-<div class="container container--no-padding">
+<div class="container container--no-padding container--CS-film">
         <section>
             <div class="group-container">
                 <div class="group group--left">
