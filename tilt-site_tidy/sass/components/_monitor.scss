@@ -77,22 +77,22 @@
 }
 
 header {
+
+    .monitor-wrapper{
+        padding-top: 63px;
+    }
+
     .monitor-holder{
         z-index: 1;
-        padding-top: 2%;
-        max-width: none;
+        max-width: 768px;
 
-        .monitor{
-            max-width: none;
-            width: 38%;
-        }
     }
 
     .monitor-screen{
-        width: 35.5%;
-        left: 32.25%;
-        top: 11%;
-        height: 63.5%;
+        top: 5%;
+        height: 67.5%;
+        left: 3.5%;
+        width: 93%;
 
         img{
             height: 100%;

@@ -69,6 +69,10 @@ header{
             width: 100%;
             background-color: transparent;
         }
+        .monitor-wrapper + .container--header{
+            position: relative;
+            padding-top: percentage(150/2032);
+        }
         @media handheld, screen and (min-width: $bp-desktop){
             .header-title{
                 width: 50%;
@@ -165,6 +169,8 @@ header{
         background-color: $c-bg;
     }
 }
+
+
 
 .header-play{
     height: 102px;
