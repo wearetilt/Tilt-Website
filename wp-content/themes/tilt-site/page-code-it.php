@@ -14,12 +14,20 @@
 get_header('work-item'); ?>
 
 <header id="codeit" class="work-item area-dark">
-    <div class="monitor-holder">
-        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-        <div class="monitor-screen">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+    <div class="monitor-wrapper">
+        <div class="monitor-holder">
+            <a href="www.google.com">
+                <div class="overlay area-dark">
+                    <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
+                </div>
+            </a>
+            <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+            <div class="monitor-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
         </div>
     </div>
+
     <div class="container container--header">
         <div class="header-title">
             <p class="tag">Interactive: Case Study</p>
@@ -192,13 +200,13 @@ get_header('work-item'); ?>
             <p>Animations are created and played back to the user in real time, as they create them using HTML5.</p>
             <p class="first-para">UX Design</p>
             <p>A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
-            
+
             <p class="first-para">Content & design</p>
             <p>A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
-            
+
             <p class="first-para">Bespoke programming</p>
             <p>The application is built in Haxe and HTML5, but we developed a new simplified coding language in a visual format so kids could use building blocks to create animations. This language / syntax is a blend of Haxe and JavaScript, but with the complexities and idiosyncrasies hidden from view. This approach means that kids can learn the core principles of programming without having to worry about the details.</p>
-            
+
         </div>
     </section>
 </div>
