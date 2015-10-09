@@ -1113,24 +1113,29 @@ if(document.getElementById('header-video-player')){
       }
     });
 
-    if(document.getElementById('header-play')){
-        document.getElementById('header-play').addEventListener('click', function(){
-                myPlayer.ready(function(){
-                    myPlayer.src(fullVideoSrc);
-                    myPlayer.requestFullscreen();
-                    myPlayer.play();
-                    myPlayer.controls(true);
-                });
-        });
-    }
+	if(document.getElementById('overlay-video')){
+	    var videoOverlay = videojs('overlay-video');
 
-    myPlayer.on('fullscreenchange', function(){
-        if((myPlayer.currentSrc() === fullVideoSrc) && (!myPlayer.isFullscreen())){
-            myPlayer.src(clipVideoSrc);
-            myPlayer.controls(false);
-            myPlayer.muted(false);
-        }
-    });
+	    document.getElementById('video-overlay-close').addEventListener('click', function(){
+	        document.getElementById('video-overlay').style.display = "none";
+	        videoOverlay.pause();
+	        myPlayer.play();
+	    });
+	}
+
+	if(document.getElementById('header-play')){
+	    document.getElementById('header-play').addEventListener('click', function(){
+	            myPlayer.ready(function(){
+	                console.log(videoOverlay.src);
+	                if(videoOverlay.currentSrc() === "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113"){
+	                    videoOverlay.src(fullVideoSrc);
+	                }
+	                videoOverlay.play();
+	                myPlayer.pause();
+	                document.getElementById('video-overlay').style.display = 'block';
+	            });
+	    });
+	}
 }
 
 if(document.getElementsByClassName('page-video')){
@@ -1599,6 +1604,8 @@ if(document.getElementById('contact-form')){
 	});
 
 }
+
+
 
 
 //footer stuff

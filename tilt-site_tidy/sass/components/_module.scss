@@ -50,45 +50,45 @@
             width: 50%;
             padding-top: 50%;
         }
-		
+
 		.module__text {
 			height:100%;
 			padding: 40% 7%;
-			
-			
+
+
 			&.designer {
 	        	background: url('../images/careers/designer.png') center 10% no-repeat;
 				&:hover{ background: url('../images/careers/designer_hover.png') center 10% no-repeat; }
 			}
-			
+
 			&.motion {
 	        	background: url('../images/careers/motion.png') center 10% no-repeat;
 				&:hover{ background: url('../images/careers/motion_hover.png') center 10% no-repeat; }
 			}
-			
+
 			&.dev {
 	        	background: url('../images/careers/developer.png') center 10% no-repeat;
 				&:hover{ background: url('../images/careers/developer_hover.png') center 10% no-repeat; }
 			}
-			
+
 			&.admin {
 	        	background: url('../images/careers/admin.png') center 10% no-repeat;
 				&:hover{ background: url('../images/careers/admin_hover.png') center 10% no-repeat; }
 			}
-		
+
 		}
-		
-		
+
+
         h2 + p {
             padding-top: 2%;
         }
 
         h2{
-            
+
             color: $c-tilt-pink;
             @include font-size(25);
-        	
-     	    
+
+
         }
         &:hover{
             background-color: $c-tilt-pink;
@@ -97,9 +97,9 @@
                 color: white;
             }
         }
-        
-        
-        
+
+
+
     }
 
     & .module__description{
@@ -117,12 +117,12 @@
             padding-bottom: 7.5%;
             padding-top: 7.5%;
         }
-        
+
         .careers & {  @extend %clearfix; }
         /* .careers & { margin:0 0 50px 0; } */
-        
+
     }
-    
+
     &.module--no-bg{
         background-color: transparent;
     }
@@ -136,7 +136,7 @@
      }
 }
 
-	
+
 
 .module--visible{
     transform: scale(1);
@@ -334,6 +334,21 @@
     }
 }
 
+.fullpage-overlay{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+
+    video{
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+
 .module--image{
     padding-top: 0px;
 }
@@ -385,4 +400,13 @@
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+
+#video-overlay-close{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: yellow;
 }

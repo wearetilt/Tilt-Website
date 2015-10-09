@@ -86,3 +86,9 @@
     background-color: #79b6e1;
     color: white;
 }
+
+#homePage, .work-container{
+    p.tag{
+        color: $c-tilt-pink;
+    }
+}
