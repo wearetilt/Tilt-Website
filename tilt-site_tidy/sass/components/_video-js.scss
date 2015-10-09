@@ -182,6 +182,7 @@ Create your own skin at http://designer.videojs.com
 .vjs-default-skin .vjs-volume-control {
     width: 5em;
     float: right;
+    margin-right: 50px;
 }
 .vjs-default-skin .vjs-volume-bar {
     width: 5em;
@@ -759,4 +760,8 @@ img#vjs-logobrand-image {
 .monitor-screen .vjs-default-skin .vjs-big-play-button{
     top: -50%;
     transform: translateY(-33%);;
+}
+
+#video-overlay .vjs-default-skin .vjs-fullscreen-control{
+    display: none;
 }

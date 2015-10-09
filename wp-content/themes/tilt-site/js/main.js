@@ -1115,10 +1115,14 @@ if(document.getElementById('header-video-player')){
 
 	if(document.getElementById('overlay-video')){
 	    var videoOverlay = videojs('overlay-video');
+		videoOverlay.requestFullscreen(function(){
+			return false;
+		})
 
 	    document.getElementById('video-overlay-close').addEventListener('click', function(){
 	        document.getElementById('video-overlay').style.display = "none";
 	        videoOverlay.pause();
+
 	        myPlayer.play();
 	    });
 	}
