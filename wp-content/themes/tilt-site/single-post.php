@@ -42,7 +42,7 @@ get_header('news'); ?>
 			<p><?php the_field('intro_text'); ?></p>
 		</div>
 	</div>
-	<div class="container container--no-padding">
+	<div class="container container--no-padding area-dark">
 		<div class="group-container">
 			<div class="group group--left">
 				<div class="module module--2-2">
