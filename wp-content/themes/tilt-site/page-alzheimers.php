@@ -16,13 +16,14 @@ get_header('work-item'); ?>
 <header id="alzheimers" class="work-item area-dark">
     <div class="monitor-wrapper">
         <div class="monitor-holder">
-            <!-- <a href="www.google.com">
+            <a href="www.google.com">
                 <div class="overlay area-dark">
+                    <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
                 </div>
-            </a> -->
+            </a>
             <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
             <div class="monitor-screen">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_imacsmall.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
             </div>
         </div>
     </div>
