@@ -1261,7 +1261,6 @@ if(document.getElementById('staff-member')){
 		var staffVideoSrc;
 		var staffFullScreenVid;
 		var videoIWant;
-		console.log(staffFullScreenVid);
         //Some closure magic to get this working. - MT
 		//I came back to this comment...It was not helpful... - MT
 
@@ -1271,7 +1270,6 @@ if(document.getElementById('staff-member')){
             staffMember.addEventListener('mouseenter', function(event){
 				var that = this;
 				var thisStaffID = that.id;
-				console.log(thisStaffID);
 				switch (thisStaffID) {
 					//work-page
 					case "Staff-1":
@@ -1364,7 +1362,6 @@ if(document.getElementById('staff-member')){
 					// console.log('Mouse has entered');
 					videoFunction = setTimeout(function(){
 						if(!that.children[1]){
-							console.log(thisStaffID);
 							document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
 						}
 							var ratio2 = that.children[1];
@@ -1448,7 +1445,6 @@ if(document.getElementById('work_all')){
         el.onclick = function(){
                 itemsToShow = el.id;
                 itemsToShow = itemsToShow.slice(5);
-                console.log(itemsToShow);
                 [].map.call(document.querySelectorAll('.work-container'), function(el3){
                     el3.style.opacity = 0;
                     el3.style.display = 'none';
@@ -1480,14 +1476,11 @@ if(document.getElementById('work_all')){
 }
 
 var controlContactBorder = function(inputClicked, borderToChange){
-	console.log(inputClicked);
-	console.log(inputsParent);
 	inputsParentPosition = inputsParent.getBoundingClientRect();
 	inputPosition = inputClicked.getBoundingClientRect();
 	newFunkyBorderHeight = inputPosition.top - inputsParentPosition.top + inputPosition.height;
 	funkyBorder = 'funky-border-' + borderToChange;
 	funkyBorderToChange = document.getElementById(funkyBorder);
-	console.log(funkyBorderToChange);
 	funkyBorderToChange.style.height = newFunkyBorderHeight + "px";
 }
 

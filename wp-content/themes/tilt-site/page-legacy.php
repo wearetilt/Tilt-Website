@@ -12,7 +12,13 @@
  */
 
 get_header('work-item'); ?>
-
+<div id="video-overlay" class="fullpage-overlay">
+    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/film_poster_image.jpg" width="100%" height="auto">
+        <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
+    </video>
+    <div id="video-overlay-close">
+    </div>
+</div>
 <header id="page_legacy" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">

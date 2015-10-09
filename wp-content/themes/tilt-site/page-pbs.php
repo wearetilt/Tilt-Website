@@ -38,7 +38,7 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The challenge</h2>
-                <p class="first-para">Use the power of digital to help young people explore the ideas behind a National Geographic nature documentary.</p>
+                <p class="first-para">Use the power of digital to help young people explore the ideas behind a PBS nature documentary.</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
