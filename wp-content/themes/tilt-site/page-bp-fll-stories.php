@@ -87,50 +87,15 @@ get_header('work-item'); ?>
         </section>
     </div>
 
-
-    <!--
-<div class="container container--half-top area-dark">
-        <div class="group-container">
-            <div class="group group--left">
-                <div class="module module--2-2">
-                	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_07_ls.jpg')"></div>
-                </div>
-            </div>
-            <div class="group group--right">
-                <div class="module module--2-2">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_08_ls.jpg')"></div>
-                </div>
-            </div>
-        </div>
-        <div class="group-container">
-            <div class="group group--left">
-                <div class="module module--2-2">
-                	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_09_MASTER_ls.jpg')"></div>
-                </div>
-            </div>
-            <div class="group group--right">
-                <div class="module module--2-2">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_10_ls.jpg')"></div>
-                </div>
-            </div>
-        </div>
-        <section class="text-section">
-            <h2>Solution</h2>
-            <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
-            </div>
-        </section>
-    </div>
--->
-
-    <div class="container container--no-padding">
+   <!--
+ <div class="container container--no-padding">
         <div class="module module--2-1">
 	        <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_11_hz.jpg')"></div>
         </div>
     </div>
+-->
 
-    <div class="container">
+    <div class="container area-dark">
         <section class="text-section">
             <h2>What we did</h2>
             <div class="text-section__para">
@@ -199,6 +164,15 @@ get_header('work-item'); ?>
             </div>
         </section>
     </div>
+    
+
+	<div class="container container--no-padding">
+        <div class="module module--2-1">
+	        <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_11_hz.jpg')"></div>
+        </div>
+    </div>
+
+
 
     <div class="group-container">
         <a class="project-navigation" href="../barclays-values">< Previous Project</a>

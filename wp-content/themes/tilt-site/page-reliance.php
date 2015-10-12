@@ -128,7 +128,7 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/roma_poster_image.jpg" >
+                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/roma_poster_image.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
                                 <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
                         </video>
                     </div>
@@ -138,7 +138,7 @@ get_header('work-item'); ?>
             <div class="group group--right">
                 <div class="module module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                    	<video controls poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/sanjay_poster_image.jpg">
+                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/sanjay_poster_image.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
                                 <source src="https://player.vimeo.com/external/132110057.sd.mp4?s=014d1219cbdb5fe08f8cf02299846a59&profile_id=112" type="video/mp4">
                         </video>
                     </div>
