@@ -55,10 +55,10 @@ get_header('work-item'); ?>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
-            <h2>Background</h2>
+            <h2>CAN CORPORATE FILMS STIR EMOTIONS?</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para">When people become leaders at work, they often face unexpected personal struggles and conflicts. It can even be a lonely experience. But, traditional corporate films aimed at new leaders are generally poor at conveying emotion or empathy.</p>
+                <p>BP asked us to consider ways to evoke these feelings through a set of filmed scenarios for their First Level Leaders portal – a website designed to help employees transition into leadership roles.</p>
             </div>
         </section> <!-- /end text-section -->
     </div>
@@ -97,10 +97,17 @@ get_header('work-item'); ?>
 
     <div class="container area-dark">
         <section class="text-section">
-            <h2>What we did</h2>
+            <h2>STORIES NOT LECTURES</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para">Consider for a moment the unsaid messaging behind traditional corporate talking heads films: we know best; you’re on your own; do what we say.</p>
+                <p>Instead, we wanted to focus on storytelling, allowing viewers to emotionally connect with an idea, rather than listening to lectures. We devised each piece to follow the narrative of a newly transitioned leader battling with a decision around their new role. Scenarios include:</p>
+				<ul>
+					<li><span class="serif">A New Team</span></li>
+					<li><span class="serif">Managing Performance</span></li>
+					<li><span class="serif">High Performing Teams</span></li>
+					<li><span class="serif">Managing Peers</span></li>
+				</ul>
+            
             </div>
         </section>
     </div>
@@ -147,7 +154,17 @@ get_header('work-item'); ?>
 	        </div> <!-- /end group-container -->
 	    </section>
 	</div>
-
+	
+	 <div class="container area-dark">
+        <section class="text-section">
+            <h2>STYLE + SUBSTANCE</h2>
+            <div class="text-section__para">
+                <p class="first-para">For the shoot itself, we needed a flexible, lightweight setup with equipment that could still deliver stunning footage. The team opted for RED EPICs – cameras with 5K sensors capable of capturing 1 -120 frames per second at full resolution. The EPIC allowed us to create cinema-quality pieces with no more equipment bulk than a DSLR camera.</p>
+                <p>We filmed each story at four different BP locations around the world. In each case, the actor went through some simple actions. The voiceover – added in post-production – tracked the character’s internal monologue, conveying the stresses and struggles of their new role.</p>
+            </div>
+        </section>
+    </div>
+	
     <div class="container container--no-padding">
         <div class="module module--2-1">
 	        <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_12_hz.jpg')"></div>
@@ -157,10 +174,10 @@ get_header('work-item'); ?>
 
     <div class="container area-dark">
         <section class="text-section">
-            <h2>Feedback from BP</h2>
+            <h2>CONSIDER THE WHOLE</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para">From the earliest discussions we wanted to ensure that the films would not be delivered to the viewer via a small, boxy video player (as is so often the case with corporate pieces).</p>
+                <p>To combat this issue, we built bespoke pages for each film, with each video housed in a full-bleed header. This makes the film – and the story – the star of the show, with no distracting content. It’s a similar experience to viewing a film on Netflix or iPlayer in full-screen mode.</p>
             </div>
         </section>
     </div>
