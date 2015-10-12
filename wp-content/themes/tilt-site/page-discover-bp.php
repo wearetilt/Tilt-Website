@@ -89,7 +89,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-6" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac/web_discover_gallery_06_imacsmall.jpg')"></div>
             <div id="carousel-image-7" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac/web_discover_gallery_07_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
+        <div class="carousel-controls seven-wide">
             <div id="carousel-control-1" class="carousel-control selected"></div>
             <div id="carousel-control-2" class="carousel-control"></div>
             <div id="carousel-control-3" class="carousel-control"></div>
@@ -177,16 +177,16 @@ get_header('work-item'); ?>
         <div class="carousel-images">
             <div id="carousel-image-8"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_01_imacsmall.jpg')"></div>
             <div id="carousel-image-9"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_02_imacsmall.jpg')"></div>
-            <div id="carousel-image-10"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_03_imacsmall.jpg')"></div>
-            <div id="carousel-image-11"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_04_imacsmall.jpg')"></div>
-            <div id="carousel-image-12"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_05_imacsmall.jpg')"></div>
+            <div id="carousel-image-a"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_03_imacsmall.jpg')"></div>
+            <div id="carousel-image-b"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_04_imacsmall.jpg')"></div>
+            <div id="carousel-image-c"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_05_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
+        <div class="carousel-controls five-wide">
             <div id="carousel-control-8" class="carousel-control selected"></div>
             <div id="carousel-control-9" class="carousel-control"></div>
-            <div id="carousel-control-10" class="carousel-control"></div>
-            <div id="carousel-control-11" class="carousel-control"></div>
-            <div id="carousel-control-12" class="carousel-control"></div>
+            <div id="carousel-control-a" class="carousel-control"></div>
+            <div id="carousel-control-b" class="carousel-control"></div>
+            <div id="carousel-control-c" class="carousel-control"></div>
         </div> <!-- /end carousel-controls -->
     </section>
 </div> <!-- /end container--carousel -->
@@ -233,7 +233,7 @@ get_header('work-item'); ?>
 
 <div class="container">
     <section class="text-section">
-        <h2>16 Times the expected results</h2>
+        <h2>16 X the expected results</h2>
         <div class="text-section__para">
             <p class="first-para">Initially, BP hoped to achieve 6,000 unique hits in the first year – it generated 100,000 within twelve months.</p>
 			<p>Three years on from the initial deployment, we have just finished a design refresh and made the site fully responsive. Discover BP continues to be one of the organisation’s most successful communication projects, and has led to Tilt becoming involved in other high-profile BP projects.</p>
@@ -244,15 +244,21 @@ get_header('work-item'); ?>
 <div class="container area-dark container--discover-bp-gradient">
         <div class="mobile-holder">
             <img class="mobile-phone" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
-            <div class="mobile-screen"></div>
+            <div class="mobile-screen">
+	            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iphone/web_discover_gallery_01_iphone.jpg" alt="">
+            </div>
         </div>
         <div class="mobile-holder">
             <img class="mobile-phone" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
-            <div class="mobile-screen"></div>
+            <div class="mobile-screen">
+	            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iphone/web_discover_gallery_02_iphone.jpg" alt="">
+            </div>
         </div>
         <div class="mobile-holder">
             <img class="mobile-phone" src="<?php echo get_template_directory_uri(); ?>/images/mobile-phone.png" alt="">
-            <div class="mobile-screen"></div>
+            <div class="mobile-screen">
+	            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iphone/web_discover_gallery_03_iphone.jpg" alt="">
+            </div>
         </div>
 </div> <!-- /end container -->
 
