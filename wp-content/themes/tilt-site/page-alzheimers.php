@@ -16,7 +16,7 @@ get_header('work-item'); ?>
 <header id="alzheimers" class="work-item area-dark">
     <div class="monitor-wrapper">
         <div class="monitor-holder">
-            <a href="www.google.com">
+            <a href="http://www.dementialab.org/" target="_blank">
                 <div class="overlay area-dark">
                     <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
                 </div>
@@ -97,7 +97,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad area-dark module--dark">
                     <div class="module__text">
                         <p>If logged in through Facebook, users can see a photo album filled with pictures of their own friends. This reminds people of the devastating effects of Alzheimer’s and reinforces the need to invest in research.</p>
-                        <p>The piece ends with a call to action to donate. The Lab gained national press coverage and won the Association of Medical Research Charities’ <a href="http://www.amrc.org.uk/our-work/science-communication-awards" target="_blank">Science Communication Award</a>.</p>
+                        <p>The piece ends with a call to action to donate. The Lab gained national press coverage and won the Association of Medical Research Charities’ <a class="pink" href="http://www.amrc.org.uk/our-work/science-communication-awards" target="_blank">Science Communication Award</a>.</p>
                     </div>
                 </div>
             </div>

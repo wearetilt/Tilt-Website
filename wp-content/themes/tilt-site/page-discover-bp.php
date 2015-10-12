@@ -13,7 +13,7 @@
 
 get_header('work-item'); ?>
 <div id="video-overlay" class="fullpage-overlay">
-    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/film_poster_image.jpg" width="100%" height="auto">
+    <video id="overlay-video" class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/film_poster_image.jpg" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
     </video>
     <div id="video-overlay-close">
@@ -21,9 +21,7 @@ get_header('work-item'); ?>
 </div>
 <header id="page_discover_bp" class="work-item area-dark">
     <div class="module--video module--header">
-        <div id="header-play" class="header-play">
-
-        </div>
+       
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
                     <source id="header-video" src="https://player.vimeo.com/external/141529090.hd.mp4?s=9319fb63f3d31c680a7ccc8dea210503&profile_id=113" type="video/mp4">

@@ -16,7 +16,7 @@ get_header('work-item'); ?>
 <header id="codeit" class="work-item area-dark">
     <div class="monitor-wrapper">
         <div class="monitor-holder">
-            <a href="www.google.com">
+            <a href="http://www.nick.co.uk/_/code-it/" target="_blank">
                 <div class="overlay area-dark">
                     <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
                 </div>
@@ -211,11 +211,12 @@ get_header('work-item'); ?>
     </section>
 </div>
 
-<div class="container container--no-padding">
-    <div class="module module--2-1">
-	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_13_hz.jpg')"></div>
-    </div>
+
+
+<div class="container container--no-padding image-container">
+	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_13_hz.jpg" alt="Code It Awards" />
 </div>
+
 
 <div class="container area-dark">
     <section class="text-section">

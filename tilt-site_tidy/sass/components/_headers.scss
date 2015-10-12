@@ -71,7 +71,7 @@ header{
         }
         .monitor-wrapper + .container--header{
             position: relative;
-            padding-top: percentage(150/2032);
+            padding-top:3%;
         }
         @media handheld, screen and (min-width: $bp-desktop){
             .header-title{

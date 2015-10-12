@@ -16,7 +16,7 @@ get_header('work-item'); ?>
 <header id="pbs" class="work-item area-dark">
     <div class="monitor-wrapper">
         <div class="monitor-holder">
-            <a href="www.google.com">
+            <a href="http://pbs.lm-prod.media.ingest.s3.amazonaws.com/Earth%20A%20New%20Wild/Final%20Interactive/tilt_passion_pbs_microsite_20141106-3/microsite/index.html" target="_blank">
                 <div class="overlay area-dark">
                     <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
                 </div>

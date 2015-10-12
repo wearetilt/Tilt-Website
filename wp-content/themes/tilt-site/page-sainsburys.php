@@ -70,7 +70,7 @@ get_header('work-item'); ?>
                         <div class="module__text">
                             <h2 class="underlined">What we did</h2>
                             <p class="first-para">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
-                            <p>We created a unique iterative loader to deliver a smooth experience. And our modular approach to the timeline build makes it easy to embed on other sites.</p>
+                            <p>We created a unique iterative loader to deliver a smooth experience.</p>
                         </div>
                     </div>
                     <div class="module module--2-1">

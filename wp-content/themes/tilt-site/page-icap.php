@@ -14,12 +14,15 @@
 get_header('work-item'); ?>
 
 <header id="icap" class="work-item area-dark container--icap-gradient">
-    <div class="monitor-holder">
-        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-        <div class="monitor-screen">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
-        </div>
-    </div>
+	<div class="monitor-wrapper">
+	    <div class="monitor-holder">
+	        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+	        <div class="monitor-screen">
+	            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+	        </div>
+	    </div>
+	</div>
+
     <div class="container container--header">
         <div class="header-title">
             <p class="tag">Interactive</p>
@@ -31,7 +34,7 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The Challenge</h2>
-                <p class="first-para">How can an onboarding portal help communicate the new brand and ethos behind one of the world’s leader providers of trading technologies?</p>
+                <p class="first-para">How can an onboarding portal help communicate the new brand and ethos behind one of the world’s leading providers of trading technologies?</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
