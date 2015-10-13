@@ -24,7 +24,7 @@ get_header('work-item'); ?>
             <h1>Nickelodeon<br />
                 <span class="light underlined">Code-it</span>
             </h1>
-            <h2 class="light">UX | Visual Design | Development | Motion</h2>
+            <h2 class="light">UX | Design | Dev | Motion</h2>
                  
         </div>
                 
