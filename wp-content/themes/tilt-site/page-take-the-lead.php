@@ -101,9 +101,9 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
-                        <p>The finished film was seen by thousands and as a result we were commissioned to rebuild the main South Downs website.</p>
-                        <p>“Everyone thinks the film is really great and funny and I'm very impressed with the final product too!”</p>
-                        <p>Nick Stewart - Programme Manager</p>
+                        <p>The finished film was seen by thousands and as a result we were commissioned to rebuild the main South Downs website along with their Intranet.</p>
+                        <p>The film was recently featured at the open air cinema on Brighton Beach, known as the Brighton Big Screen</p>
+                   
                     </div>
                 </div>
             </div>
@@ -118,6 +118,14 @@ get_header('work-item'); ?>
         </div> <!-- /end group-container -->
     </section>
 </div> <!-- /end container -->
+
+<div class="container quote-container area-dark">
+    <section class="text-section">
+            <blockquote>“Everyone thinks the film is really great and funny and I'm very impressed with the final product too!”</blockquote>
+            <p class="sans-serif quote-attribute"><strong class="highlight">Nick Stewart,</strong> Programme Manager</p>
+    </section>
+</div>
+
 
 <div class="group-container">
     <a class="project-navigation" href="../barclays-integrity">< Previous Project</a>
