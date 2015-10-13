@@ -1329,7 +1329,7 @@ if(document.getElementById('staff-member')){
 					break;
 
 					case "Staff-15":
-						staffVideoSrc = "https://player.vimeo.com/external/140403280.sd.mp4?s=d8b4e6a74d8135f5e091f254344c5901&profile_id=112";
+						staffVideoSrc = "https://player.vimeo.com/external/142259886.hd.mp4?s=fa9b8c7acd96993ed4a8eec0475f786e&profile_id=113";
 					break;
 
 					case "Staff-16":

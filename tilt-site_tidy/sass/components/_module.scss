@@ -373,8 +373,8 @@
     background-color: white;
     margin: 0px auto;
     position: absolute;
-    top: 0;
-    right: 20px;
+    top:1.5%;
+    right:1%;
     text-align: center;
     cursor: pointer;
     z-index: 7;
@@ -387,10 +387,11 @@
     height: 100%;
     width: 100%;
     float: right;
-
+	padding:7% 5% 0% 0%;
+	
     @media handheld, screen and (min-width: $bp-desktop){
 
-    width: 50%;
+    	width: 50%;
 
     }
 }

@@ -45,8 +45,10 @@ h1 {
 h2{
     @include font-size(18);
     @media handheld, screen and (min-width: $bp-desktop){
-            @include font-size(32);
+           @include font-size(32);
+           &#staff-member__position, &#staff-member__department { @include font-size(38); }
     }
+  
     &.underlined{
         &:after{
             margin-top: 0.4em;
@@ -68,6 +70,14 @@ h2{
         font-family: $f-seroot-lt;
         color: $c-grey-94;
     }
+	
+	&#staff-member__position, &#staff-member__department {
+		font-family:$f-seroot-thn;
+		line-height:1.1;
+	}
+	
+	
+
 }
 
 h3{
@@ -179,6 +189,14 @@ p {
     }
 
     .careers & { margin:0 0 30px 0; }
+    
+    &#staff-member__did-you-know {
+	  	@include font-size(14);
+	  	@media handheld, screen and (min-width: $bp-desktop){
+            @include font-size(20);
+        }  
+	    
+    }
 }
 
 .careers p.first-para {

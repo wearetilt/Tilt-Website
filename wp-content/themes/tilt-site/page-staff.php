@@ -43,7 +43,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Chris Cooke</h2>
-						<p class="sans-serif">Creative Director (Interactive)</p>
+						<p class="sans-serif">Creative Director<br />(Interactive)</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -51,7 +51,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Dan Evans</h2>
-						<p class="sans-serif">Creative Director (Motion & Film)</p>
+						<p class="sans-serif">Creative Director<br />(Motion & Film)</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -124,7 +124,7 @@ get_header(); ?>
 				</div> <!-- /end overlay -->
 			</div>
 
-			<div id="Staff-15" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429661.hd.mp4?s=bbd10ebfa60c6e62df15a6bd4afccbbd&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-15.jpg'); background-size: cover; background-position: 50% 50%;">
+			<div id="Staff-15" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/142259885.hd.mp4?s=405f8a38947c6ab220229ac51a9bcd51&profile_id=119' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-15.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Ian Harrison</h2>
@@ -133,7 +133,7 @@ get_header(); ?>
 				</div> <!-- /end overlay -->
 			</div>
 
-			<div id="Staff-12" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429640.hd.mp4?s=173560769853be64276a145330dcee5e&profile_id=119' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-12.jpg'); background-size: cover; background-position: 50% 50%;">
+			<div id="Staff-12" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/142260233.hd.mp4?s=7d18ae7f42464896ce5df7caa9fc0c5e&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-12.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Sarah Stevens</h2>
@@ -196,7 +196,7 @@ get_header(); ?>
 
 
 
-			<div id="Staff-20" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429640.hd.mp4?s=173560769853be64276a145330dcee5e&profile_id=119' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-20.jpg'); background-size: cover; background-position: 50% 50%;">
+			<div id="Staff-20" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/142260199.hd.mp4?s=f54a67dad6e01aa6579c61d67d90f7bf&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-20.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Mel Yates</h2>
@@ -341,8 +341,8 @@ get_header(); ?>
 			<div id="staff-member__close"><p class="vertical-align sans-serif">X</p></div>
 			<h1 id="staff-member__name"></h1>
 			<h2 id="staff-member__position"></h2>
-			<h2 id="staff-member__department"></h2>
-			<p id="staff-member__about" class="first-para"></p>
+			<h2 id="staff-member__department" class="underlined"></h2>
+			<div id="staff-member__about"></div>
 			<p id="staff-member__did-you-know" class="sans-serif"></p>
 		</div>
 	</div>

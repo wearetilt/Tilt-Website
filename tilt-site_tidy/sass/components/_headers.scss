@@ -9,7 +9,6 @@ header{
         padding-top: 0px;
         padding-bottom: 0px;
         transform: translate3d(0,0,0);
-
         transition: all 0.5s ease 1s;
     }
 
@@ -193,7 +192,12 @@ header{
 }
 
 .header-text__module{
-    padding: 0% 4%;
+
+    padding: 0%;
+    @media handheld, screen and (min-width: $bp-desktop){
+   		 padding: 0% 4%; 
+    }
+    
     & + .header-text__module{
         margin-top: percentage(65/768);
     }
