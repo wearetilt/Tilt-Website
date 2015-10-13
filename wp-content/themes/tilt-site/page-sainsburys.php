@@ -23,14 +23,20 @@ get_header('work-item'); ?>
         </div>
     </div>
     <div class="container container--header">
-        <div class="header-title">
+       
+        <div class="header-title no--shadow">
+        	
+        	<img src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/bima_award_logo.png" alt="BIMA 2015 Nominee" />
+        	
             <p class="tag">Interactive</p>
             <h1>Sainsbury&lsquo;s <br />
                 <span class="light underlined">History Timeline</span>
             </h1>
             <h2 class="light services">Strategy | Design | Dev | Motion</h2>
         </div>
+        
         <div class="header-text">
+        
             <div class="header-text__module header-text__module--padded">
                 <h2>The Challenge</h2>
                 <p class="first-para">Convey Sainsbury’s prestigious history in a way that excites and engages people way beyond the usual flat and lifeless company timelines.</p>

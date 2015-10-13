@@ -28,7 +28,11 @@ get_header('work-item'); ?>
         </div>
     </div>
     <div class="container container--header">
-        <div class="header-title">
+        <div class="header-title no--shadow">
+        
+        	<img src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_awwwardsbadge.png" alt="Awwards" />
+        	<img class="no--float" src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_amrcbadge.png" alt="AMRC" />
+        
             <p class="tag">Interactive</p>
             <h1>Alzheimer's<br />
                 <span class="light underlined">The Lab</span>

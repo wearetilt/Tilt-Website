@@ -1,13 +1,13 @@
 /* PBS PASSION PICTURES WORK ITEM */
 #pbs{
-    background: #e9c54c; /* Old browsers */
-    background: -moz-linear-gradient(top,  #e9c54c 0%, #d3b746 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9c54c), color-stop(100%,#d3b746)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #e9c54c 0%,#d3b746 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #e9c54c 0%,#d3b746 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #e9c54c 0%,#d3b746 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #e9c54c 0%,#d3b746 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9c54c', endColorstr='#d3b746',GradientType=0 ); /* IE6-9 */
+    background: #e4c24b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e4c24b 0%, #d3b746 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4c24b), color-stop(100%,#d3b746)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e4c24b 0%,#d3b746 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e4c24b 0%,#d3b746 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e4c24b 0%,#d3b746 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e4c24b 0%,#d3b746 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4c24b', endColorstr='#d3b746',GradientType=0 ); /* IE6-9 */
 }
 
 #sainsburys{
@@ -19,6 +19,14 @@
     background: -ms-linear-gradient(top,  #f08cb6 0%,#dc7aa3 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #f08cb6 0%,#dc7aa3 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f08cb6', endColorstr='#dc7aa3',GradientType=0 ); /* IE6-9 */
+
+	& .header-title img { 
+		display:none;
+		@media handheld, screen and (min-width: $bp-desktop){
+			display:block;
+			margin-bottom:20px;
+		}
+	}
 }
 
 #alzheimers{
@@ -30,6 +38,20 @@
     background: -ms-linear-gradient(top,  #b477aa 0%,#a9639d 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #b477aa 0%,#a9639d 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b477aa', endColorstr='#a9639d',GradientType=0 ); /* IE6-9 */
+    
+    & .header-title img { 
+		display:none;
+		@media handheld, screen and (min-width: $bp-desktop){
+			float:left;
+			display:block;
+			margin:0px 20px 20px 0px;
+		}
+	}
+	
+	& .header-title img.no--float { 
+    	float:none;
+    }
+    
 }
 
 #codeit {
@@ -40,17 +62,6 @@
 	 -o-background-size: cover;
 	 background-size: cover;
 	 
-	 /*
-& img.award--right { 
-	 	 display:none;
-	 	 @media handheld, screen and (min-width: $bp-desktop){
-	 	 	display:block;
-		 	 margin-top:105px;
-			 float:right;
-		 }
-	 }
-*/
-
 	& img.award--right { 
 		display:none;
 		@media handheld, screen and (min-width: $bp-desktop){

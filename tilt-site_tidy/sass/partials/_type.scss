@@ -96,8 +96,8 @@ h3{
     }
 }
 
-p{
-    @include font-size(16);
+p {
+    @include font-size(12);
     @media handheld, screen and (min-width: $bp-desktop){
             @include font-size(16);
     }
@@ -292,21 +292,20 @@ ul {
 }
 
 blockquote{
-
-
+   @include font-size(20);
    font-family: $f-merriweather;
-   font-weight: 300;
-
-
-    @include font-size(35);
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: (25/20);
-
-    & + p {
-        margin-top: 20px;
-    }
+	   font-weight: 300;
+	   color: white;
+	   -webkit-font-smoothing: antialiased;
+	   -moz-osx-font-smoothing: grayscale;
+	   line-height: (25/20);
+    @media handheld, screen and (min-width: $bp-desktop){ 
+	    @include font-size(35);   
+	}
+	
+	 & + p {
+	        margin-top: 20px;
+	 }
 }
 
 .work-container p.sans-serif { margin:10px 0px 0px 0px; }

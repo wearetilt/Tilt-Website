@@ -28,7 +28,7 @@ get_header('work-item'); ?>
         </div>
     </div>
     <div class="container container--header">
-        <div class="header-title">
+        <div class="header-title no--shadow">
             <p class="tag">Interactive</p>
             <h1>Passion Pictures<br />
                 <span class="light underlined">Earth - A New Wild</span>

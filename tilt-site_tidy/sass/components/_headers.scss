@@ -13,13 +13,15 @@ header{
         transition: all 0.5s ease 1s;
     }
 
-    .header-title{
+    .header-title {
         h1, p{
             transform: translate3d(0,0,0);
             transition: all 0.5s ease 1.5s;
             opacity: 0;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+           
         }
+         
         h2{
             transform: translate3d(0,0,0);
             transition: all 0.5s ease 1.7s;
@@ -36,8 +38,13 @@ header{
         & + .header-text{
             margin-top: 20px;
         }
-           
+        
+        &.no--shadow h1 { text-shadow:none; }
+        &.no--shadow h2 { text-shadow:none; }
+        &.no--shadow p { text-shadow:none; }   
     }
+    
+     
 
     .header-text{
         transform: translate3d(0,0,0);
