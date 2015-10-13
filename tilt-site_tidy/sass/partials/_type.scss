@@ -112,6 +112,7 @@ p {
         margin-top: 1.8em;
     }
     
+    &.highlight { font-weight:700; }
 
     &.first-para, &.tag{
         &:before{
@@ -258,7 +259,14 @@ ul {
     & li + li{
         margin-top: 25px;
     }
-
+	
+	& li {
+		 @include font-size(12);
+		 @media handheld, screen and (min-width: $bp-desktop){
+            @include font-size(16);
+		 }
+	}
+	
     &.standard-list {
         li{
 

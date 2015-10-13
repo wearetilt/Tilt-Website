@@ -39,7 +39,7 @@ get_header('work-item'); ?>
 	 <div class="monitor-wrapper codeit-monitor">
 	 	
 	    <div class="monitor-holder">
-	    		<img class="ipad" src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall_v2.png" alt="">
+	    	 <img class="ipad" src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall_v2.png" alt="">
 	    	 <a href="http://www.nick.co.uk/_/code-it/" target="_blank">
                 <div class="overlay area-dark">
                     <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">

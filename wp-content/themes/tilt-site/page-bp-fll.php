@@ -13,15 +13,17 @@
 
  get_header('work-item'); ?>
 
- <header id="bp-fll" class="work-item area-dark">
-     <div class="monitor-holder">
-         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-         <div class="monitor-screen">
-             <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/web_fll_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
-         </div>
+ <header id="bp-fll" class="work-item area-dark ">
+     <div class="monitor-wrapper">
+	     <div class="monitor-holder">
+	         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+	         <div class="monitor-screen">
+	             <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/web_fll_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+	         </div>
+	     </div>
      </div>
      <div class="container container--header">
-         <div class="header-title">
+         <div class="header-title no--shadow">
              <p class="tag">Web</p>
              <h1>BP<br />
                  <span class="light underlined">First Level Leaders</span>
@@ -108,10 +110,10 @@
      <section class="carousel">
          <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
          <div class="carousel-images">
-             <div id="carousel-image-5"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_01_imacsmall.jpg')"></div>
-             <div id="carousel-image-6"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_02_imacsmall.jpg')"></div>
-             <div id="carousel-image-7"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_03_imacsmall.jpg')"></div>
-             <div id="carousel-image-8"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_04_imacsmall.jpg')"></div>
+             <div id="carousel-image-5" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_01_imacsmall.jpg')"></div>
+             <div id="carousel-image-6" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_02_imacsmall.jpg')"></div>
+             <div id="carousel-image-7" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_03_imacsmall.jpg')"></div>
+             <div id="carousel-image-8" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_04_imacsmall.jpg')"></div>
          </div> <!-- /end carousel-images -->
          <div class="carousel-controls">
              <div id="carousel-control-5" class="carousel-control selected"></div>

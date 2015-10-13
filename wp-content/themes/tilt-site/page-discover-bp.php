@@ -40,14 +40,18 @@ get_header('work-item'); ?>
 </header>
 
 <div class="container container--half-top container--discover-bp-gradient">
+	
     <div class="monitor-holder">
+        <img class="iphone" src="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/web_discover_iphone.jpg" alt="">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-        <div class="monitor-screen"></div>
+        <div class="monitor-screen">
+	        <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/web_discover_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+        </div>
     </div>
     <section class="text-section">
         <h2>LEARNING BY STEALTH</h2>
         <div class="text-section__para">
-            <p class="first-para">Why would employees spend time learning if they don’t have to?</p>
+            <p class="first-para highlight">Why would employees spend time learning if they don’t have to?</p>
             <p>When BP approached us to help create a website for new joiners, it was with this question in mind. Traditionally, BP provided new employees with a comprehensive overview of their organisation through a series of workshops. However, attendance was no longer mandatory, so they needed another approach.</p>
             <p>The BP team asked Tilt to create a portal that was compelling enough to encourage new joiners (and existing staff) to visit voluntarily.</p>
         </div>
@@ -196,13 +200,11 @@ get_header('work-item'); ?>
         <h2>WHAT WE MADE</h2>
         <div class="text-section__para">
             <p class="first-para">Among other things, we created:</p>
-            <ul class="standard-list">
-				<li><span class="serif highlight">Headline films:</span> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</li>
-				<li><span class="serif highlight">The Business of BP:</span> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</li>
-				<li><span class="serif highlight">Profile films:</span> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</li>
-				<li><span class="serif highlight">Infosheets and factsheets:</span> Turning traditional copy content into highly visual, easy-to-absorb pieces. Infosheets help communicate journeys and processes, while factsheets convey stat-heavy info.</li>
-				<li><span class="serif highlight">Leader films:</span> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</li>
-            </ul>
+        	<p><span class="serif highlight">Headline films:</span> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</p>
+			<p><span class="serif highlight">The Business of BP:</span> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</p>
+			<p><span class="serif highlight">Profile films:</span> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</p>
+			<p><span class="serif highlight">Infosheets and factsheets:</span> Turning traditional copy content into highly visual, easy-to-absorb pieces. Infosheets help communicate journeys and processes, while factsheets convey stat-heavy info.</p>
+			<p><span class="serif highlight">Leader films:</span> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</p>           
         </div>
     </section>
 </div>

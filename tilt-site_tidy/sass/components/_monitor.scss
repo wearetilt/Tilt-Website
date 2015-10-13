@@ -15,6 +15,18 @@
 	}
 }
 
+.iphone {
+	width:21%;
+	position:absolute;
+	bottom:-10px;
+	right:-20px;
+	z-index:1000;
+	@media handheld, screen and (min-width: $bp-desktop){
+	    bottom:-35px;
+	    right:-75px;
+	}
+}
+
 .monitor-holder{
     max-width: 768px;
     margin: 0px auto;
