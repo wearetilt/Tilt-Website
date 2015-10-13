@@ -196,12 +196,12 @@ get_header('work-item'); ?>
         <h2>WHAT WE MADE</h2>
         <div class="text-section__para">
             <p class="first-para">Among other things, we created:</p>
-            <ul>
-				<li><span class="serif">Headline films:</span> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</li>
-				<li><span class="serif">The Business of BP:</span> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</li>
-				<li><span class="serif">Profile films:</span> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</li>
-				<li><span class="serif">Infosheets and factsheets:</span> Turning traditional copy content into highly visual, easy-to-absorb pieces. Infosheets help communicate journeys and processes, while factsheets convey stat-heavy info.</li>
-				<li><span class="serif">Leader films:</span> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</li>
+            <ul class="standard-list">
+				<li><span class="serif highlight">Headline films:</span> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</li>
+				<li><span class="serif highlight">The Business of BP:</span> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</li>
+				<li><span class="serif highlight">Profile films:</span> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</li>
+				<li><span class="serif highlight">Infosheets and factsheets:</span> Turning traditional copy content into highly visual, easy-to-absorb pieces. Infosheets help communicate journeys and processes, while factsheets convey stat-heavy info.</li>
+				<li><span class="serif highlight">Leader films:</span> Short interviews with BP leaders, giving them the space to articulate their ideas for what makes someone succeed at BP.</li>
             </ul>
         </div>
     </section>

@@ -261,6 +261,8 @@ ul {
             & + li {
                 margin-top: 15px;
             }
+            
+            & .highlight { font-weight:700; }
 
             &:before {
                content: "·";

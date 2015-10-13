@@ -101,7 +101,7 @@ get_header('work-item'); ?>
             <div class="text-section__para">
                 <p class="first-para">Consider for a moment the unsaid messaging behind traditional corporate talking heads films: we know best; you’re on your own; do what we say.</p>
                 <p>Instead, we wanted to focus on storytelling, allowing viewers to emotionally connect with an idea, rather than listening to lectures. We devised each piece to follow the narrative of a newly transitioned leader battling with a decision around their new role. Scenarios include:</p>
-				<ul>
+				 <ul class="standard-list">
 					<li><span class="serif">A New Team</span></li>
 					<li><span class="serif">Managing Performance</span></li>
 					<li><span class="serif">High Performing Teams</span></li>
