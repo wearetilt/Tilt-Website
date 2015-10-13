@@ -32,6 +32,38 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b477aa', endColorstr='#a9639d',GradientType=0 ); /* IE6-9 */
 }
 
+#codeit {
+	background:url('../images/work/int_codeit/header_bg.jpg') no-repeat top center fixed;
+	background-color:none;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+	 
+	 /*
+& img.award--right { 
+	 	 display:none;
+	 	 @media handheld, screen and (min-width: $bp-desktop){
+	 	 	display:block;
+		 	 margin-top:105px;
+			 float:right;
+		 }
+	 }
+*/
+
+	& img.award--right { 
+		display:none;
+		@media handheld, screen and (min-width: $bp-desktop){
+			display:block;
+			position:absolute;
+			bottom:3%;
+			right:3%;
+		}
+	
+	}
+
+}
+
 .contact-title{
 
 }

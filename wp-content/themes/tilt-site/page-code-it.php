@@ -14,36 +14,44 @@
 get_header('work-item'); ?>
 
 <header id="codeit" class="work-item area-dark">
-    <div class="monitor-wrapper">
-        <div class="monitor-holder">
-            <a href="http://www.nick.co.uk/_/code-it/" target="_blank">
-                <div class="overlay area-dark">
-                    <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
-                </div>
-            </a>
-            <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-            <div class="monitor-screen">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
-            </div>
-        </div>
-    </div>
+    
 
     <div class="container container--header">
-        <div class="header-title">
+        
+         <div class="header-title light">
+            
             <p class="tag">Interactive: Case Study</p>
             <h1>Nickelodeon<br />
                 <span class="light underlined">Code-it</span>
             </h1>
             <h2 class="light">UX | Visual Design | Development | Motion</h2>
+                 
         </div>
+                
     </div>
+    
+    <img class="award--right" src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_awardsbadge.png" alt="Broadcast Digital Award Nominee" />
+    
 </header>
 
 <div class="container">
-    <div class="monitor-holder">
-        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-        <div class="monitor-screen"></div>
-    </div>
+	 
+	 <div class="monitor-wrapper codeit-monitor">
+	 	
+	    <div class="monitor-holder">
+	    		<img class="ipad" src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall_v2.png" alt="">
+	    	 <a href="http://www.nick.co.uk/_/code-it/" target="_blank">
+                <div class="overlay area-dark">
+                    <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
+                </div>
+            </a>
+	        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+	        <div class="monitor-screen">
+		        <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+	        </div>
+	    </div>
+	 </div>
+	 
     <section class="text-section">
         <h2>GIVING KIDS THE POWER TO WRITE CODE</h2>
         <div class="text-section__para">
@@ -163,8 +171,9 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>LIFTING THE SQUAREPANTS</h2>
         <div class="text-section__para">
+            
             <p class="first-para">We used several in-house skills to create this project:</p>
-            <ul>
+             <ul class="standard-list">
             	<li>HTML5 wizardry</li>
             	<li>UX design</li>
             	<li>Bright icon design</li>
@@ -196,17 +205,12 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>WHAT WE DID</h2>
         <div class="text-section__para">
-            <p class="first-para">HTML5</p>
-            <p>Animations are created and played back to the user in real time, as they create them using HTML5.</p>
-            <p class="first-para">UX Design</p>
-            <p>A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
-
-            <p class="first-para">Content & design</p>
-            <p>A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
-
-            <p class="first-para">Bespoke programming</p>
-            <p>The application is built in Haxe and HTML5, but we developed a new simplified coding language in a visual format so kids could use building blocks to create animations. This language / syntax is a blend of Haxe and JavaScript, but with the complexities and idiosyncrasies hidden from view. This approach means that kids can learn the core principles of programming without having to worry about the details.</p>
-
+                           
+	    	<p><span class="serif highlight">HTML5:</span> Animations are created and played back to the user in real time, as they create them using HTML5. This also means that the application can be used on tablet devices.</p>
+	    	<p><span class="serif highlight">UX Design:</span> A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
+	    	<p><span class="serif highlight">Content & design:</span> A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
+	    	<p><span class="serif highlight">Bespoke programming:</span> The application is built in Haxe and HTML5, but we developed a new simplified coding language in a visual format so kids could use building blocks to create animations. This language / syntax is a blend of Haxe and JavaScript, but with the complexities and idiosyncrasies hidden from view. This approach means that kids can learn the core principles of programming without having to worry about the details.</p>
+            
         </div>
     </section>
 </div>

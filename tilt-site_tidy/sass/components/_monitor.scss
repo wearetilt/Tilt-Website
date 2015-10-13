@@ -1,3 +1,20 @@
+.monitor-wrapper {
+	&.codeit-monitor { padding-bottom:130px; }
+}
+
+
+.ipad {
+	width: 40%;
+	position:absolute;
+	bottom:-10px;
+	right:-20px;
+	z-index:1000;
+	@media handheld, screen and (min-width: $bp-desktop){
+	    bottom:-20px;
+	    right:-120px;
+	}
+}
+
 .monitor-holder{
     max-width: 768px;
     margin: 0px auto;
@@ -84,7 +101,7 @@ header {
     .monitor-wrapper{
         padding-top: 63px;
     }
-
+	
     .monitor-holder{
         z-index: 1;
         max-width: 768px;
