@@ -16,7 +16,7 @@ get_header('work-item'); ?>
 <header id="i360" class="work-item area-dark container--i360-gradient">
     <div class="monitor-wrapper">
 	    <div class="monitor-holder">
-	        <a href="www.google.com">
+	        <a href="http://www.brightoni360.co.uk/" target="_blank">
 	            <div class="overlay area-dark">
 	                <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
 	            </div>
@@ -28,10 +28,10 @@ get_header('work-item'); ?>
 	    </div>
     </div>
     <div class="container container--header">
-        <div class="header-title">
+        <div class="header-title no--shadow">
             <p class="tag">Web</p>
-            <h1>i360<br />
-                <span class="light underlined">Promotional Website</span>
+            <h1>Brighton i360<br />
+                <span class="light underlined">Website</span>
             </h1>
             <h2 class="light services">Design | Dev</h2>
         </div>

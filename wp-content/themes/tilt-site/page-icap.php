@@ -24,7 +24,7 @@ get_header('work-item'); ?>
 	</div>
 
     <div class="container container--header">
-        <div class="header-title">
+        <div class="header-title no--shadow">
             <p class="tag">Interactive</p>
             <h1>ICAP<br />
                 <span class="light underlined">Graduate Portal</span>
