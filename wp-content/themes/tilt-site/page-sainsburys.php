@@ -70,7 +70,6 @@ get_header('work-item'); ?>
                         <div class="module__text">
                             <h2 class="underlined">What we did</h2>
                             <p class="first-para">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
-                            <p>We created a unique iterative loader to deliver a smooth experience.</p>
                         </div>
                     </div>
                     <div class="module module--2-1">
@@ -92,8 +91,7 @@ get_header('work-item'); ?>
                 <div class="group group--left">
                     <div class="module module--2-1 module--text-pad module--dark">
                         <div class="module__text">
-                            <p>“We are really happy with the result and it has been getting great feedback internally. I am so pleased with the work you have produced, it would be really great if you were able to work with other teams in Sainsbury’s as well as L&amp;D.”</p>
-                            <p>Joe Kelly - Behavioural Specialist in Learning &amp; Development</p>
+                            <p>We created a unique iterative loader to deliver a smooth experience to all users regardless of device or bandwidth. Finally, our modular approach to the timeline build makes it easy to embed on other sites.</p>
                         </div>
                     </div>
                 </div>
@@ -129,6 +127,13 @@ get_header('work-item'); ?>
     <div class="container container--no-padding image-container">
     	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/int_sain_05_hz.jpg" alt="Sainbury's Cars" />
     </div>
+    
+    <div class="container quote-container area-dark">
+	    <section class="text-section">
+	            <blockquote>“We are really happy with the result and it has been getting great feedback internally. I am so pleased with the work you have produced, it would be really great if you were able to work with other teams in Sainsbury’s as well as L&D.”</blockquote>
+	            <p class="sans-serif quote-attribute"><strong class="highlight">Joe Kelly</strong> Behavioural Specialist in Learning & Development</p>
+	    </section>
+	</div>
 
     <!-- TODO: Add Video and Images of Cars Thang -->
 
