@@ -17,7 +17,10 @@
 
 get_header(); ?>
 
-		<?php if ( have_posts() ) : ?>
+		<?php 
+			
+			query_posts('cat=-9');
+			if ( have_posts() ) : ?>
 
 			<?php
 			// Start the Loop.

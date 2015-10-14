@@ -14,7 +14,8 @@ get_header('home'); ?>
 	 'posts_per_page' => 1,
 	 'order_by' => 'date',
 	 'post_type' => 'post',
-	 'post_status' => 'publish'
+	 'post_status' => 'publish',
+	 'category'         => '-9',
  );
 
  $posts_array = get_posts( $args );

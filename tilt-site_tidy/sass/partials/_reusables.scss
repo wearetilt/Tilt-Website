@@ -1,5 +1,6 @@
 $base-font-size: 16;
 $bp-desktop: 768px;
+$bp-desktop-large: 1024px;
 
 @function em($px, $context: $base-font-size) {
 	@return #{$px/$context}em;

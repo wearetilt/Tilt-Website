@@ -25,7 +25,6 @@ get_header('news'); ?>
 				<div class="header-title">
 					<p class="tag">News</p>
 					<h1 class="underlined"><? the_title(); ?></h1>
-
 				</div>
 			</div>
 		</div>
@@ -35,13 +34,16 @@ get_header('news'); ?>
 <div class="news-wrapper">
 	<div class="news-container">
 		<div>
-			<h2 class="light news-date"><?php echo get_the_date(); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id );?> BY <span class="author-name"><?php echo get_the_author_meta('display_name', $post_author_id);?></span></h2>
-			<h2>Share: Email Facebook Twitter</h2>
+			<div id="social">
+				<?php echo do_shortcode('[feather_share]'); ?>
+			</div>			
+			<h2 class="light news-date"><?php echo get_the_date('d F Y'); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id );?> BY <span class="author-name"><?php echo get_the_author_meta('display_name', $post_author_id);?></span></h2>
 		</div>
 		<div class="intro-text">
-			<p><?php the_field('intro_text'); ?></p>
+			<?php the_field('intro_text'); ?>
 		</div>
 	</div>
+			
 	<div class="container container--no-padding area-dark">
 		<div class="group-container">
 			<div class="group group--left">
@@ -62,6 +64,7 @@ get_header('news'); ?>
 			</div>
 		</div>
 	</div>
+	
 	<div class="news-container">
 		<p><?php the_field('main_body_of_text'); ?></p>
 	</div>
@@ -76,8 +79,34 @@ get_header('news'); ?>
 	<?php  } ?>
 </div>
 <div class="group-container">
-	<a class="project-navigation" href="">< Previous News</a>
-	<a class="project-navigation" href="">Next News ></a>
+
+	<?php
+		$next_post = get_next_post(9);
+		$previous_post = get_previous_post(9);
+		
+		if (!empty( $previous_post )): ?>
+			<a class="project-navigation" href="<?php echo get_permalink( $previous_post->ID ); ?>">Previous Job</a>	
+	<?php endif; 
+		
+		if (empty( $previous_post )): ?>
+			<a class="project-navigation" href="#"></a>
+	<?php endif;
+	?>
+
+	<?php
+		
+		if (!empty( $next_post )): ?>
+			<a class="project-navigation" href="<?php echo get_permalink( $next_post->ID ); ?>">Next Job</a>	
+	<?php endif; ?>
+	
+	<?php
+		
+		if (empty( $next_post )): ?>
+			<a class="project-navigation" href="#"></a>	
+	<?php endif; ?>
+	
+	
+	
 </div>
 
 </div>
