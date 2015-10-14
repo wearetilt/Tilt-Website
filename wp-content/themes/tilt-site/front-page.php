@@ -30,11 +30,40 @@ get_header('home'); ?>
 
 ?>
 
+<script type="text/javascript">
+	
+	var wordArray = ['Entertainers','Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Digital, Beautifully Made', 'Tilt'];
+	var maxLoops = wordArray.length;
+	var counter = 0;
+		
+	(function next() {
+	    
+	    if (counter < maxLoops) {
+		    
+		    
+		    setTimeout(function() {
+	        	document.getElementById('strapline-text').innerHTML = wordArray[counter];
+				next();
+				counter++;
+				if(counter == maxLoops) { counter = 0; }
+				
+			}, 2000);
+		    
+		    
+	    } else {
+		    counter = 0;
+		    next();
+	    }
+	
+	})();
+	
+</script>
+
 <header id="home-page" class="work-item work-item--motion area-dark">
 	<div class="module--video module--16-9 module--header">
 		<div class="ratio">
 			<div class="container container--header strapline-container">
-				<h1>We Are <strong id="strapline-text" class="highlight">Time Travellers</strong></h1>
+				<h1>We Are <strong id="strapline-text" class="highlight">Entertainers</strong></h1>
 				<a href="<?php echo site_url(); ?>/work">
 					<div class="cube">
 						<div class="cube--front cube--front__no-bg">
@@ -59,6 +88,7 @@ get_header('home'); ?>
     </a>
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+				
 		<a href="<?php echo site_url(); ?>/contact">
 			<div class="cube">
 				<div class="cube--front">

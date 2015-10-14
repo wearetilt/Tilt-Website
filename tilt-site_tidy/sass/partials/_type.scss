@@ -40,6 +40,16 @@ h1 {
             width: em(150,75);
         }
     }
+    
+    .strapline-container & {
+	    
+	    @include font-size(25);
+		@media handheld, screen and (min-width: $bp-desktop){
+        	@include font-size(70);
+		}
+
+	    
+    }
 }
 
 h2{
