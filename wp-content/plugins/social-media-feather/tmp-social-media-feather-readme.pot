@@ -1,0 +1,630 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Social Media Feather - lightweight social media sharing and follow buttons"
+msgstr ""
+
+#. Short description.
+msgid "Super lightweight, simple, nice, modern looking and effective social media sharing and following buttons and icons on your site quick and easy"
+msgstr ""
+
+#. Screenshot description.
+msgid "An example of how the sharing or following buttons appear in the front-end at 64 pixel resolution"
+msgstr ""
+
+#. Screenshot description.
+msgid "An example of how the share or follow icons appear in the front-end at 24 pixel resolution"
+msgstr ""
+
+#. Screenshot description.
+msgid "An example of how the following or sharing links appear in the front-end using the <a href=\"http://synved.com/product/feather-extra-social-icons/\" title=\"Add 8 extra social icon skins to the Social Media Feather plugin!\">Extra Social Icons addon</a>"
+msgstr ""
+
+#. Screenshot description.
+msgid "Showing how using the <a href=\"http://synved.com/product/feather-grey-fade/\" title=\"Customize any of the available social icon skins with 2 cool effects!\">Grey Fade addon</a> transforms the sharing or following buttons in the front-end"
+msgstr ""
+
+#. Screenshot description.
+msgid "A demo of how social media providers can be customized in the back-end"
+msgstr ""
+
+#. Screenshot description.
+msgid "An view of some of the settings that can be customized in Social Media the back-end"
+msgstr ""
+
+#. Screenshot description.
+msgid "This shows the available social sharing and following widgets and their settings"
+msgstr ""
+
+#. Found in description header.
+msgid "Features"
+msgstr ""
+
+#. Found in description header.
+msgid "Example Shortcodes"
+msgstr ""
+
+#. Found in description header.
+msgid "Template Tags"
+msgstr ""
+
+#. Found in description header.
+msgid "Related Links:"
+msgstr ""
+
+#. Found in description list item.
+msgid "Integrated WordPress social sharing for all your posts"
+msgstr ""
+
+#. Found in description list item.
+msgid "Full support for <strong>Retina</strong> and high resolution displays"
+msgstr ""
+
+#. Found in description list item.
+msgid "WordPress social sharing and following widgets"
+msgstr ""
+
+#. Found in description list item.
+msgid "Supports all major providers of social features"
+msgstr ""
+
+#. Found in description list item.
+msgid "Sharing with Facebook, Twitter, Google+, reddit, Pinterest, tumblr, Linkedin and e-mail"
+msgstr ""
+
+#. Found in description list item.
+msgid "Following on Facebook, Twitter, Google+, Pinterest, Linkedin, YouTube, tumblr, instagram, flickr, foursquare, vimeo or RSS Feed"
+msgstr ""
+
+#. Found in description list item.
+msgid "Each social provider can be enabled or disabled"
+msgstr ""
+
+#. Found in description list item.
+msgid "Ability to select what services each provider will be exposed for"
+msgstr ""
+
+#. Found in description list item.
+msgid "Full customization for titles and URLs for each provider"
+msgstr ""
+
+#. Found in description list item.
+msgid "Super lightweight social sharing and following"
+msgstr ""
+
+#. Found in description list item.
+msgid "Fast unobtrusive social bookmarks for your site"
+msgstr ""
+
+#. Found in description list item.
+msgid "Comes with a default modern icon set"
+msgstr ""
+
+#. Found in description list item.
+msgid "For further customization more <a href=\"http://synved.com/product/feather-extra-social-icons/\" title=\"Add 8 extra social icon skins to the Social Media Feather plugin!\">social icons skins</a> are available"
+msgstr ""
+
+#. Found in description list item.
+msgid "Available skins can be customized with cool effects like <a href=\"http://synved.com/product/feather-grey-fade/\" title=\"Customize any of the available social icon skins with 2 cool effects!\">fading and greying out</a> social icons"
+msgstr ""
+
+#. Found in description list item.
+msgid "If you like them you can get <a href=\"http://synved.com/product/feather-light-prompt/\" title=\"Nice lightweight social sharing counters using the Light Prompt addon\">social sharing counters</a> that load dynamically, only when necessary, thus not weighing in on visitors who don't use them"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://synved.com/wordpress-social-media-feather/\" title=\"WordPress Social Media Feather – lightweight WordPress social sharing and following\">WordPress Social Media Plugin Official Page</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://synved.com/product/feather-extra-social-icons/\" title=\"Add 8 extra social icon skins to the Social Media Feather plugin!\">Extra Social Icons Skins</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://synved.com/product/feather-grey-fade/\" title=\"Customize any of the available social icon skins with 2 cool effects!\">Grey Fade addon that can grey out and fade out any social icons set</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://synved.com/product/feather-light-prompt/\" title=\"Add counters for social shares using Light Prompt\">Light Prompt that adds counts for social shares</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://synved.com/\">Our own site</a> where you can see social sharing and following in action"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://wpdemo.synved.com/stripefolio/\">Stripefolio theme demo</a> where you can see some of the social sharing and following features in action"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://synved.com/stripefolio-free-wordpress-portfolio-theme/\" title=\"A free WordPress theme that serves as a readable blog and a full-screen portfolio showcase\">The free Stripefolio WordPress portfolio theme</a> the Official page for the theme in the above demo link"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"http://synved.com/wordpress-social-media-feather/\" title=\"Lightweight WordPress social sharing and following\">WordPress Social Media Feather</a> is a super lightweight free social media WordPress plugin that allows you to quickly and painlessly add <strong>social sharing and following</strong> features to all your posts, pages and custom post types."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The plugin supports adding of social buttons for sharing or following (that is, social buttons that link to your social network profiles pages). The social media buttons can be easily and automatically be added to all your posts, pages or any other <strong>custom post types</strong>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Check out this introductory tutorial on <a href=\"http://youtu.be/iJAq2nJi6BM\">how to install and get started with Social Media for WordPress</a> by a helpful user of Social Media Feather!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "https://www.youtube.com/watch?v=iJAq2nJi6BM"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Now the only social sharing and bookmarking plugin with full support for the <strong>Retina and high resolution displays</strong> as used in iPad 5 and other devices!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The primary goal behind the plugin is to provide very lightweight WordPress social sharing and following that doesn’t add any unnecessary burden to your site and especially on your users, so you can easily add share buttons and social profiles links to your posts and pages automatically and speedily."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "What sets WordPress Social Media Feather aside from the plethora of other social sharing and following WordPress plugins is its focus on simplicity, performance and unobtrusive impact. Social share buttons and links to your social pages are fast to setup with automatic display or social widgets."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "In order to achieve higher performance the plugin makes no use of JavaScript and as a consequence it’s <strong>really fast</strong> while still providing all the social media functionality you might need, like very professional social share buttons with high quality icons."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "By keeping load times at a minimum, you ensure that all the social sharing aspects of your site don’t interfere with those visitors who just want to access the content but are not interested in sharing on social media platforms."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "On the other hand, given the widespread focus on WordPress social media integration, your site will still provide social bookmarks and share buttons to improve visibility of your posts and content and improve your overall global reach on social platforms."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The <strong>WordPress social media sharing</strong> offered by the plugin includes all major social sharing buttons providers like Facebook, Twitter, Google+, reddit, Pinterest, tumblr, Linkedin and even e-mail."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "It will show social buttons that your users can click to share to facebook or tweet your posts and pages on your site or submit it to reddit and google plus or publish it on tumblr and all other social sharing networks."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The <strong>WordPress social media following</strong> offered by the plugin includes all major social network providers and tools like Facebook, Twitter, Google+, Pinterest, Linkedin, YouTube, tumblr, instagram, flickr, foursquare, vimeo or RSS."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Our social media plugin also offers widgets for sharing and following buttons that you can place in any widgetized area in your site and the widgets also expose some settings and parameters to tweak the appearance of the social buttons. The plugin also provides shortcodes that can be used for the same purpose, creating both share and follow buttons and allowing selection of visibility of different social media networks or reordering how the various social networks appear (see example shortcodes at the bottom)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can disable automatic rendering of social icons for specific posts by using <em>Custom Fields</em>. Simply set a custom field of <code>synved_social_exclude_share</code> to \"yes\" (without quotes) to disable rendering of sharing buttons on the post/page or <code>synved_social_exclude_follow</code> to \"yes\" (without quotes) to remove following buttons from the post or alternatively <code>synved_social_exclude</code> to disable both. The <em>Custom Fields</em> editor needs to be enabled on your post/page edit screen by clicking at the top right where it says \"Screen Options\"."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This shortcode will create a list of social sharing buttons to share content on your site:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This shortcode will create a list of social media sharing buttons to share content on your site, only showing Google+, Twitter and Facebook, in that specific order:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can change the order of displayed buttons by changing the order of keywords:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This shortcode will create a list of social sharing buttons to share content on your site using the \"Wheel\" icons skin:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This shortcode will create a list of social media sharing buttons to share content on your site using the default icon skin with a size of 64 pixels:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can add a custom CSS class to your share buttons using the \"class\" attribute:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can combine all the parameters above to customize the look, for instance using the \"Wheel\" icon skin at a size of 64 pixels and only showing Google+, Twitter and Facebook, in that specific order:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The next shortcode will create a list of social following buttons that allow visitors to follow you:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The next shortcode will create a list of social following buttons that allow visitors to follow you, using the \"Balloon\" icons skin:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can add a custom CSS class to your social profiles buttons using the \"class\" attribute:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The next shortcode will create a list of social media following buttons that allow visitors to follow you, using the \"Balloon\" icons skin with a size of 64 pixels:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can specify a manual URL to be used for the sharing buttons:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "If you don't want to use shortcodes but instead prefer to use PHP directly, there are 2 PHP functions/template tags you can use."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For sharing buttons you can use:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For following buttons you can use:"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Download the Social Media Feather plugin"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Simply go under the Plugins page, then click on Add new and select the plugin's .zip file"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Alternatively you can extract the contents of the zip file directly to your <em>wp-content/plugins/</em> folder"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Finally, just go under Plugins and activate the plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed text domain to reflect plugin slug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Disable credit link by default"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed addon installer's path calculation for rare cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor adjustments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated social network links descriptions to be more clear"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Cache provider list to improve performance when social buttons are shown many times"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Strip HTML from titles in sharing links"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for certain Fancybox plugins loading lightboxes on sharing images"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added <code>image</code> attribute for shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for Easy Digital Downloads adding HTML tags to titles that were then posted to social sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for certain quote characters not being properly converted on share"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Performance improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for PHP notice in rare cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Prevent certain fancybox plugins from trying to open fancybox on share/follow icons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adjusted description"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added documentation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added author_wp variable for built-in WordPress author name"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-compressed all large icon sets to slightly reduce file size"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor tweaks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added url_trimmed variable that trims extra slashes off of the URL"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added short_url variable that always contains the shortened URL"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix automatic displaying of share/follow buttons on single posts only"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated all images to \"optimized\" versions to silence certain analytical tools"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed issue for correct detection of home page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added two filters for shortcode parameters: synved_social_shortcode_variable_list and synved_social_shortcode_parameter_list"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Additional fix for \"ghost\" prefixes appearing in odd cases for non-single pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for \"ghost\" prefixes appearing in certain cases for non-single pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adjusted some descriptions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added alignment options for both sharing and following buttons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added date variable"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for RSS feeds displaying double resolution images "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Attempt suggesting meta values to Facebook (it seems to ignore them at this time though)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for esc_url strictness"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed escaping of quote and double quote characters"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added mail as follow provider for \"contact us\" buttons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added %%author%% template variable for URL substitution"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "For automatic display, allow positioning of buttons both before and after post content"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pick first image in the post when featured image is not set"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added buttons container options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Misc adjustments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Small fix to default URL"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Appearance fix in admin settings page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed typo"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Facebook icons according to newest branding changes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added social providers instagram, flickr and foursquare"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed titles not displaying certain special characters properly"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed share URL being incorrect in some instances like subdir installs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some issues on certain windows hosting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed installation of addons in certain peculiar environments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option for RTL layouts sites"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor fixes and adjustments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added social providers tumblr and vimeo"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Assorted minor fixes and tweaks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for potential conflicts with some other plugins"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed validation error for e-mail link"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed invalid index notices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added ability to specify position for both share and follow buttons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added options for prefix and postfix markup for individual buttons sets"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed warning when in debug mode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak the new Retina display code to work more accurately"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for share URL being incorrect in certain cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for addons being deleted by WordPress on automatic upgrade (this will work from the next version, sorry about that!)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for Retina and other high resolution displays"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix exclusion checks for custom post types"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to share full URL instead of single post/page URL"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix check for single posts to include all singular pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Set image dimensions attributes to match icon size"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for images stacking vertically in some themes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for automatic follow not shown when automatic share was disabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to limit automatic appending to single post/pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Pinterest as sharing and following network"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added ability to automatically append following buttons as well"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added ability to disable automatic appending for posts with custom fields"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added class, show and hide parameters to shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "First public release."
+msgstr ""
+
+#. Found in faq header.
+msgid "How can I see the social icons in action?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I disable rendering of sharing / bookmarking buttons on a specific post/page?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I disable rendering of social profiles follow buttons on a specific post/page?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I change the Twitter button to twit the title of the post instead of the message \"Hey, check this out\"?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I only show sharing buttons in my sidebar, rather than under each post?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I only show follow buttons in my sidebar, rather than under each post?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Have a look at <a href=\"http://synved.com/\">our site</a> or the <a href=\"http://wpdemo.synved.com/stripefolio/\">Stripefolio portfolio theme demo</a> where you can see the social sharing and following features in action"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can achieve this by using <em>Custom Fields</em>. Simply set a custom field of <code>synved_social_exclude_share</code> to \"yes\" (without quotes) to disable share buttons on the post or page. Alternatively set <code>synved_social_exclude</code> to \"yes\" (without quotes) to disable both sharing and following."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can achieve this by using <em>Custom Fields</em>. Simply set a custom field of <code>synved_social_exclude_follow</code> to \"yes\" (without quotes) to remove following buttons from the post or page. Alternatively set <code>synved_social_exclude</code> to \"yes\" (without quotes) to disable both sharing and following."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can achieve this by editing the Twitter Share Link under Settings -&gt; Social Media from this:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "to this:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Go to Settings -&gt; Social Media and under \"Automatic Display\" uncheck \"Display Sharing Buttons\" as well as \"Display Follow Buttons\". Then go under Appearance -&gt; Widgets and add the \"Social Media Feather: Sharing\" widget to your sidebar."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Go to Settings -&gt; Social Media and under \"Automatic Display\" uncheck \"Display Sharing Buttons\" as well as \"Display Follow Buttons\". Then go under Appearance -&gt; Widgets and add the \"Social Media Feather: Follow Us\" widget to your sidebar."
+msgstr ""

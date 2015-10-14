@@ -35,8 +35,8 @@ get_header(); ?>
 		<h1>Job-board</h1>
 	</div>
 	<div class="group-container">
-		<div class="group group--left">
-			<a href="https://www.wearetilt.com/downloads/tilt_interactive_designer_20150918.pdf" target="_blank">
+		<div class="group group--left group--jobs">
+			<a href="../interactive-designer" target="_blank">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text designer">
 						<h2 class="light">Web Designer</h2>
@@ -44,28 +44,28 @@ get_header(); ?>
 					</div>
 				</div>
 			</a>
-			<a href="mailto:recruitment@wearetilt.com">
+			<a href="../design-freelancers">
 				<div class="module module--1-1 module--job module--visible area-dark">
-					<div class="module__text motion">
+					<div class="module__text designer">
 						<h2 class="light">Design Freelancer</h2>
 						<p>Are you a web designer looking for freelance work? Send us your portfolio.</p>
 					</div>
 				</div>
 			</a>
 		</div>
-		<div class="group group--right">
-			<a href="mailto:recruitment@wearetilt.com">
+		<div class="group group--right group--jobs">
+			<a href="../motion-freelancers">
 				<div class="module module--1-1 module--job module--visible area-dark">
-					<div class="module__text dev">
+					<div class="module__text motion">
 						<h2 class="light">Motion Freelancer</h2>
 						<p>We are on the look out for freelance animators. Send us your showreel.</p>
 					</div>
 				</div>
 			</a>
-			<a href="mailto:recruitment@wearetilt.com">
+			<a href="../motion-internship">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text admin">
-						<h2 class="light">Motion Intern</h2>
+						<h2 class="light">Internship</h2>
 						<p>Looking for a career in motion and animation? Enthusiastic? Show us!</p>
 					</div>
 				</div>

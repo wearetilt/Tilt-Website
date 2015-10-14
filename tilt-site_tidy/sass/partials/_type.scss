@@ -66,7 +66,8 @@ h2{
     }
 
     &.news-date{
-        @include font-size(20);
+    	padding-top:10px;
+        @include font-size(16);
         font-family: $f-seroot-lt;
         color: $c-grey-94;
     }
@@ -180,8 +181,8 @@ p {
     }
 
     .intro-text &{
-     @include font-size(35);
-     font-family: $f-seroot-lt;
+     	@include font-size(35);
+	 	font-family: $f-seroot-lt;
     }
 
     &.quote-attribute{
@@ -197,6 +198,16 @@ p {
         }  
 	    
     }
+    
+    .news-container .intro-text & { 
+	    @include font-size(20);
+	 	font-family: $f-merriweather;
+	 	font-weight:300;
+	 	@media handheld, screen and (min-width: $bp-desktop){
+	 		@include font-size(30);
+	 	}
+    }
+    
 }
 
 .careers p.first-para {
@@ -227,6 +238,14 @@ a{
     	color: $c-tilt-pink; 
     	text-transform:none;
     }
+    
+    .news-container & {
+    	font-family: $f-merriweather;
+		font-weight:300;
+	    color: $c-tilt-pink; 
+    	text-transform:none;
+    }
+    
 }
 
 strong, b{

@@ -61,17 +61,32 @@
 
 
     #news &.container--header-news{
+        
         padding: 0;
         opacity: 1 !important;
+        
         .header-title{
             padding-top: percentage(55/1270);
             width: 100%;
 
             .tag{
-                padding-bottom: percentage(18/1270);
+                padding-bottom:0.5%;
             }
         }
+        
+        & .intro-text { margin-top:30px; }
     }
+      
+}
+
+.news-wrapper {
+	
+	 & .intro-text { 
+	 	margin:75px 0px 75px 0px; 
+	 }
+	 
+	 & #social { float:right; }
+	
 }
 
 #carreers {
@@ -83,6 +98,11 @@
 
 .container--no-padding{
     padding: 0px;
+}
+
+.container--newsvideo { 
+	padding-top:40px;
+	padding-bottom:40px; 
 }
 
 .container--carousel{
@@ -179,8 +199,9 @@ section{
         @extend %clearfix;
         position: relative;
     }
-
+	
     @media handheld, screen and (min-width: $bp-desktop){
+        
         .group{
             width: 50%;
         }
@@ -192,6 +213,13 @@ section{
             float: right;
         }
 
+    }
+    
+    .group--jobs {
+	    width:100%;
+	    @media handheld, screen and (min-width: $bp-desktop-large){
+	    	width: 50%;
+	    }
     }
 
     &.careers .group--left {

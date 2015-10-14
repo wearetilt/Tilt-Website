@@ -53,7 +53,7 @@
 
 		.module__text {
 			height:100%;
-			padding: 40% 7%;
+			padding: 45% 5%;
 
 
 			&.designer {
@@ -62,13 +62,13 @@
 			}
 
 			&.motion {
-	        	background: url('../images/careers/motion.png') center 10% no-repeat;
-				&:hover{ background: url('../images/careers/motion_hover.png') center 10% no-repeat; }
+	        	background: url('../images/careers/motion.png') center 17% no-repeat;
+				&:hover{ background: url('../images/careers/motion_hover.png') center 17% no-repeat; }
 			}
 
 			&.dev {
-	        	background: url('../images/careers/developer.png') center 10% no-repeat;
-				&:hover{ background: url('../images/careers/developer_hover.png') center 10% no-repeat; }
+	        	background: url('../images/careers/developer.png') center 17% no-repeat;
+				&:hover{ background: url('../images/careers/developer_hover.png') center 17% no-repeat; }
 			}
 
 			&.admin {
