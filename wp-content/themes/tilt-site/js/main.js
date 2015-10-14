@@ -10,6 +10,15 @@
 /*global self, document, DOMException */
 
 /*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
+var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+    // At least Safari 3+: "[object HTMLElementConstructor]"
+var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
+
+console.log(isChrome);
 
 if ("document" in self) {
 
@@ -1362,7 +1371,11 @@ if(document.getElementById('staff-member')){
 					// console.log('Mouse has entered');
 					videoFunction = setTimeout(function(){
 						if(!that.children[1]){
-							document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+							if(isChrome){
+								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+							} else{
+								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+							}
 						}
 							var ratio2 = that.children[1];
 							var video2 = ratio2.children[0];

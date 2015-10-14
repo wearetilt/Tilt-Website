@@ -55,8 +55,6 @@ get_header(); ?>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
-
-
 			<div id="staff-16" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429654.hd.mp4?s=0cae44a120603e193d8569d9e039118b&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-16.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
@@ -279,7 +277,7 @@ get_header(); ?>
 	    }
 	};
 
-	httpRequest.open('GET', 'http://localhost/~jonathanmalyon/tilt-website/tilt-site_tidy/staff.json', true);
+	httpRequest.open('GET', 'http://localhost/tilt-website/tilt-site_tidy/staff.json', true);
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
 
