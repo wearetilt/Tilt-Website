@@ -32,21 +32,16 @@ get_header('home'); ?>
 
 <script type="text/javascript">
 	
-	var wordArray = ['Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Digital, Beautifully Made', 'Tilt'];
+	var wordArray = ['Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Digital', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
 	
 		
 	jQuery(document).ready(function(){
-		
-		
+
 	(function next() {
 	    
 	    if (counter < maxLoops) {
-		    
-		    
-		    // fade out - on complete change word, then fade in
-		    
 		    
 		    setTimeout(function() {
 	        	
@@ -59,14 +54,9 @@ get_header('home'); ?>
 					if(counter == maxLoops) { counter = 0; }
 		        	
 	        	});
-	        	
-	        	
-				
 				
 			}, 2000);
-			
-		    
-		    
+			   
 	    } else {
 		    counter = 0;
 		    next();
