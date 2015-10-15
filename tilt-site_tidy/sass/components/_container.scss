@@ -284,7 +284,9 @@ section{
 
 .news-container{
     @extend %clearfix;
-    padding: 0 percentage(64/1270);
+    padding: 0  percentage(64/1270);
+    
+    &.news--footer { padding-bottom:5%; }
 }
 
 .img-container{

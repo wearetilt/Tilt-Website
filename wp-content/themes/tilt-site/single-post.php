@@ -65,7 +65,7 @@ get_header('news'); ?>
 		</div>
 	</div>
 	
-	<div class="news-container">
+	<div class="news-container news--footer">
 		<p><?php the_field('main_body_of_text'); ?></p>
 	</div>
 

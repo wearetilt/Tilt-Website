@@ -43,10 +43,21 @@
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/staff">About</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/news">News</a></li>
-                <li class="menu__item"><a href="">Bakery</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/careers">Careers</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
             </ul>
+            
+            <div class="nav-icons">
+				<div id="nav-icon-1" class="nav-icon"><a href="https://www.facebook.com/wearetilt" target="_blank" ></a></div>
+				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" target="_blank" ></a></div>
+				<div id="nav-icon-3" class="nav-icon"><a href="https://vimeo.com/wearetilt/" target="_blank" ></a></div>
+				<div id="nav-icon-4" class="nav-icon"><a href="https://instagram.com/we_are_tilt" target="_blank" ></a></div>
+				<div id="nav-icon-5" class="nav-icon"><a href="http://bakery.wearetilt.com/" target="_blank" ></a></div>
+				<div class="telephone">
+					<span>Tel: + 44(0)1273 675 700</span>
+				</div>
+			</div> <!-- /end nav-icons --> 
+            
         </div> <!-- /end menu -->
     </nav>
 	<div class="wrapper"> <!-- Open Wrapper -->

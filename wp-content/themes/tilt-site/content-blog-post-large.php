@@ -19,7 +19,7 @@
 <a href="<?php echo get_permalink(get_the_id()); ?>">
 	<div id="post=<?php the_ID();?>" class="overlay area-dark">
 		<div class="overlay-text">
-			<p class="tag"><?php echo get_the_date('F Y'); ?></p>
+			<p class="tag"><?php echo get_the_date('d M Y'); ?></p>
 			<h2><span class="underlined"><?php the_title( ); ?></span></h2>
 			<p class="sans-serif"><?php echo get_the_excerpt(); ?></p>
 		</div> <!-- /end overlay-text -->
