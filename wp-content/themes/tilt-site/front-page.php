@@ -32,22 +32,39 @@ get_header('home'); ?>
 
 <script type="text/javascript">
 	
-	var wordArray = ['Entertainers','Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Digital, Beautifully Made', 'Tilt'];
+	var wordArray = ['Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Digital, Beautifully Made', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
+	
+		
+	jQuery(document).ready(function(){
+		
 		
 	(function next() {
 	    
 	    if (counter < maxLoops) {
 		    
 		    
+		    // fade out - on complete change word, then fade in
+		    
+		    
 		    setTimeout(function() {
-	        	document.getElementById('strapline-text').innerHTML = wordArray[counter];
-				next();
-				counter++;
-				if(counter == maxLoops) { counter = 0; }
+	        	
+	        	jQuery('#strapline-text').fadeOut(500, function(){
+		        
+		        	document.getElementById('strapline-text').innerHTML = wordArray[counter];
+					jQuery('#strapline-text').fadeIn(500);	
+					next();
+					counter++;
+					if(counter == maxLoops) { counter = 0; }
+		        	
+	        	});
+	        	
+	        	
+				
 				
 			}, 2000);
+			
 		    
 		    
 	    } else {
@@ -57,6 +74,8 @@ get_header('home'); ?>
 	
 	})();
 	
+	});
+	
 </script>
 
 <header id="home-page" class="work-item work-item--motion area-dark">
@@ -64,10 +83,10 @@ get_header('home'); ?>
 		<div class="ratio">
 			<div class="container container--header strapline-container">
 				<h1>We Are <strong id="strapline-text" class="highlight">Entertainers</strong></h1>
-				<a href="<?php echo site_url(); ?>/work">
+				<a class="cube--link" href="<?php echo site_url(); ?>/work">
 					<div class="cube">
 						<div class="cube--front cube--front__no-bg">
-							<p class="sans-serif">View our Showreel</p>
+							<p class="sans-serif">See our work</p>
 						</div>
 						<div class="cub--top cube--top__no-bg">
 							<p class="sans-serif">You&rsquo;re gonna love it</p>
@@ -89,13 +108,13 @@ get_header('home'); ?>
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
 				
-		<a href="<?php echo site_url(); ?>/contact">
+		<a class="cube--link" href="<?php echo site_url(); ?>/staff/">
 			<div class="cube">
 				<div class="cube--front">
-					<p class="sans-serif">Contact Us</p>
+					<p class="sans-serif">Find out more</p>
 				</div>
 				<div class="cub--top">
-					<p class="sans-serif">Please</p>
+					<p class="sans-serif">We wont bite</p>
 				</div>
 			</div>
 		</a>

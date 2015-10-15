@@ -67,7 +67,7 @@ a{
     display: inline-block;
 	text-align: center;
 	margin: 0 auto;
-	height: 30px;
+	height: 60px;
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s; /* Animate the transform properties */
 	-webkit-transform-style: preserve-3d;
@@ -77,14 +77,16 @@ a{
 
 /* The two faces of the cube */
 .cube--front,.cub--top {
-	background: $c-bg;
+	
+    background:url('../images/button_arrow.png') center right no-repeat $c-bg;;
     border: 1px solid white;
-	height: 50px;
+	height: 60px;
     border-radius: 2px;
-    padding: 10px 60px 10px 24px;
+    padding: 14px 60px 0px 24px;
 
     p{
         text-align: left;
+        
     }
 
     .map-overlay & {
@@ -121,3 +123,5 @@ a{
 .cube--front__no-bg{
     background-color: transparent;
 }
+
+a.cube--link { display:block; }
