@@ -84,11 +84,14 @@ header{
             position: relative;
             padding-top:3%;
         }
+        
         @media handheld, screen and (min-width: $bp-desktop){
+            
             .header-title{
                 width: 50%;
                 float: left;
             }
+            
         }
     }
 
@@ -113,7 +116,13 @@ header{
             }
 
         }
-        @media handheld, screen and (min-width: $bp-desktop){
+        
+        .header-title{
+            width: 100%;
+            float: left;
+        }
+        
+        @media handheld, screen and (min-width: $bp-desktop-large){
             .header-title{
                 width: 50%;
                 float: left;
@@ -123,7 +132,12 @@ header{
 
     .header-play{
     		top:16%;
+    	
     	@media handheld, screen and (min-width: $bp-desktop){
+        	top: 18%;
+		}
+    	
+    	@media handheld, screen and (min-width: $bp-desktop-large){
         	top: 44%;
 		}
     }
@@ -161,17 +175,23 @@ header{
         }
     }
 	
+	.header-text{
+        float: left;
+        width: 100%;
+    }
 	
-    @media handheld, screen and (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop-large){
         .header-text{
             float: right;
             width: 50%;
         }
 
          .header-text__module{
+            
              & + .header-text__module{
                  margin-top: 0;
              }
+             
             float: left;
             width: 50%;
         }
@@ -220,13 +240,13 @@ header{
 .header-text__module{
 
     padding: 0%;
-    @media handheld, screen and (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop-large){
    		 padding: 0% 4%; 
     }
     
     & + .header-text__module{
     		margin-top: 5%;
-    	@media handheld, screen and (min-width: $bp-desktop){
+    	@media handheld, screen and (min-width: $bp-desktop-large){
         	margin-top: percentage(65/768);
         }
     }

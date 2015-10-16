@@ -29,9 +29,10 @@ Create your own skin at http://designer.videojs.com
 .vjs-default-skin .vjs-slider-handle {
     position: absolute;
     left: 0;
-    top: 0;
+    top:-2px;
 }
 .vjs-default-skin .vjs-slider-handle:before {
+   display:none;
     content: "\e009";
     font-family: VideoJS;
     font-size: 1em;
@@ -53,10 +54,14 @@ Create your own skin at http://designer.videojs.com
     bottom: 0;
     left: 0;
     right: 0;
-    height: 3em;
-    background-color: #07141e;
-    background-color: rgba(7,20,30,.7);
+    height:0;
+    background-color: #1f1f1f;
 }
+
+
+.vjs-default-skin.vjs-has-started .vjs-control-bar { display:block; }
+
+/*
 .vjs-default-skin.vjs-has-started .vjs-control-bar {
     display: block;
     visibility: visible;
@@ -75,6 +80,7 @@ Create your own skin at http://designer.videojs.com
     -o-transition: visibility 1s,opacity 1s;
     transition: visibility 1s,opacity 1s;
 }
+*/
 .vjs-default-skin.vjs-controls-disabled .vjs-control-bar {
     display: none;
 }
@@ -123,6 +129,7 @@ Create your own skin at http://designer.videojs.com
 
 }
 .vjs-default-skin .vjs-control-text {
+    display:none;
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -133,6 +140,7 @@ Create your own skin at http://designer.videojs.com
     width: 1px;
 }
 .vjs-default-skin .vjs-play-control {
+    display:none;
     width: 5em;
     cursor: pointer;
 }
@@ -160,6 +168,7 @@ Create your own skin at http://designer.videojs.com
 }
 .vjs-default-skin .vjs-mute-control,
 .vjs-default-skin .vjs-volume-menu-button {
+    display:none;
     cursor: pointer;
     float: right;
 }
@@ -180,6 +189,7 @@ Create your own skin at http://designer.videojs.com
     content: "\e005";
 }
 .vjs-default-skin .vjs-volume-control {
+    display:none;
     width: 5em;
     float: right;
     margin-right: 50px;
@@ -234,20 +244,18 @@ Create your own skin at http://designer.videojs.com
     right: 0;
     width: auto;
     font-size: 0.3em;
-    height: 1em;
-    top: -1em;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+    height:14px;
+    top: -4em;
 }
+/*
 .vjs-default-skin:hover .vjs-progress-control {
-    font-size: 0.9em;
+    font-size: 5.9em;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
+*/
 .vjs-default-skin .vjs-progress-holder {
     height: 100%;
 }
@@ -264,7 +272,7 @@ Create your own skin at http://designer.videojs.com
     top: 0;
 }
 .vjs-default-skin .vjs-play-progress {
-    background: #ff0066 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+    background: #ff406a;
 }
 .vjs-default-skin .vjs-load-progress {
     background: #646464;
@@ -275,8 +283,9 @@ Create your own skin at http://designer.videojs.com
     background: rgba(255,255,255,.1);
 }
 .vjs-default-skin .vjs-seek-handle {
-    width: 1.5em;
-    height: 100%;
+    width:14px;
+    height:14px;
+    background:url('../images/video/scrub_icon.png') 0 0 no-repeat;
 }
 .vjs-default-skin .vjs-seek-handle:before {
     padding-top: 0.1em;
@@ -299,9 +308,11 @@ Create your own skin at http://designer.videojs.com
     line-height: 3em;
 }
 .vjs-default-skin .vjs-current-time {
+    display:none;
     float: left;
 }
 .vjs-default-skin .vjs-duration {
+    display:none;
     float: left;
 }
 .vjs-default-skin .vjs-remaining-time {
@@ -309,6 +320,7 @@ Create your own skin at http://designer.videojs.com
     float: left;
 }
 .vjs-time-divider {
+	display:none;
     float: left;
     line-height: 3em;
 }
