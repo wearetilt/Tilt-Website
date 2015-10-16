@@ -1133,6 +1133,17 @@ if(document.getElementById('header-video-player')){
 	        videoOverlay.pause();
 
 	        myPlayer.play();
+	        
+	        
+			document.getElementById('tilt--logo').style.display = 'block';
+	        document.getElementById('menuButton').style.display = 'block';
+	        
+	        
+			if(document.getElementById('workButton').style.display != null) {
+		       document.getElementById('workButton').style.display = 'block'; 
+	        }
+
+	        
 	    });
 	}
 
@@ -1146,6 +1157,18 @@ if(document.getElementById('header-video-player')){
 	                videoOverlay.play();
 	                myPlayer.pause();
 	                document.getElementById('video-overlay').style.display = 'block';
+	                
+	                
+					document.getElementById('tilt--logo').style.display = 'none';
+	                document.getElementById('menuButton').style.display = 'none';
+					
+					
+					if(document.getElementById('workButton').style.display != null) {
+						document.getElementById('workButton').style.display = 'none';
+	                }
+
+	                
+	                
 	            });
 	    });
 	}

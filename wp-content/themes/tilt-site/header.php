@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 	<nav>
-        <div class="header-item header-item--logo">
+        <div id="tilt--logo" class="header-item header-item--logo">
 			<a href="<?php echo site_url(); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/tilt-logo.png" alt="">
 			</a>
