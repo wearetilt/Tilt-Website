@@ -155,7 +155,7 @@ p {
     &.first-para { margin-top:5px; }
 
     &.sans-serif{
-        @include font-size(25);
+        @include font-size(20);
         @media handheld, screen and (min-width: $bp-desktop){
                 @include font-size(25);
         }

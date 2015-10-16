@@ -20,7 +20,11 @@ header{
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
            
         }
-         
+        
+        h1 { 
+	        line-height:1.2;
+        }
+        
         h2{
             transform: translate3d(0,0,0);
             transition: all 0.5s ease 1.7s;
@@ -99,8 +103,13 @@ header{
 
             p {
 	            font-family: $f-seroot-thn;
-				@include font-size(45);
+				@include font-size(33);
 				letter-spacing:15px;
+				
+				@media handheld, screen and (min-width: $bp-desktop){
+					@include font-size(45);
+				}
+				
             }
 
         }
@@ -113,7 +122,17 @@ header{
     }
 
     .header-play{
-        top: 44%;
+    		top:16%;
+    	@media handheld, screen and (min-width: $bp-desktop){
+        	top: 44%;
+		}
+    }
+    
+    .header-play--casestudy {
+	    top:44%;
+    	@media handheld, screen and (min-width: $bp-desktop){
+        	top: 44%;
+		}
     }
 
 
@@ -141,7 +160,8 @@ header{
             background-size: cover;
         }
     }
-
+	
+	
     @media handheld, screen and (min-width: $bp-desktop){
         .header-text{
             float: right;
@@ -177,7 +197,13 @@ header{
     }
 }
 
-
+#services--list {
+	display:none;
+	@media handheld, screen and (min-width: $bp-desktop){
+		display:block;
+	}
+	
+}
 
 .header-play{
     height: 102px;
@@ -199,7 +225,10 @@ header{
     }
     
     & + .header-text__module{
-        margin-top: percentage(65/768);
+    		margin-top: 5%;
+    	@media handheld, screen and (min-width: $bp-desktop){
+        	margin-top: percentage(65/768);
+        }
     }
 }
 

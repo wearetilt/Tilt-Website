@@ -20,11 +20,7 @@ get_header(); ?>
 </div>
 <header id="work_page" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
-        <div id="header-play" class="header-play">
-
-
-
-        </div>
+        <div id="header-play" class="header-play"></div>
         <div class="container container--reel"> <p>REEL 2015</p></div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" >
@@ -33,7 +29,7 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="container container--header container--work-list">
+    <div id="services--list" class="container container--header container--work-list">
         <span id="work_all" class="work-item-title">All</span>
         <span id="work_film"class="work-item-title">Film</span>
         <span id="work_interactive"class="work-item-title">Interactive</span>

@@ -41,7 +41,12 @@ a{
     }
 
     &.project-navigation{
-        @include font-size(30);
+    
+    	@include font-size(18);
+		@media handheld, screen and (min-width: $bp-desktop){
+	    	 @include font-size(30);
+		}
+
         color: white;
     }
 
@@ -80,20 +85,27 @@ a{
 	
     background:url('../images/button_arrow.png') center right no-repeat $c-bg;;
     border: 1px solid white;
-	height: 60px;
+	height: 50px;
     border-radius: 2px;
     padding: 14px 60px 0px 24px;
-
+	
+	@media handheld, screen and (min-width: $bp-desktop){
+		height: 60px;
+	}
+	
     p{
         text-align: left;
-        
+        @include font-size(18);
+        @media handheld, screen and (min-width: $bp-desktop){
+        	@include font-size(25);
+		}
     }
 
     .map-overlay & {
         background: transparent;
 
         p {
-            color: white;
+            color: white;    
         }
     }
 }

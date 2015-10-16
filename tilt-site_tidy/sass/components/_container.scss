@@ -82,7 +82,12 @@
 .news-wrapper {
 	
 	 & .intro-text { 
-	 	margin:75px 0px 75px 0px; 
+	 	margin:45px 0px 55px 0px; 
+	 	
+	 	 @media handheld, screen and (min-width: $bp-desktop){
+	 	 	margin:45px 0px 75px 0px; 
+	 	 }
+	 	
 	 }
 	 
 	 & #social { float:right; }
