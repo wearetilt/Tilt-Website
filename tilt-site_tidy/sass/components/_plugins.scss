@@ -1,0 +1,15 @@
+.rotatingtweet p.rtw_meta,div.rtw_meta {
+	display:none;
+	@media handheld, screen and (min-width: $bp-desktop-large){
+		display:block;
+	}
+}
+
+
+.rotatingtweet .rtw_wide p.rtw_main {
+	font-size:12px;
+	@media handheld, screen and (min-width: $bp-desktop-large){
+		font-size:16px;
+	}
+	
+}
