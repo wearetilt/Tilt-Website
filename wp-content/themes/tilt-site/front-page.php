@@ -31,8 +31,8 @@ get_header('home'); ?>
 ?>
 
 <script type="text/javascript">
-
-	var wordArray = ['Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Digital', 'Tilt'];
+	
+	var wordArray = ['Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Storytellers', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
 
@@ -96,7 +96,8 @@ get_header('home'); ?>
         <span class="sans-serif">About this video</span>
     </a>
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> CRAFTED DIGITAL DESIGN AND COMMUNICATIONS FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS and CREATIVES.</p>
+		<p class="sans-serif">A HOME FOR DIGITAL STORYTELLERS</p>
 
 		<a class="cube--link" href="<?php echo site_url(); ?>/staff/">
 			<div class="cube">

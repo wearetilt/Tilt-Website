@@ -44,13 +44,31 @@ h1 {
     .strapline-container & {
 	    
 	    @include font-size(25);
+		
 		@media handheld, screen and (min-width: $bp-desktop){
         	@include font-size(70);
 		}
+		
+		
 
+	strong#strapline-text {
+		
+		display:block;
+		@media handheld, screen and (min-width: $bp-desktop-large){
+        	display:inline;
+		}
+		
+	}
+	
 	    
     }
+    
+    
+    
+    
 }
+
+
 
 h2{
     @include font-size(18);
@@ -340,6 +358,9 @@ ul {
             list-style-type: none;
         }
     }
+   
+   
+    
 
     p + & {
         margin-top: 27px;

@@ -131,10 +131,10 @@ header{
     }
 
     .header-play{
-    		top:16%;
+    		top:42%;
     	
     	@media handheld, screen and (min-width: $bp-desktop){
-        	top: 18%;
+        	top: 44%;
 		}
     	
     	@media handheld, screen and (min-width: $bp-desktop-large){
@@ -322,7 +322,7 @@ header{
 
     .strapline-container{
         position: absolute;
-        padding: percentage(245/2032) 15%;
+        padding: percentage(245/2032) 15% ;
         top: 20%;
         background-color: transparent;
     }

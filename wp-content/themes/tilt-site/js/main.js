@@ -1485,15 +1485,27 @@ if(document.getElementById('work_all')){
                     el3.style.opacity = 0;
                     el3.style.display = 'none';
                 });
-
+				
+				resetClass();
+				
+				document.getElementById('work_' + itemsToShow).className = 'work-item--selected work-item-title';
+				
                 if(itemsToShow === 'all'){
 
                     [].map.call(document.querySelectorAll('.work-container'), function(el3){
                         el3.style.opacity = 1;
                         el3.style.display = 'block';
                     });
+                    
+                    /* document.getElementById(itemsToShow).className = "mooooooooooo"; */
+                    
 
                 } else {
+                	
+                	
+                	
+                	/* document.getElementById(itemsToShow).className = "mooooooooooo"; */
+                	
                     document.getElementById(itemsToShow).style.opacity = 1;
                     document.getElementById(itemsToShow).style.display = 'block';
 
@@ -1509,6 +1521,14 @@ if(document.getElementById('work_all')){
                 }
         }
     });
+}
+
+function resetClass() {
+	document.getElementById('work_all').className = 'work-item-title';
+	document.getElementById('work_film').className = 'work-item-title';
+	document.getElementById('work_interactive').className = 'work-item-title';
+	document.getElementById('work_motion').className = 'work-item-title';
+	document.getElementById('work_web').className = 'work-item-title';
 }
 
 var controlContactBorder = function(inputClicked, borderToChange){

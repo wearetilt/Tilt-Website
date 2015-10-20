@@ -96,6 +96,8 @@ div.rtw_timestamp {
 }
 .rotatingtweet p.rtw_main {
 	clear: both;
+		
+
 }
 .rtw_wide_block p.rtw_main,div.rtw_main {
 	clear: left;
@@ -149,9 +151,9 @@ div.rtw_timestamp {
 }
 
 
-p.rtw_meta,div.rtw_meta {
-	margin-bottom: 1em;
-}
+
+
+
 #sidebar ul li div.rtw_name,div.rtw_name,div.rtw_name a {
 	margin-bottom: 0;
 	padding-bottom: 0;

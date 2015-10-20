@@ -24,10 +24,33 @@ nav{
     margin-top: 20px;
 }
 
-#workButton{
-    right: 50px;
-    margin-top: 12px;
+#menuButton {
+	display:block;
+	padding-top:24px;
+	width:34px;
+	height:0;
+	background:url('../images/menu-burger_v2.png') 0 0 no-repeat;
+	overflow:hidden;
+	cursor:pointer;
 }
+
+a#menuButton:hover { background:url('../images/menu-burger_v2.png') 0px -26px no-repeat; }
+
+
+#workButton{
+	display:block;
+	padding-top:24px;
+	width:27px;
+	height:0;
+	background:url('../images/work-burger_v2.png') 0 0 no-repeat;
+	overflow:hidden;
+	cursor:pointer;
+    right: 50px;
+    margin-top:20px;
+}
+
+a#workButton:hover { background:url('../images/work-burger_v2.png') 0px -24px no-repeat; }
+
 
 .menu{
     height: 100vh;
@@ -79,7 +102,7 @@ nav{
         }
     }
 
-    @media handheld, screen and (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-desktop-large){
         .menu__item{
             display: inline-block;
 
@@ -117,3 +140,11 @@ nav{
         color: $c-tilt-pink2;
     }
 }
+
+span#work_all { width:60px; }
+span#work_film { width:150px; }
+span#work_iteractive { width:160px; }
+span#work_motion { width:140px; }
+span#work_web { width:90px; }
+
+#services--list span.work-item--selected { color: $c-tilt-pink2; }

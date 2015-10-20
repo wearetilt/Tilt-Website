@@ -30,7 +30,7 @@ get_header(); ?>
     </div>
 
     <div id="services--list" class="container container--header container--work-list">
-        <span id="work_all" class="work-item-title">All</span>
+        <span id="work_all" class="work-item-title work-item--selected">All</span>
         <span id="work_film"class="work-item-title">Film</span>
         <span id="work_interactive"class="work-item-title">Interactive</span>
         <span id="work_motion"class="work-item-title">Motion</span>
