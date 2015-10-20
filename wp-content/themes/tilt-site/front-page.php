@@ -35,37 +35,37 @@ get_header('home'); ?>
 	var wordArray = ['Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Storytellers', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
-	
-		
+
+
 	jQuery(document).ready(function(){
 
 	(function next() {
-	    
+
 	    if (counter < maxLoops) {
-		    
+
 		    setTimeout(function() {
-	        	
+
 	        	jQuery('#strapline-text').fadeOut(500, function(){
-		        
+
 		        	document.getElementById('strapline-text').innerHTML = wordArray[counter];
-					jQuery('#strapline-text').fadeIn(500);	
+					jQuery('#strapline-text').fadeIn(500);
 					next();
 					counter++;
 					if(counter == maxLoops) { counter = 0; }
-		        	
+
 	        	});
-				
+
 			}, 2000);
-			   
+
 	    } else {
 		    counter = 0;
 		    next();
 	    }
-	
+
 	})();
-	
+
 	});
-	
+
 </script>
 
 <header id="home-page" class="work-item work-item--motion area-dark">
@@ -98,7 +98,7 @@ get_header('home'); ?>
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> CRAFTED DIGITAL DESIGN AND COMMUNICATIONS FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS and CREATIVES.</p>
 		<p class="sans-serif">A HOME FOR DIGITAL STORYTELLERS</p>
-				
+
 		<a class="cube--link" href="<?php echo site_url(); ?>/staff/">
 			<div class="cube">
 				<div class="cube--front">
@@ -223,7 +223,6 @@ get_header('home'); ?>
 var user;
 
 function doData(data){
-    console.log(data.data[0]['username']);
     for(i in data.data){
         if(data.data[i].username === 'we_are_tilt'){
             user = data.data[i].id;
@@ -236,14 +235,11 @@ function doData(data){
 
 function doPicture(pictureData){
 
-    console.log(pictureData);
-
     var instagramImage1 = pictureData.data[0].images.standard_resolution.url;
     var instagramLink1 = pictureData.data[0].link;
     var instagramImage2 =  pictureData.data[1].images.standard_resolution.url;
     var instagramLink2 = pictureData.data[1].link;
 
-    console.log(instagramImage1);
     document.getElementById('instagram_box_1').style.backgroundImage = "url('" + instagramImage1 + "')";
     document.getElementById('instagram_box_2').style.backgroundImage = "url('" + instagramImage2 + "')";
     document.getElementById('instagram_link_1').href = instagramLink1;
