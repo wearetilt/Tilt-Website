@@ -31,9 +31,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/tilt-logo.png" alt="">
 			</a>
         </div>
-        <div id="menuButton" class="header-item header-item--menu">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/menu-burger.png" alt="">
-        </div>
+        <a id="menuButton" class="header-item header-item--menu">Menu</a>
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
 				<li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
