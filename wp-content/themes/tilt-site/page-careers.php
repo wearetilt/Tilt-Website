@@ -15,7 +15,10 @@ get_header(); ?>
 <div id="careers" class="area-dark">
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container">
-			<p class="first-para sans-serif"><strong class="highlight">Get a job you&lsquo;ll love.</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque esse sequi dolorem ullam adipisci asperiores doloribus, inventore maxime! Deserunt velit repellendus quia earum quae cum? Quibusdam illum, expedita numquam.</p>
+			<p class="first-para sans-serif"><strong class="highlight">Great ideas</strong> come from collections of curious uninhibited minds.</p>
+			<p>A strong creative fusion binds the eclectic skills and charisma of our team. We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>
+			<p>If you have a digital wanderlust and looking to work with like minded individuals then get in touch. We are looking for talented designers, strategists, artists, animators, film makers, producers, writers and coders to join <a class="pink" href="../staff">our team.</a></p>
+			
 			<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 				<div class="cube">
 					<div class="cube--front">

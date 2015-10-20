@@ -96,8 +96,8 @@ get_header('home'); ?>
         <span class="sans-serif">About this video</span>
     </a>
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">We are Tilt</strong> CRAFTED DIGITAL DESIGN AND COMMUNICATIONS FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS and CREATIVES.</p>
-		<p class="sans-serif">A HOME FOR DIGITAL STORYTELLERS</p>
+		<p class="first-para sans-serif"><strong class="highlight">CRAFTED DIGITAL EXPERIENCES</strong> FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS AND CREATIVES.</p>
+		<p class="sans-serif">WE ARE TILT: A HOME FOR DIGITAL STORYTELLERS.</p>
 
 		<a class="cube--link" href="<?php echo site_url(); ?>/staff/">
 			<div class="cube">

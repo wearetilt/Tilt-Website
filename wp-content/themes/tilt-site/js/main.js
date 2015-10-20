@@ -998,7 +998,13 @@ var resourceUri;
 // }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    document.body.setAttribute("class","loaded");
+	
+	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+		document.body.setAttribute("class","loaded safari");
+	} else {
+		document.body.setAttribute("class","loaded");	
+	}
+
 });
 
 var allModules = document.getElementsByClassName('module');

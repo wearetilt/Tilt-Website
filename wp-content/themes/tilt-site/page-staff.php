@@ -15,14 +15,19 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">Chaos, Schizophrenia &amp; Paranoia. </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque esse sequi dolorem ullam adipisci asperiores doloribus, inventore maxime! Deserunt velit repellendus quia earum quae cum? Quibusdam illum, expedita numquam.</p>
+		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT </strong>STORYTELLING ACROSS DESIGN, INTERACTIVE, MOTION & FILM.</p>
+		
+		<p>PAUL TO SOFTEN - Here is the tricky thing about digital, you need to be truly multi-disciplined to make it work. This is where Tilt excels. We’re experts in engaging audiences and making them care, creating cross-channel, integrated experiences that they can really engage with.</p>
+		<p>PAUL TO WRITE - Our raison d'etre - Why we do what we do. Because we love it, we are creatives and we love doing creative stuff "Love what you do, Do what you love" type shizzle.</p>
+		<p>Our clients range from some of the world’s biggest organisations, to alternative music labels. It’s a client mix that keeps us lively, and an approach that helps us to bring fresh creative thinking to every project.</p>
+
 		<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 			<div class="cube">
 				<div class="cube--front">
-					<p class="sans-serif">Contact Us</p>
+					<p class="sans-serif">Get in touch</p>
 				</div>
 				<div class="cub--top">
-					<p class="sans-serif">Please</p>
+					<p class="sans-serif">Fancy a cuppa?</p>
 				</div>
 			</div>
 		</a>
