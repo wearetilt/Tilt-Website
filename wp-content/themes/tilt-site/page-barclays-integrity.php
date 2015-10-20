@@ -32,7 +32,7 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag tag--no-italic">Motion: Case Study</p>
             <h1>Barclays<br />
-                <span class="light underlined">Integrity</span>
+                <span class="light underlined">Values: Integrity</span>
             </h1>
             <h2 class="light services">Strategy | Motion | 3D | Film</h2>
         </div>
@@ -61,8 +61,9 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>Background</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para">How can a bank communicate their values in a way that grips an audience?</p>
+                <p>Employee communications are often uninspiring. But Barclays needed something vivid and compelling that would communicate their corporate values to new joiners. In particular they wanted all employees to appreciate the importance of integrity to their work at Barclays.</p>
+                <p>Our challenge was to help new joiners understand the company’s history and the changes that had followed and to encourage discussions about workplace situations that might compromise one’s integrity.</p>
             </div>
         </section> <!-- /end text-section -->
     </div>
@@ -112,8 +113,15 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>Solution (Motion)</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para">We created a hard-hitting motion graphics movie that begins with a blunt assessment of the Libor case and gradually lifts towards an optimistic look at the future. This film is played on large-screen TVs, without introduction, to new joiners during on-boarding workshops. We made the film deliberately powerful so that viewers are struck by the gravity of the situation and pay attention to the messages that follow.</p>
+                <p>The motion piece was a blend of 3D and 2D motion. A dramatic change in tone in the middle of the film highlights the shift from past mistakes to future goals. This approach served to divide the content and drive home the emotional significance of the messages.</p>
+                <p>Components of this project include:</p>
+
+                <ul>
+                	<li>Employee communications</li>
+                	<li>Scriptwriting</li>
+                	<li>Motion graphics</li>
+                </ul>
             </div>
         </section> <!-- /end text-section -->
     </div>
@@ -160,8 +168,9 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>Solution (Film)</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para">The motion film is used as a learning resource. After watching the film, the audience splits into two groups and watches a series of workplace scenario based films that challenge personal integrity. A key challenge was producing films that are never patronising but which illuminate difficult issues.</p>
+				<p>Recognising that live dialogue could easily distract viewers or feel amateur, we chose to feature the character’s internal monologue as the actor demonstrated the scenario. This allowed us to focus on beautiful cinematography and achieve high production values.</p>
+				<p>RED Epic cameras helped us create beautiful films with high production values, which in turn give the films greater credence and help Barclays deliver their messages.</p>
             </div>
         </section> <!-- /end text-section -->
     </div>
@@ -204,9 +213,9 @@ get_header('work-item'); ?>
 
     <div class="container">
         <section class="text-section">
-            <h2>Moore Info</h2>
+            <h2>Octocopters</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
+                <p class="first-para">Some stuff about awesome octocopters and car mounts should be written here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
             </div>
         </section>
@@ -234,8 +243,7 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>Feedback from Barclays</h2>
             <div class="text-section__para">
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para">These films have been well received continue to feature at welcome events 18 months after their creation. They have led to further film and motion graphics commissions from Barclays.</p>
             </div>
         </section>
     </div>

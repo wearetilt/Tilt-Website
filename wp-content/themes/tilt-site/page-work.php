@@ -214,9 +214,9 @@ get_header(); ?>
         						<div class="overlay-text">
         							<p class="tag">Case Study</p>
         							<h2>Barclays <br />
-        								<span class="underlined light">Integrity</span>
+        								<span class="underlined light">Values: Integrity</span>
         							</h2>
-        							<p class="sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa qui deserunt, esse impedit unde ex.</p>
+        							<p class="sans-serif">How can a bank communicate their values in a way that grips an audience?</p>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_01_ls_v2.jpg')">
