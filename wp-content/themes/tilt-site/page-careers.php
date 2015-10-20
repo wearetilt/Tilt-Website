@@ -19,10 +19,10 @@ get_header(); ?>
 			<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 				<div class="cube">
 					<div class="cube--front">
-						<p class="sans-serif">Contact Us</p>
+						<p class="sans-serif">Get in touch</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif">Please</p>
+						<p class="sans-serif">Don't be shy</p>
 					</div>
 				</div>
 			</a>
@@ -32,7 +32,7 @@ get_header(); ?>
 
 <div class="container container--no-padding">
 	<div class="container container--half-both area-dark">
-		<h1>Job-board</h1>
+		<h1>Job board</h1>
 	</div>
 	<div class="group-container">
 		<div class="group group--left group--jobs">

@@ -78,7 +78,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child.</p>
+                        <p class="first-para">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood.</p>
                     </div>
 
                 </div>
@@ -101,7 +101,7 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
-                        <p>In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood.</p>
+                        <p>The client was delighted with the film and we have since been commissioned to produce other projects for South Downs National Park. The film has been viewed more than 25,000 times since launch – far exceeding expectations.</p>
                     </div>
                 </div>
             </div>
@@ -156,13 +156,6 @@ get_header('work-item'); ?>
         </div>
     </section>
 </div>
-
-<div class="container quote-container area-dark">
-    <section class="text-section">
-            <blockquote>The client was delighted with the film and we have since been commissioned to produce other projects for South Downs National Park. The film has been viewed more than 25,000 times since launch – far exceeding expectations.</blockquote>
-    </section>
-</div>
-
 
 <div class="group-container">
     <a class="project-navigation" href="../bp-fll-stories">< Previous Project</a>

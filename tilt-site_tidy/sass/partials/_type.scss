@@ -71,7 +71,7 @@ h1 {
 
 
 h2{
-    @include font-size(18);
+    @include font-size(20);
     @media handheld, screen and (min-width: $bp-desktop){
            @include font-size(32);
            &#staff-member__position, &#staff-member__department { @include font-size(38); }
@@ -136,8 +136,8 @@ h3{
 }
 
 p {
-    @include font-size(12);
-    @media handheld, screen and (min-width: $bp-desktop){
+    @include font-size(16);
+    @media handheld, screen and (min-width: $bp-desktop-large){
             @include font-size(16);
     }
     font-family: $f-merriweather;
@@ -237,6 +237,16 @@ p {
     }
     
 }
+
+/*
+.module--2-1 .module__text p {
+		@include font-size(12);
+	@media handheld, screen and (min-width: $bp-desktop-large){
+	 	@include font-size(16);
+	 }
+	
+}
+*/
 
 .careers p.first-para {
 	margin:0;

@@ -116,8 +116,12 @@ header {
 	
     .monitor-holder{
         z-index: 1;
-        max-width: 768px;
-
+        max-width: 678px;
+		
+		@media handheld, screen and (min-width: $bp-desktop){
+			max-width: 768px;
+		}
+		
     }
 
     .monitor-screen{
