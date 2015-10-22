@@ -18,7 +18,7 @@ get_header(); ?>
 			<p class="first-para sans-serif"><strong class="highlight">Great ideas</strong> come from collections of curious uninhibited minds.</p>
 			<p>A strong creative fusion binds the eclectic skills and charisma of our team. We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>
 			<p>If you have a digital wanderlust and looking to work with like minded individuals then get in touch. We are looking for talented designers, strategists, artists, animators, film makers, producers, writers and coders to join <a class="pink" href="../staff">our team.</a></p>
-			
+
 			<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 				<div class="cube">
 					<div class="cube--front">
@@ -133,8 +133,8 @@ get_header(); ?>
 				<p class="first-para">What made you want to work at Tilt?</p>
 				<p>The high quality of their work client work, the place (Brighton), the fact that they push everything to the next level, and the quality of clients Tilt works with.</p>
 
-				<p class="first-para">High point as an intern?</p>
-				<p>Confirmation of my internship just between 1 day after I sent over my portfolio, and then to work straight away on major project like Barclays, BP and nickelodeon. </p>
+				<p class="first-para">High point as an freelancer?</p>
+				<p>TODO, this needs to be redone now the content has changed: Confirmation of my internship just between 1 day after I sent over my portfolio, and then to work straight away on major project like Barclays, BP and nickelodeon. </p>
 
 				<p class="first-para">Any lows, be honest…</p>
 				<p>Not any crucial lows yet to be honest, I’m just missing Schnitzels and Leberkas during lunch breaks. (Dave is from Austria.)</p>
@@ -148,8 +148,8 @@ get_header(); ?>
 				<p class="first-para">Is there anyone in particular you look up to in the workplace?</p>
 				<p>Merass, the Director of Film Production; he lounges so hard in his chair even though he is a new father and has loads to do.</p>
 
-				<p class="first-para">What advice would you give to a future intern at Tilt?</p>
-				<p>Don’t hesitate and just apply. Expect a friendly environment, a high level of work standards and when you start your internship here bear one thing in mind: don’t use someone else's mug…</p>
+				<p class="first-para">What advice would you give to a future freelancer at Tilt?</p>
+				<p>Don’t hesitate and just apply. Expect a friendly environment, a high level of work standards and when you start working here bear one thing in mind: don’t use someone else's mug…</p>
 
 
 			</div>
