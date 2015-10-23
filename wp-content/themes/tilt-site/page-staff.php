@@ -15,12 +15,13 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT </strong>STORYTELLING ACROSS DESIGN, INTERACTIVE, MOTION & FILM.</p>
+		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT </strong>BUILDING WORLDS AND TELLING STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM.</p>
 		
-		<p>PAUL TO SOFTEN - Here is the tricky thing about digital, you need to be truly multi-disciplined to make it work. This is where Tilt excels. We’re experts in engaging audiences and making them care, creating cross-channel, integrated experiences that they can really engage with.</p>
-		<p>PAUL TO WRITE - Our raison d'etre - Why we do what we do. Because we love it, we are creatives and we love doing creative stuff "Love what you do, Do what you love" type shizzle.</p>
-		<p>Our clients range from some of the world’s biggest organisations, to alternative music labels. It’s a client mix that keeps us lively, and an approach that helps us to bring fresh creative thinking to every project.</p>
-
+		<p>On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>
+		<p>Our open studio is built for collaboration, making it easy to let ideas fly and collide; like shaking a snow globe. </p>
+		<p>It’s an approach that works. In just a few years, we’ve helped <strong>redefine onboarding</strong> for one of the world’s biggest banks, <strong>rethink e-learning</strong> for a top-ten energy company, and <strong>inspire thousands of kids to get coding</strong>. We’ve made music videos, interactive games and cartoons, created award-winning websites, and filmed people from New York to Mumbai. </p>
+		<p>The project mix keeps us fresh, producing work that makes our clients very happy. Come meet the team ...</p>
+		
 		<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 			<div class="cube">
 				<div class="cube--front">
