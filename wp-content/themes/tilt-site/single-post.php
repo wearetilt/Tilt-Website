@@ -85,7 +85,7 @@ get_header('news'); ?>
 	
 	<?php } ?>
 	
-	<! ----- END SINGLE IMAGE ----- !>
+	<! ----- END SINGLE IMAGE HERE ----- !>
 	
 	
 	
