@@ -44,16 +44,20 @@ h1 {
     .strapline-container & {
 	    
 	    @include font-size(25);
+	    color:$c-tilt-pink;
+	    
+	    
 		
 		@media handheld, screen and (min-width: $bp-desktop){
         	@include font-size(70);
 		}
 		
-		
+	
 
 	strong#strapline-text {
 		
 		display:block;
+		color:$c-white;
 		@media handheld, screen and (min-width: $bp-desktop-large){
         	display:inline;
 		}
@@ -158,17 +162,35 @@ p {
             content:"";
             display: inline-block;
             @media handheld, screen and (min-width: $bp-desktop){
-                height: 15px;
-                width: 15px;
-                margin-right: 13px;
+                height:18px;
+                width: 18px;
+                margin-right:10px;
             }
-            height: 9px;
-            width: 9px;
+            height:14px;
+            width:14px;
             background-color: $c-tilt-pink;
             margin-right: 8px;
             margin-left: 2px;
         }
     }
+    
+    &.tag--work-title {
+        
+        line-height:1.5;
+        
+        &:before{
+         
+            @media handheld, screen and (min-width: $bp-desktop){
+                height:11px;
+                width: 11px;
+                margin-right:6px;
+            }
+            height:8px;
+            width:8px;
+            
+        }
+    }
+    
 
     &.first-para { margin-top:5px; }
 
@@ -178,7 +200,7 @@ p {
                 @include font-size(25);
         }
         font-family: $f-seroot-lt;
-        line-height: (33/25);
+        line-height:1.2;
         text-transform: uppercase;
     }
 
@@ -234,6 +256,13 @@ p {
 	 	@media handheld, screen and (min-width: $bp-desktop){
 	 		@include font-size(30);
 	 	}
+    }
+    
+    &.news--home {
+	    margin:0;
+	    font-size:16px;
+	    text-transform:uppercase;
+	    font-family:$f-seroot-lt
     }
     
 }

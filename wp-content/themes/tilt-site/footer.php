@@ -17,10 +17,10 @@
 			<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 				<div class="cube">
 					<div class="cube--front">
-						<p class="sans-serif">Contact us.</p>
+						<p class="sans-serif button">Contact us.</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif">Don't be shy</p>
+						<p class="sans-serif button">Contact us.</p>
 					</div>
 				</div>
 			</a>
@@ -39,7 +39,7 @@
 			</div>
 		</div> <!-- /end footer-icons -->
 
-		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather and Rooney Pro. All content copyright 2015 We Are Tilt Ltd. All rights reserved.</p>
+		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero, Merriweather and Rooney Pro. All content copyright We Are Tilt Ltd 2015. All rights reserved.</p>
 	</div>
 
 

@@ -148,6 +148,14 @@
     p.tag{
         color: $c-tilt-pink;
     }
+    p.tag--no-square {
+    	font-size:13px;
+    	font-family:$f-merriweather;
+	    color: $c-tilt-pink;
+	    text-transform:uppercase;
+	    line-height:0.8;
+    }
+    
 }
 
 #staff-member__about {

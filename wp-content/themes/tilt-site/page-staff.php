@@ -16,22 +16,9 @@ get_header(); ?>
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT </strong>BUILDING WORLDS AND TELLING STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM.</p>
+		<p class="sans-serif">In just a few years, we’ve helped redefine onboarding for one of the world’s biggest banks, rethink e-learning for a top-ten energy company, and inspire thousands of kids to get coding. We’ve made music videos, interactive games and cartoons, created award-winning websites, and filmed people from New York to Mumbai. </p>
+		<p class="sans-serif">The project mix keeps us fresh, producing work that makes our clients very happy. Come meet the team&#8230;</p>
 		
-		<p>On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>
-		<p>Our open studio is built for collaboration, making it easy to let ideas fly and collide; like shaking a snow globe. </p>
-		<p>It’s an approach that works. In just a few years, we’ve helped <strong>redefine onboarding</strong> for one of the world’s biggest banks, <strong>rethink e-learning</strong> for a top-ten energy company, and <strong>inspire thousands of kids to get coding</strong>. We’ve made music videos, interactive games and cartoons, created award-winning websites, and filmed people from New York to Mumbai. </p>
-		<p>The project mix keeps us fresh, producing work that makes our clients very happy. Come meet the team ...</p>
-		
-		<a class="cube--link" href="<?php echo site_url(); ?>/contact">
-			<div class="cube">
-				<div class="cube--front">
-					<p class="sans-serif">Get in touch</p>
-				</div>
-				<div class="cub--top">
-					<p class="sans-serif">Fancy a cuppa?</p>
-				</div>
-			</div>
-		</a>
 	</div>
 </div> <!-- /end container -->
 

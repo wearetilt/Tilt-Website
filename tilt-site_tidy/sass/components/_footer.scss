@@ -38,15 +38,17 @@ footer{
 
     .telephone{
         float: left;
-        font-size: 1.3rem;
+        font-size:1.3rem;
         color: white;
         margin-top: 15px;
         clear: both;
+        font-family:$f-merriweather;
+        font-weight:300;
         @media handheld, screen and (min-width: $bp-desktop){
             float: right;
             clear: none;
             margin-top: 7px;
-            font-size: 1.7em;
+            font-size:25px;
         }
 
     }
@@ -55,6 +57,7 @@ footer{
         border-top: 1px solid $c-grey-57;
         padding-top: 10px;
         clear: both;
+		font-size:15px;
     }
 
     p.sans-serif{
@@ -66,12 +69,23 @@ footer{
 
         }
     }
+    
+    p.button {
+	    @include font-size(18);
+
+        @media handheld, screen and (min-width: $bp-desktop){
+
+            @include font-size(20);
+
+        }
+    }
+    
 }
 
 #signoff{
     background-color: $c-bg;
     height: 225px;
-    padding: 30px 6.20079% 0px;
+    padding:33px 6.20079% 0px;
     border-top: 1px solid #171717;
 
     @media handheld, screen and (min-width: $bp-desktop){

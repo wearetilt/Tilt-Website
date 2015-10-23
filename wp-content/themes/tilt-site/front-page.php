@@ -32,7 +32,7 @@ get_header('home'); ?>
 
 <script type="text/javascript">
 	
-	var wordArray = ['Thinkers','Crafters','Grafters', 'Time Travellers', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Storytellers', 'Tilt'];
+	var wordArray = ['Thinkers','Crafters','Grafters', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
 
@@ -72,14 +72,14 @@ get_header('home'); ?>
 	<div class="module--video module--16-9 module--header">
 		<div class="ratio">
 			<div class="container container--header strapline-container">
-				<h1>We Are <strong id="strapline-text" class="highlight">Entertainers</strong></h1>
+				<h1>We Are <strong id="strapline-text">Entertainers</strong></h1>
 				<a class="cube--link" href="<?php echo site_url(); ?>/work">
 					<div class="cube">
 						<div class="cube--front cube--front__no-bg">
 							<p class="sans-serif">See our work</p>
 						</div>
 						<div class="cub--top cube--top__no-bg">
-							<p class="sans-serif">You&rsquo;re gonna love it</p>
+							<p class="sans-serif">See our work</p>
 						</div>
 					</div>
 				</a>
@@ -92,12 +92,10 @@ get_header('home'); ?>
 </header>
 
 <div id="header-overlay" class="container container--header area-dark">
-    <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">
-        <span class="sans-serif">About this video</span>
-    </a>
+    <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">About this video</a>
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">CRAFTED DIGITAL EXPERIENCES</strong> FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS AND CREATIVES.</p>
-		<p class="sans-serif">WE ARE TILT: A HOME FOR DIGITAL STORYTELLERS.</p>
+		
 
 		<a class="cube--link" href="<?php echo site_url(); ?>/staff/">
 			<div class="cube">
@@ -105,7 +103,7 @@ get_header('home'); ?>
 					<p class="sans-serif">Find out more</p>
 				</div>
 				<div class="cub--top">
-					<p class="sans-serif">We wont bite</p>
+					<p class="sans-serif">Find out more</p>
 				</div>
 			</div>
 		</a>
@@ -115,47 +113,58 @@ get_header('home'); ?>
 <div class="container container--no-padding">
 	<section>
 		<div class="group-container">
+			
 			<div class="group group--right">
+				
 				<div class="module module--2-1">
-
-					<div class="overlay area-dark">
-						<div class="overlay-text">
-							<p class="tag">Work</p>
-							<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
-						</div> <!-- /end overlay-text -->
-					</div> <!-- /end overlay -->
-
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
-
+					
+					<a href="<?php get_site_url(); ?>code-it">
+					
+						<div class="overlay area-dark">
+							<div class="overlay-text">
+								<p class="tag tag--work-title">Work</p>
+								<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
+							</div> <!-- /end overlay-text -->
+						</div> <!-- /end overlay -->
+	
+						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
+					</a>
+					
 				</div>
+				
 				<div class="module module--1-1">
                         <a id="instagram_link_1" href="#" target="_blank">
                             <div class="overlay area-dark"></div>
                             <div id="instagram_box_1" class="ratio instagram-box"></div>
                         </a>
 				</div>
-				<div class="module module--1-1 area-dark">
-					<a href="<?php echo $post->guid; ?>">
-						<div class="overlay area-dark">
-							<div class="overlay-text">
-								<p class="tag">News</p>
-								<h2><?php echo $post->post_name; ?></h2>
-							</div> <!-- /end overlay-text -->
-						</div> <!-- /end overlay -->
-						<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-					</a>
+				
+				<a href="<?php echo $post->guid; ?>">
+					<div class="module module--1-1 area-dark">
+					
+						<div class="module__text">
+							<p class="tag--no-square">News</p>
+							<p class="news--home"><?php echo the_title(); ?></p>
+						</div>
+					
 				</div>
+				
+				</a>
+				
 			</div>
+			
 			<div class="group group--left">
 				<div id="module-5" class="module module--2-2">
-					<div class="overlay area-dark">
-						<div class="overlay-text">
-							<p class="tag">Case Study</p>
-							<h2>BP First Level Leaders<br /><span class="underlined light">Stories</span></h2>
-							<p class="sans-serif">Engage your audience on an emotional level</p>
-						</div> <!-- /end overlay-text -->
-					</div> <!-- /end overlay -->
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_01_ls.jpg')"></div>
+					<a href="<?php get_site_url(); ?>bp-fll-stories/">
+						<div class="overlay area-dark">
+							<div class="overlay-text">
+								<p class="tag tag--work-title">Case Study</p>
+								<h2>BP First Level Leaders<br /><span class="underlined light">Stories</span></h2>
+								<p class="sans-serif">Engage your audience on an emotional level</p>
+							</div> <!-- /end overlay-text -->
+						</div> <!-- /end overlay -->
+						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_01_ls.jpg')"></div>
+					</a>
 				</div>
 			</div> <!-- /end group -->
 		</div> <!-- /end group-container -->
@@ -168,16 +177,18 @@ get_header('home'); ?>
 			<div class="group group--right">
 
 				<div id="module-5" class="module module--2-2">
-
-					<div class="overlay area-dark">
-						<div class="overlay-text">
-							<p class="tag">Case Study</p>
-							<h2>BP<br /><span class="underlined light">Discover BP</span></h2>
-							<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
-						</div> <!-- /end overlay-text -->
-					</div> <!-- /end overlay -->
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_04_ls.jpg')"></div>
-
+					
+					 <a href="<?php get_site_url(); ?>discover-bp">
+						<div class="overlay area-dark">
+							<div class="overlay-text">
+								<p class="tag tag--work-title">Case Study</p>
+								<h2>BP<br /><span class="underlined light">Discover BP</span></h2>
+								<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
+							</div> <!-- /end overlay-text -->
+						</div> <!-- /end overlay -->
+						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_04_ls.jpg')"></div>
+					 </a>
+					 
 				</div>
 
 
@@ -186,15 +197,17 @@ get_header('home'); ?>
 
 				<div class="module module--2-1 area-dark">
 
-					<div class="overlay area-dark">
-						<div class="overlay-text">
-							<p class="tag">Work</p>
-							<h2>GFK<br /><span class="light underlined">Brand Video</span></h2>
-						</div> <!-- /end overlay-text -->
-					</div> <!-- /end overlay -->
-
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_03_mr.jpg')"></div>
-
+					<a href="<?php get_site_url(); ?>gfk">
+						<div class="overlay area-dark">
+							<div class="overlay-text">
+								<p class="tag tag--work-title">Work</p>
+								<h2>GFK<br /><span class="light underlined">Brand Video</span></h2>
+							</div> <!-- /end overlay-text -->
+						</div> <!-- /end overlay -->
+	
+						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_03_mr.jpg')"></div>
+					</a>
+					
 				</div>
 
 
