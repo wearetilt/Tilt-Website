@@ -92,7 +92,7 @@ get_header('news'); ?>
 	
 	<! ----- VIDEO - if the video field is populated then show it here ----- !>
 	
-	<?php if(get_field('vimeo_id')) { ?>
+	<?php if(get_field('vimeo_id')) { ?>   
 	
 		<div class="container--newsvideo">
 			<div class="group-container">
