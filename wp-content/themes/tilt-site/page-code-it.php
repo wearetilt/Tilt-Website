@@ -20,7 +20,7 @@ get_header('work-item'); ?>
         
          <div class="header-title light">
             
-            <p class="tag">Interactive: Case Study</p>
+            <p class="tag tag--work-body">Interactive: Case Study</p>
             <h1>Nickelodeon<br />
                 <span class="light underlined">Code-it</span>
             </h1>
@@ -55,7 +55,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>GIVING KIDS THE POWER TO WRITE CODE</h2>
         <div class="text-section__para">
-            <p class="first-para">Coding is now part of the national curriculum – yet online lessons aren’t always very child-friendly. Nickelodeon approached us to help create something fun and interactive to help get kids coding.</p>
+            <p class="first-para tag--work-body">Coding is now part of the national curriculum – yet online lessons aren’t always very child-friendly. Nickelodeon approached us to help create something fun and interactive to help get kids coding.</p>
             <p>The solution needed to be simple and intuitive, yet complex enough to keep more advanced users engaged, perhaps with just a little support from a parent.</p>
 			<p>But what’s the best way to fire the imagination of younger kids?</p>
         </div>
@@ -111,7 +111,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>SPONGEBOB TO THE RESCUE</h2>
         <div class="text-section__para">
-            <p class="first-para">Let’s face it; raw code doesn’t get many children fired up. So, we decided give kids the power to animate their favourite cartoons within minutes. Using Haxe and HTML5, we created Code-It – an interactive platform with a drag-and-drop interface that allows kids to select classic Nick characters, including the Teenage Mutant Ninja Turtles and the mighty SpongeBob Squarepants.</p>
+            <p class="first-para tag--work-body">Let’s face it; raw code doesn’t get many children fired up. So, we decided give kids the power to animate their favourite cartoons within minutes. Using Haxe and HTML5, we created Code-It – an interactive platform with a drag-and-drop interface that allows kids to select classic Nick characters, including the Teenage Mutant Ninja Turtles and the mighty SpongeBob Squarepants.</p>
         </div>
     </section>
 </div>
@@ -144,7 +144,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>LEARN THROUGH DOING</h2>
         <div class="text-section__para">
-            <p class="first-para">The fun, colourful and intuitive interface lets kids get started quickly. Each action is supported by tutorials and glossaries to help children learn while doing. Code-It goes beyond straight education and encourages kids to explore the application and develop their skills with awards, challenges and a bustling coding community. Kids gain awards by completing coding challenges or mastering specific elements of coding.</p>
+            <p class="first-para tag--work-body">The fun, colourful and intuitive interface lets kids get started quickly. Each action is supported by tutorials and glossaries to help children learn while doing. Code-It goes beyond straight education and encourages kids to explore the application and develop their skills with awards, challenges and a bustling coding community. Kids gain awards by completing coding challenges or mastering specific elements of coding.</p>
             <p>When kids complete an animation, they can share their work, check out their friend’s animations, and “Like” each other’s efforts. Kids can even choose animations to edit and build something new – and see how the original cartoon was made.</p>
         </div>
     </section>
@@ -172,7 +172,7 @@ get_header('work-item'); ?>
         <h2>LIFTING THE SQUAREPANTS</h2>
         <div class="text-section__para">
             
-            <p class="first-para">We used several in-house skills to create this project:</p>
+            <p class="first-para tag--work-body">We used several in-house skills to create this project:</p>
              <ul class="standard-list">
             	<li>HTML5 wizardry</li>
             	<li>UX design</li>
@@ -226,7 +226,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>RESULTS AND AWARDS</h2>
         <div class="text-section__para">
-            <p class="first-para">The Nickelodeon team loved the final product and the uptake from users has been fantastic. Nickelodeon has already commissioned us to develop further ideas and scenarios for the Code-It piece.</p>
+            <p class="first-para tag--work-body">The Nickelodeon team loved the final product and the uptake from users has been fantastic. Nickelodeon has already commissioned us to develop further ideas and scenarios for the Code-It piece.</p>
             <p>The piece also caught national attention, picking up a nomination for Best Digital Children’s Content at the Broadcast Digital Awards.</p>
         </div>
     </section>

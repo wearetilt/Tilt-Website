@@ -30,7 +30,7 @@ get_header('work-item'); ?>
     </div>
     <div class="container container--header">
         <div class="header-title">
-            <p class="tag tag--no-italic">Web: Case Study</p>
+            <p class="tag tag--work-body">Web: Case Study</p>
             <h1>BP<br />
                 <span class="light underlined">Discover BP</span>
             </h1>
@@ -51,7 +51,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>LEARNING BY STEALTH</h2>
         <div class="text-section__para">
-            <p class="first-para highlight">Why would employees spend time learning if they don’t have to?</p>
+            <p class="first-para highlight tag--work-body">Why would employees spend time learning if they don’t have to?</p>
             <p>When BP approached us to help create a website for new joiners, it was with this question in mind. Traditionally, BP provided new employees with a comprehensive overview of their organisation through a series of workshops. However, attendance was no longer mandatory, so they needed another approach.</p>
             <p>The BP team asked Tilt to create a portal that was compelling enough to encourage new joiners (and existing staff) to visit voluntarily.</p>
         </div>
@@ -109,7 +109,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>TELL STORIES, MAKE IT ENJOYABLE</h2>
         <div class="text-section__para">
-            <p class="first-para">BP’s request fitted neatly with what we believe at Tilt – that if you create experiences similar to those that people enjoy on the public web, then engagement will follow.</p>
+            <p class="first-para tag--work-body">BP’s request fitted neatly with what we believe at Tilt – that if you create experiences similar to those that people enjoy on the public web, then engagement will follow.</p>
             <p>That means opting for stories over abstract concepts, making personal films rather than video lectures, focusing on visual information over text-heavy documents, and more informal delivery over stiff corporate language.</p>
 			<p>In short, make the experience enjoyable for the user.</p>
         </div>
@@ -165,7 +165,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>BEAUTIFULLY SIMPLE UX</h2>
         <div class="text-section__para">
-            <p class="first-para">Through workshops and guided sessions, we mapped out the key messages that BP wanted to communicate through the portal, and the main goals for site users. We organised this information into categories that made sense to new joiners, resulting in a portal designed to be:</p>
+            <p class="first-para tag--work-body">Through workshops and guided sessions, we mapped out the key messages that BP wanted to communicate through the portal, and the main goals for site users. We organised this information into categories that made sense to new joiners, resulting in a portal designed to be:</p>
             <ul class="standard-list">
             	<li>Process content (suitable for infosheets, infographics)</li>
 				<li>People content (profile films, headline montages)</li>
@@ -199,7 +199,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>WHAT WE MADE</h2>
         <div class="text-section__para">
-            <p class="first-para">Among other things, we created:</p>
+            <p class="first-para tag--work-body">Among other things, we created:</p>
         	<p><span class="serif highlight">Headline films:</span> Rapid-cut ‘trailer’ style pieces designed to introduce each portal section and entice the user to discover more.</p>
 			<p><span class="serif highlight">The Business of BP:</span> An interactive 3D-rendered virtual BP city, featuring several stunning motion pieces, which helped new employees understand what the different business areas and functions actually do.</p>
 			<p><span class="serif highlight">Profile films:</span> Informal, documentary style stories with friendly advice from BP colleagues. Animated overlays helped to illustrate key points.</p>
@@ -237,7 +237,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>16 X the expected results</h2>
         <div class="text-section__para">
-            <p class="first-para">Initially, BP hoped to achieve 6,000 unique hits in the first year – it generated 100,000 within twelve months.</p>
+            <p class="first-para tag--work-body">Initially, BP hoped to achieve 6,000 unique hits in the first year – it generated 100,000 within twelve months.</p>
 			<p>Three years on from the initial deployment, we have just finished a design refresh and made the site fully responsive. Discover BP continues to be one of the organisation’s most successful communication projects, and has led to Tilt becoming involved in other high-profile BP projects.</p>
         </div>
     </section>

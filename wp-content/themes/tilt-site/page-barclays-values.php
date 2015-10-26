@@ -31,7 +31,7 @@ get_header('work-item'); ?>
     </div>
     <div class="container container--header">
         <div class="header-title">
-            <p class="tag tag--no-italic">Film</p>
+            <p class="tag tag--work-body">Film</p>
             <h1>Barclays<br />
                 <span class="light underlined">Values &amp; Behaviours</span>
             </h1>
@@ -40,11 +40,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="first-para tag--work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The Big Idea</h2>
-                <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="first-para tag--work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@ get_header('work-item'); ?>
 
 						<div class="module__text">
 							<h2 class="underlined">What we did</h2>
-							<p class="first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<p class="first-para tag--work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 						</div>
 

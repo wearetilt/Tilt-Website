@@ -31,7 +31,7 @@ get_header('work-item'); ?>
     </div>
     <div class="container container--header">
         <div class="header-title">
-            <p class="tag tag--no-italic">Film</p>
+            <p class="tag tag--work-body">Film</p>
             <h1>Reliance<br />
                 <span class="light underlined">Onboarding Portal</span>
             </h1>
@@ -40,11 +40,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para">How can you convey the values, vision and the individual personalities behind India’s largest private company?</p>
+                <p class="first-para tag--work-body">How can you convey the values, vision and the individual personalities behind India’s largest private company?</p>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The Big Idea</h2>
-                <p class="first-para">Bring people’s stories to life in a more natural setting. Have faith in the interviewee, and let the pace of Mumbai life add depth to each piece.</p>
+                <p class="first-para tag--work-body">Bring people’s stories to life in a more natural setting. Have faith in the interviewee, and let the pace of Mumbai life add depth to each piece.</p>
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para">We proposed an approach in contrast to the client’s usual preference for studio sets and large camera crews. Instead, we wanted to create an intimate documentary style. Armed with only top-end DSLRs and sound equipment, our lightweight style allowed us to film at a rapid pace, and capture authentic scenes from the Reliance campus and around Mumbai. In total we filmed 25 interviewees in less than 10 days, including Chairman Ambani, an iconic figure in India, and one of the top 50 richest people in the world.</p>
+                        <p class="first-para tag--work-body">We proposed an approach in contrast to the client’s usual preference for studio sets and large camera crews. Instead, we wanted to create an intimate documentary style. Armed with only top-end DSLRs and sound equipment, our lightweight style allowed us to film at a rapid pace, and capture authentic scenes from the Reliance campus and around Mumbai. In total we filmed 25 interviewees in less than 10 days, including Chairman Ambani, an iconic figure in India, and one of the top 50 richest people in the world.</p>
                     </div>
                 </div>
                 <div class="module module--2-1">

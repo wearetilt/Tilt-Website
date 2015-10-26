@@ -33,7 +33,7 @@ get_header('work-item'); ?>
     </div>
     <div class="container container--header">
         <div class="header-title">
-            <p class="tag tag--no-italic">Film: Case Study</p>
+            <p class="tag tag--work-body">Film: Case Study</p>
             <h1>BP<br />
                 <span class="light underlined">Leaders: Stories</span>
             </h1>
@@ -58,7 +58,7 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>CAN CORPORATE FILMS STIR EMOTIONS?</h2>
             <div class="text-section__para">
-                <p class="first-para">When people become leaders at work, they often face unexpected personal struggles and conflicts. It can even be a lonely experience. But, traditional corporate films aimed at new leaders are generally poor at conveying emotion or empathy.</p>
+                <p class="first-para tag--work-body">When people become leaders at work, they often face unexpected personal struggles and conflicts. It can even be a lonely experience. But, traditional corporate films aimed at new leaders are generally poor at conveying emotion or empathy.</p>
                 <p>BP asked us to consider ways to evoke these feelings through a set of filmed scenarios for their First Level Leaders portal – a website designed to help employees transition into leadership roles.</p>
             </div>
         </section> <!-- /end text-section -->
@@ -100,7 +100,7 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>STORIES NOT LECTURES</h2>
             <div class="text-section__para">
-                <p class="first-para">Consider for a moment the unsaid messaging behind traditional corporate talking heads films: we know best; you’re on your own; do what we say.</p>
+                <p class="first-para tag--work-body">Consider for a moment the unsaid messaging behind traditional corporate talking heads films: we know best; you’re on your own; do what we say.</p>
                 <p>Instead, we wanted to focus on storytelling, allowing viewers to emotionally connect with an idea, rather than listening to lectures. We devised each piece to follow the narrative of a newly transitioned leader battling with a decision around their new role. Scenarios include:</p>
 				 <ul class="standard-list">
 					<li><span class="serif">A New Team</span></li>
@@ -160,7 +160,7 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>STYLE + SUBSTANCE</h2>
             <div class="text-section__para">
-                <p class="first-para">For the shoot itself, we needed a flexible, lightweight setup with equipment that could still deliver stunning footage. The team opted for RED EPICs – cameras with 5K sensors capable of capturing 1 -120 frames per second at full resolution. The EPIC allowed us to create cinema-quality pieces with no more equipment bulk than a DSLR camera.</p>
+                <p class="first-para tag--work-body">For the shoot itself, we needed a flexible, lightweight setup with equipment that could still deliver stunning footage. The team opted for RED EPICs – cameras with 5K sensors capable of capturing 1 -120 frames per second at full resolution. The EPIC allowed us to create cinema-quality pieces with no more equipment bulk than a DSLR camera.</p>
                 <p>We filmed each story at four different BP locations around the world. In each case, the actor went through some simple actions. The voiceover – added in post-production – tracked the character’s internal monologue, conveying the stresses and struggles of their new role.</p>
             </div>
         </section>
@@ -177,7 +177,7 @@ get_header('work-item'); ?>
         <section class="text-section">
             <h2>CONSIDER THE WHOLE</h2>
             <div class="text-section__para">
-                <p class="first-para">From the earliest discussions we wanted to ensure that the films would not be delivered to the viewer via a small, boxy video player (as is so often the case with corporate pieces).</p>
+                <p class="first-para tag--work-body">From the earliest discussions we wanted to ensure that the films would not be delivered to the viewer via a small, boxy video player (as is so often the case with corporate pieces).</p>
                 <p>To combat this issue, we built bespoke pages for each film, with each video housed in a full-bleed header. This makes the film – and the story – the star of the show, with no distracting content. It’s a similar experience to viewing a film on Netflix or iPlayer in full-screen mode.</p>
             </div>
         </section>

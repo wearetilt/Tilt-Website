@@ -191,8 +191,27 @@ p {
         }
     }
     
+	&.tag--work-body {
+        
+        line-height:1.75;
+        
+        &:before{
+         
+            @media handheld, screen and (min-width: $bp-desktop){
+                height:13px;
+                width: 13px;
+                margin-right:8px;
+            }
+            height:8px;
+            width:8px;
+            
+        }
+    }
 
-    &.first-para { margin-top:5px; }
+
+
+
+    &.first-para {  }
 
     &.sans-serif{
         @include font-size(20);

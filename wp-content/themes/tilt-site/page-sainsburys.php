@@ -28,7 +28,7 @@ get_header('work-item'); ?>
         	
         	<img src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/bima_award_logo.png" alt="BIMA 2015 Nominee" />
         	
-            <p class="tag">Interactive</p>
+            <p class="tag tag--work-body">Interactive</p>
             <h1>Sainsbury&lsquo;s <br />
                 <span class="light underlined">History Timeline</span>
             </h1>
@@ -39,11 +39,11 @@ get_header('work-item'); ?>
         
             <div class="header-text__module header-text__module--padded">
                 <h2>The Challenge</h2>
-                <p class="first-para">Convey Sainsbury’s prestigious history in a way that excites and engages people way beyond the usual flat and lifeless company timelines.</p>
+                <p class="first-para tag--work-body">Convey Sainsbury’s prestigious history in a way that excites and engages people way beyond the usual flat and lifeless company timelines.</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para">Flip the static corporate timeline on its head and take people on a journey through time via a user-controlled 3D perspective interface. </p>
+                <p class="first-para tag--work-body">Flip the static corporate timeline on its head and take people on a journey through time via a user-controlled 3D perspective interface. </p>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@ get_header('work-item'); ?>
                     <div class="module module--2-1 module--text-pad module--dark">
                         <div class="module__text">
                             <h2 class="underlined">What we did</h2>
-                            <p class="first-para">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
+                            <p class="first-para tag--work-body">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
                         </div>
                     </div>
                     <div class="module module--2-1">
