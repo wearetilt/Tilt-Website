@@ -1482,7 +1482,12 @@ if(document.getElementById('staff-member')){
 }
 
 if(document.getElementById('work_all')){
-
+	
+	document.getElementById('film_strapline').style.display = "none";
+	document.getElementById('interactive_strapline').style.display = "none";
+	document.getElementById('motion_strapline').style.display = "none";
+	document.getElementById('web_strapline').style.display = "none";
+	
     [].map.call(document.querySelectorAll('.work-item-title'), function(el){
         el.onclick = function(){
                 itemsToShow = el.id;
@@ -1496,21 +1501,17 @@ if(document.getElementById('work_all')){
 				
 				document.getElementById('work_' + itemsToShow).className = 'work-item--selected work-item-title';
 				
+				jQuery('#'+ itemsToShow+'_strapline').fadeIn(1000);
+				
                 if(itemsToShow === 'all'){
 
                     [].map.call(document.querySelectorAll('.work-container'), function(el3){
                         el3.style.opacity = 1;
                         el3.style.display = 'block';
                     });
-                    
-                    /* document.getElementById(itemsToShow).className = "mooooooooooo"; */
-                    
+                      
 
                 } else {
-                	
-                	
-                	
-                	/* document.getElementById(itemsToShow).className = "mooooooooooo"; */
                 	
                     document.getElementById(itemsToShow).style.opacity = 1;
                     document.getElementById(itemsToShow).style.display = 'block';
@@ -1535,6 +1536,13 @@ function resetClass() {
 	document.getElementById('work_interactive').className = 'work-item-title';
 	document.getElementById('work_motion').className = 'work-item-title';
 	document.getElementById('work_web').className = 'work-item-title';
+	
+	document.getElementById('all_strapline').style.display = "none";
+	document.getElementById('film_strapline').style.display = "none";
+	document.getElementById('interactive_strapline').style.display = "none";
+	document.getElementById('motion_strapline').style.display = "none";
+	document.getElementById('web_strapline').style.display = "none";
+	
 }
 
 var controlContactBorder = function(inputClicked, borderToChange){

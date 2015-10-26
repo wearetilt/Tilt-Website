@@ -38,7 +38,37 @@ get_header(); ?>
     </div>
 </header>
 
+<div class="container container--work-pad area-dark">
+	
+	<div id="all_strapline" class="text-container">
+		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT</strong> come from collections of curious uninhibited minds.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	
+	<div id="film_strapline" class="text-container">
+		<p class="first-para sans-serif"><strong class="highlight">FILM ideas</strong> come from collections of curious uninhibited minds.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	
+	<div id="interactive_strapline" class="text-container">
+		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE IDEAS</strong> come from collections of curious uninhibited minds.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	
+	<div id="motion_strapline" class="text-container">
+		<p class="first-para sans-serif"><strong class="highlight">MOTION ideas</strong> come from collections of curious uninhibited minds.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	
+	<div id="web_strapline" class="text-container">
+		<p class="first-para sans-serif"><strong class="highlight">WEB ideas</strong> come from collections of curious uninhibited minds.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+		
+</div>
+
 <div id="film" class="work-container container container--no-padding">
+
 	<section>
 		<div class="group-container">
 			<div class="group group--right">
@@ -102,6 +132,7 @@ get_header(); ?>
 </div> <!-- /end container -->
 
 <div id="interactive" class="work-container container container--no-padding">
+
 	<section>
 		<div class="group-container">
 			<div class="group group--left">
@@ -167,6 +198,7 @@ get_header(); ?>
 </div> <!-- /end container -->
 
 <div id="motion" class="work-container container container--no-padding">
+
 	<section>
 		<div class="group-container">
 			<div class="group group--right">
@@ -229,6 +261,7 @@ get_header(); ?>
 </div> <!-- /end container -->
 
 <div id="web" class="work-container container container--no-padding">
+
 	<section>
 		<div class="group-container">
 			<div class="group group--left">
