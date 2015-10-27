@@ -84,6 +84,8 @@ a#workButton:hover { background:url('../images/work-burger_v2.png') 0px -24px no
         a{
             color: white;
             padding-bottom: 15px;
+            font-family:$f-seroot-thn;
+            
             &:after{
                 content: "";
                 display: block;
@@ -94,6 +96,7 @@ a#workButton:hover { background:url('../images/work-burger_v2.png') 0px -24px no
                 margin: 0 auto;
                 margin-top: 5px;
             }
+            
             &:hover{
                 &:after{
                     width: 15%;
@@ -129,13 +132,17 @@ a#workButton:hover { background:url('../images/work-burger_v2.png') 0px -24px no
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding-top: 24px;
+    padding-top: 26px;
+    font-family:$f-merriweather;
+    font-weight:300;
+    
     @media handheld, screen and (min-width: $bp-desktop){
             width: 150px;
             display: inline-block;
     }
 
     @include font-size(19);
+    
     &:hover{
         color: $c-tilt-pink2;
     }

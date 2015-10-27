@@ -78,7 +78,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para tag--work-title">We proposed an approach in contrast to the client’s usual preference for studio sets and large camera crews. Instead, we wanted to create an intimate documentary style. Armed with only top-end DSLRs and sound equipment, our lightweight style allowed us to film at a rapid pace, and capture authentic scenes from the Reliance campus and around Mumbai. In total we filmed 25 interviewees in less than 10 days, including Chairman Ambani, an iconic figure in India, and one of the top 50 richest people in the world.</p>
+                        <p class="first-para tag--work-title">Instead of the standard corporate staged approach, we wanted to produce an intimate documentary style. Using only top-end DSLRs and sound equipment, this allowed us to film at a rapid pace, and capture authentic scenes from the Reliance campus and around Mumbai. In total we filmed 25 interviewees in less than 10 days, including Chairman Ambani, an iconic figure in India.</p>
                     </div>
                 </div>
                 <div class="module module--2-1">

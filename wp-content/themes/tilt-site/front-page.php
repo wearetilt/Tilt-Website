@@ -122,7 +122,7 @@ get_header('home'); ?>
 					
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag-home-title">Work</p>
+								<p class="tag tag--home-title">Work</p>
 								<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->

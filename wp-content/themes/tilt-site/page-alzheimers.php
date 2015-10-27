@@ -77,8 +77,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad area-dark module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para tag--work-title">We developed the Lab, an experiential site that takes users on a journey through the drug development process. The Lab opens with an emotive question: “What if you couldn’t remember your family and friends?”.</p>
-                        <p>The challenge then was how to create informative and interactive content that was bold enough to get people talking and practical enough to drive donations.</p>
+                        <p class="first-para tag--work-title">We developed the Lab, an experiential site that takes users on a journey through the drug development process. The Lab opens with an emotive question: “What if you couldn’t remember your family and friends?”. The challenge then was how to create informative and interactive content that was bold enough to get people talking and practical enough to drive donations.</p>
                     </div>
                 </div>
                 <div class="module module--2-1">

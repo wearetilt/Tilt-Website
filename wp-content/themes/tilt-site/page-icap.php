@@ -90,7 +90,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What We Did</h2>
-                        <p class="first-para tag--work-title">ICAP wanted to move away from an “eat what you kill” trader mentality to something that reflected the true nature of their target demographic. Think “potential Google engineer” rather than “Gordon Gecko”. This new direction needed to be built into the branding and structure of their graduate onboarding portal. In part, this meant telling ICAP’s story through first person films and profiles featuring graduate recruits from all around the world.</p>
+                        <p class="first-para tag--work-title">ICAP wanted to move away from an “eat what you kill” trader mentality to something that reflected the emerging 'gen-edge' demographic. Think “potential Google engineer” rather than “Gordon Gecko”. This new direction needed to be built into the branding and structure of their graduate onboarding portal. In part, this meant telling ICAP’s story through first person films and profiles featuring graduate recruits from all around the world.</p>
                     </div>
                 </div>
                <div class="module module--2-1 module--video">

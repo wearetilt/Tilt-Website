@@ -378,16 +378,23 @@
 }
 
 #staff-member__close{
-    height: 30px;
-    width: 30px;
-    background-color: white;
+    height: 34px;
+    width: 35px;;
     margin: 0px auto;
+    padding:4px 0px 2px 0px;
+    top:30px;
+    right:30px;
+    background-color: white;
     position: absolute;
-    top:1.5%;
-    right:1%;
     text-align: center;
     cursor: pointer;
     z-index: 7;
+    
+    &:hover {
+	    background-color: $c-tilt-pink; 
+    	color:white;
+    }
+    
 }
 
 #staff-member__info{
@@ -404,6 +411,7 @@
     	width: 50%;
 
     }
+    
 }
 
 #staff-member__wrapper{
