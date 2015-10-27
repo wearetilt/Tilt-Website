@@ -40,11 +40,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para tag--work-body">How can you encourage people to take public transport to the beautiful South Downs National Park, and even make them excited to do so?</p>
+                <p class="first-para tag--work-title">How can you encourage people to take public transport to the beautiful South Downs National Park, and even make them excited to do so?</p>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Merge film and motion graphics to create a magical experience that brings an entire journey to the South Downs to life through the eyes of a child.</p>
+                <p class="first-para tag--work-title">Merge film and motion graphics to create a magical experience that brings an entire journey to the South Downs to life through the eyes of a child.</p>
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para tag--work-body">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood.</p>
+                        <p class="first-para tag--work-title">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood.</p>
                     </div>
 
                 </div>
@@ -158,8 +158,8 @@ get_header('work-item'); ?>
 </div>
 
 <div class="group-container">
-    <a class="project-navigation" href="../bp-fll-stories">< Previous Project</a>
-    <a class="project-navigation" href="../reliance">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../bp-fll-stories">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../reliance">Next Project</a>
 </div>
 
 </div>

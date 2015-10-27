@@ -40,11 +40,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para tag--work-body">BP asked us to create a powerful, emotive film for their Global Leadership event, all about building a lasting legacy. But what kind of story could inspire BP’s top 500 leaders? </p>
+                <p class="first-para tag--work-title">BP asked us to create a powerful, emotive film for their Global Leadership event, all about building a lasting legacy. But what kind of story could inspire BP’s top 500 leaders? </p>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Bring the story of an iconic business figure to life. Use motion graphics to create an epic storybook feel, and use film to add direct, personal insights from BP leaders. </p>
+                <p class="first-para tag--work-title">Bring the story of an iconic business figure to life. Use motion graphics to create an epic storybook feel, and use film to add direct, personal insights from BP leaders. </p>
             </div>
         </div>
     </div>
@@ -96,7 +96,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para tag--work-body">Leadership is about dealing with setbacks as much as it is about success. Initially we created a series of films featuring iconic leaders from around the world. But we then decided to focus solely on Steve Jobs because his personality, leadership style and rollercoaster ride to the top have all the ingredients for a compelling story.</p>
+                        <p class="first-para tag--work-title">Leadership is about dealing with setbacks as much as it is about success. Initially we created a series of films featuring iconic leaders from around the world. But we then decided to focus solely on Steve Jobs because his personality, leadership style and rollercoaster ride to the top have all the ingredients for a compelling story.</p>
                     </div>
                 </div>
                 <div class="module module--2-1">
@@ -135,8 +135,8 @@ get_header('work-item'); ?>
 </div> <!-- /end container -->
 
 <div class="group-container">
-    <a class="project-navigation" href="../take-the-lead">< Previous Project</a>
-    <a class="project-navigation" href="../gfk">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../take-the-lead">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../gfk">Next Project</a>
 </div>
 
 </div>

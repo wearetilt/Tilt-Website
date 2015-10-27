@@ -38,11 +38,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The challenge</h2>
-                <p class="first-para tag--work-body">Create a new website to help attract support from investors and the local community for an ambitious new project – the i360, the world’s tallest moving observation platform.</p>
+                <p class="first-para tag--work-title">Create a new website to help attract support from investors and the local community for an ambitious new project – the i360, the world’s tallest moving observation platform.</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Build a website that unapologetically conveys the scale, ambition and sheer excitement of the i360 – and give a sneak preview of the awe-inspiring views.</p>
+                <p class="first-para tag--work-title">Build a website that unapologetically conveys the scale, ambition and sheer excitement of the i360 – and give a sneak preview of the awe-inspiring views.</p>
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What We Did</h2>
-                        <p class="first-para tag--work-body">The i360, developed by the team behind the London Eye, was designed to give Brighton and Hove a truly international-class tourist attraction. While the idea initially gained a lot of attention, project delays affected public support. The website needed an upgrade in order to help gain more positive PR. The site also needed to help facilitate the i360 team’s blogging and social media outreach strategy.</p>
+                        <p class="first-para tag--work-title">The i360, developed by the team behind the London Eye, was designed to give Brighton and Hove a truly international-class tourist attraction. While the idea initially gained a lot of attention, project delays affected public support. The website needed an upgrade in order to help gain more positive PR. The site also needed to help facilitate the i360 team’s blogging and social media outreach strategy.</p>
                     </div>
                 </div>
                 <div class="module module--2-1 module--video">
@@ -144,8 +144,8 @@ get_header('work-item'); ?>
 </div>
 
 <div class="group-container">
-    <a class="project-navigation" href="../icap">< Previous Project</a>
-    <a class="project-navigation" href="../discover-bp">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../icap">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../discover-bp">Next Project</a>
 </div>
 
 </div>

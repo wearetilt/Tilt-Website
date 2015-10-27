@@ -193,8 +193,8 @@ get_header('work-item'); ?>
 
 
     <div class="group-container">
-        <a class="project-navigation" href="../barclays-values">< Previous Project</a>
-        <a class="project-navigation" href="../sdnpa">Next Project ></a>
+        <a class="project-navigation paginate_prev" href="../barclays-values">Previous Project</a>
+        <a class="project-navigation paginate_next" href="../sdnpa">Next Project</a>
     </div>
 
 </div>

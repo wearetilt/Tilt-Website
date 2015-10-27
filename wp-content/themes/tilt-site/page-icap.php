@@ -34,11 +34,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The Challenge</h2>
-                <p class="first-para tag--work-body">How can an onboarding portal help communicate the new brand and ethos behind one of the world’s leading providers of trading technologies?</p>
+                <p class="first-para tag--work-title">How can an onboarding portal help communicate the new brand and ethos behind one of the world’s leading providers of trading technologies?</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Put people front and centre to create a engaging experience that lets graduate recruits tell the story of what it’s like to work at ICAP.</p>
+                <p class="first-para tag--work-title">Put people front and centre to create a engaging experience that lets graduate recruits tell the story of what it’s like to work at ICAP.</p>
             </div>
         </div>
     </div>
@@ -90,7 +90,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What We Did</h2>
-                        <p class="first-para tag--work-body">ICAP wanted to move away from an “eat what you kill” trader mentality to something that reflected the true nature of their target demographic. Think “potential Google engineer” rather than “Gordon Gecko”. This new direction needed to be built into the branding and structure of their graduate onboarding portal. In part, this meant telling ICAP’s story through first person films and profiles featuring graduate recruits from all around the world.</p>
+                        <p class="first-para tag--work-title">ICAP wanted to move away from an “eat what you kill” trader mentality to something that reflected the true nature of their target demographic. Think “potential Google engineer” rather than “Gordon Gecko”. This new direction needed to be built into the branding and structure of their graduate onboarding portal. In part, this meant telling ICAP’s story through first person films and profiles featuring graduate recruits from all around the world.</p>
                     </div>
                 </div>
                <div class="module module--2-1 module--video">
@@ -139,8 +139,8 @@ get_header('work-item'); ?>
 </div>
 
 <div class="group-container">
-    <a class="project-navigation" href="../bp-fll">< Previous Project</a>
-    <a class="project-navigation" href="../i360">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../bp-fll">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../i360">Next Project</a>
 </div>
 
 </div>

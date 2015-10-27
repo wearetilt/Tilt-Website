@@ -38,11 +38,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The challenge</h2>
-                <p class="first-para tag--work-body">Use the power of digital to help young people explore the ideas behind a PBS nature documentary.</p>
+                <p class="first-para tag--work-title">Use the power of digital to help young people explore the ideas behind a PBS nature documentary.</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Create a batch of addictive, playful HTML5 micro-games that take students deep into the amazing worlds of vultures, wolves and sharks.</p>
+                <p class="first-para tag--work-title">Create a batch of addictive, playful HTML5 micro-games that take students deep into the amazing worlds of vultures, wolves and sharks.</p>
             </div>
         </div>
     </div>
@@ -73,7 +73,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para tag--work-body">Earth - A New Wild is a nature documentary that shows young audiences that ecosystems often hang in a delicate balance and are easily disrupted by the actions of man. The producer, Passion Pictures, approached us to create an engaging digital experience to support the show. The original brief asked for a microsite with an overview of each show, but we saw an opportunity to do much more...</p>
+                        <p class="first-para tag--work-title">Earth - A New Wild is a nature documentary that shows young audiences that ecosystems often hang in a delicate balance and are easily disrupted by the actions of man. The producer, Passion Pictures, approached us to create an engaging digital experience to support the show. The original brief asked for a microsite with an overview of each show, but we saw an opportunity to do much more...</p>
                     </div>
                 </div>
                <div class="module module--2-1 module--video">
@@ -147,8 +147,8 @@ get_header('work-item'); ?>
 <!-- TODO: Add the fear-o-meter thang -->
 
 <div class="group-container">
-    <a class="project-navigation" href="../sainsburys">< Previous Project</a>
-    <a class="project-navigation" href="../alzheimers">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../sainsburys">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../alzheimers">Next Project</a>
 </div>
 
 </div>

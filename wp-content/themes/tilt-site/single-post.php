@@ -140,34 +140,33 @@ get_header('news'); ?>
 		
 	<div class="group-container">
 
-	<?php
-		$next_post = get_next_post(9);
-		$previous_post = get_previous_post(9);
-		
-		if (!empty( $previous_post )): ?>
-			<a class="project-navigation" href="<?php echo get_permalink( $previous_post->ID ); ?>">Previous Job</a>	
-	<?php endif; 
-		
-		if (empty( $previous_post )): ?>
-			<a class="project-navigation" href="#"></a>
-	<?php endif;
-	?>
-
-	<?php
-		
-		if (!empty( $next_post )): ?>
-			<a class="project-navigation" href="<?php echo get_permalink( $next_post->ID ); ?>">Next Job</a>	
-	<?php endif; ?>
+		<?php
+			$next_post = get_next_post(9);
+			$previous_post = get_previous_post(9);
+			
+			if (!empty( $previous_post )): ?>
+				<a class="project-navigation  paginate_prev" href="<?php echo get_permalink( $previous_post->ID ); ?>">Previous</a>	
+		<?php endif; 
+			
+			if (empty( $previous_post )): ?>
+				<a class="project-navigation" href="#">&nbsp;</a>
+		<?php endif;
+		?>
 	
-	<?php
+		<?php
+			
+			if (!empty( $next_post )): ?>
+				<a class="project-navigation paginate_next" href="<?php echo get_permalink( $next_post->ID ); ?>">Next</a>	
+		<?php endif; ?>
 		
-		if (empty( $next_post )): ?>
-			<a class="project-navigation" href="#"></a>	
-	<?php endif; ?>
+		<?php
+			
+			if (empty( $next_post )): ?>
+				<a class="project-navigation" href="#">&nbsp;</a>	
+		<?php endif; ?>
 	
 	
-	
-</div>
+	</div>
 
 </div>
 

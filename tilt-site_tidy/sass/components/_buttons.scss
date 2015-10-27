@@ -43,12 +43,34 @@ a{
 
     &.project-navigation{
     
-    	@include font-size(18);
+    	@include font-size(16);
+    	letter-spacing:1px;
+		color: white;
+		font-family:$f-seroot-thn;
+		
 		@media handheld, screen and (min-width: $bp-desktop){
-	    	 @include font-size(30);
-		}
-
-        color: white;
+	    	 @include font-size(25);
+		}  
+    }
+    
+    &.paginate_prev {
+	    
+	    &:before{
+        	content:url('../images/pagination_arrow.png');
+            display: inline-block;
+            margin-right:40px;
+        }
+	    
+    }
+    
+    &.paginate_next {
+	  
+	  &:after{
+        	content:url('../images/pagination_arrow_after.png');
+            display: inline-block;
+            margin-left:40px;
+        }  
+	    
     }
 
     p + & {

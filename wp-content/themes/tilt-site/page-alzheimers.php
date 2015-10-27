@@ -42,11 +42,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The Challenge</h2>
-                <p class="first-para tag--work-body">How can you move people to really understand Alzheimer’s Disease, see the life-saving importance of drug development, and motivate them to donate?</p>
+                <p class="first-para tag--work-title">How can you move people to really understand Alzheimer’s Disease, see the life-saving importance of drug development, and motivate them to donate?</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Bring a dementia research lab to life. Help people understand through interaction. Pack an emotional punch by personalising the experience.</p>
+                <p class="first-para tag--work-title">Bring a dementia research lab to life. Help people understand through interaction. Pack an emotional punch by personalising the experience.</p>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad area-dark module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para tag--work-body">We developed the Lab, an experiential site that takes users on a journey through the drug development process. The Lab opens with an emotive question: “What if you couldn’t remember your family and friends?”.</p>
+                        <p class="first-para tag--work-title">We developed the Lab, an experiential site that takes users on a journey through the drug development process. The Lab opens with an emotive question: “What if you couldn’t remember your family and friends?”.</p>
                         <p>The challenge then was how to create informative and interactive content that was bold enough to get people talking and practical enough to drive donations.</p>
                     </div>
                 </div>
@@ -137,8 +137,8 @@ get_header('work-item'); ?>
 </div>
 
 <div class="group-container">
-    <a class="project-navigation" href="../pbs">< Previous Project</a>
-    <a class="project-navigation" href="../code-it">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../pbs">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../code-it">Next Project</a>
 </div>
 
 </div>

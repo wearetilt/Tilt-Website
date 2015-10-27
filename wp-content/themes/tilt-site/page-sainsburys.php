@@ -39,11 +39,11 @@ get_header('work-item'); ?>
         
             <div class="header-text__module header-text__module--padded">
                 <h2>The Challenge</h2>
-                <p class="first-para tag--work-body">Convey Sainsbury’s prestigious history in a way that excites and engages people way beyond the usual flat and lifeless company timelines.</p>
+                <p class="first-para tag--work-title">Convey Sainsbury’s prestigious history in a way that excites and engages people way beyond the usual flat and lifeless company timelines.</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Flip the static corporate timeline on its head and take people on a journey through time via a user-controlled 3D perspective interface. </p>
+                <p class="first-para tag--work-title">Flip the static corporate timeline on its head and take people on a journey through time via a user-controlled 3D perspective interface. </p>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@ get_header('work-item'); ?>
                     <div class="module module--2-1 module--text-pad module--dark">
                         <div class="module__text">
                             <h2 class="underlined">What we did</h2>
-                            <p class="first-para tag--work-body">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
+                            <p class="first-para tag--work-title">Motion graphic treatment was an obvious choice for this project, but we wanted to let users control the flow of the story. So we used HTML, JavaScript and CSS to create an interactive animation so users can scroll through Sainsbury’s history via 3D front-on perspective. We set this against a backdrop of moments in British history, really bringing the piece to life.</p>
                         </div>
                     </div>
                     <div class="module module--2-1">
@@ -144,8 +144,8 @@ get_header('work-item'); ?>
     <!-- TODO: Add Video and Images of Cars Thang -->
 
     <div class="group-container">
-        <a class="project-navigation" href="../code-it">< Previous Project</a>
-        <a class="project-navigation" href="../pbs">Next Project ></a>
+        <a class="project-navigation paginate_prev" href="../code-it">Previous Project</a>
+        <a class="project-navigation paginate_next" href="../pbs">Next Project</a>
     </div>
 
 </div>

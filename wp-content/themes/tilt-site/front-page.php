@@ -122,7 +122,7 @@ get_header('home'); ?>
 					
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--work-title">Work</p>
+								<p class="tag tag-home-title">Work</p>
 								<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
@@ -158,7 +158,7 @@ get_header('home'); ?>
 					<a href="<?php get_site_url(); ?>bp-fll-stories/">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--work-title">Case Study</p>
+								<p class="tag tag--home-title">Case Study</p>
 								<h2>BP First Level Leaders<br /><span class="underlined light">Stories</span></h2>
 								<p class="sans-serif">Engage your audience on an emotional level</p>
 							</div> <!-- /end overlay-text -->
@@ -181,7 +181,7 @@ get_header('home'); ?>
 					 <a href="<?php get_site_url(); ?>discover-bp">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--work-title">Case Study</p>
+								<p class="tag tag--home-title">Case Study</p>
 								<h2>BP<br /><span class="underlined light">Discover BP</span></h2>
 								<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
 							</div> <!-- /end overlay-text -->
@@ -200,7 +200,7 @@ get_header('home'); ?>
 					<a href="<?php get_site_url(); ?>gfk">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--work-title">Work</p>
+								<p class="tag tag--home-title">Work</p>
 								<h2>GFK<br /><span class="light underlined">Brand Video</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->

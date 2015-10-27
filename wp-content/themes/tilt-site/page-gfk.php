@@ -40,11 +40,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Challenge</h2>
-                <p class="first-para tag--work-body">How do you explain the many different services of a global company as complex and diverse as GfK in a single video piece? </p>
+                <p class="first-para tag--work-title">How do you explain the many different services of a global company as complex and diverse as GfK in a single video piece? </p>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-body">Use motion graphics to keep things bold, clear and simple, telling the GfK story in just 90 seconds.</p>
+                <p class="first-para tag--work-title">Use motion graphics to keep things bold, clear and simple, telling the GfK story in just 90 seconds.</p>
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
-                        <p class="first-para tag--work-body">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
+                        <p class="first-para tag--work-title">Motion graphics can be a quick and memorable way to convey complicated information. Using a mixture of 2D and 3D graphics to add depth, variety and texture, we were able to explain GfK’s core messages and services in less than two minutes.</p>
                     </div>
                 </div>
                 <div class="module module--2-1">
@@ -124,8 +124,8 @@ get_header('work-item'); ?>
 </div>
 
 <div class="group-container">
-    <a class="project-navigation" href="../legacy">< Previous Project</a>
-    <a class="project-navigation" href="../barclays-integrity">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../legacy">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../barclays-integrity">Next Project</a>
 </div>
 
 </div>

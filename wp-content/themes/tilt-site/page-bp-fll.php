@@ -33,11 +33,11 @@
          <div class="header-text">
              <div class="header-text__module header-text__module--padded">
                  <h2>The challenge</h2>
-                 <p class="first-para tag--work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                 <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
              </div>
              <div class="header-text__module">
                  <h2>The Big Idea</h2>
-                 <p class="first-para tag--work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                 <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
              </div>
          </div>
      </div>
@@ -68,7 +68,7 @@
                  <div class="module module--2-1 module--text-pad module--dark">
                      <div class="module__text">
                          <h2 class="underlined">What we did</h2>
-                         <p class="first-para tag--work-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                         <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                      </div>
                  </div>
                  <div class="module module--2-1">
@@ -137,8 +137,8 @@
 </div>
 
 <div class="group-container">
-    <a class="project-navigation" href="../discover-bp">< Previous Project</a>
-    <a class="project-navigation" href="../icap">Next Project ></a>
+    <a class="project-navigation paginate_prev" href="../discover-bp">Previous Project</a>
+    <a class="project-navigation paginate_next" href="../icap">Next Project</a>
 </div>
 
 </div><!-- /end container -->

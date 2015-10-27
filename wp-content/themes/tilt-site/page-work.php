@@ -38,35 +38,6 @@ get_header(); ?>
     </div>
 </header>
 
-<div class="container container--work-pad area-dark">
-	
-	<div id="all_strapline" class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">We Are Tilt</strong> BUILDING WORLDS AND TELLING STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM.</p>
-		<p>On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>
-	</div>
-	
-	<div id="film_strapline" class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">FILM ideas</strong> come from collections of curious uninhibited minds.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	</div>
-	
-	<div id="interactive_strapline" class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE IDEAS</strong> come from collections of curious uninhibited minds.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	</div>
-	
-	<div id="motion_strapline" class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">MOTION ideas</strong> come from collections of curious uninhibited minds.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	</div>
-	
-	<div id="web_strapline" class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">WEB ideas</strong> come from collections of curious uninhibited minds.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	</div>
-		
-</div>
-
 <div id="film" class="work-container container container--no-padding">
 
 	<section>
