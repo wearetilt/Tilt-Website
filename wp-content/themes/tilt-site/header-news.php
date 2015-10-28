@@ -34,7 +34,8 @@
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/staff">About</a></li>
+                <li class="menu__item"><a href="<?php echo site_url(); ?>/about">About</a></li>
+                <li class="menu__item"><a href="<?php echo site_url(); ?>/team">Team</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/news">News</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/careers">Careers</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
