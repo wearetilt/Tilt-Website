@@ -347,12 +347,14 @@ a{
     	text-transform:none;
     }
     
-    .news-container & {
+    .news-container &, .text-section & {
     	font-family: $f-merriweather;
 		font-weight:300;
 	    color: $c-tilt-pink; 
     	text-transform:none;
     }
+    
+    
     
 }
 

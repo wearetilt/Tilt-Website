@@ -25,7 +25,7 @@ get_header(); ?>
 						<p class="sans-serif">Get in touch</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif">Don't be shy</p>
+						<p class="sans-serif">Get in touch</p>
 					</div>
 				</div>
 			</a>

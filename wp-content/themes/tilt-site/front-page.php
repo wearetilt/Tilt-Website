@@ -218,7 +218,7 @@ get_header('home'); ?>
                     </a>
 				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
-					<div class="module__text">
+					<div class="module__text home--tweet">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 
 					</div> <!-- /end text-section -->

@@ -39,23 +39,24 @@
     width: 165px;
     left: 0px;
     right: 0px;
-    bottom: -20px;
+    bottom: -100px;
     margin: 0px auto;
 }
 
-.five-wide { width:215px; }
-.seven-wide { width:305px; } 
+.five-wide { width:210px; }
+.seven-wide { width:300px; } 
 
 .carousel-control{
     border-radius: 30px;
-    height: 30px;
-    width: 30px;
-    background-color: white;
+    height:25px;
+    width:25px;
+    background-color:white;
     cursor: pointer;
     float: left;
     transition: all 0.5s;
-    border: 2px solid $c-tilt-pink2;
-
+   
+	.grey-icons & { background-color:#b6b6b6; }
+   
     &:hover{
         background-color: $c-tilt-pink2;
     }
@@ -69,9 +70,13 @@
     }
 
     & + .carousel-control{
-        margin-left: 15px;
+        margin-left: 20px;
     }
+    
+    
 }
+
+
 
 #carousel-image-1{
     background-color: goldenrod;

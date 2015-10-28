@@ -26,18 +26,18 @@
          <div class="header-title no--shadow">
              <p class="tag tag--work-body">Web</p>
              <h1>BP<br />
-                 <span class="light underlined">First Level Leaders</span>
+                 <span class="light underlined">Leadership</span>
              </h1>
              <h2 class="light services">Strategy, Design, Dev, Film | Motion</h2>
          </div>
          <div class="header-text">
              <div class="header-text__module header-text__module--padded">
                  <h2>The challenge</h2>
-                 <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                 <p class="first-para tag--work-title">Moving into a leadership role for the first time is exciting, but it also brings with it a set of unexpected pressures. How do you manage this?</p>
              </div>
              <div class="header-text__module">
                  <h2>The Big Idea</h2>
-                 <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                 <p class="first-para tag--work-title">How do you tackle the issue of ‘leadership’ in just a single portal? Pair emotional, engaging content with direct, practical information.</p>
              </div>
          </div>
      </div>
@@ -68,7 +68,7 @@
                  <div class="module module--2-1 module--text-pad module--dark">
                      <div class="module__text">
                          <h2 class="underlined">What we did</h2>
-                         <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                         <p class="first-para tag--work-title">Through workshops and guided sessions, we mapped out the key messages that BP wanted to communicate through the portal. Organising the IA into three categories that would make sense to a new leader - Becoming a Leader, Managing Yourself and Managing your Team.</p>
                      </div>
                  </div>
                  <div class="module module--2-1">
@@ -90,7 +90,8 @@
              <div class="group group--left">
                  <div class="module module--2-1 module--text-pad module--dark">
                      <div class="module__text">
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                         <p>The next step was to conceptualise ways to bring all of the material and ideas to life. Applying the underpinning logic of ‘you can’t bore people into learning’, we divided content into three main types: Practical tips (text copy and stylised infosheets), Guidance and advice (films and stories) and Concept content (animations and interactive graphics). We then applied a little 'surprise and delight'.
+</p>
                      </div>
                  </div>
              </div>
@@ -124,17 +125,48 @@
      </section>
  </div>
 
- <div class="container container--no-padding">
-     <div class="group-container">
-         <div class="module module--16-9 module--video module--nozoom">
-             <div class="ratio">
-                 <video controls class="video-js vjs-default-skin page-video" width="100%" height="100%" >
-                         <source src="https://player.vimeo.com/external/129132162.hd.mp4?s=f52155809a57c8520d28a9ab04c3b9fe&profile_id=113" type="video/mp4">
-                 </video>
-             </div>
-         </div>
-     </div>
+<div class="container area-dark">
+    <section class="text-section">
+        <h2>CONTENT IS KING</h2>
+        <div class="text-section__para">
+            <p class="first-para tag--work-body">Among other things, we created:</p>
+			<p><strong>FLL Stories</strong>: Films shot at BP locations around the world; each designed to bring to life a challenge commonly faced by new leaders. See our <a href="">case study</a>.</p>
+			<p><strong>Leadership Mistakes</strong>: Short, humorous 3D motion graphics that summarise the eight most common leadership mistakes in 20 seconds or less.</p>
+			<p><strong>Interactive ‘infosheets’</strong>: Designed to deliver practical content in appealing, easy-to-absorb ways, often supported by beautiful illustrations and interactive graphics.</p>
+			<p><strong>RADA Scenarios</strong>: Ten films featuring actors from the RADA In Business team. Each film illustrates a leadership scenario in a quirky, real-world vignette.</p>
+        </div>
+    </section>
 </div>
+
+<div class="container container--no-padding">
+    <section>
+        <div class="group-container">
+            <div class="group group--left">
+                <div class="module module--16-9 module--video module--nozoom">
+                    <div class="ratio">
+                    	<video controls class="video-js vjs-default-skin page-video" width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/leadership_mistakes_poster_image.jpg">
+                       		<source src="https://player.vimeo.com/external/129132162.hd.mp4?s=f52155809a57c8520d28a9ab04c3b9fe&profile_id=113" type="video/mp4">
+						</video>
+                    </div>
+                </div>
+
+            </div>
+            <div class="group group--right">
+                <div class="module module--16-9 module--video module--nozoom">
+                    <div class="ratio">
+                    	<video controls class="video-js vjs-default-skin page-video" width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/rada_poster_image.jpg">
+                       		<source src="https://player.vimeo.com/external/139011465.sd.mp4?s=45fba8b47d2e269d80ed0a97822862f1&profile_id=112" type="video/mp4">
+						</video>
+                    </div>
+                </div>
+
+            </div> <!-- /end group -->
+        </div> <!-- /end group-container -->
+    </section>
+</div>
+
+
+
 
 <div class="group-container">
     <a class="project-navigation paginate_prev" href="../discover-bp">Previous Project</a>

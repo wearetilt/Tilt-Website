@@ -93,7 +93,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-6" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac/web_discover_gallery_06_imacsmall.jpg')"></div>
             <div id="carousel-image-7" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac/web_discover_gallery_07_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls seven-wide">
+        <div class="carousel-controls seven-wide grey-icons">
             <div id="carousel-control-1" class="carousel-control selected"></div>
             <div id="carousel-control-2" class="carousel-control"></div>
             <div id="carousel-control-3" class="carousel-control"></div>
