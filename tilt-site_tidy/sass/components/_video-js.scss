@@ -336,9 +336,9 @@ Create your own skin at http://designer.videojs.com
     content: "\e00b";
 }
 .vjs-default-skin .vjs-big-play-button {
-    height: 102px;
-    width:102px;
-    background-image: url('../images/play_button.png');
+    height:65px;
+    width:65px;
+    background-image: url('../images/play_button_v3_sm.png');
     position: absolute;
     z-index: 6;
     cursor: pointer;

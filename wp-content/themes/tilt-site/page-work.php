@@ -12,6 +12,7 @@
  */
 
 get_header(); ?>
+
 <div id="video-overlay" class="fullpage-overlay">
     <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/film_poster_image.jpg" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
@@ -87,8 +88,8 @@ get_header(); ?>
     					<div class="overlay area-dark">
     						<div class="overlay-text">
     							<p class="tag tag--work-body">Case Study</p>
-    							<h2>BP First Level Leaders<br />
-    								<span class="underlined light">Stories</span>
+    							<h2>BP<br />
+    								<span class="underlined light">Leaders: Stories</span>
     							</h2>
     							<p class="sans-serif">Engage your audience on an emotional level.</p>
     						</div> <!-- /end overlay-text -->

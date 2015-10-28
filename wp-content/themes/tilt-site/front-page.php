@@ -97,13 +97,13 @@ get_header('home'); ?>
 		<p class="first-para sans-serif"><strong class="highlight">CRAFTED DIGITAL EXPERIENCES</strong> FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS AND CREATIVES.</p>
 		
 
-		<a class="cube--link" href="<?php echo site_url(); ?>/staff/">
+		<a class="cube--link" href="<?php echo site_url(); ?>/about/">
 			<div class="cube">
 				<div class="cube--front">
-					<p class="sans-serif">Find out more</p>
+					<p class="sans-serif">More about us</p>
 				</div>
 				<div class="cub--top">
-					<p class="sans-serif">Find out more</p>
+					<p class="sans-serif">More about us</p>
 				</div>
 			</div>
 		</a>

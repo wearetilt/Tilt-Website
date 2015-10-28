@@ -42,7 +42,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-    <div class="container container--half-top container--CS-film">
+    <div class="container container--CS-film">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
@@ -56,7 +56,7 @@ get_header('work-item'); ?>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
-            <h2>CAN CORPORATE FILMS STIR EMOTIONS?</h2>
+            <h2>CAN CORPORATE FILMS<br />STIR EMOTIONS?</h2>
             <div class="text-section__para">
                 <p class="first-para tag--work-body">When people become leaders at work, they often face unexpected personal struggles and conflicts. It can even be a lonely experience. But, traditional corporate films aimed at new leaders are generally poor at conveying emotion or empathy.</p>
                 <p>BP asked us to consider ways to evoke these feelings through a set of filmed scenarios for their First Level Leaders portal – a website designed to help employees transition into leadership roles.</p>
@@ -158,7 +158,7 @@ get_header('work-item'); ?>
 	
 	 <div class="container area-dark">
         <section class="text-section">
-            <h2>STYLE + SUBSTANCE</h2>
+            <h2>STYLE & SUBSTANCE</h2>
             <div class="text-section__para">
                 <p class="first-para tag--work-body">For the shoot itself, we needed a flexible, lightweight setup with equipment that could still deliver stunning footage. The team opted for RED EPICs – cameras with 5K sensors capable of capturing 1 -120 frames per second at full resolution. The EPIC allowed us to create cinema-quality pieces with no more equipment bulk than a DSLR camera.</p>
                 <p>We filmed each story at four different BP locations around the world. In each case, the actor went through some simple actions. The voiceover – added in post-production – tracked the character’s internal monologue, conveying the stresses and struggles of their new role.</p>

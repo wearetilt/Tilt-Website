@@ -8,10 +8,12 @@
 
 .rotatingtweet .rtw_wide p.rtw_main {
 	font-size:12px;
-	line-height:1.5;
+	line-height:1.4;
 	@media handheld, screen and (min-width: $bp-desktop-large){
 		font-size:16px;
 	}
+	
+	a { text-transform:none; }
 	
 }
 
@@ -25,4 +27,4 @@ p.rtw_main {
 	font-weight:300;
 }
 
-.rotatingtweet a { color:$c-tilt-pink; }
+.rotatingtweet a { color:$c-tilt-pink2; }

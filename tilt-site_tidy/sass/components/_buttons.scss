@@ -55,6 +55,8 @@ a{
     
     &.paginate_prev {
 	    
+	    border-right:2px solid #1b1b1b;
+	    
 	    &:before{
         	content:url('../images/pagination_arrow.png');
             display: inline-block;
@@ -64,6 +66,8 @@ a{
     }
     
     &.paginate_next {
+	  
+	  border-left:2px solid #1b1b1b;
 	  
 	  &:after{
         	content:url('../images/pagination_arrow_after.png');

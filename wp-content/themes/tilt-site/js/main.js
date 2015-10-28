@@ -1660,8 +1660,6 @@ if(document.getElementById('contact-form')){
 }
 
 
-
-
 //footer stuff
 
 var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));

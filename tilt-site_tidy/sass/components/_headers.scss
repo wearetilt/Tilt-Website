@@ -17,7 +17,7 @@ header{
             transform: translate3d(0,0,0);
             transition: all 0.5s ease 1.5s;
             opacity: 0;
-            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+            
            
         }
         
@@ -29,7 +29,6 @@ header{
             transform: translate3d(0,0,0);
             transition: all 0.5s ease 1.7s;
             opacity: 0;
-            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
         }
         
         .underlined{
@@ -74,13 +73,15 @@ header{
     }
 
     &.work-item{
+       
         .container--header{
-            padding-bottom: percentage(50/2032);
+            padding-bottom: 5%;            
             position: absolute;
             bottom: 0;
             width: 100%;
             background-color: transparent;
         }
+        
         .monitor-wrapper + .container--header{
             position: relative;
             padding-top:3%;
@@ -100,18 +101,17 @@ header{
         .container--reel{
         	padding:0;
             position: absolute;
-            bottom:20%;
+            bottom:56%;
             width: 100%;
             text-align:center;
             background-color: transparent;
 
             p {
-	            font-family: $f-seroot-thn;
+	            font-family:$f-seroot-bd;
 				@include font-size(33);
-				letter-spacing:15px;
 				
 				@media handheld, screen and (min-width: $bp-desktop){
-					@include font-size(45);
+					@include font-size(65);
 				}
 				
             }
@@ -152,12 +152,14 @@ header{
 
 
     &.work-item--motion{
+        
         .container--header{
             background-color: #202020;
             position: absolute;
             bottom: 0;
             opacity: 0;
             padding: percentage(80/2032);
+            
             &.container--work-list{
                 @media handheld, screen and (min-width: $bp-desktop){
                     height: 68px;
@@ -169,7 +171,17 @@ header{
                     padding: 0;
                     opacity: 1 !important;
                 }
-        }
+			
+			&.sticky { 
+				position:fixed;
+				top:0;
+				z-index:999;
+			}
+			
+			}
+			
+			
+			
         .video-container{
             background-image: url('../images/video-placeholder.jpg');
             background-size: cover;
@@ -227,9 +239,9 @@ header{
 }
 
 .header-play{
-    height: 102px;
-    width:102px;
-    background-image: url('../images/play_button.png');
+    height:85px;
+    width:85px;
+    background-image: url('../images/play_button_v3.png');
     position: absolute;
     z-index: 6;
     cursor: pointer;
