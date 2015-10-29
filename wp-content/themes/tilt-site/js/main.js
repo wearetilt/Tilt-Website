@@ -1502,9 +1502,13 @@ if(document.getElementById('work_all')){
                         el3.style.opacity = 1;
                         el3.style.display = 'block';
                     });
+                    
+                    $('html, body').animate({scrollTop: $('#scroll_point').offset().top }, 'slow');
                       
 
                 } else {
+                	
+                	$('html, body').animate({scrollTop: $('#scroll_point').offset().top }, 'slow');
                 	
                     document.getElementById(itemsToShow).style.opacity = 1;
                     document.getElementById(itemsToShow).style.display = 'block';
@@ -1658,6 +1662,23 @@ if(document.getElementById('contact-form')){
 	});
 
 }
+
+
+jQuery(document).ready(function(){
+	
+	var stickySidebar = jQuery('#services--list').offset().top;
+	
+	jQuery(window).scroll(function() {  
+	    if ($(window).scrollTop() > stickySidebar) {
+	        jQuery('#services--list').addClass('sticky');
+	    }
+	    else {
+	        jQuery('#services--list').removeClass('sticky');
+	    }  
+	});
+
+});
+
 
 
 //footer stuff
