@@ -10,10 +10,10 @@ nav{
 
 .header-item--logo{
     margin-left:30px;
-    margin-top:30px;
+    margin-top:17px;
 
     img{
-        height: 36px;
+        height: 30px;
     }
 }
 
@@ -21,35 +21,35 @@ nav{
     right: 0;
     cursor: pointer;
     margin-right:30px;
-    margin-top:30px;
+    margin-top:25px;
 }
 
 #menuButton {
 	display:block;
-	padding-top:24px;
-	width:34px;
+	padding-top:21px;
+	width:28px;
 	height:0;
-	background:url('../images/menu-burger_v2.png') 0 0 no-repeat;
+	background:url('../images/menu-burger_v3.png') 0 0 no-repeat;
 	overflow:hidden;
 	cursor:pointer;
 }
 
-a#menuButton:hover { background:url('../images/menu-burger_v2.png') 0px -26px no-repeat; }
+a#menuButton:hover { background:url('../images/menu-burger_v3.png') 0px -24px no-repeat; }
 
 
 #workButton{
 	display:block;
-	padding-top:24px;
-	width:27px;
+	padding-top:19px;
+	width:21px;
 	height:0;
-	background:url('../images/work-burger_v2.png') 0 0 no-repeat;
+	background:url('../images/work-burger_v4.png') 0 0 no-repeat;
 	overflow:hidden;
 	cursor:pointer;
-    right: 50px;
-    margin-top:30px;
+    right:40px;
+    margin-top:25px;
 }
 
-a#workButton:hover { background:url('../images/work-burger_v2.png') 0px -24px no-repeat; }
+a#workButton:hover { background:url('../images/work-burger_v4.png') 0px -24px no-repeat; }
 
 
 .menu{
@@ -130,11 +130,8 @@ a#workButton:hover { background:url('../images/work-burger_v2.png') 0px -24px no
     display: block;
     cursor: pointer;
     text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     padding-top: 26px;
-    font-family:$f-merriweather;
-    font-weight:300;
+    font-family:$f-seroot-thn;
     
     @media handheld, screen and (min-width: $bp-desktop){
             width: 150px;
@@ -146,12 +143,137 @@ a#workButton:hover { background:url('../images/work-burger_v2.png') 0px -24px no
     &:hover{
         color: $c-tilt-pink2;
     }
+    
+    &:after {
+	    content:" ";
+	    margin-top:5px;
+	 	height:2px;
+	 	display:block;
+	 	content:" ";
+	 	width:0;
+        transform: translate3d(0,0,0);
+        background-color:$c-tilt-pink2;
+    }
+    
 }
 
 span#work_all { width:60px; }
-span#work_film { width:150px; }
-span#work_iteractive { width:160px; }
+span#work_film { width:125px; }
+span#work_interactive { width:160px; }
 span#work_motion { width:140px; }
 span#work_web { width:90px; }
 
+
 #services--list span.work-item--selected { color: $c-tilt-pink2; }
+
+
+span#work_all {
+	
+	&:after { margin-left:12px; }
+	
+	&.work-item--selected { 
+
+		 &:after {
+		    transition: all 0.5s ease;
+		 	width:35px;
+		 }
+	
+	}
+
+}
+
+span#work_film {
+	
+	&:after { margin-left:41px; }
+	
+	&.work-item--selected { 
+		 	
+		 &:after {
+		 	transition: all 0.5s ease;
+		 	width:43px;
+		 }
+	
+	}
+	
+	&:hover { 
+	
+		&:after {
+		 	transition: all 0.5s ease;
+		 	width:43px;
+		}
+		
+	}
+
+}
+
+span#work_interactive {
+	
+	&:after { margin-left:23px; }
+	
+	&.work-item--selected { 
+
+		 &:after {
+		 	transition: all 0.5s ease;
+		 	width:115px;
+		 }
+	
+	}
+	
+	&:hover {
+	
+		&:after {
+		 	transition: all 0.5s ease;
+		 	width:115px;
+		}
+		
+	}
+
+}
+
+span#work_motion {
+	
+	&:after { margin-left:34px; }
+	
+	&.work-item--selected { 
+
+		 &:after {
+		 	transition: all 0.5s ease;
+		 	width:73px;
+		 }
+	
+	}
+	
+	&:hover {
+	
+		&:after {
+		 	transition: all 0.5s ease;
+		 	width:73px;
+		}
+	
+	}
+
+}
+
+span#work_web {
+	
+	&:after { margin-left:25px; }
+	
+	&.work-item--selected { 
+		 
+		 &:after {
+		 	transition: all 0.5s ease;
+		 	width:43px;
+		 }
+	
+	}
+	
+	&:hover {
+		
+		&:after {
+		 	transition: all 0.5s ease;
+		 	width:43px;
+		}
+		
+	}
+
+}

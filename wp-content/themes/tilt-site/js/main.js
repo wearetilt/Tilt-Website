@@ -1299,6 +1299,7 @@ if(document.getElementById('staff-member')){
 		var staffVideoSrc;
 		var staffFullScreenVid;
 		var videoIWant;
+        
         //Some closure magic to get this working. - MT
 		//I came back to this comment...It was not helpful... - MT
 

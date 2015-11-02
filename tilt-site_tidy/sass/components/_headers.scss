@@ -107,7 +107,7 @@ header{
             background-color: transparent;
 
             p {
-	            font-family:$f-seroot-bd;
+	            font-family:$f-seroot-blck;
 				@include font-size(33);
 				
 				@media handheld, screen and (min-width: $bp-desktop){
@@ -154,7 +154,7 @@ header{
     &.work-item--motion{
         
         .container--header{
-            background-color: #202020;
+            background-color:$c-grey-1b;
             position: absolute;
             bottom: 0;
             opacity: 0;

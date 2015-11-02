@@ -385,6 +385,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
+				
 				<?php the_posts_pagination( array(
 					'prev_text'          => __( '< Prev', 'twentyfifteen' ),
 					'next_text'          => __( 'Next >', 'twentyfifteen' ),

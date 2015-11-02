@@ -197,7 +197,7 @@ get_header('contact'); ?>
 						<p class="sans-serif">Get Directions</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif">Come see</p>
+						<p class="sans-serif">Get Directions</p>
 					</div>
 			</div>
 		</a>

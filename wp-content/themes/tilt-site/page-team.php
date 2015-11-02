@@ -36,7 +36,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Chris Cooke</h2>
-						<p class="sans-serif">Creative Director<br />(Interactive)</p>
+						<p class="sans-serif">Creative Director<br />(Brand & Interactive)</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -269,7 +269,10 @@ get_header(); ?>
 	    }
 	};
 
-	httpRequest.open('GET', 'http://localhost/tilt-website/tilt-site_tidy/staff.json', true);
+	
+	httpRequest.open('GET', 'http://test.tilt.codes//tilt-site_tidy/staff.json', true);
+
+	
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
 

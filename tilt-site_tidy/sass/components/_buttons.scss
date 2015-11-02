@@ -167,6 +167,21 @@ a{
     }
 }
 
+.map-overlay .cube--front,.map-overlay .cub--top {
+	
+    background:url('../images/button_arrow.png') center right no-repeat;
+    border: 1px solid white;
+	height: 54px;
+    border-radius: 2px;
+    padding: 14px 72px 0px 24px;
+
+}
+
+.map-overlay .cub--top { background-color: white; }
+.map-overlay .cub--top p { color: $c-bg; }
+
+
+
 /* Rotate the cube */
 .cube:hover {
 	-webkit-transform: rotateX(90deg);
