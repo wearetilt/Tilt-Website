@@ -269,7 +269,9 @@ get_header(); ?>
 	};
 
 	
-	httpRequest.open('GET', 'http://localhost/~jonathanmalyon/tilt-website/tilt-site_tidy/staff.json', true);
+	httpRequest.open('GET', 'http://test.tilt.codes/tilt-site_tidy/staff.json', true);
+
+	
 
 	
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
