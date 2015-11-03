@@ -11,28 +11,28 @@ header{
         transform: translate3d(0,0,0);
         transition: all 0.5s ease 1s;
     }
-	
-	
-	
+
+
+
     .header-title {
         h1, p{
             transform: translate3d(0,0,0);
             transition: all 0.5s ease 1s;
-            opacity: 0;  
+            opacity: 0;
         }
-        
+
         p { letter-spacing:1px; }
-                
-        h1 { 
+
+        h1 {
 	        line-height:1;
         }
-        
+
         h2{
             transform: translate3d(0,0,0);
             transition: all 0.5s ease 1.7s;
             opacity: 0;
         }
-        
+
         .underlined{
             &:after{
                 width: 0px;
@@ -43,13 +43,13 @@ header{
         & + .header-text{
             margin-top: 20px;
         }
-        
+
         &.no--shadow h1 { text-shadow:none; }
         &.no--shadow h2 { text-shadow:none; }
-        &.no--shadow p { text-shadow:none; }   
+        &.no--shadow p { text-shadow:none; }
     }
-    
-    
+
+
 
     .header-text{
         transform: translate3d(0,0,0);
@@ -75,27 +75,27 @@ header{
     }
 
     &.work-item{
-       
+
         .container--header{
-            padding-bottom: 5%;            
+            padding-bottom: 5%;
             position: absolute;
             bottom: 0;
             width: 100%;
             background-color: transparent;
         }
-        
+
         .monitor-wrapper + .container--header{
             position: relative;
             padding-top:3%;
         }
-        
+
         @media handheld, screen and (min-width: $bp-desktop){
-            
+
             .header-title{
                 width: 50%;
                 float: left;
             }
-            
+
         }
     }
 
@@ -111,20 +111,20 @@ header{
             p {
 	            font-family:$f-seroot-blck;
 				@include font-size(33);
-				
+
 				@media handheld, screen and (min-width: $bp-desktop){
 					@include font-size(65);
 				}
-				
+
             }
 
         }
-        
+
         .header-title{
             width: 100%;
             float: left;
         }
-        
+
         @media handheld, screen and (min-width: $bp-desktop-large){
             .header-title{
                 width: 50%;
@@ -135,16 +135,16 @@ header{
 
     .header-play{
     		top:42%;
-    	
+
     	@media handheld, screen and (min-width: $bp-desktop){
         	top: 44%;
 		}
-    	
+
     	@media handheld, screen and (min-width: $bp-desktop-large){
         	top: 44%;
 		}
     }
-    
+
     .header-play--casestudy {
 	    top:44%;
     	@media handheld, screen and (min-width: $bp-desktop){
@@ -154,14 +154,14 @@ header{
 
 
     &.work-item--motion{
-        
+
         .container--header{
             background-color:$c-grey-1b;
             position: absolute;
             bottom: 0;
             opacity: 0;
             padding: percentage(80/2032);
-            
+
             &.container--work-list{
                 @media handheld, screen and (min-width: $bp-desktop){
                     height: 68px;
@@ -174,28 +174,28 @@ header{
                     opacity: 1 !important;
                     transition:none;
                 }
-			
-			&.sticky { 
+
+			&.sticky {
 				position:fixed;
 				top:0;
 				z-index:999;
 			}
-			
+
 			}
-			
-			
-			
+
+
+
         .video-container{
             background-image: url('../images/video-placeholder.jpg');
             background-size: cover;
         }
     }
-	
+
 	.header-text{
         float: left;
         width: 100%;
     }
-	
+
     @media handheld, screen and (min-width: $bp-desktop-large){
         .header-text{
             float: right;
@@ -203,11 +203,11 @@ header{
         }
 
          .header-text__module{
-            
+
              & + .header-text__module{
                  margin-top: 0;
              }
-             
+
             float: left;
             width: 50%;
         }
@@ -238,7 +238,7 @@ header{
 	@media handheld, screen and (min-width: $bp-desktop){
 		display:block;
 	}
-	
+
 }
 
 .header-play{
@@ -257,9 +257,9 @@ header{
 
     padding: 0%;
     @media handheld, screen and (min-width: $bp-desktop-large){
-   		 padding: 0% 0% 0% 5%; 
+   		 padding: 0% 0% 0% 5%;
     }
-    
+
     & + .header-text__module{
     		margin-top: 5%;
     	@media handheld, screen and (min-width: $bp-desktop-large){
@@ -287,27 +287,27 @@ header{
             }
         }
     }
-	
-	.news-container .intro-text { 
+
+	.news-container .intro-text {
 		transform: translate3d(0,0,0);
         transition: all 0.5s ease 0.4s;
         opacity: 1;
 	}
-	
-	.news-container .header-title h1, .news-container .header-title p.tag { 
+
+	.news-container .header-title h1, .news-container .header-title p.tag {
 		transform: translate3d(0,0,0);
         transition: all 0.5s ease 0.1s;
         opacity: 1;
 	}
-	
+
 	.news-container .header-title h1 {
-		
+
 		&:after {
 			transform: translate3d(0,0,0);
         transition: all 0.5s ease 0.7s;
         opacity: 1;
 		}
-		
+
 	}
 
     .header-text{
@@ -315,19 +315,19 @@ header{
          transition: all 0.5s ease 0.2s;
         opacity: 1;
     }
-    
+
     .intro-text, h2.news-date {
 	    transform: translate3d(0,0,0);
         transition: all 0.5s ease 0.2s;
         opacity: 1;
     }
-    
-    
-    
+
+
+
 }
 
 #header-overlay{
-    margin-top: -12%;
+    margin-top: -7%;
     background: -moz-linear-gradient(top,  rgba(31,31,31,0.8) 0%, rgba(31,31,31,1) 32%, rgba(31,31,31,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,31,31,0.8)), color-stop(32%,rgba(31,31,31,1)), color-stop(100%,rgba(31,31,31,1))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  rgba(31,31,31,0.8) 0%,rgba(31,31,31,1) 32%,rgba(31,31,31,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -338,7 +338,7 @@ header{
     opacity: 1 !important;
 
     &.container{
-        padding:15% 17% 12% 15%;
+        padding:10% 17% 7% 15%;
     }
 
     .text-container{
@@ -389,7 +389,7 @@ header{
     width:85%;
     top:85%;
     left:7%;
-    
+
     & .telephone{
         float: left;
         font-size: 1.3rem;
@@ -406,7 +406,7 @@ header{
         }
 
     }
-    
+
 }
 
 .nav-icon{
@@ -473,5 +473,3 @@ header{
 .nav-icons .telephone {
 	float:right;
 }
-
-
