@@ -12,29 +12,29 @@
     opacity: 0;
     position: relative;
     transition: all 0.5s ease;
-    
+
     &.module--dark{
         background-color: $c-grey-25;
         h2, p{
             color: white;
         }
     }
-    
+
     .module__text{
         position: absolute;
         top: 50%;
         transform:translateY(-50%);
         padding: 0 12%;
-        
+
         p.first-para { margin:20px 0px 0px 0px; }
-      	
-      	
-      	
-      	    
+
+
+
+
     }
-    
+
     .home--tweet { width:100%; }
-	
+
     &:hover{
         .overlay{
             opacity: 1;
@@ -232,7 +232,7 @@
     background-size: cover;
 }
 
-.instagram-box{
+#instagram_link_1{
     &:after{
         content:"";
         height: 30px;
@@ -393,11 +393,11 @@
 	overflow:hidden;
 	cursor:pointer;
     z-index: 7;
-    
+
     &:hover {
 	    background:url('../images/close_btn.png') 0px -19px no-repeat;
     }
-    
+
 }
 
 
@@ -414,13 +414,13 @@
     width: 100%;
     float: right;
 	padding:7% 5% 0% 0%;
-	
+
     @media handheld, screen and (min-width: $bp-desktop){
 
     	width: 50%;
 
     }
-    
+
 }
 
 #staff-member__wrapper{
@@ -443,12 +443,12 @@
     text-align: center;
     cursor: pointer;
     z-index: 7;
-    
-    &:hover {  
-    	background-color: $c-tilt-pink; 
+
+    &:hover {
+    	background-color: $c-tilt-pink;
     	color:white;
     }
-    
+
     & p {
 	    font-family: $f-seroot;
     }
