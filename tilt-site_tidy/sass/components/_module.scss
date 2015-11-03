@@ -27,6 +27,10 @@
         padding: 0 12%;
         
         p.first-para { margin:20px 0px 0px 0px; }
+      	
+      	
+      	
+      	    
     }
     
     .home--tweet { width:100%; }
@@ -189,7 +193,6 @@
 .module--2-2{
     width: 100%;
     padding-top: 100%;
-    background-color: green;
     float: left;
 }
 
@@ -339,9 +342,8 @@
     }
 
     .overlay-text{
-        bottom: 20px;
         left: 0px;
-        top: auto;
+        top: 50%;
     }
 }
 
@@ -380,24 +382,29 @@
 }
 
 #staff-member__close{
-    height: 34px;
-    width: 35px;;
-    margin: 0px auto;
-    padding:4px 0px 2px 0px;
-    top:30px;
-    right:30px;
-    background-color: white;
-    position: absolute;
-    text-align: center;
-    cursor: pointer;
+    position:absolute;
+    cursor:pointer;
+	top:25px;
+	right:25px;
+	padding-top:19px;
+	width:19px;
+	height:0;
+	background:url('../images/close_btn.png') 0 0 no-repeat;
+	overflow:hidden;
+	cursor:pointer;
     z-index: 7;
     
     &:hover {
-	    background-color: $c-tilt-pink; 
-    	color:white;
+	    background:url('../images/close_btn.png') 0px -19px no-repeat;
     }
     
 }
+
+
+
+
+
+
 
 #staff-member__info{
     overflow: auto;

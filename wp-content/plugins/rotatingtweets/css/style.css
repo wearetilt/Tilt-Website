@@ -12,9 +12,7 @@ div.rotatingtweet {
 	color: white;
 }
 
-div.rotatingtweet a{
-	color: #ff4c74;
-}
+
 div.cycle-carousel-wrap div.rotatingtweet {
 	padding-right: 1em;
 }
@@ -57,9 +55,11 @@ div.rtw_rt_meta img {
 	float: left;
 }
 
+/*
 .rtw_time_short a{
 	color: #ec135b;
 }
+*/
 div.rtw_wide_icon,
 div.rtw_icon {
 	float:left;

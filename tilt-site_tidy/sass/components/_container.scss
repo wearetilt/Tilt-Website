@@ -51,9 +51,7 @@
     
     &.container--work-pad{
         padding: percentage(60/2032) percentage(375/2032) percentage(100/2032) percentage(385/2032);
-    }
-	
-	
+    }	
 	
     &.image-container{
         font-size: 0;
@@ -62,6 +60,10 @@
             height: 100%;
             width: 100%;
         }
+    }
+    
+    &.about--smoke {
+	    background-image:url('../images/about/smoke_bg.jpg') 0px 0px no-repeat;
     }
 
 
@@ -88,10 +90,10 @@
 .news-wrapper {
 	
 	 & .intro-text { 
-	 	margin:45px 0px 55px 0px; 
+	 	margin:45px 0px 45px 0px; 
 	 	
 	 	 @media handheld, screen and (min-width: $bp-desktop){
-	 	 	margin:45px 0px 75px 0px; 
+	 	 	margin:75px 0px 75px 0px; 
 	 	 }
 	 	
 	 }
@@ -111,10 +113,6 @@
     padding: 0px;
 }
 
-.container--newsvideo { 
-	padding-top:40px;
-	padding-bottom:40px; 
-}
 
 .container--carousel{
     background-size: cover;
@@ -146,7 +144,9 @@
 
 .text-container{
     position: relative;
-
+	
+	&.center { text-align:center; }
+	
     footer & {
         top: 58%;
         transform: translateY(-50%);
@@ -265,7 +265,9 @@ section{
 
 
     &.careers .group--left h3, &.careers .group--right h3 { padding:5px 0px 10px 0px; }
-
+	
+	&.container--about-pad { padding:3% 0% 0% 0%; }
+	
 }
 
 .quote-container{
@@ -298,6 +300,14 @@ section{
     padding: 0  percentage(64/1270);
     
     &.news--footer { padding-bottom:5%; }
+	
+	.intro-text { opacity:0; }
+    
+    
+    
+    
+
+	
 }
 
 .img-container{

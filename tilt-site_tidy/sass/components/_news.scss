@@ -41,6 +41,14 @@ nav{
     .header-title{
         width: 100%;
     }
+
+	.news--anim_one { 
+		
+		transition: all 0.5s ease 0.5s; 
+	}
+	
+	#visual_content { margin-bottom:90px; }
+
 }
 
 #news{

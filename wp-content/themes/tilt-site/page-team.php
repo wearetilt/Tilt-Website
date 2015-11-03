@@ -15,10 +15,9 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">GREAT IDEAS</strong> COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS</p>
-		<p>On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>	
-		<p>We have an extended network of freelancers who work alongside our team of specialists, allowing us to expand and contract to meet the needs of any project.</p>
-		<p>Our open studio is built for collaboration, making it easy to let ideas fly and collide; like shaking a snow globe. </p>
+		<p class="first-para sans-serif"><strong class="highlight">GREAT IDEAS</strong> COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS.</p>
+		<p class="sans-serif">On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>	
+		<p class="sans-serif">Our open studio is built for collaboration, making it easy to let ideas fly and collide; like shaking a snow globe. </p>
 	</div>
 </div> <!-- /end container -->
 
@@ -28,7 +27,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Jonathan Malyon</h2>
-						<p class="sans-serif">Managing Director</p>
+						<p class="sans-serif">Founder/Managing Director</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -36,7 +35,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Chris Cooke</h2>
-						<p class="sans-serif">Creative Director<br />(Brand & Interactive)</p>
+						<p class="sans-serif">Founder/Creative Director:<br />Brand & Interactive</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -44,7 +43,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Dan Evans</h2>
-						<p class="sans-serif">Creative Director<br />(Motion & Film)</p>
+						<p class="sans-serif">Founder/Creative Director:<br />Motion & Film</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -270,7 +269,9 @@ get_header(); ?>
 	};
 
 	
-	httpRequest.open('GET', 'http://test.tilt.codes//tilt-site_tidy/staff.json', true);
+	httpRequest.open('GET', 'http://test.tilt.codes/tilt-site_tidy/staff.json', true);
+
+	
 
 	
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
@@ -327,7 +328,7 @@ get_header(); ?>
 	<div id="staff-member__wrapper">
 		<div id="blahblahblah"></div>
 		<div id="staff-member__info" class="area-dark no-background" style="position: relative; z-index: 7;">
-			<div id="staff-member__close"><p class="vertical-align sans-serif">X</p></div>
+			<div id="staff-member__close"></div>
 			<h1 id="staff-member__name"></h1>
 			<h2 id="staff-member__position"></h2>
 			<h2 id="staff-member__department" class="underlined"></h2>

@@ -32,6 +32,7 @@
 			</a>
         </div>
         <a id="menuButton" class="header-item header-item--menu">Menu</a>
+        <a id="closeButton" class="header-item header-item--menu">Close</a>
         
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
