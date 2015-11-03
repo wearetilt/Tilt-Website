@@ -11,16 +11,18 @@ header{
         transform: translate3d(0,0,0);
         transition: all 0.5s ease 1s;
     }
-
+	
+	
+	
     .header-title {
         h1, p{
             transform: translate3d(0,0,0);
-            transition: all 0.5s ease 1.5s;
-            opacity: 0;
-            
-           
+            transition: all 0.5s ease 1s;
+            opacity: 0;  
         }
         
+        p { letter-spacing:1px; }
+                
         h1 { 
 	        line-height:1;
         }
@@ -47,7 +49,7 @@ header{
         &.no--shadow p { text-shadow:none; }   
     }
     
-     
+    
 
     .header-text{
         transform: translate3d(0,0,0);
@@ -285,11 +287,43 @@ header{
             }
         }
     }
+	
+	.news-container .intro-text { 
+		transform: translate3d(0,0,0);
+        transition: all 0.5s ease 0.4s;
+        opacity: 1;
+	}
+	
+	.news-container .header-title h1, .news-container .header-title p.tag { 
+		transform: translate3d(0,0,0);
+        transition: all 0.5s ease 0.1s;
+        opacity: 1;
+	}
+	
+	.news-container .header-title h1 {
+		
+		&:after {
+			transform: translate3d(0,0,0);
+        transition: all 0.5s ease 0.7s;
+        opacity: 1;
+		}
+		
+	}
 
     .header-text{
         transform: translate3d(0,0,0);
+         transition: all 0.5s ease 0.2s;
         opacity: 1;
     }
+    
+    .intro-text, h2.news-date {
+	    transform: translate3d(0,0,0);
+        transition: all 0.5s ease 0.2s;
+        opacity: 1;
+    }
+    
+    
+    
 }
 
 #header-overlay{

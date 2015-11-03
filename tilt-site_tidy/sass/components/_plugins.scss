@@ -21,10 +21,26 @@ p.rtw_main {
 	font-family:$f-seroot-lt;
 }
 
+.rotatingtweet a { color:$c-tilt-pink; }
+
 .rtw_time_short a { 
 	font-size:13px;
 	font-family:$f-merriweather;
 	font-weight:300;
+	color:#d34262;
+	letter-spacing:1px;
 }
 
-.rotatingtweet a { color:$c-tilt-pink2; }
+
+.news-container #social a.synved-social-provider-facebook, .news-container #social a.synved-social-provider-mail { margin-right:15px !important; }
+
+#social h2.news-share {
+	float:left;
+	padding:0;
+	margin-top:7px;
+	margin-right:20px;
+	font-family: $f-seroot-lt;
+    color:$c-white;
+    letter-spacing:1px;
+    font-size:1em;
+}

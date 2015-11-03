@@ -23,7 +23,7 @@ get_header('news'); ?>
 		<div class="news-wrapper news-wrapper--header">
 			<div class="news-container">
 				<div class="header-title">
-					<p class="tag">News</p>
+					<p class="tag tag--home-title">News</p>
 					<h1 class="underlined"><? the_title(); ?></h1>
 				</div>
 			</div>
@@ -35,6 +35,7 @@ get_header('news'); ?>
 	<div class="news-container">
 		<div>
 			<div id="social">
+				<h2 class="light news-share">SHARE:</h2>
 				<?php echo do_shortcode('[feather_share]'); ?>
 			</div>			
 			<h2 class="light news-date"><?php echo get_the_date('d F Y'); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id );?> BY <span class="author-name"><?php echo get_the_author_meta('display_name', $post_author_id);?></span></h2>
@@ -45,84 +46,87 @@ get_header('news'); ?>
 	</div>
 	
 	
-	<! ----- IMAGE GROUP - if the image group is populated then show it here ----- !>
+	<div id="visual_content">
 	
-	<?php if(get_field('image_1')) { ?>
-	
-		<div class="container container--no-padding area-dark">
-			<div class="group-container">
-				<div class="group group--left">
-					<div class="module module--2-2">
-						<div class="ratio" style="background-image: url('<?php the_field('image_1'); ?>');"></div>
-					</div>
-				</div>
-				<div class="group group--right">
-					<div class="module module--1-1">
-						<div class="ratio" style="background-image: url('<?php the_field('image_2'); ?>');"></div>
-					</div>
-					<div class="module module--1-1">
-						<div class="ratio" style="background-image: url('<?php the_field('image_3'); ?>');"></div>
-					</div>
-					<div class="module module--2-1">
-						<div class="ratio" style="background-image: url('<?php the_field('image_4'); ?>');"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-	
-	<?php } ?>
-	
-	
-	
-	<! ----- SINGLE IMAGE - if the single image field is populated then show it here ----- !>
-	
-	<?php if(get_field('single_image')) { ?>
-	
+		<! ----- IMAGE GROUP - if the image group is populated then show it here ----- !>
+		
+		<?php if(get_field('image_1')) { ?>
+		
 			<div class="container container--no-padding area-dark">
-				<img src="<?php the_field('single_image'); ?>" alt="<? the_title(); ?>" width="100%" />
-			</div>
-	
-	<?php } ?>
-	
-	<! ----- END SINGLE IMAGE HERE ----- !>
-	
-	
-	
-	
-	<! ----- VIDEO - if the video field is populated then show it here ----- !>
-	
-	<?php if(get_field('vimeo_id')) { ?>   
-	
-		<div class="container--newsvideo">
-			<div class="group-container">
-				<div class="module module--16-9 module--video module--nozoom">
-					<div class="ratio">
-						<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id'); ?> " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+				<div class="group-container">
+					<div class="group group--left">
+						<div class="module module--2-2">
+							<div class="ratio" style="background-image: url('<?php the_field('image_1'); ?>');"></div>
+						</div>
+					</div>
+					<div class="group group--right">
+						<div class="module module--1-1">
+							<div class="ratio" style="background-image: url('<?php the_field('image_2'); ?>');"></div>
+						</div>
+						<div class="module module--1-1">
+							<div class="ratio" style="background-image: url('<?php the_field('image_3'); ?>');"></div>
+						</div>
+						<div class="module module--2-1">
+							<div class="ratio" style="background-image: url('<?php the_field('image_4'); ?>');"></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		
+		
+		<?php } ?>
 	
-	<?php } ?>
 	
-	<?php if(get_field('youtube_id')) { ?>
 	
-		<div class="container--newsvideo">
-			<div class="group-container">
-				<div class="module module--16-9 module--video module--nozoom">
-					<div class="ratio">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>" frameborder="0" allowfullscreen></iframe> 
+		<! ----- SINGLE IMAGE - if the single image field is populated then show it here ----- !>
+		
+		<?php if(get_field('single_image')) { ?>
+		
+				<div class="container container--no-padding area-dark">
+					<img src="<?php the_field('single_image'); ?>" alt="<? the_title(); ?>" width="100%" />
+				</div>
+		
+		<?php } ?>
+		
+		<! ----- END SINGLE IMAGE HERE ----- !>
+	
+	
+	
+	
+		<! ----- VIDEO - if the video field is populated then show it here ----- !>
+		
+		<?php if(get_field('vimeo_id')) { ?>   
+		
+			<div class="container--newsvideo">
+				<div class="group-container">
+					<div class="module module--16-9 module--video module--nozoom">
+						<div class="ratio">
+							<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id'); ?> " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		
+		<?php } ?>
+		
+		<?php if(get_field('youtube_id')) { ?>
+		
+			<div class="container--newsvideo">
+				<div class="group-container">
+					<div class="module module--16-9 module--video module--nozoom">
+						<div class="ratio">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>" frameborder="0" allowfullscreen></iframe> 
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<?php } ?>
+		
+		
+		<! ----- END VIDEO ----- !>
 	
-	<?php } ?>
-	
-	
-	<! ----- END VIDEO ----- !>
-	
+	</div>
 	
 	
 	<! ----- BODY COPY - if the video field is populated then show it here ----- !>

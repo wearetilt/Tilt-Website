@@ -36,26 +36,42 @@ nav{
 
 a#menuButton:hover { background:url('../images/menu-burger_v3.png') 0px -24px no-repeat; }
 
+#closeButton {
+	display:none;
+	right:10px;
+	cursor:pointer;
+	margin-right:25px;
+    margin-top:25px;
+	padding-top:19px;
+	width:19px;
+	height:0;
+	background:url('../images/close_btn.png') 0 0 no-repeat;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+a#closeButton:hover { background:url('../images/close_btn.png') 0px -19px no-repeat; }
+
 
 #workButton{
 	display:block;
 	padding-top:19px;
 	width:21px;
 	height:0;
-	background:url('../images/work-burger_v4.png') 0 0 no-repeat;
+	background:url('../images/work-burger_v5.png') 0 0 no-repeat;
 	overflow:hidden;
 	cursor:pointer;
     right:40px;
     margin-top:25px;
 }
 
-a#workButton:hover { background:url('../images/work-burger_v4.png') 0px -24px no-repeat; }
+a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no-repeat; }
 
 
 .menu{
     height: 100vh;
     width: 100%;
-    background: url('../images/menu_background_smoke.jpg');
+    background-color: $c-tilt-pink;
     background-size: cover;
     position: fixed;
     z-index: 4;
@@ -132,6 +148,7 @@ a#workButton:hover { background:url('../images/work-burger_v4.png') 0px -24px no
     text-transform: uppercase;
     padding-top: 26px;
     font-family:$f-seroot-thn;
+    letter-spacing:1px;
     
     @media handheld, screen and (min-width: $bp-desktop){
             width: 150px;
@@ -146,7 +163,7 @@ a#workButton:hover { background:url('../images/work-burger_v4.png') 0px -24px no
     
     &:after {
 	    content:" ";
-	    margin-top:5px;
+	    margin-top:3px;
 	 	height:2px;
 	 	display:block;
 	 	content:" ";
@@ -169,7 +186,7 @@ span#work_web { width:90px; }
 
 span#work_all {
 	
-	&:after { margin-left:12px; }
+	&:after { margin-left:11px; }
 	
 	&.work-item--selected { 
 
@@ -177,20 +194,29 @@ span#work_all {
 		    transition: all 0.5s ease;
 		 	width:35px;
 		 }
+		 
+		 &:hover { 
 	
+			&:after {
+			 	transition: all 0.5s ease;
+			 	width:35px;
+			}
+			
+		}
+		 
 	}
 
 }
 
 span#work_film {
 	
-	&:after { margin-left:41px; }
+	&:after { margin-left:40px; }
 	
 	&.work-item--selected { 
 		 	
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:43px;
+		 	width:44px;
 		 }
 	
 	}
@@ -199,7 +225,7 @@ span#work_film {
 	
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:43px;
+		 	width:44px;
 		}
 		
 	}
@@ -208,13 +234,13 @@ span#work_film {
 
 span#work_interactive {
 	
-	&:after { margin-left:23px; }
+	&:after { margin-left:18px; }
 	
 	&.work-item--selected { 
 
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:115px;
+		 	width:123px;
 		 }
 	
 	}
@@ -223,7 +249,7 @@ span#work_interactive {
 	
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:115px;
+		 	width:123px;
 		}
 		
 	}
@@ -232,13 +258,13 @@ span#work_interactive {
 
 span#work_motion {
 	
-	&:after { margin-left:34px; }
+	&:after { margin-left:31px; }
 	
 	&.work-item--selected { 
 
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:73px;
+		 	width:76px;
 		 }
 	
 	}
@@ -247,7 +273,7 @@ span#work_motion {
 	
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:73px;
+		 	width:76px;
 		}
 	
 	}
@@ -256,13 +282,13 @@ span#work_motion {
 
 span#work_web {
 	
-	&:after { margin-left:25px; }
+	&:after { margin-left:24px; }
 	
 	&.work-item--selected { 
 		 
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:43px;
+		 	width:41px;
 		 }
 	
 	}
@@ -271,7 +297,7 @@ span#work_web {
 		
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:43px;
+		 	width:41px;
 		}
 		
 	}

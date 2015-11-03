@@ -1168,8 +1168,14 @@ menuButton.onclick = function(){
         if(document.getElementById('header-video-player')){
             myPlayer.play();
         }
+        
+        
+        
 
     } else{
+    
+    
+    	
         pageMenu.style.visibility = 'inherit';
         pageMenu.style.opacity = 0.98;
         pageMenu.style.transform = "scale(1, 1)";
@@ -1180,6 +1186,12 @@ menuButton.onclick = function(){
         }
     }
 }
+
+
+
+
+
+
 
 var lookUpStaffMember = function(staffMember){
     return staffData[staffMember];
@@ -1433,6 +1445,9 @@ if(document.getElementById('work_all')){
         }
     });
 }
+
+
+
 
 
 //footer stuff

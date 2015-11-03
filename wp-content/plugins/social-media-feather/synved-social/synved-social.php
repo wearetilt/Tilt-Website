@@ -211,6 +211,11 @@ function synved_social_service_provider_list($context, $raw = false)
 	if ($context == 'share')
 	{
 		$provider_list = array(
+			
+			'mail' => array(
+				'link' => 'mailto:?subject=%%title%%&body=%%message%%:%20%%url%%',
+				'title' => __('Share by email'),
+			),
 			'facebook' => array(
 				'link' => 'http://www.facebook.com/sharer.php?u=%%url%%&t=%%title%%&s=100&p[url]=%%url%%&p[images][0]=%%image%%&p[title]=%%title%%',
 				'title' => __('Share on Facebook')
@@ -219,10 +224,8 @@ function synved_social_service_provider_list($context, $raw = false)
 				'link' => 'http://twitter.com/share?url=%%url%%&text=%%message%%',
 				'title' => __('Share on Twitter'),
 			),
-			'mail' => array(
-				'link' => 'mailto:?subject=%%title%%&body=%%message%%:%20%%url%%',
-				'title' => __('Share by email'),
-			),
+			
+			
 		);
 	}
 	else if ($context == 'follow')

@@ -165,3 +165,16 @@
 #careers .container--double-side-pad {  
 	background:url('../images/careers/careers_bg.jpg');
 }
+
+.about-service { 
+	
+	text-align:center;
+	color:$c-bg;
+	
+	&:hover {
+		background-color:$c-tilt-pink;
+		color:$c-white;
+	}
+	
+}
+
