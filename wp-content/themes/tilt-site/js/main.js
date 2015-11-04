@@ -998,11 +998,11 @@ var resourceUri;
 // }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-	
+
 	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
 		document.body.setAttribute("class","loaded safari");
 	} else {
-		document.body.setAttribute("class","loaded");	
+		document.body.setAttribute("class","loaded");
 	}
 
 });
@@ -1139,17 +1139,17 @@ if(document.getElementById('header-video-player')){
 	        videoOverlay.pause();
 
 	        myPlayer.play();
-	        
-	        
+
+
 			document.getElementById('tilt--logo').style.display = 'block';
 	        document.getElementById('menuButton').style.display = 'block';
-	        
-	        
+
+
 			if(document.getElementById('workButton').style.display != null) {
-		       document.getElementById('workButton').style.display = 'block'; 
+		       document.getElementById('workButton').style.display = 'block';
 	        }
 
-	        
+
 	    });
 	}
 
@@ -1163,18 +1163,18 @@ if(document.getElementById('header-video-player')){
 	                videoOverlay.play();
 	                myPlayer.pause();
 	                document.getElementById('video-overlay').style.display = 'block';
-	                
-	                
+
+
 					document.getElementById('tilt--logo').style.display = 'none';
 	                document.getElementById('menuButton').style.display = 'none';
-					
-					
+
+
 					if(document.getElementById('workButton').style.display != null) {
 						document.getElementById('workButton').style.display = 'none';
 	                }
 
-	                
-	                
+
+
 	            });
 	    });
 	}
@@ -1219,12 +1219,12 @@ menuButton.onclick = function(){
         el.classList.toggle('wrapper--navved');
     });
 */
-	
+
 	jQuery('#menuButton').fadeOut(500,function(){
 		jQuery('#closeButton').fadeIn(500);
 	});
-	
-	
+
+
     pageMenu.style.visibility = 'inherit';
     pageMenu.style.opacity = 0.98;
     pageMenu.style.transform = "scale(1, 1)";
@@ -1233,21 +1233,21 @@ menuButton.onclick = function(){
     if(document.getElementById('header-video-player')){
         myPlayer.pause();
     }
-    
+
 }
 
 closeButton.onclick = function(){
-	
+
 	/*
 [].map.call(document.querySelectorAll('.wrapper'), function(el){
         el.classList.toggle('wrapper--navved');
     });
 */
-		
+
 	jQuery('#closeButton').fadeOut(500,function(){
 		jQuery('#menuButton').fadeIn(500);
 	});
-	
+
 	 pageMenu.style.opacity = '0'
         setTimeout(function(){
             pageMenu.style.visibility = 'hidden';
@@ -1258,7 +1258,7 @@ closeButton.onclick = function(){
         if(document.getElementById('header-video-player')){
             myPlayer.play();
         }
-	
+
 }
 
 
@@ -1274,9 +1274,9 @@ if(document.getElementById('staff-member')){
 	    document.getElementById('staff-member__info').style.opacity = '1';
 	    document.getElementById('staff-member__wrapper').style.opacity = '1';
 	    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + window.directoryURI + '/' + staffObject.image + ')';
-	    document.getElementById('staff-member__close').style.opacity = '1'; 
-	    
-	    
+	    document.getElementById('staff-member__close').style.opacity = '1';
+
+
 	}
 
 	var populateAndSizeStaffInfo = function(staffBox, staffObject){
@@ -1324,7 +1324,7 @@ if(document.getElementById('staff-member')){
 		var staffVideoSrc;
 		var staffFullScreenVid;
 		var videoIWant;
-        
+
         //Some closure magic to get this working. - MT
 		//I came back to this comment...It was not helpful... - MT
 
@@ -1427,14 +1427,15 @@ if(document.getElementById('staff-member')){
 					videoFunction = setTimeout(function(){
 						if(!that.children[1]){
 							if(isChrome){
-								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
 							} else{
-								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video loop="false" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
+								document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
 							}
 						}
 							var ratio2 = that.children[1];
 							var video2 = ratio2.children[0];
 							videoIWant = video2;
+							videoIWant.currentTime = 0;
 	                    	videoIWant.play();
 						}, 100);
 
@@ -1444,7 +1445,7 @@ if(document.getElementById('staff-member')){
 					// console.log("Mouse has exited");
 					clearTimeout(videoFunction);
 					// console.log(videoIWant);
-					videoIWant.pause();
+					//videoIWant.pause();
             });
         })();
 
@@ -1480,9 +1481,9 @@ if(document.getElementById('staff-member')){
             setTimeout(function(){
 				console.log('Hello');
                 staffBox.style.transition = "all 0.5s ease";
-                
-              
-                
+
+
+
                 populateAndSizeStaffInfo(staffBox, staffObject);
             }, 500);
 
@@ -1495,7 +1496,7 @@ if(document.getElementById('staff-member')){
 		staffBoxClose.onclick = function(){
 			document.getElementById('staff-member__wrapper').style.opacity = '0';
 			document.getElementById('staff-member__info').style.opacity = '0';
-			document.getElementById('staff-member__close').style.opacity = '0'; 
+			document.getElementById('staff-member__close').style.opacity = '0';
 			window.scrollTo(0, scrollPosition);
 
 			setTimeout(function(){
@@ -1512,7 +1513,7 @@ if(document.getElementById('staff-member')){
 }
 
 if(document.getElementById('work_all')){
-	
+
     [].map.call(document.querySelectorAll('.work-item-title'), function(el){
         el.onclick = function(){
                 itemsToShow = el.id;
@@ -1521,25 +1522,25 @@ if(document.getElementById('work_all')){
                     el3.style.opacity = 0;
                     el3.style.display = 'none';
                 });
-				
+
 				resetClass();
-				
+
 				document.getElementById('work_' + itemsToShow).className = 'work-item--selected work-item-title';
-				
+
                 if(itemsToShow === 'all'){
 
                     [].map.call(document.querySelectorAll('.work-container'), function(el3){
                         el3.style.opacity = 1;
                         el3.style.display = 'block';
                     });
-                    
+
                     $('html, body').animate({scrollTop: $('#scroll_point').offset().top }, 'slow');
-                      
+
 
                 } else {
-                	
+
                 	$('html, body').animate({scrollTop: $('#scroll_point').offset().top }, 'slow');
-                	
+
                     document.getElementById(itemsToShow).style.opacity = 1;
                     document.getElementById(itemsToShow).style.display = 'block';
 
@@ -1563,7 +1564,7 @@ function resetClass() {
 	document.getElementById('work_interactive').className = 'work-item-title';
 	document.getElementById('work_motion').className = 'work-item-title';
 	document.getElementById('work_web').className = 'work-item-title';
-		
+
 }
 
 var controlContactBorder = function(inputClicked, borderToChange){
@@ -1695,18 +1696,18 @@ if(document.getElementById('contact-form')){
 
 
 jQuery(document).ready(function(){
-	
+
 	if(document.getElementById('services--list')){
-	
+
 		var stickySidebar = jQuery('#services--list').offset().top;
-		
-		jQuery(window).scroll(function() {  
+
+		jQuery(window).scroll(function() {
 		    if ($(window).scrollTop() > stickySidebar) {
 		        jQuery('#services--list').addClass('sticky');
 		    }
 		    else {
 		        jQuery('#services--list').removeClass('sticky');
-		    }  
+		    }
 		});
 
 	}

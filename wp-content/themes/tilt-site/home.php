@@ -16,7 +16,6 @@
  */
 
 get_header(); ?>
-	<?php echo 'sas' . $paged; ?>
 		<?php
 
 			query_posts('cat=-9&paged=' . $paged);
