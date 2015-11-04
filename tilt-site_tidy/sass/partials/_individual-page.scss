@@ -67,8 +67,8 @@
 		@media handheld, screen and (min-width: $bp-desktop){
 			display:block;
 			position:absolute;
-			bottom:3%;
-			right:3%;
+			bottom:8%;
+			right:7%;
 		}
 	
 	}
@@ -167,14 +167,33 @@
 }
 
 .about-service { 
-	
 	text-align:center;
 	color:$c-bg;
+	
+	p#web-sprite { transition: all ease 0.5s; }
 	
 	&:hover {
 		background-color:$c-tilt-pink;
 		color:$c-white;
-	}
 	
+		h3 {  
+			color:$c-white; 
+		}
+		
+		p#web-sprite { background:url('../images/about/iconsprite_webandmobile_hover.png') center top no-repeat; }
+	
+	}
+
+}
+
+.container--about-pad p#web-sprite {
+	display:block;
+	margin:auto;
+	height:0;
+	width:143px;
+	overflow:hidden;
+	padding:135px 0px 0px 0px;
+	background:url('../images/about/iconsprite_webandmobile.png') center top no-repeat;
+
 }
 

@@ -56,7 +56,7 @@ get_header('work-item'); ?>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
-            <h2>CAN CORPORATE FILMS<br />STIR EMOTIONS?</h2>
+            <h2 class="white">CAN CORPORATE FILMS<br />STIR EMOTIONS?</h2>
             <div class="text-section__para">
                 <p class="first-para tag--work-body">When people become leaders at work, they often face unexpected personal struggles and conflicts. It can even be a lonely experience. But, traditional corporate films aimed at new leaders are generally poor at conveying emotion or empathy.</p>
                 <p>BP asked us to consider ways to evoke these feelings through a set of filmed scenarios for their First Level Leaders portal – a website designed to help employees transition into leadership roles.</p>
@@ -101,12 +101,13 @@ get_header('work-item'); ?>
             <h2>STORIES NOT LECTURES</h2>
             <div class="text-section__para">
                 <p class="first-para tag--work-body">Consider for a moment the unsaid messaging behind traditional corporate talking heads films: we know best; you’re on your own; do what we say.</p>
-                <p>Instead, we wanted to focus on storytelling, allowing viewers to emotionally connect with an idea, rather than listening to lectures. We devised each piece to follow the narrative of a newly transitioned leader battling with a decision around their new role. Scenarios include:</p>
+                <p>Instead, we wanted to focus on storytelling, allowing viewers to emotionally connect with an idea, rather than listening to lectures. We devised each piece to follow the narrative of a newly transitioned leader battling with a decision around their new role.</p>
+                <p>Scenarios include:</p>
 				 <ul class="standard-list">
 					<li><span class="serif">A New Team</span></li>
 					<li><span class="serif">Managing Performance</span></li>
 					<li><span class="serif">High Performing Teams</span></li>
-					<li><span class="serif">Managing Peers</span></li>
+					<li><span class="serif">Managing Peers.</span></li>
 				</ul>
             
             </div>

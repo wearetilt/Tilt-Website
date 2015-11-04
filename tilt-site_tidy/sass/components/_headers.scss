@@ -17,7 +17,7 @@ header{
     .header-title {
         h1, p{
             transform: translate3d(0,0,0);
-            transition: all 0.5s ease 1s;
+            transition: all 0.5s ease 0.1s;
             opacity: 0;  
         }
         
@@ -29,7 +29,7 @@ header{
         
         h2{
             transform: translate3d(0,0,0);
-            transition: all 0.5s ease 1.7s;
+            transition: all 0.5s ease 0.3s;
             opacity: 0;
         }
         
@@ -37,7 +37,7 @@ header{
             &:after{
                 width: 0px;
                 transform: translate3d(0,0,0);
-                transition: all 0.5s ease 2s;
+                transition: all 0.5s ease 0.5s;
             }
         }
         & + .header-text{
@@ -134,14 +134,14 @@ header{
     }
 
     .header-play{
-    		top:42%;
+    		top:28%;
     	
     	@media handheld, screen and (min-width: $bp-desktop){
-        	top: 44%;
+        	top: 28%;
 		}
     	
     	@media handheld, screen and (min-width: $bp-desktop-large){
-        	top: 44%;
+        	top: 28%;
 		}
     }
     
@@ -232,6 +232,24 @@ header{
         background-color: $c-bg;
     }
 }
+
+
+#work_page {
+	
+	.header-play{
+    		top:44%;
+    	
+    	@media handheld, screen and (min-width: $bp-desktop){
+        	top: 44%;
+		}
+    	
+    	@media handheld, screen and (min-width: $bp-desktop-large){
+        	top: 44%;
+		}
+    }
+	
+}
+
 
 #services--list {
 	display:none;
