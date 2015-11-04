@@ -31,7 +31,7 @@ $bp-desktop-large: 1024px;
 
 
 
-.group-container .group #twitter__module {
+.group-container .group #twitter__module, .group-container .group #twitter__module_two, .group-container .group #twitter__module_three {
     &:after{
 		content: " ";
 		height: 19px;

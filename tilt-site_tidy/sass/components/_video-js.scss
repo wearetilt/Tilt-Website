@@ -586,6 +586,8 @@ Create your own skin at http://designer.videojs.com
     -ms-user-select: none;
     user-select: none;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 .page-video .video-js .vjs-tech {
     position: absolute;
