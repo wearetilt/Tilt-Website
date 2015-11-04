@@ -1707,6 +1707,9 @@ if(document.getElementById('contact-form')){
 
 jQuery(document).ready(function(){
 
+	jQuery('.vjs-loading-spinner').html('<div class="circle-container"><div class="circle circle--1"></div><div class="circle circle--2"></div></div>');
+
+
 	if(document.getElementById('services--list')){
 
 		var stickySidebar = jQuery('#services--list').offset().top;
@@ -1723,8 +1726,6 @@ jQuery(document).ready(function(){
 	}
 
 });
-
-
 
 //footer stuff
 
