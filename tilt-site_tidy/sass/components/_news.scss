@@ -6,15 +6,18 @@ nav{
 
     .nav-links{
         display: inline-block;
-        margin-bottom: 0.5%;
-        margin-top: 1%;
         }
     }
-
+	
     .page-numbers{
-        color: $c-pink-3;
-        @include font-size(25);
-        font-family: $f-seroot-lt;
+        @include font-size(16);
+    	letter-spacing:1px;
+		color: white;
+		font-family:$f-seroot-thn;
+		
+		@media handheld, screen and (min-width: $bp-desktop){
+	    	 @include font-size(25);
+		} 
 
         & + * {
             margin-left: 10px;
@@ -36,6 +39,9 @@ nav{
         font-size: 0;
     }
 }
+
+
+
 
 .news-wrapper {
     .header-title{

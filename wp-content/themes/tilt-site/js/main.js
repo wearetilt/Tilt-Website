@@ -1214,13 +1214,11 @@ var doc = document.documentElement;
 menuButton.onclick = function(){
 
 
-    [].map.call(document.querySelectorAll('.wrapper'), function(el){
+    /*
+[].map.call(document.querySelectorAll('.wrapper'), function(el){
         el.classList.toggle('wrapper--navved');
     });
-	
-	
-	
-		
+*/
 	
 	jQuery('#menuButton').fadeOut(500,function(){
 		jQuery('#closeButton').fadeIn(500);
@@ -1240,9 +1238,11 @@ menuButton.onclick = function(){
 
 closeButton.onclick = function(){
 	
-	[].map.call(document.querySelectorAll('.wrapper'), function(el){
+	/*
+[].map.call(document.querySelectorAll('.wrapper'), function(el){
         el.classList.toggle('wrapper--navved');
     });
+*/
 		
 	jQuery('#closeButton').fadeOut(500,function(){
 		jQuery('#menuButton').fadeIn(500);
@@ -1274,6 +1274,9 @@ if(document.getElementById('staff-member')){
 	    document.getElementById('staff-member__info').style.opacity = '1';
 	    document.getElementById('staff-member__wrapper').style.opacity = '1';
 	    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + window.directoryURI + '/' + staffObject.image + ')';
+	    document.getElementById('staff-member__close').style.opacity = '1'; 
+	    
+	    
 	}
 
 	var populateAndSizeStaffInfo = function(staffBox, staffObject){
@@ -1470,13 +1473,16 @@ if(document.getElementById('staff-member')){
             staffBox.style.width = startingWidth;
             document.body.appendChild(staffBox);
             staffBox.appendChild(staffBoxClose);
-            staffBox.style.backgroundColor = '#FF0066';
+            staffBox.style.backgroundColor = '#ff4c74';
             staffBox.style.zIndex = '6';
 			document.getElementById('blahblahblah').innerHTML = '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
 
             setTimeout(function(){
 				console.log('Hello');
                 staffBox.style.transition = "all 0.5s ease";
+                
+              
+                
                 populateAndSizeStaffInfo(staffBox, staffObject);
             }, 500);
 
@@ -1489,6 +1495,7 @@ if(document.getElementById('staff-member')){
 		staffBoxClose.onclick = function(){
 			document.getElementById('staff-member__wrapper').style.opacity = '0';
 			document.getElementById('staff-member__info').style.opacity = '0';
+			document.getElementById('staff-member__close').style.opacity = '0'; 
 			window.scrollTo(0, scrollPosition);
 
 			setTimeout(function(){
@@ -1689,16 +1696,20 @@ if(document.getElementById('contact-form')){
 
 jQuery(document).ready(function(){
 	
-	var stickySidebar = jQuery('#services--list').offset().top;
+	if(document.getElementById('services--list')){
 	
-	jQuery(window).scroll(function() {  
-	    if ($(window).scrollTop() > stickySidebar) {
-	        jQuery('#services--list').addClass('sticky');
-	    }
-	    else {
-	        jQuery('#services--list').removeClass('sticky');
-	    }  
-	});
+		var stickySidebar = jQuery('#services--list').offset().top;
+		
+		jQuery(window).scroll(function() {  
+		    if ($(window).scrollTop() > stickySidebar) {
+		        jQuery('#services--list').addClass('sticky');
+		    }
+		    else {
+		        jQuery('#services--list').removeClass('sticky');
+		    }  
+		});
+
+	}
 
 });
 

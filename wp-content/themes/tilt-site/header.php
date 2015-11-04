@@ -21,6 +21,8 @@
 		window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
 	</script>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXrz6wY5cdWYYsdOr041i9Cdb74DjOHns&sensor=false"></script>
+
 	<?php wp_head(); ?>
 </head>
 

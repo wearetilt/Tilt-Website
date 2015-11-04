@@ -20,6 +20,7 @@
 	<script type="text/javascript">
 		window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
 	</script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXrz6wY5cdWYYsdOr041i9Cdb74DjOHns&sensor=false"></script>
 	<?php wp_head(); ?>
 </head>
@@ -32,13 +33,16 @@
 			</a>
         </div>
         <a id="menuButton" class="header-item header-item--menu">Menu</a>
+        <a id="closeButton" class="header-item header-item--menu">Close</a>
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
 				<li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/staff">About</a></li>
+                <li class="menu__item"><a href="<?php echo site_url(); ?>/about">About</a></li>
+                <li class="menu__item"><a href="<?php echo site_url(); ?>/team">Team</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/news">News</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/careers">Careers</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
+
             </ul>
             
             <div class="nav-icons">

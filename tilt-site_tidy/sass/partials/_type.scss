@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1 {
+	color:$c-bg;
     @include font-size(25);
     @media handheld, screen and (min-width: $bp-desktop){
         @include font-size(50);
@@ -75,6 +76,7 @@ h1 {
 
 
 h2{
+	color:$c-bg;
     @include font-size(20);
     @media handheld, screen and (min-width: $bp-desktop){
            @include font-size(32);
@@ -114,6 +116,10 @@ h2{
 	
 	&.about { padding:0px 0px 15px 0px; }
 	
+	.contact--page & {
+		text-transform:uppercase;
+		font-size:25px;
+	}
 
 }
 
@@ -125,6 +131,7 @@ h2{
 }
 
 h3{
+	color:$c-bg;
     @include font-size(20);
     &.marker{
         &:before{
@@ -153,6 +160,24 @@ h3{
 	    font-family:$f-seroot-lt;
 	    padding-bottom:3%;
     }
+    
+    
+    .careers--image & {
+	    
+	    display:inline-block;
+	    margin: 0 auto;
+	    
+	    
+	    &:after {
+	    	content:" ";
+	    	display: inline-block;
+		    
+		    border-bottom:1px solid $c-bg;
+		    width:100%;
+	    }
+	    
+    }
+    
     
 }
 
@@ -329,8 +354,6 @@ p {
 }
 
 
-
-
 /*
 .module--2-1 .module__text p {
 		@include font-size(12);
@@ -345,6 +368,15 @@ p {
 	margin:0;
 	font-family: $f-merriweather;
     font-weight:700;
+    
+    &:before {
+	    display:none;
+    }
+}
+
+.careers p.text-center {
+	margin-bottom:59px;
+	font-size:20px;
 }
 
 a{
@@ -377,7 +409,13 @@ a{
     	text-transform:none;
     }
     
+    .contact--page & {  
+	    text-transform:uppercase;
+	    font-family:$f-seroot-bd;
+	    font-size:25px;
+    }
     
+    &:hover { color:$c-grey-7d; }
     
 }
 
@@ -405,7 +443,7 @@ span{
     .map-overlay & {
         @include font-size(17);
         @media handheld, screen and (min-width: $bp-desktop){
-            @include font-size(35);
+            @include font-size(25);
         }
 
         font-family: $f-seroot-lt;
@@ -418,7 +456,7 @@ span{
     }
 
     &.author-name{
-        color: $c-tilt-pink;
+        color: $c-white;
     }
 
 }

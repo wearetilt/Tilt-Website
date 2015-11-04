@@ -114,7 +114,7 @@ get_header(); ?>
 		
 		<div class="group group--left">
 			
-			<a href="#">		       					
+			<a href="web-services">		       					
 				<div class="module module--2-2 about-service">
 			       	<div class="module__text">			
 						<h3>WEB & MOBILE</h3>
@@ -127,7 +127,7 @@ get_header(); ?>
 		
 		<div class="group group--right">
 			
-			<a href="#">		       					
+			<a href="interactive-services">		       					
 				<div class="module module--2-2 about-service">
 			       	<div class="module__text">				
 						<h3>INTERACTIVE</h3>
@@ -145,7 +145,7 @@ get_header(); ?>
 		
 		<div class="group group--left">
 					       					
-			<a href="#">		       					
+			<a href="motion-services">		       					
 				<div class="module module--2-2 about-service">
 			       	<div class="module__text">			
 						<h3>MOTION</h3>
@@ -158,7 +158,7 @@ get_header(); ?>
 		
 		<div class="group group--right">
 			
-			<a href="#">		       					
+			<a href="film-services">		       					
 				<div class="module module--2-2 about-service">
 			       	<div class="module__text">				
 						<h3>FILM</h3>
