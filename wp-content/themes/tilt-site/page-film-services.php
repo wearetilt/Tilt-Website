@@ -18,7 +18,16 @@ get_header(); ?>
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">FILM SERVICES.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-		
+		<a class="cube--link" href="<?php echo site_url(); ?>/work#film">
+			<div class="cube">
+				<div class="cube--front">
+					<p class="sans-serif">SEE OUR FILM WORK</p>
+				</div>
+				<div class="cub--top">
+					<p class="sans-serif">SEE OUR FILM WORK</p>
+				</div>
+			</div>
+		</a>
 	</div>
 </div> <!-- /end container -->
 
@@ -43,37 +52,42 @@ get_header(); ?>
 	 $filmposts = get_posts( $args ); 
 	 $i = 0;
 	 $j = 0;
+	 $k = 0;
 	 ?>
 
 	
 	<div class="container container--no-padding">
-	
-		<div class="group group--left">
 		
-			<div class="module module--2-2">
-                <a href="<?php get_site_url(); ?>bp-fll-stories/">
-					<div class="overlay area-dark">
-						<div class="overlay-text">
-							<p class="tag tag--work-body">Case Study</p>
-							<h2>BP<br />
-								<span class="underlined light">Leaders: Stories</span>
-							</h2>
-							<p class="sans-serif">Engage your audience on an emotional level.</p>
-						</div> <!-- /end overlay-text -->
-					</div> <!-- /end overlay -->
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')">
-					</div>
-                </a>
-			</div>
-						
-			<div id="twitter__module" class="module module--1-1 area-dark">
-				<div class="module__text home--tweet">
-					<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
-
-				</div> <!-- /end text-section -->
-			</div>
+		<div class="group-container">
+		
+			<div class="group group--left">
 			
-			<?php 
+				<div class="module module--2-2">
+	                <a href="<?php get_site_url(); ?>bp-fll-stories/">
+						<div class="overlay area-dark">
+							<div class="overlay-text">
+								<p class="tag tag--work-body">Case Study</p>
+								<h2>BP<br />
+									<span class="underlined light">Leaders: Stories</span>
+								</h2>
+								<p class="sans-serif">Engage your audience on an emotional level.</p>
+							</div> <!-- /end overlay-text -->
+						</div> <!-- /end overlay -->
+						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')">
+						</div>
+	                </a>
+				</div>
+				
+				
+				<div id="twitter__module" class="module module--1-1 area-dark">
+					<div class="module__text home--tweet">
+						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' offset='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
+	
+					</div> <!-- /end text-section -->
+				</div>
+				
+				
+				<?php 
 				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
 					
 					if (has_post_thumbnail( $post->ID ) ):
@@ -101,23 +115,25 @@ get_header(); ?>
 					
 					$i++;
 					
-			endforeach; 
-			wp_reset_postdata();?>
-			
-		</div>
+					endforeach; 
+					wp_reset_postdata();?>
+				
+				
+			</div>
 		
-	</div>
 	
-	<div class="group group--right">
 	
-		<div id="twitter__module" class="module module--1-1 area-dark">
-			<div class="module__text home--tweet">
-				<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
-
-			</div> <!-- /end text-section -->
-		</div>
+			<div class="group group--right">
+				
+				<div id="twitter__module" class="module module--1-1 area-dark">
+					<div class="module__text home--tweet">
+						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 		
-		<?php 
+					</div> <!-- /end text-section -->
+				</div>
+				
+				
+				<?php 
 			foreach ( $filmposts as $post ) : setup_postdata( $post ); 
 				
 				if (has_post_thumbnail( $post->ID ) ):
@@ -145,9 +161,46 @@ get_header(); ?>
 				
 				$j++;
 				
-		endforeach; 
-		wp_reset_postdata();?>
-	
+				endforeach; 
+				wp_reset_postdata();?>
+				
+				
+				<?php 
+			foreach ( $filmposts as $post ) : setup_postdata( $post ); 
+				
+				if (has_post_thumbnail( $post->ID ) ):
+					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+				endif; 
+				
+				
+				if($k == 2) { ?>
+				
+					<a href="<?php echo the_permalink(); ?>">
+						<div class="module module--2-2 area-dark">
+							<div id="post=<?php the_ID();?>" class="overlay area-dark">
+								<div class="overlay-text">
+									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
+									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+								</div> <!-- /end overlay-text -->
+							</div> <!-- /end overlay -->
+							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+						</div>
+					</a><?php
+					
+					
+				
+				};
+				
+				$k++;
+				
+				endforeach; 
+				wp_reset_postdata();?>
+				
+			
+			</div>
+		
+		
+		</div>
 	
 	</div>
 	
