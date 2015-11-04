@@ -90,7 +90,7 @@ get_header('contact'); ?>
 </script>
 
 
-<div class="container container--half-both area-dark contact--page">
+<div class="container container--double-side-pad area-dark contact--page">
 	<section class="text-section text-section--centre">
 		<h2 class="contact-title"><span class="light">Jobs &amp; Internships</span></h2>
 		<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
@@ -185,7 +185,7 @@ get_header('contact'); ?>
 	</div>
 	<div class="map-overlay">
 		<h3 class="light marker">Call us</h3>
-		<span>+44(0)1273675700</span>
+		<span>+44(0)1273 675 700</span>
 		<h3 class="light marker">Our address</h3>
 		<span>Unit 1, Pullman haul,</span>
 		<span>41 New England Street,</span>

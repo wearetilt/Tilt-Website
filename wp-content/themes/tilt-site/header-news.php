@@ -20,6 +20,7 @@
 	<script type="text/javascript">
 		window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
 	</script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -31,6 +32,7 @@
 			</a>
         </div>
        <a id="menuButton" class="header-item header-item--menu">Menu</a>
+       <a id="closeButton" class="header-item header-item--menu">Close</a>
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>

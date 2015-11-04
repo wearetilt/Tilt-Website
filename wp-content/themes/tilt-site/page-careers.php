@@ -15,20 +15,11 @@ get_header(); ?>
 <div id="careers">
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container">
-			<p class="first-para sans-serif"><strong class="highlight">A strong creative fusion</strong> binds the eclectic skills and charisma of our team.</p>
-			<p>We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>
-			<p>If you have a digital wanderlust and looking to work with like minded individuals then get in touch. We are looking for talented designers, strategists, artists, animators, film makers, producers, writers and coders to join <a class="pink" href="../staff">our team.</a></p>
+			<p class="first-para sans-serif"><strong class="highlight">A strong creative fusion</strong> binds the eclectic skills and charisma of our team.
+			We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>
+			<p class="sans-serif">If you have a digital wanderlust and looking to work with like minded individuals then get in touch. We are looking for talented designers, strategists, artists, animators, film makers, producers, writers and coders to join our team.</p>
 
-			<a class="cube--link" href="<?php echo site_url(); ?>/contact">
-				<div class="cube">
-					<div class="cube--front">
-						<p class="sans-serif">Contact Us</p>
-					</div>
-					<div class="cub--top">
-						<p class="sans-serif">Contact Us</p>
-					</div>
-				</div>
-			</a>
+			
 		</div>
 	</div> <!-- /end container -->
 </div>
@@ -82,9 +73,9 @@ get_header(); ?>
 
 		<div class="group group--left">
 			<h1>From intern<br />to fulltime</h1>
-			<div class="module module--2-2 module--no-bg">
+			<div class="module module--2-2 module--no-bg careers--image">
 				<div class="module__text text-align module__description">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/miles-image.png" alt="">
+					<img class="careers--img" src="<?php echo get_template_directory_uri(); ?>/images/miles-image-v2.png" alt="Miles Tincknell">
 					<h2>Miles Tincknell</h2>
 					<h3 class="light">Developer</h3>
 				</div>
@@ -118,9 +109,9 @@ get_header(); ?>
 
 		<div class="group group--right">
 			<h1>From freelance<br />to fulltime</h1>
-			<div class="module module--2-2 module--no-bg">
+			<div class="module module--2-2 module--no-bg careers--image">
 				<div class="module__text text-align module__description">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/dave-image.png" alt="">
+					<img class="careers--img" src="<?php echo get_template_directory_uri(); ?>/images/dave-image-v2.png" alt="Dave Weiss">
 					<h2>Dave Weiss</h2>
 					<h3 class="light">Designer</h3>
 				</div>

@@ -21,7 +21,11 @@ p.rtw_main {
 	font-family:$f-seroot-lt;
 }
 
-.rotatingtweet a { color:$c-tilt-pink; }
+.rotatingtweet a { 
+	color:$c-tilt-pink; 
+
+	&:hover { color:$c-grey-7d; }
+}
 
 .rtw_time_short a { 
 	font-size:13px;

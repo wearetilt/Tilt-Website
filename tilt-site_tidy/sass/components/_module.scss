@@ -133,11 +133,14 @@
             width: 65%;
             padding-bottom: 7.5%;
             padding-top: 7.5%;
+        
+			&.careers--img { width:60%; }
+        
         }
 
         .careers & {  @extend %clearfix; }
         /* .careers & { margin:0 0 50px 0; } */
-
+		
     }
 
     &.module--no-bg{
@@ -194,7 +197,12 @@
     width: 100%;
     padding-top: 100%;
     float: left;
+
+	&.careers--image { padding-top:95%; }
+
 }
+
+
 
 .module--staff{
     width: 50%;
@@ -393,6 +401,8 @@
 	overflow:hidden;
 	cursor:pointer;
     z-index: 7;
+    opacity:0;
+    
 
     &:hover {
 	    background:url('../images/close_btn.png') 0px -19px no-repeat;

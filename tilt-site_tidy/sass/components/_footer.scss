@@ -101,7 +101,7 @@ footer{
     }
 }
 
-.project-navigation{
+.project-navigation {
 	padding: 12px 0px 10px 0px;
     background-color: $c-tilt-pink;
     width: 50%;
@@ -119,6 +119,18 @@ footer{
     }
     
 }
+
+
+.nav-links span, .nav-links a { 
+	padding: 14px 0px 10px 0px;
+	background-color: $c-tilt-pink;
+	display: block;
+	float: left;
+	line-height: 1.8;
+	
+	&:hover { color:$c-grey-7d; }
+}
+
 
 .footer-icons{
     @extend %clearfix;
