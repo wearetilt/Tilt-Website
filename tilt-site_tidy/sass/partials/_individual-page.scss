@@ -170,7 +170,8 @@
 	text-align:center;
 	color:$c-bg;
 	
-	p#web-sprite { transition: all ease 0.5s; }
+	p#web-sprite, p#interactive-sprite, p#motion-sprite, p#film-sprite { transition: all ease 0.5s; }
+	
 	
 	&:hover {
 		background-color:$c-tilt-pink;
@@ -180,20 +181,52 @@
 			color:$c-white; 
 		}
 		
-		p#web-sprite { background:url('../images/about/iconsprite_webandmobile_hover.png') center top no-repeat; }
+		p#web-sprite { background:url('../images/about/icon_webmobile_hover.png') center top no-repeat; }
+		p#interactive-sprite { background:url('../images/about/icon_interactive_hover.png') center top no-repeat; }
+		p#motion-sprite { background:url('../images/about/icon_motion_hover.png') center top no-repeat; }
+		p#film-sprite { background:url('../images/about/icon_film_hover.png') center top no-repeat; }
 	
 	}
 
 }
 
-.container--about-pad p#web-sprite {
+.about-service p#web-sprite {
 	display:block;
 	margin:auto;
 	height:0;
 	width:143px;
 	overflow:hidden;
-	padding:135px 0px 0px 0px;
-	background:url('../images/about/iconsprite_webandmobile.png') center top no-repeat;
+	padding:125px 0px 0px 0px;
+	background:url('../images/about/icon_webmobile_active.png') center top no-repeat;
+}
 
+.about-service p#interactive-sprite {
+	display:block;
+	margin:auto;
+	height:0;
+	width:143px;
+	overflow:hidden;
+	padding:125px 0px 0px 0px;
+	background:url('../images/about/icon_interactive_active.png') center top no-repeat;
+}
+
+.about-service p#motion-sprite {
+	display:block;
+	margin:auto;
+	height:0;
+	width:143px;
+	overflow:hidden;
+	padding:125px 0px 0px 0px;
+	background:url('../images/about/icon_motion_active.png') center top no-repeat;
+}
+
+.about-service p#film-sprite {
+	display:block;
+	margin:auto;
+	height:0;
+	width:143px;
+	overflow:hidden;
+	padding:125px 0px 0px 0px;
+	background:url('../images/about/icon_film_active.png') center top no-repeat;
 }
 

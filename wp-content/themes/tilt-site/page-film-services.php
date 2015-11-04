@@ -43,8 +43,21 @@ get_header(); ?>
 				?>
 					<div class="group-container">
 						<div class="group group--left">
+							
 							<div class="module module--2-2">
-								<?php get_template_part( 'content', 'blog-post-large' ); ?>
+								<a href="<?php get_site_url(); ?>bp-fll-stories/">
+    					<div class="overlay area-dark">
+    						<div class="overlay-text">
+    							<p class="tag tag--work-body">Case Study</p>
+    							<h2>BP<br />
+    								<span class="underlined light">Leaders: Stories</span>
+    							</h2>
+    							<p class="sans-serif">Engage your audience on an emotional level.</p>
+    						</div> <!-- /end overlay-text -->
+    					</div> <!-- /end overlay -->
+    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')">
+    					</div>
+                    </a>
 							</div>
 				<?php
 			} else if($i === 2){

@@ -133,10 +133,10 @@ get_header('home'); ?>
 				</div>
 
 				<div class="module module--1-1">
-                        <a id="instagram_link_1" href="#" target="_blank">
-                            <div class="overlay area-dark"></div>
-                            <div id="instagram_box_1" class="ratio instagram-box"></div>
-                        </a>
+                    <a id="instagram_link_1" href="#" target="_blank">
+                        <div class="overlay area-dark"></div>
+                        <div id="instagram_box_1" class="ratio instagram-box"></div>
+                    </a>
 				</div>
 
 				<a href="<?php echo $post->guid; ?>">
