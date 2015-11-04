@@ -1435,7 +1435,6 @@ if(document.getElementById('staff-member')){
 							var ratio2 = that.children[1];
 							var video2 = ratio2.children[0];
 							videoIWant = video2;
-							videoIWant.currentTime = 0;
 	                    	videoIWant.play();
 						}, 100);
 
@@ -1452,46 +1451,57 @@ if(document.getElementById('staff-member')){
         staffBoxClose = document.getElementById('staff-member__close');
 
         staffMember.onclick = function (){
+
+			// staff members
             staffMember = this.id;
-			staffFullScreenVid = this.dataset.fullvideo;
-            staffObject = lookUpStaffMember(staffMember);
-            staffBox = document.getElementById('staff-member');
-            staffBox.style.display = 'block';
-            rect = this.getBoundingClientRect();
-            startingHeight = window.getComputedStyle(this).height;
-            startingWidth = window.getComputedStyle(this).width;
-            leftPosition = (rect['left'] + 'px');
-            topPosition = (rect['top'] + 'px');
-            // document.body.classList.add('stop-scrolling');
-            scrollPosition = getScrollPosition();
+
+			// check screen size
+			var width = $( window ).width();
+
+			if (width > 1024) {
+				staffFullScreenVid = this.dataset.fullvideo;
+	            staffObject = lookUpStaffMember(staffMember);
+	            staffBox = document.getElementById('staff-member');
+	            staffBox.style.display = 'block';
+	            rect = this.getBoundingClientRect();
+	            startingHeight = window.getComputedStyle(this).height;
+	            startingWidth = window.getComputedStyle(this).width;
+	            leftPosition = (rect['left'] + 'px');
+	            topPosition = (rect['top'] + 'px');
+	            // document.body.classList.add('stop-scrolling');
+	            scrollPosition = getScrollPosition();
 
 
-            staffBox.style.position = "fixed";
-            staffBox.style.transition = "all 0s ease";
-            staffBox.style.left = leftPosition;
-            staffBox.style.top = topPosition;
-            staffBox.style.height = startingHeight;
-            staffBox.style.width = startingWidth;
-            document.body.appendChild(staffBox);
-            staffBox.appendChild(staffBoxClose);
-            staffBox.style.backgroundColor = '#ff4c74';
-            staffBox.style.zIndex = '6';
-			document.getElementById('blahblahblah').innerHTML = '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
+	            staffBox.style.position = "fixed";
+	            staffBox.style.transition = "all 0s ease";
+	            staffBox.style.left = leftPosition;
+	            staffBox.style.top = topPosition;
+	            staffBox.style.height = startingHeight;
+	            staffBox.style.width = startingWidth;
+	            document.body.appendChild(staffBox);
+	            staffBox.appendChild(staffBoxClose);
+	            staffBox.style.backgroundColor = '#ff4c74';
+	            staffBox.style.zIndex = '6';
+				document.getElementById('blahblahblah').innerHTML = '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
 
-            setTimeout(function(){
-				console.log('Hello');
-                staffBox.style.transition = "all 0.5s ease";
+	            setTimeout(function(){
+					console.log('Hello');
+	                staffBox.style.transition = "all 0.5s ease";
 
 
 
-                populateAndSizeStaffInfo(staffBox, staffObject);
-            }, 500);
+	                populateAndSizeStaffInfo(staffBox, staffObject);
+	            }, 500);
 
-            setTimeout(function(){
-                fadeInStaffInfo(staffObject);
-            }, 1050);
+	            setTimeout(function(){
+	                fadeInStaffInfo(staffObject);
+	            }, 1050);
 
-        }
+			} else { // if screen is mobile
+
+			}
+
+	    }
 
 		staffBoxClose.onclick = function(){
 			document.getElementById('staff-member__wrapper').style.opacity = '0';
