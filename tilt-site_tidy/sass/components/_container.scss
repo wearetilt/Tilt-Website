@@ -48,11 +48,11 @@
     &.container--double-side-pad{
         padding: percentage(245/2032) percentage(375/2032);
     }
-    
+
     &.container--work-pad{
         padding: percentage(60/2032) percentage(375/2032) percentage(100/2032) percentage(385/2032);
-    }	
-	
+    }
+
     &.image-container{
         font-size: 0;
         background-color: $c-grey-1b;
@@ -61,7 +61,7 @@
             width: 100%;
         }
     }
-    
+
     &.about--smoke {
 	    background-image:url('../images/about/smoke_bg.jpg') 0px 0px no-repeat;
     }
@@ -69,10 +69,10 @@
 
 
     #news &.container--header-news{
-        
+
         padding: 0;
         opacity: 1 !important;
-        
+
         .header-title{
             padding-top: percentage(55/1270);
             width: 100%;
@@ -81,25 +81,25 @@
                 padding-bottom:0.5%;
             }
         }
-        
+
         & .intro-text { margin-top:30px; }
     }
-      
+
 }
 
 .news-wrapper {
-	
-	 & .intro-text { 
-	 	margin:45px 0px 45px 0px; 
-	 	
+
+	 & .intro-text {
+	 	margin:45px 0px 45px 0px;
+
 	 	 @media handheld, screen and (min-width: $bp-desktop){
-	 	 	margin:75px 0px 75px 0px; 
+	 	 	margin:75px 0px 75px 0px;
 	 	 }
-	 	
+
 	 }
-	 
+
 	 & #social { float:right; }
-	
+
 }
 
 #carreers {
@@ -144,12 +144,13 @@
 
 .text-container{
     position: relative;
-	
+
 	&.center { text-align:center; }
-	
+
     footer & {
         top: 58%;
         transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
         @media handheld, screen and (min-width: $bp-desktop){
             top: 55%;
         }
@@ -212,9 +213,9 @@ section{
         @extend %clearfix;
         position: relative;
     }
-	
+
     @media handheld, screen and (min-width: $bp-desktop){
-        
+
         .group{
             width: 50%;
         }
@@ -227,7 +228,7 @@ section{
         }
 
     }
-    
+
     .group--jobs {
 	    width:100%;
 	    @media handheld, screen and (min-width: $bp-desktop-large){
@@ -265,9 +266,9 @@ section{
 
 
     &.careers .group--left h3, &.careers .group--right h3 { padding:5px 0px 10px 0px; }
-	
+
 	&.container--about-pad { padding:3% 0% 0% 0%; }
-	
+
 }
 
 .quote-container{
@@ -298,16 +299,16 @@ section{
 .news-container{
     @extend %clearfix;
     padding: 0  percentage(64/1270);
-    
-    &.news--footer { padding-bottom:5%; }
-	
-	.intro-text { opacity:0; }
-    
-    
-    
-    
 
-	
+    &.news--footer { padding-bottom:5%; }
+
+	.intro-text { opacity:0; }
+
+
+
+
+
+
 }
 
 .img-container{

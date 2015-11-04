@@ -348,6 +348,7 @@ Create your own skin at http://designer.videojs.com
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
     left: 50%;

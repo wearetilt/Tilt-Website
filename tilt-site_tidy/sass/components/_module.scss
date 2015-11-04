@@ -24,6 +24,7 @@
         position: absolute;
         top: 50%;
         transform:translateY(-50%);
+        -webkit-transform: translateY(-50%);
         padding: 0 12%;
 
         p.first-para { margin:20px 0px 0px 0px; }
@@ -338,6 +339,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     padding: 0 percentage(126/1016);
 }
 
