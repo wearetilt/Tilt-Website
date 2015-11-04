@@ -41,15 +41,15 @@ footer{
         float: left;
         font-size:1.3rem;
         color: white;
-        margin-top: 15px;
+        margin-top:0px;
         clear: both;
         font-family:$f-merriweather;
         font-weight:300;
         @media handheld, screen and (min-width: $bp-desktop){
             float: right;
             clear: none;
-            margin-top: 7px;
-            font-size:25px;
+            margin-top:0px;
+            font-size:1.6em;
         }
 
     }
@@ -134,13 +134,11 @@ footer{
 
 .footer-icons{
     @extend %clearfix;
+    margin-top:0.5%;
     margin-bottom: 2%;
 }
 
 .footer-icon{
-    height: 29px;
-    width: 29px;
-    background-image: url('../images/icon-spritesheet.png');
     float: left;
 
     a{
@@ -155,45 +153,54 @@ footer{
 
     @media handheld, screen and (min-width: $bp-desktop){
         & + .footer-icon{
-            margin-left: 40px;
+            margin-left:35px;
         }
     }
 
 
 }
 
-#footer-icon-1{
-    background-position: 0px 0px;
-    width: 20px;
-    &:hover{
-        background-position: 0px  -29px;
-    }
+
+
+#footer-icon-1 {
+	height:23px;
+    width:11px;
+    background:url('../images/facebook.png') 0px 0px no-repeat;
 }
 
-#footer-icon-2{
-    background-position: -21px 0px;
-    &:hover{
-        background-position: -21px  -29px;
-    }
+#footer-icon-2 {
+	margin-top:3px;
+    height:19px;
+    width:25px;
+    background:url('../images/twitter.png') 0px 0px no-repeat;
 }
 
-#footer-icon-3{
-    background-position: -50px 0px;
-    &:hover{
-        background-position: -50px  -29px;
-    }
+#footer-icon-3 {
+	margin-top:1px;
+    height:21px;
+    width:24px;
+    background:url('../images/vimeo.png') 0px 0px no-repeat;
 }
 
-#footer-icon-4{
-    background-position: -78px 0px;
-    &:hover{
-        background-position: -78px  -29px;
-    }
+#footer-icon-4 {
+    height:23px;
+    width:23px;
+    background:url('../images/instagram.png') 0px 0px no-repeat;
 }
 
-#footer-icon-5{
-    background-position: -108px 0px;
-    &:hover{
-        background-position: -108px  -29px;
-    }
+#footer-icon-5 {
+	margin-top:1px;
+    height:21px;
+    width:29px;
+    background:url('../images/youtube.png') 0px 0px no-repeat;
 }
+
+#footer-icon-6 {
+    height:25px;
+    width:25px;
+    background:url('../images/bakery.png') 0px 0px no-repeat;
+}
+
+
+
+

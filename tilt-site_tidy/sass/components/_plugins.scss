@@ -1,7 +1,7 @@
 .rotatingtweet p.rtw_meta,div.rtw_meta {
 	display:none;
 	@media handheld, screen and (min-width: $bp-desktop-large){
-		display:block;
+		display:none;
 	}
 }
 
@@ -12,22 +12,22 @@
 	@media handheld, screen and (min-width: $bp-desktop-large){
 		font-size:16px;
 	}
-	
+
 	a { text-transform:none; }
-	
+
 }
 
 p.rtw_main {
 	font-family:$f-seroot-lt;
 }
 
-.rotatingtweet a { 
-	color:$c-tilt-pink; 
+.rotatingtweet a {
+	color:$c-tilt-pink;
 
 	&:hover { color:$c-grey-7d; }
 }
 
-.rtw_time_short a { 
+.rtw_time_short a {
 	font-size:13px;
 	font-family:$f-merriweather;
 	font-weight:300;

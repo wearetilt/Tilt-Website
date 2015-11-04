@@ -51,7 +51,8 @@
 				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" target="_blank" ></a></div>
 				<div id="nav-icon-3" class="nav-icon"><a href="https://vimeo.com/wearetilt/" target="_blank" ></a></div>
 				<div id="nav-icon-4" class="nav-icon"><a href="https://instagram.com/we_are_tilt" target="_blank" ></a></div>
-				<div id="nav-icon-5" class="nav-icon"><a href="http://bakery.wearetilt.com/" target="_blank" ></a></div>
+				<div id="nav-icon-5" class="nav-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" target="_blank" ></a></div>
+				<div id="nav-icon-6" class="nav-icon"><a href="http://bakery.wearetilt.com/" target="_blank" ></a></div>
 				<div class="telephone">
 					<span>Tel: + 44(0)1273 675 700</span>
 				</div>

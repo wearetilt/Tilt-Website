@@ -33,7 +33,10 @@
 
     }
 
-    .home--tweet { width:100%; }
+    .home--tweet {
+        width:100%;
+
+    }
 
     &:hover{
         .overlay{
@@ -133,14 +136,14 @@
             width: 65%;
             padding-bottom: 7.5%;
             padding-top: 7.5%;
-        
+
 			&.careers--img { width:60%; }
-        
+
         }
 
         .careers & {  @extend %clearfix; }
         /* .careers & { margin:0 0 50px 0; } */
-		
+
     }
 
     &.module--no-bg{
@@ -240,7 +243,7 @@
     background-size: cover;
 }
 
-#instagram_link_1{
+#instagram_link_1, #instagram_link_2, #instagram_link_3, #instagram_link_4 {
     &:after{
         content:"";
         height: 30px;
@@ -402,7 +405,7 @@
 	cursor:pointer;
     z-index: 7;
     opacity:0;
-    
+
 
     &:hover {
 	    background:url('../images/close_btn.png') 0px -19px no-repeat;

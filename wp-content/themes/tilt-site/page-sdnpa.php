@@ -35,7 +35,7 @@ get_header('work-item'); ?>
             <h1>South Downs<br />
                 <span class="light underlined">Discover Another Way</span>
             </h1>
-            <h2 class="light services">Strategy | Film | Motion| 3D</h2>
+            <h2 class="light services">Strategy | Film | Motion | 3D</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">

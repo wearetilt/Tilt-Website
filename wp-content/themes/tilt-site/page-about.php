@@ -117,6 +117,7 @@ get_header(); ?>
 			<a href="web-services">		       					
 				<div class="module module--2-2 about-service">
 			       	<div class="module__text">			
+						<p id="web-sprite">Web & Mobile</p>
 						<h3>WEB & MOBILE</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			       	</div>
@@ -128,8 +129,9 @@ get_header(); ?>
 		<div class="group group--right">
 			
 			<a href="interactive-services">		       					
-				<div class="module module--2-2 about-service">
-			       	<div class="module__text">				
+				<div id="module--interactive-services" class="module module--2-2 about-service">
+			       	<div class="module__text">
+			       		<p id="interactive-sprite">INTERACTIVE</p>				
 						<h3>INTERACTIVE</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			       	</div>
@@ -146,8 +148,9 @@ get_header(); ?>
 		<div class="group group--left">
 					       					
 			<a href="motion-services">		       					
-				<div class="module module--2-2 about-service">
-			       	<div class="module__text">			
+				<div id="module--motion-services" class="module module--2-2 about-service">
+			       	<div class="module__text">
+			       		<p id="motion-sprite">MOTION</p>				
 						<h3>MOTION</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			       	</div>
@@ -159,8 +162,9 @@ get_header(); ?>
 		<div class="group group--right">
 			
 			<a href="film-services">		       					
-				<div class="module module--2-2 about-service">
-			       	<div class="module__text">				
+				<div id="module--film-services" class="module module--2-2 about-service">
+			       	<div class="module__text">
+			       		<p id="film-sprite">Film</p>				
 						<h3>FILM</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			       	</div>

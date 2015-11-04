@@ -26,10 +26,10 @@ get_header('work-item'); ?>
        
         <div class="header-title no--shadow">
         	
-        	<img src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/bima_award_logo.png" alt="BIMA 2015 Nominee" />
+        	<img class="bima" src="<?php echo get_template_directory_uri(); ?>/images/work/int_sain/bima_award_logo.png" alt="BIMA 2015 Nominee" />
         	
             <p class="tag tag--work-body">Interactive</p>
-            <h1>Sainsbury&lsquo;s <br />
+            <h1>Sainsbury's <br />
                 <span class="light underlined">History Timeline</span>
             </h1>
             <h2 class="light services">Strategy | Design | Dev | Motion</h2>

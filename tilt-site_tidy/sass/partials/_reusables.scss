@@ -28,3 +28,19 @@ $bp-desktop-large: 1024px;
 .text-align{
 	text-align: center;
 }
+
+
+
+.group-container .group #twitter__module {
+    &:after{
+		content: " ";
+		height: 19px;
+		width: 26px;
+		position: absolute;
+		background-image: url("../images/twitter.png");
+		opacity: 0.8;
+		background-position: 0px 0px;
+		bottom: 20px;
+		right: 20px;
+    }
+}

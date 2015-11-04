@@ -17,7 +17,7 @@ header{
     .header-title {
         h1, p{
             transform: translate3d(0,0,0);
-            transition: all 0.5s ease 1s;
+            transition: all 0.5s ease 0.1s;
             opacity: 0;  
         }
         
@@ -29,7 +29,7 @@ header{
         
         h2{
             transform: translate3d(0,0,0);
-            transition: all 0.5s ease 1.7s;
+            transition: all 0.5s ease 0.3s;
             opacity: 0;
         }
         
@@ -37,7 +37,7 @@ header{
             &:after{
                 width: 0px;
                 transform: translate3d(0,0,0);
-                transition: all 0.5s ease 2s;
+                transition: all 0.5s ease 0.5s;
             }
         }
         & + .header-text{
@@ -134,14 +134,14 @@ header{
     }
 
     .header-play{
-    		top:42%;
+    		top:28%;
     	
     	@media handheld, screen and (min-width: $bp-desktop){
-        	top: 44%;
+        	top: 28%;
 		}
     	
     	@media handheld, screen and (min-width: $bp-desktop-large){
-        	top: 44%;
+        	top: 28%;
 		}
     }
     
@@ -232,6 +232,24 @@ header{
         background-color: $c-bg;
     }
 }
+
+
+#work_page {
+	
+	.header-play{
+    		top:44%;
+    	
+    	@media handheld, screen and (min-width: $bp-desktop){
+        	top: 44%;
+		}
+    	
+    	@media handheld, screen and (min-width: $bp-desktop-large){
+        	top: 44%;
+		}
+    }
+	
+}
+
 
 #services--list {
 	display:none;
@@ -395,15 +413,15 @@ header{
         float: left;
         font-size: 1.3rem;
         color: white;
-        margin-top: 15px;
+        margin-top:0px;
         clear: both;
         font-family: $f-merriweather;
         font-weight: 300;
         @media handheld, screen and (min-width: $bp-desktop){
             float: right;
             clear: none;
-            margin-top: 7px;
-            font-size: 1.7em;
+            margin-top:0px;
+            font-size: 1.6em;
         }
 
     }
@@ -411,9 +429,6 @@ header{
 }
 
 .nav-icon{
-    height: 29px;
-    width: 29px;
-    background-image: url('../images/icon-spritesheet.png');
     float: left;
 
     a{
@@ -428,7 +443,7 @@ header{
 
     @media handheld, screen and (min-width: $bp-desktop){
         & + .nav-icon{
-            margin-left: 40px;
+            margin-left: 35px;
         }
     }
 
@@ -436,39 +451,42 @@ header{
 }
 
 #nav-icon-1{
-    background-position: 0px 0px;
-    width: 20px;
-    &:hover{
-        background-position: 0px  -29px;
-    }
+	height:23px;
+    width:11px;
+    background:url('../images/facebook.png') 0px 0px no-repeat;
 }
 
 #nav-icon-2{
-    background-position: -21px 0px;
-    &:hover{
-        background-position: -21px  -29px;
-    }
+	margin-top:3px;
+    height:19px;
+    width:25px;
+    background:url('../images/twitter.png') 0px 0px no-repeat;
 }
 
 #nav-icon-3{
-    background-position: -50px 0px;
-    &:hover{
-        background-position: -50px  -29px;
-    }
+	margin-top:1px;
+    height:21px;
+    width:24px;
+    background:url('../images/vimeo.png') 0px 0px no-repeat;
 }
 
 #nav-icon-4{
-    background-position: -78px 0px;
-    &:hover{
-        background-position: -78px  -29px;
-    }
+    height:23px;
+    width:23px;
+    background:url('../images/instagram.png') 0px 0px no-repeat;
 }
 
 #nav-icon-5{
-    background-position: -108px 0px;
-    &:hover{
-        background-position: -108px  -29px;
-    }
+	margin-top:1px;
+    height:21px;
+    width:29px;
+    background:url('../images/youtube.png') 0px 0px no-repeat;
+}
+
+#nav-icon-6{
+    height:25px;
+    width:25px;
+    background:url('../images/bakery.png') 0px 0px no-repeat;
 }
 
 .nav-icons .telephone {
