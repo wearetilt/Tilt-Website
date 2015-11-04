@@ -24,7 +24,7 @@ get_header('work-item'); ?>
             <h1>Nickelodeon<br />
                 <span class="light underlined">Code-it</span>
             </h1>
-            <h2 class="light">UX | Design | Dev | Motion</h2>
+            <h2 class="light services">UX | Design | Dev | Motion</h2>
                  
         </div>
                 
@@ -89,9 +89,9 @@ get_header('work-item'); ?>
     </section>
 </div> <!-- /end container -->
 
-<div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/gallery/int_ci_gallery_background.jpg')">
+<div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_gallery_background.jpg')">
     <section class="carousel">
-        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/ipad.png" alt="">
         <div class="carousel-images">
             <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_01_ipad.jpg')"></div>
             <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_02_ipad.jpg')"></div>

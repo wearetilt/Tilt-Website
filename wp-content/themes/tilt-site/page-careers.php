@@ -75,7 +75,7 @@ get_header(); ?>
 			<h1>From intern<br />to fulltime</h1>
 			<div class="module module--2-2 module--no-bg careers--image">
 				<div class="module__text text-align module__description">
-					<img class="careers--img" src="<?php echo get_template_directory_uri(); ?>/images/miles-image-v2.png" alt="Miles Tincknell">
+					<img class="careers--img" src="<?php echo get_template_directory_uri(); ?>/images/miles-image-v3.png" alt="Miles Tincknell">
 					<h2>Miles Tincknell</h2>
 					<h3 class="light">Developer</h3>
 				</div>
@@ -111,7 +111,7 @@ get_header(); ?>
 			<h1>From freelance<br />to fulltime</h1>
 			<div class="module module--2-2 module--no-bg careers--image">
 				<div class="module__text text-align module__description">
-					<img class="careers--img" src="<?php echo get_template_directory_uri(); ?>/images/dave-image-v2.png" alt="Dave Weiss">
+					<img class="careers--img" src="<?php echo get_template_directory_uri(); ?>/images/dave-image-v3.png" alt="Dave Weiss">
 					<h2>Dave Weiss</h2>
 					<h3 class="light">Designer</h3>
 				</div>
