@@ -17,10 +17,10 @@
 			<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 				<div class="cube">
 					<div class="cube--front">
-						<p class="sans-serif button">Contact us.</p>
+						<p class="sans-serif button">Contact us</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif button">Contact us.</p>
+						<p class="sans-serif button">Contact us</p>
 					</div>
 				</div>
 			</a>
