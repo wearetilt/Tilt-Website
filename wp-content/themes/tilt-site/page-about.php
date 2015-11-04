@@ -89,13 +89,13 @@ get_header(); ?>
 	<div class="group-container">
 		<div class="group group--left">
 			<div class="module module--2-1">
-				<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/about/code_dbp.jpg')"></div>
+				<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/about/backshot_pbs.jpg')"></div>
 			</div>
 		</div>
 		
 		<div class="group group--right">
 			<div class="module module--2-1">
-				<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/about/hawaiian_shirt.jpg')"></div>
+				<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/about/inkshot.jpg')"></div>
 			</div>
 		</div>
 	
