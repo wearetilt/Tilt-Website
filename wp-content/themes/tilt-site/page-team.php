@@ -16,7 +16,7 @@ get_header(); ?>
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">GREAT IDEAS</strong> COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS.</p>
-		<p class="sans-serif">On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>	
+		<p class="sans-serif">On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>
 		<p class="sans-serif">Our open studio is built for collaboration, making it easy to let ideas fly and collide; like shaking a snow globe. </p>
 	</div>
 </div> <!-- /end container -->
@@ -211,7 +211,7 @@ get_header(); ?>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
-						
+
 					</div> <!-- /end text-section -->
 				</div>
 				<div class="module module--1-1">
@@ -268,12 +268,12 @@ get_header(); ?>
 	    }
 	};
 
-	
-	httpRequest.open('GET', 'http://localhost/~jonathanmalyon/tilt-website/tilt-site_tidy/staff.json', true);
 
-	
+	httpRequest.open('GET', '<?php echo get_bloginfo('home'); ?>/tilt-site_tidy/staff.json', true);
 
-	
+
+
+
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
 

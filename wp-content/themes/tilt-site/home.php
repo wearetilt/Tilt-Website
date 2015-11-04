@@ -16,10 +16,9 @@
  */
 
 get_header(); ?>
+		<?php
 
-		<?php 
-			
-			query_posts('cat=-9');
+			query_posts('cat=-9&paged=' . $paged);
 			if ( have_posts() ) : ?>
 
 			<?php
@@ -29,7 +28,6 @@ get_header(); ?>
 			$postsLeftOver = $numberOfPosts % 8;
 
 			$i = 0;
-
 			?>
 
 			<div class="container container--no-padding">
@@ -58,7 +56,7 @@ get_header(); ?>
 						<div class="module module--1-1">
 							<div class="module__text">
 								<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-								
+
 							</div> <!-- /end text-section -->
 						</div>
 						<div class="module module--1-1">
@@ -74,7 +72,7 @@ get_header(); ?>
 							<div class="module module--1-1">
 								<div class="module__text">
 									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
-									
+
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1">
@@ -385,7 +383,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				
+
 				<?php the_posts_pagination( array(
 					'prev_text'          => __( 'Prev', 'twentyfifteen' ),
 					'next_text'          => __( 'Next', 'twentyfifteen' ),
