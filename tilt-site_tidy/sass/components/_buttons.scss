@@ -46,39 +46,39 @@ a{
     }
 
     &.project-navigation{
-    
+
     	@include font-size(16);
     	letter-spacing:1px;
 		color: white;
 		font-family:$f-seroot-thn;
-		
+
 		@media handheld, screen and (min-width: $bp-desktop){
 	    	 @include font-size(25);
-		}  
+		}
     }
-    
+
     &.paginate_prev {
-	    
+
 	    border-right:2px solid #1b1b1b;
-	    
+
 	    &:before{
         	content:url('../images/pagination_arrow.png');
             display: inline-block;
             margin-right:40px;
         }
-	    
+
     }
-    
+
     &.paginate_next {
-	  
+
 	  border-left:2px solid #1b1b1b;
-	  
+
 	  &:after{
         	content:url('../images/pagination_arrow_after.png');
             display: inline-block;
             margin-left:40px;
-        }  
-	    
+        }
+
     }
 
     p + & {
@@ -86,33 +86,33 @@ a{
     }
 }
 
-.nav-links a.next { 
- 
+.nav-links a.next {
+
 	&:after{
     	content:url('../images/pagination_arrow_after-v3.png');
         display: inline-block;
         margin-left:40px;
-    
-    } 
-      	
+        width: 9px;
+    }
+
 }
 
 .nav-links a.next:hover {
-	
+
 	font-family:$f-seroot-thn;
-	
+
 	&:after{
     	content:url('../images/pagination_arrow_after-hover-v3.png');
         display: inline-block;
         margin-left:40px;
-    
-    } 
 
-} 
+    }
 
-.nav-links a.next:hover, .nav-links a.page-numbers:hover { 
+}
+
+.nav-links a.next:hover, .nav-links a.page-numbers:hover {
 	font-family:$f-seroot-thn;
-	color:$c-bg; 
+	color:$c-bg;
 }
 
 #form_close{
@@ -128,7 +128,7 @@ a{
     font-family:$f-seroot-thn;
     font-size:15px;
     letter-spacing:1px;
-   
+
     @media handheld, screen and (min-width: $bp-desktop){
     	display:block;
     }
@@ -147,23 +147,23 @@ a{
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d; /* <-NB */
     margin-top:15px;
-    
+
     &.about--cube { margin-top:23px; }
 }
 
 /* The two faces of the cube */
 .cube--front,.cub--top {
-	
+
     background:url('../images/button_arrow.png') center right no-repeat;
     border: 1px solid white;
 	height: 54px;
     border-radius: 2px;
     padding: 14px 72px 0px 24px;
-	
+
 	@media handheld, screen and (min-width: $bp-desktop){
 		height: 54px;
 	}
-	
+
     p{
         text-align: left;
         @include font-size(18);
@@ -177,7 +177,7 @@ a{
         background: transparent;
 
         p {
-            color: white;    
+            color: white;
         }
     }
 }
@@ -199,7 +199,7 @@ a{
 }
 
 .map-overlay .cube--front,.map-overlay .cub--top {
-	
+
     background:url('../images/button_arrow.png') center right no-repeat;
     border: 1px solid white;
 	height: 54px;
@@ -225,7 +225,7 @@ a{
     background-color: transparent;
 }
 
-a.cube--link { 
+a.cube--link {
 	display:block;
 	margin-top:0;
 }
