@@ -196,7 +196,7 @@
 </div> <!-- /end container -->
 
 
-<div class="group-container">
+<div class="group-container  image-container">
     <a class="project-navigation paginate_prev" href="../discover-bp">Previous Project</a>
     <a class="project-navigation paginate_next" href="../icap">Next Project</a>
 </div>

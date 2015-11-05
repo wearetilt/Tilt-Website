@@ -1086,7 +1086,7 @@ if(document.getElementById('header-video-player')){
 
 			case "page_legacy":
 				var clipVideoSrc = "https://player.vimeo.com/external/140664772.hd.mp4?s=916c756982174f097892598f2bf7d363&profile_id=113";
-				var fullVideoSrc = "https://player.vimeo.com/external/66887877.hd.mp4?s=2034f6e85b9906fd2f487b48a6b3fa4f&profile_id=113";
+				var fullVideoSrc = "https://player.vimeo.com/external/66887877.hd.mp4?s=fdc4231994bcacbc95927f1ab19b489890fe327e&profile_id=113";
 			break;
 
 			case "page_reliace":

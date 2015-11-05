@@ -28,10 +28,6 @@
         padding: 0 12%;
 
         p.first-para { margin:20px 0px 0px 0px; }
-
-
-
-
     }
 
     .home--tweet {
@@ -461,21 +457,20 @@
 }
 
 #video-overlay-close {
-    height: 34px;
-    width: 35px;
-    background-color:$c-grey-5e;
+    padding:67px 0px 0px 0px;
+    height:0;
+    width: 68px;
+    background:url('../images/close_btn_video.png') 0px 0px no-repeat;
     margin: 0px auto;
-    padding:4px 0px 2px 0px;
     position: absolute;
-    top:30px;
-    right:30px;
+    top:0px;
+    right:0px;
     text-align: center;
     cursor: pointer;
     z-index: 7;
 
     &:hover {
-    	background-color: $c-tilt-pink;
-    	color:white;
+    	background:url('../images/close_btn_video.png') 0px -67px no-repeat;
     }
 
     & p {

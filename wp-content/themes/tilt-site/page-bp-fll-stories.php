@@ -17,7 +17,7 @@ get_header('work-item'); ?>
     <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/fll_poster.jpg" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
     </video>
-    <div id="video-overlay-close"><p class="vertical-align sans-serif">X</p></div>
+    <div id="video-overlay-close"></div>
 </div>
 
 <header id="page_bp_fll_stories" class="work-item area-dark">

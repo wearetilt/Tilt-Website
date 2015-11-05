@@ -110,6 +110,31 @@ a{
 
 }
 
+.nav-links a.prev {
+
+	&:before{
+    	content:url('../images/pagination_arrow_before.png');
+        display: inline-block;
+        margin-right:40px;
+        width: 9px;
+    }
+
+}
+
+.nav-links a.prev:hover {
+
+	font-family:$f-seroot-thn;
+
+	&:before{
+    	content:url('../images/pagination_arrow_before_hover.png');
+        display: inline-block;
+        margin-right:40px;
+
+    }
+
+}
+
+
 .nav-links a.next:hover, .nav-links a.page-numbers:hover {
 	font-family:$f-seroot-thn;
 	color:$c-bg;

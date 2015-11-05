@@ -13,10 +13,10 @@
 
 get_header('work-item'); ?>
 <div id="video-overlay" class="fullpage-overlay">
-    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/film_poster_image.jpg" width="100%" height="auto">
+    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/gfk_poster_2.jpg" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
     </video>
-    <div id="video-overlay-close"><p class="vertical-align sans-serif">X</p></div>
+    <div id="video-overlay-close"></div>
 </div>
 <header id="page_gfk" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
@@ -24,7 +24,7 @@ get_header('work-item'); ?>
 
         </div>
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" >
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/gfk_poster_1.jpg">
                     <source id="header-video" src="https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113" type="video/mp4">
             </video>
         </div>

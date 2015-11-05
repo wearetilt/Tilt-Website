@@ -23,7 +23,7 @@ get_header('work-item'); ?>
     <div class="module--video module--header">
        
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" >
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/web_discover/discover_poster.jpg">
                     <source id="header-video" src="https://player.vimeo.com/external/141529090.hd.mp4?s=9319fb63f3d31c680a7ccc8dea210503&profile_id=113" type="video/mp4">
             </video>
         </div>
