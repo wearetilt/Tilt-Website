@@ -46,7 +46,7 @@ get_header(); ?>
 					?>
 						<div class="group-container">
 							<div class="group group--left">
-								<div class="module module--2-2">
+								<div class="module module--2-2  news--icon">
 									<?php get_template_part( 'content', 'blog-post-large' ); ?>
 								</div>
 					<?php
@@ -59,7 +59,7 @@ get_header(); ?>
 
 							</div> <!-- /end text-section -->
 						</div>
-						<div class="module module--1-1">
+						<div class="module module--1-1 news--icon">
 							<?php get_template_part( 'content', 'blog-post' ); ?>
 						</div>
 					<?php
@@ -75,14 +75,14 @@ get_header(); ?>
 
 								</div> <!-- /end text-section -->
 							</div>
-							<div class="module module--1-1">
+							<div class="module module--1-1  news--icon">
 								<?php	get_template_part( 'content', 'blog-post' ); ?>
 							</div>
 					<?php
 					$tweetCounter++;
 				} else if($i === 4){
 					?>
-							<div class="module module--2-2">
+							<div class="module module--2-2  news--icon">
 								<?php get_template_part( 'content', 'blog-post-large' ); ?>
 							</div>
 						</div>

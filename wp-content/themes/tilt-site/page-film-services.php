@@ -88,7 +88,7 @@ get_header(); ?>
 					if($i == 0) { ?>
 					
 						<a href="<?php echo the_permalink(); ?>">
-							<div class="module module--1-1 area-dark">
+							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
 										<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
@@ -115,7 +115,7 @@ get_header(); ?>
 	
 			<div class="group group--right">
 				
-				<div id="twitter__module" class="module module--1-1 module--dark">
+				<div id="twitter__module" class="module module--1-1 module--dark news--icon">
 					<div class="module__text home--tweet">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 		
@@ -135,7 +135,7 @@ get_header(); ?>
 				
 					<a href="<?php echo the_permalink(); ?>">
 						<div class="module module--1-1 area-dark">
-							<div id="post=<?php the_ID();?>" class="overlay area-dark">
+							<div id="post=<?php the_ID();?>" class="overlay area-dark news--icon">
 								<div class="overlay-text">
 									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
 									<h2><span class="underlined"><?php the_title( ); ?></span></h2>

@@ -52,7 +52,7 @@ get_header(); ?>
 		
 			<div class="group group--left">
 			
-				<div class="module module--2-1 area-dark">
+				<div class="module module--2-2 area-dark">
                     <a href="<?php get_site_url(); ?>take-the-lead">
                         <div class="overlay area-dark">
                             <div class="overlay-text">
@@ -60,7 +60,7 @@ get_header(); ?>
                                 <h2>South Downs<br /><span class="light">Take the Lead</span></h2>
                             </div> <!-- /end overlay-text -->
                         </div> <!-- /end overlay -->
-                        <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_02_ss.jpg')">
+                        <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_04_ls.jpg')">
                         </div>
                     </a>
                 </div>
@@ -85,7 +85,7 @@ get_header(); ?>
 					if($i == 0) { ?>
 					
 						<a href="<?php echo the_permalink(); ?>">
-							<div class="module module--1-1 area-dark">
+							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
 										<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
@@ -131,7 +131,7 @@ get_header(); ?>
 				if($j == 1) { ?>
 				
 					<a href="<?php echo the_permalink(); ?>">
-						<div class="module module--1-1 area-dark">
+						<div class="module module--1-1 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
 									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
@@ -163,7 +163,7 @@ get_header(); ?>
 				if($k == 2) { ?>
 				
 					<a href="<?php echo the_permalink(); ?>">
-						<div class="module module--2-2 area-dark">
+						<div class="module module--2-2 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
 									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>

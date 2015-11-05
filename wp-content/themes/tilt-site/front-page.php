@@ -140,7 +140,7 @@ get_header('home'); ?>
 				</div>
 				
 				<a href="<?php echo $post->guid; ?>">
-					<div class="module module--1-1 area-dark">
+					<div class="module module--1-1 area-dark news--icon">
 					
 						<div class="module__text">
 							<p class="tag--no-square">News</p>

@@ -88,7 +88,7 @@ get_header(); ?>
 					if($i == 0) { ?>
 					
 						<a href="<?php echo the_permalink(); ?>">
-							<div class="module module--1-1 area-dark">
+							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
 										<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
@@ -134,7 +134,7 @@ get_header(); ?>
 				if($j == 1) { ?>
 				
 					<a href="<?php echo the_permalink(); ?>">
-						<div class="module module--1-1 area-dark">
+						<div class="module module--1-1 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
 									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
@@ -166,7 +166,7 @@ get_header(); ?>
 				if($k == 2) { ?>
 				
 					<a href="<?php echo the_permalink(); ?>">
-						<div class="module module--2-2 area-dark">
+						<div class="module module--2-2 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
 									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>

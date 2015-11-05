@@ -118,7 +118,7 @@ get_header('work-item'); ?>
     </section>
 </div> <!-- /end container -->
 
-<div class="container quote-container area-dark">
+<div class="container quote-container area-dark south-downs--quote">
     <section class="text-section">
             <blockquote>“Everyone thinks the film is really great and funny and I'm very impressed with the final product too!”</blockquote>
             <p class="sans-serif quote-attribute"><strong class="highlight">Nick Stewart,</strong> Programme Manager</p>
