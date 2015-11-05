@@ -53,7 +53,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_03_imacsmall.jpg')"></div>
             <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_04_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
+        <div class="carousel-controls carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>
             <div id="carousel-control-2" class="carousel-control"></div>
             <div id="carousel-control-3" class="carousel-control"></div>
@@ -132,10 +132,8 @@ get_header('work-item'); ?>
     </section>
 </div> <!-- /end container -->
 
-<div class="container container--no-top">
-    <div class="module module--2-1">
-	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_05_hz.jpg')"></div>
-    </div>
+<div class="container container--no-top container--half-bot">
+	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_05_hz.jpg" alt="ICAP" />
 </div>
 
 <div class="group-container">
