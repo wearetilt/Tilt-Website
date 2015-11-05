@@ -49,7 +49,7 @@ get_header('work-item'); ?>
         </div>
     </div>
     <section class="text-section">
-        <h2>LEARNING BY STEALTH</h2>
+        <h2 class="white">LEARNING BY STEALTH</h2>
         <div class="text-section__para">
             <p class="first-para highlight tag--work-body">Why would employees spend time learning if they don’t have to?</p>
             <p>When BP approached us to help create a website for new joiners, it was with this question in mind. Traditionally, BP provided new employees with a comprehensive overview of their organisation through a series of workshops. However, attendance was no longer mandatory, so they needed another approach.</p>
@@ -93,7 +93,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-6" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac/web_discover_gallery_06_imacsmall.jpg')"></div>
             <div id="carousel-image-7" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac/web_discover_gallery_07_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls seven-wide grey-icons">
+        <div class="carousel-controls seven-wide grey-icons carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>
             <div id="carousel-control-2" class="carousel-control"></div>
             <div id="carousel-control-3" class="carousel-control"></div>
@@ -185,7 +185,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-b"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_04_imacsmall.jpg')"></div>
             <div id="carousel-image-c"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_discover/gallery_iMac2/web_discover_gallery2_05_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls five-wide">
+        <div class="carousel-controls five-wide  carousel-controls--imac">
             <div id="carousel-control-8" class="carousel-control selected"></div>
             <div id="carousel-control-9" class="carousel-control"></div>
             <div id="carousel-control-a" class="carousel-control"></div>
@@ -235,7 +235,7 @@ get_header('work-item'); ?>
 
 <div class="container">
     <section class="text-section">
-        <h2>16 X the expected results</h2>
+        <h2>16 times the expected results</h2>
         <div class="text-section__para">
             <p class="first-para tag--work-body">Initially, BP hoped to achieve 6,000 unique hits in the first year – it generated 100,000 within twelve months.</p>
 			<p>Three years on from the initial deployment, we have just finished a design refresh and made the site fully responsive. Discover BP continues to be one of the organisation’s most successful communication projects, and has led to Tilt becoming involved in other high-profile BP projects.</p>
