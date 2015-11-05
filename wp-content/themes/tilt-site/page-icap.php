@@ -133,7 +133,9 @@ get_header('work-item'); ?>
 </div> <!-- /end container -->
 
 <div class="container container--no-top container--half-bot">
-	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_05_hz.jpg" alt="ICAP" />
+    <div class="module module--2-1">
+	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/web_icap_05_hz.jpg')"></div>
+    </div>
 </div>
 
 <div class="group-container">

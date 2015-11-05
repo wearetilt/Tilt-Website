@@ -37,7 +37,7 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
-                <h2>The challenge</h2>
+                <h2>The Brief</h2>
                 <p class="first-para tag--work-title">Create a new website to help attract support from investors and the local community for an ambitious new project – the i360, the world’s tallest moving observation platform.</p>
             </div>
             <div class="header-text__module">
@@ -78,7 +78,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_03_imacsmall.jpg')"></div>
             <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_04_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
+        <div class="carousel-controls carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>
             <div id="carousel-control-2" class="carousel-control"></div>
             <div id="carousel-control-3" class="carousel-control"></div>
