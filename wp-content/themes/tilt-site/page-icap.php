@@ -33,7 +33,7 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
-                <h2>The Challenge</h2>
+                <h2>The Brief</h2>
                 <p class="first-para tag--work-title">How can an onboarding portal help communicate the new brand and ethos behind one of the world’s leading providers of trading technologies?</p>
             </div>
             <div class="header-text__module">
