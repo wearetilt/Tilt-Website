@@ -39,7 +39,7 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
-                <h2>The Challenge</h2>
+                <h2>The Brief</h2>
                 <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
             <div class="header-text__module header-text__module--padding">

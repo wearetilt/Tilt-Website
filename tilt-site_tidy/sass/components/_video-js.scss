@@ -18,8 +18,7 @@ Create your own skin at http://designer.videojs.com
     position: relative;
     cursor: pointer;
     padding: 0;
-    background-color: #333;
-    background-color: rgba(51,51,51,.9);
+    background-color:#2a2a2a;
 }
 .vjs-default-skin .vjs-slider:focus {
     -webkit-box-shadow: 0 0 2em #fff;
@@ -275,8 +274,7 @@ Create your own skin at http://designer.videojs.com
     background: #ff406a;
 }
 .vjs-default-skin .vjs-load-progress {
-    background: #646464;
-    background: rgba(255,255,255,.2);
+    background: #393939;
 }
 .vjs-default-skin .vjs-load-progress div {
     background: #787878;
