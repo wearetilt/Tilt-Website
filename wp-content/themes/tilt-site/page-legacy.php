@@ -39,7 +39,7 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
-                <h2>The Challenge</h2>
+                <h2>The Brief</h2>
                 <p class="first-para tag--work-title">BP asked us to create a powerful, emotive film for their Global Leadership event, all about building a lasting legacy. But what kind of story could inspire BP’s top 500 leaders? </p>
             </div>
             <div class="header-text__module header-text__module--padding">

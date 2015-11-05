@@ -30,8 +30,7 @@ get_header('work-item'); ?>
     <div class="container container--header">
         <div class="header-title no--shadow">
         
-        	<img src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_awwwardsbadge.png" alt="Awwards" />
-        	<img class="no--float" src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_amrcbadge.png" alt="AMRC" />
+        	<img class="awards" src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/alz_awards.png" alt="Awwards" />
         
             <p class="tag tag--work-body">Interactive</p>
             <h1>Alzheimer's<br />
@@ -41,7 +40,7 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
-                <h2>The Challenge</h2>
+                <h2>The Brief</h2>
                 <p class="first-para tag--work-title">How can you move people to really understand Alzheimer’s Disease, see the life-saving importance of drug development, and motivate them to donate?</p>
             </div>
             <div class="header-text__module">
@@ -61,7 +60,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-3"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/gallery/int_alz_gallery_03_imacsmall.jpg')"></div>
             <div id="carousel-image-4"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/gallery/int_alz_gallery_04_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
+        <div class="carousel-controls carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>
             <div id="carousel-control-2" class="carousel-control"></div>
             <div id="carousel-control-3" class="carousel-control"></div>

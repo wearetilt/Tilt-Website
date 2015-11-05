@@ -27,7 +27,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Jonathan Malyon</h2>
-						<p class="sans-serif">Founder/Managing Director</p>
+						<p class="sans-serif">Founder/<br />Managing Director</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -35,7 +35,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Chris Cooke</h2>
-						<p class="sans-serif">Founder/Creative Director:<br />Brand & Interactive</p>
+						<p class="sans-serif">Founder/<br />Creative Director:<br />Brand & Interactive</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -43,7 +43,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Dan Evans</h2>
-						<p class="sans-serif">Founder/Creative Director:<br />Motion & Film</p>
+						<p class="sans-serif">Founder/<br />Creative Director:<br />Motion & Film</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>

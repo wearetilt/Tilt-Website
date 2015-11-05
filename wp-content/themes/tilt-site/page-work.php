@@ -13,6 +13,12 @@
 
 get_header(); ?>
 
+<script type="text/javascript">
+
+
+
+</script>
+
 
 <div id="video-overlay" class="fullpage-overlay">
     <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/film_poster_image.jpg" width="100%" height="auto">

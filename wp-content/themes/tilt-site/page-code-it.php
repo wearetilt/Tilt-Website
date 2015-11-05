@@ -47,7 +47,7 @@ get_header('work-item'); ?>
             </a>
 	        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
 	        <div class="monitor-screen">
-		        <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
+		        <img src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/n_codit_buttonanimation_20151006.gif" alt="" style="width: 100%; height: 100%;">
 	        </div>
 	    </div>
 	 </div>
@@ -92,7 +92,7 @@ get_header('work-item'); ?>
 <div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_gallery_background.jpg')">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/ipad.png" alt="">
-        <div class="carousel-images">
+        <div class="carousel-images--ipad">
             <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_01_ipad.jpg')"></div>
             <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_02_ipad.jpg')"></div>
             <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/Gallery/int_ci_gallery_03_ipad.jpg')"></div>

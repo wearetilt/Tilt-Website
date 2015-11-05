@@ -14,6 +14,15 @@
 
 .carousel-images{
     position: absolute;
+    top:4.9%;
+    left:3.8%;
+    height:68%;
+    width:92.5%;
+    overflow: hidden;
+}
+
+.carousel-images--ipad {
+    position: absolute;
     top:5%;
     left:12%;
     height:80%;
@@ -42,6 +51,8 @@
     bottom: -30px;
     margin: 0px auto;
 }
+
+.carousel-controls--imac { bottom: -70px; }
 
 .five-wide { width:210px; }
 .seven-wide { width:300px; } 

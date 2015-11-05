@@ -111,22 +111,22 @@
 header {
 
     .monitor-wrapper{
-        padding-top:9%;
+        padding-top:6%;
     }
 	
     .monitor-holder{
         z-index: 1;
-        max-width: 678px;
+        max-width: 40%;
 		
 		@media handheld, screen and (min-width: $bp-desktop){
-			max-width: 768px;
+			max-width: 40%;
 		}
 		
     }
 
     .monitor-screen{
-        top: 5%;
-        height: 67.5%;
+        top: 4%;
+        height: 69%;
         left: 3.5%;
         width: 93%;
 

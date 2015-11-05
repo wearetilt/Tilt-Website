@@ -11,6 +11,12 @@ header{
         transform: translate3d(0,0,0);
         transition: all 0.5s ease 1s;
     }
+    
+    &#sainsburys, &#pbs, &#alzheimers, &#bp-fll {  
+	    min-height:auto;
+		height:auto;
+		
+    }
 	
 	
 	
@@ -47,6 +53,15 @@ header{
         &.no--shadow h1 { text-shadow:none; }
         &.no--shadow h2 { text-shadow:none; }
         &.no--shadow p { text-shadow:none; }   
+        
+        img.awards {  
+	        position:absolute;
+			top:-38px;
+			left:6.25%;
+	        
+        }
+        
+        
     }
     
     
@@ -77,7 +92,7 @@ header{
     &.work-item{
        
         .container--header{
-            padding-bottom: 5%;            
+            padding-bottom:6%;            
             position: absolute;
             bottom: 0;
             width: 100%;

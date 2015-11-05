@@ -18,16 +18,6 @@ get_header(); ?>
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">WEB & MOBILE SERVICES.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-		<a class="cube--link" href="<?php echo site_url(); ?>/work#web">
-			<div class="cube">
-				<div class="cube--front">
-					<p class="sans-serif">SEE OUR WEB & MOBILE WORK</p>
-				</div>
-				<div class="cub--top">
-					<p class="sans-serif">SEE OUR WEB & MOBILE WORK</p>
-				</div>
-			</div>
-		</a>
 	</div>
 </div> <!-- /end container -->
 
@@ -79,7 +69,7 @@ get_header(); ?>
 				</div>
 				
 				
-				<div id="twitter__module" class="module module--1-1 area-dark">
+				<div id="twitter__module" class="module module--1-1 area-dark module--dark">
 					<div class="module__text home--tweet">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' offset='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 	
@@ -125,7 +115,7 @@ get_header(); ?>
 	
 			<div class="group group--right">
 				
-				<div id="twitter__module" class="module module--1-1 area-dark">
+				<div id="twitter__module" class="module module--1-1 module--dark">
 					<div class="module__text home--tweet">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 		
@@ -204,7 +194,22 @@ get_header(); ?>
 	
 	</div>
 	
-	
+	<div class="container container--double-side-pad area-dark">
+		<div class="text-container center">
+			<h2 class="about">WEB</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<a class="cube--link" href="<?php echo site_url(); ?>/work#web">
+				<div class="cube about--cube">
+					<div class="cube--front">
+						<p class="sans-serif button">SEE OUR WEB WORK</p>
+					</div>
+					<div class="cub--top">
+						<p class="sans-serif button">SEE OUR WEB WORK</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div> <!-- /end container -->
 
 </div>
 

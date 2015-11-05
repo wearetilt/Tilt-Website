@@ -28,13 +28,6 @@
 		}
 	}
 
-	img.bima { 
-		position:absolute;
-		top:-38px;
-		left:6.25%;
-	}
-
-
 }
 
 #alzheimers{
@@ -50,15 +43,14 @@
     & .header-title img { 
 		display:none;
 		@media handheld, screen and (min-width: $bp-desktop){
-			float:left;
 			display:block;
-			margin:0px 20px 20px 0px;
 		}
 	}
 	
 	& .header-title img.no--float { 
     	float:none;
     }
+    
     
 }
 
@@ -83,6 +75,9 @@
 
 }
 
+.wrapper .gfk--quote { background-color:$c-bg; }
+
+
 #bp-fll{
     background: #67c9c5; /* Old browsers */
     background: -moz-linear-gradient(top,  #67c9c5 0%, #57c2bd 100%); /* FF3.6+ */
@@ -93,6 +88,8 @@
     background: linear-gradient(to bottom,  #67c9c5 0%,#57c2bd 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c9c5', endColorstr='#57c2bd',GradientType=0 ); /* IE6-9 */
 }
+
+.container--bp-fll-app { background:url('../images/work/web_fll/ff_background_iphones.png') 0px 0px no-repeat; }
 
 
 .contact-title{

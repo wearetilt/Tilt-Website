@@ -119,7 +119,7 @@ get_header(); ?>
 			       	<div class="module__text">			
 						<p id="web-sprite">Web & Mobile</p>
 						<h3>WEB & MOBILE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 			       	</div>
 				</div>
 			</a>
@@ -133,7 +133,7 @@ get_header(); ?>
 			       	<div class="module__text">
 			       		<p id="interactive-sprite">INTERACTIVE</p>				
 						<h3>INTERACTIVE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 			       	</div>
 	
 				</div>
@@ -152,7 +152,7 @@ get_header(); ?>
 			       	<div class="module__text">
 			       		<p id="motion-sprite">MOTION</p>				
 						<h3>MOTION</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 			       	</div>
 				</div>
 			</a>
@@ -166,7 +166,7 @@ get_header(); ?>
 			       	<div class="module__text">
 			       		<p id="film-sprite">Film</p>				
 						<h3>FILM</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 			       	</div>
 				</div>
 			</a>

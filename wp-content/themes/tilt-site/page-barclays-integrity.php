@@ -39,7 +39,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-    <div class="container container--half-top container--CS-motion-bg">
+    <div class="container  container--CS-motion-bg">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
@@ -59,7 +59,7 @@ get_header('work-item'); ?>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
-            <h2>Background</h2>
+            <h2 class="white">Background</h2>
             <div class="text-section__para">
                 <p class="first-para tag--work-body">How can a bank communicate their values in a way that grips an audience?</p>
                 <p>Employee communications are often uninspiring. But Barclays needed something vivid and compelling that would communicate their corporate values to new joiners. In particular they wanted all employees to appreciate the importance of integrity to their work at Barclays.</p>
@@ -91,7 +91,7 @@ get_header('work-item'); ?>
         </section>
     </div> <!-- /end container -->
 
-    <div class="container container--half-top area-dark">
+    <div class="container area-dark">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
@@ -146,7 +146,7 @@ get_header('work-item'); ?>
         </section>
     </div> <!-- /end container -->
 
-    <div class="container container--half-top container--CS-motion-bg">
+    <div class="container container--CS-motion-bg">
         <div class="group-container">
             <div class="group group--left">
                 <div class="module module--2-2">
@@ -166,7 +166,7 @@ get_header('work-item'); ?>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
         <section class="text-section">
-            <h2>Solution (Film)</h2>
+            <h2 class="white">Solution (Film)</h2>
             <div class="text-section__para">
                 <p class="first-para tag--work-body">The motion film is used as a learning resource. After watching the film, the audience splits into two groups and watches a series of workplace scenario based films that challenge personal integrity. A key challenge was producing films that are never patronising but which illuminate difficult issues.</p>
 				<p>Recognising that live dialogue could easily distract viewers or feel amateur, we chose to feature the character’s internal monologue as the actor demonstrated the scenario. This allowed us to focus on beautiful cinematography and achieve high production values.</p>

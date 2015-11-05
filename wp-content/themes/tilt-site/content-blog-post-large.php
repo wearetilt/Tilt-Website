@@ -24,6 +24,5 @@
 			<p class="sans-serif"><?php echo get_the_excerpt(); ?></p>
 		</div> <!-- /end overlay-text -->
 	</div> <!-- /end overlay -->
-	<div class="ratio" style="background-image: url('<?php echo $attachedImg[0]; ?>')">
-	</div>
+	<div class="ratio" style="background-image: url('<?php echo $attachedImg[0]; ?>')"></div>
 </a>

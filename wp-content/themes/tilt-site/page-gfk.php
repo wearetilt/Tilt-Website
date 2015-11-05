@@ -39,7 +39,7 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
-                <h2>The Challenge</h2>
+                <h2>The Brief</h2>
                 <p class="first-para tag--work-title">How do you explain the many different services of a global company as complex and diverse as GfK in a single video piece? </p>
             </div>
             <div class="header-text__module header-text__module--padding">
@@ -116,7 +116,7 @@ get_header('work-item'); ?>
     </section>
 </div> <!-- /end container -->
 
-<div class="container quote-container area-dark">
+<div class="container quote-container area-dark gfk--quote">
     <section class="text-section">
             <blockquote>“Tilt helped us realise a great 90 second 3D animation with VO. The production allowed us to simplify our complete matrix portfolio in the rapidly changing market research industry. The project was well organised and the team a pleasure to work with.”</blockquote>
             <p class="sans-serif quote-attribute"><strong class="highlight">Glenn Ward,</strong> Global Director, Digital Marketing at GfK</p>

@@ -32,7 +32,7 @@
          </div>
          <div class="header-text">
              <div class="header-text__module header-text__module--padded">
-                 <h2>The challenge</h2>
+                 <h2>The Brief</h2>
                  <p class="first-para tag--work-title">Moving into a leadership role for the first time is exciting, but it also brings with it a set of unexpected pressures. How do you manage this?</p>
              </div>
              <div class="header-text__module">
@@ -52,7 +52,7 @@
              <div id="carousel-image-3"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery/web_fll_gallery_03_imacsmall.jpg')"></div>
              <div id="carousel-image-4"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery/web_fll_gallery_04_imacsmall.jpg')"></div>
          </div> <!-- /end carousel-images -->
-         <div class="carousel-controls">
+         <div class="carousel-controls carousel-controls--imac">
              <div id="carousel-control-1" class="carousel-control selected"></div>
              <div id="carousel-control-2" class="carousel-control"></div>
              <div id="carousel-control-3" class="carousel-control"></div>
@@ -107,7 +107,7 @@
      </section>
  </div> <!-- /end container -->
 
- <div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/gallery/web_fll_gallery_background.jpg')">
+ <div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/gallery/web_fll_gallery_background_V2.jpg')">
      <section class="carousel">
          <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
          <div class="carousel-images">
@@ -116,7 +116,7 @@
              <div id="carousel-image-7" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_03_imacsmall.jpg')"></div>
              <div id="carousel-image-8" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/Gallery2/web_fll_gallery2_04_imacsmall.jpg')"></div>
          </div> <!-- /end carousel-images -->
-         <div class="carousel-controls">
+         <div class="carousel-controls carousel-controls--imac">
              <div id="carousel-control-5" class="carousel-control selected"></div>
              <div id="carousel-control-6" class="carousel-control"></div>
              <div id="carousel-control-7" class="carousel-control"></div>
@@ -130,7 +130,7 @@
         <h2>CONTENT IS KING</h2>
         <div class="text-section__para">
             <p class="first-para tag--work-body">Among other things, we created:</p>
-			<p><strong>FLL Stories</strong>: Films shot at BP locations around the world; each designed to bring to life a challenge commonly faced by new leaders. See our <a href="">case study</a>.</p>
+			<p><strong>FLL Stories</strong>: Films shot at BP locations around the world; each designed to bring to life a challenge commonly faced by new leaders. <a href="../bp-fll-stories/">See our case study</a>.</p>
 			<p><strong>Leadership Mistakes</strong>: Short, humorous 3D motion graphics that summarise the eight most common leadership mistakes in 20 seconds or less.</p>
 			<p><strong>Interactive ‘infosheets’</strong>: Designed to deliver practical content in appealing, easy-to-absorb ways, often supported by beautiful illustrations and interactive graphics.</p>
 			<p><strong>RADA Scenarios</strong>: Ten films featuring actors from the RADA In Business team. Each film illustrates a leadership scenario in a quirky, real-world vignette.</p>
@@ -165,7 +165,35 @@
     </section>
 </div>
 
+<div class="container area-dark">
+    <section class="text-section">
+        <h2>APP LOGIC</h2>
+        <div class="text-section__para">
+            <p class="first-para tag--work-body">BP also wanted to develop an app to complement the portal; a ‘survival toolkit’ with lots of practical leadership tips and feedback. Swedish agency <a href="http://www.monterosa.se/" target="_blank">Monterosa</a> worked on the front-end development, based on design language and style guides produced by Tilt. We then developed the API and backend logic that powered the application, and worked on portal integration. </p>
+        </div>
+    </section>
+</div>
 
+<div class="container container--bp-fll-app">
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/app/fll_app_1.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/app/fll_app_2.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fll/app/fll_app_3.jpg" alt="">
+            </div>
+        </div>
+</div> <!-- /end container -->
 
 
 <div class="group-container">

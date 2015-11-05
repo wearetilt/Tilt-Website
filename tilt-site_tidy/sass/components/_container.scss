@@ -168,7 +168,7 @@ section{
             position: relative;
             h2{
                 float: left;
-                width: 50%;
+                width: 47%;
             }
             .text-section__para{
                 float: right;
@@ -276,6 +276,8 @@ section{
     padding-right: percentage(383/2032);
 }
 
+.wrapper .quote-container { background-color:$c-grey-25; }
+
 .work-container{
     @extend %clearfix;
     background-color: $c-bg;
@@ -303,11 +305,6 @@ section{
     &.news--footer { padding-bottom:5%; }
 
 	.intro-text { opacity:0; }
-
-
-
-
-
 
 }
 

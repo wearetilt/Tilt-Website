@@ -37,7 +37,7 @@ get_header('work-item'); ?>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
-                <h2>The challenge</h2>
+                <h2>The Brief</h2>
                 <p class="first-para tag--work-title">Use the power of digital to help young people explore the ideas behind a PBS nature documentary.</p>
             </div>
             <div class="header-text__module">
@@ -57,7 +57,7 @@ get_header('work-item'); ?>
             <div id="carousel-image-3"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_pbs/gallery/int_pbs_gallery_03_imacsmall.jpg')"></div>
             <div id="carousel-image-4"class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_pbs/gallery/int_pbs_gallery_04_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
-        <div class="carousel-controls">
+        <div class="carousel-controls carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>
             <div id="carousel-control-2" class="carousel-control"></div>
             <div id="carousel-control-3" class="carousel-control"></div>

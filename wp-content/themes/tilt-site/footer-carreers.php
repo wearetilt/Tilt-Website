@@ -25,7 +25,7 @@
 			</div>
 		</div> <!-- /end footer-icons -->
 
-		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather and Rooney Pro. All content copyright 2015 We Are Tilt Ltd. All rights reserved.</p>
+		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2015. All rights reserved.</p>
 	</div>
 </footer>
 <script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
