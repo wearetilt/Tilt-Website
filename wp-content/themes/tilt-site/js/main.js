@@ -1233,6 +1233,10 @@ menuButton.onclick = function(){
     if(document.getElementById('header-video-player')){
         myPlayer.pause();
     }
+    
+    if(document.getElementById('workButton')){
+	    jQuery('#workButton').fadeOut();
+    }
 
 }
 
@@ -1246,6 +1250,11 @@ closeButton.onclick = function(){
 
 	jQuery('#closeButton').fadeOut(500,function(){
 		jQuery('#menuButton').fadeIn(500);
+		
+		 if(document.getElementById('workButton')){
+	    	jQuery('#workButton').fadeIn(500);
+		 }
+		
 	});
 
 	 pageMenu.style.opacity = '0'
@@ -1258,7 +1267,7 @@ closeButton.onclick = function(){
         if(document.getElementById('header-video-player')){
             myPlayer.play();
         }
-
+        
 }
 
 
