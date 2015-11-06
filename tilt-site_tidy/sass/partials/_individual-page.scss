@@ -154,11 +154,17 @@
         color: $c-tilt-pink;
     }
     p.tag--no-square {
-    	@include font-size(13);
+    	@include font-size(8);
     	font-family:$f-merriweather;
 	    color: $c-tilt-pink;
 	    text-transform:uppercase;
 	    line-height:0.8;
+	    
+	    @media handheld, screen and (min-width: $bp-phone){
+	 		@include font-size(13);
+	 	}
+
+	    
     }
     
 }

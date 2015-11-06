@@ -32,9 +32,11 @@ h1, h2, h3, h4, h5, h6{
 h1 {
 	color:$c-bg;
     @include font-size(25);
+    
     @media handheld, screen and (min-width: $bp-desktop){
         @include font-size(50);
     }
+    
     &.underlined, & span.underlined{
         &:after{
             margin-top: 0.2em;
@@ -45,10 +47,13 @@ h1 {
     
     .strapline-container & {
 	    
-	    @include font-size(25);
+	    @include font-size(35);
 	    color:$c-tilt-pink;
-	    
-	    
+		
+		
+		@media handheld, screen and (min-width: $bp-phone){
+        	@include font-size(65);
+		}
 		
 		@media handheld, screen and (min-width: $bp-desktop){
         	@include font-size(70);
@@ -358,10 +363,15 @@ p {
     
     &.news--home {
 	    margin:5px 0px 0px 0px;
-	    @include font-size(25);
+	    @include font-size(15);
 	    line-height:1.1;
 	    text-transform:uppercase;
-	    font-family:$f-seroot-lt
+	    font-family:$f-seroot-lt;
+	    
+	    @media handheld, screen and (min-width: $bp-phone){
+	 		@include font-size(25);
+	 	}
+	    
     }
     
 }

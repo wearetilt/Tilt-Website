@@ -77,21 +77,64 @@
 	        	background: url('../images/careers/icon_careers_design_active.png') center 10% no-repeat;
 				&:hover{ background: url('../images/careers/icon_careers_design_hover.png') center 10% no-repeat; }
 				
+				@media handheld, screen and (min-width: $bp-desktop){
+		        	background: url('../images/careers/icon_careers_design_active.png') center 10% no-repeat;
+					&:hover{ background: url('../images/careers/icon_careers_design_hover.png') center 10% no-repeat; }    
+		        }
+		        
+		        @media handheld, screen and (min-width: $bp-phone){
+		        	background: url('../images/careers/icon_lg/icon_careers_design_active.png') center 10% no-repeat;
+					&:hover{ background: url('../images/icon_lg/careers/icon_careers_design_hover.png') center 10% no-repeat; }    
+		        }
+					
 			}
 
 			&.motion {
 	        	background: url('../images/careers/icon_careers_motion_active.png') center 17% no-repeat;
 				&:hover{ background: url('../images/careers/icon_careers_motion_hover.png') center 17% no-repeat; }
+				
+				@media handheld, screen and (min-width: $bp-desktop){
+		        	  background: url('../images/careers/icon_careers_motion_active.png') center 17% no-repeat;
+					  &:hover{ background: url('../images/careers/icon_careers_motion_hover.png') center 17% no-repeat; }
+		        }
+		        
+		        @media handheld, screen and (min-width: $bp-phone){
+		        	background: url('../images/careers//icon_lg/icon_careers_motion_active.png') center 17% no-repeat;
+					&:hover{ background: url('../images/careers//icon_lg/icon_careers_motion_hover.png') center 17% no-repeat; }	    
+		        }
+			
 			}
 
 			&.dev {
 	        	background: url('../images/careers/icon_careers_developer_active.png') center 17% no-repeat;
 				&:hover{ background: url('../images/careers/icon_careers_developer_hover.png') center 17% no-repeat; }
+				
+				@media handheld, screen and (min-width: $bp-desktop){
+		        	background: url('../images/careers/icon_careers_developer_active.png') center 17% no-repeat;
+					&:hover{ background: url('../images/careers/icon_careers_developer_hover.png') center 17% no-repeat; }
+		        }
+		        
+		        @media handheld, screen and (min-width: $bp-phone){
+		        	background: url('../images/careers/icon_lg/icon_careers_developer_active.png') center 17% no-repeat;
+					&:hover{ background: url('../images/careers/icon_lg/icon_careers_developer_hover.png') center 17% no-repeat; }	    
+		        }
+			
 			}
 
 			&.admin {
 	        	background: url('../images/careers/icon_careers_admin_active.png') center 10% no-repeat;
 				&:hover{ background: url('../images/careers/icon_careers_admin_hover.png') center 10% no-repeat; }
+				
+				@media handheld, screen and (min-width: $bp-desktop){
+					background: url('../images/careers/icon_careers_admin_active.png') center 10% no-repeat;
+					&:hover{ background: url('../images/careers/icon_careers_admin_hover.png') center 10% no-repeat; }
+		        }
+		        
+		        @media handheld, screen and (min-width: $bp-phone){
+		        	background: url('../images/careers/icon_lg/icon_careers_admin_active.png') center 10% no-repeat;
+					&:hover{ background: url('../images/icon_lg/careers/icon_careers_admin_hover.png') center 10% no-repeat; }    
+		        }
+			
 			}
 
 		}

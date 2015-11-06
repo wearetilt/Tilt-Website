@@ -4,7 +4,7 @@
 
 .wrapper{
     transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
-    margin-bottom: 687px;
+    margin-bottom: 600px;
     position: relative;
     background-color: $c-bg;
     z-index: 3;
@@ -15,6 +15,12 @@
     }
     
     &.wrapper--old-browser { margin-bottom:0; }
+	
+	@media handheld, screen and (min-width: $bp-desktop){
+ 		margin-bottom: 687px;
+ 	}
+
+	
 }
 
 .wrapper--dark{
