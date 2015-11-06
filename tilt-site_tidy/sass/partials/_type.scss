@@ -121,7 +121,7 @@ h2{
 	
 	.contact--page & {
 		text-transform:uppercase;
-		font-size:25px;
+		@include font-size(25);
 	}
 	
 	&.white { color:$c-white; }
@@ -425,7 +425,7 @@ a{
     .contact--page & {  
 	    text-transform:uppercase;
 	    font-family:$f-seroot-bd;
-	    font-size:25px;
+	    @include font-size(25);
     }
     
     &:hover { color:$c-grey-7d; }

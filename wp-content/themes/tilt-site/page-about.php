@@ -23,12 +23,7 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">WHAT WE DO.</strong> WE WORK ACROSS DESIGN, INTERACTIVE, MOTION, FILM and specialise in two main areas:</p>
-<!--
-		<p class="sans-serif">In just a few years, we’ve helped redefine onboarding for one of the world’s biggest banks, rethink e-learning for a top-ten energy company, and inspire thousands of kids to get coding. We’ve made music videos, interactive games and cartoons, created award-winning websites, and filmed people from New York to Mumbai. </p>
-		<p class="sans-serif">The project mix keeps us fresh, producing work that makes our clients very happy. Come meet the team&#8230;</p>
--->
-		
+		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT.</strong> WE BUILD WORLDS AND TELL STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM. OUR WORK FITS INTO TWO MAIN AREAS:</p>	
 	</div>
 </div> <!-- /end container -->
 
@@ -46,7 +41,7 @@ get_header(); ?>
 		       					
 				<div class="module__text">
 					<h2 class="underlined">REDEFINING INTERNAL COMMUNICATIONS</h2>
-					<p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="first-para tag--work-title">We have a simple philosophy: treat internal communications with the same respect, craft and creativity as any other channel. It’s an approach that has helped us change the way many large organisations communicate with and educate their employees – from BP and Barclays, to ICAP and Reliance (India’s largest private company).</p>
 				</div>
 
 			</div>
@@ -64,8 +59,8 @@ get_header(); ?>
 			<div class="module module--2-2 module--dark">
 		       					
 				<div class="module__text">
-					<h2 class="underlined">CREATIVE CONTENT FOR BRANDS</h2>
-					<p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<h2 class="underlined">CREATIVE CONTENT FOR BRANDS & BUSINESS</h2>
+					<p class="first-para tag--work-title">Here’s something we love: taking a brief and coming up with ideas way beyond a client’s expectations. From ads, idents and short films, to interactive games, animations and websites, we design content and platforms that make people sit up and take notice.</p>
 				</div>
 
 			</div>
@@ -107,7 +102,7 @@ get_header(); ?>
 	
 	<div class="text-container center">
 		<h2 class="about">OUR DEPARTMENTS</h2>
-		<p>We work this across four main areas: web & mobile, interactive, motion and film. Our open studio is built for collaboration, making it easy to let ideas fly and collide; like shaking a snow globe.</p>
+		<p>Tilt is made up of specialists across web & mobile, interactive, motion and film. Our open studio is built for collaboration, making it easy to let ideas collide across departments; like shaking a snow globe.</p>
 	</div>
 	
 	<div class="group-container container--about-pad">
@@ -119,7 +114,7 @@ get_header(); ?>
 			       	<div class="module__text">			
 						<p id="web-sprite">Web & Mobile</p>
 						<h3>WEB & MOBILE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						<p>Strategically designed digital products built to meet business and user needs across web & mobile.</p>
 			       	</div>
 				</div>
 			</a>
@@ -133,7 +128,7 @@ get_header(); ?>
 			       	<div class="module__text">
 			       		<p id="interactive-sprite">INTERACTIVE</p>				
 						<h3>INTERACTIVE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						<p>Immersive digital experiences, games and learning content designed to surprise and delight.</p>
 			       	</div>
 	
 				</div>
@@ -152,7 +147,7 @@ get_header(); ?>
 			       	<div class="module__text">
 			       		<p id="motion-sprite">MOTION</p>				
 						<h3>MOTION</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						<p>Vivid 2D and 3D rendered pieces that explain ideas in eye-catching ways.</p>
 			       	</div>
 				</div>
 			</a>
@@ -166,7 +161,7 @@ get_header(); ?>
 			       	<div class="module__text">
 			       		<p id="film-sprite">Film</p>				
 						<h3>FILM</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						<p>Beautiful short films that tell stories about people, places and ideas.</p>
 			       	</div>
 				</div>
 			</a>
@@ -198,7 +193,7 @@ get_header(); ?>
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container center">
 		<h2 class="about">MEET OUR TEAM</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p>We’re a properly collaborative team, and we love it that way. Meet the creative sparks that fire up the Tilt Studio.</p>
 		<a class="cube--link" href="<?php echo site_url(); ?>/team">
 			<div class="cube about--cube">
 				<div class="cube--front">
