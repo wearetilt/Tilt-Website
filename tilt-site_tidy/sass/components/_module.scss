@@ -74,23 +74,24 @@
 
 
 			&.designer {
-	        	background: url('../images/careers/designer.png') center 10% no-repeat;
-				&:hover{ background: url('../images/careers/designer_hover.png') center 10% no-repeat; }
+	        	background: url('../images/careers/icon_careers_design_active.png') center 10% no-repeat;
+				&:hover{ background: url('../images/careers/icon_careers_design_hover.png') center 10% no-repeat; }
+				
 			}
 
 			&.motion {
-	        	background: url('../images/careers/motion.png') center 17% no-repeat;
-				&:hover{ background: url('../images/careers/motion_hover.png') center 17% no-repeat; }
+	        	background: url('../images/careers/icon_careers_motion_active.png') center 17% no-repeat;
+				&:hover{ background: url('../images/careers/icon_careers_motion_hover.png') center 17% no-repeat; }
 			}
 
 			&.dev {
-	        	background: url('../images/careers/developer.png') center 17% no-repeat;
-				&:hover{ background: url('../images/careers/developer_hover.png') center 17% no-repeat; }
+	        	background: url('../images/careers/icon_careers_developer_active.png') center 17% no-repeat;
+				&:hover{ background: url('../images/careers/icon_careers_developer_hover.png') center 17% no-repeat; }
 			}
 
 			&.admin {
-	        	background: url('../images/careers/admin.png') center 10% no-repeat;
-				&:hover{ background: url('../images/careers/admin_hover.png') center 10% no-repeat; }
+	        	background: url('../images/careers/icon_careers_admin_active.png') center 10% no-repeat;
+				&:hover{ background: url('../images/careers/icon_careers_admin_hover.png') center 10% no-repeat; }
 			}
 
 		}

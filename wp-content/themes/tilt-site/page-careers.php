@@ -28,6 +28,7 @@ get_header(); ?>
 	<div class="container container--half-both area-dark">
 		<h1>Job board</h1>
 	</div>
+	
 	<div class="group-container">
 		<div class="group group--left group--jobs">
 			<a href="../interactive-designer" target="_blank">
