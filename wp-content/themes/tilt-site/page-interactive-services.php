@@ -17,8 +17,8 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE:</strong> THINKING BEYOND ONE-WAY TRAFFIC. We see digital as a tool; it’s there to be used, prodded, poked and played with. Two-way traffic between a user and a brand.</p>
-		<p class="sans-serif">Our award-winning interactive work has helped brands from O2 to Nickelodeon engage their audiences. Whether creating virtual science labs, taking users on a journey into the worlds of wolves and sharks, or inspiring thousands of kids to get coding – we believe in the power of interactive design to bring ideas to life.</p>
+		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE:</strong> THINKING BEYOND ONE-WAY TRAFFIC. We see digital as a tool; it’s there to be used, prodded, poked and played with. Two-way traffic between a user and a brand. Our award-winning interactive work has helped brands from O2 to Nickelodeon engage their audiences.</p>
+		<p class="sans-serif">Whether creating virtual science labs, taking users on a journey into the worlds of wolves and sharks, or inspiring thousands of kids to get coding – we believe in the power of interactive design to bring ideas to life.</p>
 	</div>
 </div> <!-- /end container -->
 
