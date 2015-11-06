@@ -17,7 +17,8 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE SERVICES.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE:</strong> THINKING BEYOND ONE-WAY TRAFFIC. We see digital as a tool; it’s there to be used, prodded, poked and played with. Two-way traffic between a user and a brand.</p>
+		<p class="sans-serif">Our award-winning interactive work has helped brands from O2 to Nickelodeon engage their audiences. Whether creating virtual science labs, taking users on a journey into the worlds of wolves and sharks, or inspiring thousands of kids to get coding – we believe in the power of interactive design to bring ideas to life.</p>
 	</div>
 </div> <!-- /end container -->
 
@@ -196,8 +197,6 @@ get_header(); ?>
 	
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container center">
-			<h2 class="about">INTERACTIVE</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#interactive">
 				<div class="cube about--cube">
 					<div class="cube--front">

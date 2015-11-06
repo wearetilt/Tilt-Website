@@ -15,9 +15,7 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">GREAT IDEAS</strong> COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS.</p>
-		<p class="sans-serif">On every chair at Tilt, you’ll find a creative thinker, whether they work with graphics, words, code or camera. And we put serious effort into getting the most out of our rather special mix of in-house talent.</p>
-		<p class="sans-serif">Our open studio is built for collaboration, making it easy to let ideas fly and collide; like shaking a snow globe. </p>
+		<p class="first-para sans-serif"><strong class="highlight">GREAT IDEAS</strong> COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS. MEET THE TILT TEAM:</p>
 	</div>
 </div> <!-- /end container -->
 
