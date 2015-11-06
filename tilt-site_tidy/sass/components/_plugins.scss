@@ -7,10 +7,10 @@
 
 
 .rotatingtweet .rtw_wide p.rtw_main {
-	font-size:12px;
+	@include font-size(12);
 	line-height:1.4;
 	@media handheld, screen and (min-width: $bp-desktop-large){
-		font-size:16px;
+		@include font-size(16);
 	}
 
 	a { text-transform:none; }
@@ -28,7 +28,7 @@ p.rtw_main {
 }
 
 .rtw_time_short a {
-	font-size:13px;
+	@include font-size(13);
 	font-family:$f-merriweather;
 	font-weight:300;
 	color:#d34262;

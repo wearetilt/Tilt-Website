@@ -166,7 +166,7 @@ h3{
     
     .about-service & {
 	    font-family:$f-seroot-lt;
-	    font-size:25px;
+	    @include font-size(25);
 	    color: $c-tilt-pink2;
 	    padding-top:10%;
 	    padding-bottom:6%;
@@ -358,7 +358,7 @@ p {
     
     &.news--home {
 	    margin:5px 0px 0px 0px;
-	    font-size:25px;
+	    @include font-size(25);
 	    line-height:1.1;
 	    text-transform:uppercase;
 	    font-family:$f-seroot-lt
@@ -389,7 +389,7 @@ p {
 
 .careers p.text-center {
 	margin-bottom:59px;
-	font-size:20px;
+	@include font-size(20);
 }
 
 a{
@@ -500,7 +500,7 @@ ul {
 
             &:before {
                content: "·";
-               font-size: 27px;
+               @include font-size(27);
                vertical-align: middle;
                line-height: 0;
                margin-right: 5px;

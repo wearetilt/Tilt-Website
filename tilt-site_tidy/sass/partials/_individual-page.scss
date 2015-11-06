@@ -154,7 +154,7 @@
         color: $c-tilt-pink;
     }
     p.tag--no-square {
-    	font-size:13px;
+    	@include font-size(13);
     	font-family:$f-merriweather;
 	    color: $c-tilt-pink;
 	    text-transform:uppercase;
