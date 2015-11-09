@@ -1021,7 +1021,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					
 					var theHeader = document.getElementsByTagName('header');
 					var headerID = theHeader[0].getAttribute('ID');
-			
+					
+					jQuery('#header-play').hide();
+					
 					switch (headerID) {
 						//work-page
 						case "page_barclays_integrity":
@@ -1071,6 +1073,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						default:
 							// do nothing
 					}
+					
+					
+					
 					
 					});
 				
