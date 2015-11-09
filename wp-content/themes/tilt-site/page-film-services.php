@@ -17,7 +17,8 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">FILM SERVICES.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		<p class="first-para sans-serif"><strong class="highlight">FILM:</strong> TELLING STORIES ABOUT PEOPLE, PLACES & IDEAS.</p>
+		<p class="sans-serif">Film comes alive in the spaces between the words. And, over the years, we have developed an in-house style that combines clarity of message with a distinctive visual touch. It’s an approach embraced by clients such as Barclays, ICAP and BP. Add to that our music videos, ads, short films and documentaries and you have a small but perfectly formed film department that continually produces stunning new work.</p>
 	</div>
 </div> <!-- /end container -->
 
@@ -196,8 +197,6 @@ get_header(); ?>
 	
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container center">
-			<h2 class="about">FILM</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#film">
 				<div class="cube about--cube">
 					<div class="cube--front">

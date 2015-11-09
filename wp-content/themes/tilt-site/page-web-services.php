@@ -17,7 +17,8 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">WEB & MOBILE SERVICES.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		<p class="first-para sans-serif"><strong class="highlight">WEB & MOBILE:</strong> BUILDING BRILLIANT DIGITAL EXPERIENCES.</p>
+		<p class="sans-serif">We build websites that are bold, beautiful and designed to put users first and always. Our strategy, user experience, design and development teams work closely together to create sites that work perfectly across different devices and contexts. From sophisticated onboarding platforms, to highly visual brochure sites, our clients trust us to produce innovative, effective digital products.</p>
 	</div>
 </div> <!-- /end container -->
 
@@ -196,8 +197,6 @@ get_header(); ?>
 	
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container center">
-			<h2 class="about">WEB</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#web">
 				<div class="cube about--cube">
 					<div class="cube--front">

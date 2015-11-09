@@ -17,7 +17,8 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">MOTION SERVICES.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		<p class="first-para sans-serif"><strong class="highlight">MOTION GRAPHICS:</strong> PLAYING WITH SPACE AND TIME.</p>
+		<p class="sans-serif">Motion has no borders – if you can imagine it, we can build it. From idents and ads, to music videos and corporate animations, our motion team has created award-winning work across dozens of sectors. Working in 2D or 3D, often combining film, illustration and graphic design, our motion artists create some of the most distinctive work coming out of the Tilt Studio.</p>
 	</div>
 </div> <!-- /end container -->
 
@@ -193,8 +194,6 @@ get_header(); ?>
 	
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container center">
-			<h2 class="about">MOTION</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#motion">
 				<div class="cube about--cube">
 					<div class="cube--front">
