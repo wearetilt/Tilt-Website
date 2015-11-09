@@ -12,6 +12,7 @@
  */
 
 get_header('work-item'); ?>
+
 <div id="video-overlay" class="fullpage-overlay">
     <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/film_sd/sd_poster.jpg" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
@@ -25,11 +26,11 @@ get_header('work-item'); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/film_sd/sd_poster.jpg" width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/141048772.hd.mp4?s=9410c4302324a7d77893874178f3ec83&profile_id=113" type="video/mp4">
+                   <source id="header-video" src="https://player.vimeo.com/external/141048772.hd.mp4?s=9410c4302324a7d77893874178f3ec83&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
-    <div class="container container--header">
+    <div class="container container--header container--header-desktop">
         <div class="header-title">
             <p class="tag tag--work-body">Film</p>
             <h1>South Downs<br />
