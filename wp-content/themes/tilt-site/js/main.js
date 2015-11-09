@@ -1007,7 +1007,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		document.body.setAttribute("class","loaded safari");
 	} else {
 		document.body.setAttribute("class","loaded");
+		
+				
+		if(document.getElementById('video-overlay')) {
+			Modernizr.on('videoautoplay', function(result){
+				if(result) {
+					autoPlay = true;
+					
+					
+					
+										
+					/* document.getElementById('header-video-player').style.display = 'none';	 */				
+					
+					/* document.getElementById('header-video-player').src = "";  */					
+					
+				
+				} 
+			});	
+		}
+	
 	}
+	
+	
+	
+	
+	
+	
 
 });
 
