@@ -1343,6 +1343,7 @@ if(document.getElementById('header-video-player')){
 	        document.getElementById('video-overlay').style.display = "none";
 	        videoOverlay.pause();
 			console.log(videoOverlay.src());
+			jQuery('.container--header').show();
 
 	        myPlayer.play();
 
