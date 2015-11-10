@@ -24,25 +24,30 @@ get_header(); ?>
 	</div> <!-- /end container -->
 </div>
 
-<div class="container container--no-padding">
+<div class="container container--mobile-careers">
 	<div class="container container--half-both area-dark">
 		<h1>Job board</h1>
 	</div>
+	
+
+	
 	
 	<div class="group-container">
 		<div class="group group--left group--jobs">
 			<a href="../interactive-designer" target="_blank">
 				<div class="module module--1-1 module--job module--visible area-dark">
-					<div class="module__text designer">
-						<h2 class="light">Web Designer</h2>
+					<div class="module__text">
+						<p id="web-career--sprite">Web & Mobile</p>
+						<h3>Web Designer</h3>
 						<p>Interactive Designer with a track record in producing beautiful digital content.</p>
 					</div>
 				</div>
 			</a>
 			<a href="../design-freelancers">
 				<div class="module module--1-1 module--job module--visible area-dark">
-					<div class="module__text designer">
-						<h2 class="light">Design Freelancer</h2>
+					<div class="module__text">
+						<p id="web-career--sprite">Web & Mobile</p>
+						<h3>Design Freelancer</h3>
 						<p>Are you a web designer looking for freelance work? Send us your portfolio.</p>
 					</div>
 				</div>
@@ -51,16 +56,18 @@ get_header(); ?>
 		<div class="group group--right group--jobs">
 			<a href="../motion-freelancers">
 				<div class="module module--1-1 module--job module--visible area-dark">
-					<div class="module__text motion">
-						<h2 class="light">Motion Freelancer</h2>
+					<div class="module__text">
+						<p id="motion-career--sprite">Motion</p>
+						<h3>Motion Freelancer</h3>
 						<p>We are on the look out for freelance animators. Send us your showreel.</p>
 					</div>
 				</div>
 			</a>
 			<a href="../motion-internship">
 				<div class="module module--1-1 module--job module--visible area-dark">
-					<div class="module__text admin">
-						<h2 class="light">Internship</h2>
+					<div class="module__text">
+						<p id="admin-career--sprite">Admin</p>
+						<h3>Internship</h3>
 						<p>Looking for a career in motion and animation? Enthusiastic? Show us!</p>
 					</div>
 				</div>

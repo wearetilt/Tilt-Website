@@ -169,7 +169,7 @@ h3{
         -moz-osx-font-smoothing: grayscale;
     }
     
-    .about-service & {
+    .about-service &, .module--job & {
 	    font-family:$f-seroot-lt;
 	    @include font-size(25);
 	    color: $c-tilt-pink2;
@@ -178,6 +178,7 @@ h3{
 	    
     }
     
+    .module--job & { color: $c-tilt-pink; }
     
     .careers--image & {
 	    
