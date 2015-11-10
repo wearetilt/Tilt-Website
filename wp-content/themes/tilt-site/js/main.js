@@ -1018,12 +1018,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 						var theHeader = document.getElementsByTagName('header');
 						var headerID = theHeader[0].getAttribute('ID');
-						jQuery('#header-play').hide();
+						// jQuery('#header-play').hide();
 						jQuery('.header-text').hide();
-						myPlayer.requestFullscreen();
-						
+
+						var playButton = document.getElementById('header-play');
+
+						playButton.addEventListener('click', function(){
+							jQuery('.container--header').hide();
+							myPlayer.requestFullscreen();
+							myPlayer.play();
+						})
+
+						// myPlayer.requestFullscreen();
+
 						// add controls to video element
-						// force full 
+						// force full
 
 
 						switch (headerID) {
@@ -1061,7 +1070,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							break;
 
 							case "page_sdnpa":
-								myPlayer.src("https://player.vimeo.com/external/89417008.hd.mp4?s=b970f0c992ca4f0299fe30801dd6fe08&profile_id=113");
+								myPlayer.src("https://player.vimeo.com/external/141048772.hd.mp4?s=9410c4302324a7d77893874178f3ec83&profile_id=113");
+								// myPlayer.src("https://player.vimeo.com/external/89417008.hd.mp4?s=b970f0c992ca4f0299fe30801dd6fe08&profile_id=113");
 							break;
 
 							case "page_take_the_lead":
@@ -1144,7 +1154,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						break;
 
 						case "page_sdnpa":
-							myPlayer.src("https://player.vimeo.com/external/89417008.hd.mp4?s=b970f0c992ca4f0299fe30801dd6fe08&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/141048772.hd.mp4?s=9410c4302324a7d77893874178f3ec83&profile_id=113");
+							// myPlayer.src("https://player.vimeo.com/external/89417008.hd.mp4?s=b970f0c992ca4f0299fe30801dd6fe08&profile_id=113");
 						break;
 
 						case "page_take_the_lead":
@@ -1158,9 +1169,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						default:
 							// do nothing
 					}
-
-
-
 
 					});
 
@@ -1308,15 +1316,38 @@ if(document.getElementById('header-video-player')){
 
 	if(document.getElementById('overlay-video')){
 	    var videoOverlay = videojs('overlay-video');
-		videoOverlay.requestFullscreen(function(){
-			return false;
-		})
+
+		Modernizr.on('videoautoplay', function(result){
+			console.log('in here');
+			if(!result) {
+				var videoPlayButton = document.getElementById('header-play');
+				videoPlayButton.addEventListener('click', function(){
+					// alert('Clicked');
+					console.log('Hellooooooo')
+					videoOverlay.play();
+					videoOverlay.requestFullscreen();
+					console.log(videoOverlay);
+
+				});
+
+			} else {
+				videoOverlay.requestFullscreen(function(){
+					return false;
+				});
+			}
+		});
+
+
 
 	    document.getElementById('video-overlay-close').addEventListener('click', function(){
 	        document.getElementById('video-overlay').style.display = "none";
 	        videoOverlay.pause();
+			console.log(videoOverlay.src());
+			jQuery('.container--header').show();
 
 	        myPlayer.play();
+
+			console.log(myPlayer.src());
 
 
 			document.getElementById('tilt--logo').style.display = 'block';
@@ -1334,7 +1365,6 @@ if(document.getElementById('header-video-player')){
 	if(document.getElementById('header-play')){
 	    document.getElementById('header-play').addEventListener('click', function(){
 	            myPlayer.ready(function(){
-	                console.log(videoOverlay.src);
 	                if(videoOverlay.currentSrc() === "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113"){
 	                    videoOverlay.src(fullVideoSrc);
 	                }
@@ -1342,17 +1372,12 @@ if(document.getElementById('header-video-player')){
 	                myPlayer.pause();
 	                document.getElementById('video-overlay').style.display = 'block';
 
-
 					document.getElementById('tilt--logo').style.display = 'none';
 	                document.getElementById('menuButton').style.display = 'none';
-
 
 					if(document.getElementById('workButton').style.display != null) {
 						document.getElementById('workButton').style.display = 'none';
 	                }
-
-
-
 	            });
 	    });
 	}

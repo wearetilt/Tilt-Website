@@ -19,6 +19,11 @@ get_header('contact'); ?>
 
 	officeLocation = new google.maps.LatLng(50.8319498, -0.1392226);
 
+	brightonStation = new google.maps.LatLng(50.829,-0.1434387);
+	hoveStation = new google.maps.LatLng(50.83521,-0.1728487);
+	londonRoadStation = new google.maps.LatLng(50.8366562,-0.1385841);
+	prestonParkStation = new google.maps.LatLng(50.8458755,-0.1572922);
+
 	function init() {
 		// Basic options for a simple Google Map
 		// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -69,7 +74,49 @@ get_header('contact'); ?>
 				title: 'Our Office',
 				visible: true
 			});
+
+			stationOne = new google.maps.Marker({
+				flat: true,
+				icon: image,
+				map: map,
+				optimized: false,
+				position: brightonStation,
+				title: 'Brighton Station',
+				visible: true
+			});
+
+			stationTwo = new google.maps.Marker({
+				flat: true,
+				icon: image,
+				map: map,
+				optimized: false,
+				position: londonRoadStation,
+				title: 'London Road Station',
+				visible: true
+			});
+
+			stationThree = new google.maps.Marker({
+				flat: true,
+				icon: image,
+				map: map,
+				optimized: false,
+				position: prestonParkStation,
+				title: 'Preston Park Station',
+				visible: true
+			});
+
+			stationFour = new google.maps.Marker({
+				flat: true,
+				icon: image,
+				map: map,
+				optimized: false,
+				position: hoveStation,
+				title: 'Hove Station',
+				visible: true
+			});
+
 		}
+
 	}
 </script>
 
