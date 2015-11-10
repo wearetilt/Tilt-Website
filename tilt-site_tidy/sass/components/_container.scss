@@ -4,7 +4,7 @@
 
 .wrapper{
     transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
-    margin-bottom: 600px;
+    margin-bottom:460px;
     position: relative;
     background-color: $c-bg;
     z-index: 3;
@@ -172,7 +172,7 @@
 	&.center { text-align:center; }
 
     footer & {
-        top: 58%;
+        top: 69%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         @media handheld, screen and (min-width: $bp-desktop){

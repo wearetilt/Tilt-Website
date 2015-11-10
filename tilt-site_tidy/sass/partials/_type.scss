@@ -84,6 +84,7 @@ h1 {
 h2{
 	color:$c-bg;
     @include font-size(20);
+   
     @media handheld, screen and (min-width: $bp-desktop){
            @include font-size(32);
            &#staff-member__position, &#staff-member__department { @include font-size(38); }
@@ -91,6 +92,7 @@ h2{
     
     @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
     	margin:0px 0px 15px 0px;
+    	@include font-size(25);
     	line-height:1.2;
     }
   
@@ -236,10 +238,10 @@ p {
                 width: 18px;
                 margin-right:8px;
             }
-            height:14px;
-            width:14px;
+            height:15px;
+            width:15px;
             background-color: $c-tilt-pink;
-            margin-right: 8px;
+            margin-right: 7px;
             margin-left: 2px;
         }
     }
@@ -255,8 +257,9 @@ p {
                 width: 12px;
                 margin-right:6px;
             }
-            height:8px;
-            width:8px;
+            height:11px;
+            width:11px;
+            margin-right:4px;
             
         }
     }

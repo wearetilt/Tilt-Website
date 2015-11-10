@@ -102,6 +102,11 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no
             color: white;
             padding-bottom: 15px;
             font-family:$f-seroot-thn;
+            
+            @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
+				display:block;
+				padding-bottom: 10px;
+			}
 
             &:after{
                 content: "";
@@ -117,6 +122,10 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no
             &:hover{
                 &:after{
                     width: 15%;
+                    @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
+						width: 12%;
+						
+					}
                 }
             }
         }
