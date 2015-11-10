@@ -178,7 +178,7 @@ get_header('home'); ?>
 
 				<div class="module module--2-2">
 
-					 <a class="item-link" href="<?php get_site_url(); ?>discover-bp">
+					 <a href="<?php get_site_url(); ?>discover-bp">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag tag--home-title">Case Study</p>

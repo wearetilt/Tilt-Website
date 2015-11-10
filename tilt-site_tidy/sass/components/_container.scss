@@ -19,7 +19,7 @@
 	@media handheld, screen and (min-width: $bp-desktop){
  		margin-bottom: 687px;
  	}
-
+ 	
 	
 }
 
@@ -152,7 +152,7 @@
 }
 
 .container--half-bot{
-    padding-bottom: percentage(120/2032);
+    padding-bottom: percentage(120/2032);    
 }
 
 
@@ -255,9 +255,15 @@ section{
 
     .group--jobs {
 	    width:100%;
+	    
+	   
+	    
 	    @media handheld, screen and (min-width: $bp-desktop-large){
 	    	width: 50%;
 	    }
+	    
+	    
+	    
     }
 
     &.careers .group--left {

@@ -55,6 +55,7 @@ a{
 		@media handheld, screen and (min-width: $bp-desktop){
 	    	 @include font-size(25);
 		}
+		
     }
 
     &.paginate_prev {
@@ -65,8 +66,13 @@ a{
         	content:url('../images/pagination_arrow.png');
             display: inline-block;
             margin-right:40px;
+        
+			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+				margin-right:10px;
+			}
+			
         }
-
+        
     }
 
     &.paginate_next {
@@ -77,7 +83,13 @@ a{
         	content:url('../images/pagination_arrow_after.png');
             display: inline-block;
             margin-left:40px;
+			
+			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+				 margin-left:10px;
+			}
+        
         }
+        
 
     }
 

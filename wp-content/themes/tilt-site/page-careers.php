@@ -16,10 +16,7 @@ get_header(); ?>
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container">
 			<p class="first-para sans-serif"><strong class="highlight">A strong creative fusion</strong> binds the eclectic skills and charisma of our team.
-			We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>
-			<p class="sans-serif">If you have a digital wanderlust and looking to work with like minded individuals then get in touch. We are looking for talented designers, strategists, artists, animators, film makers, producers, writers and coders to join our team.</p>
-
-			
+			We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>	
 		</div>
 	</div> <!-- /end container -->
 </div>

@@ -2018,7 +2018,7 @@ jQuery('.module a').on("touchstart", function (e) {
 		return true;
 	} else {
 		link.addClass('hover');
-		jQuery('a.taphover').not(this).removeClass('hover');
+		jQuery('.module a').not(this).removeClass('hover');
 		e.preventDefault();
 		return false; //extra, and to make sure the function has consistent return points
 	}
