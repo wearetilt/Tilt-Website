@@ -69,6 +69,14 @@
             padding-top: 50%;
             
         }
+        
+        @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
+        	 background-color:#252525;
+        }
+        
+        
+        
+        
 
 		.module__text {
 			padding: 0% 5%;
@@ -81,27 +89,51 @@
 				width:144px;
 				overflow:hidden;
 				text-align:center;
+				
+				@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
+					padding:196px 0px 0px 0px;
+					width:288px;
+				}
+				
 			}
 			
 			p#web-career--sprite {
 				background: url('../images/careers/icon_careers_design_active.png') center 0% no-repeat;
+				
+				@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
+					background: url('../images/careers/icon_lg/icon_careers_design_active.png') center 0% no-repeat;
+				}
 
 			}
 			
 			p#motion-career--sprite {
 				background: url('../images/careers/icon_careers_motion_active.png') center 0% no-repeat;
+			
+				@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
+					background: url('../images/careers/icon_lg/icon_careers_motion_active.png') center 0% no-repeat;
+				}
+				
 			}
 			
 			p#film-career--sprite {
 				background: url('../images/careers/icon_careers_motion_active.png') center 0% no-repeat;
+				@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
+					background: url('../images/careers/icon_lg/icon_careers_motion_active.png') center 0% no-repeat;
+				}
 			}
 			
 			p#admin-career--sprite {
 				background: url('../images/careers/icon_careers_admin_active.png') center 0% no-repeat;
+				@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
+					background: url('../images/careers/icon_lg/icon_careers_admin_active.png') center 0% no-repeat;
+				}
 			}
 			
 			p#dev-career--sprite {
 				background: url('../images/careers/icon_careers_developer_active.png') center 0% no-repeat;
+				@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
+					background: url('../images/careers/icon_lg/icon_careers_developer_active.png') center 0% no-repeat;
+				}
 			}
 			
 		}

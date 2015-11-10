@@ -38,19 +38,29 @@ footer{
     }
 
     .telephone{
-        float: left;
+        float: right;
         font-size:1.2rem;
         color: white;
         margin-top:0px;
-        clear: both;
+        clear:none;
         font-family:$f-merriweather;
         font-weight:300;
+        
         @media handheld, screen and (min-width: $bp-desktop){
             float: right;
             clear: none;
             margin-top:0px;
             font-size:1.5em;
         }
+        
+        @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+        	 float:left;
+        	 clear:both;
+        	 margin-top:25px;
+        	 margin-bottom:25px;
+        }
+        
+        a { color: $c-tilt-pink; }
 
     }
 

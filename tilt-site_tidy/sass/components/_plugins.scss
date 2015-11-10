@@ -12,13 +12,17 @@
 	@media handheld, screen and (min-width: $bp-desktop-large){
 		@include font-size(16);
 	}
-
+	
+	@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
+		@include font-size(20);
+	}
+	
 	a { text-transform:none; }
 
 }
 
 p.rtw_main {
-	font-family:$f-seroot-lt;
+	font-family:$f-seroot-lt;	
 }
 
 .rotatingtweet a {
