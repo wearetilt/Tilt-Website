@@ -70,22 +70,6 @@ get_header('contact'); ?>
 				visible: true
 			});
 		}
-
-		// var iconBase = {
-		//     url: "images/marker.png",
-		//     size: new google.maps.Size(34,34),
-		//     origin: new google.maps.Point(0,0),
-		//     anchor: new google.maps.Point(17,17)
-		// };
-
-		// Let's also add a marker while we're at it
-
-		// var marker = new google.maps.Marker({
-		//     position: new google.maps.LatLng(50.832132, -0.139421),
-		//     map: map,
-		//     title: 'Our Office',
-		//     icon: iconBase
-		// });
 	}
 </script>
 
@@ -98,8 +82,8 @@ get_header('contact'); ?>
 		<a class="contact-email" href="mailto:jonathan.helm@wearetilt.com">jonathan.helm@wearetilt.com</a>
 		<h2 class="contact-title"><span class="light">General Enquiries</span></h2>
 		<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
-		
-		
+
+
 		<!--
 <div class="worksheet-button-container">
 			<p>Try our handy worksheet to help you define your project.</p>

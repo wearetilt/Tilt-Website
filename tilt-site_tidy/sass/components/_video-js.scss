@@ -795,7 +795,7 @@ img#vjs-logobrand-image {
   border-radius: 60px;
   width: 60px;
   height: 60px;
-  background-color: #ff0049;
+  background-color: #ffffff;
   position: absolute;
   left: 0;
   right: 0;
@@ -807,7 +807,7 @@ img#vjs-logobrand-image {
 }
 
 .circle--2{
-  background-color: #ff0049;
+  background-color: #ffffff;
   opacity: 0.6;
   z-index: 2;
   animation-delay: -1s;
@@ -815,8 +815,8 @@ img#vjs-logobrand-image {
 
 @keyframes circleBounce{
     0%{
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
+    transform: scale(0);
+    -webkit-transform: scale(0);
   }
   50%{
         transform: scale(1);
@@ -831,12 +831,12 @@ img#vjs-logobrand-image {
 
 @-webkit-keyframes circleBounce{
   0%{
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
+    transform: scale(0);
+    -webkit-transform: scale(0);
   }
 
   50%{
-        transform: scale(1);
+    transform: scale(1);
     -web-kit-transform: scale(1);
   }
 
@@ -848,18 +848,16 @@ img#vjs-logobrand-image {
 
 .vjs-waiting .vjs-loading-spinner{
     animation: none;
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
     width: auto;
     height: auto;
     opacity: 1;
-    margin-left: 0;
-    margin-right: 0;
     top: 50%;
     -webkit-transform: translateY(-50%);
     left: 0;
     right: 0;
+    margin: 0px auto;
+    margin-top: -54px;
 
     &:before{
         display: none;
