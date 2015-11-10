@@ -1020,6 +1020,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						var headerID = theHeader[0].getAttribute('ID');
 						jQuery('#header-play').hide();
 						jQuery('.header-text').hide();
+						myPlayer.requestFullscreen();
+						
+						// add controls to video element
+						// force full 
 
 
 						switch (headerID) {
