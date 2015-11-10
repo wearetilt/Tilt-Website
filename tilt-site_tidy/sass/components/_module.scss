@@ -46,7 +46,7 @@
         transform: scale(1);
     }
 
-    a {
+    a, a.hover {
         &:hover .ratio{
             transform: scale(1.05);
         }
@@ -62,17 +62,17 @@
         background-color: $c-bg;
         width: 100%;
         padding-top: 100%;
-        
+
 
         @media handheld, screen and (min-width: $bp-desktop){
             width: 50%;
             padding-top: 50%;
-            
+
         }
 
 		.module__text {
 			padding: 0% 5%;
-			
+
 			p#web-career--sprite, p#motion-career--sprite, p#film-career--sprite, p#admin-career--sprite, p#dev-career--sprite {
 				display:block;
 				margin:auto;
@@ -82,28 +82,28 @@
 				overflow:hidden;
 				text-align:center;
 			}
-			
+
 			p#web-career--sprite {
 				background: url('../images/careers/icon_careers_design_active.png') center 0% no-repeat;
 
 			}
-			
+
 			p#motion-career--sprite {
 				background: url('../images/careers/icon_careers_motion_active.png') center 0% no-repeat;
 			}
-			
+
 			p#film-career--sprite {
 				background: url('../images/careers/icon_careers_motion_active.png') center 0% no-repeat;
 			}
-			
+
 			p#admin-career--sprite {
 				background: url('../images/careers/icon_careers_admin_active.png') center 0% no-repeat;
 			}
-			
+
 			p#dev-career--sprite {
 				background: url('../images/careers/icon_careers_developer_active.png') center 0% no-repeat;
 			}
-			
+
 		}
 
 
@@ -165,8 +165,8 @@
             }
          }
      }
-        
-} 
+
+}
 
 .module--visible{
     transform: scale(1);

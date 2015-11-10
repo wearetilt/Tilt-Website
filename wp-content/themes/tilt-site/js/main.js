@@ -2011,6 +2011,19 @@ jQuery(document).ready(function(){
 
 });
 
+jQuery('.module a').on("touchstart", function (e) {
+	'use strict'; //satisfy code inspectors
+	var link = jQuery(this); //preselect the link
+	if (link.hasClass('hover')) {
+		return true;
+	} else {
+		link.addClass('hover');
+		jQuery('a.taphover').not(this).removeClass('hover');
+		e.preventDefault();
+		return false; //extra, and to make sure the function has consistent return points
+	}
+});
+
 //footer stuff
 
 var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));
