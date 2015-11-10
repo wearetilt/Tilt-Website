@@ -31,7 +31,7 @@ get_header('home'); ?>
 ?>
 
 <script type="text/javascript">
-	
+
 	var wordArray = ['Thinkers','Crafters','Grafters', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
@@ -95,7 +95,7 @@ get_header('home'); ?>
     <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">About this video</a>
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">CRAFTED DIGITAL EXPERIENCES</strong> FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS AND CREATIVES.</p>
-		
+
 
 		<a class="cube--link" href="<?php echo site_url(); ?>/about/">
 			<div class="cube">
@@ -113,48 +113,48 @@ get_header('home'); ?>
 <div class="container container--no-padding">
 	<section>
 		<div class="group-container">
-			
+
 			<div class="group group--right">
-				
+
 				<div class="module module--2-1">
-					
+
 					<a href="<?php get_site_url(); ?>code-it">
-					
+
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag tag--home-title">Work</p>
 								<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
-	
+
 						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
 					</a>
-					
+
 				</div>
-				
+
 				<div class="module module--1-1">
                     <a id="instagram_link_1" href="#" target="_blank">
                         <div class="overlay area-dark"></div>
                         <div id="instagram_box_1" class="ratio instagram-box"></div>
                     </a>
 				</div>
-				
+
 				<a href="<?php echo $post->guid; ?>">
 					<div class="module module--1-1 area-dark news--icon">
-					
+
 						<div class="module__text">
 							<p class="tag--no-square">News</p>
 							<p class="news--home"><?php echo the_title(); ?></p>
 						</div>
-					
+
 				</div>
-				
+
 				</a>
-				
+
 			</div>
-			
+
 			<div class="group group--left">
-				<div id="module-5" class="module module--2-2">
+				<div class="module module--2-2">
 					<a href="<?php get_site_url(); ?>bp-fll-stories/">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
@@ -176,8 +176,8 @@ get_header('home'); ?>
 		<div class="group-container">
 			<div class="group group--right">
 
-				<div id="module-5" class="module module--2-2">
-					
+				<div class="module module--2-2">
+
 					 <a href="<?php get_site_url(); ?>discover-bp">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
@@ -188,7 +188,7 @@ get_header('home'); ?>
 						</div> <!-- /end overlay -->
 						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_04_ls.jpg')"></div>
 					 </a>
-					 
+
 				</div>
 
 
@@ -204,10 +204,10 @@ get_header('home'); ?>
 								<h2>GFK<br /><span class="light underlined">Brand Video</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
-	
+
 						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_03_mr.jpg')"></div>
 					</a>
-					
+
 				</div>
 
 
@@ -217,7 +217,7 @@ get_header('home'); ?>
 				        <div id="instagram_box_2" class="ratio instagram-box"></div>
                     </a>
 				</div>
-				
+
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text home--tweet">
 						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
