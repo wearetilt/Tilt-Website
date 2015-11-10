@@ -863,3 +863,16 @@ img#vjs-logobrand-image {
         display: none;
     }
 }
+
+.vjs-progress-control{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#overlay-video{
+    &:hover{
+        .vjs-progress-control{
+            opacity: 1;
+        }
+    }
+}

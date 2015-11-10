@@ -1213,9 +1213,13 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
 
 if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
-		myPlayer.ready(function(){
-			document.getElementById('header-play').classList.add('video-ready');
-		}, true);
+
+		if(document.getElementById('header-play')){
+			myPlayer.ready(function(){
+				document.getElementById('header-play').classList.add('video-ready');
+			}, true);
+		}
+
         myPlayer.play();
 
 		var theHeader = document.getElementsByTagName('header');
