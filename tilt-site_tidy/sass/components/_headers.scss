@@ -20,7 +20,7 @@ header{
 
     #header-play{
         opacity: 0;
-        transition: all 0.5s ease;
+        transition: opacity 0.5s ease;
 
         &.video-ready{
             opacity: 1;
