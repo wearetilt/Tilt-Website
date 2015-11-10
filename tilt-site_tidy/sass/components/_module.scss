@@ -62,70 +62,48 @@
         background-color: $c-bg;
         width: 100%;
         padding-top: 100%;
+        
 
         @media handheld, screen and (min-width: $bp-desktop){
             width: 50%;
             padding-top: 50%;
+            
         }
 
 		.module__text {
-			height:100%;
-			padding: 45% 5%;
-
-
-			&.designer {
-	        	
-				
-				background: url('../images/careers/icon_lg/icon_careers_design_active.png') center 10% no-repeat;
-				&:hover{ background: url('../images/icon_lg/careers/icon_careers_design_hover.png') center 10% no-repeat; } 
-				
-		        @media handheld, screen and (min-width: $bp-phone){
-		      
-					background: url('../images/careers/icon_careers_design_active.png') center 10% no-repeat;
-					&:hover{ background: url('../images/careers/icon_careers_design_hover.png') center 10% no-repeat; }   
-		        }
-					
-			}
-
-			&.motion {
-	        	background: url('../images/careers/icon_careers_motion_active.png') center 10% no-repeat;
-				&:hover{ background: url('../images/careers/icon_careers_motion_hover.png') center 10% no-repeat; }
-				
-				@media handheld, screen and (min-width: $bp-desktop){
-		        	  background: url('../images/careers/icon_careers_motion_active.png') center 10% no-repeat;
-					  &:hover{ background: url('../images/careers/icon_careers_motion_hover.png') center 10% no-repeat; }
-		        }
-		        
-		        
+			padding: 0% 5%;
 			
+			p#web-career--sprite, p#motion-career--sprite, p#film-career--sprite, p#admin-career--sprite, p#dev-career--sprite {
+				display:block;
+				margin:auto;
+				padding:98px 0px 0px 0px;
+				height:0;
+				width:144px;
+				overflow:hidden;
+				text-align:center;
 			}
-
-			&.dev {
-	        	background: url('../images/careers/icon_careers_developer_active.png') center 10% no-repeat;
-				&:hover{ background: url('../images/careers/icon_careers_developer_hover.png') center 10% no-repeat; }
-				
-				@media handheld, screen and (min-width: $bp-desktop){
-		        	background: url('../images/careers/icon_careers_developer_active.png') center 10% no-repeat;
-					&:hover{ background: url('../images/careers/icon_careers_developer_hover.png') center 10% no-repeat; }
-		        }
-		        
-		        
 			
-			}
+			p#web-career--sprite {
+				background: url('../images/careers/icon_careers_design_active.png') center 0% no-repeat;
 
-			&.admin {
-	        	background: url('../images/careers/icon_careers_admin_active.png') center 10% no-repeat;
-				&:hover{ background: url('../images/careers/icon_careers_admin_hover.png') center 10% no-repeat; }
-				
-				@media handheld, screen and (min-width: $bp-desktop){
-					background: url('../images/careers/icon_careers_admin_active.png') center 10% no-repeat;
-					&:hover{ background: url('../images/careers/icon_careers_admin_hover.png') center 10% no-repeat; }
-		        }
-		        
-		        
+			}
 			
+			p#motion-career--sprite {
+				background: url('../images/careers/icon_careers_motion_active.png') center 0% no-repeat;
 			}
-
+			
+			p#film-career--sprite {
+				background: url('../images/careers/icon_careers_motion_active.png') center 0% no-repeat;
+			}
+			
+			p#admin-career--sprite {
+				background: url('../images/careers/icon_careers_admin_active.png') center 0% no-repeat;
+			}
+			
+			p#dev-career--sprite {
+				background: url('../images/careers/icon_careers_developer_active.png') center 0% no-repeat;
+			}
+			
 		}
 
 
