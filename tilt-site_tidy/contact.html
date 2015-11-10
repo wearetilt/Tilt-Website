@@ -13,6 +13,11 @@
 
         officeLocation = new google.maps.LatLng(50.832132, -0.139421);
 
+        brightonStation = new google.maps.LatLng(50.829,-0.1434387);
+        hoveStation = new google.maps.LatLng(50.83521,-0.1728487);
+        londonRoadStation = new google.maps.LatLng(50.8366562,-0.1385841);
+        prestonParkStation = new google.maps.LatLng(50.8458755,-0.1572922);
+
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -38,13 +43,14 @@
 
             var myMarker = 0;
 
-            var newMarker = {
-                url: 'images/marker.png',
-                size: new google.maps.Size(12, 12),
-                origin: new google.maps.Point(0, 0),
-                anchor: new google.maps.Point(6, 6),
-                scaledSize: new google.maps.Size(12, 12)
-            }
+            // var newMarker = {
+            //     url: 'images/marker.png',
+            //     size: new google.maps.Size(12, 12),
+            //     origin: new google.maps.Point(0, 0),
+            //     anchor: new google.maps.Point(6, 6),
+            //     scaledSize: new google.maps.Size(12, 12)
+            //     var image = new google.maps.MarkerImage('<?php echo get_template_directory_uri(); ?>/images/marker.png',
+            // }
 
             if(!myMarker){
                 var image = new google.maps.MarkerImage('images/marker.png',
@@ -63,6 +69,57 @@
                     title: 'Our Office',
                     visible: true
                 });
+
+                stationOne = new google.maps.Marker({
+                    flat: true,
+                    icon: image,
+                    map: map,
+                    optimized: false,
+                    position: brightonStation,
+                    title: 'Brighton Station',
+                    visible: true
+                });
+
+                stationTwo = new google.maps.Marker({
+                    flat: true,
+                    icon: image,
+                    map: map,
+                    optimized: false,
+                    position: londonRoadStation,
+                    title: 'London Road Station',
+                    visible: true
+                });
+
+                stationThree = new google.maps.Marker({
+                    flat: true,
+                    icon: image,
+                    map: map,
+                    optimized: false,
+                    position: prestonParkStation,
+                    title: 'Preston Park Station',
+                    visible: true
+                });
+
+                stationFour = new google.maps.Marker({
+                    flat: true,
+                    icon: image,
+                    map: map,
+                    optimized: false,
+                    position: hoveStation,
+                    title: 'Hove Station',
+                    visible: true
+                });
+
+                var markers = [stationOne, stationTwo, stationThree, stationFour];
+
+                for( i = 0; i < markers.length; i++ ) {
+                    var position = markers[i].position;
+                    bounds.extend(position);
+                    marker = new google.maps.Marker({
+                        position: position,
+                        map: map,
+                        title: markers[i].title;
+                    });
             }
 
             // var iconBase = {
