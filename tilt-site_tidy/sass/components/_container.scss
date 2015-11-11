@@ -13,14 +13,14 @@
     #contact & {
         margin-bottom: 0px;
     }
-    
+
     &.wrapper--old-browser { margin-bottom:0; }
-	
+
 	@media handheld, screen and (min-width: $bp-desktop){
  		margin-bottom: 687px;
  	}
- 	
-	
+
+
 }
 
 .wrapper--dark{
@@ -57,24 +57,24 @@
     &.container--double-side-pad{
         padding: percentage(245/2032) percentage(375/2032);
     }
-    
+
     &.container--mobile-careers {
 	    padding: 12% 12%;
 	    background-color: $c-grey-25;
 	    @media handheld, screen and (min-width: $bp-desktop){
-	    	
+
 	    	padding:0;
-	    
+
 	    }
-	    
-	    
-	    
+
+
+
     }
 
     &.container--work-pad{
         padding: percentage(60/2032) percentage(375/2032) percentage(100/2032) percentage(385/2032);
     }
-    
+
     &.container--icap-pad {  }
 
     &.image-container{
@@ -152,7 +152,7 @@
 }
 
 .container--half-bot{
-    padding-bottom: percentage(120/2032);    
+    padding-bottom: percentage(120/2032);
 }
 
 
@@ -255,15 +255,19 @@ section{
 
     .group--jobs {
 	    width:100%;
-	    
-	   
-	    
+
+        // a{
+        //     @extend %clearfix;
+        // }
+
+
+
 	    @media handheld, screen and (min-width: $bp-desktop-large){
 	    	width: 50%;
 	    }
-	    
-	    
-	    
+
+
+
     }
 
     &.careers .group--left {

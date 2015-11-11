@@ -848,7 +848,7 @@ img#vjs-logobrand-image {
 
 .vjs-waiting .vjs-loading-spinner{
     animation: none;
-    -webkit-animation: none; 
+    -webkit-animation: none;
     -moz-animation: none;
     -o-animation: none;
     position: absolute;
@@ -872,7 +872,7 @@ img#vjs-logobrand-image {
     transition: opacity 0.5s ease;
 }
 
-#overlay-video{
+#overlay-video, .module--video{
     &:hover{
         .vjs-progress-control{
             opacity: 1;

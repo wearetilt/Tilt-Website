@@ -16,7 +16,7 @@ get_header(); ?>
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container">
 			<p class="first-para sans-serif"><strong class="highlight">A strong creative fusion</strong> binds the eclectic skills and charisma of our team.
-			We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>	
+			We bring together a collaboration of creative individuals whose passion for what they do has a dynamic spark and friction which ignites minds, generating the best ideas and unique creative, time after time.</p>
 		</div>
 	</div> <!-- /end container -->
 </div>
@@ -25,10 +25,10 @@ get_header(); ?>
 	<div class="container container--half-both area-dark">
 		<h1>Job board</h1>
 	</div>
-	
 
-	
-	
+
+
+
 	<div class="group-container">
 		<div class="group group--left group--jobs">
 			<a href="../interactive-designer" target="_blank">

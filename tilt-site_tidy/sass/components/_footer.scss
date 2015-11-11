@@ -10,7 +10,7 @@ footer{
     background-size: cover;
     background-position: center right;
 
-	
+
 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
 		background-position: center center;
 		background-size:auto;
@@ -22,10 +22,6 @@ footer{
         max-height: none;
     }
 
-    @media handheld, screen and (min-width: $bp-desktop){
-
-    }
-    
     .container{
         padding: 0 percentage(381/2032);
         height:460px;
@@ -41,12 +37,12 @@ footer{
             height: 18px;
             width: 18px;
             background-color: $c-tilt-pink;
-            
+
             @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
 				height: 15px;
 				width: 15px;
 			}
-            
+
         }
     }
 
@@ -58,21 +54,21 @@ footer{
         clear:none;
         font-family:$f-merriweather;
         font-weight:300;
-        
+
         @media handheld, screen and (min-width: $bp-desktop){
             float: right;
             clear: none;
             margin-top:0px;
             font-size:1.5em;
         }
-        
+
         @media handheld, screen and (min-width:0px) and (max-width:767px ) {
         	 float:left;
         	 clear:both;
         	 margin-top:25px;
         	 margin-bottom:25px;
         }
-        
+
         a { color: $c-tilt-pink; }
 
     }
@@ -86,13 +82,13 @@ footer{
 
     p.sans-serif{
         @include font-size(25);
-        
+
         @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
-			@include font-size(20);	
+			@include font-size(20);
 		}
-        
+
     }
-    
+
     p.button {
 	    @include font-size(18);
 
@@ -102,7 +98,7 @@ footer{
 
         }
     }
-    
+
 }
 
 #signoff {
@@ -131,25 +127,25 @@ footer{
     float: left;
     text-align: center;
     line-height: 1.8;
-	
+
 	@media handheld, screen and (min-width: $bp-desktop){
 	 	padding:12px 0px 10px 0px;
 	}
-	
+
     &:hover{
         background-color: $c-tilt-pink2;
     }
-    
+
 }
 
 
-.nav-links span, .nav-links a { 
+.nav-links span, .nav-links a {
 	padding: 14px 0px 10px 0px;
 	background-color: $c-tilt-pink;
 	display: block;
 	float: left;
 	line-height: 1.8;
-	
+
 	&:hover { color:$c-grey-7d; }
 }
 
@@ -222,7 +218,3 @@ footer{
     width:25px;
     background:url('../images/bakery.png') 0px 0px no-repeat;
 }
-
-
-
-
