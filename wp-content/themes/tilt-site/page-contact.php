@@ -19,10 +19,10 @@ get_header('contact'); ?>
 
 	officeLocation = new google.maps.LatLng(50.8319498, -0.1392226);
 
-	brightonStation = new google.maps.LatLng(50.829,-0.1434387);
-	hoveStation = new google.maps.LatLng(50.83521,-0.1728487);
-	londonRoadStation = new google.maps.LatLng(50.8366562,-0.1385841);
-	prestonParkStation = new google.maps.LatLng(50.8458755,-0.1572922);
+	brightonStation = new google.maps.LatLng(50.829262, -0.141058);
+	hoveStation = new google.maps.LatLng(50.835210, -0.17066);
+	londonRoadStation = new google.maps.LatLng(50.836650, -0.13647);
+	prestonParkStation = new google.maps.LatLng(50.845875, -0.155103);
 
 	function init() {
 		// Basic options for a simple Google Map
@@ -65,6 +65,13 @@ get_header('contact'); ?>
 			new google.maps.Size(14,14)
 			);
 
+			var stationIcon = new google.maps.MarkerImage('<?php echo get_template_directory_uri(); ?>/images/tilt-station.png',
+			new google.maps.Size(13,17), //size
+			new google.maps.Point(1,1), //origin
+			null,
+			new google.maps.Size(13,17)
+			);
+
 			myMarker = new google.maps.Marker({
 				flat: true,
 				icon: image,
@@ -77,7 +84,7 @@ get_header('contact'); ?>
 
 			stationOne = new google.maps.Marker({
 				flat: true,
-				icon: image,
+				icon: stationIcon,
 				map: map,
 				optimized: false,
 				position: brightonStation,
@@ -87,7 +94,7 @@ get_header('contact'); ?>
 
 			stationTwo = new google.maps.Marker({
 				flat: true,
-				icon: image,
+				icon: stationIcon,
 				map: map,
 				optimized: false,
 				position: londonRoadStation,
@@ -97,7 +104,7 @@ get_header('contact'); ?>
 
 			stationThree = new google.maps.Marker({
 				flat: true,
-				icon: image,
+				icon: stationIcon,
 				map: map,
 				optimized: false,
 				position: prestonParkStation,
@@ -107,7 +114,7 @@ get_header('contact'); ?>
 
 			stationFour = new google.maps.Marker({
 				flat: true,
-				icon: image,
+				icon: stationIcon,
 				map: map,
 				optimized: false,
 				position: hoveStation,

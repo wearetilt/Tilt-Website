@@ -22,6 +22,9 @@ get_header('work-item'); ?>
 </div>
 <header id="page_barclays_integrity" class="work-item area-dark">
     <div class="module--video module--header">
+        <div id="header-play" class="header-play ">
+
+        </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_integrity/integrity_poster.jpg" width="100%" height="100%" >
             	<source id="header-video" src="https://player.vimeo.com/external/141174440.hd.mp4?s=4f32dd0a8cda06b1dfa13e74d2fc5abf&profile_id=113" type="video/mp4">

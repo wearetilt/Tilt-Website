@@ -1114,11 +1114,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					switch (headerID) {
 						//work-page
 						case "page_barclays_integrity":
-							myPlayer.src("https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/141174440.hd.mp4?s=4f32dd0a8cda06b1dfa13e74d2fc5abf&profile_id=113");
+							//myPlayer.src("https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113");
 						break;
 
 						case "page_barclays_values":
-							myPlayer.src("https://player.vimeo.com/external/88791766.hd.mp4?s=01c82c0c307c791f78f402a0b264fbf0&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=113");
+							// myPlayer.src("https://player.vimeo.com/external/88791766.hd.mp4?s=01c82c0c307c791f78f402a0b264fbf0&profile_id=113");
 						break;
 
 						case "bp-fll":
@@ -1126,15 +1128,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						break;
 
 						case "page_bp_fll_stories":
-							myPlayer.src("https://player.vimeo.com/external/141101947.hd.mp4?s=cd503eb677f03e6164bee57bccb92c1c&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/139330951.hd.mp4?s=3d1c83178ba678c46e7f01baebb21bff&profile_id=113");
+							//myPlayer.src("https://player.vimeo.com/external/141101947.hd.mp4?s=cd503eb677f03e6164bee57bccb92c1c&profile_id=113");
 						break;
 
 						case "page_discover_bp":
-							myPlayer.src("https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/141529090.hd.mp4?s=9319fb63f3d31c680a7ccc8dea210503&profile_id=113");
+							// myPlayer.src("https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113");
 						break;
 
 						case "page_gfk":
-							myPlayer.src("https://player.vimeo.com/external/109216250.hd.mp4?s=4554075b1bbddc5346e47acad348d420&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113");
+							//myPlayer.src("https://player.vimeo.com/external/109216250.hd.mp4?s=4554075b1bbddc5346e47acad348d420&profile_id=113");
 						break;
 
 						case "page_legacy":
@@ -1151,7 +1156,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						break;
 
 						case "page_take_the_lead":
-							myPlayer.src("https://player.vimeo.com/external/94658351.hd.mp4?s=4dd1fa0e776ac4e2ada6b0fbbb81363e&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/139331070.hd.mp4?s=b2d4b3506fa6f57cee7b8cf917f32298&profile_id=113");
+							// myPlayer.src("https://player.vimeo.com/external/94658351.hd.mp4?s=4dd1fa0e776ac4e2ada6b0fbbb81363e&profile_id=113");
 						break;
 
 						case "work_page":
