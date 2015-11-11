@@ -31,11 +31,14 @@ h1, h2, h3, h4, h5, h6{
 
 h1 {
 	color:$c-bg;
-    @include font-size(25);
+    @include font-size(35);
     
     @media handheld, screen and (min-width: $bp-desktop){
         @include font-size(50);
     }
+    
+    
+    
     
     &.underlined, & span.underlined{
         &:after{
@@ -83,14 +86,14 @@ h1 {
 
 h2{
 	color:$c-bg;
-    @include font-size(20);
+    @include font-size(32);
    
     @media handheld, screen and (min-width: $bp-desktop){
            @include font-size(32);
            &#staff-member__position, &#staff-member__department { @include font-size(38); }
     }
     
-    @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
+    @media handheld, screen and (min-width:0px) and (max-width: $bp-desktop ) {
     	margin:0px 0px 15px 0px;
     	@include font-size(25);
     	line-height:1.2;
