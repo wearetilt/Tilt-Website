@@ -1247,13 +1247,14 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
 		var controlsHolder = this.parentNode;
 		var imagesHolder = controlsHolder.previousElementSibling;
 		var carouselImages = imagesHolder.children;
+		var theseControls = controlsHolder.children;
         var imageToShow = this.getAttribute('ID').slice(-1);
 
         //Target the image with the matching ID and expand it while hiding all the others
         for(var iterator2 = 0; iterator2 < carouselImages.length; iterator2++){
             carouselImage = carouselImages[iterator2];
             carouselImage.style.height = 0;
-            carouselControls[iterator2].classList.remove("selected");
+			theseControls[iterator2].classList.remove("selected");
         }
         document.getElementById('carousel-image-' + imageToShow).style.height = '100%';
         this.classList.add('selected');
