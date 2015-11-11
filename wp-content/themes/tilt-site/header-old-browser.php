@@ -15,7 +15,9 @@
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+	<script>
+		window.location = "http://www.google.com/";
+	</script>
 	<![endif]-->
 	<script type="text/javascript">
 		window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
@@ -33,7 +35,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/tilt-logo_sm.png" alt="">
 			</a>
         </div>
-       
+
         <a id="closeButton" class="header-item header-item--menu">Close</a>
     </nav>
 	<div class="wrapper wrapper--old-browser"> <!-- Open Wrapper -->

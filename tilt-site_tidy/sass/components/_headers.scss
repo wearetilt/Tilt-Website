@@ -187,17 +187,17 @@ header{
             padding: percentage(80/2032);
 
             &.container--work-list{
-                
+
                 @media handheld, screen and (min-width: $bp-desktop){
                     height: 68px;
                 }
-                    
-				@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) { 
+
+				@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
 					position:fixed;
-					z-index:999; 
+					z-index:999;
 					bottom:0;
 				}
-				
+
                 margin: 0px auto;
                 text-align: center;
                 width: 100%;
@@ -205,16 +205,16 @@ header{
                 padding: 0;
                 opacity: 1 !important;
                 transition:none;
-            
+
             }
-            
+
 			&.sticky {
 				position:fixed;
 				z-index:999;
-				
+
 				@media handheld, screen and (min-width: $bp-desktop){ top:0; }
 				@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) { bottom:0; }
-				
+
 			}
 
 			}
@@ -386,7 +386,7 @@ header{
 }
 
 #header-overlay{
-    margin-top: -12%;
+    margin-top: -14vh;
     background: -moz-linear-gradient(top,  rgba(31,31,31,0.8) 0%, rgba(31,31,31,1) 32%, rgba(31,31,31,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,31,31,0.8)), color-stop(32%,rgba(31,31,31,1)), color-stop(100%,rgba(31,31,31,1))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  rgba(31,31,31,0.8) 0%,rgba(31,31,31,1) 32%,rgba(31,31,31,1) 100%); /* Chrome10+,Safari5.1+ */

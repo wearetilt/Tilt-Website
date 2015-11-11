@@ -51,18 +51,18 @@ get_header('contact'); ?>
 
 		var newMarker = {
 			url: 'images/marker.png',
-			size: new google.maps.Size(12, 12),
+			size: new google.maps.Size(39, 39),
 			origin: new google.maps.Point(0, 0),
-			anchor: new google.maps.Point(6, 6),
-			scaledSize: new google.maps.Size(12, 12)
+			anchor: new google.maps.Point(19, 19),
+			scaledSize: new google.maps.Size(39, 39)
 		}
 
 		if(!myMarker){
 			var image = new google.maps.MarkerImage('<?php echo get_template_directory_uri(); ?>/images/marker.png',
-			new google.maps.Size(14,14), //size
+			new google.maps.Size(25,25), //size
 			new google.maps.Point(1,1), //origin
 			null,
-			new google.maps.Size(14,14)
+			new google.maps.Size(25,25)
 			);
 
 			var stationIcon = new google.maps.MarkerImage('<?php echo get_template_directory_uri(); ?>/images/tilt-station.png',

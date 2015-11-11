@@ -15,7 +15,9 @@
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+	<script>
+		window.location = "http://www.google.com/";
+	</script>
 	<![endif]-->
 	<script type="text/javascript">
 		window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
@@ -35,7 +37,7 @@
         </div>
         <a id="menuButton" class="header-item header-item--menu">Menu</a>
         <a id="closeButton" class="header-item header-item--menu">Close</a>
-        
+
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
@@ -45,7 +47,7 @@
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/careers">Careers</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
             </ul>
-            
+
             <div class="nav-icons">
 				<div id="nav-icon-1" class="nav-icon"><a href="https://www.facebook.com/wearetilt" target="_blank" ></a></div>
 				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" target="_blank" ></a></div>
@@ -56,8 +58,8 @@
 				<div class="telephone">
 					<span>Tel: + 44(0)1273 675 700</span>
 				</div>
-			</div> <!-- /end nav-icons --> 
-            
+			</div> <!-- /end nav-icons -->
+
         </div> <!-- /end menu -->
     </nav>
 	<div class="wrapper"> <!-- Open Wrapper -->
