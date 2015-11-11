@@ -73,8 +73,6 @@ header{
 
     }
 
-
-
     .header-text{
         transform: translate3d(0,0,0);
         transition: all 0.5s ease 1.9s;
@@ -99,7 +97,7 @@ header{
     }
 
     &.work-item{
-
+		
         .container--header{
             padding-bottom:6%;
             position: absolute;
@@ -145,16 +143,15 @@ header{
         }
 
         .header-title{
-            width: 100%;
+            width:50%;
             float: left;
+            
+             @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
+             	width:100%;
+             } 
+            
         }
 
-        @media handheld, screen and (min-width: $bp-desktop-large){
-            .header-title{
-                width: 50%;
-                float: left;
-            }
-        }
     }
 
     .header-play{
@@ -178,7 +175,16 @@ header{
 
 
     &.work-item--motion{
-
+		
+		 @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+				
+		 }
+			
+		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop ) {
+			min-height:75vh;
+			height:75%;
+		 }
+		
         .container--header{
             background-color:$c-grey-1b;
             position: absolute;
@@ -439,6 +445,13 @@ header{
 #work_page{
     height:84vh;
     min-height:84%;
+    
+    @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
+		height:50vh;
+		min-height:50%;	
+	}
+
+    
 }
 
 
