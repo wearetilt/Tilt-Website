@@ -1190,6 +1190,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
 
+var getClosest = function (elem, selector) {
+    var firstChar = selector.charAt(0);
+    // Get closest match
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        // If selector is a class
+        if ( firstChar === '.' ) {
+            if ( elem.classList.contains( selector.substr(1) ) ) {
+                return elem;
+            }
+        }
+        // If selector is an ID
+        if ( firstChar === '#' ) {
+            if ( elem.id === selector.substr(1) ) {
+                return elem;
+            }
+        }
+        // If selector is a data attribute
+        if ( firstChar === '[' ) {
+            if ( elem.hasAttribute( selector.substr(1, selector.length - 2) ) ) {
+                return elem;
+            }
+        }
+        // If selector is a tag
+        if ( elem.tagName.toLowerCase() === selector ) {
+            return elem;
+        }
+    }
+
+    return false;
+};
+
 var allModules = document.getElementsByClassName('module');
 
 for (var i = 0; i < allModules.length; i++){
@@ -1206,7 +1237,6 @@ for (var i = 0; i < allModules.length; i++){
 // Get all the carousel controls on the page and all the images on the page
 //TODO: Add a way where the controls are created based on the number of images
 //This might break centering
-var carouselImages = document.getElementsByClassName('carousel-image');
 var carouselControls = document.getElementsByClassName('carousel-control');
 
 // Loop through all the controls and add a click handler to all of them.
@@ -1214,6 +1244,9 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
     var carouselControl = carouselControls[iterator];
     carouselControl.onclick = function (){
         //grab the ID from the carousel control
+		var controlsHolder = this.parentNode;
+		var imagesHolder = controlsHolder.previousElementSibling;
+		var carouselImages = imagesHolder.children;
         var imageToShow = this.getAttribute('ID').slice(-1);
 
         //Target the image with the matching ID and expand it while hiding all the others
@@ -1229,8 +1262,6 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
 
 if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
-
-	console.log(myPlayer);
 
 		if(document.getElementById('header-play')){
 			myPlayer.ready(function(){
@@ -1329,12 +1360,8 @@ if(document.getElementById('header-video-player')){
 				if(document.getElementById('header-play')){
 					var videoPlayButton = document.getElementById('header-play');
 					videoPlayButton.addEventListener('click', function(){
-						// alert('Clicked');
-						console.log('Hellooooooo')
 						videoOverlay.play();
 						videoOverlay.requestFullscreen();
-						console.log(videoOverlay);
-
 					});
 				}
 
@@ -1761,7 +1788,6 @@ jQuery(document).ready(function(){
 
             resetClass();
 
-
             if(window.location.hash == '#motion') {
 
 	            document.getElementById('motion').style.opacity = 1;
@@ -1788,8 +1814,6 @@ jQuery(document).ready(function(){
 
             }
 
-
-
             [].map.call(document.querySelectorAll('.module'), function(el2){
                 el2.classList.remove('module--visible');
                 console.log(el2);
@@ -1801,12 +1825,7 @@ jQuery(document).ready(function(){
                 }, 500);
             });
 
-
-
-
 		}
-
-
 
 	}
 
