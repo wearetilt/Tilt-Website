@@ -122,10 +122,14 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no
             &:hover{
                 &:after{
                     width: 15%;
-                    @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
-						width: 12%;
-						
+                    @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+						width: 22%;	
 					}
+					
+					@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop ) {
+						width: 12%;	
+					}
+					
                 }
             }
         }
@@ -153,23 +157,32 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no
 }
 
 .work-item-title{
-    display: block;
+    display: inline-block;
     cursor: pointer;
     text-transform: uppercase;
     padding-top: 26px;
     font-family:$f-seroot-thn;
     letter-spacing:1px;
+    margin-right:50px;
 
     @media handheld, screen and (min-width: $bp-desktop){
-            width: 150px;
-            display: inline-block;
+    	width: 150px;
+        display: inline-block;
     }
 
     @include font-size(19);
-
-    &:hover{
-        color: $c-tilt-pink2;
+    @media handheld, screen and (min-width:0px) and (max-width: $bp-phone) { 
+    	margin-right:10px;
+    	@include font-size(14); 
     }
+    
+    
+	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+		margin-right:30px;
+		@include font-size(20); 
+	}
+	
+    &:hover{ color: $c-tilt-pink2; }
 
     &:after {
 	    content:" ";
@@ -184,49 +197,85 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no
 
 }
 
-span#work_all { width:60px; }
-span#work_film { width:125px; }
-span#work_interactive { width:160px; }
-span#work_motion { width:140px; }
-span#work_web { width:90px; }
-
-
-#services--list span.work-item--selected { color: $c-tilt-pink2; }
-
-
-span#work_all {
-
-	&:after { margin-left:11px; }
-
-	&.work-item--selected {
+span#work_all { 
+	width:40px;
+	
+	 
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		width:30px; 
+		margin-left:0;	
+	}
+	
+	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:38px; }
+    
+    &.work-item--selected {
 
 		 &:after {
 		    transition: all 0.5s ease;
-		 	width:35px;
+		 	width:38px;
+		 	
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+			 	width:25px;
+			 	margin-left:2px;
+			}
+			
+			@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { 
+				width:35px; 
+				margin-left:0px;	
+			}
+			
 		 }
 
 		 &:hover {
 
 			&:after {
 			 	transition: all 0.5s ease;
-			 	width:35px;
+			 	width:38px;
+			 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+			 		width:25px;
+			 		margin-left:2px;
+			 	}
+			 	
+			 	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { 
+					width:35px; 
+					margin-left:0px;	
+				}
+			 	
 			}
 
 		}
 
 	}
-
+    
 }
 
-span#work_film {
-
-	&:after { margin-left:40px; }
-
+span#work_film { 
+	width:50px;
+	
+	 
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		width:37px; 
+		margin-left:0;	
+	}
+	
+	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:48px; }
+	
 	&.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:44px;
+		 	width:50px;
+		 	
+		 	@media handheld, screen and (min-width:0px) and (max-width: $bp-phone ) {
+			 	width:33px;
+			 	margin-left:1px;
+			}
+			
+			@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:47px; 
+				margin-left:0px;	
+			}
+			
 		 }
 
 	}
@@ -235,22 +284,51 @@ span#work_film {
 
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:44px;
+		 	width:50px;
+		 	@media handheld, screen and (min-width:0px) and (max-width: $bp-phone ) {
+			 	width:33px;
+			 	margin-left:1px;
+			}
+			
+			@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:47px; 
+				margin-left:0px;	
+			}
+			
 		}
 
 	}
-
+	
 }
 
-span#work_interactive {
-
-	&:after { margin-left:18px; }
-
+span#work_interactive { 
+	width:130px;
+	
+	
+	 
+	@media handheld, screen and (min-width:0px) and (max-width: $bp-phone) { 
+		width:97px; 
+		margin-left:0;	
+	}
+	
+	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:130px; }
+	
 	&.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:123px;
+		 	width:130px;
+		 	
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {  
+			 	width:94px;
+			 	margin-left:1px;
+		 	}
+		 	
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:131px; 
+				margin-left:0px;	
+			}
+		 	
 		 }
 
 	}
@@ -259,22 +337,51 @@ span#work_interactive {
 
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:123px;
+		 	width:130px;
+		 	
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		 		width:94px;
+			 	margin-left:1px;
+		 	}
+		 	
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:131px; 
+				margin-left:0px;	
+			}
+		 	
 		}
 
 	}
-
+	
 }
 
-span#work_motion {
-
-	&:after { margin-left:31px; }
-
+span#work_motion { 
+	width:83px;
+	
+	 
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		width:62px; 
+		margin-left:0;	
+	}
+	
+	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:83px; }
+	
 	&.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:76px;
+		 	width:81px;
+		 	
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		 		width:60px;
+			 	margin-left:1px;
+		 	}
+		 	
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:80px; 
+				margin-left:0px;	
+			}
+		 	
 		 }
 
 	}
@@ -283,22 +390,53 @@ span#work_motion {
 
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:76px;
+		 	width:81px;
+		 	
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		 		width:60px;
+			 	margin-left:1px;
+		 	}
+		 	
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:80px; 
+				margin-left:0px;	
+			}
+		 	
 		}
 
 	}
 
+	
 }
 
-span#work_web {
-
-	&:after { margin-left:24px; }
-
-	&.work-item--selected {
+span#work_web { 
+	width:47px; 
+	
+	
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+        width:35px;
+        margin-right:0;
+        margin-left:0;	
+    }
+    
+    @media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:47px; }
+    
+    &.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
-		 	width:41px;
+		 	width:45px;
+		 	
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		 		width:33px;
+			 	margin-left:1px;
+		 	}
+		 	
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:46px; 
+				margin-left:0px;	
+			}
+		 	
 		 }
 
 	}
@@ -307,9 +445,23 @@ span#work_web {
 
 		&:after {
 		 	transition: all 0.5s ease;
-		 	width:41px;
+		 	width:45px;
+		 	
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+		 		width:33px;
+			 	margin-left:1px;
+		 	}
+		 	
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+				width:46px; 
+				margin-left:0px;	
+			}
+		 	
 		}
 
 	}
-
+    
 }
+
+#services--list span.work-item--selected { color: $c-tilt-pink2; }
+
