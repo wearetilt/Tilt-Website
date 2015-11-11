@@ -153,6 +153,7 @@
     p.tag{
         color: $c-tilt-pink;
     }
+    
     p.tag--no-square {
     	@include font-size(8);
     	font-family:$f-merriweather;

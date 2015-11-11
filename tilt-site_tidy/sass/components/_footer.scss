@@ -10,6 +10,13 @@ footer{
     background-size: cover;
     background-position: center right;
 
+	
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
+		background-position: center center;
+		background-size:auto;
+	}
+
+
     #contact & {
         position: relative;
         max-height: none;
@@ -21,7 +28,7 @@ footer{
     
     .container{
         padding: 0 percentage(381/2032);
-        height: 480px;
+        height:460px;
         background-color: transparent;
 
         @media handheld, screen and (min-width: $bp-desktop){
@@ -34,6 +41,12 @@ footer{
             height: 18px;
             width: 18px;
             background-color: $c-tilt-pink;
+            
+            @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
+				height: 15px;
+				width: 15px;
+			}
+            
         }
     }
 
@@ -53,7 +66,7 @@ footer{
             font-size:1.5em;
         }
         
-        @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+        @media handheld, screen and (min-width:0px) and (max-width:767px ) {
         	 float:left;
         	 clear:both;
         	 margin-top:25px;
@@ -72,13 +85,12 @@ footer{
     }
 
     p.sans-serif{
-        @include font-size(16);
-
-        @media handheld, screen and (min-width: $bp-desktop){
-
-            @include font-size(25);
-
-        }
+        @include font-size(25);
+        
+        @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+			@include font-size(20);	
+		}
+        
     }
     
     p.button {

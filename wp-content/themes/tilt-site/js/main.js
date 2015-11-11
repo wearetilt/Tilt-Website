@@ -2035,4 +2035,32 @@ Modernizr.on('touchevents', function(result){
 
 var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));
 var footer = document.getElementById('footer');
-    footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')";
+var width = $(window).width(), height = $(window).height();
+
+console.log(width);
+
+
+if(width <= 400) {
+	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_square/footer_" + footerImageToDisplay +".jpg')";
+} else if(width <= 800) {
+	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_1024/footer_" + footerImageToDisplay +".jpg')";
+
+} else {
+	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')";
+}
+
+
+/*
+if (width <= 1024) {
+	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_1024/footer_" + footerImageToDisplay +".jpg')";
+} else if(width <= 800) {
+	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_768/footer_" + footerImageToDisplay +".jpg')";
+} else {
+	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')";
+}
+*/
+
+
+
+
+
