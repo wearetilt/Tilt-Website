@@ -12,17 +12,17 @@
 	@media handheld, screen and (min-width: $bp-desktop-large){
 		@include font-size(16);
 	}
-	
+
 	@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
 		@include font-size(20);
 	}
-	
+
 	a { text-transform:none; }
 
 }
 
 p.rtw_main {
-	font-family:$f-seroot-lt;	
+	font-family:$f-seroot-lt;
 }
 
 .rotatingtweet a {
@@ -39,6 +39,9 @@ p.rtw_main {
 	letter-spacing:1px;
 }
 
+div.rtw_rt_meta{
+	display: none;
+}
 
 .news-container #social a.synved-social-provider-facebook, .news-container #social a.synved-social-provider-mail { margin-right:15px !important; }
 

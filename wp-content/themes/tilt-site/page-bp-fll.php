@@ -138,7 +138,7 @@
     </section>
 </div>
 
-<div class="container container--no-padding">
+<div id="video-group" class="container container--no-padding">
     <section>
         <div class="group-container">
             <div class="group group--left">

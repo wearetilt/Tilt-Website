@@ -848,6 +848,9 @@ img#vjs-logobrand-image {
 
 .vjs-waiting .vjs-loading-spinner{
     animation: none;
+    -webkit-animation: none; 
+    -moz-animation: none;
+    -o-animation: none;
     position: absolute;
     width: auto;
     height: auto;

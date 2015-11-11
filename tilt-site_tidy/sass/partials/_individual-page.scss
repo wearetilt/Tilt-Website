@@ -20,7 +20,7 @@
     background: linear-gradient(to bottom,  #f08cb6 0%,#dc7aa3 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f08cb6', endColorstr='#dc7aa3',GradientType=0 ); /* IE6-9 */
 
-	& .header-title img { 
+	& .header-title img {
 		display:none;
 		@media handheld, screen and (min-width: $bp-desktop){
 			display:block;
@@ -39,19 +39,19 @@
     background: -ms-linear-gradient(top,  #b477aa 0%,#a9639d 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #b477aa 0%,#a9639d 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b477aa', endColorstr='#a9639d',GradientType=0 ); /* IE6-9 */
-    
-    & .header-title img { 
+
+    & .header-title img {
 		display:none;
 		@media handheld, screen and (min-width: $bp-desktop){
 			display:block;
 		}
 	}
-	
-	& .header-title img.no--float { 
+
+	& .header-title img.no--float {
     	float:none;
     }
-    
-    
+
+
 }
 
 #codeit {
@@ -61,8 +61,8 @@
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
 	 background-size: cover;
-	 
-	& img.award--right { 
+
+	& img.award--right {
 		display:none;
 		@media handheld, screen and (min-width: $bp-desktop){
 			display:block;
@@ -70,7 +70,7 @@
 			bottom:8%;
 			right:7%;
 		}
-	
+
 	}
 
 }
@@ -153,51 +153,51 @@
     p.tag{
         color: $c-tilt-pink;
     }
-    
+
     p.tag--no-square {
     	@include font-size(8);
     	font-family:$f-merriweather;
 	    color: $c-tilt-pink;
 	    text-transform:uppercase;
 	    line-height:0.8;
-	    
+
 	    @media handheld, screen and (min-width: $bp-phone){
 	 		@include font-size(13);
 	 	}
 
-	    
+
     }
-    
+
 }
 
 #staff-member__about {
 	margin:20px 0px 30px 0px;
 }
 
-#careers .container--double-side-pad {  
+#careers .container--double-side-pad {
 	background:url('../images/careers/careers_bg.jpg');
 }
 
-.about-service { 
+.about-service {
 	text-align:center;
 	color:$c-bg;
-	
+
 	p#web-sprite, p#interactive-sprite, p#motion-sprite, p#film-sprite { transition: all ease 0.5s; }
-	
-	
+
+
 	&:hover {
 		background-color:$c-tilt-pink;
 		color:$c-white;
-	
-		h3 {  
-			color:$c-white; 
+
+		h3 {
+			color:$c-white;
 		}
-		
+
 		p#web-sprite { background:url('../images/about/icon_webmobile_hover.png') center top no-repeat; }
 		p#interactive-sprite { background:url('../images/about/icon_interactive_hover.png') center top no-repeat; }
 		p#motion-sprite { background:url('../images/about/icon_motion_hover.png') center top no-repeat; }
 		p#film-sprite { background:url('../images/about/icon_film_hover.png') center top no-repeat; }
-	
+
 	}
 
 }
@@ -244,3 +244,6 @@
 
 .browser-fallback { background:url('../images/footer_browser_fallback.jpg') 0px 0px; }
 
+#video-group #vjs_video_3_html5_api{
+    width: 100%;
+}
