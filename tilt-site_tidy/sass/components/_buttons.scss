@@ -63,13 +63,19 @@ a{
 
 	    border-right:2px solid #1b1b1b;
 
-	    &:before{
-        	content:url('../images/pagination_arrow.png');
-            display: inline-block;
-            margin-right:40px;
-        
-			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
-				margin-right:10px;
+	    & span {
+        	font-size:33px;
+            margin-right:25px;
+            line-height:0;
+            
+			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+				margin-right:5px; 
+				font-size:20px;
+			}
+			
+			@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+				margin-right:5px;
+				font-size:23px;
 			}
 			
         }
@@ -80,15 +86,20 @@ a{
 
 	  border-left:2px solid #1b1b1b;
 
-	  &:after{
-        	content:url('../images/pagination_arrow_after.png');
-            display: inline-block;
-            margin-left:40px;
-			
-			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
-				 margin-left:10px;
+	  & span {
+        	font-size:33px;
+            margin-left:25px;
+            line-height:0;
+			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+				margin-left:10px; 
+				font-size:20px
 			}
-        
+			
+			@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+				margin-left:10px;
+				font-size:23px;
+			}
+			
         }
         
 
@@ -99,13 +110,28 @@ a{
     }
 }
 
+
+.nav-links span.paginate_arrows {
+	float:none;
+	display:inline;
+}
+
 .nav-links a.next {
 
-	&:after{
-    	content:url('../images/pagination_arrow_after-v3.png');
-        display: inline-block;
-        margin-left:40px;
-        width: 9px;
+	& span {
+    	font-size:33px;
+        margin-left:25px;
+        line-height:0;
+		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+			margin-left:10px; 
+			font-size:20px
+		}
+		
+		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+			margin-left:10px;
+			font-size:23px;
+		}
+		
     }
 
 }
@@ -114,22 +140,26 @@ a{
 
 	font-family:$f-seroot-thn;
 
-	&:after{
-    	content:url('../images/pagination_arrow_after-hover-v3.png');
-        display: inline-block;
-        margin-left:40px;
-
-    }
-
+	
 }
 
 .nav-links a.prev {
 
-	&:before{
-    	content:url('../images/pagination_arrow_before.png');
-        display: inline-block;
-        margin-right:40px;
-        width: 9px;
+	& span {
+    	font-size:33px;
+        margin-right:25px;
+        line-height:0;
+        
+		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+			margin-right:5px; 
+			font-size:20px;
+		}
+		
+		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+			margin-right:5px;
+			font-size:23px;
+		}
+		
     }
 
 }
@@ -138,12 +168,7 @@ a{
 
 	font-family:$f-seroot-thn;
 
-	&:before{
-    	content:url('../images/pagination_arrow_before_hover.png');
-        display: inline-block;
-        margin-right:40px;
-
-    }
+	
 
 }
 

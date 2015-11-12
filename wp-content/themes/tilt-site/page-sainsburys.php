@@ -144,8 +144,8 @@ get_header('work-item'); ?>
     <!-- TODO: Add Video and Images of Cars Thang -->
 
     <div class="group-container">
-        <a class="project-navigation paginate_prev" href="../code-it">Previous Project</a>
-        <a class="project-navigation paginate_next" href="../pbs">Next Project</a>
+        <a class="project-navigation paginate_prev" href="../code-it"><span>&#8249;</span> Previous Project</a>
+        <a class="project-navigation paginate_next" href="../pbs">Next Project <span>&#8250;</span></a>
     </div>
 
 </div>

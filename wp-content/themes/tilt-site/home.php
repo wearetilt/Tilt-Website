@@ -385,8 +385,8 @@ get_header(); ?>
 				</div>
 
 				<?php the_posts_pagination( array(
-					'prev_text'          => __( 'Prev', 'twentyfifteen' ),
-					'next_text'          => __( 'Next', 'twentyfifteen' ),
+					'prev_text'          => __( '&#8249; Prev', 'twentyfifteen' ),
+					'next_text'          => __( 'Next &#8250;', 'twentyfifteen' ),
 					'screen_reader_text' => __( '' )
 				) );
 
@@ -404,8 +404,8 @@ get_header(); ?>
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Prev', 'twentyfifteen' ),
-				'next_text'          => __( 'Next', 'twentyfifteen' ),
+				'prev_text'          => __( '&#8249; Prev', 'twentyfifteen' ),
+				'next_text'          => __( 'Next <span class="paginate_arrows">&#8250;</span>', 'twentyfifteen' ),
 				'screen_reader_text' => __( '' )
 			) );
 
