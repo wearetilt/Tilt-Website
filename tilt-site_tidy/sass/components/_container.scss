@@ -58,15 +58,16 @@
         padding: percentage(245/2032) percentage(375/2032);
 		
 		&.contact--page { @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) { padding:25% 10% 12% 10%; } }
+		&.container--mobile-header-spacing { @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) { padding:25% 9% 12% 9%; } }
+		&.container--our-services { @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) { padding:12% 9% 12% 9%; } }
+		
     }
 
     &.container--mobile-careers {
 	    padding: 12% 12%;
 	    background-color: $c-grey-25;
 	    @media handheld, screen and (min-width: $bp-desktop){
-
 	    	padding:0;
-
 	    }
 
 
@@ -318,6 +319,17 @@ section{
 .quote-container{
     padding-left: percentage(383/2032);
     padding-right: percentage(383/2032);
+    
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) {  
+		padding-left:9%;
+		padding-right:9%;	
+	}
+	
+	@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop) {  
+		padding-left:7%;
+		padding-right:7%;	
+	}
+    
 }
 
 .wrapper .quote-container { background-color:$c-grey-25; }

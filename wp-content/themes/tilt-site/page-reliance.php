@@ -75,7 +75,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--text-pad module--dark">
+                <div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para tag--work-title">Instead of the standard corporate staged approach, we wanted to produce an intimate documentary style. Using only top-end DSLRs and sound equipment, this allowed us to film at a rapid pace, and capture authentic scenes from the Reliance campus and around Mumbai. In total we filmed 25 interviewees in less than 10 days, including Chairman Ambani, an iconic figure in India.</p>
@@ -98,7 +98,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--text-pad module--dark">
+                <div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
                     <div class="module__text">
                          <p>Using a team of eight editors, we pieced together profile films for each interviewee, plus a series of ‘headline films’ – high impact collages consisting of interview snippets, motion graphic footage and general views from Mumbai and Reliance. The result is a suite of films that live, breathe and feel truly ‘Reliance’, and that have been met with huge enthusiasm by new joiners at the organisation.</p>
                     </div>

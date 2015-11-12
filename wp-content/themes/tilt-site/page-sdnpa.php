@@ -76,7 +76,7 @@ get_header('work-item'); ?>
     <section>
         <div class="group-container ">
             <div class="group group--left">
-                <div class="module module--2-1 module--text-pad module--dark">
+                <div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
                     <div class="module__text">
                         <h2 class="underlined">What we did</h2>
                         <p class="first-para tag--work-title">We developed a mixed media film that follows the journey into the South Downs from the wide-eyed perspective of a child. In addition to 3D animation elements we used RED Epic cameras to add big-screen production values, a drone-mounted camera to deliver a dramatic aerial shot of the South Downs, and original music to create a wistful mood.</p>

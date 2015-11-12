@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<div class="container container--double-side-pad area-dark">
+<div class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">GREAT IDEAS</strong> COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS. MEET THE TILT TEAM:</p>
 	</div>

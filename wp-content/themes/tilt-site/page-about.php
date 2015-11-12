@@ -100,7 +100,7 @@ get_header(); ?>
 </section>
 
 
-<div class="container container--double-side-pad">
+<div class="container container--double-side-pad container--our-services">
 	
 	<div class="text-container center">
 		<h2 class="about">OUR DEPARTMENTS</h2>

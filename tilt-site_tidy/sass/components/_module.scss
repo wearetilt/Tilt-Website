@@ -23,7 +23,7 @@
     &.module--dark-mobile {  
 	     @media handheld, screen and (min-width:0px) and (max-width:$bp-desktop) { background-color:$c-bg; } 
     }
-    
+        
     &.module--dark-mobile-news {  
 	     @media handheld, screen and (min-width:0px) and (max-width:$bp-desktop) { background-color:$c-grey-25; } 
     }
@@ -34,21 +34,24 @@
         transform:translateY(-50%);
         -webkit-transform: translateY(-50%);
         padding: 0 12%;
-
+		
+		
+		
         p.first-para { margin:20px 0px 0px 0px; }
         
         p {
 	         @media handheld, screen and (min-width:0px) and (max-width:$bp-phone) {
-	         	font-size:16px;
+	         	font-size:14px;
 	         }
 	         
 	         @media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
-	         	font-size:32px;
+	         	font-size:16px;
 	         }
 	         
         }
         
-        
+       
+       
     }
 
     .home--tweet {
@@ -471,6 +474,10 @@
     padding-top: 100%;
     @media handheld, screen and (min-width: $bp-desktop){
         padding-top: 50%;
+    }
+
+	&.module--mobile-double-height {
+	    @media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { padding-top: 125% } 
     }
 
 }

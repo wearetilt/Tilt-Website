@@ -112,6 +112,9 @@ header {
 
     .monitor-wrapper{
         padding-top:6%;
+        
+        @media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { padding-bottom:3%; }
+        
     }
 	
     .monitor-holder{

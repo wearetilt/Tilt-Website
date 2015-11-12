@@ -11,11 +11,11 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('about-item'); ?>
 
 
 
-<div class="container container--double-side-pad area-dark">
+<div class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE:</strong> THINKING BEYOND ONE-WAY TRAFFIC.</p>
 		<p class="sans-serif">We see digital as a tool; it’s there to be used, prodded, poked and played with. Two-way traffic between a user and a brand. Our award-winning interactive work has helped businesses from O2 to Nickelodeon engage their audiences. Whether creating virtual science labs, or inspiring thousands of kids to get coding – we believe in the power of interactive design to bring ideas to life.</p>
@@ -200,10 +200,10 @@ get_header(); ?>
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#interactive">
 				<div class="cube about--cube">
 					<div class="cube--front">
-						<p class="sans-serif button">SEE OUR INTERACTIVE WORK</p>
+						<p class="sans-serif button"><span>SEE</span> OUR INTERACTIVE WORK</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif button">SEE OUR INTERACTIVE WORK</p>
+						<p class="sans-serif button"><span>SEE</span> OUR INTERACTIVE WORK</p>
 					</div>
 				</div>
 			</a>

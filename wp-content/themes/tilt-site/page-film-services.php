@@ -11,11 +11,11 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('about-item'); ?>
 
 
 
-<div class="container container--double-side-pad area-dark">
+<div class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">FILM:</strong> TELLING STORIES ABOUT PEOPLE, PLACES & IDEAS.</p>
 		<p class="sans-serif">Film comes alive in the spaces between the words. And, over the years, we have developed an in-house style that combines clarity of message with a distinctive visual touch. It’s an approach embraced by clients such as Barclays, ICAP and BP. Add to that our music videos, ads, short films and documentaries and you have a small but perfectly formed film department that continually produces stunning new work.</p>
@@ -200,10 +200,10 @@ get_header(); ?>
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#film">
 				<div class="cube about--cube">
 					<div class="cube--front">
-						<p class="sans-serif button">SEE OUR FILM WORK</p>
+						<p class="sans-serif button"><span>SEE</span> OUR FILM WORK</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif button">SEE OUR FILM WORK</p>
+						<p class="sans-serif button"><span>SEE</span> OUR FILM WORK</p>
 					</div>
 				</div>
 			</a>

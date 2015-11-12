@@ -11,11 +11,11 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('about-item'); ?>
 
 
 
-<div class="container container--double-side-pad area-dark">
+<div class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">WEB & MOBILE:</strong> BUILDING BRILLIANT DIGITAL EXPERIENCES.</p>
 		<p class="sans-serif">We build websites that are bold, beautiful and designed to put users first and always. Our strategy, user experience, design and development teams work closely together to create sites that work perfectly across different devices and contexts. From sophisticated onboarding platforms, to highly visual brochure sites, our clients trust us to produce innovative, effective digital products.</p>
@@ -200,10 +200,10 @@ get_header(); ?>
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#web">
 				<div class="cube about--cube">
 					<div class="cube--front">
-						<p class="sans-serif button">SEE OUR WEB WORK</p>
+						<p class="sans-serif button"><span>SEE</span> OUR WEB WORK</p>
 					</div>
 					<div class="cub--top">
-						<p class="sans-serif button">SEE OUR WEB WORK</p>
+						<p class="sans-serif button"><span>SEE</span> OUR WEB WORK</p>
 					</div>
 				</div>
 			</a>
