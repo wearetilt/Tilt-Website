@@ -1265,9 +1265,20 @@ if(document.getElementById('header-video-player')){
     var myPlayer =  videojs('header-video-player');
 
 		if(document.getElementById('header-play')){
-			myPlayer.ready(function(){
-				document.getElementById('header-play').classList.add('video-ready');
-			}, true);
+			myPlayer.on("progress", function() {
+		      if(myPlayer.bufferedPercent()>.3){
+				myPlayer.removeClass('vjs-waiting');
+	  			document.getElementById('header-play').classList.add('video-ready');
+		        myPlayer.play();
+			} else {
+				console.log('Hi');
+				myPlayer.addClass('vjs-waiting');
+			}
+		    }, false);
+
+			// myPlayer.ready(function(){
+			// 	document.getElementById('header-play').classList.add('video-ready');
+			// }, true);
 		}
 
         myPlayer.play();
@@ -1337,20 +1348,25 @@ if(document.getElementById('header-video-player')){
 				// do nothing
 		}
 
-    var videoWaypoint = new Waypoint({
-      element: document.getElementById('header-video-player'),
-      handler: function(direction) {
-        if(direction === 'down'){
-            myPlayer.pause();
-        } else if(direction === 'up'){
-            myPlayer.play();
-        }
+		Modernizr.on('touchevents', function(result){
+			if(result === false){
+				var videoWaypoint = new Waypoint({
+				  element: document.getElementById('header-video-player'),
+				  handler: function(direction) {
+					if(direction === 'down'){
+						myPlayer.pause();
+					} else if(direction === 'up'){
+						myPlayer.play();
+					}
 
-      },
-      offset: function() {
-        return -this.element.clientHeight
-      }
-    });
+				  },
+				  offset: function() {
+					return -this.element.clientHeight
+				  }
+				});
+			}
+		});
+
 
 	if(document.getElementById('overlay-video')){
 	    var videoOverlay = videojs('overlay-video');
@@ -1378,12 +1394,9 @@ if(document.getElementById('header-video-player')){
 	    document.getElementById('video-overlay-close').addEventListener('click', function(){
 	        document.getElementById('video-overlay').style.display = "none";
 	        videoOverlay.pause();
-			console.log(videoOverlay.src());
 			jQuery('.container--header').show();
 
 	        myPlayer.play();
-
-			console.log(myPlayer.src());
 
 
 			document.getElementById('tilt--logo').style.display = 'block';
