@@ -135,8 +135,8 @@ get_header('work-item'); ?>
 </div> <!-- /end container -->
 
 <div class="group-container">
-    <a class="project-navigation paginate_prev" href="../take-the-lead">Previous Project</a>
-    <a class="project-navigation paginate_next" href="../gfk">Next Project</a>
+    <a class="project-navigation paginate_prev" href="../take-the-lead"><span>&#8249;</span> Previous Project</a>
+    <a class="project-navigation paginate_next" href="../gfk">Next Project <span>&#8250;</span></a>
 </div>
 
 </div>

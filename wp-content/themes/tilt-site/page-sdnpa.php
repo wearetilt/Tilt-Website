@@ -160,7 +160,7 @@ get_header('work-item'); ?>
 
 <div class="group-container">
     <a class="project-navigation paginate_prev" href="../bp-fll-stories"><span>&#8249;</span> Previous Project</a>
-    <a class="project-navigation paginate_next" href="../reliance">Next Project &#8250;</a>
+    <a class="project-navigation paginate_next" href="../reliance">Next Project <span>&#8250;</span></a>
 </div>
 
 </div>

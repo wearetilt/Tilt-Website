@@ -149,7 +149,7 @@ get_header('news'); ?>
 			$previous_post = get_previous_post(9);
 			
 			if (!empty( $previous_post )): ?>
-				<a class="project-navigation  paginate_prev" href="<?php echo get_permalink( $previous_post->ID ); ?>">Previous</a>	
+				<a class="project-navigation  paginate_prev" href="<?php echo get_permalink( $previous_post->ID ); ?>"><span>&#8249;</span> Previous</a>	
 		<?php endif; 
 			
 			if (empty( $previous_post )): ?>
@@ -160,7 +160,7 @@ get_header('news'); ?>
 		<?php
 			
 			if (!empty( $next_post )): ?>
-				<a class="project-navigation paginate_next" href="<?php echo get_permalink( $next_post->ID ); ?>">Next</a>	
+				<a class="project-navigation paginate_next" href="<?php echo get_permalink( $next_post->ID ); ?>">Next <span>&#8250;</span></a>	
 		<?php endif; ?>
 		
 		<?php

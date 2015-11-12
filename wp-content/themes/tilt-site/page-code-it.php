@@ -233,8 +233,8 @@ get_header('work-item'); ?>
 </div>
 
 <div class="group-container">
-    <a class="project-navigation paginate_prev" href="../alzheimers">Previous Project</a>
-    <a class="project-navigation paginate_next" href="../sainsburys">Next Project</a>
+    <a class="project-navigation paginate_prev" href="../alzheimers"><span>&#8249;</span> Previous Project</a>
+    <a class="project-navigation paginate_next" href="../sainsburys">Next Project <span>&#8250;</span></a>
 </div>
 
 </div>
