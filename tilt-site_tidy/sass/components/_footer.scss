@@ -9,6 +9,9 @@ footer{
     transform: translate3d(0,0,0);
     background-size: cover;
     background-position: center right;
+    background-repeat:no-repeat;
+    background-color:#171717;
+    
 
 
 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
@@ -38,10 +41,15 @@ footer{
             width: 18px;
             background-color: $c-tilt-pink;
 
-            @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
+            @media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) {
 				height: 15px;
 				width: 15px;
 			}
+			
+			@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { 
+            	height:11px;
+				width:11px; 
+            }
 
         }
     }
@@ -84,18 +92,18 @@ footer{
         @include font-size(25);
 
         @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
-			@include font-size(20);
+			@include font-size(16);
 		}
 
     }
 
     p.button {
+	    
 	    @include font-size(18);
+		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { @include font-size(15); }
 
         @media handheld, screen and (min-width: $bp-desktop){
-
             @include font-size(20);
-
         }
     }
 
@@ -169,22 +177,25 @@ footer{
         display: block;
     }
 
-    & + .footer-icon{
-        margin-left: 15px;
+    &.footer-icon{
+       	
+       	margin-left:35px;
+        
+        @media handheld, screen and (min-width:0px)  and (max-width:1024px) {
+			margin-left:25px;
+		}
+        
+        
     }
 
-    @media handheld, screen and (min-width: $bp-desktop){
-        & + .footer-icon{
-            margin-left:35px;
-        }
-    }
-
+    
 
 }
 
 
 
 #footer-icon-1 {
+	margin-left:0;
 	height:23px;
     width:11px;
     background:url('../images/facebook.png') 0px 0px no-repeat;

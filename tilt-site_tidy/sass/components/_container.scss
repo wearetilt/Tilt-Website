@@ -56,6 +56,8 @@
 
     &.container--double-side-pad{
         padding: percentage(245/2032) percentage(375/2032);
+		
+		&.contact--page { @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) { padding:25% 10% 12% 10%; } }
     }
 
     &.container--mobile-careers {
@@ -203,14 +205,15 @@ section{
 
     &.text-section--centre{
         text-align: center;
+		
+		h2, a { margin-top:0.5%; }
+		h2 { margin-bottom:0; }
+		a { 
+			margin-bottom:3%; 
+			@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) { font-family:$f-seroot-blck; }
+		}
+       
 
-        h2 + a{
-            margin-top: 0.5%;
-        }
-
-        a + h2{
-            margin-top: 3%;
-        }
 
         h2,a{
             display: block;
@@ -218,9 +221,7 @@ section{
             width: auto;
         }
 
-        .contact-email{
-
-        }
+        
     }
 }
  /* Group container also can be used as a clearfix */

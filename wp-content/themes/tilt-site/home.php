@@ -53,7 +53,7 @@ get_header(); ?>
 				} else if($i === 2){
 					$tweet = $tweetCounter + 1;
 					?>
-						<div id="twitter__module" class="module module--1-1">
+						<div id="twitter__module" class="module module--1-1 module--dark-mobile-news">
 							<div class="module__text">
 								<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
 

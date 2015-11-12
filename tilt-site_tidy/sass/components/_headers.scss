@@ -404,6 +404,7 @@ header{
 
     &.container{
         padding:15% 17% 12% 15%;
+        @media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { padding:15% 9% 12% 9%; }
     }
 
     .text-container{
@@ -438,6 +439,8 @@ header{
         padding: percentage(245/2032) 15% ;
         top: 20%;
         background-color: transparent;
+        
+        @media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { padding: 12% 9% 12% 9%; }
 
     }
 }
