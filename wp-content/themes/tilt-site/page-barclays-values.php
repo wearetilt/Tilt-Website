@@ -33,18 +33,18 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag tag--work-body">Film</p>
             <h1>Barclays<br />
-                <span class="light underlined">Values &amp; Behaviours</span>
+                <span class="light underlined">Values</span>
             </h1>
             <h2 class="light services">Strategy | Film</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
                 <h2>The Brief</h2>
-                <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="first-para tag--work-title">In a climate of scepticism and mistrust of the banking industry, how can Barclays demonstrate the company’s values without sounding insincere?</p>
             </div>
             <div class="header-text__module header-text__module--padding">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="first-para tag--work-title">Let Barclays colleagues tell the story. Show people from around the globe, speaking honestly and frankly about their working values.</p>
             </div>
         </div>
     </div>
@@ -89,8 +89,7 @@ get_header('work-item'); ?>
 
 						<div class="module__text">
 							<h2 class="underlined">What we did</h2>
-							<p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<p class="first-para tag--work-title">We cut through corporate jargon by meeting real people on the ground and allowing them to tell their stories. Interviewees explained their approach to work and life in general, and how their values reflect those of the organisation. </p>
 						</div>
 
                     </div>
@@ -158,8 +157,7 @@ get_header('work-item'); ?>
                 <div class="group group--left">
                     <div class="module module--2-1 module--text-pad module--dark">
                         <div class="module__text">
-                            <h2 class="underlined">The Process</h2>
-                            <p class="first-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos quod optio, delectus eaque temporibus, at ab placeat incidunt ad esse veritatis est, minima quidem animi omnis natus numquam illum. Repellat aliquid, natus amet quo.</p>
+                            <p class="first-para">We carefully selected people from around the world. Using a nimble bare-bones crew, we interviewed people in India, South Africa, USA and UK within a short time period. Back home, we edited the pieces to create a gentle pace and friendly tone. We’re proud to say that the films now have a prominent place on the front page of the main Barclays.com website.</p>
                         </div>
                     </div>
                 </div>
