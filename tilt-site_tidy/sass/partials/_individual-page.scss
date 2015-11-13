@@ -160,7 +160,7 @@
 	    color: $c-tilt-pink;
 	    text-transform:uppercase;
 	    line-height:0.8;
-		
+
 	 	@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { @include font-size(14); }
 	 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { @include font-size(13); }
 
@@ -180,9 +180,9 @@
 .about-service {
 	text-align:center;
 	color:$c-bg;
-	
-	
-	
+
+
+
 	p#web-sprite, p#interactive-sprite, p#motion-sprite, p#film-sprite { transition: all ease 0.5s; }
 
 
@@ -247,4 +247,10 @@
 
 #video-group #vjs_video_3_html5_api{
     width: 100%;
+}
+
+#404 {
+    &.wrapper{
+        margin-bottom: 0px;
+    }
 }
