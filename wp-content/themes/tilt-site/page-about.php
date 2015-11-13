@@ -25,7 +25,7 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT.</strong> WE BUILD WORLDS AND TELL STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM. OUR WORK FITS INTO TWO MAIN AREAS:</p>	
+		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT.</strong> WE BUILD WORLDS AND TELL STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM. OUR WORK FITS INTO THREE MAIN AREAS:</p>	
 	</div>
 </div> <!-- /end container -->
 
@@ -43,7 +43,7 @@ get_header(); ?>
 		       					
 				<div class="module__text">
 					<h2 class="underlined">REDEFINING INTERNAL COMMUNICATIONS</h2>
-					<p class="first-para tag--work-title">We have a simple philosophy: treat internal communications with the same respect, craft and creativity as any other channel. It’s an approach that has helped us change the way many large organisations communicate with and educate their employees – from BP and Barclays, to ICAP and Reliance (India’s largest private company).</p>
+					<p class="first-para tag--work-title">We have a simple philosophy: treat internal communications with the same respect, craft and creativity as any other channel. It’s an approach that has helped us change the way many large organisations communicate with and educate their employees – from BP and Barclays to Reliance; India’s largest private company.</p>
 				</div>
 
 			</div>
@@ -80,6 +80,28 @@ get_header(); ?>
 	
 </section>
 
+<section>
+	<div class="group-container">
+		
+		<div class="group group--right">
+			<div class="module module--2-2">
+		       <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/about/internal_communications.jpg')"></div>
+			</div>
+		</div>
+		<div class="group group--left">
+			<div class="module module--2-2 module--dark">
+		       					
+				<div class="module__text">
+					<h2 class="underlined">GRADUATE ATTRACTION & RETENTION</h2>
+					<p class="first-para tag--work-title">Talent attracts talent. We help clients to recruit the brightest graduates by showcasing what makes their organisations great places to build a career. From intuitive graduate portals, to engaging recruitment films, we’ve helped the likes of BP, ICAP and some of the world’s biggest law firms to land the smartest grads on the block.</p>
+				</div>
+
+			</div>
+		</div> <!-- /end group -->
+
+	</div>
+	
+</section>
 
 
 <section>
