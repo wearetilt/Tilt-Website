@@ -17,9 +17,6 @@ get_header('404'); ?>
 </div>
 <header id="page_404" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
-        <div id="header-play" class="header-play">
-
-        </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/gfk_poster_1.jpg">
                     <source id="header-video" src="https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113" type="video/mp4">
@@ -27,9 +24,34 @@ get_header('404'); ?>
         </div>
     </div>
 </header>
-<div id="fourohfour-text" class="container container--half-bot">
+<div id="fourohfour-overlay">
+	<div id="header-play" class="header-play vertical-align">
+
+	</div>
+</div>
+<div id="fourohfour-text" class="container container--no-top container--half-bot">
 	<h1>404 - Page doesn't exist</h1>
 	<h1 class="light">The tilt monkey isn't amused about that fact</h1>
+	<a class="cube--link cube--float-left" href="<?php echo site_url(); ?>/contact">
+		<div class="cube">
+			<div class="cube--front">
+				<p class="sans-serif button">Return to previous page</p>
+			</div>
+			<div class="cub--top">
+				<p class="sans-serif button">Return to previous page</p>
+			</div>
+		</div>
+	</a>
+	<a class="cube--link cube--float-left" href="<?php echo site_url(); ?>/contact">
+		<div class="cube">
+			<div class="cube--front">
+				<p class="sans-serif button">Watch Video</p>
+			</div>
+			<div class="cub--top">
+				<p class="sans-serif button">Watch Video</p>
+			</div>
+		</div>
+	</a>
 </div>
 </div>
 

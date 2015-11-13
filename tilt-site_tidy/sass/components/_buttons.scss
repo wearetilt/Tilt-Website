@@ -55,9 +55,9 @@ a{
 		@media handheld, screen and (min-width: $bp-desktop){
 	    	 @include font-size(25);
 		}
-		
+
     }
-    
+
 
     &.paginate_prev {
 
@@ -67,19 +67,19 @@ a{
         	font-size:33px;
             margin-right:25px;
             line-height:0;
-            
-			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
-				margin-right:5px; 
+
+			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+				margin-right:5px;
 				font-size:20px;
 			}
-			
-			@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+
+			@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) {
 				margin-right:5px;
 				font-size:23px;
 			}
-			
+
         }
-        
+
     }
 
     &.paginate_next {
@@ -90,18 +90,18 @@ a{
         	font-size:33px;
             margin-left:25px;
             line-height:0;
-			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
-				margin-left:10px; 
+			@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+				margin-left:10px;
 				font-size:20px
 			}
-			
-			@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+
+			@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) {
 				margin-left:10px;
 				font-size:23px;
 			}
-			
+
         }
-        
+
 
     }
 
@@ -122,16 +122,16 @@ a{
     	font-size:33px;
         margin-left:25px;
         line-height:0;
-		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
-			margin-left:10px; 
+		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+			margin-left:10px;
 			font-size:20px
 		}
-		
-		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+
+		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) {
 			margin-left:10px;
 			font-size:23px;
 		}
-		
+
     }
 
 }
@@ -140,7 +140,7 @@ a{
 
 	font-family:$f-seroot-thn;
 
-	
+
 }
 
 .nav-links a.prev {
@@ -149,17 +149,17 @@ a{
     	font-size:33px;
         margin-right:25px;
         line-height:0;
-        
-		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
-			margin-right:5px; 
+
+		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+			margin-right:5px;
 			font-size:20px;
 		}
-		
-		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) { 
+
+		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) {
 			margin-right:5px;
 			font-size:23px;
 		}
-		
+
     }
 
 }
@@ -168,7 +168,7 @@ a{
 
 	font-family:$f-seroot-thn;
 
-	
+
 
 }
 
@@ -230,23 +230,23 @@ a{
 
     p{
         text-align: left;
-        
-        
-        @media handheld, screen and (min-width:0px)  and (max-width:$bp-phone) { 
+
+
+        @media handheld, screen and (min-width:0px)  and (max-width:$bp-phone) {
         	@include font-size(15);
         }
-        
-        @media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { 
+
+        @media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) {
         	@include font-size(18);
         }
-        
+
         letter-spacing:1px;
         @media handheld, screen and (min-width: $bp-desktop){
         	@include font-size(20);
 		}
-		
+
 		span { @media handheld, screen and (min-width:0px)  and (max-width:$bp-phone) { display:none; } }
-		
+
     }
 
     .map-overlay & {
@@ -304,4 +304,22 @@ a{
 a.cube--link {
 	display:block;
 	margin-top:0;
+
+    &.cube--float-left{
+        float: left;
+
+        .cube--front, .cub--top{
+            padding-right: 0;
+            padding: 15px 70px 0px 24px;
+                p{
+                    color: white;
+                }
+            }
+
+        & + & {
+            margin-left: 40px;
+        }
+    }
+
+
 }
