@@ -27,7 +27,7 @@ get_header('404'); ?>
         </div>
     </div>
 </header>
-<div id="404-text">
+<div id="fourohfour-text" class="container container--half-bot">
 	<h1>404 - Page doesn't exist</h1>
 	<h1 class="light">The tilt monkey isn't amused about that fact</h1>
 </div>

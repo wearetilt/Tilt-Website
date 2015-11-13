@@ -249,8 +249,19 @@
     width: 100%;
 }
 
-#404 {
-    &.wrapper{
-        margin-bottom: 0px;
+#fourohfour{
+    margin-bottom: 0px;
+}
+
+#fourohfour-text{
+    position:absolute;
+    bottom: 0;
+    background-color: transparent;
+
+    padding-right: 0;
+    h1{
+        color: white;
+        width: 710px;
     }
+
 }
