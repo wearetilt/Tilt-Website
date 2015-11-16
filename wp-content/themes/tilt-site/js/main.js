@@ -1002,6 +1002,45 @@ var resourceUri;
 //
 // }
 
+if(document.getElementById('page_404')){
+	console.log("HELLLOOOOO");
+	var videoToGet = Math.floor((Math.random() * 7 + 1));
+	console.log(videoToGet);
+	var gorillaSrc = '';
+	var posterGorilla = window.directoryURI + '/images/404/gorilla_poster_' + videoToGet + '.jpg';
+	switch(videoToGet) {
+		case 1:
+			var gorillaSrc = "https://player.vimeo.com/external/145886208.hd.mp4?s=3788db7c62a0ffaf53f237112f17fee38c7b617e&profile_id=113";
+	   	break;
+		case 2:
+			var gorillaSrc = "https://player.vimeo.com/external/145886198.hd.mp4?s=f2a4b7651ce4c251713018af44d9f9be8f728277&profile_id=113";
+		break;
+		case 3:
+			var gorillaSrc = "https://player.vimeo.com/external/145886197.hd.mp4?s=d86fe3331ce8d5da4086d84222ea89babd0f743c&profile_id=113";
+		break;
+		case 4:
+			var gorillaSrc = "https://player.vimeo.com/external/145886196.hd.mp4?s=fd1b935cf759f6dcfb60ca383674b3f269199589&profile_id=113";
+		break;
+		case 5:
+			var gorillaSrc = "https://player.vimeo.com/external/145886195.hd.mp4?s=53c1bfc33fd1ec4f525d215743663b612156a8d7&profile_id=113";
+		break;
+		case 6:
+			var gorillaSrc = "https://player.vimeo.com/external/145886193.hd.mp4?s=a1998f8f792c3158bb2d990b90b8509a06473420&profile_id=113";
+		break;
+		case 7:
+			var gorillaSrc = "https://player.vimeo.com/external/145886194.hd.mp4?s=ec06bb801839ce68f9734583eb72f7f53b70d53d&profile_id=113";
+		break;
+		default:
+			//do nothing
+		break;
+	}
+
+	console.log(gorillaSrc);
+
+	videojs("header-video-player").src(gorillaSrc);
+	videojs("header-video-player").poster(posterGorilla);
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
@@ -2074,22 +2113,27 @@ Modernizr.on('touchevents', function(result){
 });
 
 //footer stuff
+if(document.getElementById('footer')){
+	var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));
+	var footer = document.getElementById('footer')
+	var width = $(window).width(), height = $(window).height();
+
+	if(width <= 400) {
+		footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_square/footer_" + footerImageToDisplay +".jpg')";
+	} else if(width <= 800) {
+		footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_1024/footer_" + footerImageToDisplay +".jpg')";
+
+	} else {
+		footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')";
+	}
+}
 
 var footerImageToDisplay = Math.floor((Math.random() * 8 + 1));
 var footer = document.getElementById('footer');
 var width = $(window).width(), height = $(window).height();
 
-console.log(width);
 
 
-if(width <= 400) {
-	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_square/footer_" + footerImageToDisplay +".jpg')";
-} else if(width <= 800) {
-	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_1024/footer_" + footerImageToDisplay +".jpg')";
-
-} else {
-	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/footer_" + footerImageToDisplay +".jpg')";
-}
 
 
 $('.button--disabled').on("click", function(e){
