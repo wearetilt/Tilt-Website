@@ -10,7 +10,8 @@
 get_header('home'); ?>
 
 <?php
- $args = array(
+ /*
+$args = array(
 	 'posts_per_page' => 1,
 	 'order_by' => 'date',
 	 'post_type' => 'post',
@@ -26,6 +27,31 @@ get_header('home'); ?>
  if (has_post_thumbnail( $postID ) ){
 	 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
  }
+*/
+
+
+	$args = array(
+		 'posts_per_page' => 3,
+		 'order_by' => 'date',
+		 'post_type' => 'post',
+		 'post_status' => 'publish',
+		
+	 );
+	
+	 $posts_array = get_posts( $args );
+	 $post = $posts_array[0];
+	 $postID = $post->ID;
+	
+	 if (has_post_thumbnail( $postID ) ){
+		 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
+	 }
+
+	 $filmposts = get_posts( $args ); 
+	 $i = 0;
+	 $j = 0;
+	 $k = 0;
+
+
 
 
 ?>
@@ -132,25 +158,70 @@ get_header('home'); ?>
 
 				</div>
 
-				<div class="module module--1-1">
-                    <a id="instagram_link_1" href="#" target="_blank">
-                        <div class="overlay area-dark"></div>
-                        <div id="instagram_box_1" class="ratio instagram-box"></div>
-                    </a>
-				</div>
+									
+				<?php 
+				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
+					
+					if (has_post_thumbnail( $post->ID ) ):
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+					endif; 
+					
+					
+					if($i == 0) { ?>
+					
+						<a href="<?php echo the_permalink(); ?>">
+							<div class="module module--1-1 area-dark news--icon">
+								<div id="post=<?php the_ID();?>" class="overlay area-dark">
+									<div class="overlay-text">
+										<p class="tag--no-square">News</p>
+										<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									</div> <!-- /end overlay-text -->
+								</div> <!-- /end overlay -->
+								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+							</div>
+						</a><?php
+						
+						
+					
+					};
+					
+					$i++;
+					
+				endforeach; 
+				wp_reset_postdata();?>
+				
 
-				<a href="<?php echo $post->guid; ?>">
-					<div class="module module--1-1 area-dark news--icon">
-
-						<div class="module__text">
-							<p class="tag--no-square">News</p>
-							<p class="news--home"><?php echo the_title(); ?></p>
-						</div>
-
-				</div>
-
-				</a>
-
+				<?php 
+				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
+					
+					if (has_post_thumbnail( $post->ID ) ):
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+					endif; 
+					
+					
+					if($j == 1) { ?>
+					
+						<a href="<?php echo the_permalink(); ?>">
+							<div class="module module--1-1 area-dark news--icon">
+								
+								<div class="module__text">
+									<p class="tag--no-square">News</p>
+									<h2><span class="underlined"><?php echo the_title(); ?></span></h2>
+								</div>
+								
+							</div>
+						</a><?php
+						
+						
+					
+					};
+					
+					$j++;
+					
+				endforeach; 
+				wp_reset_postdata();?>
+				
+				
 			</div>
 
 			<div class="group group--left">
@@ -211,12 +282,42 @@ get_header('home'); ?>
 				</div>
 
 
-				<div class="module module--1-1">
-                    <a id="instagram_link_2" href="#" target="_blank">
-                        <div class="overlay area-dark"></div>
-				        <div id="instagram_box_2" class="ratio instagram-box"></div>
-                    </a>
-				</div>
+				<?php 
+				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
+					
+					if (has_post_thumbnail( $post->ID ) ):
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+					endif; 
+					
+					
+					if($k == 2) { ?>
+					
+						<a href="<?php echo the_permalink(); ?>">
+							<div class="module module--1-1 area-dark news--icon">
+								<div id="post=<?php the_ID();?>" class="overlay area-dark">
+									<div class="overlay-text">
+										<p class="tag--no-square">News</p>
+										<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									</div> <!-- /end overlay-text -->
+								</div> <!-- /end overlay -->
+								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+							</div>
+						</a><?php
+						
+						
+					
+					};
+					
+					$k++;
+					
+				endforeach; 
+				wp_reset_postdata();?>
+				
+				
+				
+				
+				
+				
 
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text home--tweet">
