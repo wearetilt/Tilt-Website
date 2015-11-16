@@ -199,7 +199,7 @@ get_header('about-item'); ?>
 					<div class="cube--front">
 						<p class="sans-serif button"><span>SEE</span> OUR MOTION WORK</p>
 					</div>
-					<div class="cub--top">
+					<div class="cube--top">
 						<p class="sans-serif button"><span>SEE</span> OUR MOTION WORK</p>
 					</div>
 				</div>

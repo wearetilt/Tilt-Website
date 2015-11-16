@@ -104,7 +104,7 @@ $args = array(
 						<div class="cube--front cube--front__no-bg">
 							<p class="sans-serif">See our work</p>
 						</div>
-						<div class="cub--top cube--top__no-bg">
+						<div class="cube--top cube--top__no-bg">
 							<p class="sans-serif">See our work</p>
 						</div>
 					</div>
@@ -128,7 +128,7 @@ $args = array(
 				<div class="cube--front">
 					<p class="sans-serif"><span>More</span> about us</p>
 				</div>
-				<div class="cub--top">
+				<div class="cube--top">
 					<p class="sans-serif"><span>More</span> about us</p>
 				</div>
 			</div>
