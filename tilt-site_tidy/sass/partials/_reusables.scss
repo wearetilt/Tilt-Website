@@ -5,6 +5,8 @@ $bp-phone:768px;
 
 $job-breaks: 640px;
 
+$phone-breaks: 480px;
+
 @function em($px, $context: $base-font-size) {
 	@return #{$px/$context}em;
 }

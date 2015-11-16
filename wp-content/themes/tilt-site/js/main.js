@@ -2092,6 +2092,9 @@ if(width <= 400) {
 }
 
 
+$('.button--disabled').on("click", function(e){
+	e.preventDefault();
+});
 /*
 if (width <= 1024) {
 	footer.style.backgroundImage = "url('" + window.directoryURI + "/images/footer/small_1024/footer_" + footerImageToDisplay +".jpg')";
