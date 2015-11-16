@@ -234,7 +234,7 @@ get_header('contact'); ?>
 					<div class="cube--front">
 						<p class="sans-serif">Get Directions</p>
 					</div>
-					<div class="cub--top">
+					<div class="cube--top">
 						<p class="sans-serif">Get Directions</p>
 					</div>
 			</div>

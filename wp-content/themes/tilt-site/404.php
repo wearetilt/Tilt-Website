@@ -37,7 +37,7 @@ get_header('404'); ?>
 			<div class="cube--front">
 				<p class="sans-serif button">Return to previous page</p>
 			</div>
-			<div class="cub--top">
+			<div class="cube--top">
 				<p class="sans-serif button">Return to previous page</p>
 			</div>
 		</div>
@@ -47,7 +47,7 @@ get_header('404'); ?>
 			<div class="cube--front">
 				<p class="sans-serif button">Watch Video</p>
 			</div>
-			<div class="cub--top">
+			<div class="cube--top">
 				<p class="sans-serif button">Watch Video</p>
 			</div>
 		</div>

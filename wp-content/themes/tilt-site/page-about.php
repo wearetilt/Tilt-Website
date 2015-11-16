@@ -223,7 +223,7 @@ get_header(); ?>
 				<div class="cube--front">
 					<p class="sans-serif button">MEET THE TEAM</p>
 				</div>
-				<div class="cub--top">
+				<div class="cube--top">
 					<p class="sans-serif button">MEET THE TEAM</p>
 				</div>
 			</div>

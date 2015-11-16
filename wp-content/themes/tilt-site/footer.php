@@ -19,7 +19,7 @@
 					<div class="cube--front">
 						<p class="sans-serif button">Contact us</p>
 					</div>
-					<div class="cub--top">
+					<div class="cube--top">
 						<p class="sans-serif button">Contact us</p>
 					</div>
 				</div>

@@ -212,10 +212,14 @@ a{
     margin-top:15px;
 
     &.about--cube { margin-top:23px; }
+
+    .map-overlay & {
+        background: transparent;
+    }
 }
 
 /* The two faces of the cube */
-.cube--front,.cub--top {
+.cube--front,.cube--top {
 
     background:url('../images/button_arrow.png') center right no-repeat;
     border: 1px solid white;
@@ -264,7 +268,7 @@ a{
 	transform: translateZ(25px);
 }
 
-.cub--top {
+.cube--top {
     background-color: white;
 	-webkit-transform: rotateX(-90deg) translateZ(-25px);
 	transform: rotateX(-90deg) translateZ(-25px);
@@ -274,18 +278,22 @@ a{
     }
 }
 
-.map-overlay .cube--front,.map-overlay .cub--top {
+.map-overlay .cube--front,.map-overlay .cube--top {
 
     background:url('../images/button_arrow.png') center right no-repeat;
     border: 1px solid white;
-	height: 54px;
+	height: 44px;
     border-radius: 2px;
     padding: 14px 72px 0px 24px;
 
+    @media handheld, screen and (min-width: $bp-desktop){
+        height: 54px;
+    }
+
 }
 
-.map-overlay .cub--top { background-color: white; }
-.map-overlay .cub--top p { color: $c-bg; }
+.map-overlay .cube--top { background-color: white; }
+.map-overlay .cube--top p { color: $c-bg; }
 
 
 
@@ -302,22 +310,33 @@ a{
 }
 
 a.cube--link {
-	display:block;
+	display: inline-block;
 	margin-top:0;
 
     &.cube--float-left{
-        float: left;
 
-        .cube--front, .cub--top{
+        @media handheld, screen and (min-width: $bp-desktop){
+            float: left;
+        }
+
+        .cube--front, .cube--top{
             padding-right: 0;
-            padding: 15px 70px 0px 24px;
+            padding: 15px 40px 0px 24px;
+            height: 44px;
+            @media handheld, screen and (min-width: $bp-desktop){
+                padding: 15px 70px 0px 24px;
+                height: 54px;
+            }
                 p{
                     color: white;
                 }
             }
 
         & + & {
-            margin-left: 40px;
+
+            @media handheld, screen and (min-width: $bp-desktop){
+                margin-left: 40px;
+            }
         }
     }
 
