@@ -174,7 +174,7 @@ $args = array(
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
 										<p class="tag--no-square">News</p>
-										<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+										<h2><span><?php the_title( ); ?></span></h2>
 									</div> <!-- /end overlay-text -->
 								</div> <!-- /end overlay -->
 								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -206,7 +206,7 @@ $args = array(
 								
 								<div class="module__text">
 									<p class="tag--no-square">News</p>
-									<h2><span class="underlined"><?php echo the_title(); ?></span></h2>
+									<h2><span><?php echo the_title(); ?></span></h2>
 								</div>
 								
 							</div>
@@ -297,7 +297,7 @@ $args = array(
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
 										<p class="tag--no-square">News</p>
-										<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+										<h2><span><?php the_title( ); ?></span></h2>
 									</div> <!-- /end overlay-text -->
 								</div> <!-- /end overlay -->
 								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
