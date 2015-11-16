@@ -155,13 +155,14 @@
     }
 
     p.tag--no-square {
+    	margin:0px 0px 5px 0px;
     	@include font-size(13);
     	font-family:$f-merriweather;
 	    color: $c-tilt-pink;
 	    text-transform:uppercase;
 	    line-height:0.8;
 
-	 	@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { @include font-size(14); }
+	 	@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { @include font-size(13); }
 	 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { @include font-size(13); }
 
 
