@@ -428,6 +428,8 @@ Create your own skin at http://designer.videojs.com
 }
 
 #work_page .vjs-loading-spinner { top:50%; }
+#homePage .vjs-loading-spinner { display:none; }
+
 
 .vjs-waiting .vjs-loading-spinner,
 .vjs-seeking .vjs-loading-spinner {

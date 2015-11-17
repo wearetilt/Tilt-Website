@@ -118,10 +118,10 @@ get_header('work-item'); ?>
                 <p>The motion piece was a blend of 3D and 2D motion. A dramatic change in tone in the middle of the film highlights the shift from past mistakes to future goals. This approach served to divide the content and drive home the emotional significance of the messages.</p>
                 <p>Components of this project include:</p>
 
-                <ul>
-                	<li>Employee communications</li>
-                	<li>Scriptwriting</li>
-                	<li>Motion graphics</li>
+                <ul class="standard-list">
+                	<li><span class="serif">Employee communications</span></li>
+                	<li><span class="serif">Scriptwriting</span></li>
+                	<li><span class="serif">Motion graphics</span></li>
                 </ul>
             </div>
         </section> <!-- /end text-section -->
