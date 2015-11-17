@@ -31,7 +31,7 @@ get_header('old-browser'); ?>
  <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">Crafted digital experiences</strong> from an obsessive bunch of strategists, artists, filmmakers, animators, producers, illustrators, writers, coders and creatives.</p>
-		<p class="sans-serif">IN ORDER TO EXPERIENCE OUR SITE IN ALL IT'S GLORY YOU NEED TO UPGRADE YOUR BROWSER. IN THE INTERIM, PLEASE CHECK OUT OUR SHOWREEL ABOVE OR GET IN TOUCH FOR A CHAT.</p>
+		<p class="sans-serif">IN ORDER TO EXPERIENCE OUR SITE IN ALL IT'S GLORY YOU NEED TO UPGRADE YOUR BROWSER. IN THE INTERIM, PLEASE CHECK OUT OUR SHOWREEL ABOVE, OR GET IN TOUCH FOR A CHAT.</p>
 		
 	</div>
 </div> <!-- /end container -->
