@@ -6,6 +6,10 @@
 <link rel="stylesheet" id="main-style-css" href="http://test.tilt.codes/wp-content/themes/tilt-site/css/global.min.css?ver=4.3" type="text/css" media="all">
 </head>
 <body>
+    <div class="container">
+        <iframe src="https://player.vimeo.com/video/139889786" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+    </div>
 
     <div class="container container--double-side-pad area-dark">
    	<div class="text-container">
