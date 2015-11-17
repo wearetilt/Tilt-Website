@@ -58,7 +58,7 @@ $args = array(
 
 <script type="text/javascript">
 
-	var wordArray = ['Tilt', 'Thinkers','Crafters','Grafters', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Tilt'];
+	var wordArray = ['Thinkers','Crafters','Grafters', 'Navigators', 'Tailors', 'Tilt', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
 
@@ -98,7 +98,7 @@ $args = array(
 	<div class="module--video module--16-9 module--header">
 		<div class="ratio">
 			<div class="container container--header strapline-container">
-				<h1>We Are <strong id="strapline-text">Entertainers</strong></h1>
+				<h1>We Are <strong id="strapline-text">Tilt</strong></h1>
 				<a class="cube--link" href="<?php echo site_url(); ?>/work">
 					<div class="cube">
 						<div class="cube--front cube--front__no-bg">
