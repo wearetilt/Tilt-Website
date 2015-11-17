@@ -16,7 +16,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
 	<script>
-		window.location = "http://www.google.com/";
+		location.replace('http://test.tilt.codes/home-browser-upgrade');
 	</script>
 	<![endif]-->
 	<?php wp_head(); ?>
