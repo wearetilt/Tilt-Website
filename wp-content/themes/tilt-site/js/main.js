@@ -358,7 +358,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 
 		if(document.getElementById('header-play')){ // if video player
 			myPlayer.on("progress", function() {
-				if(myPlayer.bufferedPercent()>.3){
+				if(myPlayer.bufferedPercent()>.1){
 					myPlayer.removeClass('vjs-waiting');
 					document.getElementById('header-play').classList.add('video-ready');
 					myPlayer.play();
