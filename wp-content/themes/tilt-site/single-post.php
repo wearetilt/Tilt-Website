@@ -115,7 +115,7 @@ get_header('news'); ?>
 				<div class="group-container">
 					<div class="module module--16-9 module--video module--nozoom">
 						<div class="ratio">
-							<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id'); ?> " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id_two'); ?> " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
