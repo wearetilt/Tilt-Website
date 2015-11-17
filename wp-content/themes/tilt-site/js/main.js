@@ -1158,7 +1158,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 						var theHeader = document.getElementsByTagName('header');
 						var headerID = theHeader[0].getAttribute('ID');
-						jQuery('#header-play').hide();
+						// jQuery('#header-play').hide();
 						jQuery('.header-text').hide();
 
 					switch (headerID) {
@@ -1447,8 +1447,11 @@ if(document.getElementById('header-video-player')){
 				jQuery('.container--header').show();
 			}
 
-
-	        myPlayer.play();
+			Modernizr.on('videoautoplay', function(result){
+				if(result === true){
+					myPlayer.play();
+				}
+			});
 
 
 			document.getElementById('tilt--logo').style.display = 'block';
