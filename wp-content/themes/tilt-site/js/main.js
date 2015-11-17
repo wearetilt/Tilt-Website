@@ -1,3 +1,4 @@
+
 // MENU VARS
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');
@@ -594,7 +595,7 @@ closeButton.onclick = function(){
 
 
 /**
-* STAFF PAGE FUNCTINOS
+* STAFF PAGE FUNCTIONS
 *
 */
 
@@ -861,7 +862,7 @@ if(document.getElementById('staff-member')){
 
 
 /**
-* WORK PAGE FUNCTINOS
+* WORK PAGE FUNCTIONS
 *
 */
 jQuery(document).ready(function(){
@@ -982,7 +983,7 @@ function resetClass() {
 
 
 /**
-* CONTACT FORM FUNCTINOS
+* CONTACT FORM FUNCTIONS
 *
 */
 
