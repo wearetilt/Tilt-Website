@@ -57,7 +57,7 @@ get_header('about-item'); ?>
                     <a href="<?php get_site_url(); ?>discover-bp">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
-    							<p class="tag tag--work-body">Web: Case Study</p>
+    							<p class="tag tag--work-body">Case Study: Web</p>
     							<h2>BP <br />
     								<span class="underlined light">Discover BP</span>
     							</h2>

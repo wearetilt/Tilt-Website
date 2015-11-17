@@ -57,7 +57,7 @@ get_header('about-item'); ?>
 	                <a href="<?php get_site_url(); ?>bp-fll-stories/">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--work-body">Case Study</p>
+								<p class="tag tag--work-body">Case Study: Film</p>
 								<h2>BP<br />
 									<span class="underlined light">Leaders: Stories</span>
 								</h2>

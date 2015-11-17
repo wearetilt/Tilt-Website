@@ -157,7 +157,7 @@ get_header('work-item'); ?>
                 <div class="group group--left">
                     <div class="module module--2-1 module--text-pad module--dark">
                         <div class="module__text">
-                            <p class="first-para">We carefully selected people from around the world. Using a nimble bare-bones crew, we interviewed people in India, South Africa, USA and UK within a short time period. Back home, we edited the pieces to create a gentle pace and friendly tone. We’re proud to say that the films now have a prominent place on the front page of the main Barclays.com website.</p>
+                            <p>We carefully selected people from around the world. Using a nimble bare-bones crew, we interviewed people in India, South Africa, USA and UK within a short time period. Back home, we edited the pieces to create a gentle pace and friendly tone. We’re proud to say that the films now have a prominent place on the front page of the main Barclays.com website.</p>
                         </div>
                     </div>
                 </div>
