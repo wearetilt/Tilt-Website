@@ -269,16 +269,12 @@ get_header(); ?>
 
 	httpRequest.open('GET', '<?php echo get_bloginfo('home'); ?>/tilt-site_tidy/staff.json', true);
 
-
-
-
 	httpRequest.setRequestHeader('Content-Type', 'application/json');
 	httpRequest.send(null);
 
 	var user;
 
 	function doData(data){
-	    console.log(data.data[0]['username']);
 	    for(i in data.data){
 	        if(data.data[i].username === 'we_are_tilt'){
 	            user = data.data[i].id;
