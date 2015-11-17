@@ -271,7 +271,7 @@ $args = array(
 					<a href="<?php get_site_url(); ?>gfk">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--home-title">Work</p>
+								<p class="tag tag--home-title">Work: Motion</p>
 								<h2>GFK<br /><span class="light">Brand Video</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->

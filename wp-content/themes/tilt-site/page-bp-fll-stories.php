@@ -35,7 +35,7 @@ get_header('work-item'); ?>
         <div class="header-title">
             <p class="tag tag--work-body">Film: Case Study</p>
             <h1>BP<br />
-                <span class="light underlined">Leaders: Stories</span>
+                <span class="light underlined">Stories</span>
             </h1>
             <h2 class="light services">Strategy | Film</h2>
         </div>

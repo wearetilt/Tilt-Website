@@ -97,7 +97,7 @@ get_header(); ?>
     						<div class="overlay-text">
     							<p class="tag tag--work-body">Case Study: Film</p>
     							<h2>BP<br />
-    								<span class="underlined light">Leaders: Stories</span>
+    								<span class="underlined light">Stories</span>
     							</h2>
     							<p class="sans-serif">Engage your audience on an emotional level</p>
     						</div> <!-- /end overlay-text -->
@@ -252,7 +252,7 @@ get_header(); ?>
                             <div class="overlay area-dark">
                                 <div class="overlay-text">
                                     <p class="tag tag--work-body">Work: Web</p>
-                                    <h2>BP First Level Leaders<br /><span class="light">Portal</span></h2>
+                                    <h2>BP Leadership<br /><span class="light">Portal</span></h2>
                                 </div> <!-- /end overlay-text -->
                             </div> <!-- /end overlay -->
                             <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_web_01_mr.jpg')">

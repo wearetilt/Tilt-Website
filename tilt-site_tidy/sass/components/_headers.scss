@@ -101,7 +101,7 @@ header{
     &.work-item{
 		
         .container--header{
-            padding-bottom:6%;
+            padding-bottom:5%;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -460,16 +460,14 @@ header{
 		min-height:50%;	
 	}
 
-    
 }
-
 
 .nav-icons{
     @extend %clearfix;
     margin-bottom: 2%;
     position:relative;
     width:85%;
-    top:85%;
+    top:83.5%;
     left:7%;
 
     & .telephone{
