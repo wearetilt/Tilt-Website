@@ -57,7 +57,7 @@ get_header('about-item'); ?>
                     <a href="<?php get_site_url(); ?>alzheimers">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
-    							<p class="tag tag--work-body">Work</p>
+    							<p class="tag tag--work-body">Work: Interactive</p>
     							<h2>Alzheimer's <br />
     								<span class="underlined light">The Lab</span>
     							</h2>
