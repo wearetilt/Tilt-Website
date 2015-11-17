@@ -174,7 +174,8 @@
     </section>
 </div>
 
-<div class="container container--bp-fll-app">
+<div class="container container--carousel"  style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fll/ff_background_iphones.png')">
+
         <div class="mobile-holder">
             <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
             <div class="mobile-screen">
