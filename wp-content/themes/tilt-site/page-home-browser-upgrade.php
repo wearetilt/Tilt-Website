@@ -19,7 +19,7 @@ get_header('old-browser'); ?>
 <header id="work_page" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play"></div>
-        <div class="container container--reel"> <p>REEL 2015</p></div>
+        <div class="container container--reel"> <p>REEL 2015 / 2016</p></div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="100%" >
                     <source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
@@ -30,7 +30,8 @@ get_header('old-browser'); ?>
 
  <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">WHAT WE DO.</strong> WE WORK ACROSS DESIGN, INTERACTIVE, MOTION, FILM and specialise in two main areas:</p>
+		<p class="first-para sans-serif"><strong class="highlight">Crafted digital experiences</strong> from an obsessive bunch of strategists, artists, filmmakers, animators, producers, illustrators, writers, coders and creatives.</p>
+		<p class="sans-serif">IN ORDER TO EXPERIENCE OUR SITE IN ALL IT'S GLORY YOU NEED TO UPGRADE YOUR BROWSER. IN THE INTERIM, PLEASE CHECK OUT OUR SHOWREEL ABOVE OR GET IN TOUCH FOR A CHAT.</p>
 		
 	</div>
 </div> <!-- /end container -->
