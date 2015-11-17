@@ -12,7 +12,9 @@
 	@media handheld, screen and (min-width: $bp-desktop-large){
 		@include font-size(16);
 	}
-
+	
+	@media handheld, screen and (min-width:0px) and (max-width:$phone-breaks) { @include font-size(10); } 
+	
 	@media handheld, screen and (min-width: $bp-phone)  and (max-width: $bp-desktop ) {
 		@include font-size(20);
 	}
@@ -37,6 +39,9 @@ p.rtw_main {
 	font-weight:300;
 	color:#d34262;
 	letter-spacing:1px;
+	
+	@media handheld, screen and (min-width:0px) and (max-width:$phone-breaks) { @include font-size(10); } 
+	
 }
 
 div.rtw_rt_meta{

@@ -115,10 +115,10 @@
 				
 				
 				
-				@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) { padding-bottom:3px; }
+				@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) { padding-bottom:0px; }
 				
                 @media handheld, screen and (min-width: $phone-breaks){
-                    padding-bottom: 0.1%;
+                    padding-bottom:0;
                     margin-top: 0;
                 }
             }
@@ -129,13 +129,21 @@
                 @media handheld, screen and (min-width: $phone-breaks){
                     line-height: 1;
                 }
+                
+                
+                @media handheld, screen and (min-width:0px) and (max-width:$phone-breaks) { line-height:1; } 
+                @media handheld, screen and (min-width:$phone-breaks) and (max-width:$bp-phone) { line-height:1; } 
+                
 
                 &:after{
-                    margin-top: 11px;
-
-                    @media handheld, screen and (min-width: $phone-breaks){
-                        margin-top: 11px;
-                    }
+                    margin-top: 10px;
+					
+					@media handheld, screen and (min-width:0px) and (max-width:$phone-breaks) { margin-top: 15px; } 
+					@media handheld, screen and (min-width:$phone-breaks) and (max-width:$bp-phone) { margin-top: 15px; } 
+					@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { margin-top: 8px; }
+					
+					
+                    
                 }
             }
         }
@@ -427,7 +435,12 @@ section{
     @extend %clearfix;
     padding: 0  percentage(64/1270);
 
-    &.news--footer { padding-bottom:5%; }
+    &.news--footer { 
+    	padding-bottom:5%; 
+		@media handheld, screen and (min-width:0px) and (max-width:$phone-breaks) { padding-bottom:9%;  } 
+		@media handheld, screen and (min-width:$phone-breaks) and (max-width:$bp-phone) { padding-bottom:9%;  } 
+		@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { padding-bottom:4%;  } 			
+    }
 
 	.intro-text { opacity:0; }
 

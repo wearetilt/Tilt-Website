@@ -96,6 +96,9 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no
 
         & + .menu__item {
             margin-top: 20px;
+            
+            @media handheld, screen and (min-width:0px) and (max-width:$phone-breaks) { margin-top:8px; }
+            @media handheld, screen and (min-width:$phone-breaks) and (max-width:$bp-phone) { margin-top:15px; }
         }
 
         a{

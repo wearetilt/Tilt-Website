@@ -98,7 +98,7 @@ get_header(); ?>
 		
 		<div class="group group--left">
 			<div class="module module--2-2">
-		       <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/about/internal_communications.jpg')"></div>
+		       <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/about/graduate_content.jpg')"></div>
 			</div>
 		</div>
 
