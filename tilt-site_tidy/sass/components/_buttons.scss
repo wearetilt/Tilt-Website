@@ -326,11 +326,20 @@ a.cube--link {
             @media handheld, screen and (min-width: $bp-desktop){
                 padding: 15px 70px 0px 24px;
                 height: 54px;
-            }
-                p{
-                    color: white;
                 }
             }
+
+        .cube--front{
+            p{
+                color: white;
+            }
+        }
+
+        .cube--top{
+            p{
+                color: $c-tilt-pink;
+            }
+        }
 
         & + & {
 
