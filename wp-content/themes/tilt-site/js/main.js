@@ -1003,9 +1003,7 @@ var resourceUri;
 // }
 
 if(document.getElementById('page_404')){
-	console.log("HELLLOOOOO");
 	var videoToGet = Math.floor((Math.random() * 7 + 1));
-	console.log(videoToGet);
 	var gorillaSrc = '';
 	var posterGorilla = window.directoryURI + '/images/404/gorilla_poster_' + videoToGet + '.jpg';
 	switch(videoToGet) {
@@ -1034,9 +1032,6 @@ if(document.getElementById('page_404')){
 			//do nothing
 		break;
 	}
-
-	console.log(gorillaSrc);
-
 	videojs("header-video-player").src(gorillaSrc);
 	videojs("header-video-player").poster(posterGorilla);
 }
@@ -1049,6 +1044,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(document.getElementById('video-overlay')) {
 
 			Modernizr.on('videoautoplay', function(result){
+				console.log('Video Autoplay result: ' + result)
 
 				if(!result) {
 
@@ -1056,17 +1052,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						var myPlayer = this;
 						myPlayer.pause();
 
-						var theHeader = document.getElementsByTagName('header');
-						var headerID = theHeader[0].getAttribute('ID');
-						// jQuery('#header-play').hide();
-						jQuery('.header-text').hide();
+						if(document.getElementsByTagName('header')){
+							var theHeader = document.getElementsByTagName('header');
+							var headerID = theHeader[0].getAttribute('ID');
+							// jQuery('#header-play').hide();
+							jQuery('.header-text').hide();
+						}
+
 
 						if(document.getElementById('header-play')){
 							var playButton = document.getElementById('header-play');
 
 							playButton.addEventListener('click', function(){
 								jQuery('.container--header').hide();
-								myPlayer.requestFullscreen();
+								// myPlayer.requestFullscreen();
 								myPlayer.play();
 							});
 						}
@@ -1123,6 +1122,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							case "work_page":
 								myPlayer.src("https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113");
 								// myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113");
+							break;
+
+							case "page_404":
+								myPlayer.src("https://player.vimeo.com/external/145886748.hd.mp4?s=292e3a5fb013706f99d5b94470ac19c92af3c199&profile_id=113");
 							break;
 
 							default:
@@ -1210,6 +1213,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						case "work_page":
 							myPlayer.src("https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113");
 							// myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113");
+						break;
+
+						case "page_404":
+							myPlayer.src("https://player.vimeo.com/external/145886748.hd.mp4?s=292e3a5fb013706f99d5b94470ac19c92af3c199&profile_id=113");
 						break;
 
 						default:
@@ -1308,22 +1315,21 @@ if(document.getElementById('header-video-player')){
 
 		if(document.getElementById('header-play')){
 			myPlayer.on("progress", function() {
-		      if(myPlayer.bufferedPercent()>.3){
-				myPlayer.removeClass('vjs-waiting');
-	  			document.getElementById('header-play').classList.add('video-ready');
-		        myPlayer.play();
-			} else {
-				console.log('Hi');
-				myPlayer.addClass('vjs-waiting');
-			}
-		    }, false);
+				if(myPlayer.bufferedPercent()>.3){
+					myPlayer.removeClass('vjs-waiting');
+					document.getElementById('header-play').classList.add('video-ready');
+					myPlayer.play();
+				} else {
+					myPlayer.addClass('vjs-waiting');
+				}
+			}, false);
 
 			// myPlayer.ready(function(){
 			// 	document.getElementById('header-play').classList.add('video-ready');
 			// }, true);
 		}
 
-        myPlayer.play();
+		myPlayer.play();
 
 		var theHeader = document.getElementsByTagName('header');
 		//This assumes there is only one header element per page.
@@ -1436,7 +1442,11 @@ if(document.getElementById('header-video-player')){
 	    document.getElementById('video-overlay-close').addEventListener('click', function(){
 	        document.getElementById('video-overlay').style.display = "none";
 	        videoOverlay.pause();
-			jQuery('.container--header').show();
+
+			if(jQuery('.container--header')){
+				jQuery('.container--header').show();
+			}
+
 
 	        myPlayer.play();
 
@@ -1444,10 +1454,12 @@ if(document.getElementById('header-video-player')){
 			document.getElementById('tilt--logo').style.display = 'block';
 	        document.getElementById('menuButton').style.display = 'block';
 
+			if(document.getElementById('wordButton')){
+				if(document.getElementById('workButton').style.display != null) {
+				   document.getElementById('workButton').style.display = 'block';
+				}
+			}
 
-			if(document.getElementById('workButton').style.display != null) {
-		       document.getElementById('workButton').style.display = 'block';
-	        }
 
 
 	    });
@@ -1464,11 +1476,14 @@ if(document.getElementById('header-video-player')){
 	                document.getElementById('video-overlay').style.display = 'block';
 
 					document.getElementById('tilt--logo').style.display = 'none';
-	                document.getElementById('menuButton').style.display = 'none';
+					document.getElementById('menuButton').style.display = 'none';
 
-					if(document.getElementById('workButton').style.display != null) {
-						document.getElementById('workButton').style.display = 'none';
-	                }
+
+					if(document.getElementById('wordButton')){
+						if(document.getElementById('workButton').style.display != null) {
+						   document.getElementById('workButton').style.display = 'block';
+						}
+					}
 	            });
 	    });
 	}

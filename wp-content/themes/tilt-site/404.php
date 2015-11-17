@@ -32,23 +32,13 @@ get_header('404'); ?>
 <div id="fourohfour-text" class="container container--no-top container--half-bot">
 	<h1>404 - Page doesn't exist</h1>
 	<h1 class="light">The tilt gorilla isn't amused about that fact</h1>
-	<a class="cube--link cube--float-left" href="<?php echo site_url(); ?>/contact">
+	<a class="cube--link cube--float-left" href="<?php echo site_url(); ?>/">
 		<div class="cube">
 			<div class="cube--front">
-				<p class="sans-serif button">Return to previous page</p>
+				<p class="sans-serif button">Return to home</p>
 			</div>
 			<div class="cube--top">
-				<p class="sans-serif button">Return to previous page</p>
-			</div>
-		</div>
-	</a>
-	<a class="cube--link cube--float-left" href="<?php echo site_url(); ?>/contact">
-		<div class="cube">
-			<div class="cube--front">
-				<p class="sans-serif button">Watch Video</p>
-			</div>
-			<div class="cube--top">
-				<p class="sans-serif button">Watch Video</p>
+				<p class="sans-serif button">Return to home</p>
 			</div>
 		</div>
 	</a>
