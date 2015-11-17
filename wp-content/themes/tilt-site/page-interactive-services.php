@@ -15,7 +15,7 @@ get_header('about-item'); ?>
 
 
 
-<div class="container container--double-side-pad area-dark container--mobile-header-spacing">
+<div id="about_page" class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">INTERACTIVE:</strong> THINKING BEYOND ONE-WAY TRAFFIC.</p>
 		<p class="sans-serif">We see digital as a tool; it’s there to be used, prodded, poked and played with. Two-way traffic between a user and a brand. Our award-winning interactive work has helped businesses from O2 to Nickelodeon engage their audiences. Whether creating virtual science labs, or inspiring thousands of kids to get coding – we believe in the power of interactive design to bring ideas to life.</p>
@@ -92,8 +92,8 @@ get_header('about-item'); ?>
 							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
-										<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
-										<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+										<p class="tag--no-square">News</p>
+										<h2><span><?php the_title( ); ?></span></h2>
 									</div> <!-- /end overlay-text -->
 								</div> <!-- /end overlay -->
 								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -138,8 +138,8 @@ get_header('about-item'); ?>
 						<div class="module module--1-1 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
-									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
-									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									<p class="tag--no-square">News</p>
+									<h2><span><?php the_title( ); ?></span></h2>
 								</div> <!-- /end overlay-text -->
 							</div> <!-- /end overlay -->
 							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -170,8 +170,9 @@ get_header('about-item'); ?>
 						<div class="module module--2-2 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
-									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
+									<p class="tag--no-square">News</p>
 									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									<p class="sans-serif"><?php echo get_the_excerpt(); ?></p>
 								</div> <!-- /end overlay-text -->
 							</div> <!-- /end overlay -->
 							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
