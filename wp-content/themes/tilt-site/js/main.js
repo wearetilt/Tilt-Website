@@ -1,11 +1,4 @@
 
-var ▶︎ = '🎄';
-
-if (▶︎ == '🎄') {
-    alert('🎄🎄🎄🎄🎄🎄🎄🎄');
-}
-
-
 // MENU VARS
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');
