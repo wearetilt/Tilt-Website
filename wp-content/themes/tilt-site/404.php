@@ -10,7 +10,7 @@
 get_header('404'); ?>
 
 <div id="video-overlay" class="fullpage-overlay">
-    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/404_poster.jpg" width="100%" height="auto">
+    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/145886748.hd.mp4?s=292e3a5fb013706f99d5b94470ac19c92af3c199&profile_id=113" type="video/mp4">
     </video>
     <div id="video-overlay-close"></div>
@@ -18,8 +18,8 @@ get_header('404'); ?>
 <header id="page_404" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/404_poster_loop.jpg">
-                    <source id="header-video" src="" type="video/mp4">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%">
+                    <source id="header-video" src="https://player.vimeo.com/external/145886197.hd.mp4?s=d86fe3331ce8d5da4086d84222ea89babd0f743c&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
