@@ -1310,10 +1310,16 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
     }
 }
 
-if(document.getElementById('header-video-player')){
-    var myPlayer =  videojs('header-video-player');
 
-		if(document.getElementById('header-play')){
+/**
+* HEADER VIDEO FUNCTION
+*
+*/
+if(document.getElementById('header-video-player')){ // if has header video
+
+    var myPlayer =  videojs('header-video-player'); // create video player
+
+		if(document.getElementById('header-play')){ // if video player
 			myPlayer.on("progress", function() {
 				if(myPlayer.bufferedPercent()>.3){
 					myPlayer.removeClass('vjs-waiting');
