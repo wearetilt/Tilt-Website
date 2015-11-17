@@ -43,7 +43,6 @@
 		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2015. All rights reserved.</p>
 	</div>
 
-
 </footer>
 <script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/video.js"></script>
