@@ -80,7 +80,7 @@ h1 {
 	    
     }
     
-    
+   span.lowercase { text-transform:lowercase; } 
     
     
 }
@@ -156,7 +156,7 @@ h2{
 	
 	&.white { color:$c-white; }
 	
-	
+	span.lowercase { text-transform:lowercase; } 
 	
 }
 

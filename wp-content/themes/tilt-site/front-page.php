@@ -35,18 +35,18 @@ $args = array(
 		 'order_by' => 'date',
 		 'post_type' => 'post',
 		 'post_status' => 'publish',
-		
+
 	 );
-	
+
 	 $posts_array = get_posts( $args );
 	 $post = $posts_array[0];
 	 $postID = $post->ID;
-	
+
 	 if (has_post_thumbnail( $postID ) ){
 		 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
 	 }
 
-	 $filmposts = get_posts( $args ); 
+	 $filmposts = get_posts( $args );
 	 $i = 0;
 	 $j = 0;
 	 $k = 0;
@@ -58,7 +58,7 @@ $args = array(
 
 <script type="text/javascript">
 
-	var wordArray = ['Tilt', 'Thinkers','Crafters','Grafters', 'Navigators', 'Tailors', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Tilt'];
+	var wordArray = ['Thinkers','Crafters','Grafters', 'Navigators', 'Tailors', 'Tilt', 'Pain Killers', 'Detectives', 'Firestarters', 'Geeks', 'All Ears', 'Tea drinkers', 'Tilt'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
 
@@ -98,7 +98,7 @@ $args = array(
 	<div class="module--video module--16-9 module--header">
 		<div class="ratio">
 			<div class="container container--header strapline-container">
-				<h1>We Are <strong id="strapline-text">Entertainers</strong></h1>
+				<h1>We Are <strong id="strapline-text">Tilt</strong></h1>
 				<a class="cube--link" href="<?php echo site_url(); ?>/work">
 					<div class="cube">
 						<div class="cube--front cube--front__no-bg">
@@ -148,7 +148,7 @@ $args = array(
 
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--home-title">Work</p>
+								<p class="tag tag--home-title">Work: Interactive</p>
 								<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
@@ -158,17 +158,17 @@ $args = array(
 
 				</div>
 
-									
-				<?php 
-				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-					
+
+				<?php
+				foreach ( $filmposts as $post ) : setup_postdata( $post );
+
 					if (has_post_thumbnail( $post->ID ) ):
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					endif; 
-					
-					
+					endif;
+
+
 					if($i == 0) { ?>
-					
+
 						<a href="<?php echo the_permalink(); ?>">
 							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
@@ -180,48 +180,48 @@ $args = array(
 								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
 							</div>
 						</a><?php
-						
-						
-					
-					};
-					
-					$i++;
-					
-				endforeach; 
-				wp_reset_postdata();?>
-				
 
-				<?php 
-				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-					
+
+
+					};
+
+					$i++;
+
+				endforeach;
+				wp_reset_postdata();?>
+
+
+				<?php
+				foreach ( $filmposts as $post ) : setup_postdata( $post );
+
 					if (has_post_thumbnail( $post->ID ) ):
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					endif; 
-					
-					
+					endif;
+
+
 					if($j == 1) { ?>
-					
+
 						<a href="<?php echo the_permalink(); ?>">
 							<div class="module module--1-1 area-dark news--icon">
-								
+
 								<div class="module__text">
 									<p class="tag--no-square">News</p>
 									<h2><span><?php echo the_title(); ?></span></h2>
 								</div>
-								
+
 							</div>
 						</a><?php
-						
-						
-					
+
+
+
 					};
-					
+
 					$j++;
-					
-				endforeach; 
+
+				endforeach;
 				wp_reset_postdata();?>
-				
-				
+
+
 			</div>
 
 			<div class="group group--left">
@@ -229,7 +229,7 @@ $args = array(
 					<a href="<?php get_site_url(); ?>bp-fll-stories/">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--home-title">Case Study</p>
+								<p class="tag tag--home-title">Case Study: Film</p>
 								<h2>BP First Level Leaders<br /><span class="underlined light">Stories</span></h2>
 								<p class="sans-serif">Engage your audience on an emotional level</p>
 							</div> <!-- /end overlay-text -->
@@ -252,7 +252,7 @@ $args = array(
 					 <a href="<?php get_site_url(); ?>discover-bp">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--home-title">Case Study</p>
+								<p class="tag tag--home-title">Case Study: Web</p>
 								<h2>BP<br /><span class="underlined light">Discover BP</span></h2>
 								<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
 							</div> <!-- /end overlay-text -->
@@ -272,7 +272,7 @@ $args = array(
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag tag--home-title">Work</p>
-								<h2>GFK<br /><span class="light underlined">Brand Video</span></h2>
+								<h2>GFK<br /><span class="light">Brand Video</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
 
@@ -282,16 +282,16 @@ $args = array(
 				</div>
 
 
-				<?php 
-				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-					
+				<?php
+				foreach ( $filmposts as $post ) : setup_postdata( $post );
+
 					if (has_post_thumbnail( $post->ID ) ):
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					endif; 
-					
-					
+					endif;
+
+
 					if($k == 2) { ?>
-					
+
 						<a href="<?php echo the_permalink(); ?>">
 							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
@@ -303,21 +303,21 @@ $args = array(
 								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
 							</div>
 						</a><?php
-						
-						
-					
+
+
+
 					};
-					
+
 					$k++;
-					
-				endforeach; 
+
+				endforeach;
 				wp_reset_postdata();?>
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
 
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text home--tweet">
@@ -332,42 +332,5 @@ $args = array(
 </div> <!-- /end container -->
 
 </div> <!-- Close Wrapper -->
-
-<script type="text/javascript">
-
-var user;
-
-function doData(data){
-    for(i in data.data){
-        if(data.data[i].username === 'we_are_tilt'){
-            user = data.data[i].id;
-            var script2 = document.createElement('script');
-            script2.src = 'https://api.instagram.com/v1/users/' + user + '/media/recent?client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doPicture';
-            document.getElementsByTagName('head')[0].appendChild(script2);
-        }
-    }
-}
-
-function doPicture(pictureData){
-
-    var instagramImage1 = pictureData.data[0].images.standard_resolution.url;
-    var instagramLink1 = pictureData.data[0].link;
-    var instagramImage2 =  pictureData.data[1].images.standard_resolution.url;
-    var instagramLink2 = pictureData.data[1].link;
-
-    document.getElementById('instagram_box_1').style.backgroundImage = "url('" + instagramImage1 + "')";
-    document.getElementById('instagram_box_2').style.backgroundImage = "url('" + instagramImage2 + "')";
-    document.getElementById('instagram_link_1').href = instagramLink1;
-    document.getElementById('instagram_link_2').href = instagramLink2;
-
-
-}
-
-var script = document.createElement('script');
-script.src = 'https://api.instagram.com/v1/users/search?q=we_are_tilt&client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doData';
-
-document.getElementsByTagName('head')[0].appendChild(script);
-
-</script>
 
 <?php get_footer(); ?>

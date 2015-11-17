@@ -57,7 +57,7 @@ get_header('about-item'); ?>
                     <a href="<?php get_site_url(); ?>take-the-lead">
                         <div class="overlay area-dark">
                             <div class="overlay-text">
-                                <p class="tag tag--work-body">Work</p>
+                                <p class="tag tag--work-body">Work: Motion</p>
                                 <h2>South Downs<br /><span class="light">Take the Lead</span></h2>
                             </div> <!-- /end overlay-text -->
                         </div> <!-- /end overlay -->

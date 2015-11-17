@@ -422,3 +422,10 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+// 
+// function footer_scripts(){
+// 	$directoryURI = get_template_directory_uri();
+// 	echo '<script src="' . $directoryURI . '/js/main.js' . '"></script>';
+// }
+//
+// add_action( 'wp_footer', 'footer_scripts', 20);
