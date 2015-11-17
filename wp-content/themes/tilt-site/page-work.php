@@ -277,7 +277,7 @@ get_header(); ?>
         					<div class="overlay area-dark">
         						<div class="overlay-text">
         							<p class="tag tag--work-body">Work: Web</p>
-        							<h2>i360<br /><span class="light">Website</span></h2>
+        							<h2><span class="lowercase">i</span>360<br /><span class="light">Website</span></h2>
         						</div> <!-- /end overlay-text -->
         					</div> <!-- /end overlay -->
         					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_web_03_ss.jpg')">
@@ -305,23 +305,6 @@ get_header(); ?>
 		</div> <!-- /end group-container -->
 	</section>
 </div> <!-- /end container -->
-
-<!--
-<div id="mobile--work-menu" class="container container--half-both area-dark">
-	<div class="text-container center">
-		<a class="cube--link" href="<?php echo site_url(); ?>/work">
-			<div class="cube about--cube">
-				<div class="cube--front">
-					<p class="sans-serif button">SEE ALL WORK</p>
-				</div>
-				<div class="cube--top">
-					<p class="sans-serif button">SEE ALL WORK</p>
-				</div>
-			</div>
-		</a>
-	</div>
-</div> <!-- /end container -->
--->
 
 <div class="container container--half-top container--half-bot image-container">
 	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />

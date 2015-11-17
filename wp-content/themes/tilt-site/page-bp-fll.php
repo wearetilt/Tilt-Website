@@ -28,7 +28,7 @@
              <h1>BP<br />
                  <span class="light underlined">Leadership</span>
              </h1>
-             <h2 class="light services">Strategy, Design, Dev, Film | Motion</h2>
+             <h2 class="light services">Strategy | Design | Dev | Film | Motion</h2>
          </div>
          <div class="header-text">
              <div class="header-text__module header-text__module--padded">
