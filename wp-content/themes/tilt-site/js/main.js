@@ -1158,7 +1158,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 						var theHeader = document.getElementsByTagName('header');
 						var headerID = theHeader[0].getAttribute('ID');
-						jQuery('#header-play').hide();
+						// jQuery('#header-play').hide();
 						jQuery('.header-text').hide();
 
 					switch (headerID) {
@@ -1310,10 +1310,16 @@ for (var iterator = 0; iterator < carouselControls.length; iterator++){
     }
 }
 
-if(document.getElementById('header-video-player')){
-    var myPlayer =  videojs('header-video-player');
 
-		if(document.getElementById('header-play')){
+/**
+* HEADER VIDEO FUNCTION
+*
+*/
+if(document.getElementById('header-video-player')){ // if has header video
+
+    var myPlayer =  videojs('header-video-player'); // create video player
+
+		if(document.getElementById('header-play')){ // if video player
 			myPlayer.on("progress", function() {
 				if(myPlayer.bufferedPercent()>.3){
 					myPlayer.removeClass('vjs-waiting');
@@ -1447,8 +1453,11 @@ if(document.getElementById('header-video-player')){
 				jQuery('.container--header').show();
 			}
 
-
-	        myPlayer.play();
+			Modernizr.on('videoautoplay', function(result){
+				if(result === true){
+					myPlayer.play();
+				}
+			});
 
 
 			document.getElementById('tilt--logo').style.display = 'block';
