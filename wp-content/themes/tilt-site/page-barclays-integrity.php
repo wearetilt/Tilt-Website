@@ -214,10 +214,10 @@ get_header('work-item'); ?>
 
     <div class="container">
         <section class="text-section">
-            <h2>Octocopters</h2>
+            <h2>Octocopters Rock</h2>
             <div class="text-section__para">
-                <p class="first-para tag--work-body">Some stuff about awesome octocopters and car mounts should be written here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a voluptatem maiores velit voluptate, asperiores vitae, quisquam ratione non laborum temporibus rem minima dolor, adipisci repudiandae aut numquam earum dignissimos? Iste a commodi enim voluptates, fuga amet omnis laborum saepe praesentium veniam asperiores quibusdam, magnam nesciunt reprehenderit ipsum totam aspernatur! Consequatur autem excepturi perferendis incidunt dolor culpa quod. Omnis, quos!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui, praesentium aliquam, possimus rem, vitae consequatur et dignissimos quibusdam quas dolores modi suscipit minus quis cumque! Distinctio totam molestiae porro! Deserunt ipsam voluptatibus esse qui quod praesentium iusto eveniet, culpa! Suscipit incidunt fugit illum, quaerat atque rerum, numquam illo quis, tenetur hic assumenda praesentium ad. Magni vero consequuntur eos nesciunt!</p>
+                <p class="first-para tag--work-body">The use of drones has been making in-roads into the film industry recently, as the cost of the technology comes down. Tilt have been quick to embrace the awesome possibilities that are opening up in this field. We love drones because of the ability to move from low level close up, to soaring aerial vista in a single take – which is exactly what we did for this project and for the finale of our <a href="../sdnpa/">Discover Another Way</a> film for the South Downs National Park.</p>
+                <p>The challenge for us has been to produce quality footage that will stand up against our terrestrial based shots, where camera weight is not an issue. This is where eight blades are better than four. It gives us the ability to launch 4k digital cinema cameras with interchangable lenses, mounted on a gimbal for remote angle control and very few shakes. Octocopters rock!</p>
             </div>
         </section>
     </div>
