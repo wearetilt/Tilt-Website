@@ -648,6 +648,8 @@ ul {
     }
 }
 
+.news-container ul.standard-list { margin-bottom:27px; }
+
 blockquote{
    @include font-size(30);
    font-family: $f-merriweather;
