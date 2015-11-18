@@ -25,7 +25,7 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark">
 	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT.</strong> WE BUILD WORLDS AND TELL STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM. OUR WORK FITS INTO THREE MAIN AREAS:</p>	
+		<p class="first-para sans-serif"><strong class="highlight">WE ARE TILT.</strong> WE BUILD WORLDS AND TELL STORIES ACROSS DESIGN, INTERACTIVE, MOTION & FILM. SOME OF THE KEY SECTORS WE WORK IN ARE:</p>	
 	</div>
 </div> <!-- /end container -->
 
@@ -125,7 +125,7 @@ get_header(); ?>
 </section>
 
 
-<div class="container container--double-side-pad container--our-services">
+<div id="our--services" class="container container--double-side-pad container--our-services">
 	
 	<div class="text-container center">
 		<h2 class="about">OUR DEPARTMENTS</h2>

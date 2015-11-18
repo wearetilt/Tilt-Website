@@ -15,7 +15,7 @@ get_header('about-item'); ?>
 
 
 
-<div class="container container--double-side-pad area-dark container--mobile-header-spacing">
+<div id="about_page" class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">MOTION GRAPHICS:</strong> PLAYING WITH SPACE AND TIME.</p>
 		<p class="sans-serif">Motion has no borders – if you can imagine it, we can build it. From idents and ads, to music videos and corporate animations, our motion team has created award-winning work across dozens of sectors. Working in 2D or 3D, often combining film, illustration and graphic design, our motion artists create some of the most distinctive work coming out of the Tilt Studio.</p>
@@ -47,6 +47,8 @@ get_header('about-item'); ?>
 	 ?>
 
 	
+
+	
 	<div class="container container--no-padding">
 		
 		<div class="group-container">
@@ -58,7 +60,10 @@ get_header('about-item'); ?>
                         <div class="overlay area-dark">
                             <div class="overlay-text">
                                 <p class="tag tag--work-body">Work: Motion</p>
-                                <h2>South Downs<br /><span class="light">Take the Lead</span></h2>
+                                <h2>South Downs<br /><span class="underlined light">Take the Lead</span></h2>
+                                
+                               <p class="sans-serif">Changing the behaviour of irresponsible dog owners</p>
+                                
                             </div> <!-- /end overlay-text -->
                         </div> <!-- /end overlay -->
                         <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_ttl/mo_ttl_04_ls.jpg')">
@@ -89,8 +94,8 @@ get_header('about-item'); ?>
 							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
-										<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
-										<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+										<p class="tag--no-square">News</p>
+										<h2><span><?php the_title( ); ?></span></h2>
 									</div> <!-- /end overlay-text -->
 								</div> <!-- /end overlay -->
 								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -135,8 +140,8 @@ get_header('about-item'); ?>
 						<div class="module module--1-1 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
-									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
-									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									<p class="tag--no-square">News</p>
+									<h2><span><?php the_title( ); ?></span></h2>
 								</div> <!-- /end overlay-text -->
 							</div> <!-- /end overlay -->
 							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -167,8 +172,9 @@ get_header('about-item'); ?>
 						<div class="module module--2-2 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
-									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
+									<p class="tag--no-square">News</p>
 									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									<p class="sans-serif"><?php echo get_the_excerpt(); ?></p>
 								</div> <!-- /end overlay-text -->
 							</div> <!-- /end overlay -->
 							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>

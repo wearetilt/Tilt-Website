@@ -90,8 +90,8 @@
 }
 
 /*
-.container--bp-fll-app {
-	background:url('../images/work/web_fll/ff_background_iphones.png') 0px 0px repeat;
+.container--bp-fll-app { 
+	background:url('../images/work/web_fll/ff_background_iphones.png') 0px 0px repeat; 
 }
 */
 
@@ -169,9 +169,25 @@
 	 	@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { @include font-size(13); }
 	 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { @include font-size(13); }
 
-
     }
 
+}
+
+.container {
+	
+	p.tag--no-square {
+    	margin:0px 0px 5px 0px;
+    	@include font-size(13);
+    	font-family:$f-merriweather;
+	    color: $c-tilt-pink;
+	    text-transform:uppercase;
+	    line-height:0.8;
+
+	 	@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { @include font-size(13); }
+	 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { @include font-size(13); }
+
+    }
+	
 }
 
 #staff-member__about {
@@ -273,7 +289,7 @@
 
     padding-right: 0;
     padding-bottom:3.5%;
-
+    
     h1{
         color: white;
         width: 100%;
@@ -296,15 +312,6 @@
 
 #fourohfour h1.light {  }
 
-.videoWrapperOld {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	height: 0;
-}
-.videoWrapperOld iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+#about_page p { margin-top:1.2em; }
+#about_page p.sans-serif { line-height:1.2; }
+

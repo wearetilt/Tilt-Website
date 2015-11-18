@@ -15,7 +15,7 @@ get_header('about-item'); ?>
 
 
 
-<div class="container container--double-side-pad area-dark container--mobile-header-spacing">
+<div id="about_page" class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">WEB & MOBILE:</strong> BUILDING BRILLIANT DIGITAL EXPERIENCES.</p>
 		<p class="sans-serif">We build websites that are bold, beautiful and designed to put users first and always. Our strategy, user experience, design and development teams work closely together to create sites that work perfectly across different devices and contexts. From sophisticated onboarding platforms, to highly visual brochure sites, our clients trust us to produce innovative, effective digital products.</p>
@@ -92,8 +92,8 @@ get_header('about-item'); ?>
 							<div class="module module--1-1 area-dark news--icon">
 								<div id="post=<?php the_ID();?>" class="overlay area-dark">
 									<div class="overlay-text">
-										<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
-										<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+										<p class="tag--no-square">News</p>
+										<h2><span><?php the_title( ); ?></span></h2>
 									</div> <!-- /end overlay-text -->
 								</div> <!-- /end overlay -->
 								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -138,8 +138,8 @@ get_header('about-item'); ?>
 						<div class="module module--1-1 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
-									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
-									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									<p class="tag--no-square">News</p>
+									<h2><span><?php the_title( ); ?></span></h2>
 								</div> <!-- /end overlay-text -->
 							</div> <!-- /end overlay -->
 							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -170,8 +170,9 @@ get_header('about-item'); ?>
 						<div class="module module--2-2 area-dark news--icon">
 							<div id="post=<?php the_ID();?>" class="overlay area-dark">
 								<div class="overlay-text">
-									<p class="tag tag--home-title"><?php echo get_the_date('d M Y'); ?></p>
+									<p class="tag--no-square">News</p>
 									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+									<p class="sans-serif"><?php echo get_the_excerpt(); ?></p>
 								</div> <!-- /end overlay-text -->
 							</div> <!-- /end overlay -->
 							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
