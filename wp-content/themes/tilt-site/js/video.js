@@ -9301,7 +9301,7 @@ var Player = (function (_Component) {
       width = this.height_ / ratioMultiplier;
     } else {
       // Or use the video's metadata, or use the video el's default of 300
-      width = this.videoWidth() || 300;
+      width = this.videoWidth() || '100%';
     }
 
     if (this.height_ !== undefined) {
@@ -9309,7 +9309,7 @@ var Player = (function (_Component) {
       height = this.height_;
     } else {
       // Otherwise calculate the height from the ratio and the width
-      height = width * ratioMultiplier;
+      height = '100%'
     }
 
     var idClass = this.id() + '-dimensions';
@@ -9317,7 +9317,7 @@ var Player = (function (_Component) {
     // Ensure the right class is still on the player for the style element
     this.addClass(idClass);
 
-    stylesheet.setTextContent(this.styleEl_, '\n      .' + idClass + ' {\n        width: ' + width + 'px;\n        height: ' + height + 'px;\n      }\n\n      .' + idClass + '.vjs-fluid {\n        padding-top: ' + ratioMultiplier * 100 + '%;\n      }\n    ');
+    stylesheet.setTextContent(this.styleEl_, '\n      .' + idClass + ' {\n        width: ' + width + ';\n        height: ' + height + ';\n    }\n\n      .' + idClass + '.vjs-fluid {\n        padding-top: ' + ratioMultiplier * 100 + '%;\n      }\n    ');
   };
 
   /**
@@ -18210,7 +18210,7 @@ if (!style) {
   style = stylesheet.createStyleElement('vjs-styles-defaults');
   var head = _globalDocument2['default'].querySelector('head');
   head.insertBefore(style, head.firstChild);
-  stylesheet.setTextContent(style, '\n    .video-js {\n      width: 300px;\n      height: 150px;\n    }\n\n    .vjs-fluid {\n      padding-top: 56.25%\n    }\n  ');
+  stylesheet.setTextContent(style, '\n    .video-js {\n      width: 100%;\n      height: 100%;\n    }\n\n    .vjs-fluid {\n      padding-top: 56.25%\n    }\n  ');
 }
 
 // Run Auto-load players

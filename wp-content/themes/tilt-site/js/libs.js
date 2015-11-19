@@ -18,8 +18,6 @@ var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Const
 var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
 var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
 
-console.log(isChrome);
-
 if ("document" in self) {
 
 // Full polyfill for browsers with no classList support

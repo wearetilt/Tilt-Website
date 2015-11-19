@@ -422,9 +422,9 @@ Create your own skin at http://designer.videojs.com
     margin-left: -.5em;
     margin-top: -.5em;
     opacity: 0.75;
-    
+
     .work-item--motion & { top:33%; }
-      
+
 }
 
 #work_page .vjs-loading-spinner { top:50%; }
@@ -623,7 +623,7 @@ body.vjs-full-window {
     overflow: hidden;
     z-index: 1000;
     left: 0;
-    top: 0;
+    top: 50%;
     bottom: 0;
     right: 0;
     width: 100%!important;
@@ -869,7 +869,7 @@ img#vjs-logobrand-image {
     right: 0;
     margin: 0px auto;
     margin-top: -54px;
-    
+
     .work-item--motion & { top:33%; }
 
     &:before{
