@@ -118,13 +118,6 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<?php the_posts_pagination( array(
-							'prev_text'          => __( '< Prev', 'twentyfifteen' ),
-							'next_text'          => __( 'Next >', 'twentyfifteen' ),
-							'screen_reader_text' => __( '' )
-						) );
-
-						?>
 						<?php
 				        break;
 				    case 2:
@@ -147,13 +140,6 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<?php the_posts_pagination( array(
-					'prev_text'          => __( '< Prev', 'twentyfifteen' ),
-					'next_text'          => __( 'Next >', 'twentyfifteen' ),
-					'screen_reader_text' => __( '' )
-				) );
-
-				?>
 					<?php
 				        break;
 				    case 3:
@@ -183,13 +169,6 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<?php the_posts_pagination( array(
-							'prev_text'          => __( '< Prev', 'twentyfifteen' ),
-							'next_text'          => __( 'Next >', 'twentyfifteen' ),
-							'screen_reader_text' => __( '' )
-						) );
-
-						?>
 					<?php
 				        break;
 					case 4;
@@ -213,7 +192,7 @@ get_header(); ?>
 										</div> <!-- /end text-section -->
 									</div>
 									<div class="module module--1-1 module--dark">
-
+										
 									</div>
 									<div class="module module--2-2 module--dark">
 
@@ -222,13 +201,6 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<?php the_posts_pagination( array(
-							'prev_text'          => __( 'Prev', 'twentyfifteen' ),
-							'next_text'          => __( 'Next >', 'twentyfifteen' ),
-							'screen_reader_text' => __( '' )
-						) );
-
-						?>
 					<?php
 						break;
 					case 5:
@@ -265,14 +237,6 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-
-						<?php the_posts_pagination( array(
-							'prev_text'          => __( 'Prev', 'twentyfifteen' ),
-							'next_text'          => __( 'Next >', 'twentyfifteen' ),
-							'screen_reader_text' => __( '' )
-						) );
-
-						?>
 
 					<?php
 						break;
@@ -322,13 +286,6 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<?php the_posts_pagination( array(
-					'prev_text'          => __( '< Prev', 'twentyfifteen' ),
-					'next_text'          => __( 'Next >', 'twentyfifteen' ),
-					'screen_reader_text' => __( '' )
-				) );
-
-				?>
 					<?php
 						break;
 					case 7:

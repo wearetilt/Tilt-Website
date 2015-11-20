@@ -167,7 +167,7 @@ get_header(); ?>
 			<div id="staff-10" class="module module--staff module--video" data-fullvideo='https://player.vimeo.com/external/140429650.hd.mp4?s=ddee9a8ed18303e67eeac8d5fa3ce9fe&profile_id=113' style="background-image: url('<?php echo get_template_directory_uri();?>/images/staff/about_staff-10.jpg'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
-						<h2 class="underlined">Felix Oppenhiemer</h2>
+						<h2 class="underlined">Felix Oppenheimer</h2>
 						<p class="sans-serif">Interactive Designer</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
