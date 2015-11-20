@@ -141,7 +141,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Miles Tincknell</h2>
-						<p class="sans-serif">Web Developer</p>
+						<p class="sans-serif">Developer</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -159,7 +159,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Danny Ledger</h2>
-						<p class="sans-serif">UX Designer</p>
+						<p class="sans-serif">UX Strategist</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -168,7 +168,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Felix Oppenheimer</h2>
-						<p class="sans-serif">Interactive Designer</p>
+						<p class="sans-serif">Senior Designer</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
@@ -176,7 +176,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Ed Hart</h2>
-						<p class="sans-serif">Web Designer</p>
+						<p class="sans-serif">Junior Designer</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
