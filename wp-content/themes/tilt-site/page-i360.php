@@ -30,7 +30,7 @@ get_header('work-item'); ?>
     <div class="container container--header">
         <div class="header-title no--shadow">
             <p class="tag tag--work-body">Web</p>
-            <h1>Brighton <span class="lowercase">i</span>360<br />
+            <h1>BA <span class="lowercase">i</span>360<br />
                 <span class="light underlined">Website</span>
             </h1>
             <h2 class="light services">Design | Dev</h2>
