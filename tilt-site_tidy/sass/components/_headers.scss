@@ -2,8 +2,6 @@ header{
     @extend %clearfix;
     background-color: grey;
     position: relative;
-    min-height: 100vh;
-    height: 100%;
 
     .container--header{
         padding-top: 0px;
@@ -15,7 +13,11 @@ header{
     &#sainsburys, &#pbs, &#alzheimers, &#bp-fll, &#icap, &#i360 {
 	    min-height:auto;
 		height:auto;
+    }
 
+    &#page_bp_fll_stories, &#page_sdnpa, &#page_reliace, &#page_barclays_values, &#page_barclays_integrity, &#page_take_the_lead, &#page_legacy, &#page_gfk{
+        min-height: 100vh;
+        height: 100%;
     }
 
     #header-play{
@@ -55,7 +57,7 @@ header{
                 transition: all 0.5s ease 0.5s;
             }
         }
-        
+
         & + .header-text{
             margin-top: 20px;
             @media handheld, screen and (min-width:0px) and (max-width:$bp-desktop) { margin-top: 20px; }
@@ -99,7 +101,7 @@ header{
     }
 
     &.work-item{
-		
+
         .container--header{
             padding-bottom:5%;
             position: absolute;
@@ -147,11 +149,11 @@ header{
         .header-title{
             width:50%;
             float: left;
-            
+
              @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
              	width:100%;
-             } 
-            
+             }
+
         }
 
     }
@@ -177,16 +179,16 @@ header{
 
 
     &.work-item--motion{
-		
+
 		 @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
-				
+
 		 }
-			
+
 		@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop ) {
 			min-height:75vh;
 			height:75%;
 		 }
-		
+
         .container--header{
             background-color:$c-grey-1b;
             position: absolute;
@@ -364,10 +366,10 @@ header{
 		transform: translate3d(0,0,0);
         transition: all 0.5s ease 0.1s;
         opacity: 1;
-        
-       
-        
-        
+
+
+
+
 	}
 
 	.news-container .header-title h1 {
@@ -445,7 +447,7 @@ header{
         padding: percentage(245/2032) 15% ;
         top: 20%;
         background-color: transparent;
-        
+
         @media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { padding: 12% 9% 12% 9%; }
 
     }
@@ -454,10 +456,10 @@ header{
 #work_page{
     height:84vh;
     min-height:84%;
-    
+
     @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
 		height:50vh;
-		min-height:50%;	
+		min-height:50%;
 	}
 
 }
