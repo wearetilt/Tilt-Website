@@ -95,7 +95,7 @@ $args = array(
 </script>
 
 <header id="home-page" class="work-item work-item--motion area-dark">
-	<div class="module--video module--16-9 module--header">
+	<div class="module--video module--header">
 		<div class="ratio">
 			<div class="container container--header strapline-container">
 				<h1>We Are <strong id="strapline-text">Tilt</strong></h1>

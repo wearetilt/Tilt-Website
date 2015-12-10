@@ -609,6 +609,22 @@ Create your own skin at http://designer.videojs.com
     width: 100%;
 }
 
+.module--16-9{
+
+    .video-js{
+        video{
+            object-fit: initial;
+            width: 100%;
+            @media handheld, screen and (min-width:0px) and (max-width:$bp-phone) {
+                object-fit: initial;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
 .video-js:-moz-full-screen {
     position: absolute;
 }

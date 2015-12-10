@@ -1,0 +1,13 @@
+.svg-icon{
+    fill: white;
+    height: 35px;
+    width: 44px;
+}
+
+#menuButton{
+    &:hover{
+        .rect-1{
+            margin-bottom: 20px;
+        }
+    }
+}
