@@ -61,6 +61,8 @@
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
 	 background-size: cover;
+	 min-height:100vh;
+	 
 
 	& img.award--right {
 		display:none;
