@@ -35,6 +35,7 @@ $args = array(
 		 'order_by' => 'date',
 		 'post_type' => 'post',
 		 'post_status' => 'publish',
+		 'category' => '-9',
 
 	 );
 
