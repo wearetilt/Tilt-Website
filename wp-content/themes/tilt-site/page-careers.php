@@ -31,7 +31,7 @@ get_header(); ?>
 
 	<div class="group-container">
 		<div class="group group--left group--jobs">
-			<a href="../creative-digital-producer" target="_blank">
+			<a href="../creative-digital-producer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<p id="motion-career--sprite">Film & Motion</p>
