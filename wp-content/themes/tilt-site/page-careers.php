@@ -31,12 +31,12 @@ get_header(); ?>
 
 	<div class="group-container">
 		<div class="group group--left group--jobs">
-			<a href="../interactive-designer" target="_blank">
+			<a href="../creative-digital-producer" target="_blank">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<p id="web-career--sprite">Web & Mobile</p>
-						<h3>Web Designer</h3>
-						<p>Interactive Designer with a track record in producing beautiful digital content.</p>
+						<p id="motion-career--sprite">Film & Motion</p>
+						<h3>Digital Producer</h3>
+						<p>An opening has come up for an experienced Creative Digital Producer.</p>
 					</div>
 				</div>
 			</a>
