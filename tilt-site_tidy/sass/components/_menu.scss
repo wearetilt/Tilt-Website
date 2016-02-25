@@ -20,21 +20,22 @@ nav{
 .header-item--menu, #workButton{
     right: 0;
     cursor: pointer;
-    margin-right:30px;
-    margin-top:25px;
+    margin-right:20px;
+    margin-top:15px;
 }
 
 #menuButton {
 	display:block;
-	padding-top:21px;
-	width:28px;
+	padding-top:41px;
+	width:0px;
+	padding-left: 48px;
 	height:0;
-	background:url('../images/menu-burger_v3.png') 0 0 no-repeat;
+	background:url('../images/menu-burger_v3.png') 10px 10px no-repeat;
 	overflow:hidden;
 	cursor:pointer;
 }
 
-a#menuButton:hover { background:url('../images/menu-burger_v3.png') 0px -24px no-repeat; }
+a#menuButton:hover { background:url('../images/menu-burger_v3.png') 10px -34px no-repeat; }
 
 #closeButton {
 	display:none;
@@ -55,17 +56,19 @@ a#closeButton:hover { background:url('../images/close_btn.png') 0px -19px no-rep
 
 #workButton{
 	display:block;
-	padding-top:19px;
-	width:21px;
+	padding-top:39px;
+	width:0px;
+	padding-left: 31px;
 	height:0;
-	background:url('../images/work-burger_v5.png') 0 0 no-repeat;
+	background:url('../images/work-burger_v5.png') 10px 10px no-repeat;
 	overflow:hidden;
 	cursor:pointer;
     right:40px;
-    margin-top:25px;
+    margin-top:15px;
+    margin-right: 30px;
 }
 
-a#workButton:hover { background:url('../images/work-burger_v5.png') 0px -19px no-repeat; }
+a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px no-repeat; }
 
 
 .menu{
