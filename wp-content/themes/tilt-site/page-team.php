@@ -240,7 +240,7 @@ get_header(); ?>
 				</div>
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text">
-						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
+						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' offset='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 					</div> <!-- /end text-section -->
 				</div>
 			</div>
@@ -289,14 +289,14 @@ get_header(); ?>
 
 	    console.log(pictureData);
 
-	    var instagramImage1 = pictureData.data[2].images.standard_resolution.url;
-	    var instagramLink1 = pictureData.data[2].link;
-	    var instagramImage2 =  pictureData.data[3].images.standard_resolution.url;
-	    var instagramLink2 = pictureData.data[3].link;
-		var instagramImage3 = pictureData.data[4].images.standard_resolution.url;
-		var instagramLink3 = pictureData.data[4].link;
-		var instagramImage4 =  pictureData.data[5].images.standard_resolution.url;
-		var instagramLink4 = pictureData.data[5].link;
+	    var instagramImage1 = pictureData.data[0].images.standard_resolution.url;
+	    var instagramLink1 = pictureData.data[0].link;
+	    var instagramImage2 =  pictureData.data[1].images.standard_resolution.url;
+	    var instagramLink2 = pictureData.data[1].link;
+		var instagramImage3 = pictureData.data[2].images.standard_resolution.url;
+		var instagramLink3 = pictureData.data[2].link;
+		var instagramImage4 =  pictureData.data[3].images.standard_resolution.url;
+		var instagramLink4 = pictureData.data[3].link;
 
 	    document.getElementById('instagram_box_1').style.backgroundImage = "url('" + instagramImage1 + "')";
 	    document.getElementById('instagram_box_2').style.backgroundImage = "url('" + instagramImage2 + "')";
