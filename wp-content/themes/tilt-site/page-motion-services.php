@@ -56,7 +56,7 @@ get_header('about-item'); ?>
 			<div class="group group--left">
 			
 				<div class="module module--2-2 area-dark">
-                    <a href="<?php get_site_url(); ?>take-the-lead">
+                    <a href="<?php echo get_bloginfo('home'); ?>/take-the-lead">
                         <div class="overlay area-dark">
                             <div class="overlay-text">
                                 <p class="tag tag--work-body">Work: Motion</p>
