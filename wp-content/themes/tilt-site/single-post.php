@@ -24,7 +24,7 @@ get_header('news'); ?>
 			<div class="news-container">
 				<div class="header-title">
 					<p class="tag tag--home-title">News</p>
-					<h1 class="underlined"><? the_title(); ?></h1>
+					<h1 class="underlined"><?php the_title(); ?></h1>
 				</div>
 			</div>
 		</div>
@@ -46,12 +46,11 @@ get_header('news'); ?>
 	</div>
 
 
-	<div id="visual_content">
 
-		<! ----- IMAGE GROUP - if the image group is populated then show it here ----- !>
+	<!-- IMAGE GROUP - if the image group is populated then show it here -->
 
-		<?php if(get_field('image_1')) { ?>
-
+	<?php if(get_field('image_1')) { ?>
+		<div id="visual_content">
 			<div class="container container--no-padding area-dark">
 				<div class="group-container">
 					<div class="group group--left">
@@ -72,31 +71,34 @@ get_header('news'); ?>
 					</div>
 				</div>
 			</div>
+		</div>
 
-
-		<?php } ?>
-
-
-
-		<! ----- SINGLE IMAGE - if the single image field is populated then show it here ----- !>
-
-		<?php if(get_field('single_image')) { ?>
-
-				<div class="container container--no-padding area-dark">
-					<img src="<?php the_field('single_image'); ?>" alt="<? the_title(); ?>" width="100%" />
-				</div>
-
-		<?php } ?>
-
-		<! ----- END SINGLE IMAGE HERE ----- !>
+	<?php } ?>
 
 
 
+	<!-- SINGLE IMAGE - if the single image field is populated then show it here -->
 
-		<! ----- VIDEO - if the video field is populated then show it here ----- !>
+	<?php if(get_field('single_image')) { ?>
+		<div id="visual_content">
+			<div class="container container--no-padding area-dark">
+				<img src="<?php the_field('single_image'); ?>" alt="<?php the_title(); ?>" width="100%" />
+			</div>
+		</div>
+	<?php } ?>
+
+	<!-- END SINGLE IMAGE HERE -->
+
+
+
+
+	<!-- VIDEO - if the video field is populated then show it here -->
+
+	<?php if(get_field('vimeo_id') || get_field('vimeo_id_two') || get_field('youtube_id')) { ?>
+		<div id="visual_content">
+	<?php } ?>
 
 		<?php if(get_field('vimeo_id')) { ?>
-
 			<div class="container--newsvideo">
 				<div class="group-container">
 					<div class="module module--16-9 module--video module--nozoom">
@@ -107,51 +109,51 @@ get_header('news'); ?>
 					</div>
 				</div>
 			</div>
-
 		<?php } ?>
 		
-		<?php if(get_field('vimeo_id_two')) { ?>
-
-			<div class="container--newsvideo">
-				<div class="group-container">
-					<div class="module module--16-9 module--video module--nozoom">
-						<div class="ratio">
-							<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id_two'); ?>?color=FF406A&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						</div>
+	<?php if(get_field('vimeo_id_two')) { ?>
+	
+		<div class="container--newsvideo">
+			<div class="group-container">
+				<div class="module module--16-9 module--video module--nozoom">
+					<div class="ratio">
+						<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id_two'); ?>?color=FF406A&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
-
-		<?php } ?>
-
-		<?php if(get_field('youtube_id')) { ?>
-
-			<div class="container--newsvideo">
-				<div class="group-container">
-					<div class="module module--16-9 module--video module--nozoom">
-						<div class="ratio">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<?php } ?>
-
-
-		<! ----- END VIDEO ----- !>
-
-	</div>
-
-
-	<! ----- BODY COPY - if the video field is populated then show it here ----- !>
-
-	<?php if(get_field('main_content_area')) { ?>
-
-		<div class="news-container news--footer">
-			<p><?php the_field('main_content_area'); ?></p>
 		</div>
 
+	<?php } ?>
+
+	<?php if(get_field('youtube_id')) { ?>
+
+		<div class="container--newsvideo">
+			<div class="group-container">
+				<div class="module module--16-9 module--video module--nozoom">
+					<div class="ratio">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<?php } ?>
+
+	<?php if(get_field('vimeo_id') || get_field('vimeo_id_two') || get_field('youtube_id')) { ?>
+		</div>
+	<?php } ?>
+
+	<!-- END VIDEO -->
+
+
+	<!-- BODY COPY - if the video field is populated then show it here -->
+
+	<?php if(get_field('main_content_area')) { ?>
+		<div id="visual_content">
+			<div class="news-container news--footer">
+				<p><?php the_field('main_content_area'); ?></p>
+			</div>
+		</div>
 	<?php } ?>
 
 </div>
