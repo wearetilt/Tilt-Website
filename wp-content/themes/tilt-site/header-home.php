@@ -46,6 +46,7 @@ jQuery(document).ready(function(){
 	<?php wp_head(); ?>
 </head>
 
+<body <?php body_class(); ?>>
 <svg style="display: none;">
 	<symbol id="burger" viewbox="0 0 27 19">
 		<path class="nav-burger" d="M0 0h27v3H0zM0 8h27v3H0zM0 16h27v3H0z"/>
@@ -99,9 +100,6 @@ jQuery(document).ready(function(){
 		<path fill="#424242" d="M160.8 135.1l-32.6 15-53.4-30-46.7 79.1h182.8zM185.4 81.2c0 11.4-9.3 20.7-20.7 20.7-11.4 0-20.7-9.3-20.7-20.7 0-11.5 9.3-20.7 20.7-20.7 11.4 0 20.7 9.3 20.7 20.7"/>
 	</symbol>
 </svg>
-
-
-<body <?php body_class(); ?>>
 	<nav>
         <div class="header-item header-item--logo">
 			<a href="<?php echo site_url(); ?>">
