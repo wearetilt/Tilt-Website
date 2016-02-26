@@ -129,12 +129,12 @@ get_header(); ?>
 				<p class="first-para">What made you want to work at Tilt?</p>
 				<p>The high quality of their work client work, the place (Brighton), the fact that they push everything to the next level, and the quality of clients Tilt works with.</p>
 
-				<p class="first-para">High point as an freelancer?</p>
+<!-- 				<p class="first-para">High point as an freelancer?</p>
 				<p>TODO, this needs to be redone now the content has changed: Confirmation of my internship just between 1 day after I sent over my portfolio, and then to work straight away on major project like Barclays, BP and nickelodeon. </p>
 
 				<p class="first-para">Any lows, be honest…</p>
 				<p>Not any crucial lows yet to be honest, I’m just missing Schnitzels and Leberkas during lunch breaks. (Dave is from Austria.)</p>
-
+ -->
 				<p class="first-para">How did it feel to be offered a job?</p>
 				<p>Overwhelming, as the team put so much trust and belief in me and it’s just real big fun for me to work in this snazzy environment every day.</p>
 

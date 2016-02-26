@@ -21,7 +21,7 @@ get_header('work-item'); ?>
 	                <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
 	            </div>
 	        </a>
-	        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+	        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="an image of an empty apple monitor">
 	        <div class="monitor-screen">
 	            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/web_i360_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
 	        </div>
@@ -73,10 +73,10 @@ get_header('work-item'); ?>
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
-            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_01_imacsmall.jpg')"></div>
-            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_02_imacsmall.jpg')"></div>
-            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_03_imacsmall.jpg')"></div>
-            <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_04_imacsmall.jpg')"></div>
+            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_04_imacsmall.jpg')"></div>
+            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_03_imacsmall.jpg')"></div>
+            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_01_imacsmall.jpg')"></div>
+            <!-- <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_02_imacsmall.jpg')"></div> -->
         </div> <!-- /end carousel-images -->
         <div class="carousel-controls carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>
