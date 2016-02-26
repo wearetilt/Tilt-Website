@@ -100,7 +100,7 @@ get_header('work-item'); ?>
                 </div>
                 <div class="module module--2-1 module--video">
                     <div class="ratio">
-                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphone_poster_frame.jpg" autoplay loop="true" muted="true">
+                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphone_poster_frame.jpg" autoplay loop muted>
                                 <source src="https://player.vimeo.com/external/141169001.sd.mp4?s=a3333fb671bc35d39e72113bf3341783&profile_id=112" type="video/mp4">
                         </video>
                     </div>

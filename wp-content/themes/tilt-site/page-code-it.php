@@ -73,7 +73,7 @@ get_header('work-item'); ?>
             <div class="group group--right">
                 <div class="module module--2-1 module--video">
                     <div class="ratio">
-                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/codeit_poster_frame.jpg" autoplay loop="true" muted="true">
+                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/codeit_poster_frame.jpg" autoplay loop muted>
                                 <source src="https://player.vimeo.com/external/141036691.sd.mp4?s=5f4da2d08ea30ece82f414aea5b2b992&profile_id=112" type="video/mp4">
                         </video>
                     </div>

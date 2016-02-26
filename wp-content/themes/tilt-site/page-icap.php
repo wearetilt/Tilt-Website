@@ -95,7 +95,7 @@ get_header('work-item'); ?>
                 </div>
                <div class="module module--2-1 module--video">
                     <div class="ratio">
-                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/ipad_poster_frame.jpg" autoplay loop="true" muted="true">
+                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/web_icap/ipad_poster_frame.jpg" autoplay loop muted>
                                 <source src="https://player.vimeo.com/external/141036693.sd.mp4?s=4b68b5569a3006368994e68721a7bcf3&profile_id=112" type="video/mp4">
                         </video>
                     </div>

@@ -78,7 +78,7 @@ get_header('work-item'); ?>
                 </div>
                <div class="module module--2-1 module--video">
                     <div class="ratio">
-                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/int_pbs/pbs_poster_frame.jpg" autoplay loop="true" muted="true">
+                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/int_pbs/pbs_poster_frame.jpg" autoplay loop muted>
                                 <source src="https://player.vimeo.com/external/141036692.sd.mp4?s=6ae8f4865db147de7dc1c1a3ca0794b9&profile_id=112" type="video/mp4">
                         </video>
                     </div>
