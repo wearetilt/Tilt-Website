@@ -38,11 +38,11 @@ get_header('work-item'); ?>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
                 <h2>The Brief</h2>
-                <p class="first-para tag--work-title">Create a new website to help attract support from investors and the local community for an ambitious new project – the i360, the world’s tallest moving observation platform.</p>
+                <p class="first-para tag--work-title">Create a new website to help attract support from investors and the local community for an ambitious new project – the British Airways i360, the world’s tallest moving observation platform.</p>
             </div>
             <div class="header-text__module">
                 <h2>The Big Idea</h2>
-                <p class="first-para tag--work-title">Build a website that unapologetically conveys the scale, ambition and sheer excitement of the i360 – and give a sneak preview of the awe-inspiring views.</p>
+                <p class="first-para tag--work-title">Build a website that unapologetically conveys the scale, ambition and sheer excitement of the British Airways i360 – and give a sneak preview of the awe-inspiring views.</p>
             </div>
         </div>
     </div>
@@ -73,10 +73,10 @@ get_header('work-item'); ?>
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
-            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_04_imacsmall.jpg')"></div>
-            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_03_imacsmall.jpg')"></div>
-            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_01_imacsmall.jpg')"></div>
-            <!-- <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/Gallery/web_i360_gallery_02_imacsmall.jpg')"></div> -->
+            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_04_imacsmall.jpg')"></div>
+            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_03_imacsmall.jpg')"></div>
+            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_01_imacsmall.jpg')"></div>
+            <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_02_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
         <div class="carousel-controls carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>

@@ -44,14 +44,14 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div id="iCap-carousel" class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_background.jpg')">
+<div id="iCap-carousel" class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/gallery/web_icap_gallery_background.jpg')">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
-            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_01_imacsmall.jpg')"></div>
-            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_02_imacsmall.jpg')"></div>
-            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_03_imacsmall.jpg')"></div>
-            <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/Gallery/web_icap_gallery_04_imacsmall.jpg')"></div>
+            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/gallery/web_icap_gallery_01_imacsmall.jpg')"></div>
+            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/gallery/web_icap_gallery_02_imacsmall.jpg')"></div>
+            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/gallery/web_icap_gallery_03_imacsmall.jpg')"></div>
+            <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_icap/gallery/web_icap_gallery_04_imacsmall.jpg')"></div>
         </div> <!-- /end carousel-images -->
         <div class="carousel-controls carousel-controls--imac">
             <div id="carousel-control-1" class="carousel-control selected"></div>
