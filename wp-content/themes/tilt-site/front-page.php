@@ -59,7 +59,7 @@ $args = array(
 
 <script type="text/javascript">
 
-	var wordArray = ['Thinkers','Crafters','Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Pain Killers', 'Gymnastics', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
+	var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
 	var maxLoops = wordArray.length;
 	var counter = 0;
 
