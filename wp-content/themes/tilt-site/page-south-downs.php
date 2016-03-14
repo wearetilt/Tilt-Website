@@ -18,12 +18,13 @@ get_header(); ?>
 
 
 <div class="proposals_wrapper">
-
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_01.png" />
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_02.png" />
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_03.png" />
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_04.png" />
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_05.png" />
+	<div class="img_wrapper">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_01.png" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_02.png" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_03.png" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_04.png" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/proposals/sdnpa_05.png" />
+	</div>
 	<div class="proposal_contact">
 		<a class="email_link" href="mailto:jon.malyon@wearetilt.com">Send an Email</a>
 		<a class="tel_link" href="tel:01273675700">+44 (0)1273675700</a>
