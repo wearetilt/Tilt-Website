@@ -1,0 +1,32 @@
+.proposals_wrapper {
+    @extend %clearfix;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
+    img {
+        float: left;
+        width: 100%;
+    }
+    .proposal_contact {
+        text-align: center;
+        background: #fff;
+        padding: 100px 0;
+        .email_link {
+            border: 1px solid pink;
+            border-radius: 5px;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .tel_link {
+
+        }
+    }
+}
+
+.parent-pageid-732 {
+    .wrapper {
+        z-index: 20;
+        margin-bottom: 0px;
+    }
+}
