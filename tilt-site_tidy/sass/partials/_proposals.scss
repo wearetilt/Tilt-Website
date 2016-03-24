@@ -1,0 +1,66 @@
+.proposals_wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
+    .img_wrapper {
+        @extend %clearfix;
+        img {
+            float: left;
+            width: 100%;
+        }
+    }
+    .proposal_contact {
+        text-align: center;
+        background: #fff;
+        padding: 0 0 100px;
+        a {
+            display: block;
+            color: #ff1170;
+            font-family: $f-seroot-bd;
+            font-size: 16px;
+            margin: 0 auto;
+            width: 250px;
+            &.email_link {
+                border: 1px solid #ff1170;
+                border-radius: 5px;
+                padding: 20px 30px;
+                text-align: center;
+                margin-bottom: 20px;
+                transition: all 0.5;
+                background: transparent;
+                position: relative;
+                z-index: 2;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    transition: all 0.3s;
+                	height: 0;
+                	width: 100%;
+                	top: 0;
+                	left: 0;
+                    background: transparent;
+                    padding-top: 20px;
+                }
+                &:hover {
+                    color: #fff;
+                    &:after {
+                        height: 100%;
+                        content: 'Send an email';
+                        color: #fff;
+                        background: #ff1170;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.parent-pageid-732 {
+    .wrapper {
+        z-index: 20;
+        margin-bottom: 0px;
+    }
+}
