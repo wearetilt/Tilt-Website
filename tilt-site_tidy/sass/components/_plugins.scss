@@ -9,6 +9,7 @@
 .rotatingtweet .rtw_wide p.rtw_main {
 	@include font-size(12);
 	line-height:1.4;
+	color: #ffffff;
 	@media handheld, screen and (min-width: $bp-desktop-large){
 		@include font-size(16);
 	}
