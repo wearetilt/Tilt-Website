@@ -38,6 +38,7 @@
         <a id="closeButton" class="header-item header-item--menu">Close</a>
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
+            	<li class="menu__item"><a href="<?php echo site_url(); ?>">Home</a></li>
 				<li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/about">About</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/team">Team</a></li>

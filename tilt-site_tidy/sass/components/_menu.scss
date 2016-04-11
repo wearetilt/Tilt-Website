@@ -141,7 +141,7 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px n
         }
     }
 
-    @media handheld, screen and (min-width: $bp-desktop-large){
+    @media handheld, screen and (min-width: $bp-desktop-large-nav){
         .menu__item{
             display: inline-block;
 
