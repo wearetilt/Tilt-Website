@@ -38,17 +38,16 @@ get_header(); ?>
 
     <div id="services--list" class="container container--header container--work-list">
         <span id="work_all" class="work-item-title work-item--selected">All</span>
-        <span id="work_film"class="work-item-title">Film</span>
-        <span id="work_interactive"class="work-item-title">Interactive</span>
-        <span id="work_motion"class="work-item-title">Motion</span>
-        <span id="work_web"class="work-item-title">Web</span>
+        <span id="work_film" class="work-item-title">Film</span>
+        <span id="work_interactive" class="work-item-title">Interactive</span>
+        <span id="work_motion" class="work-item-title">Motion</span>
+        <span id="work_web" class="work-item-title">Web</span>
     </div>
 </header>
 
-<div id="scroll_point"></div>
+<div id="scroll_point"></divx§>
 
 <div id="film" class="work-container container container--no-padding">
-
 	<section>
 		<div class="group-container">
 			<div class="group group--right">
