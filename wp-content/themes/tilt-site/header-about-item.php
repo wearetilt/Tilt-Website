@@ -24,9 +24,35 @@
 	</script>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<?php wp_head(); ?>
+
+	<?php
+		
+		$pageID = get_the_ID();
+		
+		if($pageID == 475) { ?>
+			
+			<meta name="description" content="Strategically designed digital products built to meet business and user needs across web & mobile." /><?php
+			
+		} elseif($pageID == 481) { ?>
+			
+			<meta name="description" content="Beautiful short films that tell stories about people, places and ideas." /><?php
+			
+		} elseif($pageID == 479) { ?>
+			
+			<meta name="description" content="Vivid 2D and 3D rendered pieces that explain ideas in eye-catching ways." /><?php
+			
+		} elseif($pageID == 477) { ?>
+			
+			<meta name="description" content="Immersive digital experiences, games and learning content designed to surprise and delight." /><?php
+			
+		}
+		
+	?>
+
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>
+
 	<nav>
         <div id="tilt--logo" class="header-item header-item--logo">
 			<a href="<?php echo site_url(); ?>">
