@@ -20,7 +20,7 @@ get_header(); ?>
 
 
 <div id="video-overlay" class="fullpage-overlay">
-    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
+    <video id="overlay-video" width="100%" height="100%" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
     </video>
     <div id="video-overlay-close"></div>
@@ -45,7 +45,7 @@ get_header(); ?>
     </div>
 </header>
 
-<div id="scroll_point"></divx§>
+<div id="scroll_point"></div>
 
 <div id="film" class="work-container container container--no-padding">
 	<section>
