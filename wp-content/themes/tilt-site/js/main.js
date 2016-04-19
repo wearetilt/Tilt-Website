@@ -38,7 +38,6 @@ var doc = document.documentElement;
 */
 Modernizr.on('touchevents', function(result){
 	if(result === true){
-		console.log('hello');
 		jQuery('.module a').on("click", function (e) {
 			'use strict'; //satisfy code inspectors
 			var link = jQuery(this); //preselect the link
@@ -361,6 +360,7 @@ if(document.getElementById('header-video-player')){ // if has header video
     var myPlayer =  videojs('header-video-player'); // create video player
 
 		if(headerPlayBtn){ // if video player
+			console.log(myPlayer.bufferedPercent());
 			if((myPlayer.bufferedPercent()> 0.1)){
 				myPlayer.removeClass('vjs-waiting');
 				headerPlayBtn.classList.add('video-ready');
@@ -479,7 +479,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 				if(document.getElementById('header-play')){
 					var videoPlayButton = document.getElementById('header-play');
 					videoPlayButton.addEventListener('click', function(){
-						// console.log("I am doing this, i shouldn't be");
+						// //console.log("I am doing this, i shouldn't be");
 						videoOverlay.play();
 						videoOverlay.requestFullscreen();
 					});
@@ -504,7 +504,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 
 			Modernizr.on('videoautoplay', function(result){
 				if(result === true){
-					// console.log("I am doing this, i shouldn't be");
+					// //console.log("I am doing this, i shouldn't be");
 					myPlayer.play();
 				}
 			});
@@ -530,7 +530,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 	                if(videoOverlay.currentSrc() === "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113"){
 	                    videoOverlay.src(fullVideoSrc);
 	                }
-					// console.log("I am doing this, i shouldn't be");
+					// //console.log("I am doing this, i shouldn't be");
 	                videoOverlay.play();
 	                myPlayer.pause();
 	                document.getElementById('video-overlay').style.display = 'block';
