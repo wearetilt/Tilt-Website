@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(document.getElementById('video-overlay')) {
 
 			Modernizr.on('videoautoplay', function(result){
-				console.log('Video Autoplay result: ' + result)
+				// console.log('Video Autoplay result: ' + result)
 
 				if(!result) {
 
@@ -360,7 +360,7 @@ if(document.getElementById('header-video-player')){ // if has header video
     var myPlayer =  videojs('header-video-player'); // create video player
 
 		if(headerPlayBtn){ // if video player
-			console.log(myPlayer.bufferedPercent());
+			// console.log(myPlayer.bufferedPercent());
 			if((myPlayer.bufferedPercent()> 0.1)){
 				myPlayer.removeClass('vjs-waiting');
 				headerPlayBtn.classList.add('video-ready');
@@ -369,7 +369,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 				myPlayer.addClass('vjs-waiting');
 			}
 			myPlayer.on("progress", function() {
-				console.log(myPlayer.bufferedPercent());
+				// console.log(myPlayer.bufferedPercent());
 				if((myPlayer.bufferedPercent()> 0.1)){
 					myPlayer.removeClass('vjs-waiting');
 					headerPlayBtn.classList.add('video-ready');
@@ -841,7 +841,7 @@ if(document.getElementById('staff-member')){
 				document.getElementById('blahblahblah').innerHTML = '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
 
 	            setTimeout(function(){
-					console.log('Hello');
+					// console.log('Hello');
 	                staffBox.style.transition = "all 0.5s ease";
 
 
@@ -926,7 +926,7 @@ jQuery(document).ready(function(){
 
             [].map.call(document.querySelectorAll('.module'), function(el2){
                 el2.classList.remove('module--visible');
-                console.log(el2);
+                // console.log(el2);
             });
 
 			[].map.call(document.querySelectorAll('.module'), function(el4){
@@ -977,7 +977,7 @@ if(document.getElementById('work_all')){
 
                     [].map.call(document.querySelectorAll('.module'), function(el2){
                         el2.classList.remove('module--visible');
-                        console.log(el2);
+                        // console.log(el2);
                     });
                     [].map.call(document.querySelectorAll('.module'), function(el4){
                         setTimeout(function(){
