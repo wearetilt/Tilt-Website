@@ -16,7 +16,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
 	<script>
-		location.replace('http://test.tilt.codes/home-browser-upgrade');
+		location.replace('http://wearetilt.com/home-browser-upgrade');
 	</script>
 	<![endif]-->
 	<script type="text/javascript">
