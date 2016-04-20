@@ -125,6 +125,7 @@ get_header(); ?>
 </section>
 
 
+<!--
 <div id="our--services" class="container container--double-side-pad container--our-services">
 	
 	<div class="text-container center">
@@ -146,7 +147,7 @@ get_header(); ?>
 				</div>
 			</a>
 		
-		</div> <!-- /end group -->
+		</div> 
 		
 		<div class="group group--right">
 			
@@ -179,7 +180,7 @@ get_header(); ?>
 				</div>
 			</a>
 		
-		</div> <!-- /end group -->
+		</div> 
 		
 		<div class="group group--right">
 			
@@ -199,6 +200,25 @@ get_header(); ?>
 	
 	
 </div>
+-->
+
+<div class="container container--double-side-pad area-dark">
+	<div class="text-container center">
+		<h2 class="about">MEET OUR TEAM</h2>
+		<p>Tilt is made up of specialists across web & mobile, interactive, motion and film. Our open studio is built for collaboration, making it easy to let ideas collide across departments; like shaking a snow globe. Meet the creative sparks that fire up the Tilt Studio.</p>
+		<a class="cube--link" href="<?php echo site_url(); ?>/team">
+			<div class="cube about--cube">
+				<div class="cube--front">
+					<p class="sans-serif button">MEET THE TEAM</p>
+				</div>
+				<div class="cube--top">
+					<p class="sans-serif button">MEET THE TEAM</p>
+				</div>
+			</div>
+		</a>
+	</div>
+</div> <!-- /end container -->
+
 
 <section>
 	<div class="group-container">
@@ -217,22 +237,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<div class="container container--double-side-pad area-dark">
-	<div class="text-container center">
-		<h2 class="about">MEET OUR TEAM</h2>
-		<p>We’re a properly collaborative team, and we love it that way. Meet the creative sparks that fire up the Tilt Studio.</p>
-		<a class="cube--link" href="<?php echo site_url(); ?>/team">
-			<div class="cube about--cube">
-				<div class="cube--front">
-					<p class="sans-serif button">MEET THE TEAM</p>
-				</div>
-				<div class="cube--top">
-					<p class="sans-serif button">MEET THE TEAM</p>
-				</div>
-			</div>
-		</a>
-	</div>
-</div> <!-- /end container -->
+
 	
 
 </div>

@@ -494,7 +494,7 @@ p {
 	@include font-size(20);
 }
 
-a{
+a {
     font-family: $f-seroot-lt;
     text-transform: uppercase;
     text-decoration: none;
@@ -669,3 +669,4 @@ blockquote{
 }
 
 .work-container p.sans-serif { margin:10px 0px 0px 0px; }
+.work-container .cube p.sans-serif { margin:0px 0px 0px 0px; }
