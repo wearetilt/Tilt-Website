@@ -16,13 +16,12 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
 	<script>
-		location.replace('http://test.tilt.codes/home-browser-upgrade');
+		location.replace('http://wearetilt.com/home-browser-upgrade');
 	</script>
 	<![endif]-->
 	<script type="text/javascript">
 		window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
 	</script>
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<?php wp_head(); ?>
 
 </head>
@@ -31,7 +30,7 @@
 
 	<nav>
         <div id="tilt--logo" class="header-item header-item--logo">
-			<a href="<?php echo site_url(); ?>">
+			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/tilt-logo.png" alt="">
 			</a>
         </div>
@@ -43,7 +42,7 @@
 
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
-            	<li class="menu__item"><a href="<?php echo site_url(); ?>">Home</a></li>
+            	<li class="menu__item"><a aria-label="Homepage link" href="<?php echo site_url(); ?>">Home</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/about">About</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/team">Team</a></li>
@@ -53,10 +52,10 @@
             </ul>
 
             <div class="nav-icons">
-				<div id="nav-icon-1" class="nav-icon"><a href="https://www.facebook.com/wearetilt" target="_blank" ></a></div>
-				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" target="_blank" ></a></div>
-				<div id="nav-icon-3" class="nav-icon"><a href="https://vimeo.com/wearetilt/" target="_blank" ></a></div>
-				<div id="nav-icon-4" class="nav-icon"><a href="https://instagram.com/we_are_tilt" target="_blank" ></a></div>
+				<div id="nav-icon-1" class="nav-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ></a></div>
+				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ></a></div>
+				<div id="nav-icon-3" class="nav-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ></a></div>
+				<div id="nav-icon-4" class="nav-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ></a></div>
 				<div id="nav-icon-5" class="nav-icon"><a href="http://bakery.wearetilt.com/" target="_blank" ></a></div>
 				<div class="telephone">
 					<span>Tel: + 44(0)1273 675 700</span>

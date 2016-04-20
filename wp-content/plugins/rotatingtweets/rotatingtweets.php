@@ -2262,7 +2262,7 @@ function rotatingtweets_enqueue_admin_scripts_widget_page($hook) {
 	rotatingtweets_enqueue_admin_scripts($hook);
 }
 function rotatingtweets_enqueue_admin_scripts($hook) {
-	wp_enqueue_script( 'jquery' );
+	// wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'rotating_tweet_admin', plugins_url('js/rotating_tweet_admin.js', __FILE__),array('jquery'),FALSE,FALSE );
 }
 add_action( 'admin_enqueue_scripts', 'rotatingtweets_enqueue_admin_scripts_widget_page' );

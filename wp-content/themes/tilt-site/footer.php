@@ -29,12 +29,12 @@
 
 	<div id="signoff" class="group-container group-container--no-bg">
 		<div class="footer-icons">
-			<div id="footer-icon-1" class="footer-icon"><a href="https://www.facebook.com/wearetilt" target="_blank" ></a></div>
-			<div id="footer-icon-2" class="footer-icon"><a href="https://twitter.com/wearetilt" target="_blank" ></a></div>
-			<div id="footer-icon-3" class="footer-icon"><a href="https://vimeo.com/wearetilt/" target="_blank" ></a></div>
-			<div id="footer-icon-4" class="footer-icon"><a href="https://instagram.com/we_are_tilt" target="_blank" ></a></div>
-			<div id="footer-icon-5" class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" target="_blank" ></a></div>
-			<div id="footer-icon-6" class="footer-icon"><a href="http://bakery.wearetilt.com/" target="_blank" ></a></div>
+			<div id="footer-icon-1" class="footer-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ></a></div>
+			<div id="footer-icon-2" class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ></a></div>
+			<div id="footer-icon-3" class="footer-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ></a></div>
+			<div id="footer-icon-4" class="footer-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ></a></div>
+			<div id="footer-icon-5" class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ></a></div>
+			<div id="footer-icon-6" class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ></a></div>
 			<div class="telephone">
 				<span>Tel: + 44(0)1273 675 700</span>
 			</div>
@@ -44,6 +44,7 @@
 	</div>
 
 </footer>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/video.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/css/video-js.min.css"></script>
