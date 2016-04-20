@@ -52,10 +52,10 @@
             </ul>
 
             <div class="nav-icons">
-				<div id="nav-icon-1" class="nav-icon"><a href="https://www.facebook.com/wearetilt" target="_blank" ></a></div>
-				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" target="_blank" ></a></div>
-				<div id="nav-icon-3" class="nav-icon"><a href="https://vimeo.com/wearetilt/" target="_blank" ></a></div>
-				<div id="nav-icon-4" class="nav-icon"><a href="https://instagram.com/we_are_tilt" target="_blank" ></a></div>
+				<div id="nav-icon-1" class="nav-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ></a></div>
+				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ></a></div>
+				<div id="nav-icon-3" class="nav-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ></a></div>
+				<div id="nav-icon-4" class="nav-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ></a></div>
 				<div id="nav-icon-5" class="nav-icon"><a href="http://bakery.wearetilt.com/" target="_blank" ></a></div>
 				<div class="telephone">
 					<span>Tel: + 44(0)1273 675 700</span>
