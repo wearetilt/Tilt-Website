@@ -54,6 +54,32 @@
 
 }
 
+
+#nickjr{
+    background: #f09510; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f09510 0%, #e56001 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f09510), color-stop(100%,#e56001)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f09510 0%,#e56001 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f09510 0%,#e56001 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f09510 0%,#e56001 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f09510 0%,#e56001 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09510', endColorstr='#e56001',GradientType=0 ); /* IE6-9 */
+
+    & .header-title img {
+		display:none;
+		@media handheld, screen and (min-width: $bp-desktop){
+			display:block;
+		}
+	}
+
+	& .header-title img.no--float {
+    	float:none;
+    }
+
+
+}
+
+
 #codeit {
 	background:url('../images/work/int_codeit/header_bg.jpg') no-repeat top center fixed;
 	background-color:none;

@@ -444,6 +444,35 @@
 }
 
 
+.logo--icon {
+	&:after{
+        content:"";
+        position: absolute;
+        opacity: 0.6;
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+/*
+.logo--bp {
+	&:after{
+        height:75px;
+        width:56px;
+        background-image: url('../images/work/logo_bp.png');
+    }
+}
+
+.logo--sdnp {
+	&:after{
+        height:68px;
+        width:130px;
+        background-image: url('../images/work/logo_sdnp.png');
+    }
+}
+*/
+
+
 .module--video{
     overflow: hidden;
     @extend %clearfix;

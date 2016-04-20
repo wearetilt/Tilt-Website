@@ -25,7 +25,7 @@ get_header('about-item'); ?>
 <?php
 
 	 $args = array(
-		 'posts_per_page' => 3,
+		 'posts_per_page' => 4,
 		 'order_by' => 'date',
 		 'post_type' => 'post',
 		 'post_status' => 'publish',
@@ -51,64 +51,108 @@ get_header('about-item'); ?>
 		
 		<div class="group-container">
 		
+			<div class="group group--right">
+
+				<div class="module module--2-1">
+    				<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')"></div>
+				</div>
+                              
+			</div>
+			
+			<div class="group group--left">
+				
+				<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
+                    <div class="module__text">
+                        <h2 class="underlined">NUGGET O' INFO</h2>
+                        <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						
+                    </div>
+
+                </div>
+				
+			</div> <!-- /end group -->
+			
+		</div> <!-- /end group-container -->
+		
+		
+		
+		<div class="group-container">
+		
+			<div class="group group--right">
+				
+				<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
+                    <div class="module__text">
+                        <h2 class="underlined">NUGGET O' INFO</h2>
+                        <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						
+                    </div>
+
+                </div>
+				                               
+			</div>
+			
+			<div class="group group--left">
+				                    
+            	<div class="module module--2-1">
+					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')"></div>
+				</div>	
+                    	
+			</div> <!-- /end group -->
+			
+		</div> <!-- /end group-container -->
+		
+		
+		
+		<div class="group-container">
+		
+			<div class="container area-dark no-padding">
+			    <section class="text-section">
+			        <h2>FILM NEWS</h2>
+			    </section>
+			</div>
+
+		
+		</div>
+		
+		
+		
+		<div class="group-container">
+		
 			<div class="group group--left">
 			
-				<div class="module module--2-2">
-	                <a href="<?php get_site_url(); ?>bp-fll-stories/">
-						<div class="overlay area-dark">
-							<div class="overlay-text">
-								<p class="tag tag--work-body">Case Study: Film</p>
-								<h2>BP<br />
-									<span class="underlined light">Leaders: Stories</span>
-								</h2>
-								<p class="sans-serif">Engage your audience on an emotional level.</p>
-							</div> <!-- /end overlay-text -->
-						</div> <!-- /end overlay -->
-						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')">
-						</div>
-	                </a>
-				</div>
+				<?php
 				
-				
-				<div id="twitter__module" class="module module--1-1 module--dark">
-					<div class="module__text home--tweet">
-						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' offset='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
-	
-					</div> <!-- /end text-section -->
-				</div>
-				
-				
-				<?php 
-				foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-					
-					if (has_post_thumbnail( $post->ID ) ):
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					endif; 
-					
-					
-					if($i == 0) { ?>
-					
-						<a href="<?php echo the_permalink(); ?>">
-							<div class="module module--1-1 area-dark news--icon">
-								<div id="post=<?php the_ID();?>" class="overlay area-dark">
-									<div class="overlay-text">
-										<p class="tag--no-square">News</p>
-										<h2><span><?php the_title( ); ?></span></h2>
-									</div> <!-- /end overlay-text -->
-								</div> <!-- /end overlay -->
-								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-							</div>
-						</a><?php
+					foreach ( $filmposts as $post ) : setup_postdata( $post ); 
+						
+						if (has_post_thumbnail( $post->ID ) ):
+							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+						endif; 
 						
 						
+						if($i < 2) { ?>
+						
+							<a href="<?php echo the_permalink(); ?>">
+								<div class="module module--1-1 area-dark news--icon">
+									<div id="post=<?php the_ID();?>" class="overlay area-dark">
+										<div class="overlay-text">
+											<p class="tag--no-square">News</p>
+											<h2><span><?php the_title( ); ?></span></h2>
+										</div> <!-- /end overlay-text -->
+									</div> <!-- /end overlay -->
+									<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+								</div>
+							</a><?php
+							
+							
+						
+						}
+						
+						$i++;
+						
+						endforeach; 
+						wp_reset_postdata();
 					
-					};
-					
-					$i++;
-					
-					endforeach; 
-					wp_reset_postdata();?>
-				
+					?>	
 				
 			</div>
 		
@@ -116,78 +160,42 @@ get_header('about-item'); ?>
 	
 			<div class="group group--right">
 				
-				<div id="twitter__module" class="module module--1-1 module--dark news--icon">
-					<div class="module__text home--tweet">
-						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
-		
-					</div> <!-- /end text-section -->
-				</div>
+				
 				
 				
 				<?php 
-			foreach ( $filmposts as $post ) : setup_postdata( $post ); 
+					foreach ( $filmposts as $post ) : setup_postdata( $post ); 
 				
-				if (has_post_thumbnail( $post->ID ) ):
-					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-				endif; 
-				
-				
-				if($j == 1) { ?>
-				
-					<a href="<?php echo the_permalink(); ?>">
-						<div class="module module--1-1 area-dark news--icon">
-							<div id="post=<?php the_ID();?>" class="overlay area-dark">
-								<div class="overlay-text">
-									<p class="tag--no-square">News</p>
-									<h2><span><?php the_title( ); ?></span></h2>
-								</div> <!-- /end overlay-text -->
-							</div> <!-- /end overlay -->
-							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-						</div>
-					</a><?php
-					
-					
-				
-				};
-				
-				$j++;
-				
-				endforeach; 
-				wp_reset_postdata();?>
-				
-				
-				<?php 
-			foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-				
-				if (has_post_thumbnail( $post->ID ) ):
-					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-				endif; 
+						if (has_post_thumbnail( $post->ID ) ):
+							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+						endif; 
+						
+						
+						if($j > 1 && $j < 5) { ?>
+						
+							<a href="<?php echo the_permalink(); ?>">
+								<div class="module module--1-1 area-dark news--icon">
+									<div id="post=<?php the_ID();?>" class="overlay area-dark">
+										<div class="overlay-text">
+											<p class="tag--no-square">News</p>
+											<h2><span><?php the_title( ); ?></span></h2>
+										</div> <!-- /end overlay-text -->
+									</div> <!-- /end overlay -->
+									<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+								</div>
+							</a><?php
+							
+							
+						
+						};
+						
+						$j++;
+						
+						endforeach; 
+						wp_reset_postdata();?>
 				
 				
-				if($k == 2) { ?>
-				
-					<a href="<?php echo the_permalink(); ?>">
-						<div class="module module--2-2 area-dark news--icon">
-							<div id="post=<?php the_ID();?>" class="overlay area-dark">
-								<div class="overlay-text">
-									<p class="tag--no-square">News</p>
-									<h2><span class="underlined"><?php the_title( ); ?></span></h2>
-									<p class="sans-serif"><?php echo get_the_excerpt(); ?></p>
-								</div> <!-- /end overlay-text -->
-							</div> <!-- /end overlay -->
-							<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-						</div>
-					</a><?php
-					
-					
-				
-				};
-				
-				$k++;
-				
-				endforeach; 
-				wp_reset_postdata();?>
-				
+								
 			
 			</div>
 		
