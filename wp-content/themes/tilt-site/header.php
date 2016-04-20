@@ -84,7 +84,7 @@
 </svg>
 	<nav>
         <div id="tilt--logo" class="header-item header-item--logo">
-			<a href="<?php echo site_url(); ?>">
+			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
 				<svg class="svg-icon logout"><use xlink:href="#tilt"></use></svg>
 			</a>
         </div>
@@ -99,7 +99,7 @@
 
         <div id="pageMenu" class="menu">
             <ul class="menu__items">
-            	<li class="menu__item"><a href="<?php echo site_url(); ?>">Home</a></li>
+            	<li class="menu__item"><a aria-label="Homepage link" href="<?php echo site_url(); ?>">Home</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/about">About</a></li>
                 <li class="menu__item"><a href="<?php echo site_url(); ?>/team">Team</a></li>
