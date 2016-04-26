@@ -32,7 +32,7 @@ get_header('work-item'); ?>
     <div class="container container--header">
         <div class="header-title">
             <p class="tag tag--work-body">Motion</p>
-            <h1>GFK<br />
+            <h1 class="title--no-caps">GfK<br />
                 <span class="light underlined">Brand Promo</span>
             </h1>
             <h2 class="light services">Strategy | Motion | 3D</h2>
@@ -100,7 +100,7 @@ get_header('work-item'); ?>
             <div class="group group--left">
                 <div class="module module--2-1 module--text-pad module--dark">
                     <div class="module__text">
-                        <p>The end result has become GFK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in.</p>
+                        <p>The end result has become GfK’s most-viewed marketing material. Since its launch we have been asked to localise the promotional video for use in the multitude of countries that GfK operates in.</p>
                     </div>
                 </div>
             </div>

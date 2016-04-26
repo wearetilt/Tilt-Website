@@ -57,44 +57,6 @@ $args = array(
 
 ?>
 
-<script type="text/javascript">
-
-	var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
-	var maxLoops = wordArray.length;
-	var counter = 0;
-
-
-	jQuery(document).ready(function(){
-
-	(function next() {
-
-	    if (counter < maxLoops) {
-
-		    setTimeout(function() {
-
-	        	jQuery('#strapline-text').fadeOut(500, function(){
-
-		        	document.getElementById('strapline-text').innerHTML = wordArray[counter];
-					jQuery('#strapline-text').fadeIn(500);
-					next();
-					counter++;
-					if(counter == maxLoops) { counter = 0; }
-
-	        	});
-
-			}, 2000);
-
-	    } else {
-		    counter = 0;
-		    next();
-	    }
-
-	})();
-
-	});
-
-</script>
-
 <header id="home-page" class="work-item work-item--motion area-dark">
 	<div class="module--video module--header">
 		<div class="ratio">
@@ -145,7 +107,7 @@ $args = array(
 
 				<div class="module module--2-1">
 
-					<a href="<?php get_site_url(); ?>code-it">
+					<a href="<?php get_site_url(); ?>/work/code-it">
 
 						<div class="overlay area-dark">
 							<div class="overlay-text">
@@ -227,7 +189,7 @@ $args = array(
 
 			<div class="group group--left">
 				<div class="module module--2-2">
-					<a href="<?php get_site_url(); ?>bp-fll-stories/">
+					<a href="<?php get_site_url(); ?>/work/bp-fll-stories/">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag tag--home-title">Case Study: Film</p>
@@ -250,7 +212,7 @@ $args = array(
 
 				<div class="module module--2-2">
 
-					 <a href="<?php get_site_url(); ?>discover-bp">
+					 <a href="<?php get_site_url(); ?>/work/discover-bp">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag tag--home-title">Case Study: Web</p>
@@ -269,7 +231,7 @@ $args = array(
 
 				<div class="module module--2-1 area-dark">
 
-					<a href="<?php get_site_url(); ?>gfk">
+					<a href="<?php get_site_url(); ?>/work/gfk">
 						<div class="overlay area-dark">
 							<div class="overlay-text">
 								<p class="tag tag--home-title">Work: Motion</p>
@@ -335,3 +297,41 @@ $args = array(
 </div> <!-- Close Wrapper -->
 
 <?php get_footer(); ?>
+
+<script type="text/javascript">
+
+	var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
+	var maxLoops = wordArray.length;
+	var counter = 0;
+
+
+	jQuery(document).ready(function(){
+
+	(function next() {
+
+	    if (counter < maxLoops) {
+
+		    setTimeout(function() {
+
+	        	jQuery('#strapline-text').fadeOut(500, function(){
+
+		        	document.getElementById('strapline-text').innerHTML = wordArray[counter];
+					jQuery('#strapline-text').fadeIn(500);
+					next();
+					counter++;
+					if(counter == maxLoops) { counter = 0; }
+
+	        	});
+
+			}, 2000);
+
+	    } else {
+		    counter = 0;
+		    next();
+	    }
+
+	})();
+
+	});
+
+</script>
