@@ -55,7 +55,7 @@ get_header(); ?>
 					?>
 						<div id="twitter__module" class="module module--1-1 module--dark-mobile-news">
 							<div class="module__text">
-								<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+								<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 
 							</div> <!-- /end text-section -->
 						</div>
@@ -71,7 +71,7 @@ get_header(); ?>
 						<div class="group group--right">
 							<div  id="twitter__module_two" class="module module--1-1">
 								<div class="module__text">
-									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+									<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 
 								</div> <!-- /end text-section -->
 							</div>
@@ -127,7 +127,7 @@ get_header(); ?>
 						<div class="group group--right">
 							<div  id="twitter__module_three" class="module module--1-1">
 								<div class="module__text">
-									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+									<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1 module--dark">
@@ -147,7 +147,7 @@ get_header(); ?>
 					?>
 					<div class="module module--1-1">
 						<div class="module__text">
-							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+							<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -156,7 +156,7 @@ get_header(); ?>
 								<div class="group group--right">
 									<div class="module module--1-1">
 										<div class="module__text">
-											<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+											<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 										</div> <!-- /end text-section -->
 									</div>
 									<div class="module module--1-1 module--dark">
@@ -179,7 +179,7 @@ get_header(); ?>
 							</div>
 					<div class="module module--1-1">
 						<div class="module__text">
-							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+							<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -188,11 +188,11 @@ get_header(); ?>
 								<div class="group group--right">
 									<div class="module module--1-1">
 										<div class="module__text">
-											<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+											<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 										</div> <!-- /end text-section -->
 									</div>
 									<div class="module module--1-1 module--dark">
-										
+
 									</div>
 									<div class="module module--2-2 module--dark">
 
@@ -216,7 +216,7 @@ get_header(); ?>
 							</div>
 					<div class="module module--1-1">
 						<div class="module__text">
-							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+							<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -225,7 +225,7 @@ get_header(); ?>
 								<div class="group group--right">
 									<div class="module module--1-1">
 										<div class="module__text">
-											<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+											<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 										</div> <!-- /end text-section -->
 									</div>
 									<div class="module module--1-1 module--dark">
@@ -246,7 +246,7 @@ get_header(); ?>
 				<div class="group group--right">
 					<div class="module module--1-1">
 						<div class="module__text">
-							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+							<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -264,7 +264,7 @@ get_header(); ?>
 					</div>
 			<div class="module module--1-1">
 				<div class="module__text">
-					<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+					<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 				</div> <!-- /end text-section -->
 			</div>
 			<div class="module module--1-1 module--dark">
@@ -273,7 +273,7 @@ get_header(); ?>
 						<div class="group group--right">
 							<div class="module module--1-1">
 								<div class="module__text">
-									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+									<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1 module--dark">
@@ -292,7 +292,7 @@ get_header(); ?>
 					?>
 					<div class="module module--1-1">
 						<div class="module__text">
-							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+							<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -301,7 +301,7 @@ get_header(); ?>
 				<div class="group group--right">
 					<div class="module module--1-1">
 						<div class="module__text">
-							<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+							<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 						</div> <!-- /end text-section -->
 					</div>
 					<div class="module module--1-1 module--dark">
@@ -319,7 +319,7 @@ get_header(); ?>
 					</div>
 			<div class="module module--1-1">
 				<div class="module__text">
-					<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2'  offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+					<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 				</div> <!-- /end text-section -->
 			</div>
 			<div class="module module--1-1 module--dark">
@@ -328,7 +328,7 @@ get_header(); ?>
 						<div class="group group--right">
 							<div class="module module--1-1">
 								<div class="module__text">
-									<?php echo do_shortcode( "[rotatingtweets include_rts='1' official_format='2' offset='" . $tweet . "' search='from:wearetilt' tweet_count='1' show_follow='1' timeout='3000' rotation_type='fade']" ) ?>
+									<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
 								</div> <!-- /end text-section -->
 							</div>
 							<div class="module module--1-1 module--dark">
