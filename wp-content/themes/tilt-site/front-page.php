@@ -89,10 +89,10 @@ $args = array(
 		<a class="cube--link" href="<?php echo site_url(); ?>/about/">
 			<div class="cube">
 				<div class="cube--front">
-					<p class="sans-serif"><span>More</span> about us</p>
+					<p class="sans-serif">More about us</p>
 				</div>
 				<div class="cube--top">
-					<p class="sans-serif"><span>More</span> about us</p>
+					<p class="sans-serif">More about us</p>
 				</div>
 			</div>
 		</a>
