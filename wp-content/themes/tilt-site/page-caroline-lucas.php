@@ -13,8 +13,8 @@
 
 get_header('work-item'); ?>
 <div id="video-overlay" class="fullpage-overlay">
-    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/film_marilyn/poster.jpg" width="100%" height="auto">
-        <source src="https://player.vimeo.com/external/160863497.hd.mp4?s=cb3737c8c6516c26aa5dcf9b43f442336edee26c&profile_id=174" type="video/mp4">
+    <video id="overlay-video" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/film_trident/poster.jpg" width="100%" height="auto">
+        <source src="https://player.vimeo.com/external/157439321.hd.mp4?s=9e78630cd7076f4ed00fb4eb31f912f5ad72bdb9&profile_id=113" type="video/mp4">
     </video>
     <div id="video-overlay-close"></div>
 </div>
@@ -24,18 +24,18 @@ get_header('work-item'); ?>
 
         </div>
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/film_marilyn/poster.jpg" width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/160863497.hd.mp4?s=cb3737c8c6516c26aa5dcf9b43f442336edee26c&profile_id=174" type="video/mp4">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/film_trident/poster.jpg" width="100%" height="100%" >
+                    <source id="header-video" src="https://player.vimeo.com/external/157439321.hd.mp4?s=9e78630cd7076f4ed00fb4eb31f912f5ad72bdb9&profile_id=113" type="video/mp4">
             </video>
         </div>
     </div>
     <div class="container container--header">
         <div class="header-title">
             <p class="tag tag--work-body">Film</p>
-            <h1>Marilyn Stafford<br />
-                <span class="light underlined">Documentary</span>
+            <h1>Caroline Lucus<br />
+                <span class="light underlined">Trident Demonstration</span>
             </h1>
-            <h2 class="light services">Strategy | Film</h2>
+            <h2 class="light services">Film</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padding">
@@ -54,18 +54,18 @@ get_header('work-item'); ?>
     <div class="group-container">
         <div class="group group--left">
             <div class="module module--2-2">
-            	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_01_ls.jpg')"></div>
+            	<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_lg.jpg')"></div>
             </div>
         </div> <!-- /end group -->
         <div class="group group--right">
             <div  class="module module--1-1">
-	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_02_ss.jpg')"></div>
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_sm_1.jpg')"></div>
             </div>
             <div  class="module module--1-1">
-	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_03_ss.jpg')"></div>
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_sm_2.jpg')"></div>
             </div>
             <div class="module module--2-1">
-	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_04_mr.jpg')"></div>
+	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_rect_1.jpg')"></div>
             </div>
         </div> <!-- /end group -->
     </div> <!-- /end group-container -->
@@ -82,12 +82,12 @@ get_header('work-item'); ?>
                     </div>
                 </div>
                 <div class="module module--2-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_05_mr.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_rect_2.jpg')"></div>
                 </div>
             </div>
             <div class="group group--right">
                 <div class="module module--2-2">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_06_ls.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_lg_1.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
@@ -106,43 +106,11 @@ get_header('work-item'); ?>
             </div>
             <div class="group group--right">
                 <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_07_ss.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_sm_3.jpg')"></div>
                 </div>
                 <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_08_ss.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_sm_4.jpg')"></div>
                 </div>
-            </div> <!-- /end group -->
-        </div> <!-- /end group-container -->
-    </section>
-</div>
-
-
-
-
-
-
-<div class="container container--no-padding">
-    <section>
-        <div class="group-container">
-            <div class="group group--left">
-                <div class="module module--16-9 module--video module--nozoom">
-                    <div class="ratio">
-                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/roma_poster_image.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
-                                <source src="https://player.vimeo.com/external/140987615.sd.mp4?s=38326a047f4d589c027fd20680709aa0&profile_id=112" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
-            </div>
-            <div class="group group--right">
-                <div class="module module--16-9 module--video module--nozoom">
-                    <div class="ratio">
-                    	<video poster="<?php echo get_template_directory_uri(); ?>/images/work/film_ril/sanjay_poster_image.jpg" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
-                                <source src="https://player.vimeo.com/external/132110057.sd.mp4?s=014d1219cbdb5fe08f8cf02299846a59&profile_id=112" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
@@ -156,29 +124,27 @@ get_header('work-item'); ?>
 
 
 
-<div class="container container--no-padding">
-    <div class="module module--2-1">
-	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_09_hz.jpg')"></div>
-    </div>
-</div>
+
+
+
+
+
 
 <div class="container container--no-padding">
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_10_ss.jpg')"></div>
+                <div class="module module--2-2">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_lg_2.jpg')"></div>
                 </div>
-                <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_11_ss.jpg')"></div>
-                </div>
+                
             </div>
             <div class="group group--right">
-                <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_12_ss.jpg')"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_rect_3.jpg')"></div>
                 </div>
-                <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_ril/film_ril_13_ss.jpg')"></div>
+                <div class="module module--2-1">
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_rect_4.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->

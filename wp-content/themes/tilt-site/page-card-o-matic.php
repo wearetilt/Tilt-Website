@@ -30,13 +30,11 @@ get_header('work-item'); ?>
     <div class="container container--header">
         <div class="header-title no--shadow">
         
-        	<img class="awards" src="<?php echo get_template_directory_uri(); ?>/images/work/int_alz/alz_awards.png" alt="Awwards" />
-        
             <p class="tag tag--work-body">Interactive</p>
             <h1>Nick Jr<br />
                 <span class="light underlined">Card-o-Matic</span>
             </h1>
-            <h2 class="light services">UX | Design | Dev | Interactive | Animation</h2>
+            <h2 class="light services">Design | Dev | Interactive | Animation</h2>
         </div>
         <div class="header-text">
             <div class="header-text__module header-text__module--padded">
@@ -51,7 +49,7 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/gallery/int_alz_gallery_background.jpg')">
+<div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_card/gallery_bg.jpg')">
     <section class="carousel">
         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
         <div class="carousel-images">
@@ -80,12 +78,12 @@ get_header('work-item'); ?>
                     </div>
                 </div>
                 <div class="module module--2-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_01_mr.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_card/card_wide.jpg')"></div>
                 </div>
             </div>
             <div class="group group--right">
                 <div class="module module--2-2">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_02_ls.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_card/card_sq_lg.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
@@ -104,10 +102,10 @@ get_header('work-item'); ?>
             </div>
             <div class="group group--right">
                 <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_03_ss.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_card/card_sq_sm_1.jpg')"></div>
                 </div>
                 <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_alz/int_alz_04_ss.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_card/card_sq_sm_2.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
@@ -139,6 +137,16 @@ get_header('work-item'); ?>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
+</div>
+
+<div class="container container--no-padding">
+    <div class="module module--2-1">
+	    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/int_card/card_rectangle_lg.jpg')"></div>
+    </div>
+</div>
+
+<div class="container container--no-padding image-container">
+	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/int_card/card_icons.jpg" alt="Card-o-Matic" />
 </div>
 
 <div class="container quote-container area-dark">

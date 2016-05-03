@@ -13,12 +13,6 @@
 
 get_header(); ?>
 
-<script type="text/javascript">
-
-
-</script>
-
-
 <div id="video-overlay" class="fullpage-overlay">
     <video id="overlay-video" width="100%" height="100%" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
         <source src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
@@ -82,14 +76,14 @@ get_header(); ?>
 				</div>
 
 				<div class="module module--1-1 area-dark">
-                    <a href="<?php get_site_url(); ?>bungaroosh">
+                    <a href="<?php get_site_url(); ?>caroline-lucas">
     					<div class="overlay area-dark">
     						<div class="overlay-text">
     							<p class="tag tag--work-body">Work: Film</p>
-    							<h2>Bungaroosh<br /><span class="light">Marilyn Stafford</span></h2>
+    							<h2>Trident<br /><span class="light">Caroline Lucas</span></h2>
     						</div> <!-- /end overlay-text -->
     					</div> <!-- /end overlay -->
-    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_05_ss.jpg')">
+    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/caroline_lucus_featured.jpg')">
     					</div>
                     </a>
 				</div>
