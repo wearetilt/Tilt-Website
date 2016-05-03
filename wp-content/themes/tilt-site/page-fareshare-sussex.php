@@ -13,20 +13,11 @@
 
 get_header('work-item'); ?>
 
-<header id="i360" class="work-item area-dark container--i360-gradient">
-    <div class="monitor-wrapper">
-	    <div class="monitor-holder">
-	        <a href="http://faresharesussex.org.uk/" target="_blank">
-	            <div class="overlay area-dark">
-	                <img class="vertical-align centre-image" src="<?php echo get_template_directory_uri(); ?>/images/link_button.png" alt="">
-	            </div>
-	        </a>
-	        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="an image of an empty apple monitor">
-	        <div class="monitor-screen">
-	            <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/web_i360_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
-	        </div>
-	    </div>
-    </div>
+<header id="fareshare" class="work-item area-dark">
+    
+
+    
+    
     <div class="container container--header">
         <div class="header-title no--shadow">
             <p class="tag tag--work-body">Web</p>
@@ -46,28 +37,27 @@ get_header('work-item'); ?>
             </div>
         </div>
     </div>
+        
 </header>
 
-<div class="container container--i360-spot-bg">
-        <div class="mobile-holder">
-            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
-            <div class="mobile-screen">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphones/web_i360_01_iphone.jpg" alt="">
-            </div>
+<div class="container container--half-top container--fareshare-bg">
+	
+    <div class="monitor-holder">
+        <img class="iphone" src="<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_iphone.png" alt="">
+        <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
+        <div class="monitor-screen">
+	        <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_gallery2_01_imacsmall.jpg" alt="" style="width: 100%; height: 100%;">
         </div>
-        <div class="mobile-holder">
-            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
-            <div class="mobile-screen">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphones/web_i360_02_iphone.jpg" alt="">
-            </div>
+    </div>
+    <section class="text-section">
+        <h2>WHAT WE DID</h2>
+        <div class="text-section__para">
+            <p class="first-para tag--work-body">When we first met with FareShare Sussex they faced an issue. They were struggling to get buy in from the food industry due to a lack of marketing material. Being a charity, they did not have the funds required to invest in branding and digital asset creation. As a supporter of local charities we offered to work with them on a pro-bono basis.</p>
+            <p>We designed and developed an online presence that allowed them to present themselves to key members of the food industry in a clear and concise way. A considered UX also helped to attract online donations from a wider audience. From mobile first design to ensure accessibility across all platforms through to highly visual infographics to explain key benefits. Print collateral was also produced to help the charity promote themselves in the physical world.</p>
         </div>
-        <div class="mobile-holder">
-            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
-            <div class="mobile-screen">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphones/web_i360_03_iphone.jpg" alt="">
-            </div>
-        </div>
+    </section> <!-- /end text-section -->
 </div> <!-- /end container -->
+
 
 <div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_background.jpg')">
     <section class="carousel">
