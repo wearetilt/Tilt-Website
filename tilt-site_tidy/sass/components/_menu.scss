@@ -99,7 +99,7 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px n
 
         & + .menu__item {
             margin-top: 20px;
-            
+
             @media handheld, screen and (min-width:0px) and (max-width:$phone-breaks) { margin-top:8px; }
             @media handheld, screen and (min-width:$phone-breaks) and (max-width:$bp-phone) { margin-top:15px; }
         }
@@ -108,7 +108,7 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px n
             color: white;
             padding-bottom: 15px;
             font-family:$f-seroot-thn;
-            
+
             @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
 				display:block;
 				padding-bottom: 10px;
@@ -129,13 +129,13 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px n
                 &:after{
                     width: 15%;
                     @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
-						width: 22%;	
+						width: 22%;
 					}
-					
+
 					@media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop ) {
-						width: 12%;	
+						width: 12%;
 					}
-					
+
                 }
             }
         }
@@ -177,17 +177,17 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px n
     }
 
     @include font-size(19);
-    @media handheld, screen and (min-width:0px) and (max-width: $bp-phone) { 
+    @media handheld, screen and (min-width:0px) and (max-width: $bp-phone) {
     	margin-right:10px;
-    	@include font-size(14); 
+    	@include font-size(14);
     }
-    
-    
-	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
+
+
+	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
 		margin-right:30px;
-		@include font-size(20); 
+		@include font-size(20);
 	}
-	
+
     &:hover{ color: $c-tilt-pink2; }
 
     &:after {
@@ -203,33 +203,33 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px n
 
 }
 
-span#work_all { 
+span#work_all {
 	width:40px;
-	
-	 
-	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
-		width:30px; 
-		margin-left:0;	
+
+
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+		width:30px;
+		margin-left:0;
 	}
-	
+
 	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:38px; }
-    
+
     &.work-item--selected {
 
 		 &:after {
 		    transition: all 0.5s ease;
 		 	width:38px;
-		 	
+
 		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
 			 	width:25px;
 			 	margin-left:2px;
 			}
-			
-			@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { 
-				width:35px; 
-				margin-left:0px;	
+
+			@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) {
+				width:35px;
+				margin-left:0px;
 			}
-			
+
 		 }
 
 		 &:hover {
@@ -241,47 +241,47 @@ span#work_all {
 			 		width:25px;
 			 		margin-left:2px;
 			 	}
-			 	
-			 	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { 
-					width:35px; 
-					margin-left:0px;	
+
+			 	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) {
+					width:35px;
+					margin-left:0px;
 				}
-			 	
+
 			}
 
 		}
 
 	}
-    
+
 }
 
-span#work_film { 
+span#work_film {
 	width:50px;
-	
-	 
-	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
-		width:37px; 
-		margin-left:0;	
+
+
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+		width:37px;
+		margin-left:0;
 	}
-	
+
 	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:48px; }
-	
+
 	&.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
 		 	width:50px;
-		 	
+
 		 	@media handheld, screen and (min-width:0px) and (max-width: $bp-phone ) {
 			 	width:33px;
 			 	margin-left:1px;
 			}
-			
-			@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:47px; 
-				margin-left:0px;	
+
+			@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:47px;
+				margin-left:0px;
 			}
-			
+
 		 }
 
 	}
@@ -295,46 +295,46 @@ span#work_film {
 			 	width:33px;
 			 	margin-left:1px;
 			}
-			
-			@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:47px; 
-				margin-left:0px;	
+
+			@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:47px;
+				margin-left:0px;
 			}
-			
+
 		}
 
 	}
-	
+
 }
 
-span#work_interactive { 
+span#work_interactive {
 	width:130px;
-	
-	
-	 
-	@media handheld, screen and (min-width:0px) and (max-width: $bp-phone) { 
-		width:97px; 
-		margin-left:0;	
+
+
+
+	@media handheld, screen and (min-width:0px) and (max-width: $bp-phone) {
+		width:97px;
+		margin-left:0;
 	}
-	
+
 	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:130px; }
-	
+
 	&.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
 		 	width:130px;
-		 	
-		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {  
+
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
 			 	width:94px;
 			 	margin-left:1px;
 		 	}
-		 	
-		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:131px; 
-				margin-left:0px;	
+
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:131px;
+				margin-left:0px;
 			}
-		 	
+
 		 }
 
 	}
@@ -344,50 +344,50 @@ span#work_interactive {
 		&:after {
 		 	transition: all 0.5s ease;
 		 	width:130px;
-		 	
-		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
 		 		width:94px;
 			 	margin-left:1px;
 		 	}
-		 	
-		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:131px; 
-				margin-left:0px;	
+
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:131px;
+				margin-left:0px;
 			}
-		 	
+
 		}
 
 	}
-	
+
 }
 
-span#work_motion { 
+span#work_motion {
 	width:83px;
-	
-	 
-	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
-		width:62px; 
-		margin-left:0;	
+
+
+	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
+		width:62px;
+		margin-left:0;
 	}
-	
+
 	@media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:83px; }
-	
+
 	&.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
 		 	width:81px;
-		 	
-		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
 		 		width:60px;
 			 	margin-left:1px;
 		 	}
-		 	
-		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:80px; 
-				margin-left:0px;	
+
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:80px;
+				margin-left:0px;
 			}
-		 	
+
 		 }
 
 	}
@@ -397,52 +397,53 @@ span#work_motion {
 		&:after {
 		 	transition: all 0.5s ease;
 		 	width:81px;
-		 	
-		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
 		 		width:60px;
 			 	margin-left:1px;
 		 	}
-		 	
-		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:80px; 
-				margin-left:0px;	
+
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:80px;
+				margin-left:0px;
 			}
-		 	
+
 		}
 
 	}
 
-	
+
 }
 
-span#work_web { 
-	width:47px; 
-	
-	
+span#work_web {
+	width:47px;
+    margin-right: 0;
+
+
 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
         width:35px;
         margin-right:0;
-        margin-left:0;	
+        margin-left:0;
     }
-    
+
     @media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) { width:47px; }
-    
+
     &.work-item--selected {
 
 		 &:after {
 		 	transition: all 0.5s ease;
 		 	width:45px;
-		 	
-		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
 		 		width:33px;
 			 	margin-left:1px;
 		 	}
-		 	
-		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:46px; 
-				margin-left:0px;	
+
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:46px;
+				margin-left:0px;
 			}
-		 	
+
 		 }
 
 	}
@@ -452,22 +453,21 @@ span#work_web {
 		&:after {
 		 	transition: all 0.5s ease;
 		 	width:45px;
-		 	
-		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { 
+
+		 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
 		 		width:33px;
 			 	margin-left:1px;
 		 	}
-		 	
-		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { 
-				width:46px; 
-				margin-left:0px;	
+
+		 	@media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+				width:46px;
+				margin-left:0px;
 			}
-		 	
+
 		}
 
 	}
-    
+
 }
 
 #services--list span.work-item--selected { color: $c-tilt-pink2; }
-
