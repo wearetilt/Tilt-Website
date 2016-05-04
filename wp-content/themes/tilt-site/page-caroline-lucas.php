@@ -137,7 +137,7 @@ get_header('work-item'); ?>
                 <div class="module module--2-2">
 	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_trident/caroline_sq_lg_2.jpg')"></div>
                 </div>
-                
+
             </div>
             <div class="group group--right">
                 <div class="module module--2-1">

@@ -65,7 +65,7 @@ get_header('work-item'); ?>
     </div>
 
 
-<div class="container container--no-padding container--CS-film">
+    <div class="container container--no-padding container--CS-film">
         <section>
             <div class="group-container">
                 <div class="group group--left">
@@ -109,7 +109,7 @@ get_header('work-item'); ?>
 					<li><span class="serif">High Performing Teams</span></li>
 					<li><span class="serif">Managing Peers.</span></li>
 				</ul>
-            
+
             </div>
         </section>
     </div>
@@ -156,7 +156,7 @@ get_header('work-item'); ?>
 	        </div> <!-- /end group-container -->
 	    </section>
 	</div>
-	
+
 	 <div class="container area-dark">
         <section class="text-section">
             <h2>STYLE & SUBSTANCE</h2>
@@ -166,7 +166,7 @@ get_header('work-item'); ?>
             </div>
         </section>
     </div>
-	
+
     <div class="container container--no-padding">
         <div class="module module--2-1">
 	        <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/film_fll/film_fll_12_hz.jpg')"></div>
@@ -183,7 +183,7 @@ get_header('work-item'); ?>
             </div>
         </section>
     </div>
-    
+
 
 	<div class="container container--no-padding">
         <div class="module module--2-1">

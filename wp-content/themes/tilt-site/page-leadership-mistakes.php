@@ -50,27 +50,6 @@ get_header('work-item'); ?>
     </div>
 </header>
 
-<div class="container container--half-top area-dark">
-    <div class="group-container">
-        <div class="group group--left">
-            <div class="module module--2-2">
-                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_01_ls.jpg')"></div>
-            </div>
-        </div> <!-- /end group -->
-        <div class="group group--right">
-            <div class="module module--1-1">
-	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_02_ss.jpg')"></div>
-            </div>
-            <div  class="module module--1-1">
-	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_03_ss.jpg')"></div>
-            </div>
-            <div class="module module--2-1">
-	            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_04_mr.jpg')"></div>
-            </div>
-        </div> <!-- /end group -->
-    </div> <!-- /end group-container -->
-</div>
-
 <div class="container container--no-padding">
     <section>
         <div class="group-container">
@@ -82,12 +61,12 @@ get_header('work-item'); ?>
                     </div>
                 </div>
                 <div class="module module--2-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_05_mr.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_leadership/process.jpg')"></div>
                 </div>
             </div>
             <div class="group group--right">
                 <div class="module module--2-2">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_06_ls.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_leadership/ipad.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
@@ -105,16 +84,18 @@ get_header('work-item'); ?>
                 </div>
             </div>
             <div class="group group--right">
-                <div class="module module--1-1">
-                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_07_ss.jpg')"></div>
-                </div>
-                <div class="module module--1-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_08_ss.jpg')"></div>
+                <div class="module module--2-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_leadership/progress.jpg')"></div>
                 </div>
             </div> <!-- /end group -->
         </div> <!-- /end group-container -->
     </section>
 </div> <!-- /end container -->
+
+<div class="container container--no-padding image-container">
+	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/work/mo_leadership/badges.jpg" alt="Top 8 Leadership Banners" />
+</div>
+
 
 
 

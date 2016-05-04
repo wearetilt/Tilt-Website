@@ -14,10 +14,10 @@
 get_header('work-item'); ?>
 
 <header id="fareshare" class="work-item area-dark">
-    
 
-    
-    
+
+
+
     <div class="container container--header">
         <div class="header-title no--shadow">
             <p class="tag tag--work-body">Web</p>
@@ -37,11 +37,11 @@ get_header('work-item'); ?>
             </div>
         </div>
     </div>
-        
+
 </header>
 
 <div class="container container--half-top container--fareshare-bg">
-	
+
     <div class="monitor-holder">
         <img class="iphone" src="<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_iphone.png" alt="">
         <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
@@ -58,52 +58,50 @@ get_header('work-item'); ?>
     </section> <!-- /end text-section -->
 </div> <!-- /end container -->
 
+<div class="container container--carousel"  style="background-color: #7dc2d8">
 
-<div class="container container--carousel" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_background.jpg')">
-    <section class="carousel">
-        <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
-        <div class="carousel-images">
-            <div id="carousel-image-1" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_04_imacsmall.jpg')"></div>
-            <div id="carousel-image-2" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_03_imacsmall.jpg')"></div>
-            <div id="carousel-image-3" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_01_imacsmall.jpg')"></div>
-            <div id="carousel-image-4" class="carousel-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/gallery/web_i360_gallery_02_imacsmall.jpg')"></div>
-        </div> <!-- /end carousel-images -->
-        <div class="carousel-controls carousel-controls--imac">
-            <div id="carousel-control-1" class="carousel-control selected"></div>
-            <div id="carousel-control-2" class="carousel-control"></div>
-            <div id="carousel-control-3" class="carousel-control"></div>
-            <div id="carousel-control-4" class="carousel-control"></div>
-        </div> <!-- /end carousel-controls -->
-    </section>
-</div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_gallery_01_iphone.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_gallery_02_iphone.jpg" alt="">
+            </div>
+        </div>
+        <div class="mobile-holder">
+            <img class="mobile-phone" src="<?php echo get_template_directory_uri();?>/images/mobile-phone.png" alt="">
+            <div class="mobile-screen">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_gallery_03_iphone.jpg" alt="">
+            </div>
+        </div>
+</div> <!-- /end container -->
 
-
-<div class="container container--no-padding area-dark">
+<div class="container container--no-padding container--CS-film">
     <section>
         <div class="group-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--text-pad module--dark">
-                    <div class="module__text">
-                        <h2 class="underlined">What We Did</h2>
-                        <p class="first-para tag--work-title">When we first met with FareShare Sussex they faced an issue. They were struggling to get buy in from the food industry due to a lack of marketing material. Being a charity, they did not have the funds required to invest in branding and digital asset creation. As a supporter of local charities we offered to work with them on a pro-bono basis.</p>
-                    </div>
+                <div class="module module--2-1 area-dark">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_wide.jpg')"></div>
                 </div>
-                <div class="module module--2-1 module--video">
-                    <div class="ratio">
-                        <video poster="<?php echo get_template_directory_uri(); ?>/images/work/web_i360/iphone_poster_frame.jpg" autoplay loop muted>
-                                <source src="https://player.vimeo.com/external/141169001.sd.mp4?s=a3333fb671bc35d39e72113bf3341783&profile_id=112" type="video/mp4">
-                        </video>
-                    </div>
-                </div> <!-- /end module -->
+                <div class="module module--1-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_sq_sm_1.jpg')"></div>
+                </div>
+                <div class="module module--1-1">
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_sq_sm_2.jpg')"></div>
+                </div>
             </div>
-            <div class="group group--right module--dark">
+            <div class="group group--right">
                 <div class="module module--2-2">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_i360/web_i360_02_ls.jpg')"></div>
+                    <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/web_fare/web_fareshare_sq_lg.jpg')"></div>
                 </div>
-            </div> <!-- /end group -->
-        </div> <!-- /end group-container -->
+            </div>
+        </div>
     </section>
-</div> <!-- /end container -->
+</div>
 
 <div class="container container--no-padding">
     <section>
