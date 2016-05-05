@@ -92,7 +92,23 @@
 	<nav>
         <div id="tilt--logo" class="header-item header-item--logo">
 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
-				<svg class="svg-icon logout"><use xlink:href="#tilt"></use></svg>
+				<svg class="svg-icon logout">
+					<defs>
+						<filter id="boxShadow" x="0" y="0" width="200%" height="200%">
+							<feOffset result="offOut" in="SourceAlpha" dx="1" dy="1" />
+							<feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+							<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+							<!-- <feComponentTransfer>
+							  <feFuncA type="linear" slope="1"/>
+							</feComponentTransfer>
+							<feMerge>
+							  <feMergeNode/>
+							  <feMergeNode in="SourceGraphic"/>
+							</feMerge> -->
+						</filter>
+					</defs>
+					<use xlink:href="#tilt"></use>
+				</svg>
 			</a>
         </div>
         <a id="menuButton" class="header-item header-item--menu">

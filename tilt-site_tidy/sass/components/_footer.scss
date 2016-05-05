@@ -11,7 +11,7 @@ footer{
     background-position: center right;
     background-repeat:no-repeat;
     background-color:#171717;
-    
+
 
 
 	@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
@@ -45,10 +45,10 @@ footer{
 				height: 15px;
 				width: 15px;
 			}
-			
-			@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) { 
+
+			@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) {
             	height:11px;
-				width:11px; 
+				width:11px;
             }
 
         }
@@ -98,7 +98,7 @@ footer{
     }
 
     p.button {
-	    
+
 	    @include font-size(18);
 		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { @include font-size(15); }
 
@@ -140,8 +140,8 @@ footer{
 	@media handheld, screen and (min-width: $bp-desktop){
 	 	padding:12px 0px 10px 0px;
 	}
-	
-	
+
+
 	/* span { font-size:24px; } */
 
     &:hover{
@@ -170,6 +170,8 @@ footer{
 
 .footer-icon{
     float: left;
+    width: 25px;
+    height: 23px;
 
     a{
         height: 100%;
@@ -178,58 +180,50 @@ footer{
     }
 
     &.footer-icon{
-       	
+
        	margin-left:35px;
-        
+
         @media handheld, screen and (min-width:0px)  and (max-width:1024px) {
 			margin-left:25px;
 		}
-        
-        
+
+
     }
 
-    
+
 
 }
 
-
-
-#footer-icon-1 {
+.f-ico_facebook {
 	margin-left:0;
 	height:23px;
     width:11px;
-    background:url('../images/facebook.png') 0px 0px no-repeat;
 }
 
-#footer-icon-2 {
+.f-ico_twitter {
 	margin-top:3px;
     height:19px;
     width:25px;
-    background:url('../images/twitter.png') 0px 0px no-repeat;
 }
 
-#footer-icon-3 {
+.f-ico_vimeo {
 	margin-top:1px;
     height:21px;
     width:24px;
-    background:url('../images/vimeo.png') 0px 0px no-repeat;
 }
 
-#footer-icon-4 {
+.f-ico_instagram {
     height:23px;
     width:23px;
-    background:url('../images/instagram.png') 0px 0px no-repeat;
 }
 
-#footer-icon-5 {
+.f-ico_youtube {
 	margin-top:1px;
     height:21px;
     width:29px;
-    background:url('../images/youtube.png') 0px 0px no-repeat;
 }
 
-#footer-icon-6 {
+.f-ico_tumblr {
     height:25px;
     width:25px;
-    background:url('../images/bakery.png') 0px 0px no-repeat;
 }
