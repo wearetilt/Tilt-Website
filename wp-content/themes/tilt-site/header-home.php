@@ -66,10 +66,10 @@ jQuery(document).ready(function(){
 		<path fill="#FFFFFF" d="M13.72,0H3.28C1.47,0,0,1.47,0,3.28v3.47v6.96C0,15.53,1.47,17,3.28,17h10.43c1.81,0,3.29-1.47,3.29-3.29 V6.75V3.28C17,1.47,15.53,0,13.72,0z M14.66,1.96l0.38,0v0.37v2.51l-2.87,0.01l-0.01-2.88L14.66,1.96z M6.07,6.75 C6.62,6,7.5,5.51,8.5,5.51S10.38,6,10.93,6.75c0.36,0.49,0.57,1.09,0.57,1.75c0,1.65-1.34,2.99-2.99,2.99S5.51,10.15,5.51,8.5 C5.51,7.85,5.72,7.25,6.07,6.75z M15.35,13.72c0,0.9-0.73,1.63-1.63,1.63H3.28c-0.9,0-1.63-0.73-1.63-1.63V6.75h2.54 C3.97,7.29,3.85,7.88,3.85,8.5c0,2.56,2.09,4.65,4.65,4.65c2.56,0,4.65-2.09,4.65-4.65c0-0.62-0.12-1.21-0.34-1.75h2.54V13.72z"/>
 	</symbol>
 	<symbol id="youtube" viewbox="0 0 32 22">
-		<path class="st0" d="M-250.4 412c-.9-1.5-1.8-1.8-3.7-2-1.9-.1-6.7-.2-10.9-.2s-9 .1-10.9.2c-1.9.1-2.9.4-3.7 2-.9 1.5-1.4 4.2-1.4 8.9s.5 7.3 1.4 8.9c.9 1.5 1.8 1.8 3.7 2 1.9.1 6.7.2 10.9.2s9-.1 10.9-.2c1.9-.1 2.9-.4 3.7-2 .9-1.5 1.4-4.2 1.4-8.9s-.5-7.4-1.4-8.9zm-17.8 14.7v-11.6l9.1 5.8-9.1 5.8z"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M30.64,2.12c-0.88-1.54-1.83-1.83-3.74-1.95 C24.99,0.06,20.18,0,16,0l0,0C11.82,0,7.01,0.06,5.1,0.17C3.18,0.29,2.24,0.58,1.36,2.12C0.47,3.66,0,6.33,0,11l0,0c0,0,0,0,0,0 c0,0,0,0,0,0l0,0c0,4.67,0.47,7.34,1.36,8.88c0.88,1.54,1.83,1.83,3.74,1.95C7.01,21.94,11.82,22,16,22l0,0 c4.18,0,8.99-0.06,10.9-0.17c1.91-0.12,2.86-0.41,3.74-1.95C31.53,18.34,32,15.67,32,11c0,0,0,0,0,0c0,0,0,0,0,0 C32,6.33,31.53,3.66,30.64,2.12z M12.81,16.78V5.22L21.9,11L12.81,16.78z"/>
 	</symbol>
 	<symbol id="bakery" viewbox="0 0 32 32">
-		<path fill="#FFF" d="M27.3 10.67c-3.27 0-5.91-2.65-5.91-5.91 0-1.25.39-2.4 1.05-3.36C20.46.53 18.29.05 16 .05c-8.84 0-16 7.16-16 16s7.16 16 16 16 16-7.16 16-16c0-2.29-.48-4.46-1.35-6.43-.95.66-2.11 1.05-3.35 1.05zM16 21.96c-3.27 0-5.91-2.65-5.91-5.91s2.65-5.91 5.91-5.91c3.27 0 5.91 2.65 5.91 5.91s-2.64 5.91-5.91 5.91z"/>
+		<path fill="#FFFFFF" d="M27.3,10.67c-3.27,0-5.91-2.65-5.91-5.91c0-1.25,0.39-2.4,1.05-3.36C20.46,0.53,18.29,0.05,16,0.05 c-8.84,0-16,7.16-16,16s7.16,16,16,16s16-7.16,16-16c0-2.29-0.48-4.46-1.35-6.43C29.7,10.28,28.54,10.67,27.3,10.67z M16,21.96 c-3.27,0-5.91-2.65-5.91-5.91s2.65-5.91,5.91-5.91c3.27,0,5.91,2.65,5.91,5.91S19.27,21.96,16,21.96z"/>
 	</symbol>
 	<symbol id="tilt" viewbox="-4 0 44 40">
 		<circle fill="#FF416F" filter="url(#boxShadow)" cx="15.46" cy="6.11" r="3.15"/>
@@ -133,12 +133,12 @@ jQuery(document).ready(function(){
             </ul>
 
             <div class="nav-icons">
-				<div id="nav-icon-1" class="nav-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ></a></div>
-				<div id="nav-icon-2" class="nav-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ></a></div>
-				<div id="nav-icon-3" class="nav-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ></a></div>
-				<div id="nav-icon-4" class="nav-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ></a></div>
-				<div id="nav-icon-5" class="nav-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ></a></div>
-				<div id="nav-icon-6" class="nav-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ></a></div>
+				<div class="nav-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a></div>
+				<div class="nav-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a></div>
+				<div class="nav-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ><svg class="f-ico_vimeo"> <use xlink:href="#vimeo"></use></svg></a></div>
+				<div class="nav-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
+				<div class="nav-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
+				<div class="nav-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div>
 				<div class="telephone">
 					<span>Tel: + 44(0)1273 675 700</span>
 				</div>

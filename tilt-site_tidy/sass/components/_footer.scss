@@ -173,6 +173,10 @@ footer{
     width: 25px;
     height: 23px;
 
+    &:hover{
+        opacity: 0.7;
+    }
+
     a{
         height: 100%;
         width: 100%;
