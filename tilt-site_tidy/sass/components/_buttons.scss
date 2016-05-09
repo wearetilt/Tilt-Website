@@ -266,12 +266,16 @@ a{
 	transform: translateZ(25px);
 }
 
-.cube--top {
+.cube--top, .work-container .cube--top {
     background-color: white;
 	-webkit-transform: rotateX(-90deg) translateZ(-25px);
 	transform: rotateX(-90deg) translateZ(-25px);
 
-    p{
+    p {
+        color: $c-bg;
+    }
+
+    p.sans-serif{
         color: $c-bg;
     }
 }

@@ -89,16 +89,16 @@ get_header(); ?>
 				<p>I started out with a passion for digital design. It wasn't until I started to recognise the power of the web as a global, ubiquitous medium that I began to get interested in actually acquiring the skills needed to master the digital domain, a goal I am still a long way from hitting.</p>
 
 				<p class="first-para">What made you want to intern at Tilt?</p>
-				<p>The show-reel featured an eclectic range of projects ranging from the big and broad to the small and focused. They also looked for potential as much as experience, which to felt practical, but really ambitious. </p>
+				<p>The show-reel featured an eclectic range of projects ranging from the big and broad to the small and focused. They also looked for potential just as much as experience.</p>
 
 				<p class="first-para">What were your highs during your time as an intern?</p>
-				<p>Working on the PBS games, I mean, who doesn't want to get the opportunity to work on games?! Generating game mechanics within a modern environment of HTML5 and JS was exactly what got me excited during my internship.</p>
+				<p>Working on the PBS games, I mean, who doesn't want to get the opportunity to work on games?! Creating and playing with game mechanics while using the modern environment of HTML5 and JS. This got me enjoying my internship.</p>
 
 				<p class="first-para">Any lows? Be honest…</p>
-				<p>Seriously...when Banjo (one of two Tilt dogs) left for a while.</p>
+				<p>When Banjo (one of two Tilt dogs) left for a while.</p>
 
 				<p class="first-para">How did it feel to be offered a job at the end of your internship?</p>
-				<p>It felt amazing to have had my hard work and effort recognised when I honestly felt like I wasn't performing that well. I was so happy that I even gave an impassioned speech. Rumours are that there were tears.</p>
+				<p>It felt amazing to have had my hard work and effort recognised. I was so happy that I even gave an impassioned speech. Rumours are that there were tears.</p>
 
 				<p class="first-para">What kind of projects excite you, particularly at Tilt?</p>
 				<p>Ones where the whole team and office are collaborating in a manor that benefits all. Ones where you feel like you are all working towards a common and shared goal and are helping each other out, with discussion, listening, learning and progressing. Also the ones where you get to make cool shit. </p>

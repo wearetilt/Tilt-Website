@@ -146,22 +146,13 @@
 
 			}
 
-
-
-
-
 		}
-
-
-
-
 
 		.module__text {
 
             @media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop ) {
                 padding: 0;
             }
-
 
 			p#web-career--sprite, p#motion-career--sprite, p#film-career--sprite, p#admin-career--sprite, p#dev-career--sprite {
 				display:block;
@@ -628,18 +619,11 @@
     z-index: 999;
     opacity:0;
 
-
     &:hover {
 	    background:url('../images/close_btn.png') 0px -19px no-repeat;
     }
 
 }
-
-
-
-
-
-
 
 #staff-member__info{
     overflow: auto;
@@ -648,7 +632,6 @@
     width: 100%;
     float: right;
 	padding:0% 5% 0% 0%;
-
 
 	height:auto;
 	top:50%;
