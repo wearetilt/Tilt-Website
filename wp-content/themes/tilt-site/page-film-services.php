@@ -31,106 +31,106 @@ get_header('about-item'); ?>
 		 'post_status' => 'publish',
 		 'category'         => '10',
 	 );
-	
+
 	 $posts_array = get_posts( $args );
 	 $post = $posts_array[0];
 	 $postID = $post->ID;
-	
+
 	 if (has_post_thumbnail( $postID ) ){
 		 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
 	 }
 
-	 $filmposts = get_posts( $args ); 
+	 $filmposts = get_posts( $args );
 	 $i = 0;
 	 $j = 0;
 	 $k = 0;
 	 ?>
 
-	
+
 	<div class="container container--no-padding">
-		
+
 		<div class="group-container">
-		
+
 			<div class="group group--right">
 
 				<div class="module module--2-1">
     				<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')"></div>
 				</div>
-                              
+
 			</div>
-			
+
 			<div class="group group--left">
-				
+
 				<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
                     <div class="module__text">
                         <h2 class="underlined">NUGGET O' INFO</h2>
                         <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-						
+
                     </div>
 
                 </div>
-				
+
 			</div> <!-- /end group -->
-			
+
 		</div> <!-- /end group-container -->
-		
-		
-		
+
+
+
 		<div class="group-container">
-		
+
 			<div class="group group--right">
-				
+
 				<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
                     <div class="module__text">
                         <h2 class="underlined">NUGGET O' INFO</h2>
                         <p class="first-para tag--work-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-						
+
                     </div>
 
                 </div>
-				                               
+
 			</div>
-			
+
 			<div class="group group--left">
-				                    
+
             	<div class="module module--2-1">
 					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')"></div>
-				</div>	
-                    	
+				</div>
+
 			</div> <!-- /end group -->
-			
+
 		</div> <!-- /end group-container -->
-		
-		
-		
+
+
+
 		<div class="group-container">
-		
-			<div class="container area-dark no-padding">
+
+			<div class="container area-dark no-padding container--half-top container--half-bot">
 			    <section class="text-section">
 			        <h2>FILM NEWS</h2>
 			    </section>
 			</div>
 
-		
+
 		</div>
-		
-		
-		
+
+
+
 		<div class="group-container">
-		
+
 			<div class="group group--left">
-			
+
 				<?php
-				
-					foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-						
+
+					foreach ( $filmposts as $post ) : setup_postdata( $post );
+
 						if (has_post_thumbnail( $post->ID ) ):
 							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-						endif; 
-						
-						
+						endif;
+
+
 						if($i < 2) { ?>
-						
+
 							<a href="<?php echo the_permalink(); ?>">
 								<div class="module module--1-1 area-dark news--icon">
 									<div id="post=<?php the_ID();?>" class="overlay area-dark">
@@ -142,37 +142,37 @@ get_header('about-item'); ?>
 									<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
 								</div>
 							</a><?php
-							
-							
-						
+
+
+
 						}
-						
+
 						$i++;
-						
-						endforeach; 
+
+						endforeach;
 						wp_reset_postdata();
-					
-					?>	
-				
+
+					?>
+
 			</div>
-		
-	
-	
+
+
+
 			<div class="group group--right">
-				
-				
-				
-				
-				<?php 
-					foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-				
+
+
+
+
+				<?php
+					foreach ( $filmposts as $post ) : setup_postdata( $post );
+
 						if (has_post_thumbnail( $post->ID ) ):
 							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-						endif; 
-						
-						
+						endif;
+
+
 						if($j > 1 && $j < 5) { ?>
-						
+
 							<a href="<?php echo the_permalink(); ?>">
 								<div class="module module--1-1 area-dark news--icon">
 									<div id="post=<?php the_ID();?>" class="overlay area-dark">
@@ -184,26 +184,26 @@ get_header('about-item'); ?>
 									<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
 								</div>
 							</a><?php
-							
-							
-						
+
+
+
 						};
-						
+
 						$j++;
-						
-						endforeach; 
+
+						endforeach;
 						wp_reset_postdata();?>
-				
-				
-								
-			
+
+
+
+
 			</div>
-		
-		
+
+
 		</div>
-	
+
 	</div>
-	
+
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container center">
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#film">
@@ -218,11 +218,11 @@ get_header('about-item'); ?>
 			</a>
 		</div>
 	</div> <!-- /end container -->
-	
+
 
 </div>
 
-	
-	
-	
+
+
+
 <?php get_footer(); ?>
