@@ -34,7 +34,30 @@ get_header(); ?>
 			<a href="../creative-digital-producer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<p id="motion-career--sprite">Film & Motion</p>
+						<div class="icon-holder">
+							<svg id="motion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 98">
+						    <g id="three_circles">
+						    	<circle class="st0" cx="15" cy="32.5" r="3.8"/>
+						    	<circle class="st0" cx="95.4" cy="66.1" r="3.8"/>
+						    	<circle class="st0" cx="55" cy="50.5" r="3.8"/>
+						    </g>
+						    <path id="wobbly" class="st1" d="M55,28.1c-6.7,0-6.7-4.7-13.5-4.7c-6.7,0-6.7,4.7-13.5,4.7s-6.7-4.7-13.4-4.7S8,28.1,1.2,28.1
+						    	 M55,28.1c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M1.2,79.6c6.7,0,6.7-4.7,13.4-4.7
+						    	s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M55,79.6c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7
+						    	c6.7,0,6.7,4.7,13.5,4.7 M14.7,67.3c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7 M68.5,31.1c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7"
+						    	/>
+						    <g id="stroke">
+						    	<path class="st2" d="M83.1,86.2c-0.5,0.4-1.1,0.8-1.6,1.2"/>
+						    	<path class="st2" d="M71.1,93c-5,1.9-10.4,2.9-16,2.9c-8.4,0-16.2-2.3-23-6.2"/>
+						    	<path class="st2" d="M27.2,86.3c-0.5-0.4-1-0.8-1.5-1.3"/>
+						    	<g>
+						    		<path class="st2" d="M20.4,18.1c0.4-0.5,0.9-1,1.3-1.5"/>
+						    		<path class="st3" d="M30.7,9.1C37.8,4.6,46.1,2,55,2c10.4,0,20,3.5,27.7,9.4"/>
+						    		<path class="st2" d="M87.1,15.3c0.5,0.5,0.9,1,1.4,1.4"/>
+						    	</g>
+						    </g>
+						    </svg>
+						</div>
 						<h3>Digital Producer</h3>
 						<p>An opening has come up for an experienced Creative Digital Producer.</p>
 					</div>
@@ -43,7 +66,24 @@ get_header(); ?>
 			<a href="../design-freelancers">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<p id="web-career--sprite">Web & Mobile</p>
+						<div class="icon-holder">
+							<svg version="1.1" id="designer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 87">
+						    <g id="designer_shapes">
+						    	<path class="st1" d="M64.2,5.9c6.2,0,6.2,4.4,12.5,4.4c6.2,0,6.2-4.4,12.5-4.4 M90.8,41.9c0,8-6.5,14.4-14.4,14.4
+						    		c-8,0-14.4-6.5-14.4-14.4c0-8,6.5-14.4,14.4-14.4S90.8,33.9,90.8,41.9z"/>
+						    	<path class="st1" d="M76.7,33.2c4.8,0,8.7,3.9,8.7,8.7s-3.9,8.7-8.7,8.7c-2.4,0-4.6-1-6.2-2.6"/>
+						    	<path class="st1" d="M49,81.7c-6.2,0-6.2-4.4-12.5-4.4s-6.2,4.4-12.5,4.4"/>
+						    	<path class="st1" d="M21.1,34.4l7.5,7.5l-7.5,7.5l7,7l7.5-7.5l7.4,7.5l7-7l-7.4-7.5l7.4-7.5l-7-6.9l-7.4,7.4l-7.5-7.4L21.1,34.4z"
+						    		/>
+						    	<path class="st1" d="M28.1,49.5l7.5-7.5l7.4,7.5"/>
+						    </g>
+						    <g id="designer_circles">
+						        <circle class="st0" cx="92.7" cy="5.9" r="3.6"/>
+						        <circle class="st0" cx="20.5" cy="81.7" r="3.6"/>
+						    </g>
+						    <path class="st2" d="M1.7,41.6c0-19.7,16-35.7,35.7-35.7 M106.7,46c0,19.7-16,35.7-35.7,35.7"/>
+						    </svg>
+						</div>
 						<h3>Design Freelancer</h3>
 						<p>Are you a web designer looking for freelance work? Send us your portfolio.</p>
 					</div>
@@ -54,7 +94,30 @@ get_header(); ?>
 			<a href="../motion-freelancers">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<p id="motion-career--sprite">Motion</p>
+						<div class="icon-holder">
+							<svg id="motion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 98">
+						    <g id="three_circles">
+						    	<circle class="st0" cx="15" cy="32.5" r="3.8"/>
+						    	<circle class="st0" cx="95.4" cy="66.1" r="3.8"/>
+						    	<circle class="st0" cx="55" cy="50.5" r="3.8"/>
+						    </g>
+						    <path id="wobbly" class="st1" d="M55,28.1c-6.7,0-6.7-4.7-13.5-4.7c-6.7,0-6.7,4.7-13.5,4.7s-6.7-4.7-13.4-4.7S8,28.1,1.2,28.1
+						    	 M55,28.1c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M1.2,79.6c6.7,0,6.7-4.7,13.4-4.7
+						    	s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M55,79.6c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7
+						    	c6.7,0,6.7,4.7,13.5,4.7 M14.7,67.3c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7 M68.5,31.1c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7"
+						    	/>
+						    <g id="stroke">
+						    	<path class="st2" d="M83.1,86.2c-0.5,0.4-1.1,0.8-1.6,1.2"/>
+						    	<path class="st2" d="M71.1,93c-5,1.9-10.4,2.9-16,2.9c-8.4,0-16.2-2.3-23-6.2"/>
+						    	<path class="st2" d="M27.2,86.3c-0.5-0.4-1-0.8-1.5-1.3"/>
+						    	<g>
+						    		<path class="st2" d="M20.4,18.1c0.4-0.5,0.9-1,1.3-1.5"/>
+						    		<path class="st3" d="M30.7,9.1C37.8,4.6,46.1,2,55,2c10.4,0,20,3.5,27.7,9.4"/>
+						    		<path class="st2" d="M87.1,15.3c0.5,0.5,0.9,1,1.4,1.4"/>
+						    	</g>
+						    </g>
+						    </svg>
+						</div>
 						<h3>Motion Freelancer</h3>
 						<p>We are on the look out for freelance animators. Send us your showreel.</p>
 					</div>
@@ -63,7 +126,30 @@ get_header(); ?>
 			<a href="../motion-internship">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<p id="admin-career--sprite">Admin</p>
+						<div class="icon-holder">
+							<svg id="admin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 100">
+						        <g id="shapes">
+						            <circle class="st0" cx="8.6" cy="68.9" r="4.3"/>
+						            <circle class="st0" cx="8.6" cy="30.1" r="4.3"/>
+						            <path class="st0" d="M8.6 33.9c0 7.5-5.3 7.5-5.3 15S8.6 56.5 8.6 64"/>
+						            <path class="st0" d="M87.3 26.1h13.2v47.4H87.3z"/>
+						            <path class="st0" d="M31.3 25.8h36.4v47.4H31.3z"/>
+						            <path class="st0" d="M44.7 32.1h16.7v22"/>
+						        </g>
+						        <g id="dotted">
+						            <path class="st1" d="M20.7 15.4c.4-.5.9-1 1.3-1.5"/>
+						            <path class="st2" d="M31.9 6.4C37.3 3.5 43.5 1.8 50 1.8c8.3 0 15.9 2.6 22.2 7.1"/>
+						            <path class="st1" d="M77 12.9l1.4 1.4"/>
+						            <path class="st1" d="M78.4 84.5c-.4.5-.9 1-1.3 1.5"/>
+						            <path class="st2" d="M67.2 93.5c-5.4 2.9-11.6 4.6-18.2 4.6-8.3 0-15.9-2.6-22.2-7.1"/>
+						            <path class="st1" d="M22.1 87l-1.4-1.4"/>
+						        </g>
+						        <g id="circles">
+						            <circle class="st3" cx="20.8" cy="49.5" r="2.4"/>
+						            <circle class="st3" cx="78" cy="49.5" r="2.4"/>
+						        </g>
+						    </svg>
+						</div>
 						<h3>Internship</h3>
 						<p>Looking for a career in motion and animation? Enthusiastic? Show us!</p>
 					</div>
