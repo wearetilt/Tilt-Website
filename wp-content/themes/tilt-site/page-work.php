@@ -41,54 +41,7 @@ get_header(); ?>
 <div id="film" class="work-container container container--no-padding">
 	<section>
 		<div class="group-container">
-			<div class="group group--right">
-
-				<div class="module module--2-1">
-
-                     <a href="<?php get_site_url(); ?>bp-fll-stories/">
-    					<div class="overlay area-dark">
-    						<div class="overlay-text">
-    							<p class="tag tag--work-body">Case Study: Film</p>
-    							<h2>BP<br />
-    								<span class="underlined light">Stories</span>
-    							</h2>
-    							<p class="sans-serif">Engage your audience on an emotional level</p>
-    						</div> <!-- /end overlay-text -->
-    					</div> <!-- /end overlay -->
-    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')">
-    					</div>
-                    </a>
-
-				</div>
-
-
-				<div class="module module--1-1 area-dark">
-                    <a href="<?php get_site_url(); ?>reliance">
-    					<div class="overlay area-dark">
-    						<div class="overlay-text">
-    							<p class="tag tag--work-body">Work: Film</p>
-    							<h2>Reliance<br /><span class="light">Onboarding</span></h2>
-    						</div> <!-- /end overlay-text -->
-    					</div> <!-- /end overlay -->
-    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_03_ss.jpg')">
-    					</div>
-                    </a>
-				</div>
-
-				<div class="module module--1-1 area-dark">
-                    <a href="<?php get_site_url(); ?>caroline-lucas">
-    					<div class="overlay area-dark">
-    						<div class="overlay-text">
-    							<p class="tag tag--work-body">Work: Film</p>
-    							<h2>Trident<br /><span class="light">Caroline Lucas</span></h2>
-    						</div> <!-- /end overlay-text -->
-    					</div> <!-- /end overlay -->
-    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/caroline_lucus_featured.jpg')">
-    					</div>
-                    </a>
-				</div>
-			</div>
-			<div class="group group--left">
+            <div class="group group--left">
 
 				<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
                     <div class="module__text">
@@ -140,6 +93,54 @@ get_header(); ?>
 
 
 			</div> <!-- /end group -->
+
+			<div class="group group--right">
+
+				<div class="module module--2-1">
+
+                     <a href="<?php get_site_url(); ?>bp-fll-stories/">
+    					<div class="overlay area-dark">
+    						<div class="overlay-text">
+    							<p class="tag tag--work-body">Case Study: Film</p>
+    							<h2>BP<br />
+    								<span class="underlined light">Stories</span>
+    							</h2>
+    							<p class="sans-serif">Engage your audience on an emotional level</p>
+    						</div> <!-- /end overlay-text -->
+    					</div> <!-- /end overlay -->
+    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_01_mr.jpg')">
+    					</div>
+                    </a>
+
+				</div>
+
+
+				<div class="module module--1-1 area-dark">
+                    <a href="<?php get_site_url(); ?>reliance">
+    					<div class="overlay area-dark">
+    						<div class="overlay-text">
+    							<p class="tag tag--work-body">Work: Film</p>
+    							<h2>Reliance<br /><span class="light">Onboarding</span></h2>
+    						</div> <!-- /end overlay-text -->
+    					</div> <!-- /end overlay -->
+    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_film_03_ss.jpg')">
+    					</div>
+                    </a>
+				</div>
+
+				<div class="module module--1-1 area-dark">
+                    <a href="<?php get_site_url(); ?>caroline-lucas">
+    					<div class="overlay area-dark">
+    						<div class="overlay-text">
+    							<p class="tag tag--work-body">Work: Film</p>
+    							<h2>Trident<br /><span class="light">Caroline Lucas</span></h2>
+    						</div> <!-- /end overlay-text -->
+    					</div> <!-- /end overlay -->
+    					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/caroline_lucus_featured.jpg')">
+    					</div>
+                    </a>
+				</div>
+			</div>
 
 		</div> <!-- /end group-container -->
 	</section>
@@ -263,6 +264,57 @@ get_header(); ?>
 
 	<section>
 		<div class="group-container">
+
+            <div class="group group--left">
+                <div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
+                    <div class="module__text">
+                        <h2 class="underlined">Motion</h2>
+                        <p class="first-para tag--work-title">Vivid 2D and 3D rendered pieces that explain ideas in eye-catching ways.</p>
+                        <a class="cube--link" href="<?php echo site_url(); ?>/about/motion-services">
+                            <div class="cube">
+                                <div class="cube--front cube--front__no-bg">
+                                    <p class="sans-serif">More Info</p>
+                                </div>
+                                <div class="cube--top cube--top__no-bg">
+                                    <p class="sans-serif">More Info</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="module module--1-1">
+                         <a href="<?php get_site_url(); ?>take-the-lead">
+                            <div class="overlay area-dark">
+                                <div class="overlay-text">
+                                    <p class="tag tag--work-body">Work: Motion</p>
+                                    <h2>South Downs<br /><span class="light">Take the Lead</span></h2>
+                                </div> <!-- /end overlay-text -->
+                            </div> <!-- /end overlay -->
+                            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_02_ss.jpg')">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="module module--1-1">
+                        <a href="<?php get_site_url(); ?>legacy">
+                            <div class="overlay area-dark">
+                                <div class="overlay-text">
+                                    <p class="tag tag--work-body">Work: Motion</p>
+                                    <h2>BP<br /><span class="light">Legacy</span></h2>
+                                </div> <!-- /end overlay-text -->
+                            </div> <!-- /end overlay -->
+                            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_03_ss.jpg')">
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+            </div> <!-- /end group -->
+
 			<div class="group group--right">
                 <div class="module module--2-1 area-dark">
                      <a href="<?php get_site_url(); ?>barclays-integrity">
@@ -308,55 +360,6 @@ get_header(); ?>
                     </a>
 				</div>
 			</div>
-			<div class="group group--left">
-    			<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
-                    <div class="module__text">
-                        <h2 class="underlined">Motion</h2>
-                        <p class="first-para tag--work-title">Vivid 2D and 3D rendered pieces that explain ideas in eye-catching ways.</p>
-						<a class="cube--link" href="<?php echo site_url(); ?>/about/motion-services">
-							<div class="cube">
-								<div class="cube--front cube--front__no-bg">
-									<p class="sans-serif">More Info</p>
-								</div>
-								<div class="cube--top cube--top__no-bg">
-									<p class="sans-serif">More Info</p>
-								</div>
-							</div>
-						</a>
-
-                    </div>
-
-                </div>
-
-                <div class="module module--1-1">
-                         <a href="<?php get_site_url(); ?>take-the-lead">
-                            <div class="overlay area-dark">
-                                <div class="overlay-text">
-                                    <p class="tag tag--work-body">Work: Motion</p>
-                                    <h2>South Downs<br /><span class="light">Take the Lead</span></h2>
-                                </div> <!-- /end overlay-text -->
-                            </div> <!-- /end overlay -->
-                            <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_02_ss.jpg')">
-                            </div>
-                        </a>
-    				</div>
-    				<div class="module module--1-1">
-                        <a href="<?php get_site_url(); ?>legacy">
-        					<div class="overlay area-dark">
-        						<div class="overlay-text">
-        							<p class="tag tag--work-body">Work: Motion</p>
-        							<h2>BP<br /><span class="light">Legacy</span></h2>
-        						</div> <!-- /end overlay-text -->
-        					</div> <!-- /end overlay -->
-        					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_03_ss.jpg')">
-        					</div>
-                        </a>
-    				</div>
-
-
-
-
-			</div> <!-- /end group -->
 		</div> <!-- /end group-container -->
 	</section>
 </div> <!-- /end container -->
