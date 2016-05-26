@@ -82,7 +82,7 @@ get_header('work-item'); ?>
                     </div>
                 </div>
                 <div class="module module--2-1">
-	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/mo_gfk_05_mr.jpg')"></div>
+	                <div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/mo_gfk/stig_v2.jpg')"></div>
                 </div>
             </div>
             <div class="group group--right">

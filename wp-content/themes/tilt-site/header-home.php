@@ -98,7 +98,7 @@ jQuery(document).ready(function(){
 	</symbol>
 </svg>
 	<nav>
-        <div class="header-item header-item--logo">
+		<div class="header-item header-item--logo">
 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
 				<svg class="svg-icon logout">
 					<defs>

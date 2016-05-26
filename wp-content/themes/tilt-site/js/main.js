@@ -28,10 +28,6 @@ var formHolders;
 var formBorders;
 var doc = document.documentElement;
 
-
-
-
-
 /**
 * UTIL FUNCTIONS
 *

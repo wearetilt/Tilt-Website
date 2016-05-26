@@ -29,14 +29,7 @@
 
 
 <body <?php body_class(); ?>>
-<svg style="display: none;">
-	<defs>
-		<filter id="boxShadow" x="0" y="0" width="200%" height="200%">
-			<feOffset result="offOut" in="SourceAlpha" dx="5" dy="5" />
-			<feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
-			<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-		</filter>
-	</defs>
+<svg style="display: none; left: 0px;">
 	<symbol id="burger" viewbox="0 0 27 19">
 		<path class="nav-burger" d="M0 0h27v3H0zM0 8h27v3H0zM0 16h27v3H0z"/>
 	</symbol>
@@ -89,7 +82,7 @@
 	</symbol>
 </svg>
 	<nav>
-        <div id="tilt--logo" class="header-item header-item--logo">
+		<div class="header-item header-item--logo">
 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
 				<svg class="svg-icon logout">
 					<defs>
@@ -97,13 +90,6 @@
 							<feOffset result="offOut" in="SourceAlpha" dx="1" dy="1" />
 							<feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
 							<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-							<!-- <feComponentTransfer>
-							  <feFuncA type="linear" slope="1"/>
-							</feComponentTransfer>
-							<feMerge>
-							  <feMergeNode/>
-							  <feMergeNode in="SourceGraphic"/>
-							</feMerge> -->
 						</filter>
 					</defs>
 					<use xlink:href="#tilt"></use>
