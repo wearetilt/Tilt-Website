@@ -25,7 +25,7 @@ get_header('work-item'); ?>
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/film_trident/poster.jpg" width="100%" height="100%" >
-                    <source id="header-video" src="https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113" type="video/mp4">
+                    <source id="header-video" src="https://player.vimeo.com/external/168753982.hd.mp4?s=3e9857a4d3db82f3084c9f10f2d3e0835d00f35e&profile_id=119" type="video/mp4">
             </video>
         </div>
     </div>
