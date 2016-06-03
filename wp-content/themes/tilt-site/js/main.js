@@ -569,7 +569,9 @@ menuButton.onclick = function(){
     pageMenu.style.visibility = 'inherit';
     pageMenu.style.opacity = 0.98;
     pageMenu.style.transform = "scale(1, 1)";
-    document.getElementById('footer').style.display = 'none';
+	if(document.getElementById('footer')){
+	    document.getElementById('footer').style.display = 'none';
+	}
 
     if(document.getElementById('header-video-player')){
         myPlayer.pause();
