@@ -96,7 +96,7 @@
         </div>
 
 
-		<a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/about#our--services">About</a>
+		<a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/work">About</a>
         <a id="menuButton" class="header-item header-item--menu">Menu</a>
         <a id="closeButton" class="header-item header-item--menu">Close</a>
 

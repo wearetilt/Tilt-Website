@@ -50,88 +50,65 @@ get_header('about-item'); ?>
 
 	
 	<div class="container container--no-padding">
-		
+
 		<div class="group-container">
-		
+
 			<div class="group group--right">
 
-				<div class="module module--2-1">
-    				<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_01_ls_v2.jpg')"></div>
-				</div>
-                              
+			<?php
+				foreach ( $filmposts as $post ) : setup_postdata( $post );
+
+					if (has_post_thumbnail( $post->ID ) ):
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+					endif;
+
+
+					if($j > 1 && $j < 5) { ?>
+
+						<a href="<?php echo the_permalink(); ?>">
+							<div class="module module--1-1 area-dark news--icon">
+								<div id="post=<?php the_ID();?>" class="overlay area-dark">
+									<div class="overlay-text">
+										<p class="tag--no-square">News</p>
+										<h2><span><?php the_title( ); ?></span></h2>
+									</div> <!-- /end overlay-text -->
+								</div> <!-- /end overlay -->
+								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+							</div>
+						</a><?php
+
+
+
+					};
+
+					$j++;
+
+					endforeach;
+					wp_reset_postdata();
+				?>
+
 			</div>
-			
+
 			<div class="group group--left">
-				
-				<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
+
+				<div class="module module--1-1 module--text-pad module--dark module--mobile-double-height">
                     <div class="module__text">
-                        <h2 class="underlined">In a Nutshell</h2>
-                        <p class="first-para tag--work-title">We love the moving image for it's ability to engage. Motion has a unique ability to convey large amounts of information in succinct & enjoyable ways. Whether it's delivering corporate messages or promoting a brand - our high production values and unique creativity help our work stand out.</p>
-						
+                        <h2 class="underlined">Motion News</h2>
                     </div>
 
                 </div>
-				
-			</div> <!-- /end group -->
-			
-		</div> <!-- /end group-container -->
-		
-		
-		
-		<div class="group-container">
-		
-			<div class="group group--right">
-				
-				<div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
-                    <div class="module__text">
-                        <h2 class="underlined">Why Us</h2>
-                        <p class="first-para tag--work-title">If a picture paints a thousand words, then at 25 frames a second, motion can deliver 25000 words a second. </p>
-						
-                    </div>
+                
+                <?php
 
-                </div>
-				                               
-			</div>
-			
-			<div class="group group--left">
-				                    
-            	<div class="module module--2-1">
-					<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/work/work_motion_01_ls_v2.jpg')"></div>
-				</div>	
-                    	
-			</div> <!-- /end group -->
-			
-		</div> <!-- /end group-container -->
+					foreach ( $filmposts as $post ) : setup_postdata( $post );
 
-	</div>
-
-	
-	<div class="group-container">
-		
-		<div class="container area-dark container--half-top container--half-bot">
-		    <section class="text-section">
-		        <h2>MOTION NEWS</h2>
-		    </section>
-		</div>
-
-	
-	</div>
-	
-	<div class="group-container">
-		
-			<div class="group group--left">
-			
-				<?php
-				
-					foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-						
 						if (has_post_thumbnail( $post->ID ) ):
 							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-						endif; 
-						
-						
-						if($i < 2) { ?>
-						
+						endif;
+
+
+						if($i < 1) { ?>
+
 							<a href="<?php echo the_permalink(); ?>">
 								<div class="module module--1-1 area-dark news--icon">
 									<div id="post=<?php the_ID();?>" class="overlay area-dark">
@@ -143,63 +120,25 @@ get_header('about-item'); ?>
 									<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
 								</div>
 							</a><?php
-							
-							
-						
+
+
+
 						}
-						
+
 						$i++;
-						
-						endforeach; 
+
+						endforeach;
 						wp_reset_postdata();
-					
-					?>	
+
+					?>
+
+			</div> <!-- /end group -->
+
+		</div> <!-- /end group-container -->
+
+
+
 				
-			</div>
-		
-	
-	
-			<div class="group group--right">
-				
-				
-				
-				
-				<?php 
-					foreach ( $filmposts as $post ) : setup_postdata( $post ); 
-				
-						if (has_post_thumbnail( $post->ID ) ):
-							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-						endif; 
-						
-						
-						if($j > 1 && $j < 5) { ?>
-						
-							<a href="<?php echo the_permalink(); ?>">
-								<div class="module module--1-1 area-dark news--icon">
-									<div id="post=<?php the_ID();?>" class="overlay area-dark">
-										<div class="overlay-text">
-											<p class="tag--no-square">News</p>
-											<h2><span><?php the_title( ); ?></span></h2>
-										</div> <!-- /end overlay-text -->
-									</div> <!-- /end overlay -->
-									<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-								</div>
-							</a><?php
-							
-							
-						
-						};
-						
-						$j++;
-						
-						endforeach; 
-						wp_reset_postdata();?>
-				
-				
-								
-			
-			</div>
-		
 		
 		</div>
 	
