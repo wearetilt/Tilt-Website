@@ -39,10 +39,10 @@ jQuery(document).ready(function(){
 
 */
 	</script>
-	
-	
-	
-	
+
+
+
+
 
 
 	<?php wp_head(); ?>
@@ -102,7 +102,7 @@ jQuery(document).ready(function(){
 	</symbol>
 </svg>
 	<nav>
-		<div class="header-item header-item--logo">
+		<div id="tilt--logo" class="header-item header-item--logo">
 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
 				<svg class="svg-icon logout">
 					<defs>

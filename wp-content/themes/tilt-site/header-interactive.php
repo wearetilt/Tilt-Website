@@ -76,7 +76,7 @@
 		</symbol>
 	</svg>
 	<nav>
-        <div class="header-item header-item--logo">
+        <div id="tilt--logo" class="header-item header-item--logo">
         </div>
         <div id="menuButton" class="header-item header-item--menu">
         </div>

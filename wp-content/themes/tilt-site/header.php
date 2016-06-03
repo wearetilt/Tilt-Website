@@ -82,7 +82,7 @@
 	</symbol>
 </svg>
 	<nav>
-		<div class="header-item header-item--logo">
+		<div id="tilt--logo" class="header-item header-item--logo">
 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
 				<svg class="svg-icon logout">
 					<defs>

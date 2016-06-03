@@ -80,7 +80,7 @@
 				<path fill="#424242" d="M160.8 135.1l-32.6 15-53.4-30-46.7 79.1h182.8zM185.4 81.2c0 11.4-9.3 20.7-20.7 20.7-11.4 0-20.7-9.3-20.7-20.7 0-11.5 9.3-20.7 20.7-20.7 11.4 0 20.7 9.3 20.7 20.7"/>
 			</symbol>
 		</svg>
-		<div class="header-item header-item--logo">
+		<div id="tilt--logo" class="header-item header-item--logo">
 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
 				<svg class="svg-icon logout">
 					<defs>
