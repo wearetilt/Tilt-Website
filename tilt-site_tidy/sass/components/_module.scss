@@ -120,6 +120,15 @@
 
 		}
 
+        .icon-holder{
+            width: 75%;
+            margin: 0px auto;
+
+            @media handheld, screen and (min-width:0px)  and (max-width: $job-breaks ) {
+                 width: 50%;
+            }
+        }
+
 
         h2 + p {
             padding-top: 2%;

@@ -274,20 +274,13 @@ get_header(); ?>
 
 	var user;
 
-	function doData(data){
-	    for(i in data.data){
-	        if(data.data[i].username === 'we_are_tilt'){
-	            user = data.data[i].id;
-	            var script2 = document.createElement('script');
-	            script2.src = 'https://api.instagram.com/v1/users/' + user + '/media/recent?client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doPicture';
-	            document.getElementsByTagName('head')[0].appendChild(script2);
-	        }
-	    }
-	}
+	<?php
+		$insta = file_get_contents("https://api.instagram.com/v1/users/self/media/recent/?access_token=2148730231.3aa6f14.5da21e1ab7024c78b77a9c88a3fb0a3d");
+	 ?>
 
-	function doPicture(pictureData){
+	 var pictureData = JSON.parse(<?php echo json_encode($insta) ?>);
 
-	    console.log(pictureData);
+	var doPicture = function(pictureData){
 
 	    var instagramImage1 = pictureData.data[0].images.standard_resolution.url;
 	    var instagramLink1 = pictureData.data[0].link;
@@ -310,10 +303,7 @@ get_header(); ?>
 
 	}
 
-	var script = document.createElement('script');
-	script.src = 'https://api.instagram.com/v1/users/search?q=we_are_tilt&client_id=83440bc1481343219c7ddb44a46c0e7b&callback=doData';
-
-	document.getElementsByTagName('head')[0].appendChild(script);
+	doPicture(pictureData)();
 	</script>
 
 </div>
