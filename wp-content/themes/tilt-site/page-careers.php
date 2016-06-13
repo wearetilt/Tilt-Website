@@ -31,7 +31,7 @@ get_header(); ?>
 
 	<div class="group-container">
 		<div class="group group--left group--jobs">
-			<a href="../creative-digital-producer">
+			<a href="../dev-freelancer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<div class="icon-holder">
@@ -58,8 +58,8 @@ get_header(); ?>
 						    </g>
 						    </svg>
 						</div>
-						<h3>Digital Producer</h3>
-						<p>An opening has come up for an experienced Creative Digital Producer.</p>
+						<h3>Freelance Developer</h3>
+						<p>Are you a talented developer looking for freelance work? Get in touch.</p>
 					</div>
 				</div>
 			</a>
@@ -123,10 +123,11 @@ get_header(); ?>
 					</div>
 				</div>
 			</a>
-			<a href="../motion-internship">
+			<a href="../design-intern">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<div class="icon-holder">
+						<!--
+<div class="icon-holder">
 							<svg id="admin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 100">
 						        <g id="shapes">
 						            <circle class="st0" cx="8.6" cy="68.9" r="4.3"/>
@@ -150,8 +151,28 @@ get_header(); ?>
 						        </g>
 						    </svg>
 						</div>
-						<h3>Internship</h3>
-						<p>Looking for a career in motion and animation? Enthusiastic? Show us!</p>
+-->
+						<div class="icon-holder">
+							<svg version="1.1" id="designer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 87">
+						    <g id="designer_shapes">
+						    	<path class="st1" d="M64.2,5.9c6.2,0,6.2,4.4,12.5,4.4c6.2,0,6.2-4.4,12.5-4.4 M90.8,41.9c0,8-6.5,14.4-14.4,14.4
+						    		c-8,0-14.4-6.5-14.4-14.4c0-8,6.5-14.4,14.4-14.4S90.8,33.9,90.8,41.9z"/>
+						    	<path class="st1" d="M76.7,33.2c4.8,0,8.7,3.9,8.7,8.7s-3.9,8.7-8.7,8.7c-2.4,0-4.6-1-6.2-2.6"/>
+						    	<path class="st1" d="M49,81.7c-6.2,0-6.2-4.4-12.5-4.4s-6.2,4.4-12.5,4.4"/>
+						    	<path class="st1" d="M21.1,34.4l7.5,7.5l-7.5,7.5l7,7l7.5-7.5l7.4,7.5l7-7l-7.4-7.5l7.4-7.5l-7-6.9l-7.4,7.4l-7.5-7.4L21.1,34.4z"
+						    		/>
+						    	<path class="st1" d="M28.1,49.5l7.5-7.5l7.4,7.5"/>
+						    </g>
+						    <g id="designer_circles">
+						        <circle class="st0" cx="92.7" cy="5.9" r="3.6"/>
+						        <circle class="st0" cx="20.5" cy="81.7" r="3.6"/>
+						    </g>
+						    <path class="st2" d="M1.7,41.6c0-19.7,16-35.7,35.7-35.7 M106.7,46c0,19.7-16,35.7-35.7,35.7"/>
+						    </svg>
+						</div>
+
+						<h3>Design Intern</h3>
+						<p>We're on the lookout for a design intern to support our busy creative team</p>
 					</div>
 				</div>
 			</a>
