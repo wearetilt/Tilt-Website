@@ -31,7 +31,7 @@ get_header(); ?>
 
 	<div class="group-container">
 		<div class="group group--left group--jobs">
-			<a href="../dev-freelancer">
+			<a href="../content-creator">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<div class="icon-holder">
@@ -58,8 +58,8 @@ get_header(); ?>
 						    </g>
 						    </svg>
 						</div>
-						<h3>Freelance Developer</h3>
-						<p>Are you a talented developer looking for freelance work? Get in touch.</p>
+						<h3>Content Creator</h3>
+						<p>We are looking for a content creator to generate teen-skewed news articles.</p>
 					</div>
 				</div>
 			</a>
