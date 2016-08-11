@@ -14,30 +14,30 @@
 get_header('work-item'); ?>
 
 <header id="codeit" class="work-item area-dark">
-    
+
 
     <div class="container container--header">
-        
+
          <div class="header-title light">
-            
+
             <p class="tag tag--work-body">Interactive: Case Study</p>
             <h1>Nickelodeon<br />
                 <span class="light underlined">Code-it</span>
             </h1>
             <h2 class="light services">UX | Design | Dev | Motion</h2>
-                 
+
         </div>
-                
+
     </div>
-    
+
     <img class="award--right" src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_awardsbadge.png" alt="Broadcast Digital Award Nominee" />
-    
+
 </header>
 
 <div class="container">
-	 
+
 	 <div class="monitor-wrapper codeit-monitor">
-	 	
+
 	    <div class="monitor-holder">
 	    	 <img class="ipad" src="<?php echo get_template_directory_uri(); ?>/images/work/int_codeit/int_ci_imacsmall_v2.png" alt="">
 	    	 <a href="http://www.nick.co.uk/_/code-it/" target="_blank">
@@ -51,7 +51,7 @@ get_header('work-item'); ?>
 	        </div>
 	    </div>
 	 </div>
-	 
+
     <section class="text-section">
         <h2>GIVING KIDS THE POWER TO WRITE CODE</h2>
         <div class="text-section__para">
@@ -111,7 +111,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>SPONGEBOB TO THE RESCUE</h2>
         <div class="text-section__para">
-            <p class="first-para tag--work-body">Let’s face it; raw code doesn’t get many children fired up. So, we decided give kids the power to animate their favourite cartoons within minutes. Using Haxe and HTML5, we created Code-It – an interactive platform with a drag-and-drop interface that allows kids to select classic Nick characters, including the Teenage Mutant Ninja Turtles and the mighty SpongeBob Squarepants.</p>
+            <p class="first-para tag--work-body">Let’s face it; raw code doesn’t get many children fired up. So, we decided to give kids the power to animate their favourite cartoons within minutes. Using Haxe and HTML5, we created Code-It – an interactive platform with a drag-and-drop interface that allows kids to select classic Nick characters, including the Teenage Mutant Ninja Turtles and the mighty SpongeBob Squarepants.</p>
         </div>
     </section>
 </div>
@@ -171,7 +171,7 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>LIFTING THE SQUAREPANTS</h2>
         <div class="text-section__para">
-            
+
             <p class="first-para tag--work-body">We used several in-house skills to create this project:</p>
              <ul class="standard-list">
             	<li>HTML5 wizardry</li>
@@ -205,12 +205,12 @@ get_header('work-item'); ?>
     <section class="text-section">
         <h2>WHAT WE DID</h2>
         <div class="text-section__para">
-                           
+
 	    	<p><span class="serif highlight">HTML5:</span> Animations are created and played back to the user in real time, as they create them using HTML5. This also means that the application can be used on tablet devices.</p>
 	    	<p><span class="serif highlight">UX Design:</span> A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
 	    	<p><span class="serif highlight">Content & design:</span> A lot of research went into the planning phase so we could be sure that kids would enjoy learning to code, and to weave in game elements to keep people playing.</p>
 	    	<p><span class="serif highlight">Bespoke programming:</span> The application is built in Haxe and HTML5, but we developed a new simplified coding language in a visual format so kids could use building blocks to create animations. This language / syntax is a blend of Haxe and JavaScript, but with the complexities and idiosyncrasies hidden from view. This approach means that kids can learn the core principles of programming without having to worry about the details.</p>
-            
+
         </div>
     </section>
 </div>

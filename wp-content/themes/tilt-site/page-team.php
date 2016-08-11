@@ -150,7 +150,7 @@ get_header(); ?>
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined">Dave Weiss</h2>
-						<p class="sans-serif">Senior Designer</p>
+						<p class="sans-serif">Lead Designer</p>
 					</div> <!-- /end overlay-text -->
 				</div> <!-- /end overlay -->
 			</div>
