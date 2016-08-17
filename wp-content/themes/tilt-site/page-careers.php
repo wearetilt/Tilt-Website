@@ -31,7 +31,7 @@ get_header(); ?>
 
 	<div class="group-container">
 		<div class="group group--left group--jobs">
-			<a href="../content-creator">
+			<a href="../backend-developer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<div class="icon-holder">
@@ -58,12 +58,12 @@ get_header(); ?>
 						    </g>
 						    </svg>
 						</div>
-						<h3>Content Creator</h3>
-						<p>We are looking for a content creator to generate teen-skewed news articles.</p>
+						<h3>Back-end Developer</h3>
+						<p>We are looking for talented freelance PHP devs with knowledge of Zend2 & ORM.</p>
 					</div>
 				</div>
 			</a>
-			<a href="../design-freelancers">
+			<a href="../drupal-developer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<div class="icon-holder">
@@ -84,14 +84,14 @@ get_header(); ?>
 						    <path class="st2" d="M1.7,41.6c0-19.7,16-35.7,35.7-35.7 M106.7,46c0,19.7-16,35.7-35.7,35.7"/>
 						    </svg>
 						</div>
-						<h3>Design Freelancer</h3>
-						<p>Are you a web designer looking for freelance work? Send us your portfolio.</p>
+						<h3>Drupal Developer</h3>
+						<p>Are you a freelance developer with a solid understanding of Drupal & Domino.</p>
 					</div>
 				</div>
 			</a>
 		</div>
 		<div class="group group--right group--jobs">
-			<a href="../motion-freelancers">
+			<a href="../frontend-developer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<div class="icon-holder">
@@ -118,8 +118,8 @@ get_header(); ?>
 						    </g>
 						    </svg>
 						</div>
-						<h3>Motion Freelancer</h3>
-						<p>We are on the look out for freelance animators. Send us your showreel.</p>
+						<h3>Front-end Developer</h3>
+						<p>Are you passionate about HTML5, CSS3 and JavaScript? Are you a freelancer?</p>
 					</div>
 				</div>
 			</a>
