@@ -123,35 +123,9 @@ get_header(); ?>
 					</div>
 				</div>
 			</a>
-			<a href="../design-intern">
+			<a href="../production-manager">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
-						<!--
-<div class="icon-holder">
-							<svg id="admin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 100">
-						        <g id="shapes">
-						            <circle class="st0" cx="8.6" cy="68.9" r="4.3"/>
-						            <circle class="st0" cx="8.6" cy="30.1" r="4.3"/>
-						            <path class="st0" d="M8.6 33.9c0 7.5-5.3 7.5-5.3 15S8.6 56.5 8.6 64"/>
-						            <path class="st0" d="M87.3 26.1h13.2v47.4H87.3z"/>
-						            <path class="st0" d="M31.3 25.8h36.4v47.4H31.3z"/>
-						            <path class="st0" d="M44.7 32.1h16.7v22"/>
-						        </g>
-						        <g id="dotted">
-						            <path class="st1" d="M20.7 15.4c.4-.5.9-1 1.3-1.5"/>
-						            <path class="st2" d="M31.9 6.4C37.3 3.5 43.5 1.8 50 1.8c8.3 0 15.9 2.6 22.2 7.1"/>
-						            <path class="st1" d="M77 12.9l1.4 1.4"/>
-						            <path class="st1" d="M78.4 84.5c-.4.5-.9 1-1.3 1.5"/>
-						            <path class="st2" d="M67.2 93.5c-5.4 2.9-11.6 4.6-18.2 4.6-8.3 0-15.9-2.6-22.2-7.1"/>
-						            <path class="st1" d="M22.1 87l-1.4-1.4"/>
-						        </g>
-						        <g id="circles">
-						            <circle class="st3" cx="20.8" cy="49.5" r="2.4"/>
-						            <circle class="st3" cx="78" cy="49.5" r="2.4"/>
-						        </g>
-						    </svg>
-						</div>
--->
 						<div class="icon-holder">
 							<svg version="1.1" id="designer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 87">
 						    <g id="designer_shapes">
@@ -171,8 +145,8 @@ get_header(); ?>
 						    </svg>
 						</div>
 
-						<h3>Design Intern</h3>
-						<p>We're on the lookout for a design intern to support our busy creative team</p>
+						<h3>Production Manager</h3>
+						<p>We're looking for a great PM to join our dynamic team.</p>
 					</div>
 				</div>
 			</a>
