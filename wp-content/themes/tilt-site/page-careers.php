@@ -56,7 +56,7 @@ get_header(); ?>
 						    		<path class="st2" d="M87.1,15.3c0.5,0.5,0.9,1,1.4,1.4"/>
 						    	</g>
 						    </g>
-						    </svg>
+						  </svg>
 						</div>
 						<h3>Back-end Developer</h3>
 						<p>We are looking for talented freelance PHP devs with knowledge of Zend2 & ORM.</p>
@@ -91,7 +91,7 @@ get_header(); ?>
 			</a>
 		</div>
 		<div class="group group--right group--jobs">
-			<a href="../frontend-developer">
+			<a href="../web-developer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
 						<div class="icon-holder">
@@ -118,8 +118,8 @@ get_header(); ?>
 						    </g>
 						    </svg>
 						</div>
-						<h3>Front-end Developer</h3>
-						<p>Are you passionate about HTML5, CSS3 and JavaScript? Are you a freelancer?</p>
+						<h3>Web Developer</h3>
+						<p>We're after a web developer to join our team at Tilt on a full-time basis</p>
 					</div>
 				</div>
 			</a>
