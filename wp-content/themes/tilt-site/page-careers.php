@@ -24,45 +24,90 @@ get_header(); ?>
 <div class="container container--mobile-careers">
 	<div class="container container--half-both area-dark">
 		<h1>Job board</h1>
+
+		<?php
+			$posts = get_posts('post_status=publish&category_name=jobs-board&posts_per_page=4');
+			if (!$posts) :
+		?>
+			<div class="container container--half-both area-dark">
+				<h2>No job openings at this time.</h2>
+			</div>
+		<?php
+			endif;
+		?>
 	</div>
-
-
-
-
-	<div class="group-container">
-		<div class="group group--left group--jobs">
-			<a href="../backend-developer">
-				<div class="module module--1-1 module--job module--visible area-dark">
-					<div class="module__text">
-						<div class="icon-holder">
-							<svg id="motion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 98">
-						    <g id="three_circles">
-						    	<circle class="st0" cx="15" cy="32.5" r="3.8"/>
-						    	<circle class="st0" cx="95.4" cy="66.1" r="3.8"/>
-						    	<circle class="st0" cx="55" cy="50.5" r="3.8"/>
-						    </g>
-						    <path id="wobbly" class="st1" d="M55,28.1c-6.7,0-6.7-4.7-13.5-4.7c-6.7,0-6.7,4.7-13.5,4.7s-6.7-4.7-13.4-4.7S8,28.1,1.2,28.1
-						    	 M55,28.1c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M1.2,79.6c6.7,0,6.7-4.7,13.4-4.7
-						    	s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M55,79.6c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7
-						    	c6.7,0,6.7,4.7,13.5,4.7 M14.7,67.3c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7 M68.5,31.1c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7"
-						    	/>
-						    <g id="stroke">
-						    	<path class="st2" d="M83.1,86.2c-0.5,0.4-1.1,0.8-1.6,1.2"/>
-						    	<path class="st2" d="M71.1,93c-5,1.9-10.4,2.9-16,2.9c-8.4,0-16.2-2.3-23-6.2"/>
-						    	<path class="st2" d="M27.2,86.3c-0.5-0.4-1-0.8-1.5-1.3"/>
-						    	<g>
-						    		<path class="st2" d="M20.4,18.1c0.4-0.5,0.9-1,1.3-1.5"/>
-						    		<path class="st3" d="M30.7,9.1C37.8,4.6,46.1,2,55,2c10.4,0,20,3.5,27.7,9.4"/>
-						    		<path class="st2" d="M87.1,15.3c0.5,0.5,0.9,1,1.4,1.4"/>
-						    	</g>
-						    </g>
-						  </svg>
+	<?php
+		if ($posts):
+	?>
+		<div class="group-container">
+			<div class="group group--left group--jobs">
+				<?php $i = 0; ?>
+				<?php foreach($posts as $post): ?>
+					<?php $i++; ?>
+				<a href="<?php echo get_permalink($post); ?>">
+					<div class="module module--1-1 module--job module--visible area-dark">
+						<div class="module__text">
+							<div class="icon-holder">
+								<?php switch ($i) { 
+									case 1:
+									case 3: ?>
+										<svg id="motion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 98">
+										    <g id="three_circles">
+										    	<circle class="st0" cx="15" cy="32.5" r="3.8"/>
+										    	<circle class="st0" cx="95.4" cy="66.1" r="3.8"/>
+										    	<circle class="st0" cx="55" cy="50.5" r="3.8"/>
+										    </g>
+										    <path id="wobbly" class="st1" d="M55,28.1c-6.7,0-6.7-4.7-13.5-4.7c-6.7,0-6.7,4.7-13.5,4.7s-6.7-4.7-13.4-4.7S8,28.1,1.2,28.1
+										    	 M55,28.1c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M1.2,79.6c6.7,0,6.7-4.7,13.4-4.7
+										    	s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7c6.7,0,6.7,4.7,13.5,4.7 M55,79.6c6.7,0,6.7-4.7,13.4-4.7s6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7
+										    	c6.7,0,6.7,4.7,13.5,4.7 M14.7,67.3c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7 M68.5,31.1c6.7,0,6.7,4.7,13.4,4.7s6.7-4.7,13.5-4.7"
+										    	/>
+										    <g id="stroke">
+										    	<path class="st2" d="M83.1,86.2c-0.5,0.4-1.1,0.8-1.6,1.2"/>
+										    	<path class="st2" d="M71.1,93c-5,1.9-10.4,2.9-16,2.9c-8.4,0-16.2-2.3-23-6.2"/>
+										    	<path class="st2" d="M27.2,86.3c-0.5-0.4-1-0.8-1.5-1.3"/>
+										    	<g>
+										    		<path class="st2" d="M20.4,18.1c0.4-0.5,0.9-1,1.3-1.5"/>
+										    		<path class="st3" d="M30.7,9.1C37.8,4.6,46.1,2,55,2c10.4,0,20,3.5,27.7,9.4"/>
+										    		<path class="st2" d="M87.1,15.3c0.5,0.5,0.9,1,1.4,1.4"/>
+										    	</g>
+										    </g>
+										  </svg>
+										<?php break;
+									case 2:
+									case 4:
+									?>
+									<svg version="1.1" id="designer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 87">
+									    <g id="designer_shapes">
+									    	<path class="st1" d="M64.2,5.9c6.2,0,6.2,4.4,12.5,4.4c6.2,0,6.2-4.4,12.5-4.4 M90.8,41.9c0,8-6.5,14.4-14.4,14.4
+									    		c-8,0-14.4-6.5-14.4-14.4c0-8,6.5-14.4,14.4-14.4S90.8,33.9,90.8,41.9z"/>
+									    	<path class="st1" d="M76.7,33.2c4.8,0,8.7,3.9,8.7,8.7s-3.9,8.7-8.7,8.7c-2.4,0-4.6-1-6.2-2.6"/>
+									    	<path class="st1" d="M49,81.7c-6.2,0-6.2-4.4-12.5-4.4s-6.2,4.4-12.5,4.4"/>
+									    	<path class="st1" d="M21.1,34.4l7.5,7.5l-7.5,7.5l7,7l7.5-7.5l7.4,7.5l7-7l-7.4-7.5l7.4-7.5l-7-6.9l-7.4,7.4l-7.5-7.4L21.1,34.4z"
+									    		/>
+									    	<path class="st1" d="M28.1,49.5l7.5-7.5l7.4,7.5"/>
+									    </g>
+									    <g id="designer_circles">
+									        <circle class="st0" cx="92.7" cy="5.9" r="3.6"/>
+									        <circle class="st0" cx="20.5" cy="81.7" r="3.6"/>
+									    </g>
+									    <path class="st2" d="M1.7,41.6c0-19.7,16-35.7,35.7-35.7 M106.7,46c0,19.7-16,35.7-35.7,35.7"/>
+								    </svg>
+									<?php
+								 } ?>
+							</div>
+							<h3><?php echo $post->post_title; ?></h3>
+							<p><?php echo $post->post_excerpt; ?></p>
 						</div>
-						<h3>Back-end Developer</h3>
-						<p>We are looking for talented freelance PHP devs with knowledge of Zend2 & ORM.</p>
 					</div>
-				</div>
-			</a>
+				</a>
+				<?php endforeach; ?>
+			</div>
+		</div>
+	<?php endif; ?>
+
+
+<!-- 
 			<a href="../drupal-developer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">
@@ -152,7 +197,7 @@ get_header(); ?>
 			</a>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <div class="container container--half-top">
 	<div class="group-container careers">
