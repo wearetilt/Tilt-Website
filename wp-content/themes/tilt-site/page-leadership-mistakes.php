@@ -18,7 +18,7 @@ get_header('work-item'); ?>
     </video>
     <div id="video-overlay-close"></div>
 </div>
-<header id="page_gfk" class="work-item work-item--motion area-dark">
+<header id="page_leadership" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play">
 
