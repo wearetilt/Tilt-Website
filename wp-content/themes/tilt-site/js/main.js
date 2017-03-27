@@ -161,6 +161,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 								//myPlayer.src("https://player.vimeo.com/external/109216250.hd.mp4?s=4554075b1bbddc5346e47acad348d420&profile_id=113");
 							break;
 
+							case "page_leadership":
+								myPlayer.src("https://player.vimeo.com/external/164256445.hd.mp4?s=f141fb096147d76282bf00a36a29a1f83cd9a84c&profile_id=119");
+
+							break;
+
 							case "page_legacy":
 								myPlayer.src("https://player.vimeo.com/external/66887877.hd.mp4?s=fdc4231994bcacbc95927f1ab19b489890fe327e&profile_id=113");
 							break;
@@ -252,6 +257,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							//myPlayer.src("https://player.vimeo.com/external/109216250.hd.mp4?s=4554075b1bbddc5346e47acad348d420&profile_id=113");
 						break;
 
+						case "page_leadership":
+							myPlayer.src("https://player.vimeo.com/external/164256445.hd.mp4?s=f141fb096147d76282bf00a36a29a1f83cd9a84c&profile_id=119");
+
+						break;
+						
 						case "page_legacy":
 							myPlayer.src("https://player.vimeo.com/external/66887877.hd.mp4?s=fdc4231994bcacbc95927f1ab19b489890fe327e&profile_id=113");
 						break;
@@ -416,6 +426,11 @@ if(document.getElementById('header-video-player')){ // if has header video
 			case "page_gfk":
 				var clipVideoSrc = "https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113";
 				var fullVideoSrc = "https://player.vimeo.com/external/109216250.hd.mp4?s=4554075b1bbddc5346e47acad348d420&profile_id=113";
+			break;
+
+			case "page_leadership":
+				var clipVideoSrc = "https://player.vimeo.com/external/164256445.hd.mp4?s=f141fb096147d76282bf00a36a29a1f83cd9a84c&profile_id=119";
+				var fullVideoSrc = "https://player.vimeo.com/external/129132162.hd.mp4?s=b321063322e2949a1a5fd2ff900f21663cd265f4&profile_id=113";
 			break;
 
 			case "page_legacy":
