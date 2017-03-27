@@ -101,6 +101,12 @@ get_header(); ?>
 						</div>
 					</div>
 				</a>
+					<?php if($i == 2) : ?>
+						</div>
+
+						<div class="group group--right group--jobs">
+
+					<?php endif; ?>
 				<?php endforeach; ?>
 			</div>
 		</div>
