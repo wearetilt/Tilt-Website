@@ -47,7 +47,6 @@
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/video.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/css/video-js.min.css"></script>
 <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://secure.leadforensics.com/js/91727.js" ></script>
 <noscript><img alt="" src="https://secure.leadforensics.com/91727.png" style="display:none;" /></noscript>

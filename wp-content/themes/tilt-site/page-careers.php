@@ -48,7 +48,7 @@ get_header(); ?>
 					<div class="module module--1-1 module--job module--visible area-dark">
 						<div class="module__text">
 							<div class="icon-holder">
-								<?php switch ($i) { 
+								<?php switch ($i) {
 									case 1:
 									case 3: ?>
 										<svg id="motion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 98">
@@ -113,7 +113,7 @@ get_header(); ?>
 	<?php endif; ?>
 
 
-<!-- 
+<!--
 			<a href="../drupal-developer">
 				<div class="module module--1-1 module--job module--visible area-dark">
 					<div class="module__text">

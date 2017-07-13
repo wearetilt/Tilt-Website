@@ -3,8 +3,8 @@ Contributors: mpntod
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9XCNM4QSVHYT8
 Tags: shortcode,widget,twitter,rotating,rotate,rotator,tweet,tweets,animation,jquery,jquery cycle,cycle,multilingual,responsive,page builder
 Requires at least: 3.2
-Tested up to: 4.3
-Stable tag: 1.7.16
+Tested up to: 4.4.1
+Stable tag: 1.8.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,28 +15,14 @@ Twitter widget and shortcode to show your latest tweets one at a time an animate
 * **Supports v 1.1 of the Twitter API** ([i.e. it still works](https://blog.twitter.com/2013/api-v1-is-retired))
 * **Space efficient** - instead of showing all your tweets at once, shows one at a time and then smoothly replaces it with the next one. After showing all your tweets, loops back to the beginning again.
 * **Reliable** - keeps showing your latest Tweets even if the Twitter website is down.
-* **Customisable** - you decide whose tweets to show, how many to show, whether to include retweets and replies, and whether to show a follow button. You can also decide how quickly the tweets rotate and what type of animation to use.
+* **Customizable** - you decide whose tweets to show, how many to show, whether to include retweets and replies, and whether to show a follow button. You can also decide how quickly the tweets rotate and what type of animation to use.
 * **Responsive** - resizes as your page resizes
-* Gives you the option to show a fully customisable Twitter 'follow' button
+* Gives you the option to show a fully customizable Twitter 'follow' button
 * Replaces [t.co](http://t.co) links with the original link
 * Caches the most recent data from Twitter to avoid problems with rate limiting
 * Uses [jQuery](http://jquery.com/), [jQuery.Cycle](http://jquery.malsup.com/cycle/) and [jQuery.Cycle2](http://jquery.malsup.com/cycle2/) to produce a nice smooth result.
-* Compatible with [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/).
-* **Multi-lingual** - now set up to be multi-lingual. The Twitter 'follow' button is automatically translated to match your site's language setting [if Twitter has made the appropriate language available](https://dev.twitter.com/docs/api/1.1/get/help/languages). Also uses [Wordpress's multi-lingual capability](http://codex.wordpress.org/I18n_for_WordPress_Developers) to enable translation of all the other text used by the plug-in via language packs.
-
-Currently the following languages are available:
-
-* US English *(complete)*
-* British English *(complete - mainly changing 'favorite' to 'favourite'!)*
-* Brazilian Portuguese *(complete - many thanks to Wilmerson Felipe for his help on this)*
-* German *(almost complete - many thanks to Nils Kroneberg for his help on this)*
-* Spanish *(complete - many thanks to Alberto Lario for his help on this)*
-* Italian *(complete - many thanks to [Mattia Migliorini](https://profiles.wordpress.org/deshack/) at [deshack](http://deshack.net/) for his help on this)*
-* Dutch *(public facing translation complete - many thanks to Natasja Weijer for her help on this)*
-* French *(almost complete - many thanks to [Alexandre Trudel](http://wordpress.org/support/profile/alexandretrudel) for his help on this)*
-* Serbian *(complete - many thanks to Borisa Djuraskovic at [Web Hosting Hub](http://www.webhostinghub.com/) for his help on this)*
-
-If you have made the plug-in work in your language, please send the translations you'd like to see or, even better, the relevant [gettext PO and MO files](http://codex.wordpress.org/I18n_for_WordPress_Developers) to [me](http://www.martintod.org.uk/contact-martin/) and I will then share them with everyone else. You can download [the latest POT file](http://plugins.svn.wordpress.org/rotatingtweets/trunk/languages/rotatingtweets.pot), and [PO files in each language](http://plugins.svn.wordpress.org/rotatingtweets/trunk/languages/) from this site. You may find [Poedit](http://www.poedit.net/) rather useful for translation and creation of PO and MO files - although the PO files themselves are quite simple text files and can be edited in Notepad or [Notepad++](http://notepad-plus-plus.org/).
+* Compatible with [W3 Total Cache](/plugins/w3-total-cache/).
+* **Multi-lingual** - now set up to be multi-lingual. The Twitter 'follow' button is automatically translated to match your site's language setting [if Twitter has made the appropriate language available](https://dev.twitter.com/docs/api/1.1/get/help/languages). Also uses [Wordpress's multi-lingual capability](http://codex.wordpress.org/I18n_for_WordPress_Developers) to enable translation of all the other text used by the plug-in via [language packs](https://translate.wordpress.org/projects/wp-plugins/rotatingtweets).
 
 If you'd like to see what the plug-in looks like in action, you can [see the plug-in working here](http://www.martintod.org.uk/2012/05/29/new-twitter-plugin-to-show-tweets-in-rotation/).
 
@@ -103,10 +89,10 @@ Possible variables for the shortcode include:
 	* `official_format_override` = `'0'` or `'1'` - enables you to change the settings for `show_meta_reply_retweet_favorite` and `show_meta_timestamp` on the 'official formats'.
 	* `profile_image_size` = `'normal'`, `'bigger'`, `'mini'` or `'original'` - lets you change the size of profile images - default is `'normal'`
 	* `shuffle` = `'0'` or `'1'` - shuffle the order that Tweets display - default is `'0'`
-	* `merge_cache` = `'0'` or `'1'` - switches cacheing of searches on or off - default is `'1'` (i.e. on)
+	* `merge_cache` = `'0'` or `'1'` - switches caching of searches on or off - default is `'1'` (i.e. on)
 
 * **Caching**
-	* `w3tc_render_to` = 'your_choice_of_random_string' - used to support 'fragment caching' by [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/).  For this to work, you also need to ensure that `W3TC_DYNAMIC_SECURITY` is defined in your `wp-config.php` file and that you not using 'HTTP Compression' on the W3 Total Cache 'Browser Cache' settings page or 'Enhanced Disk caching' on the W3 Total Cache 'Page Cache' settings page.
+	* `w3tc_render_to` = 'your_choice_of_random_string' - used to support 'fragment caching' by [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/).  For this to work, you also need to ensure that `W3TC_DYNAMIC_SECURITY` is defined in your `wp-config.php` file and that you are not using 'HTTP Compression' on the W3 Total Cache 'Browser Cache' settings page or 'Enhanced Disk caching' on the W3 Total Cache 'Page Cache' settings page.
 	
 * **Twitter follow button**
 	* `show_follow` = `'0'` or `'1'` - show follow button - default is `'0'`
@@ -120,12 +106,22 @@ Most of this is my own work, but special thanks are owed to:
 * [Mike Alsup](http://jquery.malsup.com/cycle/) for [jQuery.Cycle](http://jquery.malsup.com/cycle/) and [jQuery.Cycle2](http://jquery.malsup.com/cycle2/)
 * [Syd Lawrence](http://sydlawrence.com/) for introducing me to jQuery and jQuery.Cycle
 * [Abraham Williams](http://abrah.am) for [TwitterOAuth](https://github.com/abraham/twitteroauth)
-* [Liam Gaddy](http://profiles.wordpress.org/lgladdy/) at [Storm Consultancy](http://www.stormconsultancy.co.uk/) for [his work](http://www.stormconsultancy.co.uk/blog/development/tools-plugins/oauth-twitter-feed-for-developers-library-and-wordpress-plugin/) on [oAuth Twitter Feed for Developers](http://wordpress.org/extend/plugins/oauth-twitter-feed-for-developers/) (although I ended up using it for inspiration rather than plugging it in directly).
+* [Liam Gaddy](http://profiles.wordpress.org/lgladdy/) at [Storm Consultancy](http://www.stormconsultancy.co.uk/) for [his work](http://www.stormconsultancy.co.uk/blog/development/tools-plugins/oauth-twitter-feed-for-developers-library-and-wordpress-plugin/) on [oAuth Twitter Feed for Developers](/plugins/oauth-twitter-feed-for-developers/) (although I ended up using it for inspiration rather than plugging it in directly).
 * All the people who have given advice and suggested improvements
+
+Thank you to the people who did the original translation work for the following packs:
+
+* Wilmerson Felipe for his work on Brazilian Portuguese
+* Nils Kroneberg for his work on German
+* Alberto Lario for his work on Spanish
+* [Mattia Migliorini](https://profiles.wordpress.org/deshack/) at [deshack](http://deshack.net/) for his work on Italian
+* Natasja Weijer for her work on Dutch
+* [Alexandre Trudel](http://wordpress.org/support/profile/alexandretrudel) for his help on French
+* Borisa Djuraskovic at [Web Hosting Hub](http://www.webhostinghub.com/) for his help on Serbian
 
 == Frequently Asked Questions ==
 = What options can I use for the shortcode? =
-All the options are listed on the [Rotating Tweets installation page](http://wordpress.org/extend/plugins/rotatingtweets/installation/).
+All the options are listed on the [Rotating Tweets installation page](/plugins/rotatingtweets/installation/).
 
 = How can I include Rotating Tweets in my template? =
 Try something like:
@@ -170,7 +166,7 @@ If there is only one copy of `jquery` and of `jquery.cycle` on your page, the be
 1. Read the diagnostics and look for any problems that relate to JavaScript. This will normally tell you which JavaScript (if any) is having problems.
 
 = What can I do if I get the WordPress error code: `http_request_failed - name lookup timed out`? =
-Try installing the [Core Control plug-in](http://wordpress.org/extend/plugins/core-control/) and disabling cURL. You can read more about the problem via [this support page](http://wordpress.org/support/topic/wp-351-wordpress-error-code-http_request_failed-name-lookup-timed-out).
+Try installing the [Core Control plug-in](/plugins/core-control/) and disabling cURL. You can read more about the problem via [this support page](http://wordpress.org/support/topic/wp-351-wordpress-error-code-http_request_failed-name-lookup-timed-out).
 
 Thank you to [darkiko](http://wordpress.org/support/profile/darkiko) for sharing their solution to this problem.
 
@@ -187,10 +183,39 @@ into your CSS - changing `123px;` to the width you're aiming at - either via put
 You can do this by going to the `rotatingtweets/css` directory and renaming `rotatingtweets-sample.css` to `rotatingtweets.css` and putting it in the `wp-content/uploads/` directory.  This displays a Twitter bird to the left of your tweets.  Any CSS you put into `rotatingtweets.css` won't be overwritten when the plug-in is upgraded to the latest version.
 
 == Upgrade notice ==
-= 1.7.16 =
-* Minor bug fixes - on caching and displaying error message in `WP_DEBUG` mode.
+= 1.8.4 = 
+* Updated JavaScript for plug-ins and themes with their own JQuery Cycle2 installations
 
 == Changelog ==
+= 1.8.4 = 
+* Updated JavaScript for plug-ins and themes with their own [JQuery Cycle2](http://jquery.malsup.com/cycle2/) installations
+
+= 1.8.3 = 
+* Fixed 'Invalid argument' bug when combining tweets from different accounts
+* Allow up to 60 tweets
+* Deletion of Italian `.mo` file - since now available as a [Wordpress-hosted translation pack](https://translate.wordpress.org/projects/wp-plugins/rotatingtweets)
+
+= 1.8.2 = 
+* Fixed 'Undefined variable' bug in line 648
+
+= 1.8.1 =
+* Fixed "no updating" caching bug
+
+= 1.8 =
+* Better handling of multiple screen names in a single widget or shortcode
+* Addition of new option to hide CSS
+* Updated Twitter JavaScript
+* Translated the base readme file into US English
+* Handled bug with `UTF8MB4` text encoding
+* Tidier date management code with better error handling
+* Made links in the `readme.txt` language independent
+
+= 1.7.18 =
+* Reinstalling translation packs.  Turns out that incomplete packs aren't loaded - which breaks some of the available translations.
+
+= 1.7.17 =
+* Move to [Wordpress-hosted translation packs](https://translate.wordpress.org/projects/wp-plugins/rotatingtweets).
+
 = 1.7.16 =
 * Fixed undefined variable error for `show_media` in `WP_DEBUG` mode
 * Fix for caching bug
@@ -200,7 +225,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 * Enabling sorting of display elements via `rtw_display_order` shortcode
 
 = 1.7.14 =
-* Works with [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/).
+* Works with [Page Builder by SiteOrigin](/plugins/siteorigin-panels/).
 * Adds new shortcode variable `only_rts`
 
 = 1.7.13 =
@@ -268,10 +293,10 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 
 = 1.7.0 =
 * Adding `offset`, `speed`, `tweet_length`, `no_emoji` and `show_media` options to the shortcode
-* Solves clash with [Cyclone Slider 2](http://wordpress.org/plugins/cyclone-slider-2/)
+* Solves clash with [Cyclone Slider 2](/plugins/cyclone-slider-2/)
 * Adds script version details to the JavaScript
 * Removal of excess spaces from `middot` shortcode option
-* Adds option for 'custom' display layoot  with user-defined display function `rotatingtweets_display_override()`
+* Adds option for 'custom' display layout with user-defined display function `rotatingtweets_display_override()`
 
 = 1.6.11 =
 * Fixing cache bug with 'user_mentions'
@@ -299,7 +324,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 * Language update including new Serbian translation. Solved an unusual styling problem.
 
 = 1.6.4 =
-* Bug fix when user name not recognised.
+* Bug fix when user name not recognized.
 
 = 1.6.3 =
 * Add option to shorten default link length to 20 characters
@@ -326,7 +351,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 
 = 1.5.1 =
 * Enforce rules on replies and retweets even if the Twitter API doesn't
-* Fixed problem with [Magazino template](http://wordpress.org/themes/magazino)
+* Fixed problem with [Magazino template](/themes/magazino)
 * Fixed incorrect message on settings page
 
 = 1.5.0 =
@@ -349,7 +374,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 
 = 1.4.5 =
 * Deletes old cache entries if unused for more than 30 days
-* Fixes a jQuery cycle clash with the [Oxygen theme](http://wordpress.org/extend/themes/oxygen/).
+* Fixes a jQuery cycle clash with the [Oxygen theme](/themes/oxygen/).
 * Added `readme.txt` instructions for dealing with the WordPress error code: `http_request_failed - name lookup timed out`.
 
 = 1.4.4 =
@@ -366,7 +391,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 = 1.4.1 =
 * Now works with responsive formats
 * Adjusted width overflow issues
-* Added [instructions on how to deal with width issues](http://wordpress.org/extend/plugins/rotatingtweets/faq/)
+* Added [instructions on how to deal with width issues](/plugins/rotatingtweets/faq/)
 
 = 1.4.0 =
 * Support for search, favorites and lists via Rotating Tweets widgets.
@@ -413,7 +438,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 * Fixed bug with `console.log` javascript on IE.
 
 = 0.711 (1.3.7) =
-* Fixed up a significant problem with cacheing.
+* Fixed up a significant problem with caching.
 
 = 0.709 (1.3.6) =
 * Tidying up error reporting.
@@ -475,7 +500,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 * Tidied up code.
 
 = 0.505 (1.0.0) =
-* Minimised Javascript. 
+* Minimized Javascript. 
 * Set-up for I18n.
 
 = 0.502 (0.4.1) =
@@ -488,7 +513,7 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 * Solves `Cannot use string offset as an array` error on line 232
 
 = 0.491 (0.3.0) =
-* Lets you customise the Twitter 'follow' button. 
+* Lets you customize the Twitter 'follow' button. 
 * Fixes problem with media links. 
 * Sorts problem of overlong links reshaping widgets.
 
@@ -528,16 +553,16 @@ You can do this by going to the `rotatingtweets/css` directory and renaming `rot
 * Fixed flaw in how flags are handled.
 
 = 0.26 (0.1.4) =
-* Stops display and cacheing of non-existent twitter feeds
+* Stops display and caching of non-existent twitter feeds
 
 = 0.25 (0.1.3) =
-* Stops display and cacheing of faulty twitter feeds
+* Stops display and caching of faulty twitter feeds
 
 = 0.21 (0.1.2) =
 * Replaced a missing `</div>` in the follow-button code (with thanks to [jacobp](http://wordpress.org/support/profile/jacobp) for spotting it and suggesting a fix)
 
 = 0.2 (0.1.1) =
-* Fixed a problem with cacheing
+* Fixed a problem with caching
 
 = 0.1 (0.1.0) =
 * First published version

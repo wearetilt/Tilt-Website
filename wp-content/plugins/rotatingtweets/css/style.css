@@ -4,15 +4,11 @@
 	width: 100%;
 }
 */
-
 div.rotatingtweet {
 	font-size: 100%;
 	word-wrap: break-word;
 	vertical-align: top;
-	color: white;
 }
-
-
 div.cycle-carousel-wrap div.rotatingtweet {
 	padding-right: 1em;
 }
@@ -36,6 +32,8 @@ div.rtw_icon img {
 	max-height: 2.2em;
 }
 div.rtw_intents a img,span.rtw_intents a img {
+	max-width: 1.2em;
+	max-height: 1.2em;
 	padding: 0;
 	margin: 0;
 	display: inline;
@@ -52,56 +50,39 @@ div.rtw_rt_meta img {
 /* The main positioning */
 .rtw_twitter_icon,
 .rtw_time_short {
-	float: left;
+	float:right;
 }
-
-/*
-.rtw_time_short a{
-	color: #ec135b;
-}
-*/
 div.rtw_wide_icon,
 div.rtw_icon {
 	float:left;
 	padding-right: 0.5em;
 }
 div.rtw_wide_icon {
-	display: none;
+	display: inline;
 }
 .rtw_wide_block .rtw_name,
 .rtw_wide_block .rtw_id {
-	display: none;
+	display: inline;
+}
+.rtw_wide_block {
+	padding-left: 58px;
 }
 div.rtw_intents {
 	display: inline;
 	float:right;
 	margin-left: 0.5em;
 }
-span.rtw_intents a img{
-	height: 20px;
-	width: 24px;
-}
 div.rtw_intents a,span.rtw_intents a {
-	width: 24px;
-	overflow: hidden;
-	display: inline-block;
-	height: 21px;
-	margin-top: 20px;
-}
-
-span.rtw_intents a + a{
-	margin-left: 20px;
+	display: inline;
 }
 div.rtw_timestamp {
 	display: inline;
 }
 .rotatingtweet p.rtw_main {
 	clear: both;
-		
-
 }
 .rtw_wide_block p.rtw_main,div.rtw_main {
-	clear: left;
+	clear: none;
 }
 
 .norotatingtweets .rotatingtweet {
@@ -120,7 +101,7 @@ div.rtw_timestamp {
 .rtw_pager {
 	text-align: center;
 	font-size: 2em;
-}
+} 
 .rtw_pager a {
 	text-decoration: none !important;
 }
@@ -152,9 +133,9 @@ div.rtw_timestamp {
 }
 
 
-
-
-
+p.rtw_meta,div.rtw_meta {
+	margin-bottom: 1em;
+}
 #sidebar ul li div.rtw_name,div.rtw_name,div.rtw_name a {
 	margin-bottom: 0;
 	padding-bottom: 0;

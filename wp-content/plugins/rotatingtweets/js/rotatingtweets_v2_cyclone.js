@@ -49,7 +49,7 @@ $.fn.cycle.transitions.toss = {
         opts.API.stackSlides( opts, curr, next, fwd );
         var width = opts.container.css('overflow','visible').width();
 		var height = opts.container.css('overflow','visible').height();
-        opts.cssBefore = { left: 0, top: 0, opacity: 1, display: 'block', visibility: 'visible', width:width };
+        opts.cssBefore = { left: 0, top: 0, opacity: 1, visibility: 'visible', display: 'block', width:width };
         opts.animIn = { left: 0 };
         opts.animOut = { left : width*2, top:-height/2 , opacity:0, width:width, display:'block' };
     }
@@ -70,7 +70,7 @@ $.fn.cycle.transitions.scrollLeftGap = {
  Script to cycle the rotating tweets
 */
 jQuery(document).ready(function() {
-	// Not at all sure we need this
+	// Needed because - unlike the RT version of jQuery Cycle2 - the auto-selector hasn't been renamed
 	jQuery('.rotatingtweets').cycle();
 	// Script to show mouseover effects when going over the Twitter intents
 	var rtw_src,
@@ -95,4 +95,19 @@ jQuery(document).ready(function() {
 });
 /* And call the Twitter script while we're at it! */
 /* Standard script to call Twitter */
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));

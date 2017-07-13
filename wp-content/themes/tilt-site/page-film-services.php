@@ -61,7 +61,7 @@ get_header('about-item'); ?>
 					endif;
 
 
-					if($j > 1 && $j < 5) { ?>
+					if($j > 0 && $j < 3) { ?>
 
 						<a href="<?php echo the_permalink(); ?>">
 							<div class="module module--1-1 area-dark news--icon">
@@ -95,7 +95,7 @@ get_header('about-item'); ?>
                     </div>
 
                 </div>
-                
+
                 <?php
 
 					foreach ( $filmposts as $post ) : setup_postdata( $post );
@@ -136,14 +136,14 @@ get_header('about-item'); ?>
 
 
 
-		
 
 
 
 
 
 
-		
+
+
 
 	</div>
 

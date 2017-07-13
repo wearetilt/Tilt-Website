@@ -31,22 +31,22 @@ get_header('about-item'); ?>
 		 'post_status' => 'publish',
 		 'category'         => '15',
 	 );
-	
+
 	 $posts_array = get_posts( $args );
 	 $post = $posts_array[0];
 	 $postID = $post->ID;
-	
+
 	 if (has_post_thumbnail( $postID ) ){
 		 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
 	 }
 
-	 $filmposts = get_posts( $args ); 
+	 $filmposts = get_posts( $args );
 	 $i = 0;
 	 $j = 0;
 	 $k = 0;
 	 ?>
 
-	
+
 	<div class="container container--no-padding">
 
 		<div class="group-container">
@@ -61,7 +61,7 @@ get_header('about-item'); ?>
 					endif;
 
 
-					if($j > 1 && $j < 5) { ?>
+					if($j > 0 && $j < 3) { ?>
 
 						<a href="<?php echo the_permalink(); ?>">
 							<div class="module module--1-1 area-dark news--icon">
@@ -95,7 +95,7 @@ get_header('about-item'); ?>
                     </div>
 
                 </div>
-                
+
                 <?php
 
 					foreach ( $filmposts as $post ) : setup_postdata( $post );
@@ -136,11 +136,11 @@ get_header('about-item'); ?>
 
 
 
-		
-	
-	
+
+
+
 	</div>
-	
+
 	<div class="container container--double-side-pad area-dark">
 		<div class="text-container center">
 			<a class="cube--link" href="<?php echo site_url(); ?>/work#interactive">
@@ -158,7 +158,7 @@ get_header('about-item'); ?>
 
 </div>
 
-	
-	
-	
+
+
+
 <?php get_footer(); ?>
