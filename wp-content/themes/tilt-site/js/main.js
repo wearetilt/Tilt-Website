@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							break;
 
 							case "work_page":
-								myPlayer.src("https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113");
+								myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119");
 								// myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113");
 							break;
 
@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							myPlayer.src("https://player.vimeo.com/external/164256445.hd.mp4?s=f141fb096147d76282bf00a36a29a1f83cd9a84c&profile_id=119");
 
 						break;
-						
+
 						case "page_legacy":
 							myPlayer.src("https://player.vimeo.com/external/66887877.hd.mp4?s=fdc4231994bcacbc95927f1ab19b489890fe327e&profile_id=113");
 						break;
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						break;
 
 						case "work_page":
-							myPlayer.src("https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113");
+							myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119");
 							// myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113");
 						break;
 
@@ -454,7 +454,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 			break;
 
 			case "work_page":
-				var clipVideoSrc = "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113";
+				var clipVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
 				var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113";
 			break;
 
@@ -538,7 +538,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 	if(document.getElementById('header-play')){
 	    document.getElementById('header-play').addEventListener('click', function(){
 	            myPlayer.ready(function(){
-	                if(videoOverlay.currentSrc() === "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113"){
+	                if(videoOverlay.currentSrc() === "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119"){
 	                    videoOverlay.src(fullVideoSrc);
 	                }
 					// //console.log("I am doing this, i shouldn't be");
