@@ -56,6 +56,9 @@ jQuery(document).ready(function(){
 
 
 	<?php wp_head(); ?>
+
+	<meta name="theme-color" content="#ff0066">
+
 </head>
 
 <body <?php body_class(); ?>>

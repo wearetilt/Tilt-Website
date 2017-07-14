@@ -24,6 +24,8 @@ Version: 1.0
 @import 'components/menu';
 @import 'components/carousel';
 @import 'components/video-js';
+@import 'components/video-custom';
+@import 'components/twitter-custom';
 @import 'components/map';
 @import 'components/news';
 @import 'components/forms';
@@ -33,4 +35,4 @@ Version: 1.0
 
 
 /* Loaded in last for styling reasons */
-@import 'partials/individual-page';
+@import 'partials/individual-page'; 

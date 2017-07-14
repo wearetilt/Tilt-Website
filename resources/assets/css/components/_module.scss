@@ -19,7 +19,7 @@
             color: white;
         }
     }
-
+ 
     &.module--dark-mobile {
 	     @media handheld, screen and (min-width:0px) and (max-width:$bp-desktop) { background-color:$c-bg; }
     }
@@ -57,7 +57,7 @@
 
     }
 
-    &:hover{
+    &:hover, &.hover {
         .overlay{
             opacity: 1;
         }

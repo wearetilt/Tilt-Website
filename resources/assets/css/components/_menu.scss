@@ -40,18 +40,37 @@ a#menuButton:hover { background:url('../images/menu-burger_v3.png') 10px -34px n
 #closeButton {
 	display:none;
 	right:10px;
-	cursor:pointer;
+	cursor:pointer; 
 	margin-right:25px;
     margin-top:25px;
-	padding-top:19px;
-	width:19px;
-	height:0;
-	background:url('../images/close_btn.png') 0 0 no-repeat;
+	width:17px;
+	height:17px;
+	background:url('../images/close_btn.png') top left no-repeat;
+	background-size: 17px 17px;
 	overflow:hidden;
-	cursor:pointer;
-}
+	text-indent: -9999px;
+	transition: all .2s;
+	cursor: pointer;
+	
+	&:before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 17px;
+		height: 17px;
+		background:url('../images/close_btn_hover.png') top left no-repeat;
+		background-size: 17px 17px;
+		transition: all .2s;
+		opacity: 0;
+	}
 
-a#closeButton:hover { background:url('../images/close_btn.png') 0px -19px no-repeat; }
+	&:hover:before {
+		opacity: 1;
+	}
+
+}
 
 
 #workButton{
@@ -169,7 +188,8 @@ a#workButton:hover { background:url('../images/work-burger_v5.png') 10px -39px n
     padding-top: 26px;
     font-family:$f-seroot-thn;
     letter-spacing:1px;
-    margin-right:50px;
+	margin-right:50px;
+	user-select: none;
 
     @media handheld, screen and (min-width: $bp-desktop){
     	width: 150px;

@@ -166,10 +166,24 @@ footer{
     @extend %clearfix;
     margin-top:0%;
     margin-bottom: 2%;
+
+    @media all and(max-width: 600px) {
+        text-align: center;
+
+        .footer-icon {
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        .telephone {
+            float: none;
+            display: inline-block;
+        }
+    }
 }
 
 .footer-icon{
-    float: left;
+    display: inline-block;
     width: 25px;
     height: 23px;
 

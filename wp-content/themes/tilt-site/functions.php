@@ -1,4 +1,8 @@
 <?php
+
+$isDev = $_SERVER['SERVER_ADDR'] == '127.0.0.1' ? true : false;
+define('IS_DEV', $isDev);
+
 /**
  * Twenty Fifteen functions and definitions
  *
@@ -224,7 +228,15 @@ add_action( 'wp_head', 'twentyfifteen_javascript_detection', 0 );
  */
 function twentyfifteen_scripts() {
 
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/global.min.css', '20150915' );
+	$cssFile = 'global.min.css';
+	$jsFile = 'main.min.js';
+ 
+	if(IS_DEV) {
+		$cssFile = 'global.css';
+		$jsFile = 'main.js';
+	}
+	
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/'.$cssFile, false, filemtime(get_template_directory().'/css/'.$cssFile));
 
 	// Load the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentyfifteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfifteen-style' ), '20141010' );
@@ -235,7 +247,7 @@ function twentyfifteen_scripts() {
 	wp_style_add_data( 'twentyfifteen-ie7', 'conditional', 'lt IE 8' );
 	wp_enqueue_script( 'main-sas', get_template_directory_uri() . '/js/sas.js', array(), '20150330', true );
 	wp_enqueue_script( 'main-libs', get_template_directory_uri() . '/js/libs.js', array(), '20150330', true );
-	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/main.js', array(), '20150330', true );
+	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/'.$jsFile, array(), filemtime(get_template_directory().'/js/'.$jsFile), true );
 }
 add_action( 'wp_enqueue_scripts', 'twentyfifteen_scripts' );
 

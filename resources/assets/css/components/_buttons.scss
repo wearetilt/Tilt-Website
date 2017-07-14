@@ -299,13 +299,6 @@ a{
 
 
 
-/* Rotate the cube */
-.cube:hover {
-	-webkit-transform: rotateX(90deg);
-	transform: rotateX(90deg); /* Text bleed at 90º */
-	-webkit-transition: -webkit-transform 0.25s;
-	transition: transform 0.25s; /* Animate the transform properties */
-}
 
 .cube--front__no-bg{
     background-color: transparent;
@@ -313,7 +306,19 @@ a{
 
 a.cube--link {
 	display: inline-block;
-	margin-top:0;
+    margin-top:0;
+
+    &:hover .cube {
+        transform: rotateX(90deg); /* Text bleed at 90º */
+        transition: transform 0.25s; /* Animate the transform properties */
+    }
+
+    .cube {
+        .mobile & {
+            transform: none;
+            transition: none;
+        }
+    }
 
     &.cube--float-left{
 

@@ -2,3 +2,6 @@ node_modules
 .sass-cache
 wp-config.php
 .htaccess
+wp-content/themes/tilt-site/css/global.min.css
+wp-content/themes/tilt-site/css/global.min.css.map
+wp-content/themes/tilt-site/css/video-js.min.css

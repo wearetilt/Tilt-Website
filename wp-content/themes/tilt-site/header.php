@@ -36,6 +36,9 @@
 </script>
 	<?php wp_head(); ?>
 
+	<meta name="theme-color" content="#ff0066">
+	
+
 </head>
 
 

@@ -260,9 +260,6 @@ get_header(); ?>
 	    if(httpRequest.readyState == 4){
 	        staffData = httpRequest.responseText;
 	        staffData = JSON.parse(staffData);
-	        console.log(staffData);
-	    } else {
-
 	    }
 	};
 
@@ -303,7 +300,7 @@ get_header(); ?>
 
 	}
 
-	doPicture(pictureData)();
+	doPicture(pictureData);
 	</script>
 
 </div>

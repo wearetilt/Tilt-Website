@@ -1,0 +1,7 @@
+.rotatingtweet {
+    .rtw_wide_block {
+        @media handheld, screen and (max-width: 600px){
+                padding-left: 0;
+            }
+    }
+}
