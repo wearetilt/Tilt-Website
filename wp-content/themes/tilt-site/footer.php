@@ -34,7 +34,7 @@
 			<div class="footer-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ><svg class="f-ico_vimeo"> <use xlink:href="#vimeo"></use></svg></a></div>
 			<div class="footer-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
 			<div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
-			<div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div>
+			<!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
 			<div class="telephone">
 				<span>Tel: + 44(0)1273 675 700</span>
 			</div>
@@ -44,9 +44,11 @@
 	</div>
 
 </footer>
+
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+ <script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>   
 <script src="<?php echo get_template_directory_uri(); ?>/js/video.js"></script>
+ <!-- <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>  -->
 <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://secure.leadforensics.com/js/91727.js" ></script>
 <noscript><img alt="" src="https://secure.leadforensics.com/91727.png" style="display:none;" /></noscript>

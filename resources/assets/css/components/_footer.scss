@@ -1,4 +1,4 @@
-footer{
+footer {
     max-height: 704px;
     position: fixed;
     bottom: 0;
@@ -6,170 +6,149 @@ footer{
     right: 0;
     z-index: 0;
     will-change: transform;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     background-size: cover;
     background-position: center right;
-    background-repeat:no-repeat;
-    background-color:#171717;
-
-
-
-	@media handheld, screen and (min-width:0px)  and (max-width: $bp-desktop) {
-		background-position: center center;
-		background-size:auto;
-	}
-
-
+    background-repeat: no-repeat;
+    background-color: #171717;
+    @media handheld,
+    screen and (min-width: 0px) and (max-width: $bp-desktop) {
+        background-position: center center;
+        background-size: auto;
+    }
     #contact & {
         position: relative;
         max-height: none;
     }
-
-    .container{
+    .container {
         padding: 0 percentage(381/2032);
-        height:460px;
+        height: 460px;
         background-color: transparent;
-
-        @media handheld, screen and (min-width: $bp-desktop){
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
             height: 520px;
         }
     }
-
-    .first-para{
-        &:before{
+    .first-para {
+        &:before {
             height: 18px;
             width: 18px;
             background-color: $c-tilt-pink;
-
-            @media handheld, screen and (min-width:$bp-phone)  and (max-width: $bp-desktop) {
-				height: 15px;
-				width: 15px;
-			}
-
-			@media handheld, screen and (min-width:0px) and (max-width:$bp-phone) {
-            	height:11px;
-				width:11px;
+            @media handheld,
+            screen and (min-width: $bp-phone) and (max-width: $bp-desktop) {
+                height: 15px;
+                width: 15px;
             }
-
+            @media handheld,
+            screen and (min-width:0px) and (max-width:$bp-phone) {
+                height: 11px;
+                width: 11px;
+            }
         }
     }
-
-    .telephone{
+    .telephone {
         float: right;
-        font-size:1.2rem;
+        font-size: 1.2rem;
         color: white;
-        margin-top:0px;
-        clear:none;
-        font-family:$f-merriweather;
-        font-weight:300;
-
-        @media handheld, screen and (min-width: $bp-desktop){
+        margin-top: 0px;
+        clear: none;
+        font-family: $f-merriweather;
+        font-weight: 300;
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
             float: right;
             clear: none;
-            margin-top:0px;
-            font-size:1.5em;
+            margin-top: 0px;
+            font-size: 1.5em;
         }
-
-        @media handheld, screen and (min-width:0px) and (max-width:767px ) {
-        	 float:left;
-        	 clear:both;
-        	 margin-top:25px;
-        	 margin-bottom:25px;
+        @media handheld,
+        screen and (min-width:0px) and (max-width:767px) {
+            float: left;
+            clear: both;
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
-
-        a { color: $c-tilt-pink; }
-
+        a {
+            color: $c-tilt-pink;
+        }
     }
-
-    .footnote{
+    .footnote {
         border-top: 1px solid $c-grey-3a;
         padding-top: 10px;
         clear: both;
-		@include font-size(12);
+        @include font-size(12);
     }
-
-    p.sans-serif{
+    p.sans-serif {
         @include font-size(25);
-
-        @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) {
-			@include font-size(16);
-		}
-
+        @media handheld,
+        screen and (min-width: 0px) and (max-width: $bp-phone) {
+            @include font-size(16);
+        }
     }
-
     p.button {
-
-	    @include font-size(18);
-		@media handheld, screen and (min-width:0px)  and (max-width: $bp-phone ) { @include font-size(15); }
-
-        @media handheld, screen and (min-width: $bp-desktop){
+        @include font-size(18);
+        @media handheld,
+        screen and (min-width: 0px) and (max-width: $bp-phone) {
+            @include font-size(15);
+        }
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
             @include font-size(20);
         }
     }
-
 }
 
 #signoff {
     background-color: $c-bg;
     height: 143px;
-    padding:33px 6.20079% 0px;
+    padding: 33px 6.20079% 0px;
     border-top: 1px solid #171717;
-
-    @media handheld, screen and (min-width: $bp-desktop){
-
+    @media handheld,
+    screen and (min-width: $bp-desktop) {
         height: 143px;
-
     }
-
     #contact & {
         height: auto;
         padding: percentage(46/2032) percentage(126/2032);
     }
 }
 
-
 .project-navigation {
-	padding: 12px 0px 10px 0px;
+    padding: 12px 0px 10px 0px;
     background-color: $c-tilt-pink;
     width: 50%;
     display: block;
     float: left;
     text-align: center;
     line-height: 1.8;
-
-	@media handheld, screen and (min-width: $bp-desktop){
-	 	padding:12px 0px 10px 0px;
-	}
-
-
-	/* span { font-size:24px; } */
-
-    &:hover{
+    @media handheld,
+    screen and (min-width: $bp-desktop) {
+        padding:12px 0px 10px 0px;
+    }
+    /* span { font-size:24px; } */
+    &:hover {
         background-color: $c-tilt-pink2;
     }
-
 }
 
-
-.nav-links span, .nav-links a {
-	padding: 14px 0px 10px 0px;
-	background-color: $c-tilt-pink;
-	display: block;
-	float: left;
-	line-height: 1.8;
-
-	&:hover { color:$c-grey-7d; }
+.nav-links span,
+.nav-links a {
+    padding: 14px 0px 10px 0px;
+    background-color: $c-tilt-pink;
+    display: block;
+    float: left;
+    line-height: 1.8;
+    &:hover {
+        color: $c-grey-7d;
+    }
 }
 
-
-.footer-icons{
+.footer-icons {
     @extend %clearfix;
-    margin-top:0%;
+    margin-top: 0%;
     margin-bottom: 2%;
-
     @media all and(max-width: 600px) {
         text-align: center;
-
         .footer-icon {
             &:first-child {
                 margin-left: 0;
@@ -182,66 +161,60 @@ footer{
     }
 }
 
-.footer-icon{
+.footer-icon {
     display: inline-block;
     width: 25px;
     height: 23px;
-
-    &:hover{
+    &:hover {
         opacity: 0.7;
     }
-
-    a{
+    a {
         height: 100%;
         width: 100%;
         display: block;
     }
-
-    &.footer-icon{
-
-       	margin-left:35px;
-
-        @media handheld, screen and (min-width:0px)  and (max-width:1024px) {
-			margin-left:25px;
-		}
-
-
+    &.footer-icon {
+        margin-left: 35px;
+        &:first-child {
+            margin-left: 5px;
+        }
+        @media handheld,
+        screen and (min-width: 0px) and (max-width:1024px) {
+            margin-left: 25px;
+        }
     }
-
-
-
 }
 
 .f-ico_facebook {
-	margin-left:0;
-	height:23px;
-    width:11px;
+    margin-left: 0;
+    height: 23px;
+    width: 11px;
 }
 
 .f-ico_twitter {
-	margin-top:3px;
-    height:19px;
-    width:25px;
+    margin-top: 3px;
+    height: 19px;
+    width: 25px;
 }
 
 .f-ico_vimeo {
-	margin-top:1px;
-    height:21px;
-    width:24px;
+    margin-top: 1px;
+    height: 21px;
+    width: 24px;
 }
 
 .f-ico_instagram {
-    height:23px;
-    width:23px;
+    height: 23px;
+    width: 23px;
 }
 
 .f-ico_youtube {
-	margin-top:1px;
-    height:21px;
-    width:29px;
+    margin-top: 1px;
+    height: 21px;
+    width: 29px;
 }
 
 .f-ico_tumblr {
-    height:25px;
-    width:25px;
+    height: 25px;
+    width: 25px;
 }

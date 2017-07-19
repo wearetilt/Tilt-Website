@@ -6,9 +6,7 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-
 get_header('news'); ?>
-
 <?php $post_id = get_the_id();
 
 	$attachedImg = '';
@@ -162,8 +160,8 @@ get_header('news'); ?>
 	<div class="group-container">
 
 		<?php
-			$next_post = get_next_post();
-			$previous_post = get_previous_post();
+			$next_post = get_next_post(true);
+			$previous_post = get_previous_post(true);
 
 			if (!empty( $previous_post )): ?>
 				<a class="project-navigation  paginate_prev" href="<?php echo get_permalink( $previous_post->ID ); ?>"><span>&#8249;</span> Previous</a>

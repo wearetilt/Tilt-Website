@@ -2496,7 +2496,7 @@ function get_the_posts_pagination( $args = array() ) {
 
 		// Set up paginated links.
 		$links = paginate_links( $args );
-
+		
 		if ( $links ) {
 			$navigation = _navigation_markup( $links, 'pagination', $args['screen_reader_text'] );
 		}

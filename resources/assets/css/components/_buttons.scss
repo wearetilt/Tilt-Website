@@ -190,9 +190,9 @@ a{
     @include font-size(15);
     letter-spacing:1px;
 
-    @media handheld, screen and (min-width: $bp-desktop){
-    	display:block;
-    }
+    // @media handheld, screen and (min-width: $bp-desktop){
+    // 	display:block;
+    // }
 }
 
 
@@ -209,7 +209,7 @@ a{
 	transform-style: preserve-3d; /* <-NB */
     margin-top:15px;
 
-    &.about--cube { margin-top:23px; }
+    &.about--cube { margin-top:23px; }  
 
     .map-overlay & {
         background: transparent;
@@ -221,7 +221,8 @@ a{
 
     background:url('../images/button_arrow.png') center right no-repeat;
     border: 1px solid white;
-	height: 54px;
+    background-size: 32px 13px;
+	height: 54px;   
     border-radius: 2px;
     padding: 18px 72px 0px 24px;
 
@@ -283,6 +284,7 @@ a{
 .map-overlay .cube--front,.map-overlay .cube--top {
 
     background:url('../images/button_arrow.png') center right no-repeat;
+    background-size: 32px 13px;
     border: 1px solid white;
 	height: 44px;
     border-radius: 2px;

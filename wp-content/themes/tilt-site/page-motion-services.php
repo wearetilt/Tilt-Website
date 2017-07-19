@@ -18,7 +18,7 @@ get_header('about-item'); ?>
 <div id="about_page" class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">MOTION GRAPHICS:</strong> PLAYING WITH SPACE AND TIME.</p>
-		<p class="sans-serif">Motion has no borders – if you can imagine it, we can build it. From idents and ads, to music videos and corporate animations, our motion team has created award-winning work across dozens of sectors. Working in 2D or 3D, often combining film, illustration and graphic design, our motion artists create some of the most distinctive work coming out of the Tilt Studio.</p>
+		<p>Motion has no borders – if you can imagine it, we can build it. From idents and ads, to music videos and corporate animations, our motion team has created award-winning work across dozens of sectors. Working in 2D or 3D, often combining film, illustration and graphic design, our motion artists create some of the most distinctive work coming out of the Tilt Studio.</p>
 	</div>
 </div> <!-- /end container -->
 

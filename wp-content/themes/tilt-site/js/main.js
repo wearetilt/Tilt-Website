@@ -104,6 +104,8 @@ jQuery(function($){
 * HEADER VIDEO FUNCTION 1
 *
 */
+  
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	document.body.className += ' loaded';
@@ -462,7 +464,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 
 			case "work_page":
 				var clipVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
-				var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113";
+				var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119"; 
 			break;
 
 			default:
@@ -1149,6 +1151,16 @@ jQuery(document).ready(function(){
 });
 
 
+jQuery(function($){
+	$('.scroll-down').click(function(){
+		$('body, html').animate({
+			scrollTop: $('#home-page').height()
+		}, 500);
+		return false;
+	})
+})
+
+
 
 /**
 * FOOTER FUNCTIONS
@@ -1183,9 +1195,11 @@ function isElementInViewport (el) {
         el = el[0];
     }
 
-    var rect = el.getBoundingClientRect();
+	var rect = el.getBoundingClientRect();
+
 
     return (
+		rect.top <= ($(window).height() / 2 - 100) &&
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */

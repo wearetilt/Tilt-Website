@@ -18,7 +18,7 @@ get_header('about-item'); ?>
 <div id="about_page" class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
 		<p class="first-para sans-serif"><strong class="highlight">WEB & MOBILE:</strong> BUILDING BRILLIANT DIGITAL EXPERIENCES.</p>
-		<p class="sans-serif">We build websites that are bold, beautiful and designed to put users first and always. Our strategy, user experience, design and development teams work closely together to create sites that work perfectly across different devices and contexts. From sophisticated onboarding platforms, to highly visual brochure sites, our clients trust us to produce innovative, effective digital products.</p>
+		<p>We build websites that are bold, beautiful and designed to put users first and always. Our strategy, user experience, design and development teams work closely together to create sites that work perfectly across different devices and contexts. From sophisticated onboarding platforms, to highly visual brochure sites, our clients trust us to produce innovative, effective digital products.</p>
 	</div>
 </div> <!-- /end container -->
 

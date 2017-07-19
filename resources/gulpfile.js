@@ -110,14 +110,14 @@ gulp.task( 'browser-sync', function() {
     }))
     .pipe(inline_base64({
         baseDir: '../wp-content/themes/tilt-site/css/',
-        maxSize: 1024*10,
+        maxSize: 1024*100,
         debug: true
     }))
     .pipe( lineec() )
     .pipe( gulp.dest( styleDestination ) )
 
     .pipe( filter( '**/*.css' ) ) 
-    .pipe( browserSync.stream() )
+    // .pipe( browserSync.stream() )
  });
  
 

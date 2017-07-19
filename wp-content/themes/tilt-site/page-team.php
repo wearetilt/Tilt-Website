@@ -247,27 +247,13 @@ get_header(); ?>
 		</div>
 	</div>
 
+
+	<?php $staffData = file_get_contents(get_template_directory_uri().'/data/staff.json');?>
+	<script>
+		var staffData = <?= $staffData;?>;
+	</script>
+
 	<script type="text/javascript">
-	var httpRequest;
-	var staffData;
-	if (window.XMLHttpRequest) { // Mozilla, Safari, IE7+ ...
-	    httpRequest = new XMLHttpRequest();
-	} else if (window.ActiveXObject) { // IE 6 and older
-	    httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-	}
-
-	httpRequest.onreadystatechange = function() {
-	    if(httpRequest.readyState == 4){
-	        staffData = httpRequest.responseText;
-	        staffData = JSON.parse(staffData);
-	    }
-	};
-
-
-	httpRequest.open('GET', '<?php echo get_bloginfo('home'); ?>/tilt-site_tidy/staff.json', true);
-
-	httpRequest.setRequestHeader('Content-Type', 'application/json');
-	httpRequest.send(null);
 
 	var user;
 

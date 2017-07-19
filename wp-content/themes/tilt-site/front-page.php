@@ -77,6 +77,7 @@ $args = array(
 					<source id="header-video" src="https://player.vimeo.com/external/144378575.hd.mp4?s=9126a5c2a202cb2d55ecf33fefe42a3a&profile_id=113" type="video/mp4">
 			</video>
 		</div>
+		<a class="scroll-down" href="#"><span><p>Scroll down</p></span></a>
 	</div>
 </header>
 

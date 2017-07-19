@@ -130,6 +130,9 @@ get_header('contact'); ?>
 
 <div class="container container--double-side-pad area-dark contact--page">
 	<section class="text-section text-section--centre">
+		<h2 class="contact-title"><span class="light">Call us</span></h2>
+		<h2 class="contact-phone"><span class="light"><a title="Call tilt" href="tel:+441273675700">+44(0)1273 675 700</a></span></h2>
+	
 		<h2 class="contact-title"><span class="light">Jobs &amp; Internships</span></h2>
 		<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
 		<h2 class="contact-title"><span class="light">New projects</span></h2>

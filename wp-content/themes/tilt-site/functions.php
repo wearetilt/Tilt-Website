@@ -235,6 +235,9 @@ function twentyfifteen_scripts() {
 		$cssFile = 'global.css';
 		$jsFile = 'main.js';
 	}
+
+	// wp_enqueue_style( 'videojs', get_template_directory_uri() . '/plugins/videojs/video-js.css', false, filemtime(get_template_directory().'/plugins/videojs/video-js.css'));
+	// wp_style_add_data( 'videojs');
 	
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/'.$cssFile, false, filemtime(get_template_directory().'/css/'.$cssFile));
 
