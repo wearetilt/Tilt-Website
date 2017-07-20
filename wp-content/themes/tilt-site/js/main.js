@@ -495,7 +495,7 @@ if(document.getElementById('header-video-player')){ // if has header video
 	    var videoOverlay = videojs('overlay-video');
 
 		Modernizr.on('videoautoplay', function(result){
-			if(!result) {
+			if(!result) { 
 				if(document.getElementById('header-play')){
 					var videoPlayButton = document.getElementById('header-play');
 					videoPlayButton.addEventListener('click', function(){
