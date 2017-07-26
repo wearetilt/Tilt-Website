@@ -637,30 +637,32 @@ closeButton.onclick = function(){
 
 if(document.getElementById('staff-member')){
 
-	var lookUpStaffMember = function(staffMember){
-	    return staffData[staffMember];
-	}
+	console.log(staffMember);
+
+	// var lookUpStaffMember = function(staffMember){
+	//     return staffData[staffMember];
+	// }
 
 	var fadeInStaffInfo = function(staffObject){
+
 	    document.getElementById('staff-member__info').style.opacity = '1';
 	    document.getElementById('staff-member__wrapper').style.opacity = '1';
-	    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + window.directoryURI + '/' + staffObject.image + ')';
+	    document.getElementById('staff-member__wrapper').style.backgroundImage = 'url(' + $staffMember.data('image') + ')';
 	    document.getElementById('staff-member__close').style.opacity = '1';
-
-
 	}
 
 	var populateAndSizeStaffInfo = function(staffBox, staffObject){
 	    staffBox.style.height = '100vh';
 	    staffBox.style.width = '100%';
 	    staffBox.style.left = '0px';
-	    staffBox.style.top = '0px';
+		staffBox.style.top = '0px';
+			
 	    // staffBox.style.transform = 'translate(' + left + ', ' + top + ')';
-	    document.getElementById('staff-member__name').innerHTML = staffObject.name;
-	    document.getElementById('staff-member__position').innerHTML = staffObject.position;
-	    document.getElementById('staff-member__department').innerHTML = staffObject.department;
-	    document.getElementById('staff-member__about').innerHTML = staffObject.about;
-	    document.getElementById('staff-member__did-you-know').innerHTML = '<strong class="highlight">Did you know?</strong> ' + staffObject["did-you-know"];
+	    document.getElementById('staff-member__name').innerHTML = $staffMember.find('.name').html();
+	    document.getElementById('staff-member__position').innerHTML = $staffMember.find('.position').html();
+	    document.getElementById('staff-member__department').innerHTML = $staffMember.find('.department').html();
+	    document.getElementById('staff-member__about').innerHTML = $staffMember.find('.description').html();
+	    document.getElementById('staff-member__did-you-know').innerHTML = '<strong class="highlight">Did you know?</strong> ' + $staffMember.find('.description2').html();
 	}
 
 	var hideStaffBoxAndAllowScrolling = function(staffBox){
@@ -708,120 +710,21 @@ if(document.getElementById('staff-member')){
 	            staffMember.addEventListener('mouseenter', function(event){
 					var that = this;
 					var thisStaffID = that.id;
-					switch (thisStaffID) {
-						//work-page
-						case "staff-1":
-							staffVideoSrc = "https://player.vimeo.com/external/140403279.sd.mp4?s=5c6b2cbfb2ef0f48e4d4c2d7a2c3656a&profile_id=112";
-						break;
-
-						case "staff-2":
-							staffVideoSrc = "https://player.vimeo.com/external/140403284.sd.mp4?s=09bc9929175c10c46ec8fb7dc62a119b&profile_id=112";
-						break;
-
-						case "staff-3":
-							staffVideoSrc = "https://player.vimeo.com/external/140403285.sd.mp4?s=1c80332d3883f4581f7a584c83826da7&profile_id=112";
-						break;
-
-						case "staff-4":
-							staffVideoSrc = "https://player.vimeo.com/external/140403277.sd.mp4?s=29c1365532165fa7c8d7138eec8e163c&profile_id=112";
-						break;
-
-						case "staff-5":
-							staffVideoSrc = "https://player.vimeo.com/external/140403273.sd.mp4?s=91b80135b2f7602578df0f11bd9b8e18&profile_id=112";
-						break;
-
-						case "staff-6":
-							staffVideoSrc = "https://player.vimeo.com/external/140403276.sd.mp4?s=ea179e3f47a824b0c5f4868ff97393aa&profile_id=112";
-						break;
-
-						case "staff-7":
-							staffVideoSrc = "https://player.vimeo.com/external/140403270.sd.mp4?s=0206047835fecf68feef275f56b33cef&profile_id=112";
-						break;
-
-						case "staff-8":
-							staffVideoSrc = "https://player.vimeo.com/external/140403275.sd.mp4?s=1eb2bc24302d7fc2a8ab2993feab5586&profile_id=112";
-						break;
-
-						case "staff-9":
-							staffVideoSrc = "https://player.vimeo.com/external/140403281.sd.mp4?s=35498172b93da64e3aa8d15a894cafa6&profile_id=112";
-						break;
-
-						case "staff-10":
-							staffVideoSrc = "https://player.vimeo.com/external/140403288.sd.mp4?s=eb9ce38ce409022ac660aac48376a250&profile_id=112";
-						break;
-
-						case "staff-11":
-							staffVideoSrc = "https://player.vimeo.com/external/140403296.sd.mp4?s=f1f19de8ff8f3870ac0fde5132f4fad9&profile_id=112";
-						break;
-
-						case "staff-12":
-							staffVideoSrc = "https://player.vimeo.com/external/140403294.sd.mp4?s=b27782cf9097d798e9956d3e4285a205&profile_id=112";
-						break;
-
-						case "staff-13":
-							staffVideoSrc = "https://player.vimeo.com/external/140403278.sd.mp4?s=87cf89bfeb39d10c65e49d88de1b1cbd&profile_id=112";
-						break;
-
-						case "staff-14":
-							staffVideoSrc = "https://player.vimeo.com/external/140403289.sd.mp4?s=f04cff5c4ee7456ece6f61632d6fdef1&profile_id=112";
-						break;
-
-						case "staff-15":
-							staffVideoSrc = "https://player.vimeo.com/external/142259886.hd.mp4?s=fa9b8c7acd96993ed4a8eec0475f786e&profile_id=113";
-						break;
-
-						case "staff-16":
-							staffVideoSrc = "https://player.vimeo.com/external/140403290.sd.mp4?s=0e1e564e06cc5b284c190a8b0d20791e&profile_id=112";
-						break;
-
-						case "staff-17":
-							staffVideoSrc = "https://player.vimeo.com/external/140403272.sd.mp4?s=3bcc352281b93bbd8fc66df067156493&profile_id=112";
-						break;
-
-						case "staff-18":
-							staffVideoSrc = "https://player.vimeo.com/external/140403274.sd.mp4?s=f7ea813281b01caf596bfb5c00adca74&profile_id=112";
-						break;
-
-						case "staff-19":
-							staffVideoSrc = "https://player.vimeo.com/external/140403271.sd.mp4?s=541308d08653d1fb132ab55203ce4e82&profile_id=112";
-						break;
-
-						case "staff-20":
-							staffVideoSrc = "https://player.vimeo.com/external/140403295.sd.mp4?s=b1daa0f944cda8009b47296f821189cd&profile_id=112";
-						break;
-
-						case "staff-21":
-							staffVideoSrc = "https://player.vimeo.com/external/140403286.sd.mp4?s=6af207b741e9c1b261384d91132861c1&profile_id=112";
-						break;
-
-						default:
-							// do nothing
-					}
-						// console.log('Mouse has entered');
-						videoFunction = setTimeout(function(){
-							if(!that.children[1]){
-								if(isChrome){
-									document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video poster="' + window.directoryURI + '/images/staff/about_' + thisStaffID + '.jpg" muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
-								} else{
-									document.getElementById(thisStaffID).innerHTML += '<div class="ratio"><video muted="true"><source src="' + staffVideoSrc + '" type="video/mp4"></video></div>';
-								}
-							}
-								var ratio2 = that.children[1];
-								var video2 = ratio2.children[0];
-								videoIWant = video2;
-		                    	videoIWant.play();
-								videoIWant.addEventListener('ended', function(){
-									this.currentTime = 0;
-								});
-							}, 100);
+					
+					videoFunction = setTimeout(function(){
+							var ratio2 = that.children[1];
+							var video2 = ratio2.children[0];
+							videoIWant = video2;
+							videoIWant.play();
+							videoIWant.addEventListener('ended', function(){
+								this.currentTime = 0;
+							});
+						}, 100);
 
 	            });
 
 	            staffMember.addEventListener('mouseleave', function(event, video){
-						// console.log("Mouse has exited");
-						clearTimeout(videoFunction);
-						// console.log(videoIWant);
-						//videoIWant.pause();
+					clearTimeout(videoFunction);
 	            });
 	        })();
 		}
@@ -831,14 +734,15 @@ if(document.getElementById('staff-member')){
         staffMember.onclick = function (){
 
 			// staff members
-            staffMember = this.id;
+			staffMember = this.id;
+			$staffMember = $('#'+staffMember);
 
 			// check screen size
 			var width = $( window ).width();
 
 			if (width > 1024) {
 				staffFullScreenVid = this.dataset.fullvideo;
-	            staffObject = lookUpStaffMember(staffMember);
+	            // staffObject = lookUpStaffMember(staffMember);
 	            staffBox = document.getElementById('staff-member');
 	            staffBox.style.display = 'block';
 	            rect = this.getBoundingClientRect();

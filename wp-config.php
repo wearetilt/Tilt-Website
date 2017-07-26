@@ -37,6 +37,12 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+if($_SERVER['SERVER_ADDR'] == '127.0.0.1') {
+	define('FS_METHOD', 'direct');
+}
+
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

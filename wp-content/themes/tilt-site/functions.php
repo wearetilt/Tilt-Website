@@ -84,6 +84,8 @@ function twentyfifteen_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 825, 510, true );
 
+	add_image_size( 'team', 624, 624, true);
+
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu',      'twentyfifteen' ),
@@ -378,6 +380,57 @@ function work_item_post_type() {
 
 }
 add_action( 'init', 'work_item_post_type', 0 );
+
+
+
+function team_post_type() {
+
+	$labels = array(
+		'name'                => 'Team',
+		'singular_name'       => 'Team Item',
+		'menu_name'           => 'Team',
+		'name_admin_bar'      => 'Team',
+		'parent_item_colon'   => 'Parent Item:',
+		'all_items'           => 'All Team Items',
+		'add_new_item'        => 'Add Team Item',
+		'add_new'             => 'Add New Team Item',
+		'new_item'            => 'New Team Item',
+		'edit_item'           => 'Edit Team Item',
+		'update_item'         => 'Update Team Item',
+		'view_item'           => 'View Team Item',
+		'search_items'        => 'Search  Team Item',
+		'not_found'           => 'Not found',
+		'not_found_in_trash'  => 'Not found in Trash',
+	);
+	$args = array(
+		'label'               => 'Team Item',
+		'description'         => 'Team Items go here',
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'thumbnail' ),
+		// 'taxonomies'          => array( 'work' ),
+		'hierarchical'        => true,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => false,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+		'rewrite' => array(
+	      'slug' => 'team', // This controls the base slug that will display before each term
+	      'with_front' => false, // Don't display the category base before "/locations/"
+	      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+	    ),
+	);
+	register_post_type( 'team_item', $args );
+
+}
+add_action( 'init', 'team_post_type', 0 );
+
 
 /**
  * Display descriptions in main navigation.
