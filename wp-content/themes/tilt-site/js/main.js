@@ -104,7 +104,7 @@ jQuery(function($){
 * HEADER VIDEO FUNCTION 1
 *
 */
-  
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						break;
 
 						case "work_page":
-							myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119");
+							myPlayer.src("https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113");
 							// myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113");
 						break;
 
@@ -463,8 +463,8 @@ if(document.getElementById('header-video-player')){ // if has header video
 			break;
 
 			case "work_page":
-				var clipVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
-				var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119"; 
+				var clipVideoSrc = "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113";
+				var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
 			break;
 
 			default:
@@ -495,13 +495,13 @@ if(document.getElementById('header-video-player')){ // if has header video
 	    var videoOverlay = videojs('overlay-video');
 
 		Modernizr.on('videoautoplay', function(result){
-			if(!result) { 
+			if(!result) {
 				if(document.getElementById('header-play')){
 					var videoPlayButton = document.getElementById('header-play');
 					videoPlayButton.addEventListener('click', function(){
 						// //console.log("I am doing this, i shouldn't be");
 						videoOverlay.play();
-						videoOverlay.requestFullscreen();
+						//videoOverlay.requestFullscreen();
 					});
 				}
 
@@ -656,7 +656,7 @@ if(document.getElementById('staff-member')){
 	    staffBox.style.width = '100%';
 	    staffBox.style.left = '0px';
 		staffBox.style.top = '0px';
-			
+
 	    // staffBox.style.transform = 'translate(' + left + ', ' + top + ')';
 	    document.getElementById('staff-member__name').innerHTML = $staffMember.find('.name').html();
 	    document.getElementById('staff-member__position').innerHTML = $staffMember.find('.position').html();
@@ -710,7 +710,7 @@ if(document.getElementById('staff-member')){
 	            staffMember.addEventListener('mouseenter', function(event){
 					var that = this;
 					var thisStaffID = that.id;
-					
+
 					videoFunction = setTimeout(function(){
 							var ratio2 = that.children[1];
 							var video2 = ratio2.children[0];
