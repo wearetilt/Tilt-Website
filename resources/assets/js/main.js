@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							break;
 
 							case "work_page":
-								myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119");
+								myPlayer.src("https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113");
 								// myPlayer.src("https://player.vimeo.com/external/139889786.hd.mp4?s=d9fe82039d4d8929cc0eeb62741a8bed&profile_id=113");
 							break;
 
