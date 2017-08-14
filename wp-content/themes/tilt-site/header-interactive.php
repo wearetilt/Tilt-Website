@@ -87,19 +87,9 @@
 		</symbol>
 	</svg>
 	<nav>
-        <div id="tilt--logo" class="header-item header-item--logo">
-        </div>
-        <div id="menuButton" class="header-item header-item--menu">
-        </div>
-        <div id="pageMenu" class="menu">
-            <ul class="menu__items">
-                <li class="menu__item"><a href="">Work</a></li>
-                <li class="menu__item"><a href="">About</a></li>
-                <li class="menu__item"><a href="">News</a></li>
-                <li class="menu__item"><a href="">Bakery</a></li>
-                <li class="menu__item"><a href="">Careers</a></li>
-                <li class="menu__item"><a href="">Contact</a></li>
-            </ul>
-        </div> <!-- /end menu -->
+        <div id="tilt--logo" class="header-item header-item--logo"></div>
+		
+		<?php get_template_part('content-header-menu');?>
+
     </nav>
 	<div class="wrapper"> <!-- Open Wrapper -->

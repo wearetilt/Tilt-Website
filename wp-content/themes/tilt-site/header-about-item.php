@@ -108,32 +108,8 @@
 
 
 		<a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/work">About</a>
-        <a id="menuButton" class="header-item header-item--menu">Menu</a>
-        <a id="closeButton" class="header-item header-item--menu">Close</a>
 
-        <div id="pageMenu" class="menu">
-            <ul class="menu__items">
-            	<li class="menu__item"><a aria-label="Homepage link" href="<?php echo site_url(); ?>">Home</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/work">Work</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/about">About</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/team">Team</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/news">News</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/careers">Careers</a></li>
-                <li class="menu__item"><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
-            </ul>
-
-            <div class="nav-icons">
-				<div class="nav-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a></div>
-				<div class="nav-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a></div>
-				<div class="nav-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ><svg class="f-ico_vimeo"> <use xlink:href="#vimeo"></use></svg></a></div>
-				<div class="nav-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
-				<div class="nav-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
-				<div class="nav-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div>
-				<div class="telephone">
-					<span>Tel: + 44(0)1273 675 700</span>
-				</div>
-			</div> <!-- /end nav-icons -->
-
-        </div> <!-- /end menu -->
+		<?php get_template_part('content-header-menu');?>
+       
     </nav>
 	<div class="wrapper"> <!-- Open Wrapper -->

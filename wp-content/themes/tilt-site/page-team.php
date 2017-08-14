@@ -22,7 +22,7 @@ get_header(); ?>
 <?php
 
 $args = array(
-  'numberposts' => -1,
+  'numberposts' => 999,
   'post_type'   => 'team_item'
 );
  

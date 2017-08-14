@@ -3,7 +3,7 @@
 Module Name: Synved Social
 Description: Social sharing and following tools
 Author: Synved
-Version: 1.7.9
+Version: 1.7.16
 Author URI: http://synved.com/
 License: GPLv2
 
@@ -18,8 +18,8 @@ In no event shall Synved Ltd. be liable to you or any third party for any direct
 
 
 define('SYNVED_SOCIAL_LOADED', true);
-define('SYNVED_SOCIAL_VERSION', 100070009);
-define('SYNVED_SOCIAL_VERSION_STRING', '1.7.9');
+define('SYNVED_SOCIAL_VERSION', 100070016);
+define('SYNVED_SOCIAL_VERSION_STRING', '1.7.16');
 
 define('SYNVED_SOCIAL_ADDON_PATH', str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, dirname(__FILE__) . '/addons'));
 
@@ -211,33 +211,98 @@ function synved_social_service_provider_list($context, $raw = false)
 	if ($context == 'share')
 	{
 		$provider_list = array(
-			
-			'mail' => array(
-				'link' => 'mailto:?subject=%%title%%&body=%%message%%:%20%%url%%',
-				'title' => __('Share by email'),
-			),
 			'facebook' => array(
 				'link' => 'http://www.facebook.com/sharer.php?u=%%url%%&t=%%title%%&s=100&p[url]=%%url%%&p[images][0]=%%image%%&p[title]=%%title%%',
 				'title' => __('Share on Facebook')
 			),
 			'twitter' => array(
-				'link' => 'http://twitter.com/share?url=%%url%%&text=%%message%%',
+				'link' => 'https://twitter.com/intent/tweet?url=%%url%%&text=%%message%%',
 				'title' => __('Share on Twitter'),
 			),
-			
-			
+			'google_plus' => array(
+				'link' => 'https://plus.google.com/share?url=%%url%%',
+				'title' => __('Share on Google+'),
+			),
+			'reddit' => array(
+				'link' => 'http://www.reddit.com/submit?url=%%url%%&title=%%title%%',
+				'title' => __('Share on Reddit'),
+			),
+			'pinterest' => array(
+				'link' => 'http://pinterest.com/pin/create/button/?url=%%url%%&media=%%image%%&description=%%title%%',
+				'title' => __('Pin it with Pinterest'),
+			),
+			'linkedin' => array(
+				'link' => 'http://www.linkedin.com/shareArticle?mini=true&url=%%url%%&title=%%title%%',
+				'title' => __('Share on Linkedin'),
+			),
+			'tumblr' => array(
+				'link' => 'http://tumblr.com/share?s=&v=3&t=%%title%%&u=%%url%%',
+				'title' => __('Share on tumblr'),
+				'default-display' => false,
+			),
+			'mail' => array(
+				'link' => 'mailto:?subject=%%title%%&body=%%message%%:%20%%url%%',
+				'title' => __('Share by email'),
+			),
 		);
 	}
 	else if ($context == 'follow')
 	{
 		$provider_list = array(
 			'facebook' => array(
-				'link' => 'http://www.facebook.com/MyAvatarName',
+				'link' => 'https://www.facebook.com/facebook',
 				'title' => __('Follow us on Facebook'),
 			),
 			'twitter' => array(
-				'link' => 'http://twitter.com/MyAvatarName',
+				'link' => 'https://twitter.com/twitter',
 				'title' => __('Follow us on Twitter'),
+			),
+			'google_plus' => array(
+				'link' => 'http://plus.google.com/needlessly_long_google_plus_id',
+				'title' => __('Follow us on Google+'),
+			),
+			'pinterest' => array(
+				'link' => 'http://pinterest.com/MyUserName/',
+				'title' => __('Our board on Pinterest'),
+				'default-display' => false,
+			),
+			'linkedin' => array(
+				'link' => 'http://www.linkedin.com/in/yourid',
+				'title' => __('Find us on Linkedin'),
+			),
+			'rss' => array(
+				'label' => 'RSS',
+				'link' => 'http://feeds.feedburner.com/MyFeedName',
+				'title' => __('Subscribe to our RSS Feed'),
+			),
+			'youtube' => array(
+				'link' => 'http://www.youtube.com/MyYouTubeName',
+				'title' => __('Find us on YouTube'),
+			),
+			'vimeo' => array(
+				'link' => 'http://vimeo.com/MyVimeoName',
+				'title' => __('Find us on vimeo'),
+				'default-display' => false,
+			),
+			'tumblr' => array(
+				'link' => 'http://myname.tumblr.com',
+				'title' => __('Find us on tumblr'),
+				'default-display' => false,
+			),
+			'instagram' => array(
+				'link' => 'http://instagram.com/myusername',
+				'title' => __('Check out our instagram feed'),
+				'default-display' => false,
+			),
+			'flickr' => array(
+				'link' => 'http://www.flickr.com/photos/myusername/',
+				'title' => __('Check out our flickr feed'),
+				'default-display' => false,
+			),
+			'foursquare' => array(
+				'link' => 'https://foursquare.com/myusername',
+				'title' => __('Check out our foursquare feed'),
+				'default-display' => false,
 			),
 			'mail' => array(
 				'link' => 'mailto:mail@example.com?subject=Contact%20Request',
@@ -543,7 +608,7 @@ function synved_social_icon_skin_get_image_list($skin, $name_list, $forced_size 
 
 function synved_social_button_list_shortcode($atts, $content = null, $code = '', $context = null)
 {
-	$vars_def = array('url' => null, 'image' => null, 'title' => null);
+	$vars_def = array('url' => null, 'image' => null, 'title' => null, 'message' => null);
 	$params_def = array('skin' => null, 'size' => null, 'spacing' => null, 'container' => null, 'container_type' => null, 'class' => null, 'show' => null, 'hide' => null, 'prompt' => null, 'custom1' => null, 'custom2' => null, 'custom3' => null);
 	$vars = shortcode_atts($vars_def, $atts, 'feather_' . $context);
 	$params = shortcode_atts($params_def, $atts, 'feather_' . $context);
@@ -1134,7 +1199,7 @@ function synved_social_button_list_markup($context, $vars = null, $buttons = nul
 				'child-list' => array(
 					array(
 						'tag' => 'img',
-						'alt' => $button_key,
+						'alt' => $button_key == 'facebook' ? 'Facebook' : $button_key,
 						'title' => $title,
 						'class' => 'synved-share-image synved-social-image synved-social-image-' . $context,
 						'width' => $size,

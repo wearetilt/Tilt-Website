@@ -8,3 +8,5 @@ wp-content/themes/tilt-site/css/video-js.min.css
 /Tilt Website/nbproject/private/
 /tilt-site_tidy/
 npm-debug.log
+wp-content/uploads
+wp-content/uploads/

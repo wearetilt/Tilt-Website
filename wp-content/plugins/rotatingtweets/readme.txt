@@ -1,10 +1,10 @@
 === Rotating Tweets (Twitter widget and shortcode) ===
 Contributors: mpntod
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9XCNM4QSVHYT8
-Tags: shortcode,widget,twitter,rotating,rotate,rotator,tweet,tweets,animation,jquery,jquery cycle,cycle,multilingual,responsive,page builder
+Tags: shortcode,widget,twitter,rotating,rotate,rotator,tweet,tweets,animation,jquery,jquery cycle,cycle,multilingual,responsive,page builder,do not track,dnt
 Requires at least: 3.2
-Tested up to: 4.4.1
-Stable tag: 1.8.4
+Tested up to: 4.7
+Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,8 @@ Twitter widget and shortcode to show your latest tweets one at a time an animate
 
 == Description ==
 * **Replaces a [shortcode](http://codex.wordpress.org/Shortcode) such as `[rotatingtweets screen_name='your_twitter']`, or a [widget](http://codex.wordpress.org/WordPress_Widgets), with a rotating display of your most recent tweets**
-* **Supports v 1.1 of the Twitter API** ([i.e. it still works](https://blog.twitter.com/2013/api-v1-is-retired))
+* **Supports v 1.1 of the Twitter API** ([i.e. it works](https://blog.twitter.com/2013/api-v1-is-retired))
+* **Supports the [new longer tweet format](https://dev.twitter.com/overview/api/upcoming-changes-to-tweets)**
 * **Space efficient** - instead of showing all your tweets at once, shows one at a time and then smoothly replaces it with the next one. After showing all your tweets, loops back to the beginning again.
 * **Reliable** - keeps showing your latest Tweets even if the Twitter website is down.
 * **Customizable** - you decide whose tweets to show, how many to show, whether to include retweets and replies, and whether to show a follow button. You can also decide how quickly the tweets rotate and what type of animation to use.
@@ -22,6 +23,7 @@ Twitter widget and shortcode to show your latest tweets one at a time an animate
 * Caches the most recent data from Twitter to avoid problems with rate limiting
 * Uses [jQuery](http://jquery.com/), [jQuery.Cycle](http://jquery.malsup.com/cycle/) and [jQuery.Cycle2](http://jquery.malsup.com/cycle2/) to produce a nice smooth result.
 * Compatible with [W3 Total Cache](/plugins/w3-total-cache/).
+* Supports Do Not Track (DNT)
 * **Multi-lingual** - now set up to be multi-lingual. The Twitter 'follow' button is automatically translated to match your site's language setting [if Twitter has made the appropriate language available](https://dev.twitter.com/docs/api/1.1/get/help/languages). Also uses [Wordpress's multi-lingual capability](http://codex.wordpress.org/I18n_for_WordPress_Developers) to enable translation of all the other text used by the plug-in via [language packs](https://translate.wordpress.org/projects/wp-plugins/rotatingtweets).
 
 If you'd like to see what the plug-in looks like in action, you can [see the plug-in working here](http://www.martintod.org.uk/2012/05/29/new-twitter-plugin-to-show-tweets-in-rotation/).
@@ -98,6 +100,7 @@ Possible variables for the shortcode include:
 	* `show_follow` = `'0'` or `'1'` - show follow button - default is `'0'`
 	* `no_show_count` = `'0'` or `'1'` - remove the follower count from the Twitter follow button - default is `'0'`
 	* `no_show_screen_name` = `'0'` or `'1'` - remove the screen name from the Twitter follow button - default is `'0'`
+	* `large_follow_button` = `'0'` or `'1'` - show a large Twitter follow button - default is `'0'`
 
 == Credits ==
 Most of this is my own work, but special thanks are owed to:
@@ -183,10 +186,27 @@ into your CSS - changing `123px;` to the width you're aiming at - either via put
 You can do this by going to the `rotatingtweets/css` directory and renaming `rotatingtweets-sample.css` to `rotatingtweets.css` and putting it in the `wp-content/uploads/` directory.  This displays a Twitter bird to the left of your tweets.  Any CSS you put into `rotatingtweets.css` won't be overwritten when the plug-in is upgraded to the latest version.
 
 == Upgrade notice ==
-= 1.8.4 = 
-* Updated JavaScript for plug-ins and themes with their own JQuery Cycle2 installations
+= 1.9 = 
+* Supports the [new longer Tweet format](https://dev.twitter.com/overview/api/upcoming-changes-to-tweets)
 
 == Changelog ==
+= 1.9 = 
+* Supports the [new longer Tweet format](https://dev.twitter.com/overview/api/upcoming-changes-to-tweets)
+
+= 1.8.7 = 
+* Switches off Twitter JavaScript if 'Do Not Track' is enabled.
+* Fix minor bug with Selective Refresh.
+
+= 1.8.6 = 
+* Fixing minor bug in German translation. 
+* Removing "Undefined variable" notice on line 165
+
+= 1.8.5 =
+* Add shortcode for a large Twitter 'follow' button
+* Support for PHP7
+* Support for 'Selective Refresh'
+* Ensuring `show_media` display links respects `links_in_new_window` variable.
+
 = 1.8.4 = 
 * Updated JavaScript for plug-ins and themes with their own [JQuery Cycle2](http://jquery.malsup.com/cycle2/) installations
 

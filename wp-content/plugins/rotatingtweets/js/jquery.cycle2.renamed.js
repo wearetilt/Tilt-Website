@@ -308,7 +308,13 @@ $.fn.cycle2.API = {
         var opts = this.opts();
         var after, curr, next, slideOpts, tx;
 
-        if ( opts.slideCount < 2 ) {
+// Addition of check for undefined to cope with widget updating		
+		if( !opts || !("slideCount" in opts) ) {
+			return; // borrowed from https://github.com/malsup/cycle2/issues/240
+		}
+// End of addition
+
+		if ( opts.slideCount < 2 ) {
             opts.timeoutId = 0;
             return;
         }
