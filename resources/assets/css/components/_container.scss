@@ -52,19 +52,19 @@
         &.contact--page {
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-phone) {
-                padding:25% 10% 12% 10%;
+                padding: 25% 10% 12% 10%;
             }
         }
         &.container--mobile-header-spacing {
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-phone) {
-                padding:25% 9% 12% 9%;
+                padding: 25% 9% 12% 9%;
             }
         }
         &.container--our-services {
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-phone) {
-                padding:12% 9% 12% 9%;
+                padding: 12% 9% 12% 9%;
             }
         }
     }
@@ -73,7 +73,7 @@
         background-color: $c-grey-25;
         @media handheld,
         screen and (min-width: $bp-desktop) {
-            padding:0;
+            padding: 0;
         }
     }
     &.container--work-pad {
@@ -102,7 +102,7 @@
                 margin-top: 8px;
                 @media handheld,
                 screen and (min-width: 0px) and (max-width: $bp-phone) {
-                    padding-bottom:0px;
+                    padding-bottom: 0px;
                 }
                 @media handheld,
                 screen and (min-width: $phone-breaks) {
@@ -127,7 +127,7 @@
                 &:after {
                     margin-top: 10px;
                     @media handheld,
-                    screen and (min-width: 0px) and (max-width:$phone-breaks) {
+                    screen and (min-width: 0px) and (max-width: $phone-breaks) {
                         margin-top: 15px;
                     }
                     @media handheld,
@@ -152,7 +152,7 @@
         margin: 45px 0px 45px 0px;
         @media handheld,
         screen and (min-width: $bp-desktop) {
-            margin:75px 0px 75px 0px;
+            margin: 75px 0px 75px 0px;
         }
     }
     & #social {
@@ -278,7 +278,7 @@ section {
             margin-bottom: 3%;
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-desktop) {
-                font-family:$f-seroot-blck;
+                font-family: $f-seroot-blck;
             }
         }
         h2,
@@ -305,7 +305,7 @@ section {
         width: 50%;
         @media handheld,
         screen and (min-width: 0px) and (max-width: $bp-desktop) {
-            width:100%;
+            width: 100%;
         }
     }
     @media handheld,
@@ -371,7 +371,7 @@ section {
     padding-right: percentage(383/2032);
     @media handheld,
     screen and (min-width: 0px) and (max-width: $bp-phone) {
-        padding-left:9%;
+        padding-left: 9%;
         padding-right: 9%;
     }
     @media handheld,
@@ -414,7 +414,7 @@ section {
         li {
             position: relative;
             margin: 0 0 10px;
-            line-height: 1.2em;
+            line-height: 1.7;
             padding-left: 15px;
             &:before {
                 content: '•';
@@ -430,8 +430,8 @@ section {
     &.news--footer {
         padding-bottom: 5%;
         @media handheld,
-        screen and (min-width: 0px) and (max-width:$phone-breaks) {
-            padding-bottom:9%;
+        screen and (min-width: 0px) and (max-width: $phone-breaks) {
+            padding-bottom: 9%;
         }
         @media handheld,
         screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {

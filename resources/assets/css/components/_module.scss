@@ -21,14 +21,14 @@
     }
     &.module--dark-mobile {
         @media handheld,
-        screen and (min-width: 0px) and (max-width:$bp-desktop) {
-            background-color:$c-bg;
+        screen and (min-width: 0px) and (max-width: $bp-desktop) {
+            background-color: $c-bg;
         }
     }
     &.module--dark-mobile-news {
         @media handheld,
-        screen and (min-width: 0px) and (max-width:$bp-desktop) {
-            background-color:$c-grey-25;
+        screen and (min-width: 0px) and (max-width: $bp-desktop) {
+            background-color: $c-grey-25;
         }
     }
     .info-container {
@@ -45,8 +45,8 @@
         }
         p {
             @media handheld,
-            screen and (min-width: 0px) and (max-width:$bp-phone) {
-                font-size:14px;
+            screen and (min-width: 0px) and (max-width: $bp-phone) {
+                font-size: 14px;
             }
             @media handheld,
             screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
@@ -84,7 +84,7 @@
         @media handheld,
         screen and (min-width: $bp-desktop) {
             width: 50%;
-            padding-top: 50%;
+            padding-top: 80%;
         }
         @media handheld,
         screen and (min-width: $job-breaks) and (max-width: $bp-desktop) {
@@ -435,7 +435,7 @@
     }
     &.module--mobile-double-height {
         @media handheld,
-        screen and (min-width: 0px) and (max-width:$bp-phone) {
+        screen and (min-width: 0px) and (max-width: $bp-phone) {
             padding-top: 125%
         }
     }
