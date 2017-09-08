@@ -5,6 +5,7 @@ Author URI: http://www.wearetilt.com
 Version: 1.0
 
 */
+
 @import 'partials/colours';
 @import 'partials/reset';
 @import 'partials/fonts-rooney-pro';
@@ -15,7 +16,6 @@ Version: 1.0
 @import 'partials/helpers';
 @import 'partials/type';
 @import 'partials/proposals';
-
 @import 'components/buttons';
 @import 'components/container';
 @import 'components/headers';
@@ -32,7 +32,8 @@ Version: 1.0
 @import 'components/plugins';
 @import 'components/icons';
 @import 'components/footer';
-
+@import 'components/contact';
 
 /* Loaded in last for styling reasons */
-@import 'partials/individual-page'; 
+
+@import 'partials/individual-page';
