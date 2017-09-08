@@ -8,6 +8,9 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
+
+ $blog_id = get_current_blog_id();
+
 ?>
 
 <footer id="footer" class="area-dark">
@@ -36,7 +39,12 @@
 			<div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
 			<!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
 			<div class="telephone">
-				<span>Tel: + 44(0)1273 675 700</span>
+				<?php if($blog_id == 1) : ?>
+				<span>Tel: +44(0)1273 675 700</span>
+				<?php endif;?>
+				<?php if($blog_id == 3) : ?>
+				<span>Tel: +1 (778) 835-6414</span>
+				<?php endif;?>
 			</div>
 		</div> <!-- /end footer-icons -->
 

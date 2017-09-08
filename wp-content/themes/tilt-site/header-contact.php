@@ -22,7 +22,7 @@
 	<script type="text/javascript">
 		window.directoryURI = "<?php echo get_template_directory_uri(); ?>";
 	</script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqLAGB6IAB_gqGboXcDyqpOOqXvZgSMOE&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDICydt8n0Rv1jJSkztjGn9v7-W05tqeQc"></script>
 	<!-- Hotjar Tracking Code for www.wearetilt.com -->
 <script>
   (function(h,o,t,j,a,r){

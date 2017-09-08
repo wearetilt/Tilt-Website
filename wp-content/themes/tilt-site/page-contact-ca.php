@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contact EN
+Template Name: Contact CA
 */
 /**
  * The template for displaying pages
@@ -20,12 +20,8 @@ get_header('contact'); ?>
 	// When the window has finished loading create our google map below
 	google.maps.event.addDomListener(window, 'load', init);
 
-	officeLocation = new google.maps.LatLng(50.8319498, -0.1392226);
+	officeLocation = new google.maps.LatLng(49.323680, -123.103750);
 
-	brightonStation = new google.maps.LatLng(50.829262, -0.141058);
-	hoveStation = new google.maps.LatLng(50.835210, -0.17066);
-	londonRoadStation = new google.maps.LatLng(50.836650, -0.13647);
-	prestonParkStation = new google.maps.LatLng(50.845875, -0.155103);
 
 	function init() {
 		// Basic options for a simple Google Map
@@ -85,46 +81,6 @@ get_header('contact'); ?>
 				visible: true
 			});
 
-			stationOne = new google.maps.Marker({
-				flat: true,
-				icon: stationIcon,
-				map: map,
-				optimized: false,
-				position: brightonStation,
-				title: 'Brighton Station',
-				visible: true
-			});
-
-			stationTwo = new google.maps.Marker({
-				flat: true,
-				icon: stationIcon,
-				map: map,
-				optimized: false,
-				position: londonRoadStation,
-				title: 'London Road Station',
-				visible: true
-			});
-
-			stationThree = new google.maps.Marker({
-				flat: true,
-				icon: stationIcon,
-				map: map,
-				optimized: false,
-				position: prestonParkStation,
-				title: 'Preston Park Station',
-				visible: true
-			});
-
-			stationFour = new google.maps.Marker({
-				flat: true,
-				icon: stationIcon,
-				map: map,
-				optimized: false,
-				position: hoveStation,
-				title: 'Hove Station',
-				visible: true
-			});
-
 		}
 
 	}
@@ -134,15 +90,10 @@ get_header('contact'); ?>
 <div class="container container--double-side-pad area-dark contact--page">
 	<section class="text-section text-section--centre">
 		<h2 class="contact-title"><span class="light">Call us</span></h2>
-		<h2 class="contact-phone"><span class="light"><a title="Call tilt" href="tel:+441273675700">+44(0)1273 675 700</a></span></h2>
+		<h2 class="contact-phone"><span class="light"><a title="Call tilt" href="tel:+17788356414">+1 (778) 835-6414</a></span></h2>
 	
-		<h2 class="contact-title"><span class="light">Jobs &amp; Internships</span></h2>
-		<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
-		<h2 class="contact-title"><span class="light">New projects</span></h2>
-		<a class="contact-email" href="mailto:jonathan.helm@wearetilt.com">jonathan.helm@wearetilt.com</a>
-		<h2 class="contact-title"><span class="light">General Enquiries</span></h2>
-		<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
-
+		<h2 class="contact-title"><span class="light">Email</span></h2>
+		<a class="contact-email" href="mailto:bill.mackenzie@wearetilt.ca">bill.mackenzie@wearetilt.ca</a>
 
 		<!--
 <div class="worksheet-button-container">
@@ -160,13 +111,12 @@ get_header('contact'); ?>
 	</div>
 	<div class="map-overlay">
 		<h3 class="light marker">Call us</h3>
-		<span>+44(0)1273 675 700</span>
+		<span>+1 (778) 835-6414</span>
 		<h3 class="light marker">Our address</h3>
-		<span>Unit 1, Pullman haul,</span>
-		<span>41 New England Street,</span>
-		<span>Brighton, East Sussex,</span>
-		<span>BN1 4GQ, UK</span>
-		<a href="https://www.google.co.uk/maps/dir//50.8319498,-0.1392226/@50.8321729,-0.1393055,19.51z/data=!4m2!4m1!3e0?hl=en">
+		<span>1061 Marine Drive,</span>
+		<span>Suite 216 North Vancouver,</span>
+		<span>BC CANADA V7P 1S6</span>
+		<a href="https://www.google.co.uk/maps/dir//1061+Marine+Dr+%23216,+North+Vancouver,+BC+V7P+3M6,+Canada/@49.3237127,-123.1388464,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x548671d288618c47:0xa410c94e2a818608!2m2!1d-123.1037413!2d49.3236621!3e0?hl=en">
 			<div class="cube">
 					<div class="cube--front">
 						<p class="sans-serif">Get Directions</p>

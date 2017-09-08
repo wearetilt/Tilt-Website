@@ -34,11 +34,16 @@ get_header(); ?>
 	<?php if($work_groups) : ?> 
     <div id="services--list" class="container container--header container--work-list">
 		<?php foreach($work_groups as $k => $work_group) : ?>
-		<?php if($work_group['work_entries']) : ?>
+
 		<?php $title = $work_group['work_title_filter'] ? $work_group['work_title_filter'] : $work_group['work_headline'];?>
 		<?php $filterValue = $work_groups[$k]['filter_value'] = sanitize_title($title);?>
+
+		<?php if($work_group['work_entries']) : ?>
         <span id="work_<?=$filterValue;?>" class="work-item-title"><?= $title;?></span>
+		<?php else : ?>
+		<a id="work_<?=$filterValue;?>" class="work-item-title" href="<?= $work_group['work_link'];?>"><?= $title;?></a>
 		<?php endif;?>
+
 		<?php endforeach;?>
 	</div>
 	<?php endif;?>
