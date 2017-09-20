@@ -1,9 +1,7 @@
-.contact-form{
-
+.contact-form {
     max-width: 1200px;
     margin: 0px auto;
-
-    &:before{
+    &:before {
         content: '';
         height: 100px;
         width: 1px;
@@ -14,66 +12,58 @@
         margin: 0px auto;
         top: -50px;
     }
-
-
-    textarea{
+    textarea {
         width: 100%;
     }
-
-    input, textarea {
-
+    input,
+    textarea {
         border: 1px solid $c-grey-5e;
         background-color: $c-grey-25;
         padding: 10px;
         color: white;
         outline: $c-tilt-pink;
-
-        &:focus{
+        &:focus {
             border: 1px solid $c-tilt-pink;
         }
     }
 }
 
-.contact-form__fieldset{
+.contact-form__fieldset {
     padding: 5%;
     background-color: $c-grey-25;
     color: white;
     position: relative;
     z-index: 2;
-
-    & + & {
+    &+& {
         margin-top: 60px;
     }
 }
 
-.contact-form__fieldset--completed{
-
+.contact-form__fieldset--completed {
     border-bottom: 1px solid $c-grey-5e;
-        &:before{
-            content: '';
-            display: block;
-            position: absolute;
-            height: 62px;
-            width: 1px;
-            background-color: $c-grey-5e;
-            bottom: -62px;
-            left: 0;
-            right: 0;
-            margin: 0px auto;
-            transition: all 0.5s ease;
-            z-index: 1;
-        }
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 62px;
+        width: 1px;
+        background-color: $c-grey-5e;
+        bottom: -62px;
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
 }
 
 .contact-form__label {
     display: block;
-
-    & + * {
+    &+* {
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
-    &:after{
+    &:after {
         content: '';
         height: 31px;
         width: 31px;
@@ -88,18 +78,17 @@
     }
 }
 
-.contact-form__label--completed{
-
-    & + input, & + textarea{
+.contact-form__label--completed {
+    &+input,
+    &+textarea {
         background-color: $c-grey-2d;
     }
-
-    &:after{
+    &:after {
         opacity: 1;
     }
 }
 
-.funky-border-shizz{
+.funky-border-shizz {
     height: 1px;
     width: 100%;
     position: absolute;
@@ -113,12 +102,12 @@
     transition: all 0.2s ease 0.2s;
 }
 
-.form-info-holder{
+.form-info-holder {
     position: relative;
     z-index: 2;
 }
 
-.form-intro{
+.form-intro {
     padding: 0 5%;
     margin: 0px auto;
     margin-bottom: 8%;

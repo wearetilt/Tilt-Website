@@ -233,10 +233,10 @@ function twentyfifteen_scripts() {
 	$cssFile = 'global.min.css';
 	$jsFile = 'main.min.js';
  
-	if(IS_DEV) {
+	// if(IS_DEV) {
 		$cssFile = 'global.css';
 		$jsFile = 'main.js';
-	}
+	// }
 
 	// wp_enqueue_style( 'videojs', get_template_directory_uri() . '/plugins/videojs/video-js.css', false, filemtime(get_template_directory().'/plugins/videojs/video-js.css'));
 	// wp_style_add_data( 'videojs');
