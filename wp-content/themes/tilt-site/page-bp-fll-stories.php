@@ -23,7 +23,6 @@ get_header('work-item'); ?>
 <header id="page_bp_fll_stories" class="work-item area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play header-play--casestudy">
-
         </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/film_fll/fll_poster.jpg" width="100%" height="100%" >

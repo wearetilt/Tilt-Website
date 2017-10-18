@@ -140,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                             });
                         }
 
+
                         switch (headerID) {
                             //work-page
                             case "page_barclays_integrity":
@@ -544,11 +545,13 @@ if (document.getElementById('header-video-player')) { // if has header video
     }
 
     if (document.getElementById('header-play')) {
+
         document.getElementById('header-play').addEventListener('click', function() {
             myPlayer.ready(function() {
-                if (videoOverlay.currentSrc() === "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119") {
+                console.log(videoOverlay.currentSrc());
+                // if (videoOverlay.currentSrc() === "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119") {
                     videoOverlay.src(fullVideoSrc);
-                }
+                // }
                 // //console.log("I am doing this, i shouldn't be");
                 videoOverlay.play();
                 myPlayer.pause();
