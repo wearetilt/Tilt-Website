@@ -467,6 +467,13 @@ if (document.getElementById('header-video-player')) { // if has header video
             var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
             break;
 
+        case "page_caroline_lucas":
+            var clipVideoSrc = "https://player.vimeo.com/external/168753982.hd.mp4?s=3e9857a4d3db82f3084c9f10f2d3e0835d00f35e&profile_id=119";
+            var fullVideoSrc = "https://player.vimeo.com/external/157439321.hd.mp4?s=9e78630cd7076f4ed00fb4eb31f912f5ad72bdb9&profile_id=119";
+            break;
+
+            
+
         default:
             // do nothing
     }
@@ -548,7 +555,6 @@ if (document.getElementById('header-video-player')) { // if has header video
 
         document.getElementById('header-play').addEventListener('click', function() {
             myPlayer.ready(function() {
-                console.log(videoOverlay.currentSrc());
                 // if (videoOverlay.currentSrc() === "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119") {
                     videoOverlay.src(fullVideoSrc);
                 // }

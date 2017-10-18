@@ -20,9 +20,6 @@ get_header('work-item'); ?>
 </div>
 <header id="page_barclays_values" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
-        <div id="header-play" class="header-play ">
-
-        </div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/film_values/barclays_poster.jpg" width="100%" height="100%" >
                     <source id="header-video" src="https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=113" type="video/mp4">
