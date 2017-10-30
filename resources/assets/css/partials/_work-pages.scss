@@ -1,0 +1,31 @@
+.site-work {
+    img.full-size {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.work-fareshare-sussex {
+    .container-iphone-gallery {
+        background: #7dc2d8;
+    }
+}
+
+.work-icap {
+    .work-header,
+    .container-iphone-gallery {
+        @include linearGradient(#f66163, #f77577);
+    }
+}
+
+.work-bp-fll {
+    .work-header {
+        @include linearGradient(#67c9c5, #57c2bd);
+    }
+}
+
+.work-bp-fll-stories {
+    .area-blue {
+        background: #89c3c8;
+    }
+}

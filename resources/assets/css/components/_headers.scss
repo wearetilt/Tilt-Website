@@ -13,9 +13,14 @@ header {
     &#alzheimers,
     &#bp-fll,
     &#icap,
-    &#i360 {
+    &#i360,
+    &.work-item--monitor {
         min-height: auto;
         height: auto;
+        .container.container--header {
+            position: relative;
+            padding-top: 3%;
+        }
     }
     &#page_bp_fll_stories,
     &#page_caroline_lucas,
@@ -28,9 +33,12 @@ header {
     &#page_leadership,
     &#page_gfk,
     &#page_404,
+    &.work-header-video,
     &#page_discover_bp {
         min-height: 100vh;
         height: 100%;
+        position: relative;
+        z-index: 1;
     }
     #header-play {
         opacity: 0;
@@ -176,11 +184,10 @@ header {
             bottom: -1px;
             width: 100%;
             background-color: transparent;
-        }
-        .monitor-wrapper+.container--header {
-            position: relative;
-            padding-top: 3%;
-        }
+        } // .monitor-wrapper+.container--header {
+        //     position: relative;
+        //     padding-top: 3%;
+        // }
         @media handheld,
         screen and (min-width: $bp-desktop) {
             .header-title {
@@ -233,7 +240,14 @@ header {
             top: 44%;
         }
     }
-    &.work-item--motion {
+    &.work-item--background-image {
+        background-position: top center;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    &.work-item--motion,
+    &.work-item--background {
         @media handheld,
         screen and (min-width: 0px) and (max-width: $bp-phone) {}
         @media handheld, screen and (min-width:$bp-phone) and (max-width: $bp-desktop) {

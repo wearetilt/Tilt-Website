@@ -11,25 +11,38 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+ $isWorkPage = get_field('work_items');
+
+ if($isWorkPage) {
+	get_header('work-item');
+ } else {
+	get_header(); 
+ }
+?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main <?= $isWorkPage ? ' site-work work-'.$post->post_name : '';?>" role="main">
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+		<?php if($isWorkPage) {
+			get_template_part('templates-work/content-work');
+		} else {
 
-			// Include the page content template.
-			get_template_part( 'content', 'page' );
+			// Start the loop.
+			while ( have_posts() ) : the_post();
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+				// Include the page content template.
+				get_template_part( 'content', 'page' );
 
-		// End the loop.
-		endwhile;
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
+			// End the loop.
+			endwhile;
+
+		}
+
 		?>
 
 		</main><!-- .site-main -->

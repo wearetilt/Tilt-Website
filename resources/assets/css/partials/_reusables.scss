@@ -3,11 +3,8 @@ $bp-desktop: 1024px;
 $bp-desktop-large: 1024px;
 $bp-desktop-large-nav: 1280px;
 $bp-phone:768px;
-
 $job-breaks: 640px;
-
 $phone-breaks: 480px;
-
 @function em($px, $context: $base-font-size) {
 	@return #{$px/$context}em;
 }
@@ -18,35 +15,47 @@ $phone-breaks: 480px;
 }
 
 %clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
-.vertical-align{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.vertical-align {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 }
 
-.text-align{
+.text-align {
 	text-align: center;
 }
 
-
-
-.group-container .group #twitter__module, .group-container .group #twitter__module_two, .group-container .group #twitter__module_three {
-    &:after{
+.group-container .group #twitter__module,
+.group-container .group #twitter__module_two,
+.group-container .group #twitter__module_three {
+	&:after {
 		content: " ";
-		height:19px;
-		width:25px;
+		height: 19px;
+		width: 25px;
 		position: absolute;
 		background-image: url("../images/twitter_transparent.png");
 		opacity: 0.8;
-		bottom:21px;
-		right:21px;
-    }
+		bottom: 21px;
+		right: 21px;
+	}
+}
+
+@mixin linearGradient($top,
+$bottom) {
+	background: $top;
+	background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(100%, $bottom));
+	background: -webkit-linear-gradient(top, $top 0%, $bottom 100%);
+	background: -o-linear-gradient(top, $top 0%, $bottom 100%);
+	background: -ms-linear-gradient(top, $top 0%, $bottom 100%);
+	background: linear-gradient(to bottom, $top 0%, $bottom 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
 }

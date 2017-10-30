@@ -330,6 +330,31 @@ function add_custom_taxonomies() {
       'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
     ),
   ));
+
+  register_taxonomy('work_tags', 'page', array(
+    // Hierarchical taxonomy (like categories)
+    'hierarchical' => false,
+    // This array of options controls the labels displayed in the WordPress Admin UI
+    'labels' => array(
+      'name' => _x( 'Work Item Tags', 'taxonomy general name' ),
+      'singular_name' => _x( 'Work Item Tag', 'taxonomy singular name' ), 
+      'search_items' =>  __( 'Search Work Item Tags' ),
+      'all_items' => __( 'All Work Item Tags' ),
+      'parent_item' => __( 'None' ),
+      'parent_item_colon' => __( 'None:' ),
+      'edit_item' => __( 'Edit Work Item Tag' ),
+      'update_item' => __( 'Update Work Item Tag' ),
+      'add_new_item' => __( 'Add New Work Item Tag' ),
+      'new_item_name' => __( 'New Work Item Name Tag' ),
+      'menu_name' => __( 'Work Item Tags' ),
+    ),
+    // Control the slugs used for this taxonomy
+    'rewrite' => array(
+      'with_front' => false, // Don't display the category base before "/locations/"
+      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+    ),
+  ));
+
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
 

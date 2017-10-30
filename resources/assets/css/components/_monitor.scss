@@ -1,63 +1,71 @@
-.monitor-wrapper {
-	&.codeit-monitor { padding-bottom:130px; }
+.container-iphone-gallery {
+    text-align: center;
+    .work-i360 & {
+        background-color: #e8e8e8;
+    }
 }
 
+.monitor-wrapper {
+    &.codeit-monitor {
+        padding-bottom: 130px;
+    }
+}
 
 .ipad {
-	width: 40%;
-	position:absolute;
-	bottom:-10px;
-	right:-20px;
-	z-index:1000;
-	@media handheld, screen and (min-width: $bp-desktop){
-	    bottom:-20px;
-	    right:-120px;
-	}
+    width: 40%;
+    position: absolute;
+    bottom: -10px;
+    right: -20px;
+    z-index: 1000;
+    @media handheld,
+    screen and (min-width: $bp-desktop) {
+        bottom:-20px;
+        right: -120px;
+    }
 }
 
 .iphone {
-	width:21%;
-	position:absolute;
-	bottom:-10px;
-	right:-20px;
-	z-index:1000;
-	@media handheld, screen and (min-width: $bp-desktop){
-	    bottom:-35px;
-	    right:-75px;
-	}
+    width: 21%;
+    position: absolute;
+    bottom: -10px;
+    right: -20px;
+    z-index: 1000;
+    @media handheld,
+    screen and (min-width: $bp-desktop) {
+        bottom:-35px;
+        right: -75px;
+    }
 }
 
-.monitor-holder{
+.monitor-holder {
     max-width: 768px;
     margin: 0px auto;
     position: relative;
-    .monitor{
+    text-align: left;
+    .monitor {
         position: relative;
         width: 100%;
         max-width: 768px;
         z-index: 2;
     }
-
-    .overlay{
+    .overlay {
         margin: 0px auto;
         top: 4.9%;
         height: 67.5%;
         left: 3.5%;
         width: 93%;
     }
-
-    &:hover{
-        .overlay{
+    &:hover {
+        .overlay {
             opacity: 1;
         }
     }
-
-    & + .text-section{
+    &+.text-section {
         margin-top: 8%;
     }
 }
 
-.monitor-screen{
+.monitor-screen {
     position: absolute;
     z-index: 1;
     top: 4%;
@@ -66,24 +74,22 @@
     width: 92.5%;
     overflow: hidden;
     background-color: darkorchid;
-
-    video{
+    video {
         height: 100%;
         width: 100%;
     }
-
-    &.monitor-screen--video{
+    &.monitor-screen--video {
         z-index: 10;
     }
 }
 
-.mobile-holder{
+.mobile-holder {
+    text-align: left;
     width: 33%;
-    margin: 0px auto;
     position: relative;
-    float: left;
-
-    .mobile-phone{
+    display: inline-block;
+    margin-right: -4px;
+    .mobile-phone {
         position: relative;
         z-index: 2;
         height: 100%;
@@ -91,7 +97,7 @@
     }
 }
 
-.mobile-screen{
+.mobile-screen {
     position: absolute;
     z-index: 1;
     background-color: goldenrod;
@@ -101,39 +107,34 @@
     height: 70%;
     width: 62.5%;
     left: -10%;
-
-    img{
+    img {
         height: 100%;
         width: 100%;
     }
 }
 
 header {
-
-    .monitor-wrapper{
-        padding-top:6%;
-        
-        @media handheld, screen and (min-width:$bp-phone) and (max-width:$bp-desktop) { padding-bottom:3%; }
-        
+    .monitor-wrapper {
+        padding-top: 6%;
+        @media handheld,
+        screen and (min-width: $bp-phone) and (max-width:$bp-desktop) {
+            padding-bottom:3%;
+        }
     }
-	
-    .monitor-holder{
+    .monitor-holder {
         z-index: 1;
         max-width: 40%;
-		
-		@media handheld, screen and (min-width: $bp-desktop){
-			max-width: 30%;
-		}
-		
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
+            max-width: 30%;
+        }
     }
-
-    .monitor-screen{
+    .monitor-screen {
         top: 4%;
         height: 69%;
         left: 3.5%;
         width: 93%;
-
-        img{
+        img {
             height: 100%;
             width: 100%;
         }

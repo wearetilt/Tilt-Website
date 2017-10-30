@@ -232,8 +232,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                         var theHeader = document.getElementsByTagName('header');
                         var headerID = theHeader[0].getAttribute('ID');
+                        
                         // jQuery('#header-play').hide();
-                        jQuery('.header-text').hide();
+                        // jQuery('.header-text').hide();
 
                         switch (headerID) {
                             //work-page
@@ -338,28 +339,47 @@ for (var i = 0; i < allModules.length; i++) {
 // Get all the carousel controls on the page and all the images on the page
 //TODO: Add a way where the controls are created based on the number of images
 //This might break centering
-var carouselControls = document.getElementsByClassName('carousel-control');
-// Loop through all the controls and add a click handler to all of them.
-for (var iterator = 0; iterator < carouselControls.length; iterator++) {
-    var carouselControl = carouselControls[iterator];
-    carouselControl.onclick = function() {
-        //grab the ID from the carousel control
-        var controlsHolder = this.parentNode;
-        var imagesHolder = controlsHolder.previousElementSibling;
-        var carouselImages = imagesHolder.children;
-        var theseControls = controlsHolder.children;
-        var imageToShow = this.getAttribute('ID').slice(-1);
 
-        //Target the image with the matching ID and expand it while hiding all the others
-        for (var iterator2 = 0; iterator2 < carouselImages.length; iterator2++) {
-            carouselImage = carouselImages[iterator2];
-            carouselImage.style.height = 0;
-            theseControls[iterator2].classList.remove("selected");
-        }
-        document.getElementById('carousel-image-' + imageToShow).style.height = '100%';
-        this.classList.add('selected');
-    }
-}
+$('.carousel-control').click(function(){
+
+    var eq = $(this).index();
+    var $images = $(this).closest('.carousel').find('.carousel-image');
+    var $next = $(this).closest('.carousel').find('.carousel-image').eq(eq);
+
+    $images.css({
+        height: 0
+    })
+
+    $next.css({
+        height: '100%'
+    })
+
+    $(this).addClass('selected').siblings().removeClass('selected');
+
+})
+
+// var carouselControls = document.getElementsByClassName('carousel-control');
+// // Loop through all the controls and add a click handler to all of them.
+// for (var iterator = 0; iterator < carouselControls.length; iterator++) {
+//     var carouselControl = carouselControls[iterator];
+//     carouselControl.onclick = function() {
+//         //grab the ID from the carousel control
+//         var controlsHolder = this.parentNode;
+//         var imagesHolder = controlsHolder.previousElementSibling;
+//         var carouselImages = imagesHolder.children;
+//         var theseControls = controlsHolder.children;
+//         var imageToShow = this.getAttribute('ID').slice(-1);
+
+//         //Target the image with the matching ID and expand it while hiding all the others
+//         for (var iterator2 = 0; iterator2 < carouselImages.length; iterator2++) {
+//             carouselImage = carouselImages[iterator2];
+//             carouselImage.style.height = 0;
+//             theseControls[iterator2].classList.remove("selected");
+//         }
+//         document.getElementById('carousel-image-' + imageToShow).style.height = '100%';
+//         this.classList.add('selected');
+//     }
+// }
 
 
 /**
@@ -405,77 +425,84 @@ if (document.getElementById('header-video-player')) { // if has header video
     //This assumes there is only one header element per page.
     var headerID = theHeader[0].getAttribute('ID');
 
-    switch (headerID) {
-        //work-page
-        case "page_barclays_integrity":
-            var clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
-            var fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
-            break;
+    var $player = $('#header-video-player');
 
-        case "page_barclays_values":
-            var clipVideoSrc = "https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/88791766.hd.mp4?s=01c82c0c307c791f78f402a0b264fbf0&profile_id=113";
-            break;
+    var clipVideoSrc = $player.find('video source').attr('src');
+    var fullVideoSrc = $player.find('video').data('video');
 
-        case "bp-fll":
-            var clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
-            var fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
-            break;
+    if(!fullVideoSrc) {
 
-        case "page_bp_fll_stories":
-            var clipVideoSrc = "https://player.vimeo.com/external/139330951.hd.mp4?s=3d1c83178ba678c46e7f01baebb21bff&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/141101947.hd.mp4?s=cd503eb677f03e6164bee57bccb92c1c&profile_id=113";
-            break;
+        switch (headerID) {
+            //work-page
+            case "page_barclays_integrity":
+                clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
+                fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
+                break;
 
-        case "page_discover_bp":
-            var clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
-            var fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
-            break;
+            case "page_barclays_values":
+                clipVideoSrc = "https://player.vimeo.com/external/139330733.hd.mp4?s=cd31cd725d1122faa95cf8242d677c3e&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/88791766.hd.mp4?s=01c82c0c307c791f78f402a0b264fbf0&profile_id=113";
+                break;
 
-        case "page_gfk":
-            var clipVideoSrc = "https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/109216250.hd.mp4?s=4554075b1bbddc5346e47acad348d420&profile_id=113";
-            break;
+            case "bp-fll":
+                clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
+                fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
+                break;
 
-        case "page_leadership":
-            var clipVideoSrc = "https://player.vimeo.com/external/164256445.hd.mp4?s=f141fb096147d76282bf00a36a29a1f83cd9a84c&profile_id=119";
-            var fullVideoSrc = "https://player.vimeo.com/external/129132162.hd.mp4?s=b321063322e2949a1a5fd2ff900f21663cd265f4&profile_id=113";
-            break;
+            case "page_bp_fll_stories":
+                clipVideoSrc = "https://player.vimeo.com/external/139330951.hd.mp4?s=3d1c83178ba678c46e7f01baebb21bff&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/141101947.hd.mp4?s=cd503eb677f03e6164bee57bccb92c1c&profile_id=113";
+                break;
 
-        case "page_legacy":
-            var clipVideoSrc = "https://player.vimeo.com/external/140664772.hd.mp4?s=916c756982174f097892598f2bf7d363&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/66887877.hd.mp4?s=fdc4231994bcacbc95927f1ab19b489890fe327e&profile_id=113";
-            break;
+            case "page_discover_bp":
+                clipVideoSrc = "https://player.vimeo.com/external/140671448.sd.mp4?s=4c8fa29917b77e5bf2cabc4ef37ff99c&profile_id=112";
+                fullVideoSrc = "https://player.vimeo.com/external/140771096.hd.mp4?s=18276ebc9ead0e5b936f685afac90314&profile_id=113";
+                break;
 
-        case "page_reliace":
-            var clipVideoSrc = "https://player.vimeo.com/external/139331071.hd.mp4?s=9d1090404ff15a8fba76c4e4c46c2a5f&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/131908894.hd.mp4?s=644b8069e39833f3c9d1c401fe31b190&profile_id=113";
-            break;
+            case "page_gfk":
+                clipVideoSrc = "https://player.vimeo.com/external/140667746.hd.mp4?s=65dbf2593c9f3bed0c770c497eda1964&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/109216250.hd.mp4?s=4554075b1bbddc5346e47acad348d420&profile_id=113";
+                break;
 
-        case "page_sdnpa":
-            var clipVideoSrc = "https://player.vimeo.com/external/141048772.hd.mp4?s=9410c4302324a7d77893874178f3ec83&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/89417008.hd.mp4?s=b970f0c992ca4f0299fe30801dd6fe08&profile_id=113";
-            break;
+            case "page_leadership":
+                clipVideoSrc = "https://player.vimeo.com/external/164256445.hd.mp4?s=f141fb096147d76282bf00a36a29a1f83cd9a84c&profile_id=119";
+                fullVideoSrc = "https://player.vimeo.com/external/129132162.hd.mp4?s=b321063322e2949a1a5fd2ff900f21663cd265f4&profile_id=113";
+                break;
 
-        case "page_take_the_lead":
-            var clipVideoSrc = "https://player.vimeo.com/external/139331070.hd.mp4?s=b2d4b3506fa6f57cee7b8cf917f32298&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/94658351.hd.mp4?s=4dd1fa0e776ac4e2ada6b0fbbb81363e&profile_id=113";
-            break;
+            case "page_legacy":
+                clipVideoSrc = "https://player.vimeo.com/external/140664772.hd.mp4?s=916c756982174f097892598f2bf7d363&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/66887877.hd.mp4?s=fdc4231994bcacbc95927f1ab19b489890fe327e&profile_id=113";
+                break;
 
-        case "work_page":
-            var clipVideoSrc = "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113";
-            var fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
-            break;
+            case "page_reliace":
+                clipVideoSrc = "https://player.vimeo.com/external/139331071.hd.mp4?s=9d1090404ff15a8fba76c4e4c46c2a5f&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/131908894.hd.mp4?s=644b8069e39833f3c9d1c401fe31b190&profile_id=113";
+                break;
 
-        case "page_caroline_lucas":
-            var clipVideoSrc = "https://player.vimeo.com/external/168753982.hd.mp4?s=3e9857a4d3db82f3084c9f10f2d3e0835d00f35e&profile_id=119";
-            var fullVideoSrc = "https://player.vimeo.com/external/157439321.hd.mp4?s=9e78630cd7076f4ed00fb4eb31f912f5ad72bdb9&profile_id=119";
-            break;
+            case "page_sdnpa":
+                clipVideoSrc = "https://player.vimeo.com/external/141048772.hd.mp4?s=9410c4302324a7d77893874178f3ec83&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/89417008.hd.mp4?s=b970f0c992ca4f0299fe30801dd6fe08&profile_id=113";
+                break;
 
-            
+            case "page_take_the_lead":
+                clipVideoSrc = "https://player.vimeo.com/external/139331070.hd.mp4?s=b2d4b3506fa6f57cee7b8cf917f32298&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/94658351.hd.mp4?s=4dd1fa0e776ac4e2ada6b0fbbb81363e&profile_id=113";
+                break;
 
-        default:
-            // do nothing
+            case "work_page":
+                clipVideoSrc = "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113";
+                fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
+                break;
+
+            case "page_caroline_lucas":
+                clipVideoSrc = "https://player.vimeo.com/external/168753982.hd.mp4?s=3e9857a4d3db82f3084c9f10f2d3e0835d00f35e&profile_id=119";
+                fullVideoSrc = "https://player.vimeo.com/external/157439321.hd.mp4?s=9e78630cd7076f4ed00fb4eb31f912f5ad72bdb9&profile_id=119";
+                break;
+
+            default:
+                // do nothing
+        }
+
     }
 
     Modernizr.on('touchevents', function(result) {

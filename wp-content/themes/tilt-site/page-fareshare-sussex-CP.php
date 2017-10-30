@@ -16,8 +16,6 @@ get_header('work-item'); ?>
 <header id="fareshare" class="work-item area-dark">
 
 
-
-
     <div class="container container--header">
         <div class="header-title no--shadow">
             <p class="tag tag--work-body">Web</p>
