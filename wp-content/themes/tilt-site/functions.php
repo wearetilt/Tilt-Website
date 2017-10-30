@@ -522,3 +522,31 @@ require get_template_directory() . '/inc/customizer.php';
 // }
 //
 // add_action( 'wp_footer', 'footer_scripts', 20);
+
+
+function getPageSibling($link) {
+    global $post;
+    $siblings = get_pages('child_of='.$post->post_parent.'&parent='.$post->post_parent);
+    foreach ($siblings as $key=>$sibling){
+        if ($post->ID == $sibling->ID){
+            $ID = $key;
+        }
+    }
+	$closest = array('prev'=>get_permalink($siblings[$ID-1]->ID),'next'=>get_permalink($siblings[$ID+1]->ID));
+	
+	$link = $closest[$link];
+
+	if(!$link) {
+		return '';
+	}
+
+	$currentUrl = get_permalink($post->ID);
+
+	if($link == $currentUrl) {
+		return '';
+	}
+
+	return $link;
+
+    // if ($link == 'prev' || $link == 'next') { return ; } else { return $closest; }
+}

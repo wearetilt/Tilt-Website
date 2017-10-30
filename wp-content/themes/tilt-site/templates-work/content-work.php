@@ -37,6 +37,14 @@ foreach($arrContent as $content) {
 ?>
 
 <div class="group-container">
-    <a class="project-navigation paginate_prev" href="../reliance"><span>&#8249;</span> Previous Project</a>
-    <a class="project-navigation paginate_next" href="../bp-fll-stories">Next Project <span>&#8250;</span></a>
+    <?php if($prev = getPageSibling('prev')) : ?>
+        <a class="project-navigation paginate_prev" href="<?= $prev;?>"><span>&#8249;</span> Previous Project</a>
+    <?php else : ?>
+        <a class="project-navigation button--disabled" href="">&nbsp;</a>
+    <?php endif;?>
+    <?php if($next = getPageSibling('next')) : ?>
+        <a class="project-navigation paginate_next" href="<?= $next;?>">Next Project <span>&#8250;</span></a>
+    <?php else : ?>
+        <a class="project-navigation button--disabled" href="">&nbsp;</a>
+    <?php endif;?>
 </div>
