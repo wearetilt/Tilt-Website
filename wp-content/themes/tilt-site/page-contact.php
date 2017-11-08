@@ -188,11 +188,11 @@ get_header('contact'); ?>
 
 			<div class="contact-title"><span class="light">Call us</span></div>
 			<div class="contact-phone"><span class="light"><a title="Call tilt" href="tel:+441273675700">+44(0)1273 675 700</a></span></div>
-		
+
 			<div class="contact-title"><span class="light">Jobs &amp; Internships</span></div>
 			<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
 			<div class="contact-title"><span class="light">New projects</span></div>
-			<a class="contact-email" href="mailto:jonathan.helm@wearetilt.com">jonathan.helm@wearetilt.com</a>
+			<a class="contact-email" href="mailto:jon.malyon@wearetilt.com">jon.malyon@wearetilt.com</a>
 			<div class="contact-title"><span class="light">General Enquiries</span></div>
 			<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
 
@@ -225,10 +225,10 @@ get_header('contact'); ?>
 		<div class="contact-section-info">
 
 			<h2>Vancouver</h2>
-		
+
 			<div class="contact-title"><span class="light">Call us</span></div>
 			<div class="contact-phone"><span class="light"><a title="Call tilt" href="tel:+17788356414">+1 (778) 835-6414</a></span></div>
-		
+
 			<div class="contact-title"><span class="light">Email</span></div>
 			<a class="contact-email" href="mailto:bill.mackenzie@wearetilt.ca">bill.mackenzie@wearetilt.ca</a>
 
@@ -252,7 +252,7 @@ get_header('contact'); ?>
 		</div>
 
 		<div class="map" id="map2"></div>
-		
+
 
 	</section> <!-- /end text-section -->
 </div> <!-- /end container -->
