@@ -232,7 +232,7 @@ function twentyfifteen_scripts() {
 
 	$cssFile = 'global.min.css';
 	$jsFile = 'main.min.js';
- 
+
 	// if(IS_DEV) {
 		$cssFile = 'global.css';
 		$jsFile = 'main.js';
@@ -240,7 +240,7 @@ function twentyfifteen_scripts() {
 
 	// wp_enqueue_style( 'videojs', get_template_directory_uri() . '/plugins/videojs/video-js.css', false, filemtime(get_template_directory().'/plugins/videojs/video-js.css'));
 	// wp_style_add_data( 'videojs');
-	
+
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/'.$cssFile, false, filemtime(get_template_directory().'/css/'.$cssFile));
 
 	// Load the Internet Explorer specific stylesheet.
@@ -337,7 +337,7 @@ function add_custom_taxonomies() {
     // This array of options controls the labels displayed in the WordPress Admin UI
     'labels' => array(
       'name' => _x( 'Work Item Tags', 'taxonomy general name' ),
-      'singular_name' => _x( 'Work Item Tag', 'taxonomy singular name' ), 
+      'singular_name' => _x( 'Work Item Tag', 'taxonomy singular name' ),
       'search_items' =>  __( 'Search Work Item Tags' ),
       'all_items' => __( 'All Work Item Tags' ),
       'parent_item' => __( 'None' ),
@@ -434,7 +434,7 @@ function team_post_type() {
 		'supports'            => array( 'title', 'editor', 'thumbnail' ),
 		// 'taxonomies'          => array( 'work' ),
 		'hierarchical'        => true,
-		'public'              => true,
+		'public'              => false,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'menu_position'       => 5,
@@ -442,8 +442,8 @@ function team_post_type() {
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
 		'has_archive'         => false,
-		'exclude_from_search' => false,
-		'publicly_queryable'  => true,
+		'exclude_from_search' => true,
+		'publicly_queryable'  => false,
 		'capability_type'     => 'page',
 		'rewrite' => array(
 	      'slug' => 'team', // This controls the base slug that will display before each term
@@ -533,7 +533,7 @@ function getPageSibling($link) {
         }
     }
 	$closest = array('prev'=>get_permalink($siblings[$ID-1]->ID),'next'=>get_permalink($siblings[$ID+1]->ID));
-	
+
 	$link = $closest[$link];
 
 	if(!$link) {
