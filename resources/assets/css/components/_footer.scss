@@ -100,12 +100,12 @@ footer {
 
 #signoff {
     background-color: $c-bg;
-    height: 143px;
+    height: 168px;
     padding: 33px 6.20079% 0px;
     border-top: 1px solid #171717;
     @media handheld,
     screen and (min-width: $bp-desktop) {
-        height: 143px;
+        height: 168px;
     }
     #contact & {
         height: auto;

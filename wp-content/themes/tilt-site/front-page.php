@@ -285,7 +285,7 @@ $args = array(
 
 				<div id="twitter__module" class="module module--1-1 area-dark">
 					<div class="module__text home--tweet">
-						<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' tweet_count='3' show_follow='0' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
+						<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='0' show_meta_reply_retweet_favorite='1' official_format='2' tweet_count='3' exclude_replies='1' show_follow='0' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 
 					</div> <!-- /end text-section -->
 				</div>

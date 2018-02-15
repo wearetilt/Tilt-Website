@@ -1772,9 +1772,9 @@ footer p.button { font-size: 18px; font-size: 1.125rem; }
 
 @media handheld, screen and (min-width: 1024px) { footer p.button { font-size: 20px; font-size: 1.25rem; } }
 
-#signoff { background-color: #1f1f1f; height: 143px; padding: 33px 6.20079% 0px; border-top: 1px solid #171717; }
+#signoff { background-color: #1f1f1f; height: 168px; padding: 33px 6.20079% 0px; border-top: 1px solid #171717; }
 
-@media handheld, screen and (min-width: 1024px) { #signoff { height: 143px; } }
+@media handheld, screen and (min-width: 1024px) { #signoff { height: 168px; } }
 
 #contact #signoff { height: auto; padding: 2.2637795276% 6.2007874016%; }
 

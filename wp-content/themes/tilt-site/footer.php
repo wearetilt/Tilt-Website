@@ -48,13 +48,14 @@
 			</div>
 		</div> <!-- /end footer-icons -->
 
-		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2015. All rights reserved.</p>
+		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2015. All rights reserved.<br />Registered in England & Wales under Reg. No 07280900. Registered Office: 1 Harbour House, Harbour Way, Shoreham-by-Sea, West Sussex, BN43 5HZ. <br/>Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
+
 	</div>
 
 </footer>
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
- <script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>   
+ <script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/video.js"></script>
  <!-- <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>  -->
 <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
