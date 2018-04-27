@@ -105,11 +105,9 @@ footer {
 
 .privacy_policy{
     color: #ffffff;
-    font-family: $f-seroot-bd;
+    font-family: $f-seroot-lt;
     font-size: 13px;
-    position: absolute;
-    right: 96px;
-    bottom: 42px;
+    float: right;
     text-transform: capitalize;
 }
 
