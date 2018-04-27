@@ -78,6 +78,11 @@ footer {
         clear: both;
         @include font-size(12);
     }
+    .footnote_2 {
+        color: #999999;
+        @include font-size(12);
+        margin-top: 0.8em;
+    }
     p.sans-serif {
         @include font-size(25);
         @media handheld,
@@ -96,6 +101,16 @@ footer {
             @include font-size(20);
         }
     }
+}
+
+.privacy_policy{
+    color: #ffffff;
+    font-family: $f-seroot-bd;
+    font-size: 13px;
+    position: absolute;
+    right: 96px;
+    bottom: 42px;
+    text-transform: capitalize;
 }
 
 #signoff {
@@ -174,7 +189,7 @@ footer {
         display: block;
     }
     &.footer-icon {
-        margin-left: 35px;
+        margin-left: 25px;
         &:first-child {
             margin-left: 5px;
         }

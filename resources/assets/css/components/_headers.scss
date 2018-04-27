@@ -332,6 +332,35 @@ header {
     }
 }
 
+.cc_banner.cc_container.cc_container--open{
+    .cc_message{
+    font-family: $f-seroot-lt;
+    font-size: 14px;
+    margin-top: 6px;
+    }
+    .cc_btn{
+        background: #ff0066;
+        color: $c-white;
+        font-family: $f-seroot-lt;
+        font-size: 14px;
+        border-radius: 0;
+        margin-bottom: 6px
+    }
+    .cc_logo{
+        left: 16px;
+    }
+    .cc_more_info{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        right: 16px;
+        margin-bottom: 12px;
+        font-size: 13px;
+        color: #ff0066;
+        font-family: $f-seroot-bd;
+        text-transform: capitalize;
+    }
+}
 #work_page {
     .header-play {
         top: 44%;
