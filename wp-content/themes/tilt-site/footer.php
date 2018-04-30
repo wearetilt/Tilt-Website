@@ -45,7 +45,6 @@
 				<!-- Contact Us Form -->
 					<form action="#" id="form" method="post" name="form">
 						<!-- <img id="close" src="uploads/times.svg" onclick ="div_hide()"> -->
-						<svg id="close" onclick ="div_hide()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M323.1 441l53.9-53.9c9.4-9.4 9.4-24.5 0-33.9L279.8 256l97.2-97.2c9.4-9.4 9.4-24.5 0-33.9L323.1 71c-9.4-9.4-24.5-9.4-33.9 0L192 168.2 94.8 71c-9.4-9.4-24.5-9.4-33.9 0L7 124.9c-9.4 9.4-9.4 24.5 0 33.9l97.2 97.2L7 353.2c-9.4 9.4-9.4 24.5 0 33.9L60.9 441c9.4 9.4 24.5 9.4 33.9 0l97.2-97.2 97.2 97.2c9.3 9.3 24.5 9.3 33.9 0z"/></svg>
 						<h2>Newsletter</h2>
 						<hr>
 						<input id="name" name="name" placeholder="Name" type="text">
@@ -54,7 +53,14 @@
 					</form>
 				</div>
 			</div>
-			<button class="popup" onclick="div_show()">Subscribe</button>
+			<a class="popup" onclick="div_show()">Subscribe</a>
+
+			<div id="subscribe">
+				<form action="#" id="form" method="post">
+					<input id="name" name="name" placeholder="Name" type="text">
+					<input id="email" name="email" placeholder="Email" type="text">
+				</form>
+			</div>
 
 			<div class="telephone">
 				<?php if($blog_id == 1) : ?>

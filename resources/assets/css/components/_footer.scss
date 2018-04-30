@@ -59,6 +59,17 @@ footer {
             }
     }
 
+    #subscribe{
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 370px;
+        #form{
+            display: inline-flex;
+            background-color: none;           
+        }
+    }
+
     #abc {
     width:100%;
     height:100%;
