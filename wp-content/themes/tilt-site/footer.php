@@ -38,7 +38,24 @@
 			<div class="footer-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
 			<div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
 			<!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
-			<a class="footer-subscriber" onclick="subscribe()">Subscribe</a>
+			
+			<!--popup subscribe -->
+		<div id="abc">
+				<div id="popupContact">
+				<!-- Contact Us Form -->
+					<form action="#" id="form" method="post" name="form">
+						<!-- <img id="close" src="uploads/times.svg" onclick ="div_hide()"> -->
+						<svg id="close" onclick ="div_hide()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M323.1 441l53.9-53.9c9.4-9.4 9.4-24.5 0-33.9L279.8 256l97.2-97.2c9.4-9.4 9.4-24.5 0-33.9L323.1 71c-9.4-9.4-24.5-9.4-33.9 0L192 168.2 94.8 71c-9.4-9.4-24.5-9.4-33.9 0L7 124.9c-9.4 9.4-9.4 24.5 0 33.9l97.2 97.2L7 353.2c-9.4 9.4-9.4 24.5 0 33.9L60.9 441c9.4 9.4 24.5 9.4 33.9 0l97.2-97.2 97.2 97.2c9.3 9.3 24.5 9.3 33.9 0z"/></svg>
+						<h2>Newsletter</h2>
+						<hr>
+						<input id="name" name="name" placeholder="Name" type="text">
+						<input id="email" name="email" placeholder="Email" type="text">
+						<a href="javascript:%20check_empty()" id="submit">Subscribe</a>
+					</form>
+				</div>
+			</div>
+			<button class="popup" onclick="div_show()">Subscribe</button>
+
 			<div class="telephone">
 				<?php if($blog_id == 1) : ?>
 				<span>Tel: +44(0)1273 675 700</span>

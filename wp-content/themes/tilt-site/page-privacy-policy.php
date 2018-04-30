@@ -13,15 +13,6 @@
 
 get_header(); ?>
 
-<header class="about-page">
-	<div class="module module--16-5 module--video module--visible">
-		 <div class="ratio">
-			 <video id="about-page--video" poster="<?php echo get_template_directory_uri(); ?>/images/contact_poster.jpg" autoplay loop muted>
-					 <source src="https://player.vimeo.com/external/141399412.hd.mp4?s=3f1574fa69a9ae469f325e2b05972a6e&profile_id=113" type="video/mp4">
-			 </video>
-		 </div>
-	 </div> <!-- /end module -->
-</header>
 
 <section>
 <div class="group-container privacy-policy">
@@ -70,6 +61,53 @@ get_header(); ?>
 <p>We use cookies to compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf. Your browser may give you the ability to control cookies or other tracking tools. How you do so depends on the type of tool. Certain browsers can be set to reject browser cookies. Use your browser’s Help Menu to learn the correct way to modify your cookies.</p>
 
 <p>If you turn cookies off, some features will be disabled. It won’t affect the user’s experience that make your site experience more efficient and may not function properly.</p>
+
+<p>Cookies set by third parties</p>
+
+<p>www.wearetilt.com works with a number of third parties to provide services which help us to keep the website tailored to our users' needs. Some of these partners use cookies to help them deliver these services. A list of third-party cookies can be found below:</p>
+
+<table>
+
+<tr>
+<td>Name</td>
+<td>Cookie policies and opt-out options</td>
+</tr>
+
+<tr>
+<td>Google Analytics</td>
+<td><a href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a></td>
+</tr>
+
+<tr>
+<td>Hotjar</td>
+<td><a href="https://www.hotjar.com/opt-out">https://www.hotjar.com/opt-out</a></td>
+</tr>
+
+<tr>
+<td>Twitter (shares only)</td>
+<td><a href="http://twitter.com/privacy">http://twitter.com/privacy</a></td>
+</tr>
+
+<tr>
+<td>Facebook (shares only)</td>
+<td><a href="http://www.facebook.com/about/privacy/">http://www.facebook.com/about/privacy/</a></td>
+</tr>
+
+<tr>
+<td>Google Advertising</td>
+<td><a href="http://www.facebook.com/about/privacy/">https://policies.google.com/technologies/types</a></td>
+</tr>
+
+<tr>
+<td>Vimeo</td>
+<td><a href="http://www.facebook.com/about/privacy/">https://vimeo.com/cookie_policy</a></td>
+ </tr>
+</table>
+
+
+
+
+-- 
 
 <h4>VISITORS TO OUR WEBSITES</h4>
 

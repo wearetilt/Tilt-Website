@@ -460,7 +460,7 @@ section {
     }
 }
 .privacy-policy{
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -477,9 +477,20 @@ section {
     }
     a{
         color: #ff0066;
+        text-transform: none;
     }
     li{
         line-height: 1.5;
     }
+    table{
+        border: 2px solid white;
+            td{
+                color: #ffffff;
+                border-right: 2px solid #ffffff;
+                border-bottom: 2px solid #ffffff;
+                padding: 10px;
+            }
+    }
+
 
 }
