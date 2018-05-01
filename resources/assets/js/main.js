@@ -1162,19 +1162,47 @@ function isElementInViewport(el) {
 }
 
 // Validating Empty Field
+
+$('form input').keyup(check_empty);
+
 function check_empty() {
-if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
-alert("Fill All Fields !");
-} else {
-document.getElementById('form').submit();
-alert("Form Submitted Successfully...");
+var email = false;
+var name =false;
+var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+
+if(!regex.test($('#fieldEmail').val())){
+    $('#fieldEmail').addClass('error');
+    $('.error1').css('display','block');
+    $('.error1').css('margin','0px 68px');
+
+}
+else{ 
+    email = true;
+    $('#fieldEmail').removeClass('error');
+    $('.error1').css('display','none');
+}
+if($('#fieldName').val() == ''){
+    console.log()
+    $('#fieldName').addClass('error');
+    $('.error2').css('display','block');
+}
+else{
+    name = true;
+    $('#fieldName').removeClass('error');
+    $('.error2').css('display','none');
+    $('.error1').css('margin','0px 196px');
+}
+
+if(email && name){
+$('.js-cm-submit-button').css('color','#ffffff');
+$('.js-cm-submit-button').css('backgroundColor','transparent');
+$('svg').css('fill','#f14e67');
+$('.js-cm-submit-button').attr('disabled',false);
 }
 }
+
 //Function To Display Popup
-function div_show() {
-document.getElementById('abc').style.display = "block";
-}
-//Function to Hide Popup
-function div_hide(){
-document.getElementById('abc').style.display = "none";
+function hide() {
+$('#subscribe').addClass("active");
+$('#popup').hide();
 }

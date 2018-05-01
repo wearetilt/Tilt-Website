@@ -39,27 +39,21 @@
 			<div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
 			<!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
 			
-			<!--popup subscribe -->
-		<div id="abc">
-				<div id="popupContact">
-				<!-- Contact Us Form -->
-					<form action="#" id="form" method="post" name="form">
-						<!-- <img id="close" src="uploads/times.svg" onclick ="div_hide()"> -->
-						<h2>Newsletter</h2>
-						<hr>
-						<input id="name" name="name" placeholder="Name" type="text">
-						<input id="email" name="email" placeholder="Email" type="text">
-						<a href="javascript:%20check_empty()" id="submit">Subscribe</a>
-					</form>
-				</div>
-			</div>
-			<a class="popup" onclick="div_show()">Subscribe</a>
+			<!-- subscribe -->
+			<a id="popup" onclick="hide()">Join our mailing list</a>
 
 			<div id="subscribe">
-				<form action="#" id="form" method="post">
-					<input id="name" name="name" placeholder="Name" type="text">
-					<input id="email" name="email" placeholder="Email" type="text">
+				<p>Join our mailing list</p>
+				<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E724ECA1B6796EADF65AC759B144112BD8BD6F3C5686E6DB5068B5C5B63F05A873EA988D4992C4B6E542E62E633F34061">
+					<input id="fieldName" name="cm-name" placeholder="Name" type="text">
+					<input id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" placeholder="Email" type="text">
+					<button disabled class="js-cm-submit-button" type="submit">Subscribe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></button>
 				</form>
+   					<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+				<div class="errors">
+				<p class="error2">Please add your name</p>
+				<p class="error1">Doesn't look like a valid email</p>
+				</div>
 			</div>
 
 			<div class="telephone">
