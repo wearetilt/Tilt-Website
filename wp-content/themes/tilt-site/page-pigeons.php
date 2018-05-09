@@ -18,17 +18,13 @@ get_header('404'); ?>
         </div>
     </div>
 </header>
-<div id="fourohfour-overlay">
-	<div id="header-play" class="header-play vertical-align">
-
-	</div>
-</div>
 <div id="fourohfour-text" class="container container--no-top container--half-bot">
-	<h1>Pigeons Vs Emails</h1>
-	<h1 class="light">Last chance to stay in touch by email</h1>
+	<h1>PIGEONS INCOMING!</h1>
+	<h1 class="light">Please excuse the bird mess.</h1>
+	<h1 class="light">P.S. Pigeons aside, you should really sign up for the latest in brand and learning good stuff.</h1>
+	<h1 class="light">Should you choose not to, whilst we're sorry to see you go, we'll take you off our Email marketing list. Or....</h1>
 	
-	<a class="pigeon" href="http://wearetilt.com/unsubscribe"><img src="<?php echo get_template_directory_uri(); ?>/images/button1.png"></a>
-	<a class="email" target="_blank" href="http://newsletter.wearetilt.com/h/r/DCECA7E8F013B81E"><img src="<?php echo get_template_directory_uri(); ?>/images/button2.png"></a>
+	<a class="pigeon" href="http://newsletter.wearetilt.com/h/r/DCECA7E8F013B81E"><img src="<?php echo get_template_directory_uri(); ?>/images/button3.png"></a>
 
 </div>
 </div>

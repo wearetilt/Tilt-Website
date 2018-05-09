@@ -11,6 +11,9 @@ footer {
     background-position: center right;
     background-repeat: no-repeat;
     background-color: #171717;
+    @media screen and (min-width: 320px)and(max-width: 480px){
+        background-image: none !important;
+    }
     @media handheld,
     screen and (min-width: 0px) and (max-width: $bp-desktop) {
         background-position: center center;
@@ -52,6 +55,14 @@ footer {
         color: #ffffff;
         background: transparent;
         cursor: pointer;
+        @media screen and (max-width: 320px){
+            padding: 10px 38px;
+            line-height: 2;
+        }
+        @media screen and (min-width: 321px)and(max-width: 480px){
+            padding: 10px 70px;
+            line-height: 2;
+        }
     }
 
     #subscribe{
@@ -91,6 +102,9 @@ footer {
             width: 8%;
             margin: -6px 8px;
             fill: #5c5c5c;
+            @media screen and (max-width: 480px){
+                margin: -3px 8px;
+            }
         }
         .error{
             border: 1px solid #e84c64;
@@ -99,6 +113,9 @@ footer {
         }
         .errors{
             display: flex;
+            @media screen and (max-width: 480px){
+                display: none;
+            }
 
         }  
         .error1{
@@ -133,6 +150,11 @@ footer {
             clear: both;
             margin-top: 25px;
             margin-bottom: 25px;
+        }
+        @media screen and (min-width: 320px)and(max-width: 480px){
+            margin-top: 0px;
+            margin-bottom: 0px;
+            background-image: none;
         }
         a {
             color: $c-tilt-pink;
