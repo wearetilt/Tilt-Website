@@ -31,45 +31,48 @@
 	</div> <!-- /end container -->
 
 	<div id="signoff" class="group-container group-container--no-bg">
-		<div class="footer-icons">
-			<div class="footer-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a></div>
-			<div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a></div>
-			<div class="footer-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ><svg class="f-ico_vimeo"> <use xlink:href="#vimeo"></use></svg></a></div>
-			<div class="footer-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
-			<div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
-			<!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
-			
-			<!-- subscribe -->
-			<a id="popup" onclick="hide()">Join our mailing list</a>
+    <div id="footer-contacts">
+  		<div id="footer-icons">
+  			<div class="footer-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a></div>
+  			<div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a></div>
+  			<div class="footer-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ><svg class="f-ico_vimeo"> <use xlink:href="#vimeo"></use></svg></a></div>
+  			<div class="footer-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
+  			<div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
+  			<!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
+      </div> <!-- /end footer-icons -->
+      
+  			<!-- subscribe -->
+  			<a id="popup" onclick="hide()">Join our mailing list</a>
 
-			<div id="subscribe">
-				<p>Join our mailing list</p>
-				<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E724ECA1B6796EADF65AC759B144112BD8BD6F3C5686E6DB5068B5C5B63F05A873EA988D4992C4B6E542E62E633F34061">
-					<input id="fieldName" name="cm-name" placeholder="Name" type="text">
-					<input id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" placeholder="Email" type="text">
-					<button disabled class="js-cm-submit-button" type="submit">Subscribe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></button>
-				</form>
-   					<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-				<div class="errors">
-				<p class="error2">Please add your name</p>
-				<p class="error1">Doesn't look like a valid email</p>
-				</div>
-			</div>
+  			<div id="subscribe">
+  				<p>Join our mailing list</p>
+  				<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E724ECA1B6796EADF65AC759B144112BD8BD6F3C5686E6DB5068B5C5B63F05A873EA988D4992C4B6E542E62E633F34061">
+  					<input id="fieldName" name="cm-name" placeholder="Name" type="text">
+  					<input id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" placeholder="Email" type="text">
+  					<button disabled class="js-cm-submit-button" type="submit">SUBSCRIBE<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></button>
+  				</form>
+     					<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+  				<div class="errors">
+  				<p class="error2">Please add your name</p>
+  				<p class="error1">Doesn't look like a valid email</p>
+  				</div>
+  			</div>
 
-			<div class="telephone">
-				<?php if($blog_id == 1) : ?>
-				<span>Tel: +44(0)1273 675 700</span>
-				<?php endif;?>
-				<?php if($blog_id == 3) : ?>
-				<span>Tel: +1 (778) 835-6414</span>
-				<?php endif;?>
-			</div>
-		</div> <!-- /end footer-icons -->
+  			<div class="telephone">
+  				<?php if($blog_id == 1) : ?>
+  				<span>Tel: +44(0)1273 675 700</span>
+  				<?php endif;?>
+  				<?php if($blog_id == 3) : ?>
+  				<span>Tel: +1 (778) 835-6414</span>
+  				<?php endif;?>
+  			</div>
+
+    </div><!-- /end footer-contacts -->
 
 		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2015. All rights reserved.<a class="privacy_policy" href="/privacy-policy" target="_blank">Privacy Policy</a></p>
 		<p class="footnote_2">Registered in England & Wales under Reg. No 07280900. Registered Office: 1 Harbour House, Harbour Way, Shoreham-by-Sea, West Sussex, BN43 5HZ. <br/>Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
 
-	</div>
+	</div><!-- /end signoff -->
 
 </footer>
 

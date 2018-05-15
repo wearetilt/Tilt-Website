@@ -1,5 +1,5 @@
 footer {
-    max-height: 704px;
+    max-height: 780px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -50,13 +50,15 @@ footer {
         }
     }
     #popup{
-        margin-left: 7px;
-        padding: 10px 20px;
+        padding: 5px 20px;
         color: #ffffff;
         background: transparent;
         cursor: pointer;
         display: inline-block;
-        vertical-align: super;
+        font-family: $f-seroot;
+        letter-spacing: 1px;
+        text-transform: none;
+        vertical-align: top;
         @media screen and (max-width: 320px){
             padding: 10px 38px;
             line-height: 2;
@@ -72,7 +74,9 @@ footer {
     }
     #subscribe.active{
         display: inline-block;
-        margin-left: 30px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-bottom: 30px;
         p{
             font-size: 12px;
             color: #999999;
@@ -87,28 +91,35 @@ footer {
             }
         }
         input{
-            width: 82%;
-            padding: 10px;
-            margin-right: 20px;
+            letter-spacing: 1px;
+            padding: 10px 5px;
+            margin-right: 5px;
             border: none;
             font-size: 16px;
             background-color: #303030;
             color: #ffffff;
         }
         button{
-            font-family: $f-seroot;
             outline: none;
+            min-width: 10em;
+            font-size: 14px;
+            font-family: $f-seroot;
+            letter-spacing: 1px;
+            position: relative;
+            padding-left: 1em;
+            padding-top: 4px;
+            text-align: left;
             &:disabled{
             color: #5c5c5c;
             background: transparent;
             border: 2px solid #5c5c5c;
-            font-size: 14px;
-            font-family: $f-seroot;
             }
         }
         svg{
-            width: 8%;
-            margin: -6px 8px;
+            height: 1.2em;
+            position: absolute;
+            right: 15px;
+            top: 10px;
             fill: #5c5c5c;
             @media screen and (max-width: 480px){
                 margin: -3px 8px;
@@ -125,7 +136,7 @@ footer {
                 display: none;
             }
 
-        }  
+        }
         .error1{
             display: none;
             margin: 0px 14%;
@@ -134,14 +145,14 @@ footer {
         .error2{
             display: none;
             color:#e84c64;
-        } 
+        }
     }
 
     .telephone {
         float: right;
         font-size: 1.2rem;
         color: white;
-        margin-top: 0px;
+        margin-bottom: 30px;
         clear: none;
         font-family: $f-merriweather;
         font-weight: 300;
@@ -156,8 +167,6 @@ footer {
         screen and (min-width:0px) and (max-width:767px) {
             float: left;
             clear: both;
-            margin-top: 25px;
-            margin-bottom: 25px;
         }
         @media screen and (min-width: 320px)and(max-width: 480px){
             margin-top: 0px;
@@ -207,14 +216,26 @@ footer {
     text-transform: capitalize;
 }
 
+#footer-contacts {
+  @extend %clearfix;
+}
+
 #signoff {
+    @extend %clearfix;
     background-color: $c-bg;
-    height: 168px;
-    padding: 33px 6.20079% 0px;
+    /*height: 168px;*/
+    padding: 33px 4% 0px;
     border-top: 1px solid #171717;
     @media handheld,
     screen and (min-width: $bp-desktop) {
-        height: 190px;
+        /*height: 190px;*/
+    }
+    @media all and(max-width: 600px) {
+        text-align: center;
+        .telephone {
+            float: none;
+            display: inline-block;
+        }
     }
     #contact & {
         height: auto;
@@ -252,20 +273,18 @@ footer {
     }
 }
 
-.footer-icons {
+#footer-icons {
     @extend %clearfix;
-    margin-top: 0%;
-    margin-bottom: 2%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: top;
     @media all and(max-width: 600px) {
         text-align: center;
         .footer-icon {
             &:first-child {
                 margin-left: 0;
             }
-        }
-        .telephone {
-            float: none;
-            display: inline-block;
         }
     }
 }
