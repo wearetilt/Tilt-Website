@@ -1,5 +1,5 @@
 footer {
-    max-height: 780px;
+    /*max-height: 780px;*/
     position: fixed;
     bottom: 0;
     left: 0;
@@ -11,9 +11,9 @@ footer {
     background-position: center right;
     background-repeat: no-repeat;
     background-color: #171717;
-    @media screen and (min-width: 320px)and(max-width: 480px){
-        background-image: none !important;
-    }
+    // @media screen and (min-width: 320px)and(max-width: 480px){
+        // background-image: none !important;
+    // }
     @media handheld,
     screen and (min-width: 0px) and (max-width: $bp-desktop) {
         background-position: center center;
@@ -57,20 +57,22 @@ footer {
         display: inline-block;
         font-family: $f-seroot;
         letter-spacing: 1px;
+        padding-bottom: 30px;
         text-transform: none;
         vertical-align: top;
-        @media screen and (max-width: 320px){
-            padding: 10px 38px;
-            line-height: 2;
-        }
-        @media screen and (min-width: 321px)and(max-width: 480px){
-            padding: 10px 70px;
-            line-height: 2;
-        }
+        // @media screen and (max-width: 320px){
+        //     padding: 10px 38px;
+        //     line-height: 2;
+        // }
+        // @media screen and (min-width: 321px)and(max-width: 480px){
+        //     padding: 10px 70px;
+        //     line-height: 2;
+        // }
     }
 
     #subscribe{
         display: none;
+        width: 100%;
     }
     #subscribe.active{
         display: inline-block;
@@ -78,101 +80,116 @@ footer {
         margin-right: 10px;
         margin-bottom: 30px;
         p{
-            font-size: 12px;
+            font-size: 14px;
             color: #999999;
+            padding: 0.25em 0;
         }
         #subForm{
-            display: inline-flex;
-            max-width: 550px;
-            min-width: 260px;
-            border-radius: 10px;
+            display: inline-block;
+            max-width: 800px;
+            width: 100%;
             input{
                 font-family: $f-seroot;
             }
         }
         input{
+            border-radius: 2px;
             letter-spacing: 1px;
-            padding: 10px 5px;
-            margin-right: 5px;
+            padding: 0 5px;
+            margin-right: 1%;
             border: none;
             font-size: 16px;
             background-color: #303030;
             color: #ffffff;
+            height: 45px;
+            width: calc((100% - 5% - 140px)/2); /* two input fields, each half of total width less allowance for margins and button */
         }
+
         button{
+            cursor: pointer;
             outline: none;
-            min-width: 10em;
+            min-width: 140px;
             font-size: 14px;
             font-family: $f-seroot;
+            height: 45px;
             letter-spacing: 1px;
             position: relative;
-            padding-left: 1em;
-            padding-top: 4px;
-            text-align: left;
+            padding-right: 36px;
+            text-align: right;
             &:disabled{
+            cursor: auto;
             color: #5c5c5c;
             background: transparent;
             border: 2px solid #5c5c5c;
             }
         }
         svg{
-            height: 1.2em;
+            height: 17px;
             position: absolute;
             right: 15px;
-            top: 10px;
+            top: 11px;
             fill: #5c5c5c;
-            @media screen and (max-width: 480px){
-                margin: -3px 8px;
-            }
         }
-        .error{
-            border: 1px solid #e84c64;
+        .error{ /* added to input boxes with JS */
+            border: 1px dotted #e84c64;
             color: #e84c64;
             background-color: #4d3438;
+            text-align: left;
         }
-        .errors{
-            display: flex;
+        #errors{
+            clear: both;
+            display: block;
+            font-size: 11px;
+            font-family: $f-merriweather;
+            max-width: 800px; /* match to form width */
+            text-align: left;
+            width: 100%;
             @media screen and (max-width: 480px){
                 display: none;
             }
-
         }
+        // Email error message
         .error1{
             display: none;
-            margin: 0px 14%;
             color:#e84c64;
+            float: right;
+            padding: 5px;
+            width: calc(100% - ((100% - 140px)/2));
         }
+        // Name error message
         .error2{
             display: none;
             color:#e84c64;
+            float: left;
+            padding: 5px;
         }
     }
 
     .telephone {
         float: right;
-        font-size: 1.2rem;
+        font-size: 1.2;
         color: white;
         margin-bottom: 30px;
         clear: none;
         font-family: $f-merriweather;
         font-weight: 300;
+        // @media handheld,
+        // screen and (min-width: $bp-desktop) {
+            // float: right;
+            // clear: none;
+            // margin-top: 0px;
+            // font-size: 1.5em;
+        // }
         @media handheld,
-        screen and (min-width: $bp-desktop) {
-            float: right;
-            clear: none;
-            margin-top: 0px;
-            font-size: 1.5em;
-        }
-        @media handheld,
-        screen and (min-width:0px) and (max-width:767px) {
+        screen and (min-width:0px) and (max-width:800px) {
             float: left;
             clear: both;
         }
-        @media screen and (min-width: 320px)and(max-width: 480px){
-            margin-top: 0px;
-            margin-bottom: 0px;
-            background-image: none;
-        }
+        // @media screen and (min-width: 320px)and(max-width: 480px){
+        //     margin-top: 0px;
+        //     margin-bottom: 0px;
+        //     background-image: none;
+        // }
         a {
             color: $c-tilt-pink;
         }
@@ -218,25 +235,33 @@ footer {
 
 #footer-contacts {
   @extend %clearfix;
+  line-height: 1em;
+  @media all and(max-width: 800px) {
+      text-align: center;
+      .telephone {
+          float: none;
+          display: inline-block;
+      }
+    }
 }
 
 #signoff {
     @extend %clearfix;
     background-color: $c-bg;
     /*height: 168px;*/
-    padding: 33px 4% 0px;
+    padding: 33px 4%;
     border-top: 1px solid #171717;
-    @media handheld,
-    screen and (min-width: $bp-desktop) {
+    // @media handheld,
+    // screen and (min-width: $bp-desktop) {
         /*height: 190px;*/
-    }
-    @media all and(max-width: 600px) {
-        text-align: center;
-        .telephone {
-            float: none;
-            display: inline-block;
-        }
-    }
+    // }
+    // @media all and(max-width: 600px) {
+    //     text-align: center;
+    //     .telephone {
+    //         float: none;
+    //         display: inline-block;
+    //     }
+    // }
     #contact & {
         height: auto;
         padding: percentage(46/2032) percentage(126/2032);
@@ -291,8 +316,8 @@ footer {
 
 .footer-icon {
     display: inline-block;
-    width: 25px;
-    height: 23px;
+    width: 24px;
+    height: 24px;
     &:hover {
         opacity: 0.7;
     }
@@ -302,13 +327,13 @@ footer {
         display: block;
     }
     &.footer-icon {
-        margin-left: 25px;
+        margin-left: 24px;
         &:first-child {
             margin-left: 5px;
         }
         @media handheld,
         screen and (min-width: 0px) and (max-width:1024px) {
-            margin-left: 25px;
+            margin-left: 24px;
         }
     }
 }

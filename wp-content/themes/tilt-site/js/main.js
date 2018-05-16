@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                         var theHeader = document.getElementsByTagName('header');
                         var headerID = theHeader[0].getAttribute('ID');
-                        
+
                         // jQuery('#header-play').hide();
                         // jQuery('.header-text').hide();
 
@@ -1173,10 +1173,10 @@ var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+
 if(!regex.test($('#fieldEmail').val())){
     $('#fieldEmail').addClass('error');
     $('.error1').css('display','block');
-    $('.error1').css('margin','0px 68px');
+    // $('.error1').css('margin','0px 68px');
 
 }
-else{ 
+else{
     email = true;
     $('#fieldEmail').removeClass('error');
     $('.error1').css('display','none');
@@ -1190,7 +1190,7 @@ else{
     name = true;
     $('#fieldName').removeClass('error');
     $('.error2').css('display','none');
-    $('.error1').css('margin','0px 196px');
+    // $('.error1').css('margin','0px 196px');
 }
 
 if(email && name){

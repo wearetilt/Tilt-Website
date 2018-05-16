@@ -40,7 +40,7 @@
   			<div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
   			<!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
       </div> <!-- /end footer-icons -->
-      
+
   			<!-- subscribe -->
   			<a id="popup" onclick="hide()">Join our mailing list</a>
 
@@ -51,10 +51,10 @@
   					<input id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" placeholder="Email" type="text">
   					<button disabled class="js-cm-submit-button" type="submit">SUBSCRIBE<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></button>
   				</form>
-     					<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-  				<div class="errors">
-  				<p class="error2">Please add your name</p>
-  				<p class="error1">Doesn't look like a valid email</p>
+     			<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+  				<div id="errors">
+            <span class="error2">Please add your name</span>
+            <span class="error1">Please enter a valid email address</span>
   				</div>
   			</div>
 
