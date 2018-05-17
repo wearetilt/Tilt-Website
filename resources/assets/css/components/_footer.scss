@@ -1,3 +1,6 @@
+$icon-size: 24px;
+$form-width: 800px;
+
 footer {
     /*max-height: 780px;*/
     position: fixed;
@@ -50,16 +53,18 @@ footer {
         }
     }
     #popup{
-        padding: 5px 20px;
+        // padding: 5px 20px;
         color: #ffffff;
         background: transparent;
         cursor: pointer;
         display: inline-block;
         font-family: $f-seroot;
         letter-spacing: 1px;
-        padding-bottom: 30px;
+        line-height: $icon-size;
+        margin-bottom: $icon-size;
+        padding: 0 30px;
         text-transform: none;
-        vertical-align: top;
+        // vertical-align: top;
         // @media screen and (max-width: 320px){
         //     padding: 10px 38px;
         //     line-height: 2;
@@ -86,7 +91,7 @@ footer {
         }
         #subForm{
             display: inline-block;
-            max-width: 800px;
+            max-width: $form-width;
             width: 100%;
             input{
                 font-family: $f-seroot;
@@ -130,7 +135,7 @@ footer {
             top: 11px;
             fill: #5c5c5c;
         }
-        .error{ /* added to input boxes with JS */
+        .error{ /* added to input boxes by check_empty function in main.js */
             border: 1px dotted #e84c64;
             color: #e84c64;
             background-color: #4d3438;
@@ -141,23 +146,21 @@ footer {
             display: block;
             font-size: 11px;
             font-family: $f-merriweather;
-            max-width: 800px; /* match to form width */
+            max-width: $form-width;
             text-align: left;
             width: 100%;
             @media screen and (max-width: 480px){
                 display: none;
             }
         }
-        // Email error message
-        .error1{
+        .error-email{
             display: none;
             color:#e84c64;
             float: right;
             padding: 5px;
             width: calc(100% - ((100% - 140px)/2));
         }
-        // Name error message
-        .error2{
+        .error-name{
             display: none;
             color:#e84c64;
             float: left;
@@ -167,12 +170,14 @@ footer {
 
     .telephone {
         float: right;
-        font-size: 1.2;
+        font-size: 1.2rem;
         color: white;
-        margin-bottom: 30px;
+        margin-bottom: 1rem;
         clear: none;
         font-family: $f-merriweather;
         font-weight: 300;
+        line-height: $icon-size;
+        // padding-top: 5px;
         // @media handheld,
         // screen and (min-width: $bp-desktop) {
             // float: right;
@@ -194,16 +199,10 @@ footer {
             color: $c-tilt-pink;
         }
     }
-    .footnote {
+    #footnote-1 {
         border-top: 1px solid $c-grey-3a;
-        padding-top: 10px;
         clear: both;
-        @include font-size(12);
-    }
-    .footnote_2 {
-        color: #999999;
-        @include font-size(12);
-        margin-top: 0.8em;
+        padding-top: 1rem;
     }
     p.sans-serif {
         @include font-size(25);
@@ -235,7 +234,6 @@ footer {
 
 #footer-contacts {
   @extend %clearfix;
-  line-height: 1em;
   @media all and(max-width: 800px) {
       text-align: center;
       .telephone {
@@ -300,8 +298,8 @@ footer {
 
 #footer-icons {
     @extend %clearfix;
-    margin-bottom: 30px;
-    padding: 0 15px;
+    margin-bottom: $icon-size;
+    padding: 0;
     display: inline-block;
     vertical-align: top;
     @media all and(max-width: 600px) {
@@ -316,8 +314,8 @@ footer {
 
 .footer-icon {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: $icon-size;
+    height: $icon-size;
     &:hover {
         opacity: 0.7;
     }
@@ -327,13 +325,13 @@ footer {
         display: block;
     }
     &.footer-icon {
-        margin-left: 24px;
+        margin-left: $icon-size;
         &:first-child {
             margin-left: 5px;
         }
         @media handheld,
         screen and (min-width: 0px) and (max-width:1024px) {
-            margin-left: 24px;
+            margin-left: $icon-size;
         }
     }
 }

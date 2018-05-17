@@ -53,8 +53,8 @@
   				</form>
      			<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
   				<div id="errors">
-            <span class="error2">Please add your name</span>
-            <span class="error1">Please enter a valid email address</span>
+            <span class="error-name">Please add your name</span>
+            <span class="error-email">Please enter a valid email</span>
   				</div>
   			</div>
 
@@ -69,8 +69,8 @@
 
     </div><!-- /end footer-contacts -->
 
-		<p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2015. All rights reserved.<a class="privacy_policy" href="/privacy-policy" target="_blank">Privacy Policy</a></p>
-		<p class="footnote_2">Registered in England & Wales under Reg. No 07280900. Registered Office: 1 Harbour House, Harbour Way, Shoreham-by-Sea, West Sussex, BN43 5HZ. <br/>Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
+		<p id="footnote-1" class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2015. All rights reserved.<a class="privacy_policy" href="/privacy-policy" target="_blank">Privacy Policy</a></p>
+		<p id="footnote-2" class="footnote">Registered in England & Wales under Reg. No 07280900. Registered Office: 1 Harbour House, Harbour Way, Shoreham-by-Sea, West Sussex, BN43 5HZ. <br/>Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
 
 	</div><!-- /end signoff -->
 

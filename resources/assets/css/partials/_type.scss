@@ -352,6 +352,9 @@ p {
         font-weight: 300;
         color: $c-grey-8f;
         font-size: 0.65rem;
+        &+& {
+            margin-top: 1em;
+        }
         @media handheld,
         screen and (min-width: 420px) {
             font-size: 0.95em;
@@ -422,7 +425,7 @@ p {
 	@media handheld, screen and (min-width: $bp-desktop-large){
 	 	@include font-size(16);
 	 }
-	
+
 }
 */
 
@@ -548,7 +551,7 @@ ul {
 @media handheld, screen and (min-width: $bp-desktop){
             @include font-size(16);
 		 }
-		 
+
 		 @media handheld, screen and (min-width:0px)  and (max-width: $bp-phone) { @include font-size(17); }
 */
     }
