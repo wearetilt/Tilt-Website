@@ -1161,36 +1161,60 @@ function isElementInViewport(el) {
     );
 }
 
-// Validating Empty Field
+// Displaying Error Messages In Mailing List Form (on leaving input fields)
+$('form input').blur(display_errormsgs);
 
-$('form input').keyup(check_empty);
-
-function check_empty() {
-var email = false;
-var name = false;
-var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-
-if(!regex.test($('#fieldEmail').val())){
-    $('#fieldEmail').addClass('error');
-    $('.error-email').css('display','block');
+function display_errormsgs() {
+  var inputid = $(this).attr("id");
+  var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+  $('#fieldName').removeClass('error');
+  $('#fieldEmail').removeClass('error');
+  if(inputid == 'fieldName' && $('#fieldName').val() == ''){
+    $('#error-name').css('visibility','visible');
+  }
+  if(inputid == 'fieldEmail' && !regex.test($('#fieldEmail').val())){
+    $('#error-email').css('visibility','visible');
+  }
 }
-else{
-    email = true;
+
+// Validating Data In Mailing List Form
+$('form input').keyup(check_mailing_data);
+
+function check_mailing_data() {
+  var inputid = $(this).attr("id");
+  var email = false;
+  var name = false;
+  var inputid = $(this).attr("id");
+  var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+
+  if(inputid == 'fieldName'){
+    $('#error-name').css('visibility','hidden');
+    $('#fieldName').removeClass('error');
+  }
+  if(inputid == 'fieldEmail'){
+    $('#error-email').css('visibility','hidden');
     $('#fieldEmail').removeClass('error');
-    $('.error-email').css('display','none');
-}
-if($('#fieldName').val() == ''){
-    console.log()
-    $('#fieldName').addClass('error');
-    $('.error-name').css('display','block');
-}
-else{
+  }
+  if($('#fieldName').val() == ''){
+  }
+  else{
     name = true;
     $('#fieldName').removeClass('error');
-    $('.error-name').css('display','none');
-}
-
-if(email && name){
+  }
+  if(!regex.test($('#fieldEmail').val())){
+  }
+  else{
+    email = true;
+    $('#fieldEmail').removeClass('error');
+  }
+  if(inputid == 'fieldName' && $('#fieldName').val() == ''){
+    $('#fieldName').addClass('error');
+  }
+  if(inputid == 'fieldEmail' && !regex.test($('#fieldEmail').val())){
+    $('#fieldEmail').addClass('error');
+  }
+  // // Activates / disables submit button
+  if(email && name){
     $('.js-cm-submit-button').css('color','#ffffff');
     $('.js-cm-submit-button').css('backgroundColor','transparent');
     $('svg').css('fill','#f14e67');

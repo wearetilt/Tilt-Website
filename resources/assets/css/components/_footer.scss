@@ -2,7 +2,6 @@ $icon-size: 24px;
 $form-width: 800px;
 
 footer {
-    /*max-height: 780px;*/
     position: fixed;
     bottom: 0;
     left: 0;
@@ -53,7 +52,6 @@ footer {
         }
     }
     #popup{
-        // padding: 5px 20px;
         color: #ffffff;
         background: transparent;
         cursor: pointer;
@@ -62,21 +60,18 @@ footer {
         letter-spacing: 1px;
         line-height: $icon-size;
         margin-bottom: $icon-size;
-        padding: 0 30px;
+        text-align: center;
         text-transform: none;
-        // vertical-align: top;
-        // @media screen and (max-width: 320px){
-        //     padding: 10px 38px;
-        //     line-height: 2;
-        // }
-        // @media screen and (min-width: 321px)and(max-width: 480px){
-        //     padding: 10px 70px;
-        //     line-height: 2;
-        // }
+        width: 11rem;
+        @media screen and (max-width: 800px){
+            display: block;
+            width: 100%;
+        }
     }
 
     #subscribe{
         display: none;
+        text-align: center;
         width: 100%;
     }
     #subscribe.active{
@@ -136,65 +131,44 @@ footer {
             fill: #5c5c5c;
         }
         .error{ /* added to input boxes by check_empty function in main.js */
-            border: 1px dotted #e84c64;
+            border: 1px solid #e84c64;
             color: #e84c64;
             background-color: #4d3438;
             text-align: left;
         }
         #errors{
-            clear: both;
             display: block;
             font-size: 11px;
             font-family: $f-merriweather;
+            letter-spacing: 0.05em;
+            margin: auto;
             max-width: $form-width;
             text-align: left;
             width: 100%;
-            @media screen and (max-width: 480px){
+            @media screen and (max-width: 600px){
                 display: none;
             }
         }
-        .error-email{
-            display: none;
-            color:#e84c64;
-            float: right;
-            padding: 5px;
-            width: calc(100% - ((100% - 140px)/2));
-        }
-        .error-name{
-            display: none;
-            color:#e84c64;
-            float: left;
-            padding: 5px;
+        .error-msg{
+          color:#e84c64;
+          display: inline-block;
+          margin-right: 1%;
+          padding: 5px;
+          visibility: hidden;
+          width: calc((100% - 5% - 140px)/2);
         }
     }
 
     .telephone {
-        float: right;
         font-size: 1.2rem;
         color: white;
+        display: inline-block;
         margin-bottom: 1rem;
-        clear: none;
         font-family: $f-merriweather;
         font-weight: 300;
         line-height: $icon-size;
-        // padding-top: 5px;
-        // @media handheld,
-        // screen and (min-width: $bp-desktop) {
-            // float: right;
-            // clear: none;
-            // margin-top: 0px;
-            // font-size: 1.5em;
-        // }
-        @media handheld,
-        screen and (min-width:0px) and (max-width:800px) {
-            float: left;
-            clear: both;
-        }
-        // @media screen and (min-width: 320px)and(max-width: 480px){
-        //     margin-top: 0px;
-        //     margin-bottom: 0px;
-        //     background-image: none;
-        // }
+        text-align: center;
+        width: calc(100% - 245px - 11rem);
         a {
             color: $c-tilt-pink;
         }
@@ -237,8 +211,8 @@ footer {
   @media all and(max-width: 800px) {
       text-align: center;
       .telephone {
-          float: none;
-          display: inline-block;
+          display: block;
+          width: 100%;
       }
     }
 }
@@ -246,24 +220,12 @@ footer {
 #signoff {
     @extend %clearfix;
     background-color: $c-bg;
-    /*height: 168px;*/
     padding: 33px 4%;
     border-top: 1px solid #171717;
-    // @media handheld,
-    // screen and (min-width: $bp-desktop) {
-        /*height: 190px;*/
+    // #contact & {
+    //     height: auto;
+    //     padding: percentage(46/2032) percentage(126/2032);
     // }
-    // @media all and(max-width: 600px) {
-    //     text-align: center;
-    //     .telephone {
-    //         float: none;
-    //         display: inline-block;
-    //     }
-    // }
-    #contact & {
-        height: auto;
-        padding: percentage(46/2032) percentage(126/2032);
-    }
 }
 
 .project-navigation {
@@ -301,6 +263,7 @@ footer {
     margin-bottom: $icon-size;
     padding: 0;
     display: inline-block;
+    text-align: center;
     vertical-align: top;
     @media all and(max-width: 600px) {
         text-align: center;

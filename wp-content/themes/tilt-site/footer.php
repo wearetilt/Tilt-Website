@@ -42,7 +42,17 @@
       </div> <!-- /end footer-icons -->
 
   			<!-- subscribe -->
-  			<a id="popup" onclick="hide()">Join our mailing list</a>
+
+        <div class="telephone">
+  				<?php if($blog_id == 1) : ?>
+  				<span>Tel: +44(0)1273 675 700</span>
+  				<?php endif;?>
+  				<?php if($blog_id == 3) : ?>
+  				<span>Tel: +1 (778) 835-6414</span>
+  				<?php endif;?>
+  			</div>
+
+        <a id="popup" onclick="hide()">Join our mailing list</a>
 
   			<div id="subscribe">
   				<p>Join our mailing list</p>
@@ -53,18 +63,9 @@
   				</form>
      			<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
   				<div id="errors">
-            <span class="error-name">Please add your name</span>
-            <span class="error-email">Please enter a valid email</span>
+            <span id="error-name" class="error-msg">Please add your name</span>
+            <span id="error-email" class="error-msg">Please enter a valid email</span>
   				</div>
-  			</div>
-
-  			<div class="telephone">
-  				<?php if($blog_id == 1) : ?>
-  				<span>Tel: +44(0)1273 675 700</span>
-  				<?php endif;?>
-  				<?php if($blog_id == 3) : ?>
-  				<span>Tel: +1 (778) 835-6414</span>
-  				<?php endif;?>
   			</div>
 
     </div><!-- /end footer-contacts -->
