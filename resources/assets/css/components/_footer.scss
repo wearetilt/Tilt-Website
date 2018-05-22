@@ -52,10 +52,10 @@ footer {
         }
     }
     #popup{
+        display: none;
         color: #ffffff;
         background: transparent;
         cursor: pointer;
-        display: inline-block;
         font-family: $f-seroot;
         letter-spacing: 1px;
         line-height: $icon-size;

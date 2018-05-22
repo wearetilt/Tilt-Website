@@ -141,9 +141,9 @@ get_header(); ?>
 
 <p>We hope you will benefit from any communications we send to you, but if at any time you change your mind, you may unsubscribe to our emails by following the instructions we give you at the time we broadcast a message to you. If you have given us permission to write to you with marketing messages, you may change your mind by unsubscribe using the link supplied in all email communication or write to us.</p>
 
-<p>If we do not hear otherwise from you, we will assume that the information you provide to us is accurate and up-to-date and we will continue to use the information to send you any communications you have requested.</p>
+<p>If we do not hear otherwise from you, we will assume that the information you provide to us is accurate and up-to-date and we will continue to use the information to send you any communications you have Opted into.</p>
 
-<p>If you have any questions about this Policy or want to correct or update your information, please email us at <a href="mailto:studio@wearetilt.com">studio@wearetilt.com</a></p>
+<p>If you have any questions about this Policy or want to remove, correct or update your information, please email us at <a href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>.We will log your request and delete your data from our list immediately.</p>
 
  
 <p>You can also write to us or call at:

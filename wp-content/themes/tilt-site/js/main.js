@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                         var theHeader = document.getElementsByTagName('header');
                         var headerID = theHeader[0].getAttribute('ID');
-
+                        
                         // jQuery('#header-play').hide();
                         // jQuery('.header-text').hide();
 
@@ -1161,71 +1161,44 @@ function isElementInViewport(el) {
     );
 }
 
-// Displaying Error Messages In Mailing List Form (on leaving input fields)
-$('form input').blur(display_errormsgs);
+// Validating Empty Field
 
-function display_errormsgs() {
-  var inputid = $(this).attr("id");
-  var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-  $('#fieldName').removeClass('error');
-  $('#fieldEmail').removeClass('error');
-  if(inputid == 'fieldName' && $('#fieldName').val() == ''){
-    $('#error-name').css('visibility','visible');
-  }
-  if(inputid == 'fieldEmail' && !regex.test($('#fieldEmail').val())){
-    $('#error-email').css('visibility','visible');
-  }
+$('form input').keyup(check_empty);
+
+function check_empty() {
+var email = false;
+var name =false;
+var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+
+if(!regex.test($('#fieldEmail').val())){
+    $('#fieldEmail').addClass('error');
+    $('.error1').css('display','block');
+    $('.error1').css('margin','0px 68px');
+
 }
-
-// Validating Data In Mailing List Form
-$('form input').keyup(check_mailing_data);
-
-function check_mailing_data() {
-  var inputid = $(this).attr("id");
-  var email = false;
-  var name = false;
-  var inputid = $(this).attr("id");
-  var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-
-  if(inputid == 'fieldName'){
-    $('#error-name').css('visibility','hidden');
-    $('#fieldName').removeClass('error');
-  }
-  if(inputid == 'fieldEmail'){
-    $('#error-email').css('visibility','hidden');
-    $('#fieldEmail').removeClass('error');
-  }
-  if($('#fieldName').val() == ''){
-  }
-  else{
-    name = true;
-    $('#fieldName').removeClass('error');
-  }
-  if(!regex.test($('#fieldEmail').val())){
-  }
-  else{
+else{ 
     email = true;
     $('#fieldEmail').removeClass('error');
-  }
-  if(inputid == 'fieldName' && $('#fieldName').val() == ''){
+    $('.error1').css('display','none');
+}
+if($('#fieldName').val() == ''){
+    console.log()
     $('#fieldName').addClass('error');
-  }
-  if(inputid == 'fieldEmail' && !regex.test($('#fieldEmail').val())){
-    $('#fieldEmail').addClass('error');
-  }
-  // // Activates / disables submit button
-  if(email && name){
-    $('.js-cm-submit-button').css('color','#ffffff');
-    $('.js-cm-submit-button').css('backgroundColor','transparent');
-    $('svg').css('fill','#f14e67');
-    $('.js-cm-submit-button').attr('disabled',false);
-  }
-  else{
-    $('.js-cm-submit-button').css('color','#5c5c5c');
-    $('.js-cm-submit-button').css('backgroundColor','transparent');
-    $('svg').css('fill','#5c5c5c');
-    $('.js-cm-submit-button').attr('disabled',true);
-  }
+    $('.error2').css('display','block');
+}
+else{
+    name = true;
+    $('#fieldName').removeClass('error');
+    $('.error2').css('display','none');
+    $('.error1').css('margin','0px 196px');
+}
+
+if(email && name){
+$('.js-cm-submit-button').css('color','#ffffff');
+$('.js-cm-submit-button').css('backgroundColor','transparent');
+$('svg').css('fill','#f14e67');
+$('.js-cm-submit-button').attr('disabled',false);
+}
 }
 
 //Function To Display Popup
