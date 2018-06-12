@@ -16,14 +16,14 @@ $work_groups = get_field('work_items');
 get_header(); ?>
 <div id="video-overlay" class="fullpage-overlay">
     <video id="overlay-video" width="100%" height="100%" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
-        <source src="https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119" type="video/mp4">
+        <source src="https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=175" type="video/mp4">
     </video>
     <div id="video-overlay-close"></div>
 </div>
 <header id="work_page" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div id="header-play" class="header-play"></div>
-        <div class="container container--reel"> <p>REEL 2017</p></div>
+        <div class="container container--reel"> <p>REEL 2018</p></div>
         <div class="ratio">
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="100%" >
             	<source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
@@ -31,7 +31,7 @@ get_header(); ?>
         </div>
     </div>
 
-	<?php if($work_groups) : ?> 
+	<?php if($work_groups) : ?>
     <div id="services--list" class="container container--header container--work-list">
 		<?php foreach($work_groups as $k => $work_group) : ?>
 
@@ -49,7 +49,7 @@ get_header(); ?>
 	<?php endif;?>
 </header>
 
-		<?php 
+		<?php
 		$entries_left = array(1,2);
 		$entries_right = array(0,3,4);
 		?>
@@ -87,7 +87,7 @@ get_header(); ?>
 					<?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
 
 					<?php if(in_array($k, $entries_left)) : ?>
-					<?php 
+					<?php
 					$link = get_permalink($work_item['work_item_post']->ID);
 					$arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
 					?>
@@ -108,14 +108,14 @@ get_header(); ?>
 					</div>
 					<?php endif;?>
 					<?php endforeach;?>
-					
+
 				</div>
 
 				<div class="group group--right">
 
 				<?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
 					<?php if(in_array($k, $entries_right)) : ?>
-					<?php 
+					<?php
 					$link = get_permalink($work_item['work_item_post']->ID);
 					$arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
 					?>
@@ -138,11 +138,11 @@ get_header(); ?>
 				<?php endforeach;?>
 
 				</div>
-			
+
 
 			</div>
 			</section>
-			</div> 
+			</div>
 			<?php endif;?>
 
 			<?php endforeach;?>

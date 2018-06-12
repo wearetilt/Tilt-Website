@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                         var theHeader = document.getElementsByTagName('header');
                         var headerID = theHeader[0].getAttribute('ID');
-                        
+
                         // jQuery('#header-play').hide();
                         // jQuery('.header-text').hide();
 
@@ -491,7 +491,7 @@ if (document.getElementById('header-video-player')) { // if has header video
 
             case "work_page":
                 clipVideoSrc = "https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113";
-                fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119";
+                fullVideoSrc = "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=175";
                 break;
 
             case "page_caroline_lucas":
@@ -582,7 +582,7 @@ if (document.getElementById('header-video-player')) { // if has header video
 
         document.getElementById('header-play').addEventListener('click', function() {
             myPlayer.ready(function() {
-                // if (videoOverlay.currentSrc() === "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=119") {
+                // if (videoOverlay.currentSrc() === "https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=175") {
                     videoOverlay.src(fullVideoSrc);
                 // }
                 // //console.log("I am doing this, i shouldn't be");
@@ -1176,7 +1176,7 @@ if(!regex.test($('#fieldEmail').val())){
     $('.error1').css('margin','0px 68px');
 
 }
-else{ 
+else{
     email = true;
     $('#fieldEmail').removeClass('error');
     $('.error1').css('display','none');
