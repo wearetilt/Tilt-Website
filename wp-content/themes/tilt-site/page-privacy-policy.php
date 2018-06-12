@@ -39,6 +39,22 @@ get_header(); ?>
 <li>We are the sole owners of the information collected and we only have access to the information you voluntarily give us.</li>
 <li>We gather statistics from email engagement using industry standard technologies to help us monitor and improve our communication.</li>
 
+<h4>LEGITIMATE INTEREST</h4>
+<ul>
+<li>To administer Tilt, our website and our business;</li>
+<li>To enable your use of the Tilt website and other requested services</li>
+<li>To respond to technical support requests;</li>
+<li>To provide requested information to you;</li>
+<li>To send invoices, reports, statements, payment reminders and collect payments from you;</li>
+<li>To send you newsletters that you have specifically signed up for</li>
+<li>To contact customers and known prospects for business to business liaison in a way they would reasonably expect, will not cause harm and which will have a minimal privacy impact</li>
+<li>To understand how you are using the Tilt website, to help us improve</li>
+<li>To monitor compliance with our Terms and Conditions;</li>
+<li>To keep our systems secure and prevent fraud;</li>
+<li>To send you other necessary information about our services and our relationship;</li>
+<li>To otherwise manage our relationship with you or comply with our contractual obligations.</li>
+</ul>
+
 <h4>WHERE YOUR DATA IS HELD</h4>
 <p>Your data is held on secure third party services and secure servers operated by We Are Tilt Ltd in the UK, and will be stored under the robust security measures described below.<p>
 
@@ -107,7 +123,7 @@ get_header(); ?>
 
 
 
--- 
+--
 
 <h4>VISITORS TO OUR WEBSITES</h4>
 
@@ -145,7 +161,7 @@ get_header(); ?>
 
 <p>If you have any questions about this Policy or want to remove, correct or update your information, please email us at <a href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>.We will log your request and delete your data from our list immediately.</p>
 
- 
+
 <p>You can also write to us or call at:
 
 We Are Tilt Ltd

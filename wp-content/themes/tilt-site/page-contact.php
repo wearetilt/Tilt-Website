@@ -192,7 +192,7 @@ get_header('contact'); ?>
 			<div class="contact-title"><span class="light">Jobs &amp; Internships</span></div>
 			<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
 			<div class="contact-title"><span class="light">New projects</span></div>
-			<a class="contact-email" href="mailto:jon.malyon@wearetilt.com">jon.malyon@wearetilt.com</a>
+			<a class="contact-email" href="mailto:emma.depolnay@wearetilt.com">emma.depolnay@wearetilt.com</a>
 			<div class="contact-title"><span class="light">General Enquiries</span></div>
 			<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
 
