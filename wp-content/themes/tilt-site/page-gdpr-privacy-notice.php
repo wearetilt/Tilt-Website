@@ -29,7 +29,7 @@ get_header(); ?>
 <p>It is important that you read this notice, together with any other privacy notice we may provide on specific occasions when we are collecting or processing personal information about you, so that you are aware of how and why we are using such information.</p>
 
 <h4>Data protection principles</h4>
-  <ul>We will comply with data protection law. This says that the personal information we hold about you must be:
+  <ul style="list-style-type:disc"><p>We will comply with data protection law. This says that the personal information we hold about you must be:</p>
     <li>Used lawfully, fairly and in a transparent way.</li>
     <li>Collected only for valid purposes that we have clearly explained to you and not used in any way that is incompatible with those purposes.</li>
     <li>Relevant to the purposes we have told you about and limited only to those purposes.</li>
@@ -42,7 +42,7 @@ get_header(); ?>
   <p>Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data).</p>
   <p>There are "special categories" of more sensitive personal data which require a higher level of protection.</p> 
 
-<ul>We may collect, store, and use the following categories of personal information about you:
+<ul style="list-style-type:disc"><p>We may collect, store, and use the following categories of personal information about you:</p>
 <li>Personal contact details such as name, title, addresses, telephone numbers, and personal email addresses.</li>
 <li>Date of birth.</li>
 <li>Gender.</li>
@@ -63,8 +63,8 @@ get_header(); ?>
 <li>Information about your use of our information and communications systems.</li>
 <li>Photographs.</li>
 </ul>
-
-<ul>We may also collect, store and use the following "special categories" of more sensitive personal information:
+<br>
+<ul style="list-style-type:disc"><p>We may also collect, store and use the following "special categories" of more sensitive personal information:</p>
   <li>Information about your race or ethnicity, religious beliefs, sexual orientation and political opinions.</li>
   <li>Trade union membership.</li>
   <li>Information about your health, including any medical condition, health and sickness records.</li>
@@ -79,13 +79,13 @@ get_header(); ?>
 
 <h4>How we will use information about you?</h4>
 
-<ul> We will only use your personal information when the law allows us to. Most commonly, we will use your personal information in the following circumstances:
+<ul style="list-style-type:disc"><p>We will only use your personal information when the law allows us to. Most commonly, we will use your personal information in the following circumstances:</p>
   <li>Where we need to perform the contract we have entered into with you.</li>
   <li>Where we need to comply with a legal obligation.</li>
   <li>Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests. </li>
 </ul>
 
-<ul> We may also use your personal information in the following situations, which are likely to be rare:
+<ul style="list-style-type:disc"><p>We may also use your personal information in the following situations, which are likely to be rare:</p>
   <li>Where we need to protect your interests (or someone else's interests).</li>
   <li> Where it is needed in the public interest (or for official purposes).</li>
 </ul>
@@ -94,7 +94,7 @@ get_header(); ?>
 
 <p>We need all the categories of information in the list above (see The kind of information we hold about you) primarily to allow us to perform our contract with you and to enable us to comply with legal obligations. In some cases we may use your personal information to pursue legitimate interests of our own or those of third parties, provided your interests and fundamental rights do not override those interests. The situations in which we will process your personal information are listed below. </p>
 
-<ul>
+<ul style="list-style-type:disc">
   <li>Making a decision about your recruitment or appointment.</li>
   <li>Determining the terms on which you work for us.</li>
   <li>Checking you are legally entitled to work in the UK.</li>
@@ -137,7 +137,7 @@ get_header(); ?>
 
 <p>"Special categories" of particularly sensitive personal information require higher levels of protection. We need to have further justification for collecting, storing and using this type of personal information.</p>
 
-<ul>We may process special categories of personal information in the following circumstances:
+<ul style="list-style-type:disc"><p>We may process special categories of personal information in the following circumstances:</p>
   <li>In limited circumstances, with your explicit written consent.</li>
   <li>Where we need to carry out our legal obligations and in line with our data protection policy.</li>
   <li>Where it is needed in the public interest, such as for equal opportunities monitoring [or in relation to our occupational pension scheme], and in line with our data protection policy.</li>
@@ -148,7 +148,7 @@ get_header(); ?>
 
 <h4>Our obligations as an Employer</h4>
 
-<ul>We will use your particularly sensitive personal information in the following ways:
+<ul style="list-style-type:disc"><p>We will use your particularly sensitive personal information in the following ways:</p>
   <li>We will use information relating to leaves of absence, which may include sickness absence or family related leaves, to comply with employment and other laws.</li>
   <li> We will use information about your physical or mental health, or disability status, to ensure your health and safety in the workplace and to assess your fitness to work, to provide appropriate workplace adjustments, to monitor and manage sickness absence and to administer benefits.</li>
   <li>We will use information about your race or national or ethnic origin, religious, philosophical or moral beliefs, or your sexual life or sexual orientation, to ensure meaningful equal opportunity monitoring and reporting.</li>
@@ -173,7 +173,7 @@ get_header(); ?>
 
 <h4>Automated decision-making</h4>
 
-<ul>Automated decision-making takes place when an electronic system uses personal information to make a decision without human intervention. We are allowed to use automated decision-making in the following circumstances:
+<ul style="list-style-type:disc"><p>Automated decision-making takes place when an electronic system uses personal information to make a decision without human intervention. We are allowed to use automated decision-making in the following circumstances:</p>
   <li>Where we have notified you of the decision and given you 21 days to request a reconsideration.</li>
   <li>Where it is necessary to perform the contract with you and appropriate measures are in place to safeguard your rights.</li>
   <li>In limited circumstances, with your explicit written consent and where appropriate measures are in place to safeguard your rights.</li>
@@ -230,7 +230,7 @@ get_header(); ?>
       <p>It is important that the personal information we hold about you is accurate and current. Please keep us informed if your personal information changes during your working relationship with us. </p>
 
   <h4>Your rights in connection with personal information</h4>
-    <ul>Under certain circumstances, by law you have the right to:
+    <ul style="list-style-type:disc"><p>Under certain circumstances, by law you have the right to:</p>
       <li>Request access to your personal information (commonly known as a "data subject access request"). This enables you to receive a copy of the personal information we hold about you and to check that we are lawfully processing it.</li>
       <li>Request correction of the personal information that we hold about you. This enables you to have any incomplete or inaccurate information we hold about you corrected.</li>
       <li>Request erasure of your personal information. This enables you to ask us to delete or remove personal information where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal information where you have exercised your right to object to processing (see below).</li>
@@ -255,7 +255,7 @@ get_header(); ?>
   <h4>Changes to this privacy notice</h4>
     <p>We reserve the right to update this privacy notice at any time, and we will provide you with a new privacy notice when we make any substantial updates. We may also notify you in other ways from time to time about the processing of your personal information.</p> 
 
-  <h4>If you have any questions about this privacy notice, please contact Jonathan Malyon jon.malyon@wearetilt.com.</h4>
+  <h4>If you have any questions about this privacy notice, please contact Jonathan Malyon <a href="mailto:jon.malyon@wearetilt.com">jon.malyon@wearetilt.com.</a></h4>
 
 </div>
 </div>

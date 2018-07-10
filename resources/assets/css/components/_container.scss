@@ -542,3 +542,149 @@ section {
         }
     }
 }
+
+.modal-container{
+    position: fixed;
+    z-index: 99999999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.75);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+        position: sticky;
+    }
+
+    #subscribe{
+        width: 60%;
+        margin: auto;
+        background: #222222;
+        height: auto;
+        padding: 10% 10%;
+        @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+            width: 100%;
+        }
+
+        p{
+            font-size: 28px;
+            color: #ffffff;
+            padding: 0.25em 0;
+            font-family: SeroOT-Thin;
+        }
+        .join-list{
+            font-size: 12px;
+            color: #ff406a;
+            text-transform: uppercase;
+        }
+        .tick-section{
+            padding-top: 60px;
+            padding-bottom: 30px;
+
+            .check-box{
+                content: "";
+                display: inline-block;
+                height: 25px;
+                width: 25px;
+                border: 1px solid #ffffff;
+                cursor: pointer;
+                margin-bottom: -8px;
+                margin-right: 10px;
+
+            }
+            .tick-text{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .tick-content{
+                font-size: 10px;
+                font-family: SeroOT-Thin;
+                width: 60%;
+                margin-top: 0;
+                a{
+                    color: #ff406a;
+                }
+            }
+            .tick{
+                background: transparent;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                left: -9999px;
+            }
+            .ticked{
+                background: url("../images/tick-01.png") center right no-repeat;
+            }
+        }
+    }
+    .js-cm-submit-button{
+        font-size: 10px;
+    }
+        input{
+            border-radius: 2px;
+            letter-spacing: 1px;
+            padding: 0 5px;
+            margin-right: 1%;
+            border: none;
+            border-bottom: 1px solid #999999;
+            font-size: 16px;
+            background-color: transparent;
+            color: #ffffff;
+            height: 45px;
+            width: 60%;
+            @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+                width: 100%;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+
+        button{
+            cursor: pointer;
+            outline: none;
+            min-width: 140px;
+            font-size: 14px;
+            font-family: $f-seroot;
+            height: 35px;
+            letter-spacing: 1px;
+            position: relative;
+            padding-right: 36px;
+            text-align: right;
+            background: url("../images/button_arrow.png") center right no-repeat;
+            &:disabled{
+            cursor: auto;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            }
+        }
+        .error{ /* added to input boxes by check_empty function in main.js */
+            color: #e84c64;
+            text-align: left;
+            background: url(../images/close-pink.png) right no-repeat;
+        }
+        #errors{
+            display: block;
+            font-size: 11px;
+            font-family: $f-merriweather;
+            letter-spacing: 0.05em;
+            margin: auto;
+            text-align: left;
+            width: 100%;
+            @media screen and (max-width: 600px){
+                display: none;
+            }
+        }
+        .error-msg{
+          color:#e84c64;
+          display: inline-block;
+          margin-right: 1%;
+          padding: 5px;
+          display: none;
+          width: calc((100% - 5% - 140px)/2);
+        }
+
+}

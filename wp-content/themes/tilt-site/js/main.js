@@ -1172,30 +1172,24 @@ var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+
 
 if(!regex.test($('#fieldEmail').val())){
     $('#fieldEmail').addClass('error');
-    $('.error1').css('display','block');
-    $('.error1').css('margin','0px 68px');
+    $('.error-msg').css('display','block');
+    $('.error-msg').css('margin','0px 68px');
 
 }
 else{
     email = true;
     $('#fieldEmail').removeClass('error');
-    $('.error1').css('display','none');
+    $('.error-msg').css('display','none');
 }
 if($('#fieldName').val() == ''){
-    console.log()
-    $('#fieldName').addClass('error');
-    $('.error2').css('display','block');
 }
 else{
     name = true;
-    $('#fieldName').removeClass('error');
-    $('.error2').css('display','none');
-    $('.error1').css('margin','0px 196px');
 }
 
-if(email && name){
-$('.js-cm-submit-button').css('color','#ffffff');
-$('.js-cm-submit-button').css('backgroundColor','transparent');
+if(email && $('.tick').prop('checked') == true) {
+$('.js-cm-submit-button').css('color','#000000');
+$('.js-cm-submit-button').css('backgroundColor','#ffffff');
 $('svg').css('fill','#f14e67');
 $('.js-cm-submit-button').attr('disabled',false);
 }
@@ -1206,3 +1200,19 @@ function hide() {
 $('#subscribe').addClass("active");
 $('#popup').hide();
 }
+
+jQuery(document).ready(function() {
+    $('.check-box').on('click', function(){
+        $(this).toggleClass('ticked');
+        
+        if($(this).hasClass('ticked')){
+            $('.tick').prop('checked', true);
+        }else{
+            $('.tick').prop('checked', false);
+        }
+    });
+});
+
+$('.join-pop').on('click', function(){
+    $('.modal-container').css('display', 'flex');
+});

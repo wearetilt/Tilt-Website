@@ -52,21 +52,7 @@
   				<?php endif;?>
   			</div>
 
-        <a id="popup" onclick="hide()">Join our mailing list</a>
-
-  			<div id="subscribe">
-  				<p>Join our mailing list</p>
-  				<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E724ECA1B6796EADF65AC759B144112BD8BD6F3C5686E6DB5068B5C5B63F05A873EA988D4992C4B6E542E62E633F34061">
-  					<input id="fieldName" name="cm-name" placeholder="Name" type="text">
-  					<input id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" placeholder="Email" type="text">
-  					<button disabled class="js-cm-submit-button" type="submit">SUBSCRIBE<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></button>
-  				</form>
-     			<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-  				<div id="errors">
-            <span id="error-name" class="error-msg">Please add your name</span>
-            <span id="error-email" class="error-msg">Please enter a valid email</span>
-  				</div>
-  			</div>
+        <button id="popup" class="join-pop">Join our mailing list</button>
 
     </div><!-- /end footer-contacts -->
 
@@ -76,6 +62,29 @@
 	</div><!-- /end signoff -->
 
 </footer>
+
+      <div class="modal-container">
+        <div id="subscribe">
+          <div class="subscribe-wrapper">
+            <p class="join-list">Join our mailing list</p>
+            <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E724ECA1B6796EADF65AC759B144112BD8BD6F3C5686E6DB5068B5C5B63F05A873EA988D4992C4B6E542E62E633F34061">
+              <p>Hi, my name is</p>
+              <input id="fieldName" name="cm-name" type="text">
+              <p>My email is</p>
+              <input id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" type="text">
+              <div id="errors">
+                <span id="error-email" class="error-msg">This doesn't look like a valid email</span>
+              </div>
+              <div class="tick-section">
+                <input id="tick-box" class="tick" type="checkbox"><span class="check-box"></span><p class="tick-text">Tick this box</p>
+                  <p class="tick-content">By ticking this box you are giving us your consent to use your details for Tilt’s email marketing. We use a third party, Campaign Monitor to deliver our quarterly e-newsletter. We gather statistics around email opening and clicks using industry standard technologies to help us monitor and improve our e-newsletter. For more information, please see our <a href="/privacy-policy" target="_blank">privacy policy</a></p>
+              </div>
+              <button disabled class="js-cm-submit-button" type="submit">SUBSCRIBE ME</button>
+            </form>
+            <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+          </div>
+        </div>
+      </div>
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
  <script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>

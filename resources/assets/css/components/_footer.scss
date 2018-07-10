@@ -52,7 +52,7 @@ footer {
         }
     }
     #popup{
-        display: none;
+        display: block;
         color: #ffffff;
         background: transparent;
         cursor: pointer;
@@ -66,96 +66,6 @@ footer {
         @media screen and (max-width: 800px){
             display: block;
             width: 100%;
-        }
-    }
-
-    #subscribe{
-        display: none;
-        text-align: center;
-        width: 100%;
-    }
-    #subscribe.active{
-        display: inline-block;
-        margin-left: 5px;
-        margin-right: 10px;
-        margin-bottom: 30px;
-        p{
-            font-size: 14px;
-            color: #999999;
-            padding: 0.25em 0;
-        }
-        #subForm{
-            display: inline-block;
-            max-width: $form-width;
-            width: 100%;
-            input{
-                font-family: $f-seroot;
-            }
-        }
-        input{
-            border-radius: 2px;
-            letter-spacing: 1px;
-            padding: 0 5px;
-            margin-right: 1%;
-            border: none;
-            font-size: 16px;
-            background-color: #303030;
-            color: #ffffff;
-            height: 45px;
-            width: calc((100% - 5% - 140px)/2); /* two input fields, each half of total width less allowance for margins and button */
-        }
-
-        button{
-            cursor: pointer;
-            outline: none;
-            min-width: 140px;
-            font-size: 14px;
-            font-family: $f-seroot;
-            height: 45px;
-            letter-spacing: 1px;
-            position: relative;
-            padding-right: 36px;
-            text-align: right;
-            &:disabled{
-            cursor: auto;
-            color: #5c5c5c;
-            background: transparent;
-            border: 2px solid #5c5c5c;
-            }
-        }
-        svg{
-            height: 17px;
-            position: absolute;
-            right: 15px;
-            top: 11px;
-            fill: #5c5c5c;
-        }
-        .error{ /* added to input boxes by check_empty function in main.js */
-            border: 1px solid #e84c64;
-            color: #e84c64;
-            background-color: #4d3438;
-            text-align: left;
-        }
-        #errors{
-            display: block;
-            font-size: 11px;
-            font-family: $f-merriweather;
-            letter-spacing: 0.05em;
-            margin: auto;
-            max-width: $form-width;
-            text-align: left;
-            width: 100%;
-            @media screen and (max-width: 600px){
-                display: none;
-            }
-        }
-        .error-msg{
-          color:#e84c64;
-          display: inline-block;
-          margin-right: 1%;
-          padding: 5px;
-          visibility: hidden;
-          width: calc((100% - 5% - 140px)/2);
         }
     }
 

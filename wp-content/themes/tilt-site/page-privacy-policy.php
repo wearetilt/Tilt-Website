@@ -38,9 +38,11 @@ get_header(); ?>
 <ul><li>We collect your Full Name and Email on our email-marketing subscription sign-up form. We use a secure third-party service, Campaign monitor, to deliver our emails.</li>
 <li>We are the sole owners of the information collected and we only have access to the information you voluntarily give us.</li>
 <li>We gather statistics from email engagement using industry standard technologies to help us monitor and improve our communication.</li>
+<br>
+<h4>GDPR Privacy Notice for Job Applicants, Employees, Workers, Volunteers and Contractors (UK).</h4><a href="https://wearetilt.com/gdpr-privacy-notice/" target="_blank">This is what we do with your personal data.</a>
 
 <h4>LEGITIMATE INTEREST</h4>
-<ul>
+<ul style="list-style-type:disc">
 <li>To administer Tilt, our website and our business;</li>
 <li>To enable your use of the Tilt website and other requested services</li>
 <li>To respond to technical support requests;</li>
