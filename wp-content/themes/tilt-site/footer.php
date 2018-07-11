@@ -63,7 +63,7 @@
 
 </footer>
 
-      <div class="modal-container">
+      <div class="modal-container modal">
         <div id="subscribe">
           <div class="subscribe-wrapper">
             <p class="join-list">Join our mailing list</p>

@@ -1201,6 +1201,7 @@ $('#subscribe').addClass("active");
 $('#popup').hide();
 }
 
+//tick box function
 jQuery(document).ready(function() {
     $('.check-box').on('click', function(){
         $(this).toggleClass('ticked');
@@ -1213,6 +1214,14 @@ jQuery(document).ready(function() {
     });
 });
 
+//open modal on join mailbox click
 $('.join-pop').on('click', function(){
-    $('.modal-container').css('display', 'flex');
+    $('.modal-container').addClass('visible');
 });
+
+// $(document).click(function(event) {
+//   //if you click on anything except the modal itself or the "open modal" link, close the modal
+//   if (!$(event.target).closest(".modal, .modal-container").length) {
+//     $("body").find(".modal").removeClass("visible");
+//   }
+// });

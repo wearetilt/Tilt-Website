@@ -544,6 +544,7 @@ section {
 }
 
 .modal-container{
+    display: none;
     position: fixed;
     z-index: 99999999;
     height: 100%;
@@ -553,10 +554,13 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
     align-items: center;
     @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
         position: sticky;
+    }
+    
+    &.visible{
+        display: flex;
     }
 
     #subscribe{
@@ -565,8 +569,12 @@ section {
         background: #222222;
         height: auto;
         padding: 10% 10%;
-        @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+        @media handheld, screen and (min-width: 0px) and (max-width: $job-breaks) {
             width: 100%;
+        }
+
+        @media handheld, screen and (min-width: $job-breaks) and (max-width: $bp-phone) {
+            width: 80%;
         }
 
         p{
