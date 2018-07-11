@@ -32,13 +32,18 @@ header {
     &#page_legacy,
     &#page_leadership,
     &#page_gfk,
-    &#page_404,
     &.work-header-video,
     &#page_discover_bp {
         min-height: 100vh;
         height: 100%;
         position: relative;
         z-index: 1;
+    }
+    &#page_404 {
+        min-height: 100vh;
+        height: 100%;
+        position: relative;
+        z-index: 0;
     }
     #header-play {
         opacity: 0;
