@@ -669,6 +669,14 @@ section {
             border: 1px solid #ffffff;
             }
         }
+        .close-btn{
+            min-width: 25px;
+            height: 25px;
+            background: url(../images/close-pink.png) center right no-repeat;
+            border: none;
+            top: -150px;
+            left: 116%;
+        }
         .error{ /* added to input boxes by check_empty function in main.js */
             color: #e84c64;
             text-align: left;

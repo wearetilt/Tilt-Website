@@ -1219,9 +1219,6 @@ $('.join-pop').on('click', function(){
     $('.modal-container').addClass('visible');
 });
 
-// $(document).click(function(event) {
-//   //if you click on anything except the modal itself or the "open modal" link, close the modal
-//   if (!$(event.target).closest(".modal, .modal-container").length) {
-//     $("body").find(".modal").removeClass("visible");
-//   }
-// });
+$('.close-btn').on('click', function(){
+    $('.modal-container').removeClass('visible');
+});
