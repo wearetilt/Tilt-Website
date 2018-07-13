@@ -251,7 +251,7 @@ body{
         -webkit-transform: translateY(-50%);
         @media handheld,
         screen and (min-width: $bp-desktop) {
-            top: 55%;
+            top: 62%;
         }
     } // top: 50%;
     // transform: translateY(-50%);
@@ -550,7 +550,7 @@ section {
     height: 100%;
     width: 100%;
     top: 0;
-    background: rgba(0,0,0,0.75);
+    background: #1f1f1f;
     left: 0;
     right: 0;
     bottom: 0;
@@ -564,11 +564,11 @@ section {
     }
 
     #subscribe{
-        width: 60%;
+        width: 1150px;
+        height: 762px;
         margin: auto;
-        background: #222222;
-        height: auto;
-        padding: 10% 10%;
+        background: rgba(31, 31, 31, 0.98);;
+        padding: 7% 18%;
         @media handheld, screen and (min-width: 0px) and (max-width: $job-breaks) {
             width: 100%;
         }
@@ -577,43 +577,51 @@ section {
             width: 80%;
         }
 
+        .subscribe-wrapper{
+            width: 750px;
+        }
         p{
-            font-size: 28px;
+            font-size: 30px;
             color: #ffffff;
-            padding: 0.25em 0;
-            font-family: SeroOT-Thin;
+            font-family: $f-seroot-thn;
         }
         .join-list{
-            font-size: 12px;
+            font-size: 8px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            font-family: $f-merriweather;
             color: #ff406a;
             text-transform: uppercase;
+            padding: 0 0 2px 2px;
         }
         .tick-section{
-            padding-top: 60px;
-            padding-bottom: 30px;
+            padding-bottom: 33px;
 
             .check-box{
                 content: "";
                 display: inline-block;
-                height: 25px;
-                width: 25px;
+                height: 23px;
+                width: 23px;
                 border: 1px solid #ffffff;
                 cursor: pointer;
-                margin-bottom: -8px;
+                margin-bottom: -7px;
                 margin-right: 10px;
 
             }
             .tick-text{
                 display: inline-block;
                 vertical-align: middle;
+                letter-spacing: 0.8px;
             }
             .tick-content{
                 font-size: 10px;
+                line-height: 16px;
                 font-family: SeroOT-Thin;
                 width: 60%;
-                margin-top: 0;
+                margin-top: -3px;
                 a{
                     color: #ff406a;
+                    text-transform: none;
                 }
             }
             .tick{
@@ -624,7 +632,8 @@ section {
                 left: -9999px;
             }
             .ticked{
-                background: url("../images/tick-01.png") center right no-repeat;
+                background: url("../images/tick-01.png") center no-repeat;
+                background-size: 16px 16px;
             }
         }
     }
@@ -635,13 +644,15 @@ section {
             border-radius: 2px;
             letter-spacing: 1px;
             padding: 0 5px;
+            padding-bottom: 8px;
             margin-right: 1%;
+            margin-bottom: 35px;
             border: none;
             border-bottom: 1px solid #999999;
-            font-size: 16px;
+            font-size: 30px;
+            font-family: $f-seroot-thn;
             background-color: transparent;
             color: #ffffff;
-            height: 45px;
             width: 60%;
             @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
                 width: 100%;
@@ -649,20 +660,23 @@ section {
             &:focus{
                 outline: none;
             }
+            &#fieldEmail{
+                margin-bottom: 32px;
+            }
         }
 
         button{
             cursor: pointer;
             outline: none;
-            min-width: 140px;
+            min-width: 135px;
             font-size: 14px;
             font-family: $f-seroot;
-            height: 35px;
+            height: 33px;
             letter-spacing: 1px;
             position: relative;
-            padding-right: 36px;
+            padding-right: 39px;
             text-align: right;
-            background: url("../images/button_arrow.png") center right no-repeat;
+            background: url("../images/button_arrow.png") 115px 9px no-repeat;
             &:disabled{
             cursor: auto;
             color: #ffffff;
@@ -674,13 +688,14 @@ section {
             height: 25px;
             background: url(../images/close-pink.png) center right no-repeat;
             border: none;
-            top: -150px;
-            left: 116%;
+            top: -100px;
+            left: 100%;
         }
         .error{ /* added to input boxes by check_empty function in main.js */
             color: #e84c64;
             text-align: left;
             background: url(../images/close-pink.png) right no-repeat;
+            background-position: 100% 8px;
         }
         #errors{
             display: block;
@@ -701,6 +716,8 @@ section {
           padding: 5px;
           display: none;
           width: calc((100% - 5% - 140px)/2);
+          font-size: 20px;
+          font-family: $f-seroot-thn;
         }
 
 }

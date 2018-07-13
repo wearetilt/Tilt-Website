@@ -52,20 +52,30 @@ footer {
         }
     }
     #popup{
-        display: block;
+        display: inline-block;
         color: #fb4a71;
         background: transparent;
         cursor: pointer;
-        font-family: $f-seroot;
+        font-family: $f-merriweather;
+        font-size: 20px;
         letter-spacing: 1px;
         line-height: $icon-size;
         margin-bottom: $icon-size;
         text-align: center;
         text-transform: none;
-        width: 11rem;
+        width: 17rem;
+        border: none;
+        outline: none;
         @media screen and (max-width: 800px){
             display: block;
             width: 100%;
+        }
+    }
+    .phone-container{
+        display: inline-block;
+        float: right;
+        @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+            float: none;
         }
     }
 
@@ -77,16 +87,23 @@ footer {
         font-family: $f-merriweather;
         font-weight: 300;
         line-height: $icon-size;
-        text-align: center;
-        width: calc(100% - 245px - 11rem);
         a {
             color: $c-tilt-pink;
         }
     }
-    #footnote-1 {
+    #footnote-1{
         border-top: 1px solid $c-grey-3a;
         clear: both;
         padding-top: 1rem;
+        font-family: $f-merriweather;
+        @include font-size(12);
+        color: #616161; 
+    }
+    #footnote-2{
+        font-family: $f-merriweather;
+        @include font-size(12);
+        color: #616161; 
+        margin-top: 0;
     }
     p.sans-serif {
         @include font-size(25);
@@ -110,8 +127,9 @@ footer {
 
 .privacy_policy{
     color: #ffffff;
-    font-family: $f-seroot-lt;
-    font-size: 13px;
+    font-family: $f-merriweather;
+    font-size: 15px;
+    line-height: 25px;
     float: right;
     text-transform: capitalize;
 }
