@@ -1183,6 +1183,7 @@ else{
     email = true;
     $('#fieldEmail').removeClass('error');
     $('.error-msg').css('display','none');
+    $('#fieldEmail').css('border-bottom', '1px solid #999999');
 }
 if($('#fieldName').val() == ''){
 }

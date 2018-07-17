@@ -588,7 +588,7 @@ section {
         .join-list{
             font-size: 8px;
             line-height: 15px;
-            letter-spacing: 1px;
+            letter-spacing: 0.15em;
             font-family: $f-merriweather;
             color: #ff406a;
             text-transform: uppercase;
@@ -637,9 +637,6 @@ section {
             }
         }
     }
-    .js-cm-submit-button{
-        font-size: 10px;
-    }
         input{
             border-radius: 2px;
             letter-spacing: 1px;
@@ -653,7 +650,7 @@ section {
             font-family: $f-seroot-thn;
             background-color: transparent;
             color: #ffffff;
-            width: 60%;
+            width: 75%;
             @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
                 width: 100%;
             }
@@ -669,14 +666,15 @@ section {
             cursor: pointer;
             outline: none;
             min-width: 135px;
-            font-size: 14px;
-            font-family: $f-seroot;
-            height: 33px;
+            font-size: 20px;
+            font-family: $f-seroot-thn;
+            height: 54px;
+            padding: 15px 72px 14px 24px;
             letter-spacing: 1px;
             position: relative;
-            padding-right: 39px;
-            text-align: right;
-            background: url("../images/button_arrow.png") 115px 9px no-repeat;
+            text-align: left;
+            background: url("../images/button_arrow.png") right center no-repeat;
+            background-size: 32px 13px;
             &:disabled{
             cursor: auto;
             color: #ffffff;
@@ -714,10 +712,10 @@ section {
           display: inline-block;
           margin-right: 1%;
           padding: 5px;
+          width: auto;
+          margin: 0px 133px !important;
           display: none;
-          width: calc((100% - 5% - 140px)/2);
           font-size: 20px;
           font-family: $f-seroot-thn;
         }
-
 }

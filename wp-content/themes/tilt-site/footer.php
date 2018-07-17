@@ -80,7 +80,7 @@
                 <input id="tick-box" class="tick" type="checkbox"><span class="check-box"></span><p class="tick-text">Tick this box</p>
                   <p class="tick-content">By ticking this box you are giving us your consent to use your details for Tilt’s email marketing. We use a third party, Campaign Monitor to deliver our quarterly e-newsletter. We gather statistics around email opening and clicks using industry standard technologies to help us monitor and improve our e-newsletter. For more information, please see our <a href="/privacy-policy" target="_blank">privacy policy</a></p>
               </div>
-              <button disabled class="js-cm-submit-button" type="submit">SUBSCRIBE ME</button>
+              <button disabled class="js-cm-submit-button cube--front" type="submit"><span class="sans-serif button">SUBSCRIBE ME</span></button>
             </form>
             <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
           </div>
