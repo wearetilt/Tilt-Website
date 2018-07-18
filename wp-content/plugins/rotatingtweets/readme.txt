@@ -3,8 +3,9 @@ Contributors: mpntod
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9XCNM4QSVHYT8
 Tags: shortcode,widget,twitter,rotating,rotate,rotator,tweet,tweets,animation,jquery,jquery cycle,cycle,multilingual,responsive,page builder,do not track,dnt
 Requires at least: 3.2
-Tested up to: 4.7
-Stable tag: 1.9
+Tested up to: 4.9
+Stable tag: 1.9.7
+Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,17 +15,18 @@ Twitter widget and shortcode to show your latest tweets one at a time an animate
 * **Replaces a [shortcode](http://codex.wordpress.org/Shortcode) such as `[rotatingtweets screen_name='your_twitter']`, or a [widget](http://codex.wordpress.org/WordPress_Widgets), with a rotating display of your most recent tweets**
 * **Supports v 1.1 of the Twitter API** ([i.e. it works](https://blog.twitter.com/2013/api-v1-is-retired))
 * **Supports the [new longer tweet format](https://dev.twitter.com/overview/api/upcoming-changes-to-tweets)**
+* **Supports [280 characters](https://blog.twitter.com/official/en_us/topics/product/2017/tweetingmadeeasier.html)**
 * **Space efficient** - instead of showing all your tweets at once, shows one at a time and then smoothly replaces it with the next one. After showing all your tweets, loops back to the beginning again.
 * **Reliable** - keeps showing your latest Tweets even if the Twitter website is down.
 * **Customizable** - you decide whose tweets to show, how many to show, whether to include retweets and replies, and whether to show a follow button. You can also decide how quickly the tweets rotate and what type of animation to use.
 * **Responsive** - resizes as your page resizes
-* Gives you the option to show a fully customizable Twitter 'follow' button
+* **GDPR compliant ** - with default settings, collects no user data and shares no user data (including IP addresses) with anyone else.  Supports 'Do Not Track' (DNT).
+* Gives you the option to show a fully customizable Twitter 'follow' button.  *For note, because of the way Twitter's code for the Twitter button works, use of this button currently means that site visitors who have not set 'Do Not Track' will have their visit tracked by Twitter.*
 * Replaces [t.co](http://t.co) links with the original link
 * Caches the most recent data from Twitter to avoid problems with rate limiting
 * Uses [jQuery](http://jquery.com/), [jQuery.Cycle](http://jquery.malsup.com/cycle/) and [jQuery.Cycle2](http://jquery.malsup.com/cycle2/) to produce a nice smooth result.
 * Compatible with [W3 Total Cache](/plugins/w3-total-cache/).
-* Supports Do Not Track (DNT)
-* **Multi-lingual** - now set up to be multi-lingual. The Twitter 'follow' button is automatically translated to match your site's language setting [if Twitter has made the appropriate language available](https://dev.twitter.com/docs/api/1.1/get/help/languages). Also uses [Wordpress's multi-lingual capability](http://codex.wordpress.org/I18n_for_WordPress_Developers) to enable translation of all the other text used by the plug-in via [language packs](https://translate.wordpress.org/projects/wp-plugins/rotatingtweets).
+* **Multi-lingual** - now set up to be multi-lingual. The Twitter 'follow' button is automatically translated to match your site's language setting [if Twitter has made the appropriate language available](https://developer.twitter.com/en/docs/developer-utilities/supported-languages/api-reference/get-help-languages). Also uses [Wordpress's multi-lingual capability](http://codex.wordpress.org/I18n_for_WordPress_Developers) to enable translation of all the other text used by the plug-in via [language packs](https://translate.wordpress.org/projects/wp-plugins/rotatingtweets).
 
 If you'd like to see what the plug-in looks like in action, you can [see the plug-in working here](http://www.martintod.org.uk/2012/05/29/new-twitter-plugin-to-show-tweets-in-rotation/).
 
@@ -92,6 +94,7 @@ Possible variables for the shortcode include:
 	* `profile_image_size` = `'normal'`, `'bigger'`, `'mini'` or `'original'` - lets you change the size of profile images - default is `'normal'`
 	* `shuffle` = `'0'` or `'1'` - shuffle the order that Tweets display - default is `'0'`
 	* `merge_cache` = `'0'` or `'1'` - switches caching of searches on or off - default is `'1'` (i.e. on)
+	* `auto_height` = `'0'` or `'1'` - switches auto-height calculation of the Rotating Tweets container on or off - default is `'1'` (i.e. on)
 
 * **Caching**
 	* `w3tc_render_to` = 'your_choice_of_random_string' - used to support 'fragment caching' by [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/).  For this to work, you also need to ensure that `W3TC_DYNAMIC_SECURITY` is defined in your `wp-config.php` file and that you are not using 'HTTP Compression' on the W3 Total Cache 'Browser Cache' settings page or 'Enhanced Disk caching' on the W3 Total Cache 'Page Cache' settings page.
@@ -168,6 +171,9 @@ If there is only one copy of `jquery` and of `jquery.cycle` on your page, the be
 1. In Chrome or IE, select the tab marked 'console'.
 1. Read the diagnostics and look for any problems that relate to JavaScript. This will normally tell you which JavaScript (if any) is having problems.
 
+= Does Rotating Tweets help me support GDPR? =
+Yes. No user data is collected, stored or sent to Twitter by Rotating Tweets.  By default, Rotating Tweets also does not load any JavaScript from Twitter or anywhere else 'off site'. It supports 'do not track' and only loads JavaScript from Twitter needed to display the Twitter Follow button if you choose that option and the user has not set 'do not track' on their browser.  If you use an 'official format' for your Tweet, profile images may be loaded from Twitter; to avoid this, choose the 'original' format to display your Tweets.
+
 = What can I do if I get the WordPress error code: `http_request_failed - name lookup timed out`? =
 Try installing the [Core Control plug-in](/plugins/core-control/) and disabling cURL. You can read more about the problem via [this support page](http://wordpress.org/support/topic/wp-351-wordpress-error-code-http_request_failed-name-lookup-timed-out).
 
@@ -180,16 +186,37 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	max-width: 123px;
 }
 `
-into your CSS - changing `123px;` to the width you're aiming at - either via putting `rotatingtweets.css` into `wp-content/uploads` or by editing your own template files.
+into your CSS - changing `123px;` to the width you're aiming at - either via [additional CSS](https://codex.wordpress.org/CSS#Custom_CSS_in_WordPress) or by editing your own template files.
 
 = How can I add a Twitter bird to the left of my tweets? =
-You can do this by going to the `rotatingtweets/css` directory and renaming `rotatingtweets-sample.css` to `rotatingtweets.css` and putting it in the `wp-content/uploads/` directory.  This displays a Twitter bird to the left of your tweets.  Any CSS you put into `rotatingtweets.css` won't be overwritten when the plug-in is upgraded to the latest version.
+You can do this by going to the `rotatingtweets/css` directory, opening `rotatingtweets-sample.css` and copying its contents (modifying the link to the bird graphic to match your site) into [additional CSS](https://codex.wordpress.org/CSS#Custom_CSS_in_WordPress) (the preferred approach from Wordpress 4.7 onwards) on the [Appearance Customize Screen](https://codex.wordpress.org/Appearance_Customize_Screen) page. Alternatively rename `rotatingtweets-sample.css` to `rotatingtweets.css` and put it in the `wp-content/uploads/` directory.  Or copy the CSS into your own template files.  Any of these approaches will display a Twitter bird to the left of your tweets.
 
 == Upgrade notice ==
-= 1.9 = 
-* Supports the [new longer Tweet format](https://dev.twitter.com/overview/api/upcoming-changes-to-tweets)
+= 1.9.7 =
+* Fixes display bug where a Tweet contains two copies of the same URL. 
 
 == Changelog ==
+= 1.9.7 =
+* Fixes display bug where a Tweet contains two copies of the same URL. 
+
+= 1.9.6 =
+* Twitter JavaScript only loads if Follow button is set to be displayed and the user has not set 'Do Not Track'. 
+
+= 1.9.5 =
+* Fixed compatibility with Brilliance Pro template
+
+= 1.9.4 =
+* Fixed compatibility bug with PHP 7.2
+
+= 1.9.3 =
+* Fixed compatibility bug with pre-4.0 versions of Wordpress
+
+= 1.9.2 =
+* New shortcode option: `auto_height=0` - to switch off height calculation
+
+= 1.9.1 = 
+* Improved support for SSL
+
 = 1.9 = 
 * Supports the [new longer Tweet format](https://dev.twitter.com/overview/api/upcoming-changes-to-tweets)
 

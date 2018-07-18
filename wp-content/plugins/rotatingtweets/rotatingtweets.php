@@ -2,7 +2,7 @@
 /*
 Plugin Name: Rotating Tweets (Twitter widget & shortcode)
 Description: Replaces a shortcode such as [rotatingtweets screen_name='your_twitter_name'], or a widget, with a rotating tweets display 
-Version: 1.9
+Version: 1.9.7
 Text Domain: rotatingtweets
 Domain Path: /languages
 Author: Martin Tod
@@ -50,7 +50,7 @@ class rotatingtweets_Widget extends WP_Widget {
 				 'customize_selective_refresh' => true,
 			) // Args
 		);
-		if ( is_active_widget( false, false, $this->id_base, true )  || is_customize_preview() ) {
+		if ( is_active_widget( false, false, $this->id_base, true )  || function_exists('is_customize_preview') && is_customize_preview() ) {
 			rotatingtweets_enqueue_scripts(); 
 		}
 	}
@@ -386,9 +386,11 @@ class rotatingtweets_Widget extends WP_Widget {
 } // class rotatingtweets_Widget
 
 // register rotatingtweets_Widget widget
-add_action('widgets_init', 
-	create_function('', 'return register_widget("rotatingtweets_Widget");')
-);
+function rotatingtweets_register_widgets() {
+	register_widget( 'rotatingtweets_Widget' );
+}
+
+add_action('widgets_init', 'rotatingtweets_register_widgets');
 
 # Converts Tweet timestamp into a time description
 function rotatingtweets_contextualtime($small_ts, $large_ts=false) {
@@ -431,11 +433,11 @@ function rotatingtweets_intents($twitter_object,$lang, $icons = 1,$targetvalue='
 		$string = "\n\t\t\t<a href='".$type['link'].$twitter_object['id_str']."' title='".esc_attr($type['text'])."' lang='{$lang}'{$targetvalue}>";
 		switch($icons) {
 		case 2:
-			$addstring[] = $string."<img src='".plugins_url($type['icon'],__FILE__)."' width='16' height='16' alt='".esc_attr($type['text'])."' /> {$type['text']}</a>";
+			$addstring[] = $string."<img src='".plugin_dir_url( __FILE__ ).$type['icon']."' width='16' height='16' alt='".esc_attr($type['text'])."' /> {$type['text']}</a>";
 			$glue = ' ';		
 			break;
 		case 1:
-			$addstring[] = $string."<img src='".plugins_url($type['icon'],__FILE__)."' width='16' height='16' alt='".esc_attr($type['text'])."' /></a>";
+			$addstring[] = $string."<img src='".plugin_dir_url( __FILE__ ).$type['icon']."' width='16' height='16' alt='".esc_attr($type['text'])."' /></a>";
 			$glue = '';
 			break;
 		case 0:
@@ -482,7 +484,7 @@ function rotatingtweets_user_intent($person,$lang,$linkcontent,$targetvalue='',$
 		break;
 	case 'blue_bird':
 		$return = "<a href='https://twitter.com/intent/user?user_id={$person['id']}' title='".esc_attr(sprintf(__('Follow @%s','rotatingtweets'),$person['name']))."' lang='{$lang}'{$targetvalue}>";
-		$return .= '<img src="'.plugins_url('images/bird_blue_32.png', __FILE__).'" class="twitter_icon" alt="'.__('Twitter','rotatingtweets').'" /></a>';
+		$return .= '<img src="'.plugin_dir_url( __FILE__ ).'images/bird_blue_32.png" class="twitter_icon" alt="'.__('Twitter','rotatingtweets').'" /></a>';
 		break;
 	default:
 		$return .= strip_tags($linkcontent,'<img>')."</a>";
@@ -627,7 +629,8 @@ function rotatingtweets_display_shortcode( $atts, $content=null, $code="", $prin
 			'shuffle'=>0,
 			'merge_cache'=>TRUE,
 			'rtw_display_order'=>'info,main,media,meta',
-			'collection' => FALSE
+			'collection' => FALSE,
+			'auto_height' => 'calc'
 		), $atts, 'rotatingtweets' ) ;
 	extract($args);
 	if(empty($screen_name) && empty($search) && !empty($url) && empty($collection)):
@@ -1034,9 +1037,9 @@ function rotatingtweets_call_twitter_API($command,$options = NULL,$api = NULL ) 
 			}
 		endif;
 		if($command != 'search/tweets'):
-			$apicall = "http://api.twitter.com/1/".$command.".json";
+			$apicall = "https://api.twitter.com/1/".$command.".json";
 		else:
-			$apicall = "http://search.twitter.com/search.json";
+			$apicall = "https://search.twitter.com/search.json";
 		endif;
 		if(!empty($string)) $apicall .= "?".implode('&',$string);
 		if(WP_DEBUG  && ! is_admin() ) echo "<!-- Using version 1 of API - calling string ".esc_attr($apicall)." -->";
@@ -1542,6 +1545,11 @@ function rotating_tweets_display($json,$args,$print=FALSE) {
 	$rt_cache_delay = rotatingtweets_get_cache_delay();
 	$tweet_count = max(1,intval($args['tweet_count']));
 	$timeout = max(intval($args['timeout']),0);
+	if( isset($args['auto_height']) && strtolower($args['auto_height']) != "calc" && $args['auto_height'] != 1 ):
+		$auto_height = -1;
+	else:
+		$auto_height = "calc";
+	endif;
 	$defaulturllength = 29;
 	if(isset($args['url_length'])):
 		$urllength = intval($args['url_length']);
@@ -1602,7 +1610,7 @@ function rotating_tweets_display($json,$args,$print=FALSE) {
 	# Now set all the version 2 options
 	$v2string = '';
 	$v2options = array(
-		'auto-height' => 'calc',
+		'auto-height' => $auto_height,
 		'fx' => $rotation_type,
 		'pause-on-hover' => 'true',
 		'timeout' => $timeout,
@@ -1866,6 +1874,8 @@ function rotating_tweets_display($json,$args,$print=FALSE) {
 									$after[] = "<a href='".$url['url']."' title='".$url['expanded_url']."'".$targetvalue." class='rtw_url_link'>".esc_html($displayurl)."</a>";
 								endif;
 							endforeach;
+							$before = array_unique($before);
+							$after = array_unique($after);
 						endif;
 						$show_media = '';
 						if(isset($entities['media'])):
@@ -2027,7 +2037,7 @@ function rotating_tweets_display($json,$args,$print=FALSE) {
 								switch( strtolower(trim($rt_display_element))):
 								case 'info':
 									$result .= "\n\t<div class='rtw_info'>";
-									$result .= "\n\t\t<div class='rtw_twitter_icon'><img src='".plugins_url('images/twitter-bird-16x16.png', __FILE__)."' width='16' height='16' alt='".__('Twitter','rotatingtweets')."' /></div>";
+									$result .= "\n\t\t<div class='rtw_twitter_icon'><img src='".plugin_dir_url( __FILE__ )."images/twitter-bird-16x16.png' width='16' height='16' alt='".__('Twitter','rotatingtweets')."' /></div>";
 									$result .= "\n\t\t<div class='rtw_icon'>".rotatingtweets_user_intent($tweetuser,$twitterlocale,'icon',$targetvalue,$iconsize)."</div>";
 									$result .= "\n\t\t<div class='rtw_name'>".rotatingtweets_user_intent($tweetuser,$twitterlocale,'name',$targetvalue)."</div>";
 									$result .= "\n\t\t<div class='rtw_id'>".rotatingtweets_user_intent($tweetuser,$twitterlocale,'screen_name',$targetvalue)."</div>";
@@ -2089,7 +2099,7 @@ function rotating_tweets_display($json,$args,$print=FALSE) {
 	//						$result .= "\n\t\t<div class='rtw_meta'><div class='rtw_intents'>".rotatingtweets_intents($twitter_object,$twitterlocale, 1).'</div>';
 								case 'meta':
 									if(isset($retweeter)) {
-										$result .= "\n\t\t<div class='rtw_rt_meta'>".rotatingtweets_user_intent($retweeter,$twitterlocale,"<img src='".plugins_url('images/retweet_on.png',__FILE__)."' width='16' height='16' alt='".sprintf(__('Retweeted by %s','rotatingtweets'),$retweeter['name'])."' />".sprintf(__('Retweeted by %s','rotatingtweets'),$retweeter['name']),$targetvalue)."</div>";
+										$result .= "\n\t\t<div class='rtw_rt_meta'>".rotatingtweets_user_intent($retweeter,$twitterlocale,"<img src='".plugin_dir_url( __FILE__ )."images/retweet_on.png' width='16' height='16' alt='".sprintf(__('Retweeted by %s','rotatingtweets'),$retweeter['name'])."' />".sprintf(__('Retweeted by %s','rotatingtweets'),$retweeter['name']),$targetvalue)."</div>";
 									}
 									if($args['show_meta_reply_retweet_favorite'] || !isset($args['official_format_override']) || !$args['official_format_override'] || $args['displaytype']=='widget' || (isset($args['show_meta_prev_next']) && $args['show_meta_prev_next'] && $args['np_pos']=='tweets') ):
 										$result .= "\n\t\t<div class='rtw_meta'><span class='rtw_expand' style='display:none;'>".__('Expand','rotatingtweets')."</span><span class='rtw_intents'>";
@@ -2136,7 +2146,7 @@ function rotating_tweets_display($json,$args,$print=FALSE) {
 							break;
 						case 5:
 							# This is an adjusted Rotating Tweets display routine
-							$result .= "\n\t\t<p class='rtw_main'><img src='".plugins_url('images/bird_16_black.png', __FILE__)."' alt='Twitter' />&nbsp;&nbsp; $main_text ";
+							$result .= "\n\t\t<p class='rtw_main'><img src='".plugin_dir_url( __FILE__ )."images/bird_16_black.png' alt='Twitter' />&nbsp;&nbsp; $main_text ";
 							$meta = '';
 							if($args['show_meta_timestamp']):
 								$meta .= rotatingtweets_timestamp_link($twitter_object,'default',$targetvalue);
@@ -2228,7 +2238,7 @@ function rotating_tweets_display($json,$args,$print=FALSE) {
 		if($args['no_show_screen_name']) $shortenvariables .= ' data-show-screen-name="false"';
 		if(isset($args['large_follow_button']) && $args['large_follow_button'])  $shortenvariables .= ' data-size="large"';
 		$followUserText = sprintf(__('Follow @%s','rotatingtweets'),remove_accents(str_replace('@','',$args['screen_name'])));
-		$result .= "\n<div class='rtw_follow follow-button'><a href='http://twitter.com/".$args['screen_name']."' class='twitter-follow-button'{$shortenvariables} title='".$followUserText."' data-lang='{$twitterlocale}'>".$followUserText."</a></div>";
+		$result .= "\n<div class='rtw_follow follow-button'><a href='https://twitter.com/".$args['screen_name']."' class='twitter-follow-button'{$shortenvariables} title='".$followUserText."' data-lang='{$twitterlocale}'>".$followUserText."</a></div>";
 	endif;
 	rotatingtweets_enqueue_scripts();
 	$rt_cache_delay = max($rt_cache_delay,20);
@@ -2374,6 +2384,13 @@ function rotatingtweets_enqueue_scripts() {
 				'jquery-cycle2-scrollvert' => plugins_url('cyclone-slider-pro/libs/cycle2/jquery.cycle2.scrollVert.min.js'),
 				'rotating_tweet' => plugins_url('js/rotatingtweets_v2_cyclone.js', __FILE__)
 			);
+		elseif ( $style == 'brilliance_pro' || $style == 'brilliance pro' ):
+			$rt_enqueue_script_list = array(
+				'cpotheme_cycle' => get_template_directory_uri() . '/core/scripts/jquery-cycle2-min.js' ,
+				'jquery-cycle2_scrollvert' => plugins_url('js/jquery.cycle2.scrollVert.js', __FILE__),
+				'jquery-cycle2_carousel' => plugins_url('js/jquery.cycle2.carousel.js', __FILE__),
+				'rotating_tweet' => plugins_url('js/rotatingtweets_v2_cyclone.js', __FILE__)
+			);		
 		elseif ( $style == 'digital catapult' || $style == 'digitalcatapult' ):
 			$rt_enqueue_script_list = array(
 				'jquery-cycle2' => get_template_directory_uri() . '/scripts/jquery.cycle2.min.js' ,
