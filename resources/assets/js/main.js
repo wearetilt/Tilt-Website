@@ -1173,7 +1173,6 @@ var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+
 if(!regex.test($('#fieldEmail').val())){
     $('#fieldEmail').addClass('error');
     $('.error-msg').css('display','block');
-    $('.error-msg').css('margin','0px 68px');
     $('#fieldEmail').css('border-bottom', '1px solid #e84c64');
     $('#fieldEmail').css('margin-bottom', '0px');
     $('#errors').css('margin-bottom', '80px');
