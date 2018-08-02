@@ -567,9 +567,9 @@ section {
         width: auto;
         margin: auto;
         background: rgba(31, 31, 31, 0.98);;
-        padding: 7% 18%;
         @media handheld, screen and (min-width: 0px) and (max-width: $job-breaks) {
             width: 100%;
+            padding: 7% 18%;
         }
 
         @media handheld, screen and (min-width: $job-breaks) and (max-width: $bp-phone) {
@@ -587,7 +587,7 @@ section {
             color: #ffffff;
             font-family: $f-seroot-thn;
             @media handheld, screen and (max-width: $bp-phone){
-                font-size: 35px;
+                font-size: 30px;
             }
         }
         .join-list{
@@ -611,12 +611,19 @@ section {
                 cursor: pointer;
                 margin-bottom: -7px;
                 margin-right: 20px;
+                    @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+                        width: 20px;
+                        height: 20px;
+                    }
 
             }
             .tick-text{
                 display: inline-block;
                 vertical-align: middle;
                 letter-spacing: 0.8px;
+                    @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+                        font-size: 24px;
+                    }
             }
             .tick-content{
                 font-size: 14px;
@@ -662,12 +669,17 @@ section {
             width: 100%;
             @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
                 width: 100%;
+                margin-bottom: 10px;
+                font-size: 30px;
             }
             &:focus{
                 outline: none;
             }
             &#fieldEmail{
                 margin-bottom: 40px;
+                @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+                    margin-bottom: 10px;
+                }
             }
         }
 
@@ -689,6 +701,9 @@ section {
             color: #75787b;
             border: 1px solid #75787b;
             }
+            @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+                font-size: 15px;
+            }
         }
         .close-btn{
             min-width: 25px;
@@ -697,6 +712,15 @@ section {
             border: none;
             top: -100px;
             left: 100%;
+            @media handheld, screen and (min-width: 0px) and (max-width: 420px) {
+                left: 72%;
+                top: auto;
+            }
+            @media handheld, screen and (min-width: 421px) and (max-width: 1180px) {
+                top: -100px;
+                left: 82%;
+            }
+
         }
         .error{ /* added to input boxes by check_empty function in main.js */
             color: #e84c64;
