@@ -58,7 +58,7 @@ footer {
         cursor: pointer;
         font-family: $f-merriweather;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 1.2rem;
         letter-spacing: 1px;
         line-height: $icon-size;
         margin-bottom: $icon-size;
@@ -104,7 +104,7 @@ footer {
         font-family: $f-merriweather;
         @include font-size(12);
         color: #616161; 
-        margin-top: 0;
+        margin-top: 0.5rem;
     }
     p.sans-serif {
         @include font-size(25);
@@ -129,7 +129,7 @@ footer {
 .privacy_policy{
     color: #ffffff;
     font-family: $f-merriweather;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 25px;
     float: right;
     text-transform: capitalize;

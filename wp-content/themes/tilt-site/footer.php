@@ -70,9 +70,9 @@
             <p class="join-list">Join our mailing list</p>
             <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E724ECA1B6796EADF65AC759B144112BD8BD6F3C5686E6DB5068B5C5B63F05A873EA988D4992C4B6E542E62E633F34061">
               <p>Hi, my name is</p>
-              <input id="fieldName" name="cm-name" type="text">
+              <input autocomplete="off" id="fieldName" name="cm-name" type="text">
               <p>My email is</p>
-              <input id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" type="text">
+              <input autocomplete="off" id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" type="text">
               <div id="errors">
                 <span id="error-email" class="error-msg">This doesn't look like a valid email</span>
               </div>

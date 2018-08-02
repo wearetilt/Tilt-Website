@@ -1163,7 +1163,7 @@ function isElementInViewport(el) {
 
 // Validating Empty Field
 
-$('form input').keyup(check_empty);
+$('#fieldEmail').blur(check_empty);
 
 function check_empty() {
 var email = false;
@@ -1174,9 +1174,8 @@ if(!regex.test($('#fieldEmail').val())){
     $('#fieldEmail').addClass('error');
     $('.error-msg').css('display','block');
     $('#fieldEmail').css('border-bottom', '1px solid #e84c64');
-    $('#fieldEmail').css('margin-bottom', '0px');
-    $('#errors').css('margin-bottom', '80px');
-
+    $('#fieldEmail').css('margin-bottom', '40px');
+    $('#errors').css('margin-top', '-40px');
 }
 else{
     email = true;
