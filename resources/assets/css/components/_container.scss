@@ -586,6 +586,13 @@ section {
             font-size: 45px;
             color: #ffffff;
             font-family: $f-seroot-thn;
+            &.newsletter{
+                font-size: 20px;
+            }
+            &.newsletter-next{
+                color: #000000;
+                font-size: 20px;
+            }
             @media handheld, screen and (max-width: $bp-phone){
                 font-size: 30px;
             }
@@ -682,8 +689,18 @@ section {
                 }
             }
         }
-
-        button{
+        button.cube-newsletter{
+                align-items: flex-start;
+                text-align: center;
+                cursor: default;
+                color: inherit;
+                background-color: inherit;
+                border-image: none;  
+                border: none;
+                padding: 0;
+                outline: 0;
+        }
+        button:not(.cube-newsletter){
             cursor: pointer;
             outline: none;
             min-width: 135px;

@@ -1190,12 +1190,23 @@ else{
 }
 
 if(email && $('.tick').prop('checked') == true) {
-$('.js-cm-submit-button').css('color','#000000');
-$('.js-cm-submit-button').css('backgroundColor','#ffffff');
-$('svg').css('fill','#f14e67');
-$('.js-cm-submit-button').attr('disabled',false);
+$('.cube--link').addClass('active');
+}
+else{
+    $('.cube--link').removeClass('active');
 }
 }
+
+// function check_valid() {
+    
+//     if(email && $('.tick').prop('checked') == true) {
+//         $('.cube--link').addClass('active');
+//     }
+//     else{
+//         $('.cube--link').removeClass('active');
+//     }
+
+// }
 
 //Function To Display Popup
 function hide() {

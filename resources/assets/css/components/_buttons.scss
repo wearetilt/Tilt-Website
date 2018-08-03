@@ -306,11 +306,13 @@ a{
     background-color: transparent;
 }
 
-a.cube--link {
+.cube--link {
 	display: inline-block;
     margin-top:0;
 
-    &:hover .cube {
+    &:not(.cube-newsletter):hover .cube,
+    &.active .cube{
+        cursor: pointer;
         transform: rotateX(90deg); /* Text bleed at 90º */
         transition: transform 0.25s; /* Animate the transform properties */
     }
