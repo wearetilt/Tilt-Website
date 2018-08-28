@@ -588,6 +588,7 @@ section {
             font-family: $f-seroot-thn;
             &.newsletter{
                 font-size: 20px;
+                color: #808080;
                 @media handheld, screen and (max-width: $bp-phone){
                     font-size: 15px;
                 }
@@ -629,6 +630,7 @@ section {
                 cursor: pointer;
                 margin-bottom: -7px;
                 margin-right: 20px;
+                vertical-align: text-bottom;
                     @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
                         width: 20px;
                         height: 20px;
@@ -710,6 +712,9 @@ section {
                 border: none;
                 padding: 0;
                 outline: 0;
+                .cube--front{
+                    border: 1px solid grey;
+                }
         }
         button:not(.cube-newsletter){
             cursor: pointer;
