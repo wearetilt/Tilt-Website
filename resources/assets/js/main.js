@@ -1189,8 +1189,8 @@ else{
     name = true;
 }
 
-if(email && $('.tick').prop('checked') == true) {
-$('.cube--link').addClass('active');
+if(name && email && $('.tick').prop('checked') == true) {
+$('.cube--link').addClass('active').delay(0);
 }
 else{
     $('.cube--link').removeClass('active');

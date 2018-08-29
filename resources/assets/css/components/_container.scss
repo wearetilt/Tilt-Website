@@ -377,6 +377,12 @@ section {
 .quote-container {
     padding-left: percentage(383/2032);
     padding-right: percentage(383/2032);
+    text-align: center;
+
+    .quote-padding{
+        padding-top: 42%;
+    }
+
     @media handheld,
     screen and (min-width: 0px) and (max-width: $bp-phone) {
         padding-left: 9%;
@@ -388,6 +394,22 @@ section {
         padding-right: 7%;
     }
 }
+
+.quote-text{
+    font-family: $f-merriweather;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 40px;
+}
+.quote-author{
+    font-family: $f-seroot-lt;
+    font-size: 17px;
+    color: #828282 !important;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    margin-top: -10px;
+}
+
 
 .wrapper .quote-container {
     background-color: $c-grey-25;

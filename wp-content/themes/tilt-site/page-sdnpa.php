@@ -140,12 +140,12 @@ get_header('work-item'); ?>
 
 <div class="container container--no-padding">
     <section>
-        <div class="group-container">
+        <div class="quote-container">
             <div class="group group--left">
-                <div class="module module--2-1 module--text-pad module--dark">
+                <div class="module module--2-1 module--text-pad module--dark quote-padding">
                     <div class="module__text">
-                        <p>"The 'Discover Another Way’ campaign film Tilt produced surpassed all our expectations. We loved the emotive combination of film and motion elements and felt the creative communicated our message perfectly - and to a wide audience. The film helped us to promote sustainable tourism in an exciting and inspirational way. This is our second key project with Tilt and we look forward to our continued collaboration!" <br><br>
-                        Luke Geoghegan SDNPA - Communications Officer (Digital & Content)</p>
+                        <p class="quote-text">"The 'Discover Another Way’ campaign film Tilt produced surpassed all our expectations. We loved the emotive combination of film and motion elements and felt the creative communicated our message perfectly - and to a wide audience. The film helped us to promote sustainable tourism in an exciting and inspirational way. This is our second key project with Tilt and we look forward to our continued collaboration!" <br><br></p>
+                        <p class="quote-author">Luke Geoghegan SDNPA - Communications Officer (Digital & Content)</p>
                     </div>
                 </div>
             </div>
