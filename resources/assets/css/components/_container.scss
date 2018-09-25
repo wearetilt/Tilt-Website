@@ -380,7 +380,7 @@ section {
     text-align: center;
 
     .quote-padding{
-        padding-top: 42%;
+        padding-top: 50%;
     }
 
     @media handheld,
@@ -407,7 +407,7 @@ section {
     color: #828282 !important;
     line-height: 40px;
     letter-spacing: 0.05em;
-    margin-top: -10px;
+    margin-top: -39px;
 }
 
 
@@ -744,11 +744,10 @@ section {
             min-width: 135px;
             font-size: 20px;
             font-family: $f-seroot-thn;
-            height: 54px;
             padding: 15px 72px 14px 24px;
             letter-spacing: 1px;
-            position: relative;
             text-align: left;
+            float: right;
             &:disabled{
             cursor: auto;
             color: #75787b;

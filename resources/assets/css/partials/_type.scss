@@ -335,7 +335,7 @@ p {
         }
         @media handheld,
         screen and (min-width: $bp-desktop) {
-            @include font-size(25);
+                @include font-size(25);
         }
         #homePage &,
         .work-container & {
@@ -418,7 +418,94 @@ p {
     }
 }
 
+.sans-serif {
+    p{
+        @include font-size(20);
+        font-family: $f-seroot-lt;
+        line-height: 1.1;
+        text-transform: uppercase;
+        @media handheld,
+        screen and (min-width: 0px) and (max-width: $bp-phone) {
+            @include font-size(16);
+            line-height: 1.2;
+        }
+        @media handheld,
+        screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+            @include font-size(18);
+        }
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
+                @include font-size(25);
+        }
+    }
+}
 
+
+.tag--work-body{
+    p{
+    line-height: 1.7;
+        &:before {
+            height: 12px;
+            width: 12px;
+            @media handheld,
+            screen and (min-width: $bp-desktop) {
+                margin-right: 6px;
+            }
+            @media handheld,
+            screen and (min-width:0px) and (max-width:$bp-phone) {
+                height: 11px;
+                width: 11px;
+            }
+            @media handheld,
+            screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+                height: 12px;
+                width: 12px;
+            }
+        }
+    }
+}
+
+
+
+
+.first-para {
+    .tag--work-title {
+        p{
+            line-height: 1.75;
+            margin: 5px 0px 0px 0px;
+            &:before {
+                height: 13px;
+                width: 13px;
+                @media handheld,
+                screen and (min-width: $bp-desktop) {
+                    margin-right: 6px;
+                }
+                @media handheld,
+                screen and (min-width:0px) and (max-width:$bp-phone) {
+                    height: 11px;
+                    width: 11px;
+                }
+                @media handheld,
+                screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+.quote-attribute {
+    p{
+        @include font-size(18);
+            letter-spacing: 1px;
+            @media handheld,
+            screen and (min-width: 0px) and (max-width: $bp-phone) {
+                @include font-size(16);
+            }
+    }
+}
 /*
 .module--2-1 .module__text p {
 		@include font-size(12);

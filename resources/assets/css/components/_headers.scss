@@ -250,6 +250,7 @@ header {
         background-attachment: fixed;
         background-size: cover;
         min-height: 100vh;
+        z-index: 1;
     }
     &.work-item--motion,
     &.work-item--background {
