@@ -103,7 +103,7 @@ get_header(); ?>
   ?>
                             <img class="monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="an image of an empty apple monitor">
                               <div class="monitor-screen">
-                                <img src="<?php $image;?>" alt="" style="width: 100%; height: 100%;">
+                                <img src="<?php echo $image;?>" alt="" style="width: 100%; height: 100%;">
                               </div>
                     </div>
                 </div>
@@ -446,7 +446,7 @@ get_header(); ?>
               endif;
               if($entries) :
   ?>
-                    <div class="container container-iphone-gallery" <?php $background ? 'style="background-image: url('.$background[0].')"':'';?>>
+                    <div class="container container-iphone-gallery" <?php echo $background ? 'style="background-image: url('.$background[0].')"':'';?>>
   <?php 
               foreach($entries as $entry) :
                 if($entry['image']) : 
@@ -476,7 +476,7 @@ get_header(); ?>
             endif;
             if($images) :
   ?>
-                  <div class="container container--carousel container-screen-slider" <?php $background ? 'style="background-image: url('.$background[0].')"':'';?>>
+                  <div class="container container--carousel container-screen-slider" <?php echo $background ? 'style="background-image: url('.$background[0].')"':'';?> >
                       <section class="carousel">
 
                         <img class="carousel-monitor centre-image" src="<?php echo get_template_directory_uri(); ?>/images/monitor.png" alt="">
@@ -550,7 +550,6 @@ get_header(); ?>
   <?php
         endif;
   ?>
-
   <?php
             endif;
 
@@ -560,9 +559,6 @@ get_header(); ?>
     // no rows found
     endif;
   ?>
-
-
-
 
 <?php get_footer(); ?>
 
