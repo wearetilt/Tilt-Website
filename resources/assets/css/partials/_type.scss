@@ -232,6 +232,9 @@ p {
     line-height:1.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    a {
+        color: #fb4a71;
+    }
     &+& {
         margin-top: 1.8em;
     }

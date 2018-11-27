@@ -560,5 +560,10 @@ get_header(); ?>
     endif;
   ?>
 
+    <div class="group-container">
+        <a class="project-navigation paginate_prev" href="../reliance"><span>&#8249;</span> Previous Project</a>
+        <a class="project-navigation paginate_next" href="../bp-fll-stories">Next Project <span>&#8250;</span></a>
+    </div>
+
 <?php get_footer(); ?>
 

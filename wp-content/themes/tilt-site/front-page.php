@@ -109,16 +109,16 @@ $args = array(
 
 				<div class="module module--2-1">
 
-					<a href="<?php get_site_url(); ?>/work/code-it">
+					<a href="<?php get_site_url(); ?>/work/moments-of-wonder">
 
 						<div class="overlay area-dark">
 							<div class="overlay-text">
-								<p class="tag tag--home-title">Work: Interactive</p>
-								<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
+								<p class="tag tag--home-title">Work: Web</p>
+								<h2>Reuters Plus<br /><span class="light">Moments of Wonder</span></h2>
 							</div> <!-- /end overlay-text -->
 						</div> <!-- /end overlay -->
 
-						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
+						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/reuters-plus.jpg')"></div>
 					</a>
 
 				</div>
