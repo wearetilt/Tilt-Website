@@ -74,7 +74,7 @@ get_header(); ?>
             endif;
   ?>
                       <div class="ratio">
-                          <video data-video="<?php echo get_sub_field('video');?>" id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_sub_field('video_loop_poster'); ?>" width="100%" height="100%" >
+                          <video data-video="<?php echo get_sub_field('video');?>" id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_sub_field('video_loop_poster'); ?>" width="100%" height="100%" >
                               <source id="header-video" src="<?php echo get_sub_field('video_loop');?>" type="video/mp4">
                           </video>
                       </div>

@@ -18,7 +18,7 @@ get_header('404'); ?>
 <header id="page_404" class="work-item work-item--motion area-dark">
     <div class="module--video module--header">
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%">
                     <source id="header-video" src="https://player.vimeo.com/external/145886197.hd.mp4?s=d86fe3331ce8d5da4086d84222ea89babd0f743c&profile_id=113" type="video/mp4">
             </video>
         </div>
