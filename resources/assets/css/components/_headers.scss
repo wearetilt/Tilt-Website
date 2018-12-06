@@ -18,7 +18,7 @@ header {
         min-height: auto;
         height: auto;
         .container.container--header {
-            position: relative;
+            position: absolute;
             padding-top: 3%;
         }
     }
@@ -184,11 +184,12 @@ header {
     }
     &.work-item {
         .container--header {
+            padding-top: 1%;
             padding-bottom: 5%;
             position: absolute;
             bottom: -1px;
             width: 100%;
-            background-color: transparent;
+            background-color: rgba(0,0,0,0.6);
         } // .monitor-wrapper+.container--header {
         //     position: relative;
         //     padding-top: 3%;
