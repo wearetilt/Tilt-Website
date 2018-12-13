@@ -324,14 +324,14 @@
         }
     }
     video {
-        position: absolute;
-        top: -9999px;
-        right: -9999px;
-        bottom: -9999px;
-        left: -9999px;
+        position: relative;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
         display: block;
         min-width: 100%;
-        height: auto;
+        height: 0;
         min-height: 100%;
         margin: auto;
         transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;

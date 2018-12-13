@@ -377,8 +377,8 @@ get_header(); ?>
   ?>
                         <div class="<?php $moduleClass;?> module--video">
                             <div class="ratio">
-                                <video poster="<?php $image[0];?>" autoplay loop muted>
-                                    <source src="<?php $video;?>" type="video/mp4">
+                                <video poster="<?php echo $image[0];?>" autoplay loop muted>
+                                    <source src="<?php echo $video;?>" type="video/mp4">
                                 </video>
                             </div>
                         </div> <!-- /end module -->
@@ -400,6 +400,19 @@ get_header(); ?>
   <?php
         endif;
   ?>
+
+<!-- full vh video section -->
+
+<?php 
+  elseif(get_row_layout() == 'full_height_video'):
+?>
+    <div class="container full-height-video area-dark container--no-padding">
+                              <video autoplay loop muted>
+                                    <source src="<?php echo get_sub_field('video');?>" type="video/mp4">
+                                </video>
+    </div>
+
+
 
   <!-- mac headline -->
 
