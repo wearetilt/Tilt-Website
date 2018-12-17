@@ -39,6 +39,8 @@ get_header(); ?>
             $pageId = get_the_ID();
             $terms = get_the_terms( $pageId, 'work_tags');
             $arrTerms = array();
+            $monitorTop = get_sub_field ('monitor_gradient_top');
+            $monitorBottom = get_sub_field ('monitor_gradient_bottom');
 
               if($terms) :
                 foreach($terms as $term) {
@@ -61,7 +63,7 @@ get_header(); ?>
   <?php
     endif;
   ?>
-                <header data-color="<?php echo get_sub_field('project_color');?>" class="work-item area-dark work-header-video <?php echo get_sub_field('type') == 'video' &&  get_sub_field('video_loop') ? 'work-header-video' : 'work-header';?><?php $content['intro_background'] ? ' work-item--background' : '';?><?php echo get_sub_field('type') == 'background' ? ' work-item--background-image' : '';?><?php echo get_sub_field('type') == 'monitor' ? ' work-item--monitor' : '';?>" <?php echo get_sub_field('type') == 'background' ? 'style="background-image: url('.$image.')"' : '';?> >
+                <header data-color="<?php echo get_sub_field('project_color');?>" class="work-item area-dark work-header-video <?php echo get_sub_field('type') == 'video' &&  get_sub_field('video_loop') ? 'work-header-video' : 'work-header';?><?php $content['intro_background'] ? ' work-item--background' : '';?><?php echo get_sub_field('type') == 'background' ? ' work-item--background-image' : '';?><?php echo get_sub_field('type') == 'monitor' ? ' work-item--monitor' : '';?>" <?php echo get_sub_field('type') == 'background' ? 'style="background-image: url('.$image.')"' : '';?> <?php echo get_sub_field('type') == 'monitor' ? 'style="background: linear-gradient(to bottom, '.$monitorTop.' 0%, '.$monitorBottom.' 74%)"' : '';?> >
   <?php
           if(get_sub_field('type') == 'video' && get_sub_field('video_loop')) :
   ?>
@@ -110,7 +112,7 @@ get_header(); ?>
   <?php 
         endif;
   ?>
-                <div class="container container--header">
+                <div class="container container--header" <?php echo get_sub_field('type') == 'monitor' ? 'style="background-color: transparent"' : ''; ?> >
                   <div class="header-title">
                     <p class="tag tag--work-body"><?php echo get_sub_field('category');?></p>
                       <h1>
