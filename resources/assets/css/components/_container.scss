@@ -330,6 +330,15 @@ section {
             width: 50%;
         }
 */
+    .gallery-video {
+        margin-top: -16px;
+        video {
+            top: 0;
+        }
+        .vjs-big-play-button{
+            top: -50% !important;
+        }
+    }
         .group--left {
             float: left;
         }

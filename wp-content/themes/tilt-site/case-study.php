@@ -163,6 +163,32 @@ get_header(); ?>
                 </div>
             </header>
 
+<!-- headline text -->
+
+<?php 
+
+        elseif( get_row_layout() == 'headline__text'):
+
+          $headline = get_sub_field('headline');
+          $text = get_sub_field('text');
+
+          $arrText = explode('</p>', $text);
+          $arrText[0] = str_replace('<p>', '<p class="first-para tag--work-title">', $arrText[0]);
+          $text2 = implode('</p>', $arrText);
+
+          $background = get_sub_field('background');
+
+          if(!$background) {
+              $background = 'dark';
+          }
+          ?>
+
+          <div class="container container-headline-text area-<?= $background ;?>">
+            <section class="text-section">
+              <h2><?= $headline;?></h2>
+                <div class="text-section__para"><?= $text2;?></div>
+            </section>
+          </div>
 
   <!-- gallery -->
   <?php
@@ -221,7 +247,7 @@ get_header(); ?>
 
                         if(isset($arrVideos[$i])) : 
   ?>
-                            <div class="<?php echo $moduleClass;?> module--16-9 module--video">
+                            <div class="<?php echo $moduleClass;?> module--16-9 module--video gallery-video">
                                 <div class="ratio">
                                     <video controls poster="<?php echo $image['url'];?>" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
                                         <source src="<?php echo $arrVideos[$i];?>" type="video/mp4">
@@ -554,7 +580,7 @@ get_header(); ?>
                     else : 
   ?>
                               <div class="module module--2-1 module--visible">
-                                  <div class="ratio" style="background-image: url(<?php $image[0];?>)"></div>
+                                  <div class="ratio" style="background-image: url(<?php echo $image[0];?>)"></div>
                               </div>
   <?php
                   endif;
