@@ -247,7 +247,7 @@ get_header(); ?>
 
                         if(isset($arrVideos[$i])) : 
   ?>
-                            <div class="<?php echo $moduleClass;?> module--16-9 module--video gallery-video">
+                            <div class="<?php echo $moduleClass;?> module--16-9 module--video module--nozoom gallery-video">
                                 <div class="ratio">
                                     <video controls poster="<?php echo $image['url'];?>" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
                                         <source src="<?php echo $arrVideos[$i];?>" type="video/mp4">
@@ -403,7 +403,7 @@ get_header(); ?>
                     
                     if($video) : 
   ?>
-                        <div class="<?php $moduleClass;?> module--video">
+                        <div class="<?php $moduleClass;?> module--video module--nozoom">
                             <div class="ratio">
                                 <video poster="<?php echo $image[0];?>" autoplay loop muted>
                                     <source src="<?php echo $video;?>" type="video/mp4">

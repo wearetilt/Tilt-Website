@@ -161,12 +161,17 @@
         background-color: transparent;
     }
     &.module--no-zoom {
-        .ratio {
+        &.ratio {
+            transform: scale(1);
             &:hover {
-                transform: none;
+                transform: scale(1);
             }
         }
     }
+}
+
+.module--nozoom {
+    transform: scale(1);
 }
 
 .module--visible {
@@ -313,14 +318,14 @@
 .module--video {
     overflow: hidden;
     @extend %clearfix;
-    .ratio {
+    &.ratio {
         &:hover {
-            transform: none;
+            transform: scale(1);
         }
     }
     video {
         &:hover {
-            transform: none;
+            transform: scale(1);
         }
     }
     video {
