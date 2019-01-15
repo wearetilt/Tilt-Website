@@ -1351,7 +1351,7 @@ header .monitor-wrapper { padding-top: 6%; }
 
 header .monitor-holder { z-index: 1; max-width: 40%; }
 
-@media handheld, screen and (min-width: 1024px) { header .monitor-holder { max-width: 40%; } }
+@media handheld, screen and (min-width: 1024px) { header .monitor-holder { max-width: 30%; } }
 
 header .monitor-screen { top: 4%; height: 69%; left: 3.5%; width: 93%; }
 
