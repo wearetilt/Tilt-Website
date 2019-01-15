@@ -75,49 +75,7 @@ $team_items = get_posts( $args );
 		</div>
 	</div>
 
-	<div class="container container--no-padding area-dark">
-		<div class="group-container">
-			<div class="group group--left">
-				<div id="twitter__module" class="module module--1-1 area-dark">
-					<div class="module__text">
-						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
 
-					</div> <!-- /end text-section -->
-				</div>
-				<div class="module module--1-1">
-					<a id="instagram_link_1" href="#" target="_blank">
-                        <div class="overlay area-dark"></div>
-				        <div id="instagram_box_1" class="ratio instagram-box"></div>
-                    </a>
-				</div>
-				<div class="module module--2-2">
-					<a id="instagram_link_2" href="#" target="_blank">
-                        <div class="overlay area-dark"></div>
-				        <div id="instagram_box_2" class="ratio instagram-box"></div>
-                    </a>
-				</div>
-			</div>
-			<div class="group group--right">
-				<div class="module module--2-2">
-					<a id="instagram_link_3" href="#" target="_blank">
-                        <div class="overlay area-dark"></div>
-				        <div id="instagram_box_3" class="ratio instagram-box"></div>
-                    </a>
-				</div>
-				<div class="module module--1-1">
-					<a id="instagram_link_4" href="#" target="_blank">
-                        <div class="overlay area-dark"></div>
-				        <div id="instagram_box_4" class="ratio instagram-box"></div>
-                    </a>
-				</div>
-				<div id="twitter__module" class="module module--1-1 area-dark">
-					<div class="module__text">
-						<?php echo do_shortcode( "[rotatingtweets include_rts='1' show_meta_reply_retweet_favorite='1' offset='1' official_format='2' search='from:wearetilt' tweet_count='3' show_follow='1' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
-					</div> <!-- /end text-section -->
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 <?php /*
@@ -129,38 +87,6 @@ $team_items = get_posts( $args );
 
 	<script type="text/javascript">
 
-	var user;
-
-	<?php
-		$insta = file_get_contents("https://api.instagram.com/v1/users/self/media/recent/?access_token=2148730231.3aa6f14.5da21e1ab7024c78b77a9c88a3fb0a3d");
-	 ?>
-
-	 var pictureData = JSON.parse(<?php echo json_encode($insta) ?>);
-
-	var doPicture = function(pictureData){
-
-	    var instagramImage1 = pictureData.data[0].images.standard_resolution.url;
-	    var instagramLink1 = pictureData.data[0].link;
-	    var instagramImage2 =  pictureData.data[1].images.standard_resolution.url;
-	    var instagramLink2 = pictureData.data[1].link;
-		var instagramImage3 = pictureData.data[2].images.standard_resolution.url;
-		var instagramLink3 = pictureData.data[2].link;
-		var instagramImage4 =  pictureData.data[3].images.standard_resolution.url;
-		var instagramLink4 = pictureData.data[3].link;
-
-	    document.getElementById('instagram_box_1').style.backgroundImage = "url('" + instagramImage1 + "')";
-	    document.getElementById('instagram_box_2').style.backgroundImage = "url('" + instagramImage2 + "')";
-	    document.getElementById('instagram_link_1').href = instagramLink1;
-	    document.getElementById('instagram_link_2').href = instagramLink2;
-		document.getElementById('instagram_box_3').style.backgroundImage = "url('" + instagramImage3 + "')";
-		document.getElementById('instagram_box_4').style.backgroundImage = "url('" + instagramImage4 + "')";
-		document.getElementById('instagram_link_3').href = instagramLink3;
-		document.getElementById('instagram_link_4').href = instagramLink4;
-
-
-	}
-
-	doPicture(pictureData);
 	</script>
 
 </div>
