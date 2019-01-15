@@ -399,7 +399,7 @@
     transition: opacity 0.3s ease-in;
     & h2.underlined {
         margin-bottom: 0px;
-        @include font-size(35);
+        @include font-size(32);
         &:after {
             width: em(300, 75);
         }
