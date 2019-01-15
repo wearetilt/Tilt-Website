@@ -399,10 +399,13 @@
     transition: opacity 0.3s ease-in;
     & h2.underlined {
         margin-bottom: 0px;
-        @include font-size(32);
+        @include font-size(28);
         &:after {
             width: em(300, 75);
         }
+    }
+    & p {
+        @include font-size(20);
     }
     .overlay-text {
         left: 0px;
