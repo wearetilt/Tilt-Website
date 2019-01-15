@@ -99,7 +99,7 @@ get_header('news'); ?>
 		<?php if(get_field('vimeo_id')) { ?>
 			<div class="container--newsvideo">
 				<div class="group-container">
-					<div class="module module--16-9 module--video module--nozoom">
+					<div class="module--16-9 module--video module--nozoom">
 						<div class="ratio">
 							<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id'); ?>?color=FF406A&title=0&byline=0&portrait=0 " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							
@@ -113,7 +113,7 @@ get_header('news'); ?>
 	
 		<div class="container--newsvideo">
 			<div class="group-container">
-				<div class="module module--16-9 module--video module--nozoom">
+				<div class="module--16-9 module--video module--nozoom">
 					<div class="ratio">
 						<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id_two'); ?>?color=FF406A&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
@@ -127,7 +127,7 @@ get_header('news'); ?>
 
 		<div class="container--newsvideo">
 			<div class="group-container">
-				<div class="module module--16-9 module--video module--nozoom">
+				<div class="module--16-9 module--video module--nozoom">
 					<div class="ratio">
 						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>" frameborder="0" allowfullscreen></iframe>
 					</div>

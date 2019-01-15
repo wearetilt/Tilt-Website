@@ -39,6 +39,8 @@ get_header(); ?>
             $pageId = get_the_ID();
             $terms = get_the_terms( $pageId, 'work_tags');
             $arrTerms = array();
+            $monitorTop = get_sub_field ('monitor_gradient_top');
+            $monitorBottom = get_sub_field ('monitor_gradient_bottom');
 
               if($terms) :
                 foreach($terms as $term) {
@@ -61,7 +63,7 @@ get_header(); ?>
   <?php
     endif;
   ?>
-                <header data-color="<?php echo get_sub_field('project_color');?>" class="work-item area-dark work-header-video <?php echo get_sub_field('type') == 'video' &&  get_sub_field('video_loop') ? 'work-header-video' : 'work-header';?><?php $content['intro_background'] ? ' work-item--background' : '';?><?php echo get_sub_field('type') == 'background' ? ' work-item--background-image' : '';?><?php echo get_sub_field('type') == 'monitor' ? ' work-item--monitor' : '';?>" <?php echo get_sub_field('type') == 'background' ? 'style="background-image: url('.$image.')"' : '';?> >
+                <header data-color="<?php echo get_sub_field('project_color');?>" class="work-item area-dark work-header-video <?php echo get_sub_field('type') == 'video' &&  get_sub_field('video_loop') ? 'work-header-video' : 'work-header';?><?php $content['intro_background'] ? ' work-item--background' : '';?><?php echo get_sub_field('type') == 'background' ? ' work-item--background-image' : '';?><?php echo get_sub_field('type') == 'monitor' ? ' work-item--monitor' : '';?>" <?php echo get_sub_field('type') == 'background' ? 'style="background-image: url('.$image.')"' : '';?> <?php echo get_sub_field('type') == 'monitor' ? 'style="background: linear-gradient(to bottom, '.$monitorTop.' 0%, '.$monitorBottom.' 74%)"' : '';?> >
   <?php
           if(get_sub_field('type') == 'video' && get_sub_field('video_loop')) :
   ?>
@@ -74,7 +76,7 @@ get_header(); ?>
             endif;
   ?>
                       <div class="ratio">
-                          <video data-video="<?php echo get_sub_field('video');?>" id="header-video-player" class="video-js vjs-default-skin" autoplay loop poster="<?php echo get_sub_field('video_loop_poster'); ?>" width="100%" height="100%" >
+                          <video data-video="<?php echo get_sub_field('video');?>" id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_sub_field('video_loop_poster'); ?>" width="100%" height="100%" >
                               <source id="header-video" src="<?php echo get_sub_field('video_loop');?>" type="video/mp4">
                           </video>
                       </div>
@@ -110,7 +112,7 @@ get_header(); ?>
   <?php 
         endif;
   ?>
-                <div class="container container--header">
+                <div class="container container--header" <?php echo get_sub_field('type') == 'monitor' ? 'style="background-color: transparent"' : ''; ?> >
                   <div class="header-title">
                     <p class="tag tag--work-body"><?php echo get_sub_field('category');?></p>
                       <h1>
@@ -161,6 +163,32 @@ get_header(); ?>
                 </div>
             </header>
 
+<!-- headline text -->
+
+<?php 
+
+        elseif( get_row_layout() == 'headline__text'):
+
+          $headline = get_sub_field('headline');
+          $text = get_sub_field('text');
+
+          $arrText = explode('</p>', $text);
+          $arrText[0] = str_replace('<p>', '<p class="first-para tag--work-title">', $arrText[0]);
+          $text2 = implode('</p>', $arrText);
+
+          $background = get_sub_field('background');
+
+          if(!$background) {
+              $background = 'dark';
+          }
+          ?>
+
+          <div class="container container-headline-text area-<?= $background ;?>">
+            <section class="text-section">
+              <h2><?= $headline;?></h2>
+                <div class="text-section__para"><?= $text2;?></div>
+            </section>
+          </div>
 
   <!-- gallery -->
   <?php
@@ -219,7 +247,7 @@ get_header(); ?>
 
                         if(isset($arrVideos[$i])) : 
   ?>
-                            <div class="<?php echo $moduleClass;?> module--16-9 module--video">
+                            <div class="<?php echo $moduleClass;?> module--16-9 module--video module--nozoom gallery-video">
                                 <div class="ratio">
                                     <video controls poster="<?php echo $image['url'];?>" class="video-js vjs-default-skin page-video" controls width="100%" height="100%">
                                         <source src="<?php echo $arrVideos[$i];?>" type="video/mp4">
@@ -375,10 +403,10 @@ get_header(); ?>
                     
                     if($video) : 
   ?>
-                        <div class="<?php $moduleClass;?> module--video">
+                        <div class="<?php $moduleClass;?> module--video module--nozoom">
                             <div class="ratio">
-                                <video poster="<?php $image[0];?>" autoplay loop muted>
-                                    <source src="<?php $video;?>" type="video/mp4">
+                                <video poster="<?php echo $image[0];?>" autoplay loop muted>
+                                    <source src="<?php echo $video;?>" type="video/mp4">
                                 </video>
                             </div>
                         </div> <!-- /end module -->
@@ -400,6 +428,19 @@ get_header(); ?>
   <?php
         endif;
   ?>
+
+<!-- full vh video section -->
+
+<?php 
+  elseif(get_row_layout() == 'full_height_video'):
+?>
+    <div class="container full-height-video area-dark container--no-padding">
+                              <video autoplay loop muted>
+                                    <source src="<?php echo get_sub_field('video');?>" type="video/mp4">
+                                </video>
+    </div>
+
+
 
   <!-- mac headline -->
 
@@ -539,7 +580,7 @@ get_header(); ?>
                     else : 
   ?>
                               <div class="module module--2-1 module--visible">
-                                  <div class="ratio" style="background-image: url(<?php $image[0];?>)"></div>
+                                  <div class="ratio" style="background-image: url(<?php echo $image[0];?>)"></div>
                               </div>
   <?php
                   endif;

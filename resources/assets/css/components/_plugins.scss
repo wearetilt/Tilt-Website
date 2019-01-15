@@ -50,7 +50,11 @@ div.rtw_rt_meta{
 	display: none;
 }
 
-.news-container #social a.synved-social-provider-facebook, .news-container #social a.synved-social-provider-mail { margin-right:15px !important; }
+.news-container #social a.synved-social-provider-facebook,.synved-social-provider-twitter, .news-container #social a.synved-social-provider-mail { 
+	margin-right: 20px !important; 
+    vertical-align: middle;
+    padding-top: 1px;
+}
 
 #social h2.news-share {
 	float:left;
