@@ -25,7 +25,7 @@ $args = array(
   'numberposts' => 999,
   'post_type'   => 'team_item'
 );
- 
+
 $team_items = get_posts( $args );
 
 ?>
@@ -39,44 +39,33 @@ $team_items = get_posts( $args );
 			<?php
 			$name = $team->post_title;
 			$position = get_field('position', $team);
-			$department = get_field('department', $team);
-			$video = get_field('video', $team);
-			$videoSmall = get_field('video_small', $team);
-			$isDirector = get_field('director', $team);
+			$isLinks = get_field('show_links', $team);
 			$teamImage = get_the_post_thumbnail_url($team, 'team');
-			$description = apply_filters('the_content', $team->post_content);
-			$description2 = strip_tags(get_field('did_you_know', $team));
+			$email = get_field('emaill_add', $team);
+			$linkedin = get_field('linkedin_add', $team);
 
 			$cssClass = "module module--staff module--video";
 
-			if($isDirector) {
-				$cssClass .= " module--staff__director";
-			}
 
 			?>
 
-			<div id="staff-<?= $i;?>" class="<?= $cssClass;?>" data-image="<?= $teamImage;?>" data-fullvideo='<?= $video;?>' style="background-image: url('<?= $teamImage;?>'); background-size: cover; background-position: 50% 50%;">
+			<div id="staff-<?= $i;?>" class="<?= $cssClass; ?>" style="background-image: url('<?= $teamImage;?>'); background-size: cover; background-position: 50% 50%;">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined"><?= $name;?></h2>
 						<p class="sans-serif">
 							<?= $position;?>
-							<?php if($department) {echo ':<br>'.$department;}?>
 						</p>
+							<ul>
+								<li class="email"><a href="mailto:<?php echo $email; ?>">Email</a></li>
+								<?php if($isLinks) { ?>
+								<li class="linkedin"><a href="<?php echo $linkedin; ?>" target="_blank">Linkedin</a></li>
+							<?php } ?>
+
+							</ul>
 					</div>
 				</div>
-				<div class="ratio">
-					<video poster="<?= $teamImage;?>" muted="true">
-						<source src="<?= $videoSmall;?>" type="video/mp4">
-					</video>
-				</div>
-				<div class="info-container">
-					<div class="name"><?= $name;?></div>
-					<div class="position"><?= $position;?></div>
-					<div class="department"><?= $department;?></div>
-					<div class="description"><?= $description;?></div>
-					<div class="description2"><?= $description2;?></div>
-				</div>
+				<div class="bottom-border" aria-hidden="true"></div>
 			</div>
 
 
@@ -127,7 +116,7 @@ $team_items = get_posts( $args );
 					</div> <!-- /end text-section -->
 				</div>
 			</div>
-		</div> 
+		</div>
 	</div>
 
 
