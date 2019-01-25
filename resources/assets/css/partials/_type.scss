@@ -571,9 +571,12 @@ a {
             @include font-size(17);
         }
     }
-    &:hover {
-        color: rgba(255, 76, 116, 0.5);
+    @media screen and (min-width: $bp-desktop) {
+      &:hover {
+          color: rgba(255, 76, 116, 0.5);
+      }
     }
+
 }
 
 strong,

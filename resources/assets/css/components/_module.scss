@@ -429,9 +429,13 @@
           width: 20px;
           height: 23px;
           background: url('../images/mail.svg') center center / 100% auto no-repeat;
-          &:hover {
-            opacity: 0.7;
+
+          @media screen and (min-width: $bp-desktop) {
+            &:hover {
+              opacity: 0.7;
+            }
           }
+
         }
         &.linkedin {
           a {
