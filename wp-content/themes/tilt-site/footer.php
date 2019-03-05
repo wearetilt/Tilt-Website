@@ -56,7 +56,7 @@
 
     </div><!-- /end footer-contacts -->
 
-		<p id="footnote-1" class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content copyright We Are Tilt Ltd 2018. All rights reserved.<a class="privacy_policy" href="/privacy-policy" target="_blank">Privacy Policy.</a></p>
+		<p id="footnote-1" class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-2019 We Are Tilt Ltd. All rights reserved.<a class="privacy_policy" href="/privacy-policy" target="_blank">Privacy Policy.</a></p>
 		<p id="footnote-2" class="footnote">Registered in England & Wales under Reg. No 07280900. Registered Office: 1 Harbour House, Harbour Way, Shoreham-by-Sea, West Sussex, BN43 5HZ. <br/>Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
 
 	</div><!-- /end signoff -->

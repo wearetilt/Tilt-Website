@@ -189,7 +189,8 @@ header {
             position: absolute;
             bottom: -1px;
             width: 100%;
-            background-color: rgba(0,0,0,0.6);
+            background-image: linear-gradient(to top, black, transparent);
+            background-color: transparent;
         } // .monitor-wrapper+.container--header {
         //     position: relative;
         //     padding-top: 3%;
