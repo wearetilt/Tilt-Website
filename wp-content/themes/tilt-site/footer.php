@@ -98,6 +98,7 @@
       </div>
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
  <script src="//vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/video.js"></script>
  <!-- <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>  -->

@@ -185,11 +185,10 @@ header {
     &.work-item {
         .container--header {
             padding-top: 1%;
-            padding-bottom: 5%;
+            padding-bottom: 30%;
             position: absolute;
             bottom: -1px;
             width: 100%;
-            background-image: linear-gradient(to top, black, transparent);
             background-color: transparent;
         } // .monitor-wrapper+.container--header {
         //     position: relative;
