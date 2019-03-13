@@ -1255,26 +1255,43 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     var playVideo = function (video) {
-
         var video = $(video);
-        var playButton = $('.header-play');
         
-        if(video[0].paused == true){
-            video[0].play();
-            playButton.hide();
-        }else {
-            video[0].pause();
-            playButton.show();
-        }
+            if(video[0].paused == true){
+                video[0].play();
+
+            }else {
+                video[0].pause();
+            }
 
     };
 
     $('video').on('click', function(e){
 
+        var parent = $(e.target).parent().attr('class');
+        var parent = parent.replace(/\s+/g, '.');
+        var playButton = $('.' + parent + ' .header-play');
+
             playVideo(e.target);
+            playButton.toggleClass('play-button-display');
+
 
     });
 
+//header scroll down and up animation
+
+    var position = $(window).scrollTop();
+
+    $(window).scroll(function(){
+
+        var scroll = $(window).scrollTop();
+
+        if(scroll > position){
+        $('.header-title').css({'transform':'translateY(450px)', 'opacity': '0', 'transition': 'all ease 2s'});
+        }else{
+            $('.header-title').css({'transform': 'translateY(0)', 'opacity': '1', 'transition': 'all ease 2s'});
+        }
+    })
 
 
 });

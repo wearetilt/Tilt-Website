@@ -859,6 +859,13 @@ section {
     .header-play {
         top: 44%;
     }
+    video[poster]{
+        object-fit: cover;
+    }
+}
+
+.play-button-display {
+    display: none;
 }
 
 .video-row {
@@ -880,6 +887,9 @@ section {
     }
     video {
         width: 100%;
+    }
+     video[poster]{
+        object-fit: cover;
     }
 }
 
