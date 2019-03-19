@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 /* Template Name: new work
 */ 
 /**
@@ -208,7 +208,7 @@ if( have_rows('work_items') ):
           ?>
           <div class="container full-height-video area-dark">
             <div id="header-play" class="header-play video-ready"></div>
-            <video id="work-video" poster="<?php echo $poster[url]; ?>">
+            <video id="work-video" poster="<?php echo $poster['url']; ?>">
               <source src="<?php echo get_sub_field('video');?>" type="video/mp4">
               </video>
             </div>
@@ -230,14 +230,14 @@ if( have_rows('work_items') ):
 
               <div class="left-video">
                 <div id="header-play" class="header-play video-ready"></div>
-                <video id="work-video" poster="<?php echo $left_poster[url]; ?>"> 
+                <video id="work-video" poster="<?php echo $left_poster['url']; ?>"> 
                   <source src="<?php echo $left_video; ?>" type="video/mp4">
                   </video>
                 </div>
 
                 <div class="right-video">
                   <div id="header-play" class="header-play video-ready"></div>
-                  <video id="work-video" poster="<?php echo $right_poster[url]; ?>"> 
+                  <video id="work-video" poster="<?php echo $right_poster['url']; ?>"> 
                     <source src="<?php echo $right_video; ?>" type="video/mp4">
                     </video>
                   </div>
@@ -296,7 +296,7 @@ if( have_rows('work_items') ):
                   foreach(get_sub_field('carousel_image') as $image){
                     ?>
                     <div class="carousel-image slide<?php echo $i+1?>">
-                      <img class="slideimage " src="<?php echo $image[url];?>">
+                      <img class="slideimage " src="<?php echo $image['url'];?>">
                     </div>
                     <?php
                     $i++;

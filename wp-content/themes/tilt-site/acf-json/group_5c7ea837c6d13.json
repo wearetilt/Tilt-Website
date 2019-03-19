@@ -20,15 +20,15 @@
                     "key": "5c7ea8c2c36f3",
                     "name": "frontpage_work_items",
                     "label": "Frontpage work items",
-                    "display": "block",
+                    "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_5c7eaa4957950",
-                            "label": "Work item left",
+                            "key": "field_5c8f6cd277513",
+                            "label": "work item left",
                             "name": "work_item_left",
                             "type": "post_object",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -45,12 +45,12 @@
                             "ui": 1
                         },
                         {
-                            "key": "field_5c7eab42bc4e1",
-                            "label": "Work item right",
+                            "key": "field_5c8f6cef77514",
+                            "label": "work item right",
                             "name": "work_item_right",
                             "type": "post_object",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -65,6 +65,57 @@
                             "multiple": 0,
                             "return_format": "object",
                             "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5c8bd5678d94e": {
+                    "key": "5c8bd5678d94e",
+                    "name": "news_row",
+                    "label": "News row",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c8f6cfe77515",
+                            "label": "news list",
+                            "name": "news_list",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 4,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5c8f6d1b77516",
+                                    "label": "news item",
+                                    "name": "news_item",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "object",
+                                    "ui": 1
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -93,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1551806384
+    "modified": 1553000675
 }
