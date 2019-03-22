@@ -64,7 +64,7 @@ if( have_rows('work_items') ):
 
             <?php 
           endif;
-          ?>
+          ?>   
 
           <!-- title section -->
           <div class="container container--header" <?php echo get_sub_field('type') == 'monitor' ? 'style="background-color: transparent"' : ''; ?> >
