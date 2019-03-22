@@ -77,48 +77,47 @@ get_header(); ?>
             <div class="container area-dark work-item-left">
               <a href="<?php echo get_permalink($left_item);?>">
                 <img src="<?php echo get_the_post_thumbnail_url($left_item);?>">
+                  <div class="container title_section" style="background: transparent;">
+                      <h2><?php echo get_the_title($left_item);?></h2>
+                      <?php 
+                        $string = $left_item->post_name;
+                        $leftItem = str_replace("-", " ", $string);
+                        echo $leftItem;
+                      ?>
+                  </div>
               </a>
-              <div class="container title_section" style="background: transparent;">
-
-                  <h2><?php echo get_the_title($left_item);?></h2>
-                  <?php 
-                    $string = $left_item->post_name;
-                    $leftItem = str_replace("-", " ", $string);
-                    echo $leftItem;
-                  ?>
-
-              </div>
             </div>
 
             <div class="container area-dark work-item-right">
               <a href="<?php echo get_permalink($right_item);?>">
                 <img src="<?php echo get_the_post_thumbnail_url($right_item);?>">
+                  <div class="container title_section" style="background: transparent;">
+                      <h2><?php echo get_the_title($right_item);?></h2>
+                      <?php 
+                        $string = $right_item->post_name;
+                        $rightItem = str_replace("-", " ", $string);
+                        echo $rightItem;
+                      ?>
+                  </div>
               </a>
-              <div class="container title_section" style="background: transparent;">
-
-                  <h2><?php echo get_the_title($right_item);?></h2>
-                  <?php 
-                    $string = $right_item->post_name;
-                    $rightItem = str_replace("-", " ", $string);
-                    echo $rightItem;
-                  ?>
-
-              </div>
             </div>
 
           </div>
 
+          
       <?php 
         elseif(get_row_layout() == 'news_row'):
-          if(get_sub_field('news_list')) :
-            foreach (get_sub_field('news_list') as $newsItem) {
-              $newsItem = get_sub_field('news_item');
+          if(get_sub_field('news_items')) :
+            foreach (get_sub_field('news_items') as $newsItem) {
+
       ?>
-        <div class="news-content"> 
-          <a href="<?php echo get_permalink($newsItem);?>">
-            <img src="<?php echo get_the_post_thumbnail_url($newsItem);?>">
-          </a>
-        </div>
+        <a href="<?php echo get_permalink($newsItem['news_item']->ID);?>">
+          <div class="news-content"> 
+            <p>News</p>
+            <h3><?php echo $newsItem['news_item']->post_title; ?></h3>
+
+          </div>
+        </a>
 
       <?php
             }

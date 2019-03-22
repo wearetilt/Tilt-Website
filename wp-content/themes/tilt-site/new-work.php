@@ -75,7 +75,7 @@ if( have_rows('work_items') ):
                 <?php 
                 if(get_sub_field('title')) : 
                   ?> 
-                  <br><span class="light underlined"><?php echo get_sub_field('title');?></span>
+                  <br><span class="light"><?php echo get_sub_field('title');?></span>
                   <?php
                 endif;
                 ?>
