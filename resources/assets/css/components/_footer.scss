@@ -44,18 +44,18 @@ footer {
     }
     #popup{
         display: inline-block;
-        color: #fb4a71;
+        color: #ffffff;
         background: transparent;
         cursor: pointer;
-        font-family: $f-merriweather;
+        font-family: $f-seroot;
         font-weight: 300;
-        font-size: 17px;
+        font-size: 15px;
         letter-spacing: 1px;
         line-height: $icon-size;
         margin-bottom: $icon-size;
         text-align: center;
         text-transform: none;
-        width: 17rem;
+        width: 12rem;
         border: none;
         outline: none;
         @media screen and (max-width: 800px){
@@ -76,7 +76,7 @@ footer {
         color: white;
         display: inline-block;
         margin-bottom: 1rem;
-        font-family: $f-merriweather;
+        font-family: $f-seroot;
         font-weight: 300;
         line-height: $icon-size;
         a {
@@ -87,12 +87,12 @@ footer {
         border-top: 1px solid $c-grey-3a;
         clear: both;
         padding-top: 1rem;
-        font-family: $f-merriweather;
+        font-family: $f-seroot;
         @include font-size(12);
         color: #616161; 
     }
     #footnote-2{
-        font-family: $f-merriweather;
+        font-family: $f-seroot;
         @include font-size(12);
         color: #616161; 
         margin-top: 0.5rem;
@@ -119,7 +119,7 @@ footer {
 
 .privacy_policy{
     color: #ffffff;
-    font-family: $f-merriweather;
+    font-family: $f-seroot;
     font-size: 12px;
     line-height: 25px;
     float: right;
