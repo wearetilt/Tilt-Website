@@ -540,9 +540,9 @@ if (document.getElementById('header-video-player')) { // if has header video
                     }
 
                 } else {
-                    videoOverlay.requestFullscreen(function() {
-                        return false;
-                    });
+                    // videoOverlay.requestFullscreen(function() {
+                    //     return false;
+                    // });
                 }
             });
 
