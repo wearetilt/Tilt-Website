@@ -908,12 +908,19 @@ section {
 }
 
 .container-headline-text {
-    padding: 120px 6.25% 60px 6.25%;
+    padding: 12.057087% 6.25% 0%;
+    @media screen and (min-width: $bp-desktop) {
+        padding: 120px 6.25% 60px 6.25%;
+    }
     .text-section {
-        display: inline-block;
-        width: 45%;
+        margin-bottom: 40px;
+        @media screen and (min-width: $bp-desktop) {
+            display: inline-block;
+            width: 33.33%;
+        }
         h2 {
             float: none;
+            width: 100%;
         }
         .text-section__para {
             float: none;
@@ -921,12 +928,40 @@ section {
             color: white;
         }
     }
+
+}
+
+.launch-project-button {
+    padding: 0 6.25%;
+    font-size: 1.25rem;
+    .launch-link {
+        a{
+            color: white;
+            &:after {
+                content: '';
+                display: inline-block;
+                background: url(../images/button_arrow.png) center no-repeat;
+                width: 10%;
+                height: 14px;
+            }
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 90px;
+            padding-top: 15px;
+            border-bottom: 2px solid white;
+        }
+    }
 }
 
 .full-height-video {
     padding: 60px 6.25%;
     .header-play {
-        top: 44%;
+        top: 38%;
+        @media screen and (min-width: $bp-desktop) {
+            top: 44%;
+        }
     }
     video[poster]{
         object-fit: cover;
@@ -943,15 +978,29 @@ section {
     .left-video {
         width: 50%;
         .header-play {
-            top: 40%;
-            right: 44%;
+            top: 38%;
+            right: 39%;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            @media screen and (min-width: $bp-desktop) {
+                top: 40%;
+                right: 44%;
+                background-size: 100%;
+            }
         }
     }
     .right-video {
         width: 50%;
         .header-play {
-            top: 40%;
-            left: 44%;
+            top: 38%;
+            left: 47%;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            @media screen and (min-width: $bp-desktop) {
+                top: 40%;
+                left: 44%;
+                background-size: 100%;
+            }
         }
     }
     video {
@@ -963,7 +1012,9 @@ section {
 }
 
 .text_section_container {
-    padding: 60px 6.25% 60px 34%;
+    @media screen and (min-width: $bp-desktop) {
+        padding: 60px 6.25% 60px 36%;
+    }
     h2 {
         margin-bottom: 9px;
     }
@@ -982,8 +1033,11 @@ section {
 .full_image_container {
     .full-size {
         width: 100%;
-        height: 100vh;
+        height: auto;
         padding: 30px 0;
+        @media screen and (min-width: $bp-desktop) {
+            height: 100vh;
+        }
     }
 }
 
@@ -1015,16 +1069,43 @@ section {
     .related-container {
         display: flex;
         padding: 30px 0 60px 0;
+        .related-titles {
+            position: absolute;
+            bottom: 50%;
+            padding: 0 50px;
+            opacity: 0;
+            text-shadow: 2px 2px rgba(0,0,0,0.2);
+            p{
+                font-size: 25px;
+                font-family: $f-seroot;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
         .left-project {
             width: 50%;
+            position: relative;
             a {
                 width: 100%;
+            }
+            &:hover {
+                .related-titles {
+                    transition: all ease 0.5s;
+                    opacity: 1;
+                }
             }
         }
         .right-project {
             width: 50%;
+            position: relative;
             a {
                 width: 100%;
+            }
+            &:hover {
+                .related-titles {
+                    transition: all ease 0.5s;
+                    opacity: 1;
+                }
             }
         }
     }

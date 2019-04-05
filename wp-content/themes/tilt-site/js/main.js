@@ -33,22 +33,22 @@ var doc = document.documentElement;
  * UTIL FUNCTIONS
  *
  */
- Modernizr.on('touchevents', function(result) {
-    if (result === true) {
-        jQuery('.module a').on("click", function(e) {
-            'use strict'; //satisfy code inspectors
-            var link = jQuery(this); //preselect the link
-            if (link.hasClass('hover')) {
-                return true;
-            } else {
-                link.addClass('hover');
-                jQuery('.module a').not(this).removeClass('hover');
-                e.preventDefault();
-                return false; //extra, and to make sure the function has consistent return points
-            }
-        });
-    }
-});
+//  Modernizr.on('touchevents', function(result) {
+//     if (result === true) {
+//         jQuery('.module a').on("click", function(e) {
+//             'use strict'; //satisfy code inspectors
+//             var link = jQuery(this); //preselect the link
+//             if (link.hasClass('hover')) {
+//                 return true;
+//             } else {
+//                 link.addClass('hover');
+//                 jQuery('.module a').not(this).removeClass('hover');
+//                 e.preventDefault();
+//                 return false; //extra, and to make sure the function has consistent return points
+//             }
+//         });
+//     }
+// });
 
  $('.button--disabled').on("click", function(e) {
     e.preventDefault();
@@ -540,9 +540,9 @@ if (document.getElementById('header-video-player')) { // if has header video
                     }
 
                 } else {
-                    // videoOverlay.requestFullscreen(function() {
-                    //     return false;
-                    // });
+                    videoOverlay.requestFullscreen(function() {
+                        return false;
+                    });
                 }
             });
 
@@ -1287,9 +1287,9 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
 
         if(scroll > position){
-        $('.header-title').css({'transform':'translateY(250px)', 'opacity': '0', 'transition': 'all ease 2s'});
+        $('.header-title').css({'opacity': '0', 'transition': 'all ease 4s'});
         }else{
-            $('.header-title').css({'transform': 'translateY(0)', 'opacity': '1', 'transition': 'all ease 2s'});
+            $('.header-title').css({'opacity': '1', 'transition': 'all ease 4s'});
         }
     })
 

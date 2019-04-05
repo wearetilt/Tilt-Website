@@ -1287,9 +1287,9 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
 
         if(scroll > position){
-        $('.header-title').css({'transform':'translateY(250px)', 'opacity': '0', 'transition': 'all ease 2s'});
+        $('.header-title').css({'opacity': '0', 'transition': 'all ease 4s'});
         }else{
-            $('.header-title').css({'transform': 'translateY(0)', 'opacity': '1', 'transition': 'all ease 2s'});
+            $('.header-title').css({'opacity': '1', 'transition': 'all ease 4s'});
         }
     })
 
