@@ -339,7 +339,9 @@ if( have_rows('work_items') ):
                           foreach(get_sub_field('carousel_image') as $image){
                             ?>
                             <div class="carousel-image slide<?php echo $i+1?>">
+                              <div>
                               <img class="slideimage " src="<?php echo $image['url'];?>">
+                              </div>
                             </div>
                             <?php
                             $i++;
