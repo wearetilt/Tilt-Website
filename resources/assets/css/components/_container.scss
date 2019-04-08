@@ -426,11 +426,6 @@ section {
     margin-top: -39px;
 }
 
-
-.wrapper .quote-container {
-    background-color: $c-grey-25;
-}
-
 .work-container {
     @extend %clearfix;
     background-color: $c-bg;
@@ -904,7 +899,6 @@ section {
 }
 
 
-
 /* work page cms styling */
 
 /* intro section */
@@ -918,27 +912,23 @@ section {
                 height: 100vh;
             }
     }
-}
-
-.header-title-animation {
-    animation: slide ease 2s forwards; 
-}
-
-@keyframes slide {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(250px);
-        opacity: 0;
+    .header-title {
+        p {
+            font-size: 20px;
+            font-family: $f-seroot-lt;
+            line-height: 14px;
+            padding: 0 4px;
+        }
+        h1 {
+            font-size: 70px;
+        }
     }
 }
 
 .container-headline-text {
     padding: 12.057087% 6.25% 0%;
     @media screen and (min-width: $bp-desktop) {
-        padding: 120px 6.25% 60px 6.25%;
+        padding: 120px 6.25% 0 6.25%;
     }
     .text-section {
         margin-bottom: 40px;
@@ -960,7 +950,7 @@ section {
 }
 
 .launch-project-button {
-    padding: 0 6.25%;
+    padding: 0 6.25% 60px;
     font-size: 1.25rem;
     .launch-link {
         a{
@@ -1059,6 +1049,7 @@ section {
 }
 
 .full_image_container {
+    padding: 60px 0;
     .full-size {
         width: 100%;
         height: auto;
@@ -1079,15 +1070,18 @@ section {
     }
 }
 
+.quote-outer {
+    padding: 60px 0;
+}
 .quote-container {
     .text-section {
         &:before {
         content: '“';
         display: block;
         color: $c-tilt-pink;
-        font-size: 50px;
+        font-size: 80px;
         font-family: "SeroOT-Bold", "Helvetica", "Arial", sans-serif;
-        height: 20px;
+        height: 60px;
         }
     }
 }
@@ -1099,10 +1093,9 @@ section {
         padding: 30px 0 60px 0;
         .related-titles {
             position: absolute;
-            bottom: 50%;
+            bottom: 40%;
             padding: 0 50px;
             opacity: 0;
-            text-shadow: 2px 2px rgba(0,0,0,0.2);
             p{
                 font-size: 25px;
                 font-family: $f-seroot;
