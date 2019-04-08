@@ -67,17 +67,26 @@ get_header(); ?>
       while(have_rows('front_page_content') ) : the_row();
         // display a sub field value
 
+        //work item links
+
         if( get_row_layout() == 'frontpage_work_items'):
           $left_item = get_sub_field('work_item_left');
           $right_item = get_sub_field('work_item_right');
+
+          $left = $left_item->ID;
+          $right = $right_item->ID;
+
+          $tax_left = wp_get_post_terms($left, 'work');
+          $tax_right = wp_get_post_terms($right, 'work');
+
           ?>
 
           <div class="cms-content area-dark">
 
-            <div class="container area-dark work-item-left">
+            <div class="container area-dark work-item-left" style="background: url('<?php echo get_the_post_thumbnail_url($left_item); ?>'); background-size: cover;">
               <a href="<?php echo get_permalink($left_item);?>">
-                <img src="<?php echo get_the_post_thumbnail_url($left_item);?>">
                   <div class="container title_section" style="background: transparent;">
+                      <p class="tag"><?php echo $tax_left[0]->name; ?></p>
                       <h2><?php echo get_the_title($left_item);?></h2>
                       <?php 
                         $string = $left_item->post_name;
@@ -88,10 +97,10 @@ get_header(); ?>
               </a>
             </div>
 
-            <div class="container area-dark work-item-right">
+            <div class="container area-dark work-item-right" style="background: url('<?php echo get_the_post_thumbnail_url($right_item); ?>'); background-size: cover;">
               <a href="<?php echo get_permalink($right_item);?>">
-                <img src="<?php echo get_the_post_thumbnail_url($right_item);?>">
                   <div class="container title_section" style="background: transparent;">
+                    <p class="tag"><?php echo $tax_right[0]->name; ?></p>
                       <h2><?php echo get_the_title($right_item);?></h2>
                       <?php 
                         $string = $right_item->post_name;
@@ -104,15 +113,20 @@ get_header(); ?>
 
           </div>
 
-          
+        <!-- news items list -->
       <?php 
         elseif(get_row_layout() == 'news_row'):
-          if(get_sub_field('news_items')) :
+          if(get_sub_field('news_items')) : 
+      ?>
+            <div class="news-items">
+      <?php
+            $i = 0 ;
             foreach (get_sub_field('news_items') as $newsItem) {
+              $i++;
 
       ?>
         <a href="<?php echo get_permalink($newsItem['news_item']->ID);?>">
-          <div class="news-content"> 
+          <div class="news-content content-<?php echo $i; ?>"> 
             <p>News</p>
             <h3><?php echo $newsItem['news_item']->post_title; ?></h3>
 
@@ -122,7 +136,9 @@ get_header(); ?>
       <?php
             }
         endif;
-
+        ?>
+            </div>
+      <?php
         endif;
 
       endwhile;
