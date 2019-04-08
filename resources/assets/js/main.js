@@ -33,7 +33,7 @@ var doc = document.documentElement;
  * UTIL FUNCTIONS
  *
  */
-//  Modernizr.on('touchevents', function(result) {
+// Modernizr.on('touchevents', function(result) {
 //     if (result === true) {
 //         jQuery('.module a').on("click", function(e) {
 //             'use strict'; //satisfy code inspectors
@@ -539,12 +539,21 @@ if (document.getElementById('header-video-player')) { // if has header video
                     });
                     }
 
+<<<<<<< HEAD
                 } else {
                     videoOverlay.requestFullscreen(function() {
                         return false;
                     });
                 }
             });
+=======
+            } else {
+                // videoOverlay.requestFullscreen(function() {
+                //     return false;
+                // });
+            }
+        });
+>>>>>>> Staff-Page
 
 
 
@@ -739,30 +748,6 @@ closeButton.onclick = function() {
         // check screen size
         var width = $(window).width();
 
-        if (width > 1024) {
-
-            (function() {
-                staffMember.addEventListener('mouseenter', function(event) {
-                    var that = this;
-                    var thisStaffID = that.id;
-
-                    videoFunction = setTimeout(function() {
-                        var ratio2 = that.children[1];
-                        var video2 = ratio2.children[0];
-                        videoIWant = video2;
-                        videoIWant.play();
-                        videoIWant.addEventListener('ended', function() {
-                            this.currentTime = 0;
-                        });
-                    }, 100);
-
-                });
-
-                staffMember.addEventListener('mouseleave', function(event, video) {
-                    clearTimeout(videoFunction);
-                });
-            })();
-        }
 
         staffBoxClose = document.getElementById('staff-member__close');
 
@@ -776,43 +761,7 @@ closeButton.onclick = function() {
             var width = $(window).width();
 
             if (width > 1024) {
-                staffFullScreenVid = this.dataset.fullvideo;
-                // staffObject = lookUpStaffMember(staffMember);
-                staffBox = document.getElementById('staff-member');
-                staffBox.style.display = 'block';
-                rect = this.getBoundingClientRect();
-                startingHeight = window.getComputedStyle(this).height;
-                startingWidth = window.getComputedStyle(this).width;
-                leftPosition = (rect['left'] + 'px');
-                topPosition = (rect['top'] + 'px');
-                // document.body.classList.add('stop-scrolling');
-                scrollPosition = getScrollPosition();
 
-
-                staffBox.style.position = "fixed";
-                staffBox.style.transition = "all 0s ease";
-                staffBox.style.left = leftPosition;
-                staffBox.style.top = topPosition;
-                staffBox.style.height = startingHeight;
-                staffBox.style.width = startingWidth;
-                document.body.appendChild(staffBox);
-                staffBox.appendChild(staffBoxClose);
-                staffBox.style.backgroundColor = '#ff4c74';
-                staffBox.style.zIndex = '6';
-                document.getElementById('blahblahblah').innerHTML = '<div class="module module--video module--visible module--no-zoom" style="position: absolute; z-index: 6; width: 100%; height: 100%;"><div class="ratio"><video autoplay muted="true"><source src="' + staffFullScreenVid + '" type="video/mp4"></video></div></div>';
-
-                setTimeout(function() {
-                    // console.log('Hello');
-                    staffBox.style.transition = "all 0.5s ease";
-
-
-
-                    populateAndSizeStaffInfo(staffBox, staffObject);
-                }, 500);
-
-                setTimeout(function() {
-                    fadeInStaffInfo(staffObject);
-                }, 1050);
 
             } else { // if screen is mobile
 
@@ -1072,19 +1021,19 @@ if (document.getElementById('contact-form')) {
         });
     }
 
-    if ($('.module').length && mobile) {
-        $(window).scroll(function() {
-            $.each($('.module'), function(index, el) {
-                if (isElementInViewport(el)) {
-                    setTimeout(function() {
-                        $(el).addClass('hover');
-                    }, 500)
-                } else {
-                    $(el).removeClass('hover');
-                }
-            })
-        })
-    }
+    // if ($('.module').length && mobile) {
+    //     $(window).scroll(function() {
+    //         $.each($('.module'), function(index, el) {
+    //             if (isElementInViewport(el)) {
+    //                 setTimeout(function() {
+    //                     $(el).addClass('hover');
+    //                 }, 500)
+    //             } else {
+    //                 $(el).removeClass('hover');
+    //             }
+    //         })
+    //     })
+    // }
 
 });
 
@@ -1218,7 +1167,7 @@ function hide() {
 jQuery(document).ready(function() {
     $('.check-box').on('click', function(){
         $(this).toggleClass('ticked');
-        
+
         if($(this).hasClass('ticked')){
             $('.tick').prop('checked', true);
         }else{
@@ -1295,3 +1244,4 @@ $(document).ready(function(){
 
 
 });
+
