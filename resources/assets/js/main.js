@@ -539,21 +539,12 @@ if (document.getElementById('header-video-player')) { // if has header video
                     });
                     }
 
-<<<<<<< HEAD
-                } else {
-                    videoOverlay.requestFullscreen(function() {
-                        return false;
-                    });
-                }
-            });
-=======
             } else {
                 // videoOverlay.requestFullscreen(function() {
                 //     return false;
                 // });
             }
         });
->>>>>>> Staff-Page
 
 
 
@@ -1186,7 +1177,7 @@ $('.close-btn').on('click', function(){
 });
 
 
-// new work page template functions 
+// new work page template functions
 
 $(document).ready(function(){
   $('.image_carousel').slick({
@@ -1205,7 +1196,7 @@ $(document).ready(function(){
 
     var playVideo = function (video) {
         var video = $(video);
-        
+
             if(video[0].paused == true){
                 video[0].play();
 
@@ -1244,4 +1235,3 @@ $(document).ready(function(){
 
 
 });
-

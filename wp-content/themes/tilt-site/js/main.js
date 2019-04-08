@@ -33,11 +33,7 @@ var doc = document.documentElement;
  * UTIL FUNCTIONS
  *
  */
-<<<<<<< HEAD
-//  Modernizr.on('touchevents', function(result) {
-=======
 // Modernizr.on('touchevents', function(result) {
->>>>>>> Staff-Page
 //     if (result === true) {
 //         jQuery('.module a').on("click", function(e) {
 //             'use strict'; //satisfy code inspectors
@@ -543,21 +539,12 @@ if (document.getElementById('header-video-player')) { // if has header video
                     });
                     }
 
-<<<<<<< HEAD
-                } else {
-                    videoOverlay.requestFullscreen(function() {
-                        return false;
-                    });
-                }
-            });
-=======
             } else {
                 // videoOverlay.requestFullscreen(function() {
                 //     return false;
                 // });
             }
         });
->>>>>>> Staff-Page
 
 
 
@@ -1188,10 +1175,9 @@ $('.join-pop').on('click', function(){
 $('.close-btn').on('click', function(){
     $('.modal-container').removeClass('visible');
 });
-<<<<<<< HEAD
 
 
-// new work page template functions 
+// new work page template functions
 
 $(document).ready(function(){
   $('.image_carousel').slick({
@@ -1210,7 +1196,7 @@ $(document).ready(function(){
 
     var playVideo = function (video) {
         var video = $(video);
-        
+
             if(video[0].paused == true){
                 video[0].play();
 
@@ -1249,5 +1235,3 @@ $(document).ready(function(){
 
 
 });
-=======
->>>>>>> Staff-Page
