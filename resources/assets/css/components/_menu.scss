@@ -28,6 +28,18 @@ nav {
     margin-top: 15px;
 }
 
+#backButton {
+    display: block;
+    padding-top: 41px;
+    padding-left: 88px;
+    padding-right: 5px;
+    width: 0;
+    height: 0;
+    background: url('../images/back_to_work.png') 10px 7.5px no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+
 #menuButton {
     display: block;
     padding-top: 41px;

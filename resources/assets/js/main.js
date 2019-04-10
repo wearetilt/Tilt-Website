@@ -1,6 +1,7 @@
 var mobile = false;
 
 // MENU VARS
+var backButton = document.getElementById('backButton');
 var menuButton = document.getElementById('menuButton');
 var pageMenu = document.getElementById('pageMenu');
 var closeButton = document.getElementById('closeButton');
@@ -28,7 +29,6 @@ var funkyBorderToChange;
 var formHolders;
 var formBorders;
 var doc = document.documentElement;
-
 /**
  * UTIL FUNCTIONS
  *
@@ -566,6 +566,7 @@ if (document.getElementById('header-video-player')) { // if has header video
 
                 document.getElementById('tilt--logo').style.display = 'block';
                 document.getElementById('menuButton').style.display = 'block';
+                document.getElementById('backButton').style.display = 'block';
 
                 if (document.getElementById('wordButton')) {
                     if (document.getElementById('workButton').style.display != null) {
@@ -590,6 +591,7 @@ if (document.getElementById('header-video-player')) { // if has header video
                 myPlayer.pause();
                 document.getElementById('video-overlay').style.display = 'block';
 
+                document.getElementById('backButton').style.display = 'none';
                 document.getElementById('tilt--logo').style.display = 'none';
                 document.getElementById('menuButton').style.display = 'none';
 
@@ -620,7 +622,7 @@ if (document.getElementById('header-video-player')) { // if has header video
  */
 
  menuButton.onclick = function() {
-    jQuery('#menuButton').fadeOut(500, function() {
+    jQuery('#menuButton, #backButton').fadeOut(500, function() {
         jQuery('#closeButton').fadeIn(500);
     });
 
@@ -644,7 +646,7 @@ if (document.getElementById('header-video-player')) { // if has header video
 
 closeButton.onclick = function() {
     jQuery('#closeButton').fadeOut(500, function() {
-        jQuery('#menuButton').fadeIn(500);
+        jQuery('#menuButton, #backButton').fadeIn(500);
 
         if (document.getElementById('workButton')) {
             jQuery('#workButton').fadeIn(500);
@@ -1185,11 +1187,11 @@ $(document).ready(function(){
     initialSlide: 1,
     infinite: true,
     slidesToShow: 3,
-    nextArrow: '<i class="fas fa-angle-right"></i>',
-    prevArrow: '<i class="fas fa-angle-left"></i>',
+    nextArrow: '<i class="arrow-right"></i>',
+    prevArrow: '<i class="arrow-left"></i>',
     slidesToScroll: 1
-
 });
+
 });
 
 $(document).ready(function(){
@@ -1227,9 +1229,12 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
 
         if(scroll > position){
-        $('.header-title').css({'opacity': '0', 'transition': 'all ease 4s'});
+        $('.header-title').fadeOut(1000, function(){
+            $('.container--header').css('display', 'none');
+        });
         }else{
-            $('.header-title').css({'opacity': '1', 'transition': 'all ease 4s'});
+            $('.container--header').css('display', 'block');
+            $('.header-title').fadeIn(1000);
         }
     })
 

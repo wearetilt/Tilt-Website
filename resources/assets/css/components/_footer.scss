@@ -25,15 +25,25 @@ footer {
         position: relative;
         max-height: none;
     }
+    .cube--front {
+        background:url('../images/button_arrow_white.png') center right no-repeat;
+    }
     .container {
         padding: 0 percentage(381/2032);
         height: 460px;
-        background-color: $c-tilt-pink;
+        background: linear-gradient(270deg, #ff4c61, #ff594c, #ff4c74);
+        background-size: 600% 600%;
+        animation: AnimationName 30s ease infinite;
         @media handheld,
         screen and (min-width: $bp-desktop) {
             height: 478px;
         }
     }
+    @keyframes AnimationName {
+   0%{background-position:0% 50%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 50%}
+}
     .first-para {
         &:before {
             display: none;
@@ -52,20 +62,57 @@ footer {
         font-size: 15px;
         letter-spacing: 1px;
         line-height: $icon-size;
-        margin-bottom: $icon-size;
+        margin-bottom: 14px;
         text-align: center;
         text-transform: none;
         width: 12rem;
         border: none;
         outline: none;
+        @media screen and (min-width: $bp-desktop){
+            margin-bottom: $icon-size;
+        }
         @media screen and (max-width: 800px){
             display: block;
             width: 100%;
         }
     }
+    .footer-upper{
+        border-bottom: 1px solid $c-grey-3a;
+        text-align: center;
+        padding-bottom: 10px;
+        @media screen and (min-width: $bp-desktop){
+            padding-bottom: 24px;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+        .footer-links {
+            @media screen and (min-width: $bp-desktop){
+                display: inline-block;
+                float: right;
+                line-height: 2;
+            }
+            a {
+                color: white;
+                font-family: $f-seroot-lt;
+                font-size: 20px;
+                padding-left: 30px;
+            }
+        }
+    }
+    .footer-item--logo {
+        display: block;
+        @media screen and (min-width: $bp-desktop){
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
     .phone-container{
-        display: inline-block;
-        float: right;
+        padding: 0;
+        @media screen and (min-width: $bp-desktop){
+            display: inline-block;
+            padding-left: 33px;
+        }
         @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
             float: none;
         }
@@ -84,18 +131,22 @@ footer {
         }
     }
     #footnote-1{
-        border-top: 1px solid $c-grey-3a;
         clear: both;
-        padding-top: 1rem;
+        padding-top: 14px;
         font-family: $f-seroot;
         @include font-size(12);
         color: #616161; 
+        @media screen and (min-width: $bp-desktop){
+            padding-top: 44px;
+        }
+
     }
     #footnote-2{
         font-family: $f-seroot;
         @include font-size(12);
         color: #616161; 
         margin-top: 0.5rem;
+        display: inline-block;
     }
     p.sans-serif {
         @include font-size(25);
@@ -122,12 +173,21 @@ footer {
     font-family: $f-seroot;
     font-size: 12px;
     line-height: 25px;
-    float: right;
+    margin-top: 17px;
+    float: left;
     text-transform: capitalize;
 }
 
 #footer-contacts {
   @extend %clearfix;
+  text-align: center;
+  padding: 10px;
+  @media screen and (min-width: $bp-desktop){
+      float: right;
+      display: inline-block;
+      text-align: end;
+      padding: 10px 0;
+  }
   @media all and(max-width: 800px) {
       text-align: center;
       .telephone {
@@ -140,7 +200,10 @@ footer {
 #signoff {
     @extend %clearfix;
     background-color: $c-bg;
-    padding: 33px 4%;
+    padding: 10px 4%;
+    @media screen and (min-width: $bp-desktop){
+        padding: 33px 4%;
+    }
     border-top: 1px solid #171717;
     // #contact & {
     //     height: auto;
@@ -180,7 +243,10 @@ footer {
 
 #footer-icons {
     @extend %clearfix;
-    margin-bottom: $icon-size;
+    margin-bottom: 0px;
+    @media screen and (min-width: $bp-desktop){
+        margin-bottom: $icon-size;
+    }
     padding: 0;
     display: inline-block;
     text-align: center;
