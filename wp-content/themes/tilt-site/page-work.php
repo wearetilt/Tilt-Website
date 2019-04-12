@@ -20,38 +20,20 @@ get_header(); ?>
     </video>
     <div id="video-overlay-close"></div>
 </div>
-<header id="work_page" class="work-item work-item--motion area-dark">
-    <div class="module--video module--header">
-        <div id="header-play" class="header-play"></div>
-        <div class="container container--reel"> <p>REEL 2019</p></div>
-        <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="100%" >
-            	<source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
-            </video>
-        </div>
-    </div>
 
-	<?php if($work_groups) : ?>
-    <div id="services--list" class="container container--header container--work-list">
-		<?php foreach($work_groups as $k => $work_group) : ?>
+            <div id="services--list" class="container container--header container--work-list">
+                <p> Filter work by: </p>
+                <a class='list-all' href="/work">All</a>
+                <a class="list-web" href="/service/web">Web</a>
+                <a class="list-motion" href="/service/motion">Motion</a>
+                <a class="list-film" href="/service/film">Film</a>
+            </div>
 
-		<?php $title = $work_group['work_title_filter'] ? $work_group['work_title_filter'] : $work_group['work_headline'];?>
-		<?php $filterValue = $work_groups[$k]['filter_value'] = sanitize_title($title);?>
-
-		<?php if($work_group['work_entries']) : ?>
-        <span id="work_<?=$filterValue;?>" class="work-item-title"><?= $title;?></span>
-		<?php else : ?>
-		<a id="work_<?=$filterValue;?>" class="work-item-title" href="<?= $work_group['work_link'];?>"><?= $title;?></a>
-		<?php endif;?>
-
-		<?php endforeach;?>
-	</div>
-	<?php endif;?>
-</header>
+<!-- All work overview -->
 
 		<?php
-		$entries_left = array(1,2);
-		$entries_right = array(0,3,4);
+		$entries_left = array(1);
+		$entries_right = array(0,2);
 		?>
 
 		<?php if($work_groups) : ?>
@@ -91,7 +73,7 @@ get_header(); ?>
 					$link = get_permalink($work_item['work_item_post']->ID);
 					$arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
 					?>
-					<div class="module area-dark <?= $k == 0 ? 'module--2-1' : 'module--1-1';?>">
+					<div class="module area-dark module--2-1">
 						<a href="<?= $link;?>">
 							<div class="overlay area-dark">
 								<div class="overlay-text">
@@ -119,7 +101,7 @@ get_header(); ?>
 					$link = get_permalink($work_item['work_item_post']->ID);
 					$arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
 					?>
-					<div class="module area-dark <?= $k == 0 ? 'module--2-1' : 'module--1-1';?>">
+					<div class="module area-dark module--2-1">
 						<a href="<?= $link;?>">
 							<div class="overlay area-dark">
 								<div class="overlay-text">
@@ -151,6 +133,18 @@ get_header(); ?>
 
 <!-- /end container -->
 
+<header id="work_page" class="work-item work-item--motion area-dark">
+    <div class="module--video module--header">
+        <div id="header-play" class="header-play"></div>
+        <div class="container container--reel"> <p>REEL 2019</p></div>
+        <div class="ratio">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="100%" >
+            	<source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</header>
 
 <div class="container container--half-top container--half-bot image-container">
 	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />

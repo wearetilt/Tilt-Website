@@ -505,24 +505,24 @@ if (document.getElementById('header-video-player')) { // if has header video
 
         }
 
-        Modernizr.on('touchevents', function(result) {
-            if (result === false) {
-                var videoWaypoint = new Waypoint({
-                    element: document.getElementById('header-video-player'),
-                    handler: function(direction) {
-                        if (direction === 'down') {
-                            myPlayer.pause();
-                        } else if (direction === 'up') {
-                            myPlayer.play();
-                        }
+        // Modernizr.on('touchevents', function(result) {
+        //     if (result === false) {
+        //         var videoWaypoint = new Waypoint({
+        //             element: document.getElementById('header-video-player'),
+        //             handler: function(direction) {
+        //                 if (direction === 'down') {
+        //                     myPlayer.pause();
+        //                 } else if (direction === 'up') {
+        //                     myPlayer.play();
+        //                 }
 
-                    },
-                    offset: function() {
-                        return -this.element.clientHeight
-                    }
-                });
-            }
-        });
+        //             },
+        //             offset: function() {
+        //                 return -this.element.clientHeight
+        //             }
+        //         });
+        //     }
+        // });
 
 
         if (document.getElementById('overlay-video')) {
@@ -1213,10 +1213,11 @@ $(document).ready(function(){
         var parent = $(e.target).parent().attr('class');
         var parent = parent.replace(/\s+/g, '.');
         var playButton = $('.' + parent + ' .header-play');
+        var reelTitle = $('.' + parent + ' .reel-title');
 
             playVideo(e.target);
             playButton.toggleClass('play-button-display');
-
+            reelTitle.toggleClass('play-button-display');
 
     });
 
