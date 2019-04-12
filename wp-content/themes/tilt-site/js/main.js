@@ -566,7 +566,6 @@ if (document.getElementById('header-video-player')) { // if has header video
 
                 document.getElementById('tilt--logo').style.display = 'block';
                 document.getElementById('menuButton').style.display = 'block';
-                document.getElementById('backButton').style.display = 'block';
 
                 if (document.getElementById('wordButton')) {
                     if (document.getElementById('workButton').style.display != null) {
@@ -590,8 +589,6 @@ if (document.getElementById('header-video-player')) { // if has header video
                 videoOverlay.play();
                 myPlayer.pause();
                 document.getElementById('video-overlay').style.display = 'block';
-
-                document.getElementById('backButton').style.display = 'none';
                 document.getElementById('tilt--logo').style.display = 'none';
                 document.getElementById('menuButton').style.display = 'none';
 

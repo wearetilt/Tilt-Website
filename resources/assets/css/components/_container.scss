@@ -161,6 +161,15 @@ body{
     }
 }
 
+.client-logos {
+        
+        h2 {
+            color: white;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+}
+
 .news-wrapper {
     & .intro-text {
         margin: 45px 0px 45px 0px;
@@ -226,6 +235,9 @@ body{
             }
         }
     }
+    .fullpage-overlay {
+        z-index: 1000000;
+    }
     .group-container {
         top: 84px;
         z-index: 6;
@@ -261,7 +273,6 @@ body{
                 transition: all 0.5s ease-in-out; 
             }
         }
-
     }
     .client-logos {
         h2 {
@@ -292,6 +303,9 @@ body{
             }
         }
     }
+    .fullpage-overlay {
+        z-index: 1000000;
+    }
     .motion-show-reel {
         height: 78vh;
         z-index: 999999;
@@ -304,7 +318,6 @@ body{
         }
         video {
             width: 100%;
-            height: auto;
         }
         .reel-title {
             background-color: transparent;
@@ -383,6 +396,9 @@ body{
             }
         }
     }
+    .fullpage-overlay {
+        z-index: 1000000;
+    }
     .film-show-reel {
         height: 78vh;
         z-index: 999999;
@@ -395,7 +411,6 @@ body{
         }
         video {
             width: 100%;
-            height: auto;
         }
         .reel-title {
             background-color: transparent;
@@ -465,20 +480,15 @@ body{
         width: 100%;
         .header-play {
             margin: 25% auto;
-            pointer-events: none;
         }
         .reel-title {
             background-color: transparent;
             text-align: center;
             position: absolute;
-            padding: 20% 0;
+            padding: 20% 0 0 0;
             z-index: 1;
             margin: 0 auto;
             width: 100%;
-        }
-        video {
-                        width: 100%;
-            height: auto;
         }
 }
 
@@ -703,7 +713,7 @@ body{
         @extend %clearfix;
         background-color: $c-bg;
         @media screen and (min-width: $bp-desktop) {
-            top: 60px;
+            top: 83px;
         }
     }
 
