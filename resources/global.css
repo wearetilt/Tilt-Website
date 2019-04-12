@@ -782,7 +782,7 @@ body { height: 100%; }
 
 footer .text-container { top: 69%; -ms-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform: translateY(-50%); }
 
-@media handheld, screen and (min-width: 1024px) { footer .text-container { top: 62%; } }
+@media handheld, screen and (min-width: 1024px) { footer .text-container { top: 68%; } }
 
 @media handheld, screen and (min-width: 1024px) { section.text-section { position: relative; }
   section.text-section h2 { float: left; width: 47%; }
