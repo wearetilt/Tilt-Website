@@ -33,9 +33,9 @@ get_header(); ?>
             <header id="services--list" class="container container--header container--work-list">
                 <p> Filter work by: </p>
                 <a class='list-all' href="/work">All</a>
-                <a class="list-web" href="/service/web">Web</a>
-                <a class="list-motion" href="/service/motion">Motion</a>
-                <a class="list-film" href="/service/film">Film</a>
+                <a class="list-web" href="/work/web">Web</a>
+                <a class="list-motion" href="/work/motion">Motion</a>
+                <a class="list-film" href="/work/film">Film</a>
             </header>
 
             <div class="film-show-reel area-dark">

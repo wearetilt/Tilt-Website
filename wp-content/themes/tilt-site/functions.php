@@ -306,7 +306,7 @@ add_action( 'wp_enqueue_scripts', 'twentyfifteen_post_nav_background' );
  */
 function add_custom_taxonomies() {
   // Add new "Locations" taxonomy to Posts
-  register_taxonomy('work', 'page', array(
+  register_taxonomy('work', ['page', 'work'], array(
     // Hierarchical taxonomy (like categories)
     'hierarchical' => true,
     // This array of options controls the labels displayed in the WordPress Admin UI
@@ -325,9 +325,9 @@ function add_custom_taxonomies() {
     ),
     // Control the slugs used for this taxonomy
     'rewrite' => array(
-	      'slug' => 'service', // This controls the base slug that will display before each term
+	      'slug' => 'work', // This controls the base slug that will display before each term
       'with_front' => true, // Don't display the category base before "/locations/"
-      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+      'hierarchical' => true // This will allow URL's like "/locations/boston/cambridge/"
     ),
   ));
 
@@ -358,6 +358,8 @@ function add_custom_taxonomies() {
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
 
+
+
 function work_item_post_type() {
 
 	$labels = array(
@@ -383,7 +385,7 @@ function work_item_post_type() {
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
 		'taxonomies'          => array( 'work' ),
-		'hierarchical'        => true,
+		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
@@ -391,12 +393,12 @@ function work_item_post_type() {
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
-		'has_archive'         => true,
+		'has_archive'         => false,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 		'rewrite' => array(
-	      'slug' => 'hellomiles', // This controls the base slug that will display before each term
+	      'slug' => 'work/item', // This controls the base slug that will display before each term
 	      'with_front' => false, // Don't display the category base before "/locations/"
 	      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
 	    ),
@@ -406,6 +408,9 @@ function work_item_post_type() {
 }
 add_action( 'init', 'work_item_post_type', 0 );
 
+
+
+add_rewrite_rule( '^work/item/([^/]*)/?$', 'index.php?post_type=work_item&pagename=$matches[1]', 'top' );
 
 
 function team_post_type() {
@@ -455,7 +460,6 @@ function team_post_type() {
 
 }
 add_action( 'init', 'team_post_type', 0 );
-
 
 /**
  * Display descriptions in main navigation.
