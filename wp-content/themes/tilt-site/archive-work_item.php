@@ -25,9 +25,9 @@ get_header(); ?>
             <div id="services--list" class="container container--header container--work-list">
                 <p> Filter work by: </p>
                 <a class='list-all' href="/work">All</a>
-                <a class="list-web" href="/work/web">Web</a>
-                <a class="list-motion" href="/work/motion">Motion</a>
-                <a class="list-film" href="/work/film">Film</a>
+                <a class="list-web" href="/web">Web</a>
+                <a class="list-motion" href="/motion">Motion</a>
+                <a class="list-film" href="/film">Film</a>
             </div>
 
 <!-- All work overview -->
