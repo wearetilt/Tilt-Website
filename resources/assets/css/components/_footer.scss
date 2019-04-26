@@ -60,7 +60,7 @@ footer {
         font-family: $f-seroot;
         font-weight: 300;
         font-size: 15px;
-        letter-spacing: 1px;
+        letter-spacing: 0.020em;
         line-height: $icon-size;
         margin-bottom: 14px;
         text-align: center;
@@ -96,7 +96,11 @@ footer {
                 color: white;
                 font-family: $f-seroot-lt;
                 font-size: 20px;
+                letter-spacing: 0.075em;
                 padding-left: 30px;
+                @media screen and (min-width: $bp-desktop){
+                    padding-left: 35px;
+                }
             }
         }
     }
@@ -126,6 +130,7 @@ footer {
         font-family: $f-seroot;
         font-weight: 300;
         line-height: $icon-size;
+        letter-spacing: 0.020em;
         a {
             color: $c-tilt-pink;
         }
@@ -173,6 +178,7 @@ footer {
     font-family: $f-seroot;
     font-size: 12px;
     line-height: 25px;
+    letter-spacing: 0.025em;
     margin-top: 17px;
     float: left;
     text-transform: capitalize;

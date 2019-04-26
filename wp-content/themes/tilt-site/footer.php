@@ -51,10 +51,10 @@ $blog_id = get_current_blog_id();
     <div class="phone-container">
       <div class="telephone">
         <?php if($blog_id == 1) : ?>
-          <span>Tel: +44(0)1273 675 700</span>
+          <span>+44(0)1273 675 700</span>
         <?php endif;?>
         <?php if($blog_id == 3) : ?>
-          <span>Tel: +1 (778) 835-6414</span>
+          <span>+1 (778) 835-6414</span>
         <?php endif;?>
       </div>
     </div>

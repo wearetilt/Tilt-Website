@@ -68,7 +68,6 @@ get_header(); ?>
 					</div>
 
 					<?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
-
 					<?php if(in_array($k, $entries_left)) : ?>
 					<?php
 					$link = get_permalink($work_item['work_item_post']->ID);
