@@ -143,15 +143,10 @@ footer {
         color: #616161; 
         @media screen and (min-width: $bp-desktop){
             padding-top: 44px;
+            width: 60%;
+            display: inline-block;
         }
 
-    }
-    #footnote-2{
-        font-family: $f-seroot;
-        @include font-size(12);
-        color: #616161; 
-        margin-top: 0.5rem;
-        display: inline-block;
     }
     p.sans-serif {
         @include font-size(25);
@@ -192,7 +187,7 @@ footer {
       float: right;
       display: inline-block;
       text-align: end;
-      padding: 10px 0;
+      padding: 44px 0;
   }
   @media all and(max-width: 800px) {
       text-align: center;

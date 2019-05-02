@@ -26,7 +26,7 @@ define('DB_NAME', 'tilt_website');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'panda');
 
 /** MySQL hostname */
 define('DB_HOST', '127.0.0.1');

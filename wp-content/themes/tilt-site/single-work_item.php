@@ -37,7 +37,11 @@ if( have_rows('work_items') ):
 
       ?>
 
-      <header class="work-item area-dark" style="background-image: url(<?php echo $image['url']?>); background-size: cover; min-height: 100vh; z-index: 1;">
+      <header class="work-item area-dark" >
+
+        <div class="header-image">
+          <img src="<?php echo $image['url']?>">
+        </div>
 
         <?php 
 
@@ -257,12 +261,30 @@ if( have_rows('work_items') ):
 
                   $text_section_header = get_sub_field('text_section_header');
                   $text_section_content = get_sub_field('text_section_content');
+                  $second_column = get_sub_field('two_columns');
+                  $second_header = get_sub_field('second_header');
+                  $second_text_content = get_sub_field('second_text_section');
 
+                    if($second_column == true) :
                   ?>
                   <div class="container text_section_container area-dark">
-                    <h2><?php echo $text_section_header; ?> </h2>
-                    <p><?php echo $text_section_content; ?></p>
+                    <div class="text_mid">
+                      <h2><?php echo $text_section_header; ?> </h2>
+                      <p><?php echo $text_section_content; ?></p>
+                    </div>
+                    <div class="text_right">
+                      <h2><?php echo $second_header; ?> </h2>
+                      <p><?php echo $second_text_content; ?></p>
+                    </div>
                   </div>
+                  <?php else: ?>
+                  <div class="container text_section_container area-dark">
+                    <div class="text_single">
+                      <h2><?php echo $text_section_header; ?> </h2>
+                      <p><?php echo $text_section_content; ?></p>
+                    </div>
+                  </div>
+                <?php endif; ?>
 
                   <!-- quote -->
 
@@ -290,13 +312,16 @@ if( have_rows('work_items') ):
                     $tax_right = wp_get_post_terms( $right, 'work' );
                     $tax_left = wp_get_post_terms( $left, 'work' );
 
+                    $alt_left = get_post_meta($left, '_wp_attachment_image_alt', true);
+                    $alt_right = get_post_meta($right, '_wp_attachment_image_alt', true);
+                    
                     ?>
 
                     <div class="related-projects container area-dark">
                       <h2> Related Projects </h2>
 
                       <div class="related-container">
-                        <div class="left-project"><a href="<?php echo get_permalink($leftproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($left);?>"></a>
+                        <div class="left-project"><a href="<?php echo get_permalink($leftproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($left);?>" alt="<?php echo $alt_left; ?>"></a>
                           <div class="related-titles">
                             <?php if($tax_left[0]->name != ''):?>
                               <p class="tag"><?php echo $tax_left[0]->name; ?></p>
@@ -310,7 +335,7 @@ if( have_rows('work_items') ):
                               ?></p>
                             </div>
                           </div>
-                          <div class="right-project"><a href="<?php echo get_permalink($rightproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($right);?>"></a>
+                          <div class="right-project"><a href="<?php echo get_permalink($rightproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($right);?>" alt="<?php echo $alt_right; ?>"></a>
                             <div class="related-titles">
                               <?php if($tax_right[0]->name != ''): ?>
                                 <p class="tag"><?php echo $tax_right[0]->name; ?></p>
@@ -341,7 +366,7 @@ if( have_rows('work_items') ):
                             ?>
                             <div class="carousel-image slide<?php echo $i+1?>">
                               <div>
-                              <img class="slideimage " src="<?php echo $image['url'];?>">
+                              <img class="slideimage " src="<?php echo $image['url'];?>" alt="<?php echo $alt; ?>">
                               </div>
                             </div>
                             <?php
@@ -351,22 +376,44 @@ if( have_rows('work_items') ):
 
                         </div>
 
+                      <!-- extended image -->
+
+                      <?php 
+
+                      elseif ( get_row_layout() == 'extended_image'):
+                        $long_image = wp_get_attachment_image_src(get_sub_field('image'), false);
+                        $image_id = attachment_url_to_postid($long_image[0]);
+                        $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+
+                        if ($long_image) :
+                      ?>
+
+                      <div class="container padded_image_container_long area-dark">
+                        <img src="<?php echo $long_image[0]; ?>" alt="<?php echo $alt; ?>">
+                      </div>
+
+                      <?php
+                        endif;
+                      ?>
+
                         <!-- image video -->
 
                         <?php
                       elseif( get_row_layout() == 'image'):
                         $image = wp_get_attachment_image_src(get_sub_field('image'), false);
+                        $image_id = attachment_url_to_postid($image[0]);
+                        $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
                         if($image) :
 
                           if( get_sub_field('image_full_size')) : 
                             ?>
                             <div class="container full_image_container area-dark  <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
-                              <img class="full-size" src="<?php echo $image[0];?>" alt="">
+                              <img class="full-size" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
                               <?php 
                             else : 
                               ?>
                               <div class="container padded_image_container area-dark container--no-padding <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
-                                <img src="<?php echo $image[0];?>" alt="">
+                                <img src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
                                 <?php
                               endif;
                               ?>

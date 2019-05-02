@@ -682,7 +682,8 @@ ul {
     margin-bottom: 27px;
 }
 
-blockquote {
+/*blockquote,*/ 
+blockquote p {
     @include font-size(30);
     font-family: $f-merriweather;
     font-weight: 300;

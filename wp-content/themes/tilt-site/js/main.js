@@ -1183,9 +1183,10 @@ $(document).ready(function(){
     centerMode: true,
     initialSlide: 1,
     infinite: true,
+    dots: true,
     slidesToShow: 3,
-    nextArrow: '<i class="arrow-right"></i>',
-    prevArrow: '<i class="arrow-left"></i>',
+    nextArrow: false,
+    prevArrow: false,
     slidesToScroll: 1
 });
 

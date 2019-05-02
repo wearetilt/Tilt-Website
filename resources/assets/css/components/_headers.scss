@@ -63,6 +63,25 @@ header {
             transform: translate(0, 0);
         }
     }
+    .header-image {
+        width: 100%;
+        min-height: 100vh;
+        z-index: 1;
+        position: relative;
+        @media screen and(max-width: $bp-desktop) {
+            width: 100%;
+            min-height: 100vh;
+            z-index: 1;
+        }
+        img {
+            width: 100%;
+            min-height: 100vh;
+            @media screen and(max-width: $bp-desktop) {
+                width: 100%;
+                min-height: 100vh;
+            }
+        }
+    }
     .scroll-down {
         position: absolute;
         top: 100vh;
