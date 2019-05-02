@@ -64,23 +64,11 @@ header {
         }
     }
     .header-image {
+        height: 100%;
         width: 100%;
-        min-height: 100vh;
-        z-index: 1;
         position: relative;
-        @media screen and(max-width: $bp-desktop) {
-            width: 100%;
-            min-height: 100vh;
-            z-index: 1;
-        }
-        img {
-            width: 100%;
-            min-height: 100vh;
-            @media screen and(max-width: $bp-desktop) {
-                width: 100%;
-                min-height: 100vh;
-            }
-        }
+        background-size: cover;
+        background-position: center center;
     }
     .scroll-down {
         position: absolute;
@@ -202,6 +190,8 @@ header {
         }
     }
     &.work-item {
+        height: 100vh;
+        z-index: 1;
         .container--header {
             padding-top: 1%;
             position: fixed;

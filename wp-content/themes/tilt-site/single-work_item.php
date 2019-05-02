@@ -39,8 +39,8 @@ if( have_rows('work_items') ):
 
       <header class="work-item area-dark" >
 
-        <div class="header-image">
-          <img src="<?php echo $image['url']?>">
+        <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
+<!--           <img src="<?php echo $image['url']?>"> -->
         </div>
 
         <?php 
