@@ -1237,5 +1237,8 @@ $(document).ready(function(){
         }
     })
 
+//remove empty p tags
+
+    $("p:empty").remove();
 
 });

@@ -308,7 +308,7 @@ body{
     }
     .motion-show-reel {
         height: 78vh;
-        z-index: 999999;
+        z-index: 6;
         top: 60px;
         position: relative;
         width: 100%;
@@ -401,7 +401,7 @@ body{
     }
     .film-show-reel {
         height: 78vh;
-        z-index: 999999;
+        z-index: 6;
         top: 60px;
         position: relative;
         width: 100%;
@@ -1299,12 +1299,6 @@ body{
     video[poster]{
         object-fit: cover;
     }
-    &:hover{
-        .header-play {
-            opacity: 0.70;
-            transition: all ease 0.2s;
-        }
-    }
 }
 
 .play-button-display {
@@ -1335,12 +1329,12 @@ body{
                 pointer-events: none;
             }
         }
-        &:hover {
+/*        &:hover {
             .header-play {
                 opacity: 0.70;
                 transition: all ease 0.2s;
             }
-        }
+        }*/
     }
     .right-video {
         @media screen and (min-width: $bp-desktop) {
@@ -1390,6 +1384,7 @@ body{
         li {
             line-height: 26px;
             display: flex;
+            margin-top: 15px;
             &:before{
                 content : '\25CF';
                 display: inline-block;
@@ -1411,7 +1406,7 @@ body{
             width: 40%;
             display: inline-block;
             vertical-align: top;
-            padding-left: 50px;
+            margin-left: 50px;
         }
     }
     .text_single {
@@ -1441,7 +1436,7 @@ body{
         height: auto;
         padding: 30px 0;
         @media screen and (min-width: $bp-desktop) {
-            height: 100vh;
+            height: auto;
         }
     }
 }
@@ -1476,7 +1471,7 @@ body{
 }
 
 .quote-outer {
-    padding: 60px 0;
+    padding: 90px 0;
 }
 .quote-container {
     .text-section {
@@ -1493,14 +1488,14 @@ body{
         }
         blockquote p {
             display: inline;
-            &:not(:first-child){
+/*            &:not(:first-child){
                 &:before {
                     content: '\00B6';
                     display: inline-block;
                     letter-spacing: 0.20em;
                     color: #737373;
                 }
-            }
+            }*/
         }
     }
     .quote-attribute {
@@ -1618,13 +1613,14 @@ body{
                 &:before {
                     @media screen and (min-width: $bp-desktop) {
                         font-family: 'slick';
-                        font-size: 25px;
+                        font-size: 28px;
                         line-height: 20px;
                         position: absolute;
-                        top: 0;
+                        top: 30px;
                         left: 0;
                         width: 20px;
                         height: 20px;
+                        margin-left: 20px;
                         content: '•';
                         text-align: center;
                         opacity: .25;

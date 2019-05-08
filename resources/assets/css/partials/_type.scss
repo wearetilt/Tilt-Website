@@ -249,6 +249,7 @@ p {
             height: 18px;
             width: 18px;
             margin-right: 8px;
+                margin-bottom: 1px;
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-phone) {
                 height: 11px;

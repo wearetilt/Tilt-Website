@@ -72,14 +72,14 @@ endif;
         ?>
     </div>
 
-    <div class="archive-show-reel area-dark">
+<!--     <div class="archive-show-reel area-dark">
 
         <div id="header-play" class="header-play"></div>
         <div class="reel-title"> <h2>REEL 2019</h2></div>
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="100%" >
                 <source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
             </video>
-    </div>
+    </div> -->
 
 <div class="container container--half-top container--half-bot image-container client-logos">
     <h2> Featured Clients</h2>

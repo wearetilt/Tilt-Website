@@ -290,7 +290,7 @@ if( have_rows('work_items') ):
 
                   <?php elseif( get_row_layout() == 'quote' ):?>
                     <div class="container area-dark quote-outer">
-                      <div class="container quote-container area-dark">
+                      <div class="quote-container area-dark">
                         <section class="text-section">
                           <blockquote><?php echo the_sub_field('text'); ?></blockquote>
                           <p class="sans-serif quote-attribute"><strong class="highlight"><?php echo the_sub_field('name'); ?></strong> <?php echo the_sub_field('position'); ?></p>
