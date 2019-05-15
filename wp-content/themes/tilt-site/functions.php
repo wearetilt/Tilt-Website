@@ -602,3 +602,5 @@ function getPageSibling($link) {
 
     // if ($link == 'prev' || $link == 'next') { return ; } else { return $closest; }
 }
+
+

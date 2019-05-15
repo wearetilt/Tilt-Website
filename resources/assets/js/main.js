@@ -1228,12 +1228,12 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
 
         if(scroll > position){
-        $('.header-title').fadeOut(1000, function(){
+        $('.header-title').fadeOut(500, function(){
             $('.container--header').css('display', 'none');
         });
         }else{
             $('.container--header').css('display', 'block');
-            $('.header-title').fadeIn(1000);
+            $('.header-title').fadeIn(500);
         }
     })
 

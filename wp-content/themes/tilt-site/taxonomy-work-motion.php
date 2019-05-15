@@ -20,12 +20,12 @@ get_header(); ?>
 <section id="primary" class="content-area">
     <main id="motion-archive" class="site-main" role="main">
 
-        <div id="video-overlay" class="fullpage-overlay">
+<!--         <div id="video-overlay" class="fullpage-overlay">
             <video id="overlay-video" width="100%" height="100%" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
                 <source src="https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=175" type="video/mp4">
             </video>
             <div id="video-overlay-close"></div>
-        </div>
+        </div> -->
 
 
         <?php if (have_posts()) : ?>
@@ -39,11 +39,9 @@ get_header(); ?>
             </header>
 
             <div class="motion-show-reel area-dark">
-                <div class="header-play"></div>
-                <div class="reel-title "> <h2>Motion Reel</h2></div>
-                <video class="video-js vjs-default-skin" width="100%" height="100%" >
-                  <source id="header-video" src="https://player.vimeo.com/external/306997716.hd.mp4?s=c30b980ad09357a76bb3b318dfcc5091c57101ee&profile_id=174" type="video/mp4">
-                  </video>
+                    <div class="embed-container">
+                        <iframe src="https://player.vimeo.com/video/306997716" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
             </div>
 
               <div class="group-container area-dark">

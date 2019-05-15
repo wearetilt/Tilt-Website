@@ -40,7 +40,7 @@ if( have_rows('work_items') ):
       <header class="work-item area-dark" >
 
         <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
-<!--           <img src="<?php echo $image['url']?>"> -->
+          <!--           <img src="<?php echo $image['url']?>"> -->
         </div>
 
         <?php 
@@ -66,13 +66,13 @@ if( have_rows('work_items') ):
               <h1>
                 <?php echo get_sub_field('title_bold');?>
               </h1>
-                <?php 
-                if(get_sub_field('title')) : 
-                  ?> 
-                  <p><?php echo get_sub_field('title');?></p>
-                  <?php
-                endif;
-                ?>
+              <?php 
+              if(get_sub_field('title')) : 
+                ?> 
+                <p><?php echo get_sub_field('title');?></p>
+                <?php
+              endif;
+              ?>
               <?php 
               if($arrTerms) : 
                 ?>
@@ -129,7 +129,7 @@ if( have_rows('work_items') ):
 
           <div class="launch-project-button container container-headline-text area-dark">
             <div class="launch-link">
-              <a href="<?php echo $launch; ?>">Launch Project</a>
+                <a href="<?php echo $launch; ?>">Launch Project</a>
             </div>
           </div>
 
@@ -213,13 +213,14 @@ if( have_rows('work_items') ):
 
             <?php 
           elseif(get_row_layout() == 'full_height_video'):
-            $poster = get_sub_field('video_poster');
+            $video = get_sub_field('video');
+
             ?>
+
             <div class="container full-height-video area-dark">
-              <div id="header-play" class="header-play video-ready"></div>
-              <video id="work-video" poster="<?php echo $poster['url']; ?>">
-                <source src="<?php echo get_sub_field('video');?>" type="video/mp4">
-                </video>
+              <div class="embed-container">
+                <?php echo $video; ?>
+              </div>
               </div>
 
               <!-- video side by side -->
@@ -227,45 +228,54 @@ if( have_rows('work_items') ):
               <?php 
 
             elseif(get_row_layout() == 'video_row'):
+              $count = count(get_sub_field('rows'));
 
-              $left_video = get_sub_field('video_left'); 
-              $left_poster = get_sub_field('left_poster');
-              $right_video = get_sub_field('video_right');
-              $right_poster = get_sub_field('right_poster');
+// check if the repeater field has rows of data
+              if( have_rows('rows') ):
 
-              ?>
+               $classname = ($count > 1 ? 'no-padding' : '');
 
-              <div class="container video-row area-dark">
+  // loop through the rows of data
+               while ( have_rows('rows') ) : the_row();
 
-                <div class="left-video">
-                  <div id="header-play" class="header-play video-ready"></div>
-                  <video id="work-video" poster="<?php echo $left_poster['url']; ?>"> 
-                    <source src="<?php echo $left_video; ?>" type="video/mp4">
-                    </video>
-                  </div>
+        // display a sub field value
+                $left_video = get_sub_field('video_left'); 
+                $right_video = get_sub_field('video_right');
 
-                  <div class="right-video">
-                    <div id="header-play" class="header-play video-ready"></div>
-                    <video id="work-video" poster="<?php echo $right_poster['url']; ?>"> 
-                      <source src="<?php echo $right_video; ?>" type="video/mp4">
-                      </video>
+
+                ?>
+                <div class="container video-row area-dark <?php echo $classname; ?>">
+                  <div class="left-video">
+                    <?php echo $left_video; ?>
                     </div>
 
-                  </div>
+                    <div class="right-video">
+                      <?php echo $right_video; ?>
+                      </div>
+                    </div>
 
-                  <!--- full text section -->
+                    <?php
 
-                  <?php 
+                  endwhile;
 
-                elseif(get_row_layout() == 'full_text_section'):
+                endif;
 
-                  $text_section_header = get_sub_field('text_section_header');
-                  $text_section_content = get_sub_field('text_section_content');
-                  $second_column = get_sub_field('two_columns');
-                  $second_header = get_sub_field('second_header');
-                  $second_text_content = get_sub_field('second_text_section');
 
-                    if($second_column == true) :
+                ?>
+
+                <!--- full text section -->
+
+                <?php 
+
+              elseif(get_row_layout() == 'full_text_section'):
+
+                $text_section_header = get_sub_field('text_section_header');
+                $text_section_content = get_sub_field('text_section_content');
+                $second_column = get_sub_field('two_columns');
+                $second_header = get_sub_field('second_header');
+                $second_text_content = get_sub_field('second_text_section');
+
+                if($second_column == true) :
                   ?>
                   <div class="container text_section_container area-dark">
                     <div class="text_mid">
@@ -278,13 +288,13 @@ if( have_rows('work_items') ):
                     </div>
                   </div>
                   <?php else: ?>
-                  <div class="container text_section_container area-dark">
-                    <div class="text_single">
-                      <h2><?php echo $text_section_header; ?> </h2>
-                      <p><?php echo $text_section_content; ?></p>
+                    <div class="container text_section_container area-dark">
+                      <div class="text_single">
+                        <h2><?php echo $text_section_header; ?> </h2>
+                        <p><?php echo $text_section_content; ?></p>
+                      </div>
                     </div>
-                  </div>
-                <?php endif; ?>
+                  <?php endif; ?>
 
                   <!-- quote -->
 
@@ -362,11 +372,12 @@ if( have_rows('work_items') ):
 
                           <?php 
                           $i = 0;
+
                           foreach(get_sub_field('carousel_image') as $image){
                             ?>
                             <div class="carousel-image slide<?php echo $i+1?>">
                               <div>
-                              <img class="slideimage " src="<?php echo $image['url'];?>" alt="<?php echo $alt; ?>">
+                                <img class="slideimage " src="<?php echo $image['url'];?>" alt="<?php echo $image['alt']; ?>">
                               </div>
                             </div>
                             <?php
@@ -376,9 +387,9 @@ if( have_rows('work_items') ):
 
                         </div>
 
-                      <!-- extended image -->
+                        <!-- extended image -->
 
-                      <?php 
+                        <?php 
 
                       elseif ( get_row_layout() == 'extended_image'):
                         $long_image = wp_get_attachment_image_src(get_sub_field('image'), false);
@@ -386,15 +397,15 @@ if( have_rows('work_items') ):
                         $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
 
                         if ($long_image) :
-                      ?>
+                          ?>
 
-                      <div class="container padded_image_container_long area-dark">
-                        <img src="<?php echo $long_image[0]; ?>" alt="<?php echo $alt; ?>">
-                      </div>
+                          <div class="container padded_image_container_long area-dark">
+                            <img src="<?php echo $long_image[0]; ?>" alt="<?php echo $alt; ?>">
+                          </div>
 
-                      <?php
+                          <?php
                         endif;
-                      ?>
+                        ?>
 
                         <!-- image video -->
 
