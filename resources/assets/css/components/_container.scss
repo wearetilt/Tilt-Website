@@ -1430,6 +1430,9 @@ body{
             column-gap: 50px;
         }
     }
+    > div + div {
+        margin-top: 1.8em;
+    }
 }
 
 .gallery-container {
@@ -1469,9 +1472,9 @@ body{
 }
 
 .padded_image_container_long {
-    padding: 60px 6.25%;
+    padding: 0px 6.25% 60px 6.25%;
     @media screen and (min-width: $bp-desktop) {
-        padding: 90px 6.25%;
+        padding: 0px 6.25% 180px 6.25%;
     }
     img {
         height: auto;
