@@ -40,7 +40,7 @@ get_header(); ?>
 
             <div class="motion-show-reel area-dark">
                     <div class="embed-container">
-                        <iframe src="https://player.vimeo.com/video/306997716" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe src="https://vimeo.com/326333943" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
             </div>
 
