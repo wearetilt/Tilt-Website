@@ -1215,7 +1215,6 @@ body{
         p {
             font-size: 20px;
             font-family: $f-seroot-lt;
-            color: white;
             line-height: 14px;
             padding: 0 4px;
             text-transform: uppercase;
@@ -1245,7 +1244,7 @@ body{
         .text-section__para {
             float: none;
             width: 85%;
-            color: white;
+            color: #d2d2d2;
         }
     }
 
@@ -1374,11 +1373,15 @@ body{
     h3 {
         margin: 35px 0px 5px;
     }
+    p {
+      color: #d2d2d2;
+    }
     ul {
         li {
             line-height: 26px;
             display: flex;
             margin-top: 15px;
+            color: #d2d2d2;
             &:before{
                 content : '\25CF';
                 display: inline-block;
@@ -1480,7 +1483,6 @@ body{
         p{
             margin-top: 18px;
             letter-spacing: 0px;
-            color: #fff;
         }
         blockquote p {
             /*            display: inline;*/
