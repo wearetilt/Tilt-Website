@@ -18,74 +18,57 @@
 
 get_header(); ?>
 
-    <section id="primary" class="content-area">
-        <main id="web-archive" class="site-main" role="main">
+<section id="primary" class="content-area">
+    <main id="web-archive" class="site-main" role="main">
 
         <div id="video-overlay" class="fullpage-overlay">
             <video id="overlay-video" width="100%" height="100%" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
                 <source src="https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=175" type="video/mp4">
-            </video>
-            <div id="video-overlay-close"></div>
-        </div>
+                </video>
+                <div id="video-overlay-close"></div>
+            </div>
 
 
-        <?php if (have_posts()) : ?>
+            <?php if (have_posts()) : ?>
 
-            <header id="services--list" class="container container--header container--work-list">
-                <p> Filter work by: </p>
-                <a class='list-all' href="/work">All</a>
-                <a class="list-web" href="/web">Web</a>
-                <a class="list-motion" href="/motion">Motion</a>
-                <a class="list-film" href="/film">Film</a>
-            </header>
+                <header id="services--list" class="container container--header container--work-list">
+                    <p> Filter work by: </p>
+                    <a class='list-all' href="/work">All</a>
+                    <a class="list-web" href="/web">Web</a>
+                    <a class="list-motion" href="/motion">Motion</a>
+                    <a class="list-film" href="/film">Film</a>
+                </header>
 
-            <div class="group-container area-dark">
-            <?php
-            // Start the Loop.
-            while (have_posts()) :
-                the_post();
+                <div class="group-container area-dark">
+                    <?php
+                    while (have_posts()) :
+                        the_post();
 
-                /*
-                 * Include the Post-Format-specific template for the content.
-                 * If you want to override this in a child theme, then include a file
-                 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                 */
-                get_template_part( 'content-web-link', get_post_format() );
+                        get_template_part( 'content-web-link', get_post_format() );
 
-            // End the loop.
-            endwhile;
+                    endwhile;
 
-            // Previous/next page navigation.
-            the_posts_pagination( array(
-                'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-                'next_text'          => __( 'Next page', 'twentyfifteen' ),
-                'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-            ) );
+                    the_posts_pagination( array(
+                        'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+                        'next_text'          => __( 'Next page', 'twentyfifteen' ),
+                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+                    ) );
 
-            ?>
-            <?php
+                    ?>
+                    <?php
 
-        // If no content, include the "No posts found" template.
-else :
-            get_template_part( 'content', 'none' );
-endif;
-        ?>
-    </div>
+                else :
+                    get_template_part( 'content', 'none' );
+                endif;
+                ?>
+            </div>
 
-<!--     <div class="archive-show-reel area-dark">
 
-        <div id="header-play" class="header-play"></div>
-        <div class="reel-title"> <h2>REEL 2019</h2></div>
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="100%" >
-                <source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
-            </video>
-    </div> -->
+            <div class="container container--half-top container--half-bot image-container client-logos">
+                <h2> Featured Clients</h2>
+                <img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />
+            </div>
+        </main>
+    </section>
 
-<div class="container container--half-top container--half-bot image-container client-logos">
-    <h2> Featured Clients</h2>
-    <img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />
-</div>
-        </main><!-- .site-main -->
-    </section><!-- .content-area -->
-
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

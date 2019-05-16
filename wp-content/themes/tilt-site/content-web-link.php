@@ -21,30 +21,30 @@
   <div class="link">
 
     <a href="<?php get_permalink();?>">
-    <?php
+      <?php
       if($post_image != ''){
        echo $post_image;
-      }
-      else { ?>
-        <img src="">
-      <?php }
+     }
+     else { ?>
+      <img src="/wp-content/themes/tilt-site/images/404_poster.jpg">
+    <?php }
 
     ?>
     
-    </a>
-    <div class="related-links">
-      <p class="tag"><?php echo $tag_taxonomy[0]->name; ?></p>
-      <h2 class="entry-title"><?php echo get_the_title();?></h2>
-      <p> 
-        <?php 
-          $string = $project->post_name; 
-          $workName = str_replace('-', ' ', $string);
-          echo $workName;
-        ?> 
-      </p>
-    </div>
-
+  </a>
+  <div class="related-links">
+    <p class="tag"><?php echo $tag_taxonomy[0]->name; ?></p>
+    <h2 class="entry-title"><?php echo get_the_title();?></h2>
+    <p> 
+      <?php 
+      $string = $project->post_name; 
+      $workName = str_replace('-', ' ', $string);
+      echo $workName;
+      ?> 
+    </p>
   </div>
 
+</div>
 
-</article><!-- #post-## -->
+
+</article>

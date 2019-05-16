@@ -335,11 +335,7 @@ body{
     }
     .motion-show-reel {
         z-index: 6;
-<<<<<<< HEAD
-        top: 66px;
-=======
         top: 80px;
->>>>>>> 22607d534e821b90a1846d03d415e7632dff606c
         position: relative;
         width: 100%;
         iframe{
@@ -1542,7 +1538,7 @@ body{
     .quote-attribute {
         p{
             letter-spacing: 0.075em;
-        blockquote p {
+            blockquote p {
 /*            &:not(:first-child){
                 &:before {
                     content: '\00B6';
