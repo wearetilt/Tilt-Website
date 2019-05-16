@@ -270,7 +270,7 @@ body{
         &:hover {
             .related-links{
                 opacity: 1;
-                transition: all 0.5s ease-in-out; 
+                transition: all 0.5s ease-in-out;
             }
         }
     }
@@ -367,7 +367,7 @@ body{
         &:hover {
             .related-links {
                 opacity: 1;
-                transition: all 0.5s ease-in-out; 
+                transition: all 0.5s ease-in-out;
             }
         }
 
@@ -465,7 +465,7 @@ body{
         &:hover {
             .related-links{
                 opacity: 1;
-                transition: all 0.5s ease-in-out; 
+                transition: all 0.5s ease-in-out;
             }
         }
 
@@ -1040,7 +1040,7 @@ body{
             cursor: default;
             color: inherit;
             background-color: inherit;
-            border-image: none;  
+            border-image: none;
             border: none;
             padding: 0;
             outline: 0;
@@ -1168,7 +1168,7 @@ body{
             text-transform: uppercase;
         }
     }
-}   
+}
 
 .news-items {
     text-align: center;
@@ -1215,10 +1215,11 @@ body{
         p {
             font-size: 20px;
             font-family: $f-seroot-lt;
+            color: white;
             line-height: 14px;
             padding: 0 4px;
             text-transform: uppercase;
-        }       
+        }
         h1 {
             font-size: 70px;
         }
@@ -1261,7 +1262,7 @@ body{
         margin: 0 auto;
         text-align: center;
         @media screen and (min-width: $bp-desktop){
-            width: 50%; 
+            width: 50%;
         }
 
         a{
@@ -1279,7 +1280,7 @@ body{
                 @media screen and (min-width: $bp-desktop){
                     width: 115%;
                 }
-            }   
+            }
         }
         &:after {
             content: '';
@@ -1333,7 +1334,7 @@ body{
         position: relative;
         padding-bottom: 26.25%; /* 16:9 */
         padding-top: 25px;
-        height: 0; 
+        height: 0;
         @media screen and (max-width: $bp-desktop) {
             padding-bottom: 56.25%;
         }
