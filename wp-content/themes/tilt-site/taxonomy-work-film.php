@@ -17,8 +17,8 @@
  */
 
 get_header(); ?>
-    <section id="primary" class="content-area">
-        <main id="film-archive" class="site-main" role="main">
+<section id="primary" class="content-area">
+    <main id="film-archive" class="site-main" role="main">
 
 <!--         <div id="video-overlay" class="fullpage-overlay">
             <video id="overlay-video" width="100%" height="100%" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
@@ -39,16 +39,16 @@ get_header(); ?>
             </header>
 
             <div class="film-show-reel area-dark">
-                    <div class="embed-container">
-                        <iframe src="https://player.vimeo.com/video/312876149" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
+                <div class="embed-container">
+                    <iframe src="https://player.vimeo.com/video/312876149" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
             </div>
 
             <div class="group-container area-dark">
-            <?php
+                <?php
             // Start the Loop.
-            while (have_posts()) :
-                the_post();
+                while (have_posts()) :
+                    the_post();
 
                 /*
                  * Include the Post-Format-specific template for the content.
@@ -71,9 +71,9 @@ get_header(); ?>
             <?php
 
         // If no content, include the "No posts found" template.
-else :
+        else :
             get_template_part( 'content', 'none' );
-endif;
+        endif;
         ?>
     </div>
 
@@ -83,13 +83,13 @@ endif;
             <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="100%" >
                 <source id="header-video" src="https://player.vimeo.com/external/141548149.hd.mp4?s=c38947ea65f3bad06d05e9881fe92ead&profile_id=113" type="video/mp4">
             </video>
-    </div> -->
+        </div> -->
 
-<div class="container container--half-top container--half-bot image-container client-logos">
-    <h2> Featured Clients</h2>
-    <img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />
-</div>
-        </main><!-- .site-main -->
-    </section><!-- .content-area -->
+        <div class="container container--half-top container--half-bot image-container client-logos">
+            <h2> Featured Clients</h2>
+            <img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />
+        </div>
+    </main><!-- .site-main -->
+</section><!-- .content-area -->
 
 <?php get_footer(); ?>

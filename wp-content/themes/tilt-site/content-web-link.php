@@ -16,12 +16,21 @@
   $project = get_post();
   $project_id = $project->ID;
   $tag_taxonomy = wp_get_post_terms($project_id, 'work');
-  
+  $post_image = get_the_post_thumbnail();
   ?>
   <div class="link">
 
     <a href="<?php get_permalink();?>">
-      <?php twentyfifteen_post_thumbnail(); ?>
+    <?php
+      if($post_image != ''){
+       echo $post_image;
+      }
+      else { ?>
+        <img src="">
+      <?php }
+
+    ?>
+    
     </a>
     <div class="related-links">
       <p class="tag"><?php echo $tag_taxonomy[0]->name; ?></p>
