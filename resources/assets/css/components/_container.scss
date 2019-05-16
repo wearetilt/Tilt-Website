@@ -9,6 +9,11 @@ body{
     z-index: 1;
 }
 
+.min-height_wrapper {
+    min-height: 100vh;
+    background: red;
+}
+
 .wrapper {
     transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
     margin-bottom: 620px;
@@ -308,7 +313,7 @@ body{
     }
     .motion-show-reel {
         z-index: 6;
-        top: 60px;
+        top: 80px;
         position: relative;
         width: 100%;
         iframe{
