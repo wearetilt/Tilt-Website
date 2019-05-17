@@ -142,7 +142,8 @@ get_header(); ?>
 
   <div class="container container--half-top container--half-bot image-container client-logos">
   	<h2> Featured Clients</h2>
-  	<img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />
+    <?php $clients = get_field('featured_clients');?>
+    <div class="clients"><?php echo $clients; ?></div>
   </div>
 
 </div>

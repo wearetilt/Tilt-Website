@@ -101,15 +101,25 @@ $args = array(
 	</div>
 </div>
 
-<div class="container container--no-padding">
-	<section>
-		<div class="group-container">
+<div class="container container--no-padding area-dark">
 
+<?php if(have_rows('front_page_content') ) { 
 
-		</div> <!-- /end group-container -->
-	</section>
-</div> <!-- /end container -->
+		if(get_row_layout() == 'frontpage_work_items') {
+		$left_container = get_sub_field('work_item_left');
+		$right_container = get_sub_field('work_item_right');
 
+?>
+<div class="left-item">
+<?php echo $left_container; ?>
+</div>
+
+<?php 
+}
+}
+?>
+</div>
+<!-- /end container -->
 
 
 <?php get_footer(); ?>
