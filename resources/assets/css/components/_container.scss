@@ -1372,7 +1372,7 @@ body{
 .video-row {
     padding: 0px 6.25% 60px 6.25%;
     @media screen and (min-width: $bp-desktop) {
-        padding: 90px 6.25%;
+        padding: 0px 6.25% 180px 6.25%;
         display: flex;
     }
     > * {
@@ -1404,6 +1404,14 @@ body{
     }
     &.no-padding {
         padding: 0 6.25%;
+
+        &.last-item  {
+            padding: 0px 6.25% 60px 6.25%;
+
+            @media screen and (min-width: $bp-desktop) {
+                padding: 0px 6.25% 180px 6.25%;
+            } 
+        }
     }
 }
 
@@ -1459,10 +1467,13 @@ body{
         display: block;
         column-gap: 50px;
     }
-    > div + div {
-        margin-top: 1.8em;
-    }
 }
+    > div + div {
+            margin-top: 1.8em;
+        @media screen and (min-width: $bp-desktop) {
+            margin-top: 0em;
+        }
+    }
 }
 
 .gallery-container {
