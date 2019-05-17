@@ -258,6 +258,7 @@ body{
         }
         .link {
             position: relative;
+            overflow: hidden;
         }
         .related-links {
             position: absolute;
@@ -276,6 +277,11 @@ body{
             .related-links{
                 opacity: 1;
                 transition: all 0.5s ease-in-out;
+            }
+            img {
+                opacity: 0.50;
+                transform: scale(1.1,1.1);
+                transition: transform ease 0.5s;
             }
         }
     }
@@ -377,6 +383,7 @@ body{
         }
         .link {
             position: relative;
+            overflow: hidden;
         }
         .related-links {
             position: absolute;
@@ -395,6 +402,11 @@ body{
             .related-links {
                 opacity: 1;
                 transition: all 0.5s ease-in-out;
+            }
+            img {
+                opacity: 0.50;
+                transform: scale(1.1,1.1);
+                transition: transform ease 0.5s;
             }
         }
 
@@ -475,6 +487,7 @@ body{
         }
         .link {
             position: relative;
+            overflow: hidden;
         }
         .related-links {
             position: absolute;
@@ -493,6 +506,11 @@ body{
             .related-links{
                 opacity: 1;
                 transition: all 0.5s ease-in-out;
+            }
+            img {
+                opacity: 0.50;
+                transform: scale(1.1,1.1);
+                transition: transform ease 0.5s;
             }
         }
 
