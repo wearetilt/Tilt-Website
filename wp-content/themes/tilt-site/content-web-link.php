@@ -34,16 +34,17 @@
   <div class="related-links">
     <?php 
       $category = get_post_meta($project_id, 'work_items_0_category');
-      $sub_title = get_post_meta($project_id, 'work_items_0_title');
+      $sub_title = get_post_meta($project_id, 'work_items_0_overview_title');
+      $sub_title2 = get_post_meta($project_id, 'work_items_0_title');
     ?>
 
     <p class="tag"><?php echo $category[0]; ?></p>
     <h2 class="entry-title"><?php echo get_the_title();?></h2>
+    <?php if($sub_title == true){?>
     <p> 
-      <?php 
-        echo $sub_title[0];
-      ?> 
+      <?php echo $sub_title[0]; ?> 
     </p>
+  <?php } else {} ?>
   </div>
 
 </div>
