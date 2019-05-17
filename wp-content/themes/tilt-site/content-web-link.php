@@ -12,7 +12,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
-
   $project = get_post();
   $project_id = $project->ID;
   $tag_taxonomy = wp_get_post_terms($project_id, 'work');
@@ -33,13 +32,16 @@
     
   </a>
   <div class="related-links">
-    <p class="tag"><?php echo $tag_taxonomy[0]->name; ?></p>
+    <?php 
+      $category = get_post_meta($project_id, 'work_items_0_category');
+      $sub_title = get_post_meta($project_id, 'work_items_0_title');
+    ?>
+
+    <p class="tag"><?php echo $category[0]; ?></p>
     <h2 class="entry-title"><?php echo get_the_title();?></h2>
     <p> 
       <?php 
-      $string = $project->post_name; 
-      $workName = str_replace('-', ' ', $string);
-      echo $workName;
+        echo $sub_title[0];
       ?> 
     </p>
   </div>
