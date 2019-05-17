@@ -1272,9 +1272,9 @@ body{
 }
 
 .launch-project-button {
-    padding: 60px 6.25%;
+    padding: 0px 6.25% 60px 6.25%;
     @media screen and (min-width: $bp-desktop) {
-        padding: 90px 6.25% ;
+        padding: 0px 6.25% 180px 6.25% ;
     }
     font-size: 1.25rem;
     .launch-link {
@@ -1324,9 +1324,9 @@ body{
 }
 
 .full-height-video {
-    padding: 60px 6.25%;
+    padding: 0px 6.25% 60px 6.25%;
     @media screen and (min-width: $bp-desktop) {
-        padding: 90px 6.25%;
+        padding: 0px 6.25% 180px 6.25%;
     }
     iframe {
         position: absolute;
@@ -1345,7 +1345,7 @@ body{
 }
 
 .video-row {
-    padding: 60px 6.25%;
+    padding: 0px 6.25% 60px 6.25%;
     @media screen and (min-width: $bp-desktop) {
         padding: 90px 6.25%;
         display: flex;
@@ -1441,9 +1441,9 @@ body{
 }
 
 .gallery-container {
-    padding: 60px 6.25%;
+    padding: 0px 6.25% 60px 6.25%;
     @media screen and (min-width: $bp-desktop) {
-        padding: 90px 6.25%;
+        padding: 0px 6.25% 180px 6.25%;
     }
 }
 
@@ -1531,9 +1531,9 @@ body{
     }
 
     .related-projects {
-        padding: 60px 6.25%;
+        padding: 0px 6.25% 60px 6.25%;
         @media screen and (min-width: $bp-desktop) {
-            padding: 90px 6.25%;
+            padding: 0px 6.25% 180px 6.25%;
         }
         .related-container {
             display: block;
@@ -1590,9 +1590,9 @@ body{
     }
     .image_carousel {
         display: flex;
-        padding: 60px 0;
+        padding: 0px 0 60px 0;
         @media screen and (min-width: $bp-desktop) {
-            padding: 90px 0;
+            padding: 0px 0 180px 0;
         }
         .carousel-image {
             img {
