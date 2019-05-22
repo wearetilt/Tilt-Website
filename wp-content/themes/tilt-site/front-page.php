@@ -68,82 +68,97 @@ get_header('home'); ?>
 
           $left_project = get_sub_field('work_item_left');
           $right_project = get_sub_field('work_item_right');
-          $post_image = get_the_post_thumbnail();
+          $post_image_left = get_the_post_thumbnail($left_project);
+          $post_image_right = get_the_post_thumbnail($right_project);
           $bold_left = get_post_meta($left_project->ID, 'work_items_0_title_bold');
           $bold_right = get_post_meta($right_project->ID, 'work_items_0_title_bold');
+          $title_left = get_post_meta($left_project->ID, 'work_items_0_title');
+          $title_right = get_post_meta($right_project->ID, 'work_items_0_title');
+          $left_excerpt = get_the_excerpt($left_project->ID);
+          $right_excerpt = get_the_excerpt($right_project->ID);
           ?>
           <div class="work-item area-dark" >
 
             <div class="left_container project_container"> 
               <a href='<?php echo get_permalink($left_project); ?>'>
-                <?php if($post_image != '') {
-                  echo $post_image;
+                <?php if($post_image_left  != '') {
+                  echo $post_image_left ;
                 } else { ?>
                   <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg"/>
                 <?php } ?>
               </a>
 
               <div class="related-links">
-                <h2 class="entry-title"><?php echo $bold_left[0]; ?></h2>
-               <p><?php echo $left_project->post_title;  ?></p>
+                <h2 class="entry-title"><?php echo $bold_left[0]; ?><br /><span class="light underlined"><?php echo $title_left[0];  ?></span></h2>
+                <p class="sans-serif"><?php echo $left_excerpt; ?></p>
               </div>
             </div>
 
             <div class="right_container project_container"> 
               <a href='<?php echo get_permalink($right_project); ?>'>
-                <?php if($post_image != '') {
-                  echo $post_image;
+                <?php if($post_image_right != '') {
+                  echo $post_image_right;
                 } else { ?>
                   <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg"/>
                 <?php } ?>
               </a>
 
               <div class="related-links">
-                <h2 class="entry-title"><?php echo $bold_right[0]; ?></h2>
-               <p><?php echo $right_project->post_title;  ?></p>
-            </div>
-          </div>
-
-          </div>
-
-    <?php 
-
-      elseif(get_row_layout() == 'see_all'):
-        $our_work = get_sub_field('our_work');
-        ?>
-          <div class=" goto_projects area-dark"> 
-            <div class="our_work_button">
-            <?php echo $our_work; ?> 
-          </div>
-          </div>
-
-
-
-    <?php
-
-      elseif(get_row_layout() == 'news_row') :
-        if(have_rows('news_items')) :
-    ?>
-          <div class="news-line area-dark"> 
-    <?php
-          while(have_rows('news_items')): the_row();
-            $news = get_sub_field('news_item');
-    ?>
-
-              <div class="news-item">
-                <p>News</p>
-                <?php echo $news->post_title; ?>
+                <h2 class="entry-title"><?php echo $bold_right[0]; ?><br /><span class="underlined light"><?php echo $title_right[0];  ?></span></h2>
+                <p class="sans-serif"><?php echo $right_excerpt; ?></p>
               </div>
+            </div>
 
-    <?php 
-          endwhile;
-    ?>
           </div>
-    <?php
-        endif;
-      endif;
 
-    endwhile;
+          <?php 
+
+        elseif(get_row_layout() == 'see_all'):
+          $our_work = get_sub_field('our_work');
+          ?>
+          <div class=" goto_projects area-dark"> 
+
+            <a class="cube--link" href="<?php echo site_url(); ?>/work">
+              <div class="cube">
+                <div class="cube--front">
+                  <p class="our_work_button sans-serif button"><?php echo $our_work; ?> </p>
+                </div>
+                <div class="cube--top">
+                  <p class="our_work_button_black sans-serif button"><?php echo $our_work; ?> </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <?php
+
+        elseif(get_row_layout() == 'news_row') :
+          if(have_rows('news_items')) :
+            ?>
+            <div class="news-line area-dark"> 
+              <?php
+              while(have_rows('news_items')): the_row();
+                $news = get_sub_field('news_item');
+                ?>
+
+                <a href="<?php echo get_permalink($news);?>" class="news-item">
+                  <div class="news_text">
+                    <p>News</p>
+                    <?php echo $news->post_title; ?>
+                  </div>
+                </a>
+
+                <?php 
+              endwhile;
+              ?>
+            </div>
+            <?php
+          endif;
+        endif;
+
+      endwhile;
     else :
     // no rows found
     endif;

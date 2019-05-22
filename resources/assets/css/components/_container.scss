@@ -255,6 +255,7 @@ body{
         img {
             width: 100%;
             height: auto;
+            transition: transform ease 0.5s;
         }
         .link {
             position: relative;
@@ -262,13 +263,14 @@ body{
         }
         .related-links {
             position: absolute;
-            bottom: 40%;
-            padding: 0 25px;
+            top: 40%;
+            padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
+            pointer-events: none;
             p {
                 font-size: 25px;
-                font-family: $f-seroot;
+                font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
@@ -380,6 +382,7 @@ body{
         img {
             width: 100%;
             height: auto;
+            transition: transform ease 0.5s;
         }
         .link {
             position: relative;
@@ -387,13 +390,14 @@ body{
         }
         .related-links {
             position: absolute;
-            bottom: 40%;
-            padding: 0 25px;
+            top: 40%;
+            padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
+            pointer-events: none;
             p {
                 font-size: 25px;
-                font-family: $f-seroot;
+                font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
@@ -484,6 +488,7 @@ body{
         img {
             width: 100%;
             height: auto;
+            transition: transform ease 0.5s;
         }
         .link {
             position: relative;
@@ -491,13 +496,14 @@ body{
         }
         .related-links {
             position: absolute;
-            bottom: 40%;
-            padding: 0 25px;
+            top: 40%;
+            padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
+            pointer-events: none;
             p {
                 font-size: 25px;
-                font-family: $f-seroot;
+                font-family:$f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
@@ -1163,7 +1169,7 @@ body{
 
   /* front page cms styling */
 
-.main-work-content {
+  .main-work-content {
 
     .work-item {
         display: flex;
@@ -1175,24 +1181,30 @@ body{
         background-color: rgba(32, 32, 32, 1);
         z-index: 999999;
         overflow: hidden;
-
-    .related-links {
+        transition: all 0.5s ease;
+        img {
+            transition: transform ease 0.5s;
+            width: 100%;
+        }
+        .related-links {
             position: absolute;
-            bottom: 40%;
-            padding: 0 25px;
+            top: 40%;
+            padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
+            pointer-events: none;
             p {
                 font-size: 25px;
-                font-family: $f-seroot;
+                font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
+                color: white;
             }
         }
         &:hover {
             .related-links{
                 opacity: 1;
-                transition: all 0.5s ease-in-out;
+
             }
             img {
                 opacity: 0.50;
@@ -1213,58 +1225,58 @@ body{
         padding: 58px 0 124px 0;
         
         .our_work_button {
-            border: 2px white solid;
-            width: 20%;
-            display: block;
-            margin: 0 auto;
             font-family: $f-seroot-lt;
             letter-spacing: 0.075;
             @include font-size(18);
-            padding: 18px 0;
-
-            &:after {
-                content: '';
-                display: inline-block;
-                background: url(../images/button_arrow.png) right no-repeat;
-                width: 20%;
-                height: 14px;
-                transform: translateX(25px);
-                transition: all ease 0.5s;
-                padding-left: 5px;
-            }
-
-            &:hover {
-                &:after {
-                    transform: translateX(-10px);
-                    transition: transform  ease 0.5s;
-                }
+            color: white;
+            &_black {
+                color: black;
+                letter-spacing: 0.075;
+                @include font-size(18);
+                font-family: $f-seroot-lt;
             }
         }
-
     }
 
     .news-line {
         display: flex;
+        flex-wrap: wrap;
     }
-    .news-item {
-        width: 25%;
+    .news-item{
+        width: 50%;
         z-index: 999999;
         position: relative;
         color: white;
-        padding: 70px 50px;
-        background: #1f1f1f;
+        background: #242424;
         @include font-size(32);
         text-transform: uppercase;
         font-family: $f-seroot-blck;
 
-        p:first-of-type {
+        @media (min-width: 48rem) {
+          width: 49%;
+          &:nth-child(odd) {
+            background: #1f1f1f;
+          }
+        }
+    
+        @media (min-width: 62rem) {
+          width: 25%;
+          &:not(:nth-child(4n)) {
+          }
+        }
+        &:before {
+          content: "";
+          float: left;
+          padding-top: 100%;
+        }
+        .news_text {
+            padding: 40% 40px 0 40px;
+        }
+        p {
             color: $c-tilt-pink;
             text-transform: uppercase;
             @include font-size(18);
             font-family: $f-merriweather;
-        }
-        &:nth-child(2n){
-            background: #242424
         }
     }
 
@@ -1272,7 +1284,8 @@ body{
 }
 
 
-  .front-content {
+
+.front-content {
     padding: 0 6.25% 10%;
 }
 .cms-content{
@@ -1596,12 +1609,12 @@ body{
         column-gap: 50px;
     }
 }
-    > div + div {
-            margin-top: 1.8em;
-        @media screen and (min-width: $bp-desktop) {
-            margin-top: 0em;
-        }
+> div + div {
+    margin-top: 1.8em;
+    @media screen and (min-width: $bp-desktop) {
+        margin-top: 0em;
     }
+}
 }
 
 .gallery-container {

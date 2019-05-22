@@ -17,6 +17,9 @@
  */
 
 get_header(); ?>
+
+<?php echo the_archive_title();?>
+
 <section id="primary" class="content-area">
     <main id="film-archive" class="site-main" role="main">
 

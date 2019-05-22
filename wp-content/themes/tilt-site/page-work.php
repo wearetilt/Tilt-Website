@@ -15,13 +15,6 @@ $work_groups = get_field('work_items');
 
 get_header(); ?>
 
-<!-- <div id="video-overlay" class="fullpage-overlay">
-    <video id="overlay-video" width="100%" height="100%" controls class="video-js vjs-default-skin vertical-align" poster="<?php echo get_template_directory_uri(); ?>/images/work/showreel_poster.jpg" width="100%" height="auto">
-        <source src="https://player.vimeo.com/external/139889786.hd.mp4?s=91a9df0c1f9574740a422a5f253fa81768da039e&profile_id=175" type="video/mp4">
-    </video>
-    <div id="video-overlay-close"></div>
-  </div> -->
-
   <div id="services--list" class="container container--header container--work-list">
   	<p> Filter work by: </p>
   	<a class='list-all' href="/work">All</a>
@@ -77,8 +70,7 @@ get_header(); ?>
   										<a href="<?= $link;?>">
   											<div class="overlay area-dark">
   												<div class="overlay-text">
-  													<p class="tag tag--work-body"><?= $work_item['work_item_title'];?></p>
-  													<h2><?= $work_item['work_item_headline'];?><br /><span class="light<?= $k==0?' underlined':'';?>"><?= $work_item['work_item_headline2'];?></span></h2>
+  													<h2><?= $work_item['work_item_headline'];?><br /><span class="light underlined"><?= $work_item['work_item_headline2'];?></span></h2>
   													<?php if($work_item['work_item_text']): ?>
   														<p class="sans-serif"><?= $work_item['work_item_text'];?></p>
   													<?php endif;?>
@@ -105,8 +97,7 @@ get_header(); ?>
   										<a href="<?= $link;?>">
   											<div class="overlay area-dark">
   												<div class="overlay-text">
-  													<p class="tag tag--work-body"><?= $work_item['work_item_title'];?></p>
-  													<h2><?= $work_item['work_item_headline'];?><br /><span class="light<?= $k==0?' underlined':'';?>"><?= $work_item['work_item_headline2'];?></span></h2>
+  													<h2><?= $work_item['work_item_headline'];?><br /><span class="light underlined"><?= $work_item['work_item_headline2'];?></span></h2>
   													<?php if($work_item['work_item_text']): ?>
   														<p class="sans-serif"><?= $work_item['work_item_text'];?></p>
   													<?php endif;?>
