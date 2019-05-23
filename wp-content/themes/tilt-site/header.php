@@ -36,6 +36,39 @@
       a.appendChild(r);
   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<?php 
+
+$htmltitle = wp_title('&raquo;',false);
+
+	if($htmltitle == 'web Archives - We Are Tilt') { 
+
+?>
+
+		<title>Web & Interactive - We Are Tilt - Brighton</title>
+		<meta name="description" content="Brilliant digital experiences that are bold, beautiful and put users first and always. We think beyond one way traffic and create online experiences that change behaviours.">
+
+<?php
+
+	} 
+	elseif($htmltitle == 'film Archives - We Are Tilt' ) { 
+
+?>
+
+		<title>Film - We Are Tilt - Brighton</title>
+		<meta name="description" content="Beautiful short films that tell stories about people, places and ideas.">
+
+<?php
+
+	}
+	elseif($htmltitle == 'motion Archives - We Are Tilt' ) { 
+
+?>
+
+		<title>Motion Graphics - We Are Tilt - Brighton</title>
+		<meta name="description" content="Motion Graphics has no borders, if you can imagine it, we can build it. Vivid 2D and 3D pieces that explain ideas and spark interest in eye catching ways.">
+
+<?php } ?>
+
 	<?php wp_head(); ?>
 
 	<meta name="theme-color" content="#ff0066">

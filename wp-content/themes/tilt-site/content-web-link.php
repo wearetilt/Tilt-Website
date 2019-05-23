@@ -37,8 +37,9 @@
       $sub_title = get_post_meta($project_id, 'work_items_0_title');
       $excerpt = get_the_excerpt();
     ?>
-    <h2 class="entry-title"><?php echo $title_bold[0];?><br /><span class="light underlined"><?= $sub_title[0];?></span></h2>
-    <p class="sans-serif"><?php echo $excerpt; ?></p>
+    <p class="project_name"><?= $sub_title[0];?></p>
+    <h2 class="entry-title"><?php echo $title_bold[0];?></h2>
+    <p class="sans-serif excerpt"><?php echo $excerpt; ?></p>
   </div>
 
 </div>

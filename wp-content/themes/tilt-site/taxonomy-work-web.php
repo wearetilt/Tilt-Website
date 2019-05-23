@@ -18,8 +18,6 @@
 
 get_header(); ?>
 
-<?php echo the_archive_title();?>
-
 <section id="primary" class="content-area">
     <main id="web-archive" class="site-main" role="main">
 
@@ -50,11 +48,11 @@ get_header(); ?>
 
                     endwhile;
 
-                    the_posts_pagination( array(
-                        'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-                        'next_text'          => __( 'Next page', 'twentyfifteen' ),
-                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-                    ) );
+                    // the_posts_pagination( array(
+                    //     'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+                    //     'next_text'          => __( 'Next page', 'twentyfifteen' ),
+                    //     'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+                    // ) );
 
                     ?>
                     <?php
@@ -66,10 +64,31 @@ get_header(); ?>
             </div>
 
 
-            <div class="container container--half-top container--half-bot image-container client-logos">
+<!--             <div class="container container--half-top container--half-bot image-container client-logos">
                 <h2> Featured Clients</h2>
                 <img class="full-size" src="<?php echo get_template_directory_uri(); ?>/images/client_logos.jpg" alt="PBS Fear-o-Meter" />
+            </div> -->
+
+            <div class="new_client_logos container area-dark">
+                <h2> Featured Clients</h2>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/1_bp.png" alt="bp logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/2_bbc.png" alt="bbc logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/3_a&o.png" alt="Allen and Overy logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/4_bnp.png" alt="bnp paribas logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/5_nick.png" alt="Nickelodeon logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/6_ford.png" alt="ford logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/7_visit_brighton.png" alt="visit brighton logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/8_tui.png" alt="Tui logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/9_alzheimers.png" alt="alzheimers research UK logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/10_barclays.png" alt="barclays bank logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/11_sainos.png" alt="Sainsburys logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/12_rb.png" alt="redbull logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/13_sdnp.png" alt="southdowns national park logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/14_land_rover.png" alt="land rover logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/15_02.png" alt="o2 mobile network logo" />
+
             </div>
+
         </main>
     </section>
 

@@ -89,8 +89,9 @@ get_header('home'); ?>
               </a>
 
               <div class="related-links">
-                <h2 class="entry-title"><?php echo $bold_left[0]; ?><br /><span class="light underlined"><?php echo $title_left[0];  ?></span></h2>
-                <p class="sans-serif"><?php echo $left_excerpt; ?></p>
+                <p class="project_name"><?php echo $title_left[0]; ?></p>
+                <h2 class="entry-title"><?php echo $bold_left[0]; ?></h2>
+                <p class="sans-serif excerpt"><?php echo $left_excerpt; ?></p>
               </div>
             </div>
 
@@ -104,8 +105,9 @@ get_header('home'); ?>
               </a>
 
               <div class="related-links">
-                <h2 class="entry-title"><?php echo $bold_right[0]; ?><br /><span class="underlined light"><?php echo $title_right[0];  ?></span></h2>
-                <p class="sans-serif"><?php echo $right_excerpt; ?></p>
+                <p class="project_name"><?php echo $title_right[0]; ?></p>
+                <h2 class="entry-title"><?php echo $bold_right[0]; ?></h2>
+                <p class="sans-serif excerpt"><?php echo $right_excerpt; ?></p>
               </div>
             </div>
 

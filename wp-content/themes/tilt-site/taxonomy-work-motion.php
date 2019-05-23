@@ -18,8 +18,6 @@
 
 get_header(); ?>
 
-<?php echo the_archive_title();?>
-
 <section id="primary" class="content-area">
     <main id="motion-archive" class="site-main" role="main">
 
@@ -46,11 +44,11 @@ get_header(); ?>
                     get_template_part( 'content-web-link', get_post_format() );
                 endwhile;
 
-                the_posts_pagination( array(
-                    'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-                    'next_text'          => __( 'Next page', 'twentyfifteen' ),
-                    'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-                ) );
+                // the_posts_pagination( array(
+                //     'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+                //     'next_text'          => __( 'Next page', 'twentyfifteen' ),
+                //     'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+                // ) );
 
                 ?>
                 <?php

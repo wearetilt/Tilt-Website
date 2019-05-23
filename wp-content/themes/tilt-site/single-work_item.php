@@ -229,7 +229,7 @@ if( have_rows('work_items') ):
 
             elseif(get_row_layout() == 'video_row'):
               $count = count(get_sub_field('rows'));
-
+              $m = 0;
 // check if the repeater field has rows of data
               if( have_rows('rows') ):
 
@@ -244,18 +244,19 @@ if( have_rows('work_items') ):
 
 
                 ?>
-                <div class="container video-row area-dark <?php echo $classname; ?>">
-                  <div class="left-video">
-                    <?php echo $left_video; ?>
-                    </div>
 
-                    <div class="right-video">
-                      <?php echo $right_video; ?>
+                  <div class="container video-row area-dark <?php echo $classname; ?> section-<?php echo $m; ?>">
+                    <div class="left-video">
+                      <?php echo $left_video; ?>
                       </div>
-                    </div>
+
+                      <div class="right-video">
+                        <?php echo $right_video; ?>
+                        </div>
+                  </div>
 
                     <?php
-
+                    $m++;
                   endwhile;
 
                 endif;
