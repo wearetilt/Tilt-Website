@@ -1251,7 +1251,15 @@ $(document).ready(function(){
             $('.container--header').css('display', 'block');
             $('.header-title').fadeIn(500);
         }
+
+    if($(window).scrollTop() > 1400){
+        $('footer').css('display', 'block');
+    } else {
+        $('footer').css('display', 'none');
+    }
+
     })
+
 
 //remove empty p tags
 
