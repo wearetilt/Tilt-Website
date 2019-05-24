@@ -604,6 +604,7 @@ header {
                 }
                 &.list-all {
                     color: #ec135b;
+                    margin-top: 3px;
                     &:after {
                         content: " ";
                         transition: all .5s;

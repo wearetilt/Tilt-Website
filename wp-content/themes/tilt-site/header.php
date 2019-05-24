@@ -41,7 +41,7 @@
 $htmltitle = wp_title('&raquo;',false);
 
 	if($htmltitle == 'web Archives - We Are Tilt') { 
-
+		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
 ?>
 
 		<title>Web & Interactive - We Are Tilt - Brighton</title>
@@ -51,7 +51,7 @@ $htmltitle = wp_title('&raquo;',false);
 
 	} 
 	elseif($htmltitle == 'film Archives - We Are Tilt' ) { 
-
+		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
 ?>
 
 		<title>Film - We Are Tilt - Brighton</title>
@@ -61,7 +61,7 @@ $htmltitle = wp_title('&raquo;',false);
 
 	}
 	elseif($htmltitle == 'motion Archives - We Are Tilt' ) { 
-
+		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
 ?>
 
 		<title>Motion Graphics - We Are Tilt - Brighton</title>
