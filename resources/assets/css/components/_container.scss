@@ -283,11 +283,14 @@ body{
         }
         .related-links {
             position: absolute;
-            top: 37%;
+            top: 25%;
             padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
             pointer-events: none;
+            @media screen and (min-width: $bp-phone){
+                top: 37%;
+            }
             p {
                 @include font-size(16);
                 font-family: $f-seroot-lt;
@@ -297,7 +300,11 @@ body{
                 line-height: 22px;
             }
             .excerpt {
-                width: 80%;
+                width: 100%;
+                line-height: 20px;
+                @media screen and (min-width: $bp-phone){
+                    width: 80%;
+                }
             }
             .entry-title {
                 padding-bottom: 15px;
@@ -427,11 +434,14 @@ body{
         }
         .related-links {
             position: absolute;
-            top: 37%;
+            top: 25%;
             padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
             pointer-events: none;
+            @media screen and (min-width: $bp-phone){
+                top: 37%;
+            }
             p {
                 @include font-size(16);
                 font-family: $f-seroot-lt;
@@ -441,7 +451,11 @@ body{
                 line-height: 22px;
             }
             .excerpt {
-                width: 80%;
+                width: 100%;
+                line-height: 20px;
+                @media screen and (min-width: $bp-phone){
+                    width: 80%;
+                }
             }
             .entry-title {
                 padding-bottom: 15px;
@@ -546,11 +560,14 @@ body{
         }
         .related-links {
             position: absolute;
-            top: 37%;
+            top: 25%;
             padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
             pointer-events: none;
+            @media screen and (min-width: $bp-phone){
+                top: 37%;
+            }
             p {
                 @include font-size(16);
                 font-family: $f-seroot-lt;
@@ -560,7 +577,11 @@ body{
                 line-height: 22px;
             }
             .excerpt {
-                width: 80%;
+                width: 100%;
+                line-height: 20px;
+                @media screen and (min-width: $bp-phone){
+                    width: 80%;
+                }
             }
             .entry-title {
                 padding-bottom: 15px;
@@ -727,7 +748,36 @@ body{
             screen and (min-width: 0px) and (max-width: $bp-desktop) {
                 width: 100%;
             }
+            .module--text-pad{
+                @media screen and (min-width: 1025px)and(max-width: 1300px){
+                    .module__text{
+                        h2 {
+                             @include font-size(26);
+                        }
+                        p {
+                            @include font-size(12);
+                        }
+                        .cube {
+                            margin-top: 10px;
+                            .cube--front {
+                                padding: 10px 72px 10px 24px;
+                                height: 38px;
+                            }
+                            .cube--top {
+                                padding: 10px 72px 10px 24px;
+                                height: 38px;
+                            }
+                            p.sans-serif{
+                                margin: 0px 0px 0px 0px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
         }
+
         @media handheld,
         screen and (min-width: $bp-desktop) {
         /*
@@ -1230,27 +1280,36 @@ body{
   .main-work-content {
 
     .work-item {
-        display: flex;
+        display: block;
+        @media screen and (min-width: $bp-desktop){
+            display: flex;
+        }
     }
 
     .project_container {
-        width: 50%;
+        width: 100%;
         position: relative;
         background-color: rgba(32, 32, 32, 1);
         z-index: 999999;
         overflow: hidden;
         transition: all 0.5s ease;
+        @media screen and (min-width: $bp-desktop){
+            width: 50%;
+        }
         img {
             transition: transform ease 0.5s;
             width: 100%;
         }
         .related-links {
             position: absolute;
-            top: 37%;
+            top: 25%;
             padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
             pointer-events: none;
+            @media screen and (min-width: $bp-phone){
+                top: 37%;
+            }
             p {
                 @include font-size(16);
                 font-family: $f-seroot-lt;
@@ -1260,11 +1319,18 @@ body{
                 line-height: 22px;
             }
             .excerpt {
-                width: 80%;
+                width: 100%;
+                line-height: 20px;
+                @media screen and (min-width: $bp-phone){
+                    width: 80%;
+                }
             }
             .entry-title {
                 padding-bottom: 15px;
             }
+        }
+        .mobile-related {
+            opacity: 1;
         }
         &:hover {
             .related-links{
@@ -1287,7 +1353,10 @@ body{
         color: white;
         text-align: center;
         text-transform: uppercase;
-        padding: 58px 0 124px 0;
+        padding: 10% 0;
+        @media screen and (min-width: $bp-desktop){
+            padding: 58px 0 124px 0;
+        }
         
         .our_work_button {
             font-family: $f-seroot-lt;
@@ -1316,13 +1385,9 @@ body{
         @include font-size(32);
         text-transform: uppercase;
         font-family: $f-seroot-blck;
-
-        @media (min-width: 48rem) {
-          width: 49%;
-          &:nth-child(odd) {
+        &:nth-child(odd) {
             background: #1f1f1f;
         }
-    }
     
     @media (min-width: 62rem) {
       width: 25%;
@@ -1335,12 +1400,17 @@ body{
       padding-top: 100%;
   }
   .news_text {
-    padding: 40% 40px 0 40px;
+    padding: 20% 15px 0 15px;
+    @include font-size(20);
+    @media screen and (min-width: $bp-desktop){ 
+        padding: 40% 40px 0 40px;
+        @include font-size(32);
+    }
 }
 p {
     color: $c-tilt-pink;
     text-transform: uppercase;
-    @include font-size(18);
+    @include font-size(14);
     font-family: $f-merriweather;
 }
 }
@@ -1448,9 +1518,13 @@ p {
         p {
             font-size: 20px;
             font-family: $f-seroot-lt;
-            line-height: 14px;
+            line-height: 20px;
             padding: 0 4px;
             text-transform: uppercase;
+            @media screen and (min-width: $bp-desktop) {
+                line-height: 14px;
+            }
+
         }
         h1 {
             font-size: 50px;

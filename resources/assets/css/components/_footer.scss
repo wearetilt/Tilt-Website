@@ -80,7 +80,7 @@ footer {
         border-bottom: 1px solid $c-grey-3a;
         text-align: center;
         padding-bottom: 10px;
-        @media screen and (min-width: $bp-desktop){
+        @media screen and (min-width: 1144px){
             padding-bottom: 24px;
             display: inline-block;
             width: 100%;
@@ -88,7 +88,11 @@ footer {
         }
         .footer-links {
             display: none;
-            @media screen and (min-width: $bp-desktop){
+            @media screen and (min-width: $bp-desktop ) {
+                display: inline-block;
+                float: none;
+            }
+            @media screen and (min-width: 1144px){
                 display: inline-block;
                 float: right;
                 line-height: 2;

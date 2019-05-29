@@ -130,7 +130,11 @@ header {
         }
         p {
             letter-spacing: 1px;
+            &:nth-child(2){
+                padding: 5px 0;
+            }
         }
+
         h1 {
             line-height: 1;
             padding-bottom: 6px;
@@ -139,6 +143,13 @@ header {
             transform: translate3d(0, 0, 0);
             transition: all 0.5s ease 0.3s;
             opacity: 0;
+        }
+        .tag--work-body {
+            padding: 5px 0;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                     /* IE10+ CSS styles go here */
+                     padding: 15px 0;
+            }
         }
         .underlined {
             &:after {
