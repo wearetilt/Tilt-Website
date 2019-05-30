@@ -422,7 +422,7 @@ body{
         @media screen and (min-width: $bp-desktop) {
             width: 50%;
         }
-        
+
         img {
             width: 100%;
             height: auto;
@@ -1357,7 +1357,7 @@ body{
         @media screen and (min-width: $bp-desktop){
             padding: 58px 0 124px 0;
         }
-        
+
         .our_work_button {
             font-family: $f-seroot-lt;
             letter-spacing: 0.075;
@@ -1388,7 +1388,7 @@ body{
         &:nth-child(odd) {
             background: #1f1f1f;
         }
-    
+
     @media (min-width: 62rem) {
       width: 25%;
       &:not(:nth-child(4n)) {
@@ -1400,11 +1400,20 @@ body{
       padding-top: 100%;
   }
   .news_text {
-    padding: 20% 15px 0 15px;
+    padding: 0% 15px 0 15px;
     @include font-size(20);
-    @media screen and (min-width: $bp-desktop){ 
-        padding: 40% 40px 0 40px;
-        @include font-size(32);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px){
+      padding: 0% 60px 0 60px;
+      @include font-size(32);
+
+    }
+    @media screen and (min-width: $bp-desktop){
+        padding: 0% 40px 0 40px;
     }
 }
 p {
@@ -1690,7 +1699,7 @@ p {
 
         @media screen and (min-width: $bp-desktop) {
             padding: 0px 6.25% 180px 6.25%;
-        } 
+        }
     }
 }
 
