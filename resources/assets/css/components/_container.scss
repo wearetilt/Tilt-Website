@@ -591,9 +591,9 @@ body{
             .related-links{
                 opacity: 1;
                 transition: all 0.5s ease-in-out;
+                background-color: rgba(32, 32, 32, 0.7);
             }
             img {
-                opacity: 0.50;
                 transform: scale(1.1,1.1);
                 transition: transform ease 0.5s;
             }
@@ -1328,9 +1328,6 @@ body{
             .entry-title {
                 padding-bottom: 15px;
             }
-        }
-        .mobile-related {
-            opacity: 1;
         }
         &:hover {
             .related-links{

@@ -1266,12 +1266,30 @@ if(screen.width <= 768){
     $('.project_container').each(function(){
         $(this).waypoint({
           handler: function(direction) {
+            $('.related-links').css('opacity', '0');
+            $('.related-links', this.element).css('opacity', '1');
+            }, offset:'50%'
+        })
+    });
 
-            $('.related-links').removeClass('mobile-related');
-            $('.related-links', this.element).toggleClass('mobile-related');
+    $('.group-container .module').each(function(){
+        $(this).waypoint({
+          handler: function(direction) {
+            $('.overlay').css('opacity', '0');
+            $('.overlay', this.element).css('opacity', '1');
+            }, offset:'50%'
+        })
+    });
 
-        }, offset:'50%'
-    })
+    $('.group-container .work_item').each(function(){
+        $(this).waypoint({
+          handler: function(direction) {
+            $('.related-links').css('opacity', '0');
+            $('img').css('opacity', '1');
+            $('.related-links', this.element).css('opacity', '1');
+            $('img', this.element).css('opacity', '0.7');
+            }, offset:'45%'
+        })
     });
 
 }
