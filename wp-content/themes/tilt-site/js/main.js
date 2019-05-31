@@ -1258,15 +1258,18 @@ $(window).scroll(function(){
 
 }
 
-$(window).scroll(function(){
+if($('body').hasClass('home')){
 
-    if($(window).scrollTop() > 1400){
-        $('footer').css('display', 'block');
-    } else {
-        $('footer').css('display', 'none');
-    }
+    $(window).scroll(function(){
 
-})
+        if($(window).scrollTop() > 1400){
+            $('footer').css('display', 'block');
+        } else {
+            $('footer').css('display', 'none');
+        }
+
+    })
+}
 
 
 if(screen.width <= 768){

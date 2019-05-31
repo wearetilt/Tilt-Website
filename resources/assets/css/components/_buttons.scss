@@ -51,7 +51,6 @@ a{
     	letter-spacing:1px;
 		color: white;
 		font-family:$f-seroot-thn;
-        border-bottom: 3px solid black;
 
 		@media handheld, screen and (min-width: $bp-desktop){
 	    	 @include font-size(25);
@@ -61,8 +60,7 @@ a{
 
 
     &.paginate_prev {
-
-	    border-right:2px solid #1b1b1b;
+        background-color: #272727;
 
 	    & span {
         	font-size:33px;
@@ -84,8 +82,7 @@ a{
     }
 
     &.paginate_next {
-
-	  border-left:2px solid #1b1b1b;
+        background-color: #1e1e1e;
 
 	  & span {
         	font-size:33px;

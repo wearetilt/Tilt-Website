@@ -225,7 +225,7 @@ footer {
 
 .project-navigation {
     padding: 12px 0px 10px 0px;
-    background-color: $c-tilt-pink;
+    background-color: #272727;
     width: 50%;
     display: block;
     float: left;
@@ -237,7 +237,7 @@ footer {
     }
     /* span { font-size:24px; } */
     &:hover {
-        background-color: $c-tilt-pink2;
+        opacity: 0.5;
     }
 }
 

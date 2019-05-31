@@ -1596,7 +1596,7 @@ p {
     }
     font-size: 1.25rem;
     .launch-link {
-        width: 56%;
+        width: 84%;
         margin: 0 auto;
         text-align: center;
         @media screen and (min-width: $bp-desktop){
@@ -1607,7 +1607,7 @@ p {
             color: white;
             letter-spacing: 0.075em;
             display: inline-block;
-
+/*
             &:before {
                 content: '';
                 display: block;
@@ -1618,9 +1618,9 @@ p {
                 @media screen and (min-width: $bp-desktop){
                     width: 115%;
                 }
-            }
+            }*/
         }
-        &:after {
+/*        &:after {
             content: '';
             display: inline-block;
             background: url(../images/button_arrow.png) center no-repeat;
@@ -1631,7 +1631,7 @@ p {
             @media screen and (min-width: $bp-phone){
                 width: 10%;
             }
-        }
+        }*/
     }
     &:hover {
         :after {
