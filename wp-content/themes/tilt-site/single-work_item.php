@@ -129,7 +129,7 @@ if( have_rows('work_items') ):
 
           <div class="launch-project-button container container-headline-text area-dark">
             <div class="launch-link">
-                <a href="<?php echo $launch; ?>">Launch Project</a>
+                <a href="<?php echo $launch; ?>" target="_blank">Launch Project</a>
             </div>
           </div>
 

@@ -1239,11 +1239,13 @@ $(document).ready(function(){
 
 var position = $(window).scrollTop();
 
+if($('body').hasClass('single-work_item')){
+
 $(window).scroll(function(){
 
     var scroll = $(window).scrollTop();
 
-    if(scroll > 100){
+    if(scroll > 250){
         $('.header-title').fadeOut(250, function(){
             $('.container--header').css('display', 'none');
         });
@@ -1251,6 +1253,12 @@ $(window).scroll(function(){
         $('.container--header').css('display', 'block');
         $('.header-title').fadeIn(250);
     }
+
+})
+
+}
+
+$(window).scroll(function(){
 
     if($(window).scrollTop() > 1400){
         $('footer').css('display', 'block');
@@ -1267,7 +1275,9 @@ if(screen.width <= 768){
         $(this).waypoint({
           handler: function(direction) {
             $('.related-links').css('opacity', '0');
+            $('img').css('opacity', '1');
             $('.related-links', this.element).css('opacity', '1');
+            $('img', this.element).css('opacity', '0.7');
             }, offset:'50%'
         })
     });

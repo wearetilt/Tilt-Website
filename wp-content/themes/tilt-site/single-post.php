@@ -11,7 +11,7 @@ get_header('news'); ?>
 
 	$attachedImg = '';
 	if(has_post_thumbnail()){
-		$attachmentID = get_post_thumbnail_id($postID);
+		$attachmentID = get_post_thumbnail_id();
 		$attachedImg = wp_get_attachment_image_src($attachmentID);
 	}
 

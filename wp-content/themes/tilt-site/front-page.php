@@ -63,7 +63,7 @@ get_header('home'); ?>
 
         ?>
 
-        <?php 
+        <?php
         if(get_row_layout() == 'frontpage_work_items'):
 
           $left_project = get_sub_field('work_item_left');
@@ -79,7 +79,7 @@ get_header('home'); ?>
           ?>
           <div class="work-item area-dark" >
 
-            <div class="left_container project_container"> 
+            <div class="left_container project_container">
               <a href='<?php echo get_permalink($left_project); ?>'>
                 <?php if($post_image_left  != '') {
                   echo $post_image_left ;
@@ -95,7 +95,7 @@ get_header('home'); ?>
               </div>
             </div>
 
-            <div class="right_container project_container"> 
+            <div class="right_container project_container">
               <a href='<?php echo get_permalink($right_project); ?>'>
                 <?php if($post_image_right != '') {
                   echo $post_image_right;
@@ -113,12 +113,12 @@ get_header('home'); ?>
 
           </div>
 
-          <?php 
+          <?php
 
         elseif(get_row_layout() == 'see_all'):
           $our_work = get_sub_field('our_work');
           ?>
-          <div class=" goto_projects area-dark"> 
+          <div class=" goto_projects area-dark">
 
             <a class="cube--link" href="<?php echo site_url(); ?>/work">
               <div class="cube">
@@ -139,7 +139,7 @@ get_header('home'); ?>
         elseif(get_row_layout() == 'news_row') :
           if(have_rows('news_items')) :
             ?>
-            <div class="news-line area-dark"> 
+            <div class="news-line area-dark">
               <?php
               while(have_rows('news_items')): the_row();
                 $news = get_sub_field('news_item');
@@ -147,12 +147,14 @@ get_header('home'); ?>
 
                 <a href="<?php echo get_permalink($news);?>" class="news-item">
                   <div class="news_text">
-                    <p>News</p>
-                    <?php echo $news->post_title; ?>
+                    <div>
+                      <p>News</p>
+                      <span><?php echo $news->post_title; ?></span>
+                    </div>
                   </div>
                 </a>
 
-                <?php 
+                <?php
               endwhile;
               ?>
             </div>

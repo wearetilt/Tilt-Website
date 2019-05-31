@@ -345,6 +345,9 @@ p {
         #homePage &,
         .work-container & {
             line-height: 20px;
+            @media screen and (min-width: $bp-desktop) {
+                line-height: 1.2;
+            }
         }
     }
     &.tag {

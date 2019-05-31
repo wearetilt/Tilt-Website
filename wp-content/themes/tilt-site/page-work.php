@@ -151,6 +151,11 @@ $entries_right = array(0,2);
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/13_sdnp.png" alt="southdowns national park logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/14_land_rover.png" alt="land rover logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/15_02.png" alt="o2 mobile network logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/16_Open-Unievrsity_logo.png" alt="open university logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/17_Reuters_logo.png" alt="Reuters logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/18_Shell_logo.png" alt="Shell logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/19_Bupa_logo.png" alt="Bupa logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />
                     </div>
             </div>
 
