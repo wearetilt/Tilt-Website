@@ -29,33 +29,32 @@ get_header(); ?>
 $entries_left = array(1);
 $entries_right = array(0,2);
 ?>
-
+<div class="work-wrapper">
 <?php if($work_groups) : ?>
  <?php foreach($work_groups as $work_group) : ?>
 
   <?php if($work_group['work_entries']) : ?>
-   <div id="<?= $work_group['filter_value'];?>" class="work-container container container--no-padding">
-    <section>
+   <div class="work-container container container--no-padding">
 
      <div class="group-container">
-      <div class="group group--left">
 
-       <div class="module module--2-1 module--text-pad module--dark module--mobile-double-height">
+       <div class="module module--2-1  module--dark module--mobile-double-height">
         <div class="module__text">
-         <h2 class="underlined"><?= $work_group['work_headline'];?></h2>
-         <p class="first-para tag--work-title"><?= $work_group['work_text'];?></p>
+          <div>
+             <h2 class="underlined"><?= $work_group['work_headline'];?></h2>
+             <p class="first-para tag--work-title"><?= $work_group['work_text'];?></p>
 
-         <a class="cube--link" href="<?= $work_group['work_link'];?>">
-          <div class="cube">
-           <div class="cube--front cube--front__no-bg">
-            <p class="sans-serif">More Info</p>
-          </div>
-          <div class="cube--top cube--top__no-bg">
-            <p class="sans-serif">More Info</p>
-          </div>
+             <a class="cube--link" href="<?= $work_group['work_link'];?>">
+              <div class="cube">
+               <div class="cube--front cube--front__no-bg">
+                <p class="sans-serif">More Info</p>
+              </div>
+              <div class="cube--top cube--top__no-bg">
+                <p class="sans-serif">More Info</p>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-
     </div>
 
   </div>
@@ -84,9 +83,6 @@ $entries_right = array(0,2);
 <?php endif;?>
 <?php endforeach;?>
 
-</div>
-
-<div class="group group--right">
 
  <?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
   <?php if(in_array($k, $entries_right)) : ?>
@@ -112,11 +108,9 @@ $entries_right = array(0,2);
 <?php endif;?>
 <?php endforeach;?>
 
-</div>
-
 
 </div>
-</section>
+
 </div>
 <?php endif;?>
 
@@ -131,7 +125,7 @@ $entries_right = array(0,2);
   <iframe src="https://player.vimeo.com/video/139889786" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 </div>
-
+</div>
 
             <div class="new_client_logos container area-dark">
                 <h2> Featured Clients</h2>
