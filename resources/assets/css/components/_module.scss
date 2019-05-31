@@ -611,10 +611,16 @@
           float: left;
           padding-top: 100%;
           content: '';
+
             @media (min-width: 768px) {
               padding-top: 50%;
+            }
+
+            @media (min-width: 1024px) and (max-width: 1300px) {
+              padding-top: 60%;
 
             }
+
         }
         .module__text {
           position: static;
@@ -630,7 +636,12 @@
               margin-bottom: -25px;
             }
 
+            @media (min-width: 980px) and (max-width: 1100px) {
+              p {
+                font-size: 14px;
+              }
 
+            }
         }
       }
     }
