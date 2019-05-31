@@ -132,24 +132,24 @@ $entries_right = array(0,2);
                     <div class="logos">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/1_bp.png" alt="bp logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/2_bbc.png" alt="bbc logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/3_a&o.png" alt="Allen and Overy logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/4_bnp.png" alt="bnp paribas logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/10_barclays.png" alt="barclays bank logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/5_nick.png" alt="Nickelodeon logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/6_ford.png" alt="ford logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/7_visit_brighton.png" alt="visit brighton logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/8_tui.png" alt="Tui logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/9_alzheimers.png" alt="alzheimers research UK logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/10_barclays.png" alt="barclays bank logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/19_Bupa_logo.png" alt="Bupa logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/17_Reuters_logo.png" alt="Reuters logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/13_sdnp.png" alt="southdowns national park logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/16_Open-Unievrsity_logo.png" alt="open university logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/4_bnp.png" alt="bnp paribas logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/11_sainos.png" alt="Sainsburys logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/12_rb.png" alt="redbull logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/13_sdnp.png" alt="southdowns national park logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/18_Shell_logo.png" alt="Shell logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/14_land_rover.png" alt="land rover logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/15_02.png" alt="o2 mobile network logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/16_Open-Unievrsity_logo.png" alt="open university logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/17_Reuters_logo.png" alt="Reuters logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/18_Shell_logo.png" alt="Shell logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/19_Bupa_logo.png" alt="Bupa logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/9_alzheimers.png" alt="alzheimers research UK logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/7_visit_brighton.png" alt="visit brighton logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/8_tui.png" alt="Tui logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/3_a&o.png" alt="Allen and Overy logo" />
                     </div>
             </div>
 
