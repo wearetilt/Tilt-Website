@@ -64,7 +64,7 @@ $blog_id = get_current_blog_id();
       <a href="/about">about</a>
       <a href="/news">news</a>
       <a href="/team">team</a>
-      <a href="/careers">careers</a>
+<!--       <a href="/careers">careers</a> -->
       <a href="/contact">contact</a>
     </div>
   </div>
@@ -92,6 +92,8 @@ $blog_id = get_current_blog_id();
 
   </div>
   <a class="privacy_policy" href="/privacy-policy" target="_blank">Privacy Policy</a>
+
+  <a class="health_and_safety" href="/health-and-safety" target="_blank">Health & Safety policy</a>
 
 </div><!-- /end signoff -->
 

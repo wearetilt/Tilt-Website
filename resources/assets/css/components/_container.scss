@@ -1548,6 +1548,10 @@ p {
     }
 }
 
+.main-work-content > :last-child img {
+    padding-bottom: 0;
+}
+
 .main-work-content .container {
     &:first-child {
         padding-top: 60px;

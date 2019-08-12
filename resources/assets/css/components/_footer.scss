@@ -190,6 +190,18 @@ footer {
     text-transform: capitalize;
 }
 
+.health_and_safety {
+    color: #ffffff;
+    font-family: $f-seroot;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin-top: 17px;
+    float: left;
+    text-transform: capitalize;
+    padding: 0 1rem;
+}
+
 #footer-contacts {
   @extend %clearfix;
   text-align: center;
