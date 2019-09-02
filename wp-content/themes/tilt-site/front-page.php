@@ -133,33 +133,70 @@ get_header('home'); ?>
           </div>
 
 
+            <?php $args = array(
+              'posts_per_page'   => 4,
+              'offset'           => 0,
+              'cat'         => '',
+              'category_name'    => '',
+              'orderby'          => 'date',
+              'order'            => 'DESC',
+              'include'          => '',
+              'exclude'          => '',
+              'meta_key'         => '',
+              'meta_value'       => '',
+              'post_type'        => 'post',
+              'post_mime_type'   => '',
+              'post_parent'      => '',
+              'author'     => '',
+              'author_name'    => '',
+              'post_status'      => 'publish',
+              'suppress_filters' => true,
+              'fields'           => '',
+            );
 
-          <?php
+            $news = get_posts( $args ); ?>
 
-        elseif(get_row_layout() == 'news_row') :
-          if(have_rows('news_items')) :
-            ?>
             <div class="news-line area-dark">
-              <?php
-              while(have_rows('news_items')): the_row();
-                $news = get_sub_field('news_item');
-                ?>
 
-                <a href="<?php echo get_permalink($news);?>" class="news-item">
-                  <div class="news_text">
-                    <div>
-                      <p>News</p>
-                      <span><?php echo $news->post_title; ?></span>
-                    </div>
+              <a href="<?php echo get_permalink($news);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[0]->post_title; ?></span>
                   </div>
-                </a>
+                </div>
+              </a>
 
-                <?php
-              endwhile;
-              ?>
+              <a href="<?php echo get_permalink($news);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[1]->post_title; ?></span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="<?php echo get_permalink($news);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[2]->post_title; ?></span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="<?php echo get_permalink($news);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[3]->post_title; ?></span>
+                  </div>
+                </div>
+              </a>
+
             </div>
+
             <?php
-          endif;
         endif;
 
       endwhile;

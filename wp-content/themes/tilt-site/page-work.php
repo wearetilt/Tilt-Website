@@ -47,10 +47,10 @@ $entries_right = array(0,2);
              <a class="cube--link" href="<?= $work_group['work_link'];?>">
               <div class="cube">
                <div class="cube--front cube--front__no-bg">
-                <p class="sans-serif">See All</p>
+                <p class="sans-serif">All <?php echo $work_group['work_headline']?> work</p>
               </div>
               <div class="cube--top cube--top__no-bg">
-                <p class="sans-serif">See All</p>
+                <p class="sans-serif">All <?php echo $work_group['work_headline']?> work</p>
               </div>
             </div>
           </a>

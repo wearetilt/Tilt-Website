@@ -694,7 +694,7 @@ blockquote p {
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: (28/20);
+    line-height: 1.45;
     @media handheld,
     screen and (min-width: 0px) and (max-width: $bp-phone) {
         @include font-size(18);

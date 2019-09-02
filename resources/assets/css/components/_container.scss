@@ -848,8 +848,8 @@ body{
     }
 
     .quote-container {
-        padding-left: percentage(383/2032);
-        padding-right: percentage(383/2032);
+        padding-left: 25%;
+        padding-right: 25%;
         text-align: center;
 
         .quote-padding{
@@ -1759,9 +1759,10 @@ p {
 .text_single {
     display: block;
     @media screen and (min-width: $bp-desktop) {
-        columns: 2;
+        columns: 1;
         display: block;
         column-gap: 50px;
+        width: 40%;
     }
 }
 > div + div {
