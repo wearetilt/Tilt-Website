@@ -1545,6 +1545,11 @@ p {
                 font-size: 70px;
             }
         }
+        .award-logo {
+            width: 87px;
+            height: 87px;
+            margin-top: 15px;
+        }
     }
 }
 
@@ -1656,6 +1661,14 @@ p {
         left: 0;
         width: 100%;
         height: 100%;
+    }
+}
+
+.looping-video {
+    padding: 12.0570866142% 0%;
+    video {
+        width: 100%;
+        height: 100vh;
     }
 }
 

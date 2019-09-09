@@ -128,6 +128,11 @@ header {
             transition: all 0.5s ease 0.1s;
             opacity: 0;
         }
+        .award-logo {
+            transform: translate3d(0, 0, 0);
+            transition: all 0.5s ease 0.1s;
+            opacity: 0;
+        }
         p {
             letter-spacing: 1px;
             &:nth-child(2){
@@ -684,6 +689,10 @@ header {
                 h1,
                 p,
                 h2 {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                }
+                .award-logo {
                     transform: translate3d(0, 0, 0);
                     opacity: 1;
                 }

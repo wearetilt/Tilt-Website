@@ -34,6 +34,7 @@ if( have_rows('work_items') ):
 
       $image = get_sub_field('header_image'); 
       $video = get_sub_field('video');
+      $award = get_sub_field('award_logo');
 
       ?>
 
@@ -69,10 +70,11 @@ if( have_rows('work_items') ):
               <?php 
               if(get_sub_field('title')) : 
                 ?> 
-                <p><?php echo get_sub_field('title');?></p>
+                <p><?php echo get_sub_field('title'); ?></p>
                 <?php
               endif;
               ?>
+              <div class="award-logo" style="background-image: url(<?php echo $award['url']?>);"></div>
               <?php 
               if($arrTerms) : 
                 ?>
@@ -228,7 +230,7 @@ if( have_rows('work_items') ):
 
             <div class="container full-height-video area-dark">
               <div class="embed-container">
-                <?php echo $video; ?>
+                <?php var_dump($video); ?>
               </div>
               </div>
 
@@ -272,6 +274,16 @@ if( have_rows('work_items') ):
 
 
                 ?>
+
+              <?php elseif(get_row_layout() == 'looping_video'):
+                $loop = get_sub_field('video_loop');
+                ?>
+                
+                <div class="container area-dark looping-video">
+                  <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted playsinline >
+                    <source id="header-video" src="<?php echo $loop; ?>" type="video/mp4">
+                  </video>
+                </div>
 
                 <!--- full text section -->
 
