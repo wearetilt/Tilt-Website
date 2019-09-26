@@ -629,3 +629,11 @@ function my_password_form() {
     return $o;
 }
 add_filter( 'the_password_form', 'my_password_form' );
+
+function wpb_password_post_filter( $where = '' ) {
+    if (!is_single() && !is_admin()) {
+        $where .= " AND post_password = ''";
+    }
+    return $where;
+}
+add_filter( 'posts_where', 'wpb_password_post_filter' );

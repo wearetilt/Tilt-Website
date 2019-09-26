@@ -14,3 +14,4 @@ wp-config.php
 global.min.css
 global.min.css.map
 global.css
+/resources/package-lock.json
