@@ -16,6 +16,12 @@
 get_header(); ?>
 
 <?php
+    global $post;
+
+    if ( ! post_password_required( $post ) ) {
+          // Your custom code should here
+      ?>
+<?php
     // check if the repeater field has rows of data
 if( have_rows('work_items') ):
       // loop through the rows of data
@@ -466,6 +472,12 @@ if( have_rows('work_items') ):
                     ?>
 
                   </main>
+<?php 
+    }else{
+        // we will show password form here
+        echo get_the_password_form();
+    }
 
+?>
                   <?php get_footer(); ?>
 

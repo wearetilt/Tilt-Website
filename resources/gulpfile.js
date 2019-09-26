@@ -77,7 +77,7 @@ gulp.task( 'browser-sync', function() {
   } );
 });
 
- gulp.task('styles', function () {
+ gulp.task('styles', function (done) {
     gulp.src( styleSRC )
     .pipe( sourcemaps.init() )
     .pipe( sass( {
@@ -95,7 +95,7 @@ gulp.task( 'browser-sync', function() {
     .pipe( sourcemaps.write ( styleDestination ) )
     .pipe( gulp.dest( styleDestination ) )
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
-    .pipe( gulp.dest( '' ) )
+    .pipe( gulp.dest( '.' ) )
 
     .pipe( filter( '**/*.css' ) ) // Filtering stream to only css files
     .pipe( mmq( { log: true } ) ) // Merge Media Queries only for .min.css version.
@@ -117,11 +117,13 @@ gulp.task( 'browser-sync', function() {
     .pipe( gulp.dest( styleDestination ) )
 
     .pipe( filter( '**/*.css' ) ) 
+
+  done();
     // .pipe( browserSync.stream() )
  });
  
 
- gulp.task( 'vendorsJs', function() {
+ gulp.task( 'vendorsJs', function(done) {
   gulp.src( jsVendorSRC )
     .pipe( concat( jsVendorFile + '.js' ) )
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
@@ -134,10 +136,13 @@ gulp.task( 'browser-sync', function() {
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( jsVendorDestination ) )
     // .pipe( notify( { message: 'TASK: "vendorsJs" Completed! 💯', onLast: true } ) );
+
+  done();
+
  });
 
 
- gulp.task( 'customJS', function() {
+ gulp.task( 'customJS', function(done) {
     gulp.src( jsCustomSRC )
     .pipe( concat( jsCustomFile + '.js' ) )
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
@@ -150,6 +155,8 @@ gulp.task( 'browser-sync', function() {
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( jsCustomDestination ) )
     // .pipe( notify( { message: 'TASK: "customJs" Completed! 💯', onLast: true } ) );
+
+  done();
  });
 
 
@@ -158,9 +165,9 @@ gulp.task( 'browser-sync', function() {
   *
   * Watches for file changes and runs specific tasks.
   */
- gulp.task( 'default', ['styles', 'vendorsJs', 'customJS', 'browser-sync' ], function () {
+ gulp.task( 'default', gulp.series(gulp.parallel('styles', 'vendorsJs', 'customJS' , function () {
   gulp.watch( projectPHPWatchFiles, reload ); // Reload on PHP file changes.
-  gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
-  gulp.watch( vendorJSWatchFiles, [ 'vendorsJs', reload ] ); // Reload on vendorsJs file changes.
-  gulp.watch( customJSWatchFiles, [ 'customJS', reload ] ); // Reload on customJS file changes.
- });
+  gulp.watch( styleWatchFiles, gulp.series( gulp.parallel('styles' )) ); // Reload on SCSS file changes.
+  gulp.watch( vendorJSWatchFiles, gulp.series( gulp.parallel('vendorsJs', reload )) ); // Reload on vendorsJs file changes.
+  gulp.watch( customJSWatchFiles, gulp.series( gulp.parallel('customJS', reload )) ); // Reload on customJS file changes.
+ })));

@@ -602,3 +602,30 @@ function getPageSibling($link) {
 
     // if ($link == 'prev' || $link == 'next') { return ; } else { return $closest; }
 }
+
+
+function my_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o = '<div class="container area-dark contact--page pw-protect-login-form">
+    		<div class="container container-headline-text area-dark">
+            <section class="text-section">
+            </section>
+            <section class="text-section">
+              <h2>Protected</h2>
+              <div class="text-section__para">
+              <p>To view this protected post, enter the password below </p>
+              <form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+   				<p><label for="' . $label . '">' . __( "	Password:" ) . ' </label></p>
+   				<input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
+   				<input type="submit" class="input-btn" name="Submit" value="' . esc_attr__( "Submit" ) . '" />
+   				</div>
+    		  </form>
+    		  </div>
+            </section>
+            </div>
+          </div>
+    ';
+    return $o;
+}
+add_filter( 'the_password_form', 'my_password_form' );

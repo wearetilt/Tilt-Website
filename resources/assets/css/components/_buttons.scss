@@ -6,7 +6,7 @@ a{
         border: 1px solid white;
         color: white;
         display: inline-block;
-        padding: 13px 18px 11px 18px;
+        padding: 13px 18px 11px 18px; 
 
         .text-section & {
             display: inline-block;
@@ -368,5 +368,45 @@ a{
         }
     }
 
+
+}
+
+
+// login form styling in wrong place but in a rush
+.pw-protect-login-form {
+.container-headline-text .text-section {
+    width: 50%;
+}
+    input[name=post_password] {
+            padding: 13px 18px 11px 18px; 
+            @include font-size(20);
+            border: 1px solid white;
+
+    }
+
+    .input-btn{
+            @include font-size(20);
+            border-radius: 2px;
+            position: relative;
+            border: 1px solid white;
+            color: white;
+            background: transparent;
+            display: inline-block;
+            padding: 13px 18px 11px 18px; 
+
+            .text-section & {
+                display: inline-block;
+            }
+            &:after{
+                content: ">";
+                display: inline-block;
+                margin-left: 50px;
+                color: $c-tilt-pink;
+            }
+            &:hover{
+                color: $c-tilt-pink;
+                border-color: $c-tilt-pink;
+            }
+        }
 
 }

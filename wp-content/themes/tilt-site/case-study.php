@@ -15,6 +15,12 @@
 
 get_header(); ?>
 
+
+<?php
+    global $post;
+    if ( ! post_password_required( $post )  || is_admin()) {
+          // Your custom code should here
+      ?>
   <?php
     // check if the repeater field has rows of data
     if( have_rows('work_items') ):
@@ -606,5 +612,12 @@ get_header(); ?>
         <a class="project-navigation paginate_next" href="../bp-fll-stories">Next Project <span>&#8250;</span></a>
     </div>
 
+<?php 
+    } else{
+        // we will show password form here
+        echo my_password_form();
+    }
+
+?>
 <?php get_footer(); ?>
 
