@@ -374,9 +374,9 @@ a{
 
 // login form styling in wrong place but in a rush
 .pw-protect-login-form {
-.container-headline-text .text-section {
-    width: 50%;
-}
+    .container-headline-text .text-section {
+        width: 50%;
+    }
     input[name=post_password] {
             padding: 13px 18px 11px 18px; 
             @include font-size(20);
