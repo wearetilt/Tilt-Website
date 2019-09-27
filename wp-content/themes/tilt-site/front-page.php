@@ -158,7 +158,7 @@ get_header('home'); ?>
 
             <div class="news-line area-dark">
 
-              <a href="<?php echo get_permalink($news);?>" class="news-item">
+              <a href="<?php echo get_permalink($news[0]);?>" class="news-item">
                 <div class="news_text">
                   <div>
                     <p>News</p>
@@ -167,7 +167,7 @@ get_header('home'); ?>
                 </div>
               </a>
 
-              <a href="<?php echo get_permalink($news);?>" class="news-item">
+              <a href="<?php echo get_permalink($news[1]);?>" class="news-item">
                 <div class="news_text">
                   <div>
                     <p>News</p>
@@ -176,7 +176,7 @@ get_header('home'); ?>
                 </div>
               </a>
 
-              <a href="<?php echo get_permalink($news);?>" class="news-item">
+              <a href="<?php echo get_permalink($news[2]);?>" class="news-item">
                 <div class="news_text">
                   <div>
                     <p>News</p>
@@ -185,7 +185,7 @@ get_header('home'); ?>
                 </div>
               </a>
 
-              <a href="<?php echo get_permalink($news);?>" class="news-item">
+              <a href="<?php echo get_permalink($news[3]);?>" class="news-item">
                 <div class="news_text">
                   <div>
                     <p>News</p>
