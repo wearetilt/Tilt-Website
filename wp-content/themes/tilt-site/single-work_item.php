@@ -236,7 +236,6 @@ if( have_rows('work_items') ):
 
             <div class="container full-height-video area-dark">
               <div class="embed-container">
-                <?php var_dump($video); ?>
               </div>
               </div>
 
@@ -320,6 +319,44 @@ if( have_rows('work_items') ):
                       <div class="text_single">
                         <h2><?php echo $text_section_header; ?> </h2>
                         <p><?php echo $text_section_content; ?></p>
+                      </div>
+                    </div>
+                  <?php endif; ?>
+
+              <!-- reuslts section -->
+
+              <?php 
+
+              elseif(get_row_layout() == 'results_section'):
+
+                $text_section_header = get_sub_field('text_section_header');
+                $text_section_content = get_sub_field('text_section_content');
+                $second_text_content = get_sub_field('second_text_section');
+                $third_text_content = get_sub_field('third_text_section');
+                $third_column = get_sub_field('three_columns');
+
+                if($third_column == true) :
+                  ?>
+                  <div class="container result_section_container area-dark">
+                    <h2><?php echo $text_section_header; ?> </h2>
+                    <div class="text_left">
+                      <p><?php echo $text_section_content; ?></p>
+                    </div>
+                    <div class="text_mid">
+                      <p><?php echo $second_text_content; ?></p>
+                    </div>
+                    <div class="text_right">
+                      <p><?php echo $third_text_content; ?></p>
+                    </div>
+                  </div>
+                  <?php else: ?>
+                    <div class="container text_section_container area-dark">
+                      <div class="text_mid">
+                        <h2><?php echo $text_section_header; ?> </h2>
+                        <p><?php echo $text_section_content; ?></p>
+                      </div>
+                      <div class="text_right">
+                        <p><?php echo $second_text_content; ?></p>
                       </div>
                     </div>
                   <?php endif; ?>
