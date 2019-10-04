@@ -236,6 +236,7 @@ if( have_rows('work_items') ):
 
             <div class="container full-height-video area-dark">
               <div class="embed-container">
+                <?php echo $video; ?>
               </div>
               </div>
 
