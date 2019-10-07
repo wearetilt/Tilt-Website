@@ -91,9 +91,9 @@ $blog_id = get_current_blog_id();
 
 
   </div>
-  <a class="privacy_policy" href="/privacy-policy" target="_blank">Privacy Policy</a>
+  <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
 
-  <a class="health_and_safety" href="/health-and-safety" target="_blank">Health & Safety policy</a>
+  <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
 
 </div><!-- /end signoff -->
 
