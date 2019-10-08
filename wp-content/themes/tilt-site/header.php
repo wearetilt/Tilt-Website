@@ -158,4 +158,17 @@ $htmltitle = wp_title('&raquo;',false);
 		<?php get_template_part('content-header-menu');?>
 		
     </nav>
+
+<?php 
+    if ( ! post_password_required( $post ) ) {
+          // Your custom code should here
+?>
 	<div class="wrapper"> <!-- Open Wrapper -->
+
+<?php } else {?>
+
+	<div class="password-wrapper">
+
+<?php  }
+
+?>

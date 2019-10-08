@@ -374,14 +374,65 @@ a{
 
 // login form styling in wrong place but in a rush
 .pw-protect-login-form {
-    .container-headline-text .text-section {
-        width: 50%;
-    }
-    input[name=post_password] {
-            padding: 13px 18px 11px 18px; 
-            @include font-size(20);
-            border: 1px solid white;
+    width: 100%;
+    min-height: calc(100vh - 336px);
+    padding: 30% 6.25% !important;
 
+    @media screen and(min-width: 698px) and(max-width: $bp-desktop){
+        position: fixed !important;
+        height: calc(100vh - 276px);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        height: calc(100vh - 287.09px);
+        padding: 17% 6.25% !important;
+    }
+
+    .container-headline-text {
+        padding: 4% 6.25%;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        background: #232323;
+        @media screen and (min-width: $bp-desktop){
+        width: 56%;
+        }
+    }
+    .container-headline-text .text-section {
+        width: 100%;
+    }
+    .text-section {
+        h2 {
+            margin-bottom: 5px;
+        }
+    }
+    .text-section__para{
+        width: 100% !important;
+    }
+
+
+    form {
+        margin-top: 30px;
+
+        @media screen and (min-width: $bp-desktop){
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    input[name=post_password] {
+            padding: 13px 35px 11px 18px; 
+            @include font-size(20);
+            border: 1px solid #4f4f4f;
+            margin-right: 5px;
+            background: #4f4f4f;
+            color: #fff;
+            width: 100%;
+
+            @media screen and (min-width: $bp-desktop) {
+                padding: 13px 35% 11px 18px; 
+                width: auto;
+            }
     }
 
     .input-btn{
@@ -391,17 +442,23 @@ a{
             border: 1px solid white;
             color: white;
             background: transparent;
-            display: inline-block;
-            padding: 13px 18px 11px 18px; 
+            padding: 13px 65px 11px 18px; 
+            background: url(../images/button_arrow.png) center right no-repeat;
+            background-position: 110% 54%;
+            background-repeat: no-repeat;
+            text-align: left;
+            display: block;
+            margin: 20px auto;
+
+
+            @media screen and (min-width: $bp-desktop){
+                width: 20%;
+                display: inline-block;
+                margin: 0px;
+            }
 
             .text-section & {
                 display: inline-block;
-            }
-            &:after{
-                content: ">";
-                display: inline-block;
-                margin-left: 50px;
-                color: $c-tilt-pink;
             }
             &:hover{
                 color: $c-tilt-pink;

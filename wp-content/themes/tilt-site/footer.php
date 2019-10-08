@@ -13,6 +13,11 @@ $blog_id = get_current_blog_id();
 
 ?>
 
+<?php
+    if ( ! post_password_required( $post ) ) {
+          // Your custom code should here
+      ?>
+
 <footer id="footer" class="area-dark">
 	<div class="container">
 		<div class="text-container">
@@ -98,6 +103,87 @@ $blog_id = get_current_blog_id();
 </div><!-- /end signoff -->
 
 </footer>
+
+<?php
+
+    }else{ ?>
+
+<footer id="footer" class="area-dark password-footer">
+
+  <div id="signoff" class="group-container group-container--no-bg">
+
+  <div class="footer-upper">
+     <div id="tilt--logo" class="footer-item footer-item--logo">
+      <a aria-label="Homepage link" href="<?php echo site_url(); ?>">
+        <svg class="svg-icon logout">
+          <defs>
+            <filter id="boxShadow" x="0" y="0" width="200%" height="200%">
+              <feOffset result="offOut" in="SourceAlpha" dx="1" dy="1" />
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+          </defs>
+          <use xlink:href="#tilt"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="phone-container">
+      <div class="telephone">
+        <?php if($blog_id == 1) : ?>
+          <span>+44(0)1273 675 700</span>
+        <?php endif;?>
+        <?php if($blog_id == 3) : ?>
+          <span>+1 (778) 835-6414</span>
+        <?php endif;?>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <a href="/work">work</a>
+      <a href="/about">about</a>
+      <a href="/news">news</a>
+      <a href="/team">team</a>
+<!--       <a href="/careers">careers</a> -->
+      <a href="/contact">contact</a>
+    </div>
+  </div>
+
+  <div class="footer-lower">
+
+  <p id="footnote-1" class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-2019 We Are Tilt Ltd. All rights reserved. <br/>Registered in England & Wales under Reg. No 07280900. Registered Office: 1 Harbour House, Harbour Way, Shoreham-by-Sea, West Sussex, BN43 5HZ. <br/>Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
+
+  <div id="footer-contacts">
+
+    <button id="popup" class="join-pop">Join our mailing list</button>
+    <!-- subscribe -->
+
+    <div id="footer-icons">
+      <div class="footer-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a></div>
+      <div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a></div>
+      <div class="footer-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ><svg class="f-ico_vimeo"> <use xlink:href="#vimeo"></use></svg></a></div>
+      <div class="footer-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
+      <!--        <div class="footer-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div> -->
+      <!-- <div class="footer-icon"><a href="http://bakery.wearetilt.com/" aria-label="Check out our tumblr page" target="_blank" ><svg class="f-ico_tumblr"> <use xlink:href="#tumblr"></use></svg></a></div> -->
+    </div> <!-- /end footer-icons -->
+
+  </div><!-- /end footer-contacts -->
+
+
+  </div>
+  <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
+
+  <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
+
+</div><!-- /end signoff -->
+
+</footer>
+
+
+<?php 
+    }
+
+?>
 
 <div class="modal-container modal">
   <div id="subscribe">

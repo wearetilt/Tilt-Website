@@ -612,13 +612,12 @@ function my_password_form() {
             <section class="text-section">
             </section>
             <section class="text-section">
-              <h2>Protected</h2>
+              <h2>Client area</h2>
               <div class="text-section__para">
-              <p>To view this protected post, enter the password below </p>
+              <p>To view this post, please enter your password</p>
               <form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-   				<p><label for="' . $label . '">' . __( "	Password:" ) . ' </label></p>
-   				<input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
-   				<input type="submit" class="input-btn" name="Submit" value="' . esc_attr__( "Submit" ) . '" />
+   				<input placeholder="Password" name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
+   				<button type="submit" class="input-btn" name="Submit">Go</button>
    				</div>
     		  </form>
     		  </div>

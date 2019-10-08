@@ -351,9 +351,9 @@ if( have_rows('work_items') ):
                     </div>
                   </div>
                   <?php else: ?>
-                    <div class="container text_section_container area-dark">
+                    <div class="container result_section_container area-dark">
+                      <h2><?php echo $text_section_header; ?> </h2>
                       <div class="text_mid">
-                        <h2><?php echo $text_section_header; ?> </h2>
                         <p><?php echo $text_section_content; ?></p>
                       </div>
                       <div class="text_right">

@@ -40,10 +40,10 @@ footer {
         }
     }
     @keyframes AnimationName {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
-}
+       0%{background-position:0% 50%}
+       50%{background-position:100% 50%}
+       100%{background-position:0% 50%}
+    }
     .first-para {
         &:before {
             display: none;
@@ -74,6 +74,13 @@ footer {
         @media screen and (max-width: 800px){
             display: block;
             width: 100%;
+        }
+    }
+    &.password-footer {
+        position: static;
+        
+        @media screen and(min-width: 698px) and(max-width: $bp-desktop){
+            position: fixed;
         }
     }
     .footer-upper{

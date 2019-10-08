@@ -33,6 +33,15 @@ body{
     }
 }
 
+.password-wrapper {
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-bottom: 0px;
+    position: relative;
+    background-color: #1f1f1f;
+    z-index: 3;
+    overflow: hidden;
+}
+
 .wrapper--dark {
     background-color: $c-bg;
 }
@@ -1801,13 +1810,9 @@ p {
     p {
         color: #d2d2d2;
         @include font-size(30);
-        width: 90%;
+        width: 80%;
         line-height: 1.5;
-        &:before {
-                content : '\25CF';
-                padding: 0px 10px 0 0;
-                color: #ff0066;
-        }
+        display: inline-block;
     strong {
         font-family: $f-merriweather;
         font-weight: 600;
@@ -1815,15 +1820,33 @@ p {
     }
     .text_left {
         display: block;
+
+        &:before {
+            content: '\25CF';
+            padding: 10px 10px 0 0;
+            color: #ff0066;
+            font-size: 30px;
+            display: inline-block;
+            float: left;
+        }
+
         @media screen and (min-width: $bp-desktop) {
             width: 33%;
             display: inline-block;
             vertical-align: top;
-
         }
     }
     .text_mid {
         display: block;
+
+        &:before {
+            content: '\25CF';
+            padding: 10px 10px 0 0;
+            color: #ff0066;
+            font-size: 30px;
+            display: inline-block;
+            float: left;
+        }
         @media screen and (min-width: $bp-desktop) {
             width: 33%;
             display: inline-block;
@@ -1835,6 +1858,15 @@ p {
     }
     .text_right {
         display: block;
+
+        &:before {
+            content: '\25CF';
+            padding: 10px 10px 0 0;
+            color: #ff0066;
+            font-size: 30px;
+            display: inline-block;
+            float: left;
+        }
         @media screen and (min-width: $bp-desktop) {
             width: 33%;
             padding: 0 0 0 20px;
