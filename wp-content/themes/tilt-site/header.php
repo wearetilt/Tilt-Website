@@ -159,16 +159,16 @@ $htmltitle = wp_title('&raquo;',false);
 		
     </nav>
 
-<?php 
+<?php
     if ( ! post_password_required( $post ) ) {
           // Your custom code should here
-?>
+      ?>
+
 	<div class="wrapper"> <!-- Open Wrapper -->
+	<?php } else {
+		?>
 
-<?php } else {?>
+		<div class="password-wrapper">
 
-	<div class="password-wrapper">
+	<?php }?>
 
-<?php  }
-
-?>
