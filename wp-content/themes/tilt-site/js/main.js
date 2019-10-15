@@ -567,7 +567,7 @@ if (document.getElementById('header-video-player')) { // if has header video
                 document.getElementById('tilt--logo').style.display = 'block';
                 document.getElementById('menuButton').style.display = 'block';
 
-                if (document.getElementById('wordButton')) {
+                if (document.getElementById('workButton')) {
                     if (document.getElementById('workButton').style.display != null) {
                         document.getElementById('workButton').style.display = 'block';
                     }
@@ -1314,5 +1314,9 @@ else {
 
 $("p:empty").remove();
 
+
+
+
 });
+
 

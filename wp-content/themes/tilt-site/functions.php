@@ -616,8 +616,8 @@ function my_password_form() {
               <div class="text-section__para">
               <p>To view this post, please enter your password</p>
               <form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-   				<input placeholder="Password" name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
-   				<button type="submit" class="input-btn" name="Submit">Go</button>
+   				<input class="password_entry" placeholder="Password" name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
+   				<button id="password_button" type="submit" class="input-btn" name="Submit">Go</button>
    				</div>
     		  </form>
     		  </div>
@@ -636,3 +636,4 @@ function wpb_password_post_filter( $where = '' ) {
     return $where;
 }
 add_filter( 'posts_where', 'wpb_password_post_filter' );
+

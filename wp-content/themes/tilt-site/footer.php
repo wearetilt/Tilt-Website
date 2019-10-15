@@ -165,5 +165,28 @@ $blog_id = get_current_blog_id();
   ga('send', 'pageview');
 
 </script>
+
+<!-- cookie popup -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+ "palette": {
+   "popup": {
+     "background": "rgba(0,0,0,0.75)",
+     "text": "#ffffff"
+   },
+   "button": {
+     "background": "transparent",
+     "text": "#ffffff",
+     "border": "#ffffff"
+   }
+ },
+ "content": {
+   "link": "See our cookie policy",
+   "href": "https://wearetilt.com/privacy-policy/#cookies"
+ }
+});
+</script>
+
 </body>
 </html>
