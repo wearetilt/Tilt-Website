@@ -318,7 +318,7 @@ body{
                 }
             }
             .entry-title {
-                padding-bottom: 15px;
+                padding-bottom: 5px;
             }
         }
         &:hover {
@@ -469,7 +469,7 @@ body{
                 }
             }
             .entry-title {
-                padding-bottom: 15px;
+                padding-bottom: 5px;
             }
         }
         &:hover {
@@ -595,7 +595,7 @@ body{
                 }
             }
             .entry-title {
-                padding-bottom: 15px;
+                padding-bottom: 5px;
             }
         }
         &:hover {
@@ -897,6 +897,11 @@ body{
         background-color: $c-bg;
         @media screen and (min-width: $bp-desktop) {
             top: 74px;
+        }
+        .underlined {
+            &:after {
+                margin: 0.4em 0em;
+            }
         }
     }
 
@@ -1337,7 +1342,7 @@ body{
                 }
             }
             .entry-title {
-                padding-bottom: 15px;
+                padding-bottom: 5px;
             }
         }
         &:hover {
@@ -1763,11 +1768,13 @@ p {
     }
     a {
         color: #d2d2d2;
+        font-family: $f-merriweather;
         text-transform: none;
         border-bottom: 1px solid #505050;
 
         &:hover {
-            color: #fb4a71;
+            color: #fff;
+            border-bottom: 1px solid #fff;
         }
     }
     .text_mid {

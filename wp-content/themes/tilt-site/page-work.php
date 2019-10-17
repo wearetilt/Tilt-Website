@@ -42,7 +42,7 @@ $entries_right = array(0,2);
         <div class="module__text">
           <div>
              <h2 class="underlined"><?= $work_group['work_headline'];?></h2>
-             <p class="first-para tag--work-title"><?= $work_group['work_text'];?></p>
+             <p class="tag--work-title"><?= $work_group['work_text'];?></p>
 
              <a class="cube--link" href="<?= $work_group['work_link'];?>">
               <div class="cube">
