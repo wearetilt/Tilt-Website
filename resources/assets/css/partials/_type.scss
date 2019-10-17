@@ -216,6 +216,9 @@ h3 {
     }
 }
 
+em {
+    font-style: italic;
+}
 p {
     @include font-size(16);
     @media handheld,

@@ -212,10 +212,16 @@ header {
         .container--header {
             padding-top: 1%;
             position: fixed;
-            bottom: 40%;
+            bottom: 30%;
             width: 100%;
             background-color: transparent;
-            } // .monitor-wrapper+.container--header {
+
+            @media screen and(min-width: $bp-desktop ){
+                bottom: 35%;
+            }
+
+        } 
+        // .monitor-wrapper+.container--header {
                 //     position: relative;
                 //     padding-top: 3%;
                 // }

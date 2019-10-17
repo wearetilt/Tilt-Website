@@ -339,7 +339,9 @@ if( have_rows('work_items') ):
                 if($third_column == true) :
                   ?>
                   <div class="container result_section_container area-dark">
+                    <?php if($text_section_header != ''){?>
                     <h2><?php echo $text_section_header; ?> </h2>
+                    <?php } else {}?>
                     <div class="text_left">
                       <p><?php echo $text_section_content; ?></p>
                     </div>
@@ -352,13 +354,17 @@ if( have_rows('work_items') ):
                   </div>
                   <?php else: ?>
                     <div class="container result_section_container area-dark">
+                      <?php if($text_section_header != ''){?>
                       <h2><?php echo $text_section_header; ?> </h2>
+                      <?php } else {}?>
                       <div class="text_mid">
                         <p><?php echo $text_section_content; ?></p>
                       </div>
+                      <?php if($second_text_content != ''){?>
                       <div class="text_right">
                         <p><?php echo $second_text_content; ?></p>
                       </div>
+                    <?php } else {}?>
                     </div>
                   <?php endif; ?>
 
