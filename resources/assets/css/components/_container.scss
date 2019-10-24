@@ -1755,9 +1755,11 @@ p {
     ul {
         li {
             line-height: 26px;
-            display: flex;
+            display: block;
             margin-top: 15px;
             color: #d2d2d2;
+            text-indent: -0.65em;
+            padding: 0 20px;
             
             strong {
             display: contents;
@@ -1766,7 +1768,7 @@ p {
             &:before{
                 content : '\25CF';
                 display: inline-block;
-                padding: 0px 10px;
+                padding: 0px 10px 0px 0px;
             }
         }
     }
