@@ -1927,9 +1927,9 @@ p {
 }
 
 .full_image_container {
-    padding: 0px 0;
+    padding: 0px 0px 60px 0px;
     @media screen and (min-width: $bp-desktop) {
-        padding: 0px 0;
+        padding: 0px 0px 180px 0px;
     }
     .full-size {
         width: 100%;
