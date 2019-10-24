@@ -335,8 +335,39 @@ if( have_rows('work_items') ):
                 $second_text_content = get_sub_field('second_text_section');
                 $third_text_content = get_sub_field('third_text_section');
                 $third_column = get_sub_field('three_columns');
+                $second_line = get_sub_field('second_line');
 
-                if($third_column == true) :
+                if($third_column == true && $second_line == true) :
+                  ?>
+                  <div class="container result_section_container no-padding area-dark">
+                    <?php if($text_section_header != ''){?>
+                    <h2><?php echo $text_section_header; ?> </h2>
+                    <?php } else {}?>
+                    <div class="text_left">
+                      <p><?php echo $text_section_content; ?></p>
+                    </div>
+                    <div class="text_mid">
+                      <p><?php echo $second_text_content; ?></p>
+                    </div>
+                    <div class="text_right">
+                      <p><?php echo $third_text_content; ?></p>
+                    </div>
+                  </div>
+                  <?php elseif($third_column == false && $second_line == true): ?>
+                    <div class="container result_section_container no-padding area-dark">
+                      <?php if($text_section_header != ''){?>
+                      <h2><?php echo $text_section_header; ?> </h2>
+                      <?php } else {}?>
+                      <div class="text_mid">
+                        <p><?php echo $text_section_content; ?></p>
+                      </div>
+                      <?php if($second_text_content != ''){?>
+                      <div class="text_right">
+                        <p><?php echo $second_text_content; ?></p>
+                      </div>
+                    <?php } else {}?>
+                    </div>
+                  <?php elseif($third_column == true && $second_line == false) :
                   ?>
                   <div class="container result_section_container area-dark">
                     <?php if($text_section_header != ''){?>
@@ -352,7 +383,7 @@ if( have_rows('work_items') ):
                       <p><?php echo $third_text_content; ?></p>
                     </div>
                   </div>
-                  <?php else: ?>
+                  <?php else : ?>
                     <div class="container result_section_container area-dark">
                       <?php if($text_section_header != ''){?>
                       <h2><?php echo $text_section_header; ?> </h2>
@@ -366,6 +397,9 @@ if( have_rows('work_items') ):
                       </div>
                     <?php } else {}?>
                     </div>
+
+
+
                   <?php endif; ?>
 
                   <!-- quote -->
