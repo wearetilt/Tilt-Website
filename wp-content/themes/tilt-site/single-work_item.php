@@ -80,7 +80,7 @@ if( have_rows('work_items') ):
                 <?php
               endif;
               ?>
-              <div class="award-logo" style="background-image: url(<?php echo $award['url']?>);"></div>
+              <div class="award-logo" style="background-image: url(<?php echo $award['url']?>); background-size: 100%; background-repeat: no-repeat; "></div>
               <?php 
               if($arrTerms) : 
                 ?>
