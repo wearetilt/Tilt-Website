@@ -608,7 +608,7 @@ function my_password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<div class="container area-dark contact--page pw-protect-login-form">
-    		<div class="container container-headline-text area-dark">
+    		<div class="container container-headline-text area-dark"> 
             <section class="text-section">
             </section>
             <section class="text-section">
