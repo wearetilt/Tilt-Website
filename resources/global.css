@@ -576,9 +576,9 @@ p + a { margin-top: 14px; }
 
 @media handheld, screen and (min-width: 1024px) { .cube--link.cube--float-left + .cube--link.cube--float-left { margin-left: 40px; } }
 
-.pw-protect-login-form { width: 100%; min-height: 100vh; padding: 30% 6.25% !important; }
+.pw-protect-login-form { width: 100%; min-height: 100vh; padding: 20% 6.25% !important; }
 
-@media screen and (min-width: 1024px) { .pw-protect-login-form { height: 100vh; padding: 17% 6.25% !important; } }
+@media screen and (min-width: 1024px) { .pw-protect-login-form { height: 100vh; padding: 14% 6.25% !important; } }
 
 .pw-protect-login-form .container-headline-text { padding: 4%; width: 100%; margin: 35% auto; display: block; background: #232323; }
 
