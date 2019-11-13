@@ -374,7 +374,7 @@ body{
         opacity: 1 !important;
         .list-motion {
             color: #ec135b;
-            @media screen and (min-width: 1024px) {
+            &:after {
                 content: " ";
                 transition: all .5s;
                 margin-top: 3px;
