@@ -69,7 +69,7 @@ if( have_rows('work_items') ):
           <!-- title section -->
           <div class="container container--header" <?php echo get_sub_field('type') == 'monitor' ? 'style="background-color: transparent"' : ''; ?> >
             <div class="header-title">
-              <p class="tag tag--work-body"><?php echo get_sub_field('category');?></p>
+              <p class="tag--work-body"><?php echo get_sub_field('category');?></p>
               <h1>
                 <?php echo get_sub_field('title_bold');?>
               </h1>
