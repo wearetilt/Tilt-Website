@@ -1212,7 +1212,7 @@ section.text-section--centre h2, section.text-section--centre a { display: block
 
 .work-item .header-title p { font-size: 20px; font-family: "SeroOT-Light", "Helvetica", "Arial", sans-serif; line-height: 20px; padding: 0 4px; text-transform: uppercase; }
 
-@media screen and (min-width: 1024px) { .work-item .header-title p { line-height: 14px; } }
+@media screen and (min-width: 1024px) { .work-item .header-title p { line-height: 20px; } }
 
 .work-item .header-title h1 { font-size: 50px; }
 
@@ -2078,7 +2078,7 @@ a#workButton:hover { background: url("../images/work-burger_v5.png") 10px -39px 
   .menu__items .menu__item + .menu__item { margin-left: 40px; margin-bottom: 0px; }
   .menu__items .menu__item a:hover:after { width: 100%; } }
 
-.work-item-title { display: inline-block; cursor: pointer; text-transform: uppercase; padding-top: 26px; font-family: "SeroOT-Thin", "Helvetica", "Arial", sans-serif; letter-spacing: 1px; margin: 0 25px; -webkit-user-select: none; -ms-user-select: none; user-select: none; color: #fff; font-size: 19px; font-size: 1.1875rem; }
+.work-item-title { display: inline-block; cursor: pointer; text-transform: uppercase; padding-top: 26px; font-family: "SeroOT-Thin", "Helvetica", "Arial", sans-serif; letter-spacing: 1px; margin: 0 25px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #fff; font-size: 19px; font-size: 1.1875rem; }
 
 @media handheld, screen and (min-width: 1024px) { .work-item-title { display: inline-block; } }
 
@@ -2320,7 +2320,7 @@ Create your own skin at http://designer.videojs.com
 
 .vjs-default-skin .vjs-captions-button:focus .vjs-control-content:before, .vjs-default-skin .vjs-captions-button:hover .vjs-control-content:before { box-shadow: 0 0 1em #fff; }
 
-.video-js { background-color: #000; position: relative; padding: 0; font-size: 10px; vertical-align: middle; font-weight: 400; font-style: normal; font-family: Arial, sans-serif; -webkit-user-select: none; -ms-user-select: none; user-select: none; overflow: hidden; height: 100%; width: 100%; }
+.video-js { background-color: #000; position: relative; padding: 0; font-size: 10px; vertical-align: middle; font-weight: 400; font-style: normal; font-family: Arial, sans-serif; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; overflow: hidden; height: 100%; width: 100%; }
 
 .video-js video { -o-object-fit: cover; object-fit: cover; }
 
