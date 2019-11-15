@@ -626,8 +626,30 @@ function my_password_form() {
           </div>
     ';
     return $o;
+
 }
 add_filter( 'the_password_form', 'my_password_form' );
+
+add_filter( 'the_password_form', 'wpse_71284_custom_post_password_msg' );
+
+/**
+ * Add a message to the password form.
+ */
+function wpse_71284_custom_post_password_msg( $o )
+{
+    // No cookie, the user has not sent anything until now.
+    if ( ! isset ( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] ) )
+        return $o;
+
+    // Translate and escape.
+    $msg = esc_html__( 'Sorry, your password is wrong.', 'your_text_domain' );
+
+    // We have a cookie, but it doesn’t match the password.
+    $msg = "<p class='custom-password-message'>$msg</p>";
+
+    return $msg . $o;
+
+}
 
 function wpb_password_post_filter( $where = '' ) {
     if (!is_single() && !is_admin()) {
