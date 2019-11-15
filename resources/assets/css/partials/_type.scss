@@ -238,7 +238,7 @@ p {
     a {
         color: #fb4a71;
     }
-    &+& {
+    &+&, ul+& {
         margin-top: 1.8em;
     }
     &.highlight {
@@ -683,6 +683,7 @@ ul {
     p+& {
         margin-top: 5px;
     }
+
 }
 
 .news-container ul.standard-list {
