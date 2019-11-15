@@ -21,7 +21,7 @@ get_header('news'); ?>
 		<div class="news-wrapper news-wrapper--header">
 			<div class="news-container">
 				<div class="header-title">
-					<p class="tag tag--home-title">News</p>
+					<p class="tag--home-title">News</p>
 					<h1 class="underlined"><?php the_title(); ?></h1>
 				</div>
 			</div>

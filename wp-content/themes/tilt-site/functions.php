@@ -610,8 +610,6 @@ function my_password_form() {
     $o = '<div class="container area-dark contact--page pw-protect-login-form">
     		<div class="container container-headline-text area-dark"> 
             <section class="text-section">
-            </section>
-            <section class="text-section">
               <h2>Client area</h2>
               <div class="text-section__para">
               <p>To view this post, please enter your password</p>

@@ -303,7 +303,7 @@ body{
                 top: 37%;
             }
             p {
-                @include font-size(16);
+                @include font-size(20);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
@@ -312,13 +312,13 @@ body{
             }
             .excerpt {
                 width: 100%;
-                line-height: 20px;
+                line-height: 26px;
                 @media screen and (min-width: $bp-phone){
                     width: 80%;
                 }
             }
             .entry-title {
-                padding-bottom: 5px;
+                padding-bottom: 7px;
             }
         }
         &:hover {
@@ -453,7 +453,7 @@ body{
                 top: 37%;
             }
             p {
-                @include font-size(16);
+                @include font-size(20);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
@@ -462,13 +462,13 @@ body{
             }
             .excerpt {
                 width: 100%;
-                line-height: 20px;
+                line-height: 26px;
                 @media screen and (min-width: $bp-phone){
                     width: 80%;
                 }
             }
             .entry-title {
-                padding-bottom: 5px;
+                padding-bottom: 7px;
             }
         }
         &:hover {
@@ -579,7 +579,7 @@ body{
                 top: 37%;
             }
             p {
-                @include font-size(16);
+                @include font-size(20);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
@@ -588,13 +588,13 @@ body{
             }
             .excerpt {
                 width: 100%;
-                line-height: 20px;
+                line-height: 26px;
                 @media screen and (min-width: $bp-phone){
                     width: 80%;
                 }
             }
             .entry-title {
-                padding-bottom: 5px;
+                padding-bottom: 7px;
             }
         }
         &:hover {
@@ -1326,7 +1326,7 @@ body{
                 top: 37%;
             }
             p {
-                @include font-size(16);
+                @include font-size(20);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
@@ -1335,13 +1335,13 @@ body{
             }
             .excerpt {
                 width: 100%;
-                line-height: 20px;
+                line-height: 26px;
                 @media screen and (min-width: $bp-phone){
                     width: 80%;
                 }
             }
             .entry-title {
-                padding-bottom: 5px;
+                padding-bottom: 7px;
             }
         }
         &:hover {
@@ -1373,6 +1373,7 @@ body{
         .our_work_button {
             font-family: $f-seroot-lt;
             letter-spacing: 0.075;
+            line-height: 1.45 !important;
             @include font-size(18);
             color: white;
             &_black {
@@ -1548,7 +1549,7 @@ p {
             padding: 0 4px;
             text-transform: uppercase;
             @media screen and (min-width: $bp-desktop) {
-                line-height: 14px;
+                line-height: 20px;
             }
 
         }
