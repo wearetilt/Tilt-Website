@@ -401,9 +401,10 @@ p {
         @include font-size(20);
         font-family: $f-merriweather;
         font-weight: 300;
+        color: $c-grey-94;
         @media handheld,
         screen and (min-width: $bp-desktop) {
-            @include font-size(30);
+            @include font-size(24);
         }
     }
     &.news--home {
