@@ -291,6 +291,15 @@
     }
 }*/
 
+.news-noimg {
+
+    &:hover {
+        .overlay-text {
+            opacity: 0.8;
+        }
+    }
+}
+
 .logo--icon {
     &:after {
         content: "";
@@ -399,7 +408,7 @@
     -webkit-transform: translateY(-50%);
     padding: 0 percentage(126/1016);
     p{
-        @include font-size(20);
+        @include font-size(16);
         font-family: $f-seroot-lt;
         letter-spacing: 1px;
         text-transform: uppercase;

@@ -45,26 +45,25 @@ get_header(); ?>
                                 <div class="module module--2-2  news--icon">
                                     <?php get_template_part( 'content', 'blog-post-large' ); ?>
                                 </div>
+                            </div>
                     <?php
                 } elseif ($i === 2) {
                     ?>
+                    <div class="group group--right">
                         <div class="module module--1-1 news--icon">
                             <?php get_template_part( 'content', 'blog-post' ); ?>
                         </div>
                     <?php
                 } elseif ($i === 3) {
                     ?>
-                        <div class="module module--1-1 news--icon">
-                            <?php get_template_part( 'content', 'blog-post' ); ?>
+                        <div class="module module--1-1 news--icon news-noimg">
+                            <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
                         </div>
-                    </div>
                     <?php
                 } elseif ($i === 4) {
                     ?>
-                        <div class="group group--right">
-
-                            <div class="module module--1-1  news--icon">
-                                <?php   get_template_part( 'content', 'blog-post' ); ?>
+                            <div class="module module--1-1  news--icon news-noimg">
+                                 <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
                             </div>
                     <?php
                 } elseif ($i === 5) {
@@ -72,16 +71,46 @@ get_header(); ?>
                             <div class="module module--1-1  news--icon">
                                 <?php   get_template_part( 'content', 'blog-post' ); ?>
                             </div>
+                        </div>
                     <?php
                 } elseif ($i === 6) {
                     ?>
+                        <div class="group group--right">
                             <div class="module module--2-2  news--icon">
-                                <?php get_template_part( 'content', 'blog-post-large' ); ?>
+                                <?php   get_template_part( 'content', 'blog-post' ); ?>
                             </div>
                         </div>
                     <?php
+                } elseif ($i === 7) {
+                    ?>
+                    <div class="group group--left">
+                        <div class="module module--1-1 news--icon">
+                            <?php get_template_part( 'content', 'blog-post' ); ?>
+                        </div>
+                    <?php
+                } elseif ($i === 8) {
+                    ?>
+                        <div class="module module--1-1 news--icon news-noimg">
+                             <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+                        </div>
+                    <?php
+                } elseif ($i === 9) {
+                    ?>
+                        <div class="module module--1-1  news--icon news-noimg">
+                             <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+                        </div>
+                    <?php
+                } elseif ($i === 10) {
+                    ?>
+                        <div class="module module--1-1  news--icon">
+                            <?php   get_template_part( 'content', 'blog-post' ); ?>
+                        </div>
+                    </div>
+
+                    <?php
                 }
-                ?>
+                    ?>
+
                 <?php
                 /*
 				 * Include the Post-Format-specific template for the content.
@@ -91,7 +120,7 @@ get_header(); ?>
 
             // End the loop.
 
-                if ($i === 6) {
+                if ($i === 10) {
                     $i = 0;
                     ?>
                     </div>
