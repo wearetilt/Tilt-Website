@@ -206,7 +206,7 @@ body{
         margin: 45px 0px 45px 0px;
         @media handheld,
         screen and (min-width: $bp-desktop) {
-            margin: 59px 0px 124px 0px;
+            margin: 59px 0px 0px 0px;
         }
     }
     & #social {
@@ -921,11 +921,10 @@ body{
             flex-direction: column;
             position: absolute;
             left: 11%;
-            margin-top: 88px !important;
         }
 
         a {
-            
+
             @media screen and (min-width: $bp-desktop) {
                 margin: 10px 0 !important;
             }
@@ -942,12 +941,13 @@ body{
 
     .news-wrapper--header {
          max-width: none;
-        padding: 10% 0 24px 0;
+        padding: 6%  5.0393700787% 0 5.0393700787%;
     }
+
 
     .news-container {
         @extend %clearfix;
-        max-width: 100%;
+        margin-bottom: 120px;
         padding: 0 percentage(64/1270);
         ul {
             margin: 1.8em 0;
@@ -964,6 +964,13 @@ body{
                 }
             }
         }
+
+        &.gallery-container {
+            margin-left: -20% !important;
+            margin-right: -20% !important;
+            padding: 0 !important;
+        }
+
         &.news--footer {
             padding-bottom: 5%;
             @media handheld,
