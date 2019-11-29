@@ -178,6 +178,7 @@ if(has_post_thumbnail()){
 
           <div data-gallery="<?php $galleryLayout;?>" class="news-container gallery-container area-<?php echo $background;?> <?php echo get_sub_field('padding') ? 'container--padding':'container--no-padding';?> <?php echo get_sub_field('no_padding_bottom') ? 'container--no-padding-bottom' : '';?>">
             <div class="group-container">
+              
               <div class="group group--left">
                 <?php
                 $i = 0;
@@ -193,6 +194,7 @@ if(has_post_thumbnail()){
                   if($break) :
                     ?>
                   </div>
+
                   <div class="group group--right">
                     <?php
                   endif;
@@ -214,36 +216,34 @@ if(has_post_thumbnail()){
 
         <!-- video block -->
         <?php 
-        elseif(get_row_layout() == 'video'): ?>
+        elseif(get_row_layout() == 'video_block'): ?>
 
-          <?php if(get_field('vimeo_id') || get_field('vimeo_id_two') || get_field('youtube_id')) { ?>
+          <?php if(get_field('vimeo') || get_field('youtube')) { ?>
             <div class="news-container gallery-container area-dark">
-            <?php } ?>
+          <?php } ?>
 
-            <?php if(get_field('vimeo_id')) { ?>
+            <?php if(get_field('vimeo')) { ?>
               <div class="container--newsvideo">
                 <div class="group-container">
                   <div class="module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                      <iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id'); ?>?color=FF406A&title=0&byline=0&portrait=0 " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <iframe src="https://player.vimeo.com/video/<?php the_field('vimeo'); ?>?color=FF406A&title=0&byline=0&portrait=0 " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             <?php } ?>
 
-            <?php if(get_field('youtube_id')) { ?>
-
+            <?php if(get_field('youtube')) { ?>
               <div class="container--newsvideo">
                 <div class="group-container">
                   <div class="module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>" frameborder="0" allowfullscreen></iframe>
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube'); ?>" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
-
             <?php } ?>
 
           </div>
@@ -255,7 +255,7 @@ if(has_post_thumbnail()){
     endif;
     ?>
 
-  </div>
+</div>
 
 
   <div class="group-container">

@@ -216,7 +216,7 @@ body{
         @media handheld,
         screen and (min-width: $phone-breaks) {
             float: right;
-            margin-top: 0px;
+            margin-top: 3px;
             margin-bottom: 0px;
         }
         .news-share {
@@ -928,6 +928,7 @@ body{
             @media screen and (min-width: $bp-desktop) {
                 margin: 10px 0 !important;
             }
+            
         }
     }
 
@@ -935,7 +936,7 @@ body{
         max-width: 1270px;
 
         @media screen and (min-width: $bp-desktop) {
-            margin: 0 25%;
+            margin: 0 28%;
         }
     }
 
@@ -949,6 +950,9 @@ body{
         @extend %clearfix;
         margin-bottom: 120px;
         padding: 0 percentage(64/1270);
+        p {
+            color: #d2d2d2;
+        }
         ul {
             margin: 1.8em 0;
             li {
