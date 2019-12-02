@@ -30,11 +30,11 @@ if(has_post_thumbnail()){
     </div>
   </div>
 
-  <div class="news-container">
-    <div id="social">
-      <h2 class="light news-share">SHARE:</h2>
-      <?php echo do_shortcode('[feather_share]'); ?>
-    </div>
+  <div class="news-container intro">
+                <div id="social">
+              <h2 class="light news-share">SHARE:</h2>
+              <?php echo do_shortcode('[feather_share]'); ?>
+            </div>
     <div class="intro-text">
       <?php the_field('standfirst_text'); ?>
     </div>
@@ -217,29 +217,29 @@ if(has_post_thumbnail()){
         <!-- video block -->
         <?php 
         elseif(get_row_layout() == 'video_block'): ?>
-
-          <?php if(get_field('vimeo') || get_field('youtube')) { ?>
             <div class="news-container gallery-container area-dark">
+          <?php if(get_sub_field('vimeo') || get_sub_field('youtube')) { ?>
+
           <?php } ?>
 
-            <?php if(get_field('vimeo')) { ?>
+            <?php if(get_sub_field('vimeo')) { ?>
               <div class="container--newsvideo">
                 <div class="group-container">
                   <div class="module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                      <iframe src="https://player.vimeo.com/video/<?php the_field('vimeo'); ?>?color=FF406A&title=0&byline=0&portrait=0 " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <iframe src="https://player.vimeo.com/video/<?php echo get_sub_field('vimeo'); ?>?color=FF406A&title=0&byline=0&portrait=0 " width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             <?php } ?>
 
-            <?php if(get_field('youtube')) { ?>
+            <?php if(get_sub_field('youtube')) { ?>
               <div class="container--newsvideo">
                 <div class="group-container">
                   <div class="module--16-9 module--video module--nozoom">
                     <div class="ratio">
-                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php the_field('youtube'); ?>" frameborder="0" allowfullscreen></iframe>
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo get_sub_field('youtube'); ?>" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
