@@ -25,7 +25,7 @@ if(has_post_thumbnail()){
     <div class="news-wrapper--header">
       <div class="header-title">
         <h1><?php the_title(); ?></h1>
-        <h2 class="light news-date"><?php echo get_the_date('d M Y'); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id );?><span class="author-name"><?php echo get_the_author_meta('display_name', $post_author_id);?></span></h2>
+        <h2 class="light news-date"><?php echo get_the_date('d M y'); ?> <?php $post_author_id = get_post_field( 'post_author', $post_id );?><span class="author-name"><?php echo get_the_author_meta('display_name', $post_author_id);?></span></h2>
       </div>
     </div>
   </div>
