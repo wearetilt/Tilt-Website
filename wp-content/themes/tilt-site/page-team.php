@@ -47,9 +47,17 @@ $team_items = get_posts( $args );
 			$cssClass = "module module--staff module--video";
 
 
+      $image_attributes = wp_get_attachment_image_src($teamImage, $size = 'team' );
+        $retina_desktop_image = $image_attributes[0];
+        if (function_exists('wr2x_get_retina_from_url')) {
+          $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);
+       }
+
+
 			?>
 
-			<div id="staff-<?= $i;?>" class="<?= $cssClass; ?>" style="background-image: url('<?= $teamImage;?>'); background-size: cover; background-position: 50% 50%;">
+			<div id="staff-<?= $i;?>" class="<?= $cssClass; ?>" style="background-image: url('<?= $teamImage;?>'); background-size: cover; background-position: 50% 50%;   background-image: 
+    image-set( url('<?= $teamImage; ?>') 1x, url('<?= $teamImage; ?>') 2x, );">
 				<div class="overlay overlay--staff area-dark">
 					<div class="overlay-text">
 						<h2 class="underlined"><?= $name;?></h2>

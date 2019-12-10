@@ -33,7 +33,9 @@ if(has_post_thumbnail()){
   <div class="news-container intro">
                 <div id="social">
               <h2 class="light news-share">SHARE:</h2>
-              <?php echo do_shortcode('[feather_share]'); ?>
+              <a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a>
+              <a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a>
+              <a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a>
             </div>
     <div class="intro-text">
       <?php the_field('standfirst_text'); ?>

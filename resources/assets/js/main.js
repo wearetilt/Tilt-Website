@@ -1235,84 +1235,110 @@ $(document).ready(function(){
 
     });
 
-//header scroll down and up animation
+    //header scroll down and up animation
 
-var position = $(window).scrollTop();
+    var position = $(window).scrollTop();
 
-if($('body').hasClass('single-work_item')){
-
-$(window).scroll(function(){
-
-    var scroll = $(window).scrollTop();
-
-    if(scroll > 250){
-        $('.header-title').fadeOut(250, function(){
-            $('.container--header').css('display', 'none');
-        });
-    }else{
-        $('.container--header').css('display', 'block');
-        $('.header-title').fadeIn(250);
-    }
-
-})
-
-}
-
-if($('body').hasClass('home')){
+    if($('body').hasClass('single-work_item')){
 
     $(window).scroll(function(){
 
-        if($(window).scrollTop() > 1400){
-            $('footer').css('display', 'block');
-        } else {
-            $('footer').css('display', 'none');
+        var scroll = $(window).scrollTop();
+
+        if(scroll > 250){
+            $('.header-title').fadeOut(250, function(){
+                $('.container--header').css('display', 'none');
+            });
+        }else{
+            $('.container--header').css('display', 'block');
+            $('.header-title').fadeIn(250);
         }
 
     })
-}
 
+    }
 
-if(screen.width <= 768){
+    if($('body').hasClass('home')){
 
-    $('.project_container').each(function(){
-        $(this).waypoint({
-          handler: function(direction) {
-            $('.related-links').css('opacity', '0');
-            $('img').css('opacity', '1');
-            $('.related-links', this.element).css('opacity', '1');
-            $('img', this.element).css('opacity', '0.7');
-            }, offset:'50%'
+        $(window).scroll(function(){
+
+            if($(window).scrollTop() > 1400){
+                $('footer').css('display', 'block');
+            } else {
+                $('footer').css('display', 'none');
+            }
+
         })
+    }
+
+    //Social scroll on post pages
+
+    if($('body').hasClass('single-post')){
+
+    $(window).scroll(function(){
+
+        if($(window).scrollTop() > 1000){
+
+            $('#social').addClass('social-scroll');
+        }else{
+
+            $('#social').removeClass('social-scroll');
+        }
+
+
     });
 
-    $('.group-container .module').each(function(){
-        $(this).waypoint({
-          handler: function(direction) {
-            $('.overlay').css('opacity', '0');
-            $('.overlay', this.element).css('opacity', '1');
-            }, offset:'50%'
-        })
-    });
+    $(window).scroll(function(){
+    toScroll = $(document).height() - $(window).height() - 100;
+    if ( $(this).scrollTop() > toScroll ) {
+       $('#social').removeClass('social-scroll');
+    }
+});
 
-    $('.group-container .work_item').each(function(){
-        $(this).waypoint({
-          handler: function(direction) {
-            $('.related-links').css('opacity', '0');
-            $('img').css('opacity', '1');
-            $('.related-links', this.element).css('opacity', '1');
-            $('img', this.element).css('opacity', '0.7');
-            }, offset:'45%'
-        })
-    });
+    }
 
-}
-else {
 
-}
+    if(screen.width <= 768){
 
-//remove empty p tags
+        $('.project_container').each(function(){
+            $(this).waypoint({
+              handler: function(direction) {
+                $('.related-links').css('opacity', '0');
+                $('img').css('opacity', '1');
+                $('.related-links', this.element).css('opacity', '1');
+                $('img', this.element).css('opacity', '0.7');
+                }, offset:'50%'
+            })
+        });
 
-$("p:empty").remove();
+        $('.group-container .module').each(function(){
+            $(this).waypoint({
+              handler: function(direction) {
+                $('.overlay').css('opacity', '0');
+                $('.overlay', this.element).css('opacity', '1');
+                }, offset:'50%'
+            })
+        });
+
+        $('.group-container .work_item').each(function(){
+            $(this).waypoint({
+              handler: function(direction) {
+                $('.related-links').css('opacity', '0');
+                $('img').css('opacity', '1');
+                $('.related-links', this.element).css('opacity', '1');
+                $('img', this.element).css('opacity', '0.7');
+                }, offset:'45%'
+            })
+        });
+
+    }
+    else {
+
+    }
+
+    //remove empty p tags
+
+    $("p:empty").remove();
 
 
 

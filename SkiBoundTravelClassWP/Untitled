@@ -1,0 +1,798 @@
+; Use the 'http[s]' protocol for Git repos where possible.  The 'git' protocol may not work on all environments.
+
+core = 7.x
+api = 2
+
+; Contrib projects (alphabetical order!)
+; ==============================================================================
+
+projects[accordions][subdir] = "contrib"
+projects[accordions][version] = "1.0-alpha4"
+
+projects[addressfield][subdir] = "contrib"
+projects[addressfield][version] = "1.0-beta4"
+
+projects[addthis][subdir] = "contrib"
+projects[addthis][version] = "4.0-alpha2"
+; There's a better patch on this issue that needs a review
+projects[addthis][patch][] = "http://drupal.org/files/addthis-skipfieldstorage-1959070-3.patch"
+; Fix is included in 4.0-alpha4
+projects[addthis][patch][] = "http://drupal.org/files/addthis_custom_settings_toolbox_block-1694868-8.patch"
+
+projects[admin_views][subdir] = "contrib"
+projects[admin_views][version] = "1.5"
+
+projects[advanced_help][subdir] = "contrib"
+projects[advanced_help][version] = "1.0"
+; This first patch is needed to allow our 'domino_help' module work.
+; Fixed in 1.1.
+projects[advanced_help][patch][] = "http://drupal.org/files/advanced_help-ini_data_to_alter-1471092-6.patch"
+projects[advanced_help][patch][] = "http://drupal.org/files/issues/advanced_help-941866.patch"
+projects[advanced_help][patch][] = "http://drupal.org/files/advanced_help-removing_help_popup_theme_css-1803488-1.patch"
+; Fixed just after 1.1
+projects[advanced_help][patch][] = "http://drupal.org/files/issues/1209182.patch"
+projects[advanced_help][patch][] = "http://drupal.org/files/advanced_help-1970608-01-php-notices.patch"
+projects[advanced_help][patch][] = "http://drupal.org/files/advanced_help-1973738-01.patch"
+
+projects[apachesolr][subdir] = "contrib"
+projects[apachesolr][version] = "1.7"
+
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][version] = "2.7"
+
+projects[bean][subdir] = "contrib"
+projects[bean][version] = "1.7"
+
+projects[better_exposed_filters][subdir] = "contrib"
+projects[better_exposed_filters][version] = "3.0"
+
+projects[blockreference][subdir] = "contrib"
+projects[blockreference][version] = "1.15"
+
+projects[block_class][subdir] = "contrib"
+projects[block_class][version] = "2.3"
+
+projects[boxes][subdir] = "contrib"
+projects[boxes][version] = "1.2"
+
+projects[cer][type] = "module"
+projects[cer][subdir] = "contrib"
+projects[cer][download][type] = "git"
+projects[cer][download][url] = "http://git.drupal.org/project/cer.git"
+; HEAD of 7.x-1.x-dev as of 2013-05-14. I've not evaluated 7.x-2.x
+projects[cer][download][revision] = "3cb775d96779a99117b4197647055df9a5fb77f9"
+; http://drupal.org/node/1817594
+projects[cer][patch][] = "http://drupal.org/files/cer-skip-selfreferences.patch"
+
+projects[cm_tools][type] = "module"
+projects[cm_tools][subdir] = "contrib"
+projects[cm_tools][download][type] = "git"
+projects[cm_tools][download][url] = "https://github.com/computerminds/cm_tools.git"
+projects[cm_tools][download][revision] = "0cbbbbec6f881ae93cc26e371c80c9d4c85c23a3"
+; Both from https://github.com/computerminds/cm_tools/pull/12
+projects[cm_tools][patch][] = "https://github.com/jamsilver/cm_tools/commit/3f98e250c25d60d198d9c0fbe9db58f7043ff86e.diff"
+projects[cm_tools][patch][] = "https://github.com/jamsilver/cm_tools/commit/cd35624b93ac2c4be0d1f669a6d4aee74bbbb549.diff"
+
+projects[colorbox][subdir] = "contrib"
+projects[colorbox][version] = "2.10"
+
+libraries[colorbox][download][type] = "file"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.4.0.tar.gz"
+libraries[colorbox][directory_name] = "colorbox"
+
+projects[computed_field][subdir] = "contrib"
+projects[computed_field][version] = "1.0"
+
+projects[context][subdir] = "contrib"
+projects[context][version] = "3.6"
+
+projects[ctools][subdir] = "contrib"
+projects[ctools][version] = "1.9"
+; This allows us to rename brick types
+projects[ctools][patch][] = "https://drupal.org/files/1775612-calling-missing-file-2.patch"
+
+projects[ctools_path_access][subdir] = "contrib"
+projects[ctools_path_access][version] = "1.0"
+
+projects[custom_add_another][subdir] = "contrib"
+projects[custom_add_another][version] = "1.0-rc3"
+
+projects[date][subdir] = "contrib"
+projects[date][version] = "2.8"
+projects[date][patch][] = "http://drupal.org/files/date-1830296-01.patch"
+
+projects[devel][subdir] = "development"
+projects[devel][version] = "1.3"
+
+projects[disqus][subdir] = "contrib"
+projects[disqus][version] = "1.10"
+
+libraries[firephp][download][type] = "file"
+libraries[firephp][download][url] = "https://github.com/firephp/firephp-core/archive/v0.4.0.tar.gz"
+libraries[firephp][subdir] = "development"
+libraries[firephp][directory_name] = "FirePHPCore"
+
+projects[diff][subdir] = "contrib"
+projects[diff][version] = "3.2"
+
+projects[elysia_cron][subdir] = "contrib"
+projects[elysia_cron][version] = "2.3"
+
+projects[entity][subdir] = "contrib"
+projects[entity][version] = "1.6"
+
+projects[entity_translation][subdir] = "contrib"
+projects[entity_translation][version] = "1.0-beta3"
+; To work with inline entity form.
+projects[entity_translation][patch][] = "https://drupal.org/files/et-form_handlers-1865244-7.patch"
+
+projects[entitycache][subdir] = "contrib"
+projects[entitycache][version] = "1.1"
+
+projects[entityreference][subdir] = "contrib"
+projects[entityreference][version] = "1.1"
+projects[entityreference][patch][] = "https://drupal.org/files/1836106.patch"
+; Allow bricks to refer to their parent entities (used by token)
+projects[entityreference][patch][] = "https://drupal.org/files/issues/2118465-add-backreference-5.patch"
+
+projects[environment_indicator][subdir] = "contrib"
+projects[environment_indicator][version] = "2.5"
+
+projects[eva][subdir] = contrib
+projects[eva][version] = 1.2
+
+projects[facebook_boxes][type] = "module"
+projects[facebook_boxes][subdir] = "contrib"
+projects[facebook_boxes][download][type] = "git"
+projects[facebook_boxes][download][url] = "http://git.drupal.org/project/facebook_boxes.git"
+; This is 1.0, but we need to download it from git to apply the git formatted patch
+projects[facebook_boxes][download][revision] = "6150c1027c2e64561ac75104ed30a616a0408c3c"
+projects[facebook_boxes][patch][] = "https://drupal.org/files/2116863-add-colorscheme-option-1.patch"
+
+projects[facetapi][subdir] = "contrib"
+projects[facetapi][version] = "1.3"
+; Option to limit selections to one item https://drupal.org/node/1393928 (note the related patch of facetapi_pretty_paths)
+projects[facetapi][patch][] = "https://drupal.org/files/limit-active-items.patch"
+; Allows for a parent facet to be deslected without automatically deselecting a child facet.
+projects[facetapi][patch][] = "https://drupal.org/files/issues/setting-treat-parent-as-individual-facet-item-2244933-9-D7.patch"
+
+projects[facetapi_bonus][subdir] = "contrib"
+projects[facetapi_bonus][version] = "1.1"
+
+projects[facetapi_pretty_paths][subdir] = "contrib"
+projects[facetapi_pretty_paths][version] = "1.0"
+
+projects[features][subdir] = "contrib"
+projects[features][version] = "2.0"
+projects[features][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/force_field_permissions.patch"
+; There may be a future need to tame the features_rebuild that features performs
+; when loading the admin/modules page. See progress at
+;   http://drupal.org/node/1917288
+;   http://drupal.org/node/658772
+
+projects[features_extra][subdir] = "contrib"
+projects[features_extra][version] = "1.0-beta1"
+
+projects[fences][type] = "module"
+projects[fences][subdir] = "contrib"
+projects[fences][download][type] = "git"
+projects[fences][download][url] = "http://git.drupal.org/project/fences.git"
+; 7.x-1.0 plus patches including
+;   Issue #1561244: Undefined Index (with installation profiles and features?)
+;   See: https://drupal.org/node/1561244
+projects[fences][download][revision] = "67206b5220cbebf52e8e6a290ccb977b2420b2ad"
+
+projects[field_collection][subdir] = "contrib"
+projects[field_collection][type] = "module"
+projects[field_collection][download][type] = "git"
+projects[field_collection][download][url] = "http://git.drupal.org/project/field_collection.git"
+projects[field_collection][download][revision] = "40072ad55a77e15076ad82a16606b61e0602c174"
+projects[field_collection][patch][] = "http://drupal.org/files/field-collection-add-another-1281272-13.patch"
+; https://drupal.org/node/1781774
+projects[field_collection][patch][] = "http://drupal.org/files/field_collection-link_to_collection.patch"
+projects[field_collection][patch][] = "https://drupal.org/files/field_collection-entity_translation-1344672-17.patch"
+
+projects[field_collection_tabs][subdir] = "contrib"
+projects[field_collection_tabs][version] = "1.0"
+projects[field_collection_tabs][patch][] = "https://drupal.org/files/field_collection_tabs-1838498-04-no-tabs-on-single-values.patch"
+
+projects[field_group][subdir] = "contrib"
+projects[field_group][version] = "1.5"
+
+projects[field_extrawidgets][subdir] = "contrib"
+projects[field_extrawidgets][version] = "1.1"
+
+projects[field_formatter_attributes][subdir] = "contrib"
+projects[field_formatter_attributes][version] = "1.0-beta2"
+
+projects[field_formatter_class][subdir] = "contrib"
+projects[field_formatter_class][version] = "1.1"
+
+projects[field_formatter_label][subdir] = "contrib"
+projects[field_formatter_label][version] = "1.0-beta1"
+
+projects[field_formatter_settings][subdir] = "contrib"
+projects[field_formatter_settings][version] = "1.0"
+
+projects[field_multiple_limit][subdir] = "contrib"
+projects[field_multiple_limit][version] = "1.0-alpha4"
+
+projects[field_permissions][subdir] = "contrib"
+projects[field_permissions][version] = "1.0-beta2"
+
+projects[file_entity][subdir] = "contrib"
+projects[file_entity][version] = "2.0-alpha3"
+
+projects[fitvids][subdir] = "contrib"
+projects[fitvids][version] = "1.14"
+
+libraries[fitvids][download][type] = "file"
+libraries[fitvids][download][url] = "https://github.com/davatron5000/FitVids.js/archive/e9d33badedd6dfe1a0e9090bd63c554e19bbc125.zip"
+libraries[fitvids][directory_name] = "fitvids"
+; Functionality added to ignore anything using the nofitvid class
+libraries[fitvids][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/libraries/fitvids/fitvids-1.0-add-nofitvid-class.patch"
+
+projects[flexslider][subdir] = "contrib"
+projects[flexslider][version] = "2.0-alpha3"
+
+projects[flexslider_entityreference][subdir] = "contrib"
+projects[flexslider_entityreference][version] = "1.5"
+
+projects[flexslider_views_slideshow][type] = "module"
+projects[flexslider_views_slideshow][subdir] = "contrib"
+projects[flexslider_views_slideshow][download][type] = "git"
+projects[flexslider_views_slideshow][download][url] = "http://git.drupal.org/project/flexslider_views_slideshow.git"
+; This module doesn't have a stable release, this is HEAD as of 2013-05-14
+projects[flexslider_views_slideshow][download][revision] = "0b1f8e7e24c168d1820ccded63c319327d57a97e"
+
+libraries[flexslider][download][type] = "file"
+libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.2.2.tar.gz"
+libraries[flexslider][directory_name] = "flexslider"
+
+projects[form_builder][subdir] = "contrib"
+projects[form_builder][version] = "1.7"
+; Add support for placeholder attribute in form_builder_webform
+; With form_builder version 1.6 we were using patch #3, when upgrading to 1.7 a new patch needed creating.
+; Having looked at the issue someone has created a newer patch (#4) but the storage differs from #3 and there is no clean upgrade path between #3 and #4.
+; Creating our own patch and storing in our patches repository is a workaround for this.
+;projects[form_builder][patch][] = "https://www.drupal.org/files/issues/form_builder-webform_placeholder_support-2260093-3.patch"
+projects[form_builder][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/form_builder-webform_placeholder_support-2260093-3.patch"
+
+projects[ga_tokenizer][subdir] = "contrib"
+projects[ga_tokenizer][version] = "1.5"
+
+projects[geocoder][subdir] = "contrib"
+projects[geocoder][version] = "1.2"
+
+projects[geofield][subdir] = "contrib"
+projects[geofield][version] = "2.1"
+
+projects[geophp][subdir] = "contrib"
+projects[geophp][version] = "1.7"
+
+projects[globalredirect][subdir] = "contrib"
+projects[globalredirect][version] = "1.5"
+
+projects[google_analytics][subdir] = "contrib"
+projects[google_analytics][version] = "2.1"
+
+; Sandbox module for Views Get Arguments,
+projects[views_get_arguments][type] = module
+projects[views_get_arguments][subdir] = contrib
+projects[views_get_arguments][download][type] = git
+projects[views_get_arguments][download][branch] = 7.x-1.x
+projects[views_get_arguments][download][url] = https://git.drupal.org/sandbox/jeff.hartman/2466239.git
+projects[views_get_arguments][download][revision] = da5f6cf18cec81553e67f29e77145413a196bc29
+
+projects[hand_me_down_field_formatter][type] = "module"
+projects[hand_me_down_field_formatter][subdir] = "contrib"
+projects[hand_me_down_field_formatter][download][type] = "git"
+projects[hand_me_down_field_formatter][download][url] = "http://git.drupal.org/project/hand_me_down_field_formatter.git"
+; This is 7.x-1.0-beta1, but we need to get it from git because the d.o packaging confuses the first patch
+projects[hand_me_down_field_formatter][download][revision] = "2ab26d652aebf49ace62cf71c8c73451bbd68bd1"
+projects[hand_me_down_field_formatter][patch][] = "http://drupal.org/files/hand_me_down_field_formatter-1960262-06-file-entity-and-field-collection.patch"
+projects[hand_me_down_field_formatter][patch][] = "http://drupal.org/files/hand_me_down_field_formatter-1961172-01-invoke-a-hook.patch"
+
+projects[hook_post_action][subdir] = "contrib"
+projects[hook_post_action][version] = "1.0-beta1"
+
+projects[html5_autocomplete][subdir] = "contrib"
+projects[html5_autocomplete][version] = "1.0-alpha1"
+
+projects[hubspot][subdir] = "contrib"
+projects[hubspot][version] = "2.0-rc6"
+
+projects[imagecrop][type] = "module"
+projects[imagecrop][subdir] = "contrib"
+projects[imagecrop][download][type] = "git"
+projects[imagecrop][download][url] = "http://git.drupal.org/project/imagecrop.git"
+projects[imagecrop][download][revision] = "98d1faaa2abfcb4f5502c01fee518c4a77e29378"
+projects[imagecrop][patch][] = "https://drupal.org/files/issues/imagecrop-2417195-enabled-styles-alter-hook-2.diff"
+
+projects[inline_entity_form][subdir] = "contrib"
+projects[inline_entity_form][version] = "1.6"
+; To work with entity_translation.
+projects[inline_entity_form][patch][] = "https://drupal.org/files/issues/entity-translations-1545896-41.patch"
+
+projects[ife][subdir] = "contrib"
+projects[ife][version] = "2.0-alpha2"
+
+projects[image_style_quality][subdir] = "contrib"
+projects[image_style_quality][version] = "1.5"
+
+projects[imce][subdir] = "contrib"
+projects[imce][version] = "1.9"
+
+projects[imce_wysiwyg][subdir] = "contrib"
+projects[imce_wysiwyg][version] = "1.0"
+
+projects[jira_issue_collector][subdir] = "contrib"
+projects[jira_issue_collector][version] = "1.1"
+projects[jira_issue_collector][patch][] = "https://www.drupal.org/files/issues/regex_correction-2416467-1_0.patch"
+projects[jira_issue_collector][patch][] = "https://www.drupal.org/files/issues/jira_issue_collector-2349191-1-wrap-attach.patch"
+projects[jira_issue_collector][patch][] = "https://www.drupal.org/files/issues/jira_issue_collector-fix-js-injection-2429389-04.patch"
+
+libraries[jquery.easing][download][type] = "git"
+libraries[jquery.easing][download][url] = "https://github.com/danro/jquery-easing.git"
+libraries[jquery.easing][download][revision] = "a6f21ff77c84cee11562d36c51fb5b9c95f2eec0"
+libraries[jquery.easing][directory_name] = "easing"
+
+projects[leaflet][subdir] = "contrib"
+projects[leaflet][version] = "1.1"
+; Add "html_class" to icon options, so that markers include custom classes added through domino_leaflet_maps
+projects[leaflet][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/leaflet-add-html-class-to-icon-options.patch"
+
+libraries[leaflet][download][type] = "file"
+libraries[leaflet][download][url] = "https://github.com/Travelopia/drupal-patches/raw/master/libraries/leaflet-0.7.1.zip"
+
+projects[leaflet_widget][type] = "module"
+projects[leaflet_widget][subdir] = "contrib"
+projects[leaflet_widget][download][type] = "git"
+projects[leaflet_widget][download][url] = "http://git.drupal.org/project/leaflet_widget.git"
+; This is the geofield 2 branch, as the current release only supports geofield 1
+projects[leaflet_widget][download][revision] = "69c413a0162ae2a717956839eabc91e769f3b294"
+; Leaflet widget repeats the world, we only want it to appear once so use the noWrap option
+projects[leaflet_widget][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/leaflet_widget-nowrap-tilelayer.patch"
+; Leaflet widget tries to load existing leaflet module library, but looks for a folder that does not exist
+projects[leaflet_widget][patch][] = "https://drupal.org/files/issues/2122275.patch"
+; Leaflet widget does not work with geofield using WKB, it needs to be WKT
+projects[leaflet_widget][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/leaflet_widget-wkb-to-wkt-fix.patch"
+; Adds a counter and appends it to the map ID, otherwise multiple maps are not unique and will break
+projects[leaflet_widget][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/leaflet_widget-add-counter.patch"
+; Refreshes maps when navigating between different vertical tabs, otherwise the map does not render properly
+projects[leaflet_widget][patch][] = "https://drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-8.patch"
+; Disables aggregation on JS, otherwise it throws errors (causing the inability to add markers to the map)
+projects[leaflet_widget][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/leaflet_widget-js-preprocess-false.patch"
+
+libraries[leaflet_widget][download][type] = "file"
+libraries[leaflet_widget][directory_name] = "Leaflet.widget"
+libraries[leaflet_widget][download][url] = "https://github.com/tnightingale/Leaflet.widget/zipball/master"
+
+projects[libraries][subdir] = "contrib"
+projects[libraries][version] = "2.1"
+
+projects[link][subdir] = "contrib"
+projects[link][version] = "1.1"
+
+projects[mailsystem][subdir] = "contrib"
+projects[mailsystem][version] = "2.34"
+
+projects[media][type] = "module"
+projects[media][subdir] = "contrib"
+projects[media][download][type] = "git"
+projects[media][download][url] = "http://git.drupal.org/project/media.git"
+projects[media][download][revision] = "57236798729251c4b481acbcc07691e2698e6efe"
+; Uncommitted patches for the chosen dev branch revision
+projects[media][patch][] = "https://drupal.org/files/media-js-error-on-wysiwyg-with-multi-field-1630288-21.patch"
+projects[media][patch][] = "https://drupal.org/files/issues/media-media-tagmap-2285865-6_0.patch"
+projects[media][patch][] = "https://www.drupal.org/files/issues/media-improved-macro-handling-2126755-19.patch"
+
+projects[media_youtube][subdir] = "contrib"
+projects[media_youtube][version] = "2.0-rc3"
+
+projects[media_vimeo][subdir] = "contrib"
+projects[media_vimeo][version] = "2.0-rc1"
+
+projects[memcache][subdir] = "contrib"
+projects[memcache][version] = "1.5"
+
+projects[menu_block][subdir] = "contrib"
+projects[menu_block][version] = "2.3"
+projects[menu_block][patch][] = "http://drupal.org/files/issues/fix-parent-item-1050766-8.patch"
+
+projects[menu_breadcrumb][subdir] = "contrib"
+projects[menu_breadcrumb][version] = "1.5"
+
+; QTip jQuery library is downloaded here with a recursive drush make file.
+; Also the module's hook_requirements prevents installation without it.
+; We never use QTip, but allow the download to keep the module happy.
+projects[menu_minipanels][subdir] = "contrib"
+projects[menu_minipanels][version] = "1.1"
+projects[menu_minipanels][patch][] = "http://drupal.org/files/menu_minipanels-qtip-dl-1874246.patch"
+; https://drupal.org/node/1960204
+projects[menu_minipanels][patch][] = "http://drupal.org/files/menuminipanels-save-new-menu-setting.patch"
+
+projects[metatag][subdir] = "contrib"
+projects[metatag][version] = "1.13"
+
+projects[stage_file_proxy][subdir] = "contrib"
+projects[stage_file_proxy][version] = "1.7"
+
+projects[microdata][subdir] = "contrib"
+projects[microdata][version] = "1.0-beta2"
+projects[microdata][patch][] = "https://drupal.org/files/microdata-features_export-2092365-1.patch"
+
+projects[mimemail][subdir] = "contrib"
+projects[mimemail][version] = "1.0-beta3"
+
+projects[module_filter][subdir] = "contrib"
+projects[module_filter][version] = "2.0"
+
+projects[multiform][subdir] = "contrib"
+projects[multiform][version] = "1.1"
+
+projects[maintenance_mode_api][subdir] = "contrib"
+projects[maintenance_mode_api][version] = "1.0-beta1"
+
+projects[menu_attributes][subdir] = "contrib"
+projects[menu_attributes][version] = "1.0-rc2"
+
+projects[navbar][subdir] = "contrib"
+projects[navbar][version] = "1.4"
+projects[navbar][patch][] = "https://drupal.org/files/issues/navbar_tableheader-2172183-8.patch"
+
+projects[navbar_flush_cache][type] = "module"
+projects[navbar_flush_cache][subdir] = "contrib"
+projects[navbar_flush_cache][download][type] = "git"
+projects[navbar_flush_cache][download][url] = "http://git.drupal.org/project/navbar_flush_cache.git"
+; HEAD of 7.x-1.x-dev as of 2015-01-13.
+projects[navbar_flush_cache][download][revision] = "e6d854b024b252cce2bb57d208aae7e4abe9e237"
+
+projects[new_relic_rpm][subdir] = "contrib"
+projects[new_relic_rpm][version] = "1.0-alpha1"
+projects[new_relic_rpm][patch][] = "https://drupal.org/files/issues/new_relic_rpm-1415860-manual-instrumentation-1.patch"
+projects[new_relic_rpm][patch][] = "https://drupal.org/files/new_relic_rpm-format_username-2044855-4.patch"
+
+projects[nodequeue][subdir] = "contrib"
+projects[nodequeue][version] = "2.0-beta1"
+
+projects[omega][subdir] = "contrib"
+projects[omega][version] = "4.2"
+
+projects[openlayers][subdir] = "contrib"
+projects[openlayers][version] = "2.0-beta7"
+projects[openlayers][patch][] = "https://raw.githubusercontent.com/Travelopia/drupal-patches/master/openlayers-newerlibrarylocation.patch"
+
+projects[options_element][subdir] = "contrib"
+projects[options_element][version] = "1.9"
+
+projects[panels][subdir] = "contrib"
+projects[panels][version] = "3.4"
+
+projects[pathauto][subdir] = "contrib"
+projects[pathauto][version] = "1.2"
+
+projects[pathauto_persist][subdir] = "contrib"
+projects[pathauto_persist][version] = "1.3"
+
+projects[path_redirect_import][subdir] = "contrib"
+projects[path_redirect_import][version] = "1.0-rc4"
+
+projects[print][subdir] = "contrib"
+projects[print][version] = "2.0"
+
+libraries[dompdf][download][type] = "file"
+libraries[dompdf][download][url] = "https://github.com/downloads/dompdf/dompdf/dompdf_0-6-0_beta3.tar.gz"
+libraries[dompdf][directory_name] = "dompdf"
+
+projects[google_tag][subdir] = "contrib"
+projects[google_tag][version] = "1.2-rc3"
+
+projects[css_injector][subdir] = "contrib"
+projects[css_injector][version] = "1.10"
+
+projects[plupload][subdir] = "contrib"
+projects[plupload][version] = "1.2"
+
+libraries[plupload][directory_name] = "plupload"
+libraries[plupload][download][type] = "file"
+libraries[plupload][download][url] = "https://github.com/Travelopia/drupal-patches/raw/master/libraries/plupload_1_5_6.zip"
+libraries[plupload][patch][] = "http://drupal.org/files/plupload-1_5_6-rm_examples-1903850-5.patch"
+;libraries[plupload][type] = "library"
+
+projects[proj4js][subdir] = "contrib"
+projects[proj4js][version] = "1.2"
+
+projects[queue_ui][subdir] = "contrib"
+projects[queue_ui][version] = "2.0-rc1"
+
+projects[rabbit_hole][subdir] = "contrib"
+projects[rabbit_hole][version] = "2.21"
+
+projects[redirect][subdir] = "contrib"
+projects[redirect][version] = "1.0-rc1"
+; Attempt to curb infinite loops possibly caused by clashes with pathauto?
+projects[redirect][patch][] = "http://drupal.org/files/redirect-detect_prevent_circular_redirects_patch_and_test-1796596-48.patch"
+projects[redirect][patch][] = "http://drupal.org/files/redirect_maintenance_on_new_path-1288768-10.patch"
+
+projects[replicate][subdir] = "contrib"
+projects[replicate][version] = "1.0"
+projects[replicate][patch][] = "https://drupal.org/files/replicate-2098341-01-php-warning.patch"
+; Increase execution time to avoid timeout.
+projects[replicate][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/replicate-increase-entity-max-execution-time.patch"
+
+projects[replicate_ui][subdir] = "contrib"
+projects[replicate_ui][version] = "1.2"
+
+projects[responsive_preview][subdir] = "contrib"
+projects[responsive_preview][version] = "1.1"
+; Fix selectors to work well with Omega 4
+projects[responsive_preview][patch][] = "https://drupal.org/files/issues/responsive.patch"
+
+libraries[responsive_tables][download][type] = "file"
+libraries[responsive_tables][download][url] = "https://github.com/zurb/responsive-tables/archive/7a78004f8e28bad541aa074646403b3cb55e9cc7.zip"
+
+projects[robotstxt][subdir] = "contrib"
+projects[robotstxt][version] = "1.3"
+
+projects[search_api][subdir] = "contrib"
+projects[search_api][version] = "1.15"
+
+projects[search_api_page][subdir] = "contrib"
+projects[search_api_page][version] = "1.2"
+
+projects[search_api_solr_overrides][subdir] = "contrib"
+projects[search_api_solr_overrides][version] = "1.0-rc1"
+
+projects[search_api_solr][subdir] = "contrib"
+projects[search_api_solr][version] = "1.3"
+; Sorting breaks when using "ss_" field types because "ss_" is replaced with "sort_". This patch resolves this issue.
+projects[search_api_solr][patch][] = "https://drupal.org/files/issues/search_api_solr-2172349-sorting-breaks-ss-replaced-with-sort-2.patch"
+
+libraries[SolrPhpClient][download][type] = "file"
+libraries[SolrPhpClient][download][url] = "http://drupal.org/files/SolrPhpClient-4.x.zip"
+
+projects[site_verify][subdir] = "contrib"
+projects[site_verify][version] = "1.0"
+
+projects[strongarm][subdir] = "contrib"
+projects[strongarm][version] = "2.0"
+
+projects[subform][subdir] = "contrib"
+projects[subform][version] = "1.0-alpha2"
+
+projects[slick][subdir] = "contrib"
+projects[slick][version] = "2.0"
+
+projects[slick_views][subdir] = "contrib"
+projects[slick_views][version] = "2.0"
+
+projects[tablefield][subdir] = "contrib"
+projects[tablefield][version] = "2.4"
+;https://drupal.org/node/2007274
+projects[tablefield][patch][] = "https://drupal.org/files/issues/tablefield-2007274-06-custom-field-data.patch"
+projects[tablefield][patch][] = "https://drupal.org/files/issues/tablefield-ief-2493563.patch"
+
+projects[token][subdir] = "contrib"
+projects[token][version] = "1.5"
+
+projects[token_filter][subdir] = "contrib"
+projects[token_filter][version] = "1.1"
+
+projects[transliteration][subdir] = "contrib"
+projects[transliteration][version] = "3.1"
+
+projects[twitter_block][subdir] = "contrib"
+projects[twitter_block][version] = "2.1"
+
+projects[views][subdir] = "contrib"
+projects[views][version] = "3.14"
+
+projects[views_bulk_operations][subdir] = "contrib"
+projects[views_bulk_operations][version] = "3.3"
+
+projects[viewreference][subdir] = "contrib"
+projects[viewreference][version] = "3.4"
+projects[viewreference][patch][] = "http://drupal.org/files/viewreference-1955146-03-approach-2-field-schema-update.patch"
+projects[viewreference][patch][] = "https://raw.github.com/computerminds/drupal-patches/master/view_reference-SECURITY-ISSUE-unsanitized-view-titles.patch"
+projects[viewreference][patch][] = "http://drupal.org/files/viewrerefence-notices-1789996-3.patch"
+projects[viewreference][patch][] = "http://drupal.org/files/viewreference-notice-1128444-8.patch"
+projects[viewreference][patch][] = "http://drupal.org/files/viewreference-1790304-03--atop-1955146-03-1789996-3-1128444-8.patch"
+
+projects[views_data_export][subdir] = "contrib"
+projects[views_data_export][version] = "3.0-beta6"
+
+projects[views_slideshow][subdir] = "contrib"
+projects[views_slideshow][version] = "3.1"
+projects[views_slideshow][patch][] = "http://drupal.org/files/views_slideshow-hide_pager_wrapper_if_only_1_slide_active-1809954-1.patch"
+
+projects[views_content_cache][subdir] = "contrib"
+projects[views_content_cache][version] = "3.0-alpha3"
+
+projects[search_api_title2][subdir] = "contrib"
+projects[search_api_title2][version] = "1.0"
+
+projects[jcarousel][subdir] = "contrib"
+projects[jcarousel][version] = "2.6"
+
+projects[jquery_update][subdir] = "contrib"
+projects[jquery_update][version] = "2.7"
+
+libraries[jquery.cycle][download][type] = "file"
+; jQuery cycle 3.0.0
+libraries[jquery.cycle][download][url] = "https://raw.github.com/malsup/cycle/ac38c7b63d3723860187c5168e1d945fca66e15a/jquery.cycle.all.js"
+libraries[jquery.cycle][directory_name] = "jquery.cycle"
+
+; This adds 'extra advanced settings' to views_slideshow jcycle integration.
+libraries[json2][download][type] = "file"
+libraries[json2][download][url] = "https://raw.github.com/douglascrockford/JSON-js/master/json2.js"
+libraries[json2][directory_name] = "json2"
+
+projects[visual_website_optimizer][subdir] = "contrib"
+projects[visual_website_optimizer][version] = "1.3"
+
+projects[vote_up_down][subdir] = "contrib"
+projects[vote_up_down][version] = "1.0-alpha1"
+projects[vote_up_down][patch][] = "http://drupal.org/files/vote_up_down-2007012-01-formatter-name.patch"
+
+projects[votingapi][subdir] = "contrib"
+projects[votingapi][version] = "2.11"
+
+projects[webform][subdir] = "contrib"
+projects[webform][version] = "4.6"
+; Add form_builder support for placeholder attribute
+projects[webform][patch][] = "https://www.drupal.org/files/issues/webform-form_builder_support-2260091-3.patch"
+; Avoids webform_update_7417 throwing Warning: 1265 Data truncated for column 'name' at row 1
+projects[webform][patch][] = "https://www.drupal.org/files/issues/webform-2462801-component_name_length_warning-2.patch"
+
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][subdir] = "contrib"
+projects[wysiwyg][download][type] = "git"
+projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
+; HEAD of 7.x-2.x-dev as of 2014-05-25.
+projects[wysiwyg][download][revision] = "c1fee97857df06d4d1514427f8439330f16c86c6"
+; Appends the system css_js_query_string to css files to avoid cache issues when making changes
+projects[wysiwyg][patch][] = "https://drupal.org/files/issues/wysiwyg-file-cache-828718-21.patch"
+
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6/ckeditor_3.6.6.tar.gz"
+libraries[ckeditor][patch][] = "https://raw.github.com/Travelopia/drupal-patches/master/ckeditor-widen-format-dropdown.patch"
+
+projects[xmlsitemap][subdir] = "contrib"
+projects[xmlsitemap][version] = "2.0-rc2"
+
+projects[tui_survey][type] = "module"
+projects[tui_survey][subdir] = "tui"
+projects[tui_survey][download][type] = "get"
+projects[tui_survey][download][url] = "https://api.github.com/repos/Travelopia/TUI-Modules/tarball/7.x?access_token=64b58abaac5f2e9003c1c3257e6382fd1b2de3c4"
+projects[tui_survey][download][subtree] = "Travelopia-TUI-Modules-ac5bb0320c227dc2c315c864fce44e11f59bb4c7/tui_survey"
+
+projects[tui_tealium][type] = "module"
+projects[tui_tealium][subdir] = "tui"
+projects[tui_tealium][download][type] = "get"
+projects[tui_tealium][download][url] = "https://api.github.com/repos/Travelopia/TUI-Modules/tarball/7.x?access_token=64b58abaac5f2e9003c1c3257e6382fd1b2de3c4"
+projects[tui_tealium][download][subtree] = "Travelopia-TUI-Modules-ac5bb0320c227dc2c315c864fce44e11f59bb4c7/tui_tealium"
+
+libraries[jquery.shorten][download][type] = "file"
+libraries[jquery.shorten][download][url] = "https://github.com/MarcDiethelm/jQuery-Shorten/archive/0.9.0.tar.gz"
+libraries[jquery.shorten][directory_name] = "jquery.shorten"
+
+libraries[modernizr][download][type] = "file"
+libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.7.1.tar.gz"
+libraries[modernizr][directory_name] = "modernizr"
+
+libraries[backbone][download][type] = "file"
+libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.1.1.tar.gz"
+libraries[backbone][directory_name] = "backbone"
+
+libraries[underscore][download][type] = "file"
+libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.6.0.tar.gz"
+libraries[underscore][directory_name] = "underscore"
+
+
+
+; Libraries required by Omega (copied from Omega 4.2's libraries.make file)
+
+libraries[selectivizr][download][type] = "file"
+libraries[selectivizr][download][url] = "https://github.com/keithclark/selectivizr/archive/master.zip"
+
+libraries[html5shiv][download][type] = "file"
+libraries[html5shiv][download][url] = "https://github.com/fubhy/html5shiv/archive/master.zip"
+
+libraries[respond][download][type] = "file"
+libraries[respond][download][url] = "https://github.com/fubhy/respond/archive/master.zip"
+
+libraries[matchmedia][download][type] = "file"
+libraries[matchmedia][download][url] = "https://github.com/fubhy/matchmedia/archive/master.zip"
+
+libraries[pie][download][type] = "file"
+libraries[pie][download][url] = "https://github.com/fubhy/pie/archive/master.zip"
+
+libraries[spectrum][download][type] = "file"
+libraries[spectrum][download][url] = "https://github.com/bgrins/spectrum/archive/master.zip"
+libraries[spectrum][directory_name] = "bgrins-spectrum"
+
+libraries[font-awesome][download][type] = "file"
+libraries[font-awesome][download][url] = "https://github.com/FortAwesome/Font-Awesome/archive/master.zip"
+libraries[font-awesome][directory_name] = "font-awesome"
+
+; importing from d2_security
+
+projects[honeypot][version] = 1.17
+projects[honeypot][subdir] = contrib
+
+projects[mollom][version] = 2.15
+projects[mollom][subdir] = contrib
+
+projects[password_policy][version] = 1.11
+projects[password_policy][subdir] = contrib
+
+projects[seckit][version] = 1.9
+projects[seckit][subdir] = contrib
+
+; projects[securepages][version] = 1.0-beta2
+; projects[securepages][subdir] = contrib
+
+; Auth SSL Redirect
+; This keeps authenticated users on HTTPS regardless of where they navigate
+; This functionality is now in securepages (and done better)
+; projects[auth_ssl_redirect][version] = 1.2
+; projects[auth_ssl_redirect][subdir] = contrib
+
+; Security Review
+; Provides an administrative interface for reviewing common security issues
+projects[security_review][version] = 1.2
+projects[security_review][subdir] = contrib
+
+; Cloudflare
+; This allows banning/restriction and other settings based on Cloudflare's Threat API
+; This module is not enabled by default as a dependency since it is environmentally specific.
+; Latest dev from Nov 24, 2014 19:13
+projects[cloudflare][type] = module
+projects[cloudflare][subdir] = contrib
+projects[cloudflare][download][type] = git
+projects[cloudflare][download][branch] = 7.x-2.x
+projects[cloudflare][download][revision] = 9a38b62adcb0588ceaa69d413e9975666022f66d
+
+; Note: Shield is not required by any module or feature,
+; this is so that it can be disabled entirely in production.
+; Using a version from the dev branch for IP bypass features till v1.3 is released.
+; This is because New Relic does not yet support basic auth in their uptime testing.
+projects[shield][type] = module
+projects[shield][subdir] = contrib
+projects[shield][download][type] = git
+projects[shield][download][branch] = 7.x-1.x
+projects[shield][download][revision] = cf314c004d4485e515f979682a2bc6aba303186e
+
+projects[username_enumeration_prevention][version] = 1.0
+projects[username_enumeration_prevention][subdir] = contrib
+
+; Flood management
+projects[flood_unblock][version] = 1.4
+projects[flood_unblock][subdir] = contrib
+
+projects[flood_control][version] = 1.0
+projects[flood_control][subdir] = contrib
+
+; LoginToboggan
+; Drastic user login improvements but also
+; allows purging unvalidated users after time.
+projects[logintoboggan][version] = 1.5
+projects[logintoboggan][subdir] = contrib
+
+; Oauth is a dependency for Google Analytics Reporting
+;projects[oauth][version] = 3.2
+;projects[oauth][subdir] = contrib
+
+; Paranoia locks down the ability to embed PHP
+; This protects you in case there is a breach.
+;projects[paranoia][version] = 1.6
+;projects[paranoia][subdir] = contrib
+; Patched to resolve a dependency issue that causes a
+; "You must enable the Paranoia module..." error to
+; display whenever enabling another module.
+;projects[paranoia][patch][2148295] = https://www.drupal.org/files/issues/enforce_module-2148295-18.patch
+
+; Set autocomplete=off for security auditing purposes
+projects[no_autocomplete][version] = 1.1
+projects[no_autocomplete][subdir] = contrib

@@ -72,6 +72,10 @@ nav{
     height: 60vh;
     min-height: 60%;
     background-position: 50% 50%;
+
+    @media screen and (min-width: $bp-desktop) {
+        background-position: 50% 0;
+    }
         &.work-item {
             .container--header {
                 background-color: rgba(0,0,0,0);

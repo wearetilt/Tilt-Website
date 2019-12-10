@@ -206,7 +206,7 @@ body{
         margin: 45px 0px 45px 0px;
         @media handheld,
         screen and (min-width: $bp-desktop) {
-            margin: 59px 0px 0px 0px;
+            margin: 0;
         }
     }
     & #social {
@@ -226,6 +226,10 @@ body{
                 display: inline;
             }
         }
+    }
+    .social-scroll{
+        position: fixed !important;
+        top: 20%;
     }
     & .news-date {
         padding-top: 15px;
@@ -957,7 +961,7 @@ body{
 
     .news-container {
         @extend %clearfix;
-        margin-bottom: 150px;
+        margin-bottom: 90px;
         padding: 0 percentage(64/1270);
         p {
             color: #d2d2d2;
@@ -979,7 +983,7 @@ body{
         }
 
         &.intro {
-            margin-bottom: 90px;
+        margin: 40px 0 50px 0;
         }
 
         &.gallery-container {

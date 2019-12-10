@@ -293,11 +293,18 @@
 
 .news-noimg {
 
+    .tag--home-title {
+        color: #949393;
+    }
+
     &:hover {
-        .overlay-text {
-            opacity: 0.8;
+        background-color: #202020;
+
+        span {
+            color: #949393 !important;
         }
     }
+
 }
 
 .logo--icon {
@@ -412,8 +419,9 @@
         font-family: $f-seroot-lt;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: white;
+        color: #949393;
         line-height: 22px;
+        padding-bottom: 5px;
     }
     .excerpt {
         width: 100%;
