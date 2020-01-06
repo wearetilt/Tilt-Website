@@ -1277,7 +1277,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
 
-        if($(window).scrollTop() > 1000){
+        if($(window).scrollTop() > 577){
 
             $('#social').addClass('social-scroll');
         }else{
@@ -1289,11 +1289,11 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function(){
-    toScroll = $(document).height() - $(window).height() - 100;
-    if ( $(this).scrollTop() > toScroll ) {
-       $('#social').removeClass('social-scroll');
-    }
-});
+        toScroll = $(document).height() - $(window).height() - 300;
+        if ( $(this).scrollTop() > toScroll ) {
+           $('#social').removeClass('social-scroll');
+        }
+    });
 
     }
 

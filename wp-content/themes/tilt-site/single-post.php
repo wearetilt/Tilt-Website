@@ -15,6 +15,8 @@ if(has_post_thumbnail()){
   $attachedImg = wp_get_attachment_image_src($attachmentID);
 }
 
+
+
 ?>
 <header id="news" class="work-item area-dark" style="background-image: url('<?php the_field('header_image'); ?>');"></header>
 
@@ -31,11 +33,15 @@ if(has_post_thumbnail()){
   </div>
 
   <div class="news-container intro">
-                <div id="social">
+            <div id="social">
               <h2 class="light news-share">SHARE:</h2>
-              <a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a>
-              <a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank" ><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a>
-              <a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a>
+
+              <a href="mailto:?subject=&body=<?php echo get_the_permalink(); ?>"><svg class="f-ico_mail"> <use xlink:href="#mail"></use></svg></a>
+
+              <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Currently reading '. get_the_title() .': '. wp_get_shortlink()); ?>" target="_blank"><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a>
+              
+              <a href="http://www.facebook.com/sharer.php?u=<?php get_post_permalink(); ?>" target="_blank"><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
+            
             </div>
     <div class="intro-text">
       <?php the_field('standfirst_text'); ?>
@@ -257,10 +263,22 @@ if(has_post_thumbnail()){
     endif;
     ?>
 
+  <div class="news-container footer-social">
+            <div id="footer-social">
+              <h2 class="light news-share">SHARE:</h2>
+
+              <a href="mailto:?subject=&body=<?php echo get_the_permalink(); ?>"><svg class="f-ico_mail"> <use xlink:href="#mail"></use></svg></a>
+
+              <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Currently reading '. get_the_title() .': '. wp_get_shortlink()); ?>" target="_blank"><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a>
+              
+              <a href="http://www.facebook.com/sharer.php?u=<?php get_post_permalink(); ?>" target="_blank"><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
+            </div>
+  </div>
+
 </div>
 
 
-  <div class="group-container">
+<div class="group-container">
 
     <?php
     $next_post = get_next_post(true);

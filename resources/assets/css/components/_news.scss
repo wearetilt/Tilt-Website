@@ -48,6 +48,13 @@ nav{
 .news-wrapper {
     .header-title{
         width: 100%;
+
+        h1 {
+            @media screen and (min-width: $bp-desktop) {
+                font-size: 60px;
+                line-height: 64px;
+            }
+        }
     }
 
 	.news--anim_one {
@@ -69,7 +76,7 @@ nav{
 
 #news{
     background-size: cover;
-    height: 60vh;
+    height: 577px;
     min-height: 60%;
     background-position: 50% 50%;
 

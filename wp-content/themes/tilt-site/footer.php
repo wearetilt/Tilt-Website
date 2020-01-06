@@ -151,8 +151,6 @@ $blog_id = get_current_blog_id();
 <script src="<?php echo get_template_directory_uri(); ?>/js/video.js"></script>
 <!-- <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>  -->
 <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="https://secure.leadforensics.com/js/91727.js" ></script>
-<noscript><img alt="" src="https://secure.leadforensics.com/91727.png" style="display:none;" /></noscript>
 <?php wp_footer(); ?>
 
 <script>

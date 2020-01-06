@@ -210,17 +210,16 @@ body{
         }
     }
     & #social {
-        float: none;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
         @media handheld,
-        screen and (min-width: $phone-breaks) {
-            float: right;
+        screen and (max-width: $bp-desktop) {
             margin-top: 10px;
             margin-bottom: 0px;
+            opacity: 0;
         }
         .news-share {
-            display: none;
+            display: inline-block;
             @media handheld,
             screen and (min-width: $phone-breaks) {
                 display: inline;
@@ -228,8 +227,14 @@ body{
         }
     }
     .social-scroll{
-        position: fixed !important;
-        top: 20%;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex !important;
+            position: fixed !important;
+            top: 32.5%;
+            opacity: 1 !important;
+            transition: opacity 0.5s ease;
+        }
     }
     & .news-date {
         padding-top: 15px;
@@ -931,9 +936,6 @@ body{
         display: inline-block;
         position: absolute;
         bottom: 2%;
-        right: 0;
-        left: auto;
-        padding: 0 5.0393700787%;
         }
 
         a {
@@ -941,6 +943,8 @@ body{
 
             @media screen and (min-width: $bp-desktop) {
                 margin: 10px 0 !important;
+                width: 21px;
+                text-align: center;
             }
             
         }
@@ -963,8 +967,22 @@ body{
         @extend %clearfix;
         margin-bottom: 90px;
         padding: 0 percentage(64/1270);
+
+        h3 {
+            margin-top: 1.8em;
+        }
+
+        h4 {
+            margin-top: 1.8em;
+        }
+
         p {
             color: #d2d2d2;
+
+         & img {
+                margin-top: 1.8em;
+         }
+
         }
         ul {
             margin: 1.8em 0;
@@ -973,6 +991,7 @@ body{
                 margin: 0 0 10px;
                 line-height: 1.7;
                 padding-left: 15px;
+                color: #d2d2d2;
                 &:before {
                     content: '•';
                     display: inline-block;
@@ -983,7 +1002,13 @@ body{
         }
 
         &.intro {
-        margin: 40px 0 50px 0;
+
+        margin: 40px 0 0 0;
+
+        @media screen and (min-width: $bp-desktop) { 
+            margin: 40px 0 90px 0;
+        }
+
         }
 
         &.gallery-container {
@@ -1015,6 +1040,32 @@ body{
         .intro-text {
             opacity: 0;
         }
+
+        &.footer-social {
+            border-top: 1px solid #8f8f8f;
+            margin-bottom: 120px;
+            padding: 0 20px !important;
+            @media screen and (min-width: $bp-desktop) {
+                padding: 0 !important;
+            }
+            #footer-social {
+                padding: 23px 0 0 0;
+                float: right;
+
+                .news-share {
+                    display: inline-block;
+                    font-size: 13px;
+                    vertical-align: middle;
+                }
+
+                a {
+                    padding: 0 0 0 19px;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+            }
+        }
+
     }
 
     .img-container {

@@ -419,9 +419,12 @@
         font-family: $f-seroot-lt;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #949393;
+        color: white;
         line-height: 22px;
         padding-bottom: 5px;
+    }
+    .tag--home-title {
+        color: #949494;
     }
     .excerpt {
         width: 100%;

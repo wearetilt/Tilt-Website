@@ -53,7 +53,7 @@ a{
 		font-family:$f-seroot-thn;
 
 		@media handheld, screen and (min-width: $bp-desktop){
-	    	 @include font-size(25);
+	    	 @include font-size(20);
 		}
 
     }
