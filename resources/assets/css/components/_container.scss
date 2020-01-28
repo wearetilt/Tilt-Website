@@ -1737,31 +1737,17 @@ p {
             color: white;
             letter-spacing: 0.075em;
             display: inline-block;
-/*
-            &:before {
-                content: '';
-                display: block;
-                width: 110%;
-                margin: 10px auto;
-                border-bottom: 2px solid white;
-                overflow: visible;
-                @media screen and (min-width: $bp-desktop){
-                    width: 115%;
-                }
-            }*/
         }
-/*        &:after {
-            content: '';
-            display: inline-block;
-            background: url(../images/button_arrow.png) center no-repeat;
-            width: 19%;
-            height: 14px;
-            transform: translateX(0px);
-            transition: all 0.3s;
-            @media screen and (min-width: $bp-phone){
-                width: 10%;
+
+        .launch-box {
+            border-top: 2px solid white;
+            padding: 22px 0;
+            background: url("../images/button_arrow_white.png") center right no-repeat;
+
+            p {
+                @include font-size(20);
             }
-        }*/
+        }
     }
     &:hover {
         :after {
@@ -1894,7 +1880,7 @@ p {
             background: #505050;
             transition: width .2s;
             position: relative;
-            bottom: -28px;
+            bottom: -26px;
         }
 
         &:hover::before {
@@ -1908,6 +1894,8 @@ p {
             height: 1px;
             background: #fff;
             transition: width .5s;
+            position: relative;
+            bottom: 3px;
         }
 
         &:hover::after {

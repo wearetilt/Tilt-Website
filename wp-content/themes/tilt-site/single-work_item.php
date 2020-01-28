@@ -137,15 +137,10 @@ if( have_rows('work_items') ):
 
           <div class="launch-project-button container container-headline-text area-dark">
             <div class="launch-link">
-              <a class="cube--link" href="<?php echo $launch; ?>" target="_blank">
-                <div class="cube">
-                  <div class="cube--front cube--front__no-bg">
+              <a href="<?php echo $launch; ?>" target="_blank">
+                  <div class="launch-box">
                     <p class="sans-serif">Launch Project</p>
                   </div>
-                    <div class="cube--top cube--top__no-bg">
-                      <p class="sans-serif">Launch Project</p>
-                    </div>
-                </div>
               </a>
             </div>
           </div>
