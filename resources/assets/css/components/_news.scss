@@ -76,12 +76,13 @@ nav{
 
 #news{
     background-size: cover;
-    height: 577px;
+    height: 400px;
     min-height: 60%;
     background-position: 50% 50%;
 
     @media screen and (min-width: $bp-desktop) {
         background-position: 50% 0;
+        height: 577px;
     }
         &.work-item {
             .container--header {

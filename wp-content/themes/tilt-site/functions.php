@@ -639,13 +639,26 @@ function wpse_71284_custom_post_password_msg( $o )
     if ( ! isset ( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] ) )
         return $o;
 
-    // Translate and escape.
-    $msg = esc_html__( 'Sorry, your password is wrong.', 'your_text_domain' );
-
+$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     // We have a cookie, but it doesn’t match the password.
-    $msg = "<p class='custom-password-message'>$msg</p>";
+    $msg = '<div class="container area-dark contact--page pw-protect-login-form">
+        <div class="container container-headline-text area-dark"> 
+            <section class="text-section">
+              <h2>Client area</h2>
+              <div class="text-section__para">
+              <p>To view this post, please enter your password</p>
+              <form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+          <input class="password_entry" placeholder="Password" name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
+          <button id="password_button" type="submit" class="input-btn" name="Submit">Go</button>
+          </div>
+          </form>
+          <p class="custom-password-message"> Sorry, your password is incorrect. </p>
+          </div>
+            </section>
+            </div>
+          </div>';
 
-    return $msg . $o;
+    return $msg;
 
 }
 

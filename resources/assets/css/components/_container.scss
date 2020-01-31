@@ -40,6 +40,29 @@ body{
     background-color: #1f1f1f;
     z-index: 3;
     overflow: hidden;
+
+    .custom-password-message {
+        color: #ff4c74 !important;
+        animation: shake 0.3s alternate;
+        padding-top: 2px;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0px);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+        75% {
+            transform: translateX(5px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
 }
 
 .wrapper--dark {
@@ -313,22 +336,23 @@ body{
                 top: 37%;
             }
             p {
-                @include font-size(20);
+                @include font-size(16);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: white;
                 line-height: 22px;
+                padding-bottom: 5px;
             }
             .excerpt {
                 width: 100%;
-                line-height: 26px;
+                line-height: 22px;
                 @media screen and (min-width: $bp-phone){
                     width: 80%;
                 }
             }
             .entry-title {
-                padding-bottom: 7px;
+                padding-bottom: 5px;
             }
         }
         &:hover {
@@ -463,22 +487,23 @@ body{
                 top: 37%;
             }
             p {
-                @include font-size(20);
+                @include font-size(16);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: white;
                 line-height: 22px;
+                padding-bottom: 5px;
             }
             .excerpt {
                 width: 100%;
-                line-height: 26px;
+                line-height: 22px;
                 @media screen and (min-width: $bp-phone){
                     width: 80%;
                 }
             }
             .entry-title {
-                padding-bottom: 7px;
+                padding-bottom: 5px;
             }
         }
         &:hover {
@@ -589,22 +614,23 @@ body{
                 top: 37%;
             }
             p {
-                @include font-size(20);
+                @include font-size(16);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: white;
                 line-height: 22px;
+                padding-bottom: 5px;
             }
             .excerpt {
                 width: 100%;
-                line-height: 26px;
+                line-height: 22px;
                 @media screen and (min-width: $bp-phone){
                     width: 80%;
                 }
             }
             .entry-title {
-                padding-bottom: 7px;
+                padding-bottom: 5px;
             }
         }
         &:hover {
@@ -1741,20 +1767,30 @@ p {
 
         .launch-box {
             border-top: 2px solid white;
-            padding: 22px 0;
-            background: url("../images/button_arrow_white.png") center right no-repeat;
+            padding: 20px 0;
 
             p {
                 @include font-size(20);
+                display: inline-block;
+                padding: 0 7px 0 0;
+            }
+
+            &:after {
+                content: '';
+                width: 8px;
+                height: 13px;
+                display: inline-block;
+                background: url("../images/button_arrow.png") no-repeat;
+
             }
         }
     }
-    &:hover {
+/*    &:hover {
         :after {
             transform: translateX(-10px);
             transition: all 0.3s ease-in-out;
         }
-    }
+    }*/
 }
 
 .full-height-video {
