@@ -980,13 +980,15 @@ body{
         max-width: 1270px;
 
         @media screen and (min-width: $bp-desktop) {
-            margin: 0 28%;
+            margin: 0 auto;
+            width: 44%;
+            min-width: 500px;
         }
     }
 
     .news-wrapper--header {
          max-width: none;
-        padding: 60px  5.0393700787% 0 5.0393700787%;
+        padding: 52px  5.0393700787% 0 5.0393700787%;
     }
 
     .news-container {
@@ -1506,13 +1508,10 @@ body{
         .our_work_button {
             font-family: $f-seroot-lt;
             letter-spacing: 0.075;
-            line-height: 1.45 !important;
-            @include font-size(18);
             color: white;
             &_black {
                 color: black;
                 letter-spacing: 0.075;
-                @include font-size(18);
                 font-family: $f-seroot-lt;
             }
         }
