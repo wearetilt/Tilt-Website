@@ -1311,6 +1311,7 @@ body{
     @media screen and (min-width: $bp-desktop) {
         padding: 0px 6.25% 180px 6.25%;
         display: flex;
+        justify-content: center;
     }
     > * {
         position: relative;
@@ -1332,11 +1333,13 @@ body{
     .left-video {
         @media screen and (min-width: $bp-desktop) {
             width: 50%;
+            max-width: 622px;
         }
     }
     .right-video {
         @media screen and (min-width: $bp-desktop) {
             width: 50%;
+            max-width: 622px;
         }
     }
     &.no-padding {
