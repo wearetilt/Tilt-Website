@@ -40,7 +40,7 @@ if(has_post_thumbnail()){
 
               <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Currently reading '. get_the_title() .': '. wp_get_shortlink()); ?>" target="_blank"><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a>
               
-              <a href="http://www.facebook.com/sharer.php?u=<?php get_post_permalink(); ?>" target="_blank"><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
+              <a href="http://www.facebook.com/sharer.php?u=<?php echo get_post_permalink(); ?>" target="_blank"><svg class="f-ico_facebook"> <use xlink:href="#facebook"></use></svg></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
             
             </div>
     <div class="intro-text">
