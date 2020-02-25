@@ -20,7 +20,7 @@
 	<div id="post=<?php the_ID();?>" class="overlay area-dark">
 		<div class="overlay-text">
 			<p class="tag--home-title"><?php echo get_the_date('d M'); ?></p>
-			<h2><span class="underlined"><?php the_title( ); ?></span></h2>
+			<h2 class="entry-title"><span><?php the_title( ); ?></span></h2>
 			<p class="sans-serif"><?php echo get_the_excerpt(); ?></p>
 		</div> <!-- /end overlay-text -->
 	</div> <!-- /end overlay -->

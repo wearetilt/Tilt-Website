@@ -85,6 +85,7 @@ function twentyfifteen_setup() {
 	set_post_thumbnail_size( 825, 510, true );
 
 	add_image_size( 'team', 624, 624, true);
+  add_image_size( 'logo', 9999, 87, false);
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(

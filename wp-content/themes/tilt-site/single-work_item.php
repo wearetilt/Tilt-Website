@@ -42,6 +42,8 @@ if( have_rows('work_items') ):
       $video = get_sub_field('video');
       $award = get_sub_field('award_logo');
 
+      $award_image = wp_get_attachment_image_src($award, 'logo')[0];
+
       ?>
 
       <header class="work-item area-dark" >
@@ -80,7 +82,9 @@ if( have_rows('work_items') ):
                 <?php
               endif;
               ?>
-              <div class="award-logo" style="background-image: url(<?php echo $award['url']?>); background-size: 100%; background-repeat: no-repeat; "></div>
+              <div class="award-logo">
+                <img src="<?php echo $award_image ?>"/>
+              </div>
               <?php 
               if($arrTerms) : 
                 ?>
