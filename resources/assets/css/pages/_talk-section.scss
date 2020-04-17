@@ -28,20 +28,40 @@
 
 		.video-blog {
 			padding: 0;
-			
-			.video-blog-container {
-				display: flex;
-				flex-direction: row;
+			display: flex;
+    		justify-content: center;
 			
 				.video-half {
 					width: 50%;
+						height: 0;
+						position: relative;
+						padding: 25px 0 26.25% 0;
+
+
+						iframe {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+						}
+
 				}
 
 				.blog-half {
 					width: 50%;
+					height: 400px;
+
+					.blog-titles {
+						position: relative;
+					    top: 50%;
+					    margin: 0 40px;
+					    width: 70%;
+					    transform: translateY(-50%);
+					}
+
 				}
 
-			}
 
 		}
 

@@ -31,8 +31,6 @@ get_header(); ?>
         // display a sub field value
         ?>
 
-        <!-- intro -->
-
         <?php 
         if( get_row_layout() == 'header'):
 
@@ -78,7 +76,9 @@ get_header(); ?>
               <!-- related project section -->
 
               <?php 
+              $i = 0;
             elseif(get_row_layout() == 'video_blog') :
+              $i++;
 
               $leftproject = get_sub_field('left_project');
               $rightproject = get_sub_field('right_project');
@@ -94,13 +94,17 @@ get_header(); ?>
 
               ?>
 
-              <div class="video-blog container area-dark">
-                <div class="video-blog-container">
-                  <div class="video_half">
-                    <?php echo $leftproject; ?>
-                    </div>
-                    <div class="blog_half"><a href="<?php echo get_permalink($rightproject); ?>"></a>
-                      <div class="related-titles">
+              <div class="video-blog container area-dark no-padding">
+                
+
+                <?php if( $i % 2 == 1 ) { ?>
+                  
+                  <div class="video-half">
+                      <?php echo $leftproject; ?>
+                  </div>
+                  
+                  <div class="blog-half"><a href="<?php echo get_permalink($rightproject); ?>"></a>
+                      <div class="blog-titles">
                         <?php if($tax_right[0]->name != ''): ?>
                           <p class="tag"><?php echo $tax_right[0]->name; ?></p>
                           <?php else: endif;?>
@@ -111,9 +115,38 @@ get_header(); ?>
                           echo $rightItem;
                           ?></p>
                         </div>
-                      </div>
-                    </div>
                   </div>
+
+
+              <?php } else { ?>
+
+          
+                 
+                  <div class="blog-half"><a href="<?php echo get_permalink($rightproject); ?>"></a>
+                      <div class="blog-titles">
+                        <?php if($tax_right[0]->name != ''): ?>
+                          <p class="tag"><?php echo $tax_right[0]->name; ?></p>
+                          <?php else: endif;?>
+                          <h2><?php echo get_the_title($right);?></h2>
+                          <p><?php 
+                          $string = $rightproject->post_name;
+                          $rightItem = str_replace("-", " ", $string);
+                          echo $rightItem;
+                          ?></p>
+                        </div>
+                  </div>
+
+                  <div class="video-half">
+                      <?php echo $leftproject; ?>
+                  </div>
+
+
+
+
+              <?php } ?>
+
+
+              </div>
                   <?php
                 endif;
               endwhile;
