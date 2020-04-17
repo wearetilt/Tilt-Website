@@ -1,0 +1,92 @@
+/* tilt talks page style sheet */
+
+.talk-section-wrapper {
+
+	.talk-section-header {
+
+		height: 70vh;
+
+		.talk-header-container {
+			@include font-size(25);
+		    top: 40%;
+		    background: none;
+		    color: #fff;
+		    max-width: 780px;
+		    margin: 0 auto;
+		    padding: 0;
+
+		    .title-section {
+
+		    }
+		    .text-section {
+		    	margin-top: 32px;
+		    }
+
+		}
+
+	}
+
+	.talk-section {
+
+		display: flex;
+		flex-wrap: wrap;
+
+		a {
+			width: 50%;
+		
+			&:hover {
+
+				img{
+					transform: scale(1.1, 1.1);
+    				transition: transform ease 0.5s;
+				}
+
+				.right-side{
+					h2 {
+						color: #949393;
+					}
+				}
+
+			}
+
+		}
+
+		.left-side{
+			width: 50%;
+			height: 400px;
+			overflow: hidden;
+			img {
+				height: 100%;
+				width: 100%;
+			}
+
+		}
+
+		.right-side{
+			height: 400px;
+			overflow: hidden;
+
+			.title-container {
+				width: 70%;
+				margin-left: 59px;
+				position: relative;
+			    top: 50%;
+			    transform: translateY(-50%);
+
+			    p{
+			    	color: #949393;
+			    	font-family: SeroOT-Light;
+			    	@include font-size(16);
+			    	text-transform: uppercase;
+			    	letter-spacing: 1.2px;
+			    }
+
+			}
+		}
+
+	}
+
+
+
+	
+}
