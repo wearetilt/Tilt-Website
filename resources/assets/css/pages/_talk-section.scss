@@ -7,5 +7,44 @@
 		z-index: 1;
 	}
 
+	.main-talk-content {
+
+		.container {
+			
+			&:first-child {
+				padding: 60px 0px;
+			}
+			
+			.header-text {
+				width: 100%;
+				max-width: 684px;
+				margin: 0 auto;
+
+				h2 {
+					@include font-size(60);
+				}
+			}
+		}
+
+		.video-blog {
+			padding: 0;
+			
+			.video-blog-container {
+				display: flex;
+				flex-direction: row;
+			
+				.video-half {
+					width: 50%;
+				}
+
+				.blog-half {
+					width: 50%;
+				}
+
+			}
+
+		}
+
+	}
 
 }
