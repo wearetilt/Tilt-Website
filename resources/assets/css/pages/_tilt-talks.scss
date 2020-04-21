@@ -5,6 +5,12 @@
 	.talk-section-header {
 
 		height: 70vh;
+		margin: 0 40px;
+
+		@media handheld, screen and (min-width: $bp-desktop) {
+			margin: 0;
+		}
+
 
 		.talk-header-container {
 			@include font-size(25);
@@ -26,62 +32,76 @@
 
 	}
 
-	.talk-section {
 
-		display: flex;
-		flex-wrap: wrap;
+	.talk-section:nth-child(2) {
+		article {
+			.section {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row-reverse;
+			}
+		}
+	}
 
-		a {
-			width: 50%;
-		
-			&:hover {
+	article {
 
-				img{
-					transform: scale(1.1, 1.1);
-    				transition: transform ease 0.5s;
-				}
+		.section{
+			display: flex;
+			flex-wrap: wrap;
 
-				.right-side{
-					h2 {
-						color: #949393;
-						transition: color 0.5s ease;
+			.left-side{
+				width: 100%;
+				@media handheld, screen and (min-width: $bp-desktop) {
+					width: 50%;
+					overflow: hidden;
+					&:hover{
+						img{
+							transform: scale(1.1, 1.1);
+							transition: transform ease 0.5s;	
+						}
 					}
 				}
-
+				img {
+					height: auto;
+					width: 100%;
+					transition: transform ease 0.5s;
+				}
 			}
 
-		}
-
-		.left-side{
-			width: 50%;
-			height: 400px;
-			overflow: hidden;
-			img {
-				height: 100%;
+			.right-side{
 				width: 100%;
-			}
+				height: 360px;
+				@media handheld, screen and (min-width: $bp-desktop) {
+					width: 50%;
+					height: auto;
 
-		}
+					&:hover{ 
+						.title-container {
+							h2 {
+								color: #949393;
+								transition: color ease 0.5s;
+							}
+						}
+					}
 
-		.right-side{
-			height: 400px;
-			overflow: hidden;
+				}
 
-			.title-container {
-				width: 70%;
-				margin-left: 59px;
-				position: relative;
-			    top: 50%;
-			    transform: translateY(-50%);
+				.title-container {
+					width: 70%;
+					margin-left: 59px;
+					position: relative;
+				    top: 50%;
+				    transform: translateY(-50%);
 
-			    p{
-			    	color: #949393;
-			    	font-family: SeroOT-Light;
-			    	@include font-size(16);
-			    	text-transform: uppercase;
-			    	letter-spacing: 1.2px;
-			    }
+				    p{
+				    	color: #949393;
+				    	font-family: SeroOT-Light;
+				    	@include font-size(16);
+				    	text-transform: uppercase;
+				    	letter-spacing: 1.2px;
+				    }
 
+				}
 			}
 		}
 

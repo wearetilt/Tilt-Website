@@ -13,7 +13,9 @@
 
 // $tilt_talks = get_field('tilt_talks');
 
-get_header(); ?>
+get_header(); 
+
+?>
 
 <div class="talk-section-wrapper">
 
@@ -34,64 +36,41 @@ get_header(); ?>
         <?php endif ?>
     </header>
 
-    <div class="talk-section container container--no-padding area-dark">
+    <?php 
 
-        <?php if( have_rows('talk_content')): 
+$talk_posts = array(
+  'post_type' => 'tilt-talks',
+);
 
-            $i = 0;
+$the_query = new WP_Query( $talk_posts );
 
-            while( have_rows('talk_content') ): the_row();
+    if ($the_query->have_posts() ) : ?>
+        <?php $_SESSION['counter'] = 0; ?>
 
-                $image = get_sub_field('talk_image');
-                $talk_number = get_sub_field('talk_number');
-                $speaker = get_sub_field('speaker_name');
-                $talk_title =  get_sub_field('talk_title');
-                $link = str_replace(" ", "-", $speaker);
+            <div class="group-container area-dark">
+                <?php
+                while ($the_query->have_posts()) :
+                    $the_query->the_post();
 
-                $i++;
-        ?>
+                    $_SESSION['counter']++;
+                ?>
 
-                <?php if( $i % 2 == 1 ) { ?>
-                    <div class="left-side">
-                        <a href="<?php echo $link ?>">
-                            <img src="<?php echo $image; ?>" />
-                        </a>
+                    <div class="talk-section ?>">
+                        <?php
+                        get_template_part( 'content-tilt-talks', get_post_format() );
+                        ?>
                     </div>
+                
+                <?php                
+                endwhile;
 
-                    <a href="<?php echo $link ?>">
-                        <div class="right-side">
-                            <div class="title-container">
-                                <p><?php echo $talk_number; ?></p>
-                                <h2><?php echo $speaker; ?></h2>
-                                <h2><?php echo $talk_title; ?></h2>
-                            </div>
-                        </div>
-                    </a>
-                <?php } else { ?>
-                    <a href="<?php echo $link ?>">
-                        <div class="right-side">
-                            <div class="title-container">
-                                <p><?php echo $talk_number; ?></p>
-                                <h2><?php echo $speaker; ?></h2>
-                                <h2><?php echo $talk_title; ?></h2>
-                            </div>
-                        </div>
-                    </a>
-
-                    <div class="left-side">
-                        <a href="<?php echo $link ?>">
-                            <img src="<?php echo $image; ?>" />
-                        </a>
-                    </div>
-                <?php } ?>
-
-        <?php endwhile;?>
-        <?php endif ?>
-    </div>
-</div>
-
-<!-- /end container -->
-
+                ?>
+                <?php
+            else :
+                get_template_part( 'content', 'none' );
+            endif;
+            ?>
+        </div>
 
 </div>
 

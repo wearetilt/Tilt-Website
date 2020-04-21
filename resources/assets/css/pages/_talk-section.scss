@@ -12,7 +12,12 @@
 		.container {
 			
 			&:first-child {
-				padding: 60px 0px;
+				padding: 60px 40px 75px 40px;
+
+				@media handheld, screen and (min-width: $bp-desktop) {
+					padding: 60px 0px 75px 0px;	
+				}
+
 			}
 			
 			.header-text {
@@ -21,46 +26,112 @@
 				margin: 0 auto;
 
 				h2 {
-					@include font-size(60);
+					@include font-size(48);
+
+					@media handheld, screen and (min-width: $bp-desktop) {
+						@include font-size(60);
+					}
+
+				}
+
+				p {
+					@include font-size(24);
+					font-family: $f-merriweather;
+					font-weight: lighter;
+					color: #949393;
+					margin-top: 18px;
+
+					&.date {
+						@include font-size(16);
+						font-family: $f-seroot-lt;	
+						text-transform: uppercase;
+						letter-spacing: 1.2px;
+						margin-top: 0;
+					}
 				}
 			}
 		}
 
+		.video-blog:nth-child(2) {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
 		.video-blog {
 			padding: 0;
+			justify-content: center;
 			display: flex;
-    		justify-content: center;
-			
-				.video-half {
+			flex-wrap: wrap;
+			flex-direction: row-reverse;
+
+
+			.video-half {
+				width: 100%;
+
+				@media handheld, screen and (min-width: $bp-desktop) {
 					width: 50%;
-						height: 0;
-						position: relative;
-						padding: 25px 0 26.25% 0;
-
-
-						iframe {
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: 100%;
-							height: 100%;
-						}
-
 				}
 
-				.blog-half {
-					width: 50%;
-					height: 400px;
+				.video-wrapper{
 
-					.blog-titles {
-						position: relative;
-					    top: 50%;
-					    margin: 0 40px;
-					    width: 70%;
-					    transform: translateY(-50%);
+					position: relative;
+					padding-bottom: 56.25%; /* 16:9 */
+					height: 0;
+
+					iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+			}
+
+			.blog-half {
+
+				width: 100%;
+				height: 360px;
+
+				@media handheld, screen and (min-width: $bp-desktop) {
+					width: 50%;
+					height: auto;
+
+					&:hover {
+
+						.blog-titles {
+							h2 {
+								color: #949393;
+								transition: color ease 0.5s;
+							}
+						}
+
 					}
 
 				}
+
+				.blog-titles {
+
+					position: relative;
+					top: 50%;
+					margin: 0 40px;
+					width: 70%;
+					transform: translateY(-50%);
+
+
+					p {
+						color: #949393;
+				    	font-family: SeroOT-Light;
+				    	@include font-size(16);
+				    	text-transform: uppercase;
+				    	letter-spacing: 1.2px;
+					}
+
+				}
+
+			}
 
 
 		}

@@ -85,6 +85,7 @@ function twentyfifteen_setup() {
 	set_post_thumbnail_size( 825, 510, true );
 
 	add_image_size( 'team', 624, 624, true);
+	add_image_size( 'talk', 683, 400, true);
   add_image_size( 'logo', 9999, 87, false);
 
 	// This theme uses wp_nav_menu() in two locations.
@@ -421,6 +422,56 @@ function work_item_post_type() {
 
 }
 add_action( 'init', 'work_item_post_type', 0 );
+
+
+function tilt_talks_post_type() {
+
+	$labels = array(
+		'name'                => 'Tilt Talks',
+		'singular_name'       => 'Tilt Talk',
+		'menu_name'           => 'Tilt Talks',
+		'name_admin_bar'      => 'Tilt Talks',
+		'parent_item_colon'   => 'Parent Item:',
+		'all_items'           => 'All Tilt Talks',
+		'add_new_item'        => 'Add Tilt Talk',
+		'add_new'             => 'Add New Tilt Talk',
+		'new_item'            => 'New Tilt Talk',
+		'edit_item'           => 'Edit Tilt Talk',
+		'update_item'         => 'Update Tilt Talk',
+		'view_item'           => 'View Tilt Talk',
+		'search_items'        => 'Search Tilt Talk',
+		'not_found'           => 'Not found',
+		'not_found_in_trash'  => 'Not found in Trash',
+	);
+	$args = array(
+		'label'               => 'Tilt Talk',
+		'description'         => 'Tilt Talks go here',
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
+		'taxonomies'          => array( 'talk' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => false,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+	      'slug' => false, // This controls the base slug that will display before each term
+	      'with_front' => false, // Don't display the category base before "/locations/"
+	      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+	    ),
+	);
+	register_post_type( 'tilt-talks', $args );
+
+}
+add_action( 'init', 'tilt_talks_post_type', 0 );
+
 
 /**
  * Remove the slug from published post permalinks. Only affect our custom post type, though.

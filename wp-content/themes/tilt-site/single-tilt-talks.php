@@ -68,7 +68,7 @@ get_header(); ?>
                   <div class="header-text">
                     <h2><?php echo $text_section_speaker; ?> </h2>
                     <h2><?php echo $text_section_title; ?> </h2>
-                    <p><?php echo $text_section_date; ?> </p>
+                    <p class="date"><?php echo $text_section_date; ?> </p>
                     <p><?php echo $text_section_content; ?></p>
                   </div>
                 </div>
@@ -83,70 +83,29 @@ get_header(); ?>
               $leftproject = get_sub_field('left_project');
               $rightproject = get_sub_field('right_project');
 
-              $left = $leftproject->ID;
               $right = $rightproject->ID;
 
               $tax_right = wp_get_post_terms( $right, 'work' );
-              $tax_left = wp_get_post_terms( $left, 'work' );
-
-              $alt_left = get_post_meta($left, '_wp_attachment_image_alt', true);
               $alt_right = get_post_meta($right, '_wp_attachment_image_alt', true);
 
               ?>
 
               <div class="video-blog container area-dark no-padding">
-                
-
-                <?php if( $i % 2 == 1 ) { ?>
-                  
+              
                   <div class="video-half">
-                      <?php echo $leftproject; ?>
+                      <div class="video-wrapper">
+                        <?php echo $leftproject; ?>
+                      </div>
                   </div>
-                  
-                  <div class="blog-half"><a href="<?php echo get_permalink($rightproject); ?>"></a>
+
+                  <a class="blog-half" href="<?php echo get_permalink($rightproject); ?>">
                       <div class="blog-titles">
-                        <?php if($tax_right[0]->name != ''): ?>
-                          <p class="tag"><?php echo $tax_right[0]->name; ?></p>
-                          <?php else: endif;?>
+                          <p>Tilt Talks # 0</p>
                           <h2><?php echo get_the_title($right);?></h2>
-                          <p><?php 
-                          $string = $rightproject->post_name;
-                          $rightItem = str_replace("-", " ", $string);
-                          echo $rightItem;
-                          ?></p>
                         </div>
-                  </div>
-
-
-              <?php } else { ?>
-
-          
-                 
-                  <div class="blog-half"><a href="<?php echo get_permalink($rightproject); ?>"></a>
-                      <div class="blog-titles">
-                        <?php if($tax_right[0]->name != ''): ?>
-                          <p class="tag"><?php echo $tax_right[0]->name; ?></p>
-                          <?php else: endif;?>
-                          <h2><?php echo get_the_title($right);?></h2>
-                          <p><?php 
-                          $string = $rightproject->post_name;
-                          $rightItem = str_replace("-", " ", $string);
-                          echo $rightItem;
-                          ?></p>
-                        </div>
-                  </div>
-
-                  <div class="video-half">
-                      <?php echo $leftproject; ?>
-                  </div>
-
-
-
-
-              <?php } ?>
-
-
+                  </a>
               </div>
+
                   <?php
                 endif;
               endwhile;
