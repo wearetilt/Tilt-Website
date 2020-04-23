@@ -85,7 +85,7 @@ function twentyfifteen_setup() {
 	set_post_thumbnail_size( 825, 510, true );
 
 	add_image_size( 'team', 624, 624, true);
-	add_image_size( 'talk', 683, 400, true);
+	add_image_size( 'talk-thumb', 683, 400, true);
   add_image_size( 'logo', 9999, 87, false);
 
 	// This theme uses wp_nav_menu() in two locations.
@@ -356,6 +356,32 @@ function add_custom_taxonomies() {
       'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
     ),
   ));
+
+  register_taxonomy('content_group', 'work_item', array(
+    // Hierarchical taxonomy (like categories)
+    'hierarchical' => true,
+    // This array of options controls the labels displayed in the WordPress Admin UI
+    'labels' => array(
+      'name' => _x( 'Content Group', 'taxonomy general name' ),
+      'singular_name' => _x( 'Group', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Content Groupings' ),
+      'all_items' => __( 'All Content Groups' ),
+      'parent_item' => __( 'None' ),
+      'parent_item_colon' => __( 'None:' ),
+      'edit_item' => __( 'Edit Content Group' ),
+      'update_item' => __( 'Update Content Group' ),
+      'add_new_item' => __( 'Add New Content Group' ),
+      'new_item_name' => __( 'New Content Group name' ),
+      'menu_name' => __( 'Content Groups' ),
+      'show_admin_column' => true, //see this line
+    ),
+    // Control the slugs used for this taxonomy
+    'rewrite' => array(
+      'with_front' => false, // Don't display the category base before "/locations/"
+      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+    ),
+  ));
+
 
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
@@ -715,7 +741,7 @@ $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
 }
 
 function wpb_password_post_filter( $where = '' ) {
-    if (!is_single() && !is_admin()) {
+    if (!is_single() && !is_admin() && !is_page()) {
         $where .= " AND post_password = ''";
     }
     return $where;
