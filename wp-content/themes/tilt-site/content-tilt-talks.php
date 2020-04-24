@@ -10,12 +10,13 @@
  */
 ?>
 
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
   $project = get_post();
   $project_id = $project->ID;
   $tag_taxonomy = wp_get_post_terms($project_id, 'talk');
-  $post_image = get_the_post_thumbnail();
 
   ?>
   <div class="section">
@@ -23,8 +24,8 @@
     <div class="left-side">
       <a href="<?php echo get_permalink();?>">
         <?php
-        if($post_image != ''){
-         echo $post_image;
+        if(has_post_thumbnail()){
+         echo the_post_thumbnail( 'talk-thumb' ); 
        }
        else { ?>
         <img src="/wp-content/themes/tilt-site/images/404_poster.jpg">
@@ -41,8 +42,8 @@
         $title = get_post_meta($project_id, 'talk_items_1_text_section_title');
       ?>
       <div class="title-container">
-        <p class="sans-serif excerpt">Tilt Talk # 0<?php echo $_SESSION['counter']?></p>
-        <h2 ><?php echo $speaker[0];?></h2>
+        <p class="sans-serif excerpt">#0<?php echo $_SESSION['start']?></p><p><?php echo $speaker[0];?></p>
+<!--         <h2 ><?php echo $speaker[0];?></h2> -->
         <h2><?php echo $title[0];?></h2>
       </div>
   </a>

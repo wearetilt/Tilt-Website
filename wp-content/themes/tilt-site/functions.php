@@ -753,3 +753,5 @@ add_filter( 'posts_where', 'wpb_password_post_filter' );
 
 remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('wp_head', 'wp_oembed_add_host_js');
+
+

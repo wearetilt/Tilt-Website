@@ -101,7 +101,7 @@
         </div>
 
 
-		<a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/tilt-talks">Tilt Talks</a>
+<!-- 		<a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>">Home</a> -->
 		
 		<?php get_template_part('content-header-menu');?>
 		

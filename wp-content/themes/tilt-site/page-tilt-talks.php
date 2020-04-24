@@ -13,7 +13,7 @@
 
 // $tilt_talks = get_field('tilt_talks');
 
-get_header(); 
+get_header('talk-landing'); 
 
 ?>
 
@@ -45,14 +45,23 @@ $talk_posts = array(
 $the_query = new WP_Query( $talk_posts );
 
     if ($the_query->have_posts() ) : ?>
-        <?php $_SESSION['counter'] = 0; ?>
+
+        <?php
+        // get total number of tilt talk published posts and add 1
+        $post_number = wp_count_posts($type = 'tilt-talks');
+        $post_hash = $post_number->publish;
+        $_SESSION['start'] = $post_hash + 1;
+
+        ?>
 
             <div class="group-container area-dark">
                 <?php
                 while ($the_query->have_posts()) :
                     $the_query->the_post();
 
-                    $_SESSION['counter']++;
+                    // take total tilt talks posts number and minus each for each post
+                    $_SESSION['start']--; 
+
                 ?>
 
                     <div class="talk-section ?>">

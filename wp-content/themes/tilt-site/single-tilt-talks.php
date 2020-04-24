@@ -13,7 +13,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header('tilt-talks'); ?>
 
 <div class="talk-sections">
 
@@ -62,14 +62,18 @@ get_header(); ?>
             $text_section_title = get_sub_field('text_section_title');
             $text_section_date = get_sub_field('talk_date');
             $text_section_content = get_sub_field('text_section_content');
+            $text_section_content_lighter = get_sub_field('talk_section_content_lighter');
 
             ?>
                 <div class="container text_section_container area-dark">
                   <div class="header-text">
-                    <h2><?php echo $text_section_speaker; ?> </h2>
+                    <p class="speaker"><?php echo $text_section_speaker; ?> </p>
                     <h2><?php echo $text_section_title; ?> </h2>
                     <p class="date"><?php echo $text_section_date; ?> </p>
                     <p><?php echo $text_section_content; ?></p>
+                    <div class="lighter-content">
+                      <p><?php echo $text_section_content_lighter; ?></p>
+                    </div>
                   </div>
                 </div>
 
