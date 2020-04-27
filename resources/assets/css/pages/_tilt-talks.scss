@@ -32,8 +32,15 @@
 			.text-section {
 				margin-top: 50px;
 				p {
-					@include font-size(20);
+					@include font-size(16);
+					font-family: $f-merriweather !important;
+					font-weight: 300;
+						@media handheld, screen and (min-width: $bp-desktop) {
+						@include font-size(20);
+					}
+
 				}
+
 			}
 
 		}

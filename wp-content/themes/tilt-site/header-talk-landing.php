@@ -95,9 +95,9 @@
 	</svg>
 	<nav>
 		<div id="tilt--logo" class="header-item header-item--logo-talk">
-			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
+<!-- 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>"> -->
 				<img src="<?php echo get_template_directory_uri(); ?>/images/tt.png"/>
-			</a>
+<!-- 			</a> -->
         </div>
 
 

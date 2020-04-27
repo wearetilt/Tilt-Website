@@ -34,7 +34,11 @@ get_header(); ?>
 	</div>
 </div> <!-- /end container -->
 
-
+<section>
+	<div class="text-container">
+		<?php echo get_field ('about_text'); ?>
+	</div>	
+</section>
 
 <!-- repeater content -->
 

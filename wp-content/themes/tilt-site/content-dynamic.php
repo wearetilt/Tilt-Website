@@ -34,12 +34,13 @@
     <?php 
       $title_bold = get_post_meta($project_id, 'work_items_0_title_bold');
       $sub_title = get_post_meta($project_id, 'work_items_0_title');
+      $text = get_post_meta($project_id, 'work_items_1_text_brief');
       $excerpt = get_the_excerpt();
     ?>
       <div class="title-container">
         <p class="sans-serif project_name"><?php echo $sub_title[0]?></p>
         <h2 ><?php echo $title_bold[0];?></h2>
-        <p class="excerpt"><?php echo $excerpt;?></p>
+        <p class="excerpt"><?php echo $project->post_excerpt?></p>
       </div>
   </a>
 
