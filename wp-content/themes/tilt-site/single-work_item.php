@@ -263,11 +263,15 @@ if( have_rows('work_items') ):
 
                   <div class="container video-row area-dark <?php echo $classname; ?> section-<?php echo $m; ?>">
                     <div class="left-video">
-                      <?php echo $left_video; ?>
+                      <div class="video-wrapper">
+                        <?php echo $left_video; ?>
+                      </div>
                       </div>
 
                       <div class="right-video">
-                        <?php echo $right_video; ?>
+                        <div class="video-wrapper">
+                          <?php echo $right_video; ?>
+                        </div>
                         </div>
                   </div>
 
