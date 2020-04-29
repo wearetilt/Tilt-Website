@@ -1,0 +1,60 @@
+/* about page styling */
+
+.about-full-height-video {
+    position: relative;
+
+    video  {
+        width: auto;
+    }
+
+    .about-video-overlay {
+        top: 0;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        margin: 12.0570866142% 0%;
+        background: rgba(0,0,0,0.25);
+        overflow: hidden;
+
+        .text-container {
+
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 18.4547244094%;
+
+            p {
+                color: #fff;
+                @include font-size(18);
+                text-transform: uppercase;
+                line-height: 26px;
+                font-family: SeroOT-Light;
+            }
+
+            ul {
+                width: 90%;
+                li {
+                    color: #fff;
+                    @include font-size(30);
+                    line-height: 60px;
+                    margin-top: 0;
+                    position: relative;
+
+                    &:before {
+                        content: '\00B7';
+                        display: inline-block;
+                        padding-right: 10px;
+                        position: absolute;
+                        margin: 0 -20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-text-container {
+
+            height: 100vh;
+        width: 100%;
+    
+}
