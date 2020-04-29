@@ -1178,7 +1178,7 @@ $('.close-btn').on('click', function(){
 
 // new work page template functions
 
-$(document).ready(function(){
+$(window).on('load', function() { 
   $('.image_carousel').slick({
     centerMode: true,
     initialSlide: 1,
