@@ -1309,7 +1309,7 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
+$(window).on('load', function() {
 
     //init slick carousel on work items
   $('.image_carousel').slick({
