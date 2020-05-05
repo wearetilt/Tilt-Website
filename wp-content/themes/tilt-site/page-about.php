@@ -16,14 +16,16 @@ Template Name: About page
 
 get_header(); ?>
 
-<header class="about-page">
-	<div class="module module--16-5 module--video module--visible">
-		<div class="ratio">
-			<video id="about-page--video" poster="<?php echo get_template_directory_uri(); ?>/images/contact_poster.jpg" autoplay loop muted>
-				<source src="https://player.vimeo.com/external/141399412.hd.mp4?s=3f1574fa69a9ae469f325e2b05972a6e&profile_id=113" type="video/mp4">
-				</video>
-			</div>
-		</div> <!-- /end module -->
+<div class="about-page-wrapper">
+
+	<header class="about-page">
+		<div class="module module--16-5 module--video module--visible">
+			<div class="ratio">
+				<video id="about-page--video" class="vjs-default-skin" autoplay loop muted playsinline poster="<?php echo get_template_directory_uri(); ?>/images/contact_poster.jpg">
+					<source src="https://player.vimeo.com/external/141399412.hd.mp4?s=3f1574fa69a9ae469f325e2b05972a6e&profile_id=113" type="video/mp4">
+					</video>
+				</div>
+			</div> <!-- /end module -->
 	</header>
 
 
@@ -43,7 +45,7 @@ get_header(); ?>
 				?>
 
 
-				<div class="about-header-container container container--double-side-pad area-dark">
+				<div class="about-header-container container area-dark">
 					<div class="text-container first-para sans-serif">
 
 						<?php echo $header; ?>
@@ -66,14 +68,19 @@ get_header(); ?>
 				<section>
 					<div class="about-full-height-video container--no-padding looping-video">
 
-						<video id="about-page--video" poster="<?php echo get_template_directory_uri(); ?>/images/contact_poster.jpg" autoplay loop muted>
-							<source src="https://player.vimeo.com/external/141399412.hd.mp4?s=3f1574fa69a9ae469f325e2b05972a6e&profile_id=113" type="video/mp4">
+						<div class="video-container">
+
+						<video id="full--video" class="vjs-default-skin" autoplay loop muted playsinline poster="<?php echo get_template_directory_uri(); ?>/images/contact_poster.jpg">
+							<source src="https://player.vimeo.com/external/414675649.hd.mp4?s=9fd1380861da521e262775527f629149d7f5392e&profile_id=175" type="video/mp4">
 							</video>
+						</div>
 
 							<div class="about-video-overlay">
 								<div class="text-container">
+									<div class="text" id="text">
 									<p><?php echo $heading; ?></p>
 									<?php echo $video_overlay; ?>
+									</div>
 								</div>
 							</div>	
 						</div>
@@ -91,8 +98,10 @@ get_header(); ?>
 					<section>
 						<div class="about-text-container container--no-padding area-dark">
 							<div class="text-container">
-								<p><?php echo $heading; ?></p>
-								<?php echo $content; ?>
+								<div class="text">
+									<p><?php echo $heading; ?></p>
+									<?php echo $content; ?>
+								</div>
 							</div>
 						</div>	
 					</section>
@@ -153,7 +162,7 @@ get_header(); ?>
                   </div>	
               </section>
 
-<?php 
+		<?php 
         elseif(get_row_layout() == 'work_button'):
           $our_work = get_sub_field('our_work');
           ?>
@@ -185,6 +194,7 @@ get_header(); ?>
 
 </div>
 
+</div>
 
-
+<?php get_footer(); ?>
 <?php get_footer(); ?>

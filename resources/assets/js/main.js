@@ -1265,6 +1265,32 @@ $(document).ready(function(){
     }
 
 
+
+    if($('body').hasClass('page-template-page-about')){
+
+        $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+        $(window).scroll(function(){
+
+            if ( $('.about-full-height-video').isInViewport() ) {
+                $('#full--video').addClass('fixed');
+
+        } else {
+            $('#full--video').removeClass('fixed');
+        }
+        });
+    }
+
+
+
     if(screen.width <= 768){
 
         $('.project_container').each(function(){
@@ -1340,5 +1366,4 @@ $(window).on('load', function() {
     });
 
 });
-
 
