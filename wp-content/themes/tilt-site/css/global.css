@@ -1293,7 +1293,7 @@ section.text-section--centre h2, section.text-section--centre a { display: block
 
 .image_carousel .carousel-image.slick-current img { opacity: 1; }
 
-.image_carousel .slick-dots { position: absolute; display: block; bottom: 25%; text-align: center; margin: 0 auto; width: 100%; }
+.image_carousel .slick-dots { position: absolute; display: block; bottom: 32%; text-align: center; margin: 0 auto; width: 100%; }
 
 @media screen and (min-width: 1900px) { .image_carousel .slick-dots { bottom: 20%; } }
 
