@@ -97,9 +97,30 @@ function rotatingtweetsInteraction( targetid ) {
  Script to cycle the rotating tweets
 */
 jQuery(document).ready(function() {
+	if (navigator.doNotTrack != 'yes' && navigator.doNotTrack != 1 && window.doNotTrack != 1 && navigator.msDoNotTrack != 1 && jQuery('div.follow-button').length ) {
+		/* And call the Twitter script while we're at it! */
+		/* Standard script to call Twitter */
+		window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return t;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "https://platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		 
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };
+		 
+		  return t;
+		}(document, "script", "twitter-wjs"));
+	};
+
 	rotatingtweetsInteraction('.rotatingtweets');
 	
-	if ( 'undefined' === typeof wp || ! wp.customize || ! wp.customize.selectiveRefresh ) {
+	if ( 'undefined' === typeof wp || ! wp.customize || ! wp.customize.selectiveRefresh || ! jQuery('div.follow-button').length ) {
         return;
     };
 	// Re-load Twitter widgets when a partial is rendered.
@@ -117,23 +138,3 @@ jQuery(document).ready(function() {
 		};
     } );
 });
-if(navigator.doNotTrack != 'yes' && navigator.doNotTrack != 1 && window.doNotTrack != 1 && navigator.msDoNotTrack != 1) {
-	/* And call the Twitter script while we're at it! */
-	/* Standard script to call Twitter */
-	window.twttr = (function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0],
-		t = window.twttr || {};
-	  if (d.getElementById(id)) return t;
-	  js = d.createElement(s);
-	  js.id = id;
-	  js.src = "https://platform.twitter.com/widgets.js";
-	  fjs.parentNode.insertBefore(js, fjs);
-	 
-	  t._e = [];
-	  t.ready = function(f) {
-		t._e.push(f);
-	  };
-	 
-	  return t;
-	}(document, "script", "twitter-wjs"));
-};

@@ -1,5 +1,10 @@
 <?php $blog_id = get_current_blog_id();?>
-
+<?php 
+    $body_class = get_body_class();
+    if(in_array('single-work_item', $body_class)){
+?>
+<a id="workButton" class="header-item header-item--menu" href="/work">Back to work</a>
+<?php } ?>
 <a id="menuButton" class="header-item header-item--menu">Menu</a>
 <a id="closeButton" class="header-item header-item--menu">Close</a>
 

@@ -2,6 +2,26 @@
  Script to cycle the rotating tweets
 */
 jQuery(document).ready(function() {
+	if(navigator.doNotTrack != 'yes' && navigator.doNotTrack != 1 && window.doNotTrack != 1 && navigator.msDoNotTrack != 1 && jQuery('div.follow-button').length ) {
+		// Do (or don't do) stuff.
+		/* And call the Twitter script while we're at it! */
+		window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return t;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "https://platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		 
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };
+		 
+		  return t;
+		}(document, "script", "twitter-wjs"));
+	};
 	jQuery('.rotatingtweets').each(function() {
 		/* Get the ID of the rotating tweets div - and parse it to get rotation speed and rotation fx */
 		var rotate_id = "#"+this.id,
@@ -287,23 +307,4 @@ jQuery(document).ready(function() {
 		jQuery(this).find('.rtw_intents').hide();
 	});
 });
-if(navigator.doNotTrack != 'yes' && navigator.doNotTrack != 1 && window.doNotTrack != 1 && navigator.msDoNotTrack != 1) {
-    // Do (or don't do) stuff.
-	/* And call the Twitter script while we're at it! */
-	window.twttr = (function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0],
-		t = window.twttr || {};
-	  if (d.getElementById(id)) return t;
-	  js = d.createElement(s);
-	  js.id = id;
-	  js.src = "https://platform.twitter.com/widgets.js";
-	  fjs.parentNode.insertBefore(js, fjs);
-	 
-	  t._e = [];
-	  t.ready = function(f) {
-		t._e.push(f);
-	  };
-	 
-	  return t;
-	}(document, "script", "twitter-wjs"));
-};
+

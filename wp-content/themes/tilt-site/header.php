@@ -11,9 +11,12 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+	<meta name="format-detection" content="telephone=no">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<!--[if lt IE 9]>
 	<script>
 		location.replace('http://wearetilt.com/home-browser-upgrade');
@@ -34,10 +37,45 @@
       a.appendChild(r);
   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<?php 
+
+$htmltitle = wp_title('&raquo;',false);
+
+	if($htmltitle == 'web Archives - We Are Tilt') { 
+		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
+?>
+
+		<title>Web & Interactive - We Are Tilt - Brighton</title>
+		<meta name="description" content="Brilliant digital experiences that are bold, beautiful and put users first and always. We think beyond one way traffic and create online experiences that change behaviours.">
+
+<?php
+
+	} 
+	elseif($htmltitle == 'film Archives - We Are Tilt' ) { 
+		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
+?>
+
+		<title>Film - We Are Tilt - Brighton</title>
+		<meta name="description" content="Beautiful short films that tell stories about people, places and ideas.">
+
+<?php
+
+	}
+	elseif($htmltitle == 'motion Archives - We Are Tilt' ) { 
+		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
+?>
+
+		<title>Motion Graphics - We Are Tilt - Brighton</title>
+		<meta name="description" content="Motion Graphics has no borders, if you can imagine it, we can build it. Vivid 2D and 3D pieces that explain ideas and spark interest in eye catching ways.">
+
+<?php } ?>
+
 	<?php wp_head(); ?>
 
 	<meta name="theme-color" content="#ff0066">
-	
+
+	<!-- Minified Cookie Consent served from our CDN -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 
@@ -115,4 +153,17 @@
 		<?php get_template_part('content-header-menu');?>
 		
     </nav>
+
+<?php
+    if ( ! post_password_required( $post ) ) {
+          // Your custom code should here
+      ?>
+
 	<div class="wrapper"> <!-- Open Wrapper -->
+	<?php } else {
+		?>
+
+		<div class="password-wrapper">
+
+	<?php }?>
+

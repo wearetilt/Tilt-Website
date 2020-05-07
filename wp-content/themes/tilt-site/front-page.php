@@ -9,330 +9,245 @@
 
 get_header('home'); ?>
 
-<?php
- /*
-$args = array(
-	 'posts_per_page' => 1,
-	 'order_by' => 'date',
-	 'post_type' => 'post',
-	 'post_status' => 'publish',
-	 'category'         => '-9',
- );
-
- $posts_array = get_posts( $args );
-
- $post = $posts_array[0];
- $postID = $post->ID;
-
- if (has_post_thumbnail( $postID ) ){
-	 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
- }
-*/
-
-
-	$args = array(
-		 'posts_per_page' => 3,
-		 'order_by' => 'date',
-		 'post_type' => 'post',
-		 'post_status' => 'publish',
-		 'category' => '-9',
-
-	 );
-
-	 $posts_array = get_posts( $args );
-	 $post = $posts_array[0];
-	 $postID = $post->ID;
-
-	 if (has_post_thumbnail( $postID ) ){
-		 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $postID ), 'single-post-thumbnail' );
-	 }
-
-	 $filmposts = get_posts( $args );
-	 $i = 0;
-	 $j = 0;
-	 $k = 0;
-
-
-
-
-?>
-
 <header id="home-page" class="work-item work-item--motion area-dark">
-	<div class="module--video module--header">
-		<div class="ratio">
-			<div class="container container--header strapline-container">
-				<h1>We Are <strong id="strapline-text">Tilt</strong></h1>
-				<a class="cube--link" href="<?php echo site_url(); ?>/work">
-					<div class="cube">
-						<div class="cube--front cube--front__no-bg">
-							<p class="sans-serif">See our work</p>
-						</div>
-						<div class="cube--top cube--top__no-bg">
-							<p class="sans-serif">See our work</p>
-						</div>
-					</div>
-				</a>
-			</div>
-			<video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/home/header_poster_image.jpg">
-					<source id="header-video" src="https://player.vimeo.com/external/144378575.hd.mp4?s=9126a5c2a202cb2d55ecf33fefe42a3a&profile_id=113" type="video/mp4">
-			</video>
-		</div>
-		<a class="scroll-down" href="#"><span><p>Scroll down</p></span></a>
-	</div>
-</header>
+  <div class="module--video module--header">
+    <div class="ratio">
+      <div class="container container--header strapline-container">
+        <h1>We Are <strong id="strapline-text">Tilt</strong></h1>
+        <a class="cube--link" href="<?php echo site_url(); ?>/work">
+          <div class="cube">
+            <div class="cube--front cube--front__no-bg">
+              <p class="sans-serif">See our work</p>
+            </div>
+            <div class="cube--top cube--top__no-bg">
+              <p class="sans-serif">See our work</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted playsinline poster="<?php echo get_template_directory_uri(); ?>/images/home/header_poster_image.jpg">
+        <source id="header-video" src="https://player.vimeo.com/external/144378575.hd.mp4?s=9126a5c2a202cb2d55ecf33fefe42a3a&profile_id=113" type="video/mp4">
+        </video>
+      </div>
+      <a class="scroll-down" href="#"><span><p>Scroll down</p></span></a>
+    </div>
+  </header>
 
-<div id="header-overlay" class="container container--header area-dark">
+  <div id="header-overlay" class="container container--header area-dark">
     <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">About this video</a>
-	<div class="text-container">
-		<p class="first-para sans-serif"><strong class="highlight">CRAFTED DIGITAL EXPERIENCES</strong> FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS AND CREATIVES.</p>
+    <div class="text-container">
+      <p class="sans-serif"><strong class="highlight">CRAFTED DIGITAL EXPERIENCES</strong> FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS AND CREATIVES.</p>
+
+
+      <a class="cube--link" href="<?php echo site_url(); ?>/about/">
+        <div class="cube">
+          <div class="cube--front">
+            <p class="sans-serif">More about us</p>
+          </div>
+          <div class="cube--top">
+            <p class="sans-serif">More about us</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <main class="main-work-content">
+
+    <?php
+
+    if( have_rows('front_page_content') ):
+      while ( have_rows('front_page_content') ) : the_row();
+
+        ?>
+
+        <?php
+        if(get_row_layout() == 'frontpage_work_items'):
+
+          $left_project = get_sub_field('work_item_left');
+          $right_project = get_sub_field('work_item_right');
+          $post_image_left = get_the_post_thumbnail($left_project);
+          $post_image_right = get_the_post_thumbnail($right_project);
+          $bold_left = get_post_meta($left_project->ID, 'work_items_0_title_bold');
+          $bold_right = get_post_meta($right_project->ID, 'work_items_0_title_bold');
+          $title_left = get_post_meta($left_project->ID, 'work_items_0_title');
+          $title_right = get_post_meta($right_project->ID, 'work_items_0_title');
+          $left_excerpt = get_the_excerpt($left_project->ID);
+          $right_excerpt = get_the_excerpt($right_project->ID);
+          ?>
+          <div class="work-item area-dark" >
+
+        <?php $image_attributes = wp_get_attachment_image_src(get_field('image'), $size = 'about-grid' );
+        $retina_desktop_image = $image_attributes[0];
+        if (function_exists('wr2x_get_retina_from_url')) {
+          $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);
+        } ?>
+
+            <div class="left_container project_container">
+              <a href='<?php echo get_permalink($left_project); ?>'>
+                <?php if($post_image_left  != '') {
+                  echo $post_image_left ;
+                } else { ?>
+                  <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg"/>
+                <?php } ?>
+              </a>
+
+              <div class="related-links">
+                <p class="project_name"><?php echo $title_left[0]; ?></p>
+                <h2 class="entry-title"><?php echo $bold_left[0]; ?></h2>
+                <p class="sans-serif excerpt"><?php echo $left_excerpt; ?></p>
+              </div>
+            </div>
+
+            <div class="right_container project_container">
+              <a href='<?php echo get_permalink($right_project); ?>'>
+                <?php if($post_image_right != '') {
+                  echo $post_image_right;
+                } else { ?>
+                  <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg"/>
+                <?php } ?>
+              </a>
+
+              <div class="related-links">
+                <p class="project_name"><?php echo $title_right[0]; ?></p>
+                <h2 class="entry-title"><?php echo $bold_right[0]; ?></h2>
+                <p class="sans-serif excerpt"><?php echo $right_excerpt; ?></p>
+              </div>
+            </div>
+
+          </div>
+
+          <?php
+
+        elseif(get_row_layout() == 'see_all'):
+          $our_work = get_sub_field('our_work');
+          ?>
+          <div class=" goto_projects area-dark">
+
+            <a class="cube--link" href="<?php echo site_url(); ?>/work">
+              <div class="cube">
+                <div class="cube--front">
+                  <p class="our_work_button sans-serif button"><?php echo $our_work; ?> </p>
+                </div>
+                <div class="cube--top">
+                  <p class="our_work_button_black sans-serif button"><?php echo $our_work; ?> </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
 
+            <?php $args = array(
+              'posts_per_page'   => 4,
+              'offset'           => 0,
+              'cat'         => '',
+              'category_name'    => '',
+              'orderby'          => 'date',
+              'order'            => 'DESC',
+              'include'          => '',
+              'exclude'          => '',
+              'meta_key'         => '',
+              'meta_value'       => '',
+              'post_type'        => 'post',
+              'post_mime_type'   => '',
+              'post_parent'      => '',
+              'author'     => '',
+              'author_name'    => '',
+              'post_status'      => 'publish',
+              'suppress_filters' => true,
+              'fields'           => '',
+            );
 
-		<a class="cube--link" href="<?php echo site_url(); ?>/about/">
-			<div class="cube">
-				<div class="cube--front">
-					<p class="sans-serif">More about us</p>
-				</div>
-				<div class="cube--top">
-					<p class="sans-serif">More about us</p>
-				</div>
-			</div>
-		</a>
-	</div>
-</div>
+            $news = get_posts( $args ); ?>
 
-<div class="container container--no-padding">
-	<section>
-		<div class="group-container">
+            <div class="news-line area-dark">
 
-			<div class="group group--right">
+              <a href="<?php echo get_permalink($news[0]);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[0]->post_title; ?></span>
+                  </div>
+                </div>
+              </a>
 
-				<div class="module module--2-1">
+              <a href="<?php echo get_permalink($news[1]);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[1]->post_title; ?></span>
+                  </div>
+                </div>
+              </a>
 
-					<a href="<?php get_site_url(); ?>/work/code-it">
+              <a href="<?php echo get_permalink($news[2]);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[2]->post_title; ?></span>
+                  </div>
+                </div>
+              </a>
 
-						<div class="overlay area-dark">
-							<div class="overlay-text">
-								<p class="tag tag--home-title">Work: Interactive</p>
-								<h2>Nickelodeon<br /><span class="light">Code-It</span></h2>
-							</div> <!-- /end overlay-text -->
-						</div> <!-- /end overlay -->
+              <a href="<?php echo get_permalink($news[3]);?>" class="news-item">
+                <div class="news_text">
+                  <div>
+                    <p>News</p>
+                    <span><?php echo $news[3]->post_title; ?></span>
+                  </div>
+                </div>
+              </a>
 
-						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_02_mr.jpg')"></div>
-					</a>
+            </div>
 
-				</div>
+            <?php
+        endif;
 
+      endwhile;
+    else :
+    // no rows found
+    endif;
+    ?>
 
-				<?php
-				foreach ( $filmposts as $post ) : setup_postdata( $post );
+  </main>
 
-					if (has_post_thumbnail( $post->ID ) ):
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					endif;
 
+  <?php get_footer(); ?>
 
-					if($i == 0) { ?>
+  <script type="text/javascript">
 
-						<a href="<?php echo the_permalink(); ?>">
-							<div class="module module--1-1 area-dark news--icon">
-								<div id="post=<?php the_ID();?>" class="overlay area-dark">
-									<div class="overlay-text">
-										<p class="tag--no-square">News</p>
-										<h2><span><?php the_title( ); ?></span></h2>
-									</div> <!-- /end overlay-text -->
-								</div> <!-- /end overlay -->
-								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-							</div>
-						</a><?php
+    var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
+    var maxLoops = wordArray.length;
+    var counter = 0;
 
 
+    jQuery(document).ready(function(){
 
-					};
+      (function next() {
 
-					$i++;
+        if (counter < maxLoops) {
 
-				endforeach;
-				wp_reset_postdata();?>
+          setTimeout(function() {
 
+            jQuery('#strapline-text').fadeOut(500, function(){
 
-				<?php
-				foreach ( $filmposts as $post ) : setup_postdata( $post );
+              document.getElementById('strapline-text').innerHTML = wordArray[counter];
+              jQuery('#strapline-text').fadeIn(500);
+              next();
+              counter++;
+              if(counter == maxLoops) { counter = 0; }
 
-					if (has_post_thumbnail( $post->ID ) ):
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					endif;
+            });
 
+          }, 2000);
 
-					if($j == 1) { ?>
+        } else {
+          counter = 0;
+          next();
+        }
 
-						<a href="<?php echo the_permalink(); ?>">
-							<div class="module module--1-1 area-dark news--icon">
+      })();
 
-								<div class="module__text">
-									<p class="tag--no-square">News</p>
-									<h2><span><?php echo the_title(); ?></span></h2>
-								</div>
+    });
 
-							</div>
-						</a><?php
-
-
-
-					};
-
-					$j++;
-
-				endforeach;
-				wp_reset_postdata();?>
-
-
-			</div>
-
-			<div class="group group--left">
-				<div class="module module--2-2">
-					<a href="<?php get_site_url(); ?>/work/bp-fll-stories/">
-						<div class="overlay area-dark">
-							<div class="overlay-text">
-								<p class="tag tag--home-title">Case Study: Film</p>
-								<h2>BP First Level Leaders<br /><span class="underlined light">Stories</span></h2>
-								<p class="sans-serif">Engage your audience on an emotional level</p>
-							</div> <!-- /end overlay-text -->
-						</div> <!-- /end overlay -->
-						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_01_ls.jpg')"></div>
-					</a>
-				</div>
-			</div> <!-- /end group -->
-		</div> <!-- /end group-container -->
-	</section>
-</div> <!-- /end container -->
-
-<div class="container container--no-padding">
-	<section>
-		<div class="group-container">
-			<div class="group group--right">
-
-				<div class="module module--2-2">
-
-					 <a href="<?php get_site_url(); ?>/work/discover-bp">
-						<div class="overlay area-dark">
-							<div class="overlay-text">
-								<p class="tag tag--home-title">Case Study: Web</p>
-								<h2>BP<br /><span class="underlined light">Discover BP</span></h2>
-								<p class="sans-serif">Why would employees spend time learning if they don’t have to?</p>
-							</div> <!-- /end overlay-text -->
-						</div> <!-- /end overlay -->
-						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/home/home_04_ls.jpg')"></div>
-					 </a>
-
-				</div>
-
-
-			</div>
-			<div class="group group--left">
-
-				<div class="module module--2-1 area-dark">
-
-					<a href="<?php get_site_url(); ?>/work/gfk">
-						<div class="overlay area-dark">
-							<div class="overlay-text">
-								<p class="tag tag--home-title">Work: Motion</p>
-								<h2>GFK<br /><span class="light">Brand Video</span></h2>
-							</div> <!-- /end overlay-text -->
-						</div> <!-- /end overlay -->
-
-						<div class="ratio" style="background-image: url('<?php echo get_template_directory_uri();?>/images/home/home_03_mr.jpg')"></div>
-					</a>
-
-				</div>
-
-
-				<?php
-				foreach ( $filmposts as $post ) : setup_postdata( $post );
-
-					if (has_post_thumbnail( $post->ID ) ):
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					endif;
-
-
-					if($k == 2) { ?>
-
-						<a href="<?php echo the_permalink(); ?>">
-							<div class="module module--1-1 area-dark news--icon">
-								<div id="post=<?php the_ID();?>" class="overlay area-dark">
-									<div class="overlay-text">
-										<p class="tag--no-square">News</p>
-										<h2><span><?php the_title( ); ?></span></h2>
-									</div> <!-- /end overlay-text -->
-								</div> <!-- /end overlay -->
-								<div class="ratio" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-							</div>
-						</a><?php
-
-
-
-					};
-
-					$k++;
-
-				endforeach;
-				wp_reset_postdata();?>
-
-
-
-
-
-
-
-				<div id="twitter__module" class="module module--1-1 area-dark">
-					<div class="module__text home--tweet">
-						<?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='0' show_meta_reply_retweet_favorite='1' official_format='2' tweet_count='3' exclude_replies='1' show_follow='0' timeout='3000' rotation_type='fade' official_format_override='1']" ) ?>
-
-					</div> <!-- /end text-section -->
-				</div>
-
-			</div> <!-- /end group -->
-		</div> <!-- /end group-container -->
-	</section>
-</div> <!-- /end container -->
-
-</div> <!-- Close Wrapper -->
-
-<?php get_footer(); ?>
-
-<script type="text/javascript">
-
-	var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
-	var maxLoops = wordArray.length;
-	var counter = 0;
-
-
-	jQuery(document).ready(function(){
-
-	(function next() {
-
-	    if (counter < maxLoops) {
-
-		    setTimeout(function() {
-
-	        	jQuery('#strapline-text').fadeOut(500, function(){
-
-		        	document.getElementById('strapline-text').innerHTML = wordArray[counter];
-					jQuery('#strapline-text').fadeIn(500);
-					next();
-					counter++;
-					if(counter == maxLoops) { counter = 0; }
-
-	        	});
-
-			}, 2000);
-
-	    } else {
-		    counter = 0;
-		    next();
-	    }
-
-	})();
-
-	});
-
-</script>
+  </script>

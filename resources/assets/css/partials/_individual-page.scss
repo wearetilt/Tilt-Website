@@ -201,23 +201,23 @@
     background: #f66163;
 }
 
-.work-i360 .work-header,
+.work-i360 .work-ba-i360-re-design .work-header,
 .container--i360-gradient {
-    background: #8bafd7;
+    background: #e46d6e;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #8bafd7 0%, #7a97b8 100%);
+    background: -moz-linear-gradient(top, #e46d6e 0%, #e84849 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8bafd7), color-stop(100%, #7a97b8));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e46d6e), color-stop(100%, #e84849));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #8bafd7 0%, #7a97b8 100%);
+    background: -webkit-linear-gradient(top, #e46d6e 0%, #e84849 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #8bafd7 0%, #7a97b8 100%);
+    background: -o-linear-gradient(top, #e46d6e 0%, #e84849 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #8bafd7 0%, #7a97b8 100%);
+    background: -ms-linear-gradient(top, #e46d6e 0%, #e84849 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #8bafd7 0%, #7a97b8 100%);
+    background: linear-gradient(to bottom, #e46d6e 0%, #e84849 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bafd7', endColorstr='#7a97b8', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e46d6e', endColorstr='#e84849', GradientType=0);
     /* IE6-9 */
 }
 
@@ -377,6 +377,7 @@
         @media handheld,
         screen and (min-width: $bp-desktop) {
             top: 50%;
+
         }
     }
 }
@@ -396,6 +397,94 @@
         }
     }
 }
+.page-id-2692{
+    @media screen and (max-width: 320px){
+        #page_404{
+            height: 38%;
+            min-height: 0;
+            background-image: url(../images/shutterstock_339383966.jpg);
+            background-position: unset; 
+            .module--video{
+                display: none;
+            }
+        }
+        h1{
+            font-size: 20px;
+        }
+        .light{
+            font-size: 16px;
+            line-height: 1.4;
+            padding: 0 6px 11px 0px;
+        }
+    }
+    @media only screen and (min-width: 321px) and (max-width: 480px){
+        #page_404{
+            height: 38%;
+            min-height: 0;
+            background-image: url(../images/shutterstock_339383966.jpg);
+            background-position: unset; 
+            .module--video{
+                display: none;
+            }
+        }
+        h1{
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .light{
+            font-size: 20px;
+            line-height: 1.4;
+            padding: 0 6px 11px 0px;
+        }
+        #fourohfour-text{
+            padding-bottom: 0;
+        }
+    }
+
+    @media only screen and (min-width: 480px)and (max-width: 731px){
+        #page_404{
+            height: 54%;
+            min-height: 0;
+            background-image: url(../images/shutterstock_339383966.jpg);
+            background-repeat: no-repeat;
+        background-position: center;
+            .module--video{
+                display: none;
+            }
+        }
+        h1{
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .light{
+            font-size: 20px;
+            line-height: 1.4;
+            padding: 0 6px 11px 0px;
+        }
+        img{
+            max-width: 35%;
+        }
+    }
+
+    #fourohfour-text {
+        @media screen and (min-width: $bp-desktop) {
+            h1{
+                width: 85%;
+                margin-bottom: 20px;
+                @media handheld, screen and (min-width: 1024px){
+                    width: 85%;
+                }
+            }
+            img{
+                margin-top: 3px;
+                width: 40%;
+            }
+            .light{
+                font-size: 30px;
+            }
+        }
+    }
+}
 
 #fourohfour-overlay {
     position: absolute;
@@ -403,7 +492,6 @@
     height: 100%;
     width: 100%;
     opacity: 0.76;
-    background-color: #fd3762;
 }
 
 #fourohfour h1.light {}
@@ -412,6 +500,6 @@
     margin-top: 1.2em;
 }
 
-#about_page p.sans-serif {
+#about_page .sans-serif {
     line-height: 1.2;
 }

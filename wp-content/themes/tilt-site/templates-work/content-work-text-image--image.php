@@ -40,10 +40,12 @@ if($content['media']) { ?>
                 <?php endif;?>
 
                 <?php if($video) : ?>
+
                     <div class="<?= $moduleClass;?> module--video">
                     <div class="ratio">
                         <video poster="<?= $image[0];?>" autoplay loop muted>
                                 <source src="<?= $video;?>" type="video/mp4">
+
                         </video>
                     </div>
                 </div> <!-- /end module -->

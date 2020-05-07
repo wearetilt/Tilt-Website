@@ -1,0 +1,41 @@
+.privacy-policy{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @media screen and (min-height: 320px)and(max-width: 480px){
+        width: 80%;
+    }
+
+    h2{
+        text-align: center;
+        margin: 25px;
+    }
+
+    h4{
+        margin: 30px 0 15px 0;
+    }
+
+    p{
+        margin: 0 0 15px 0;
+    }
+
+    a{
+        color: #ff0066;
+        text-transform: none;
+    }
+
+    li{
+        line-height: 1.5;
+    }
+    
+    table{
+        border: 2px solid white;
+        td{
+            color: #ffffff;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 10px;
+        }
+    }
+}

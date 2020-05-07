@@ -24,7 +24,7 @@ get_header('work-item'); ?>
 
         </div>
         <div class="ratio">
-            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_leadership/poster.jpg">
+            <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted width="100%" height="100%" poster="<?php echo get_template_directory_uri(); ?>/images/work/mo_leadership/poster.jpg">
                     <source id="header-video" src="https://player.vimeo.com/external/164256445.hd.mp4?s=f141fb096147d76282bf00a36a29a1f83cd9a84c&profile_id=119" type="video/mp4">
             </video>
         </div>

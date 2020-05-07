@@ -50,13 +50,28 @@ div.rtw_rt_meta{
 	display: none;
 }
 
-.news-container #social a.synved-social-provider-facebook, .news-container #social a.synved-social-provider-mail { margin-right:15px !important; }
+.news-container #social a.synved-social-provider-facebook,.synved-social-provider-twitter, .news-container #social a.synved-social-provider-mail { 
+	margin-right: 20px !important; 
+    vertical-align: middle;
+    padding-top: 1px;
+}
 
 #social h2.news-share {
+	float: left;
+	padding: 0;
+	margin-top: 15px;
+	margin-right: 20px;
+	font-family: $f-seroot-lt;
+  color: $c-white;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+#social-main h2.news-share {
 	float:left;
 	padding:0;
-	margin-top:7px;
-	margin-right:20px;
+	margin-top: 12px;
+	margin-right: 20px;
 	font-family: $f-seroot-lt;
     color:$c-white;
     letter-spacing:1px;

@@ -33,11 +33,6 @@ get_header(); ?>
             <div class="container container--no-padding">
 
             <?php
-            if ($paged === 0) {
-                $tweetCounter = 0;
-            } else {
-                $tweetCounter =  4 * ($paged - 1);
-            }
 
             while (have_posts()) :
                 the_post();
@@ -50,46 +45,72 @@ get_header(); ?>
                                 <div class="module module--2-2  news--icon">
                                     <?php get_template_part( 'content', 'blog-post-large' ); ?>
                                 </div>
+                            </div>
                     <?php
                 } elseif ($i === 2) {
-                    $tweet = $tweetCounter + 1;
                     ?>
-                        <div id="twitter__module" class="module module--1-1 module--dark-mobile-news">
-                            <div class="module__text">
-                                <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-
-                            </div> <!-- /end text-section -->
-                        </div>
+                    <div class="group group--right">
                         <div class="module module--1-1 news--icon">
                             <?php get_template_part( 'content', 'blog-post' ); ?>
                         </div>
                     <?php
-                    $tweetCounter++;
                 } elseif ($i === 3) {
-                    $tweet = $tweetCounter - 1;
                     ?>
+                        <div class="module module--1-1 news--icon news-noimg">
+                            <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
                         </div>
-                        <div class="group group--right">
-                            <div  id="twitter__module_two" class="module module--1-1">
-                                <div class="module__text">
-                                    <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-
-                                </div> <!-- /end text-section -->
-                            </div>
-                            <div class="module module--1-1  news--icon">
-                                <?php	get_template_part( 'content', 'blog-post' ); ?>
-                            </div>
                     <?php
-                    $tweetCounter++;
                 } elseif ($i === 4) {
                     ?>
-                            <div class="module module--2-2  news--icon">
-                                <?php get_template_part( 'content', 'blog-post-large' ); ?>
+                            <div class="module module--1-1  news--icon news-noimg">
+                                 <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+                            </div>
+                    <?php
+                } elseif ($i === 5) {
+                    ?>
+                            <div class="module module--1-1  news--icon">
+                                <?php   get_template_part( 'content', 'blog-post' ); ?>
                             </div>
                         </div>
                     <?php
+                } elseif ($i === 6) {
+                    ?>
+                        <div class="group group--right">
+                            <div class="module module--2-2  news--icon">
+                                <?php   get_template_part( 'content', 'blog-post' ); ?>
+                            </div>
+                        </div>
+                    <?php
+                } elseif ($i === 7) {
+                    ?>
+                    <div class="group group--left">
+                        <div class="module module--1-1 news--icon">
+                            <?php get_template_part( 'content', 'blog-post' ); ?>
+                        </div>
+                    <?php
+                } elseif ($i === 8) {
+                    ?>
+                        <div class="module module--1-1 news--icon news-noimg">
+                             <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+                        </div>
+                    <?php
+                } elseif ($i === 9) {
+                    ?>
+                        <div class="module module--1-1  news--icon news-noimg">
+                             <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+                        </div>
+                    <?php
+                } elseif ($i === 10) {
+                    ?>
+                        <div class="module module--1-1  news--icon">
+                            <?php   get_template_part( 'content', 'blog-post' ); ?>
+                        </div>
+                    </div>
+
+                    <?php
                 }
-                ?>
+                    ?>
+
                 <?php
                 /*
 				 * Include the Post-Format-specific template for the content.
@@ -99,276 +120,16 @@ get_header(); ?>
 
             // End the loop.
 
-                if ($i === 4) {
+                if ($i === 10) {
                     $i = 0;
                     ?>
                     </div>
                     <?php
                 }
             endwhile;
-
-            if ($postsLeftOver != 0) {
-                $amountOfBoxes =  8 - $postsLeftOver;
-
-                switch ($amountOfBoxes) {
-                    case 1:
-                        ?>
-                                <div class="module module--2-2 module--dark">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <?php
-                        break;
-                    case 2:
-                        $tweet = $tweetCounter - 1;
-                    ?>
-                        </div>
-                        <div class="group group--right">
-                            <div  id="twitter__module_three" class="module module--1-1">
-                                <div class="module__text">
-                                    <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                                </div> <!-- /end text-section -->
-                            </div>
-                            <div class="module module--1-1 module--dark">
-
-                            </div>
-                            <div class="module module--2-2 module--dark">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                    <?php
-                        break;
-                    case 3:
-                        $tweet = $tweetCounter + 1;
-                    ?>
-                    <div class="module module--1-1">
-                        <div class="module__text">
-                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                        </div> <!-- /end text-section -->
-                    </div>
-                    <div class="module module--1-1 module--dark">
-                    </div>
-                                </div>
-                                <div class="group group--right">
-                                    <div class="module module--1-1">
-                                        <div class="module__text">
-                                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                                        </div> <!-- /end text-section -->
-                                    </div>
-                                    <div class="module module--1-1 module--dark">
-
-                                    </div>
-                                    <div class="module module--2-2 module--dark">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    <?php
-                        break;
-                    case 4;
-                    ?>
-                    <div class="group-container">
-                        <div class="group group--left">
-                            <div class="module module--2-2 module--dark">
-                            </div>
-                    <div class="module module--1-1">
-                        <div class="module__text">
-                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                        </div> <!-- /end text-section -->
-                    </div>
-                    <div class="module module--1-1 module--dark">
-                    </div>
-                                </div>
-                                <div class="group group--right">
-                                    <div class="module module--1-1">
-                                        <div class="module__text">
-                                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                                        </div> <!-- /end text-section -->
-                                    </div>
-                                    <div class="module module--1-1 module--dark">
-
-                                    </div>
-                                    <div class="module module--2-2 module--dark">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    <?php
-                        break;
-                    case 5:
-                    ?>
-                            <div class="module module--2-2 module--dark">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="group-container">
-                        <div class="group group--left">
-                            <div class="module module--2-2 module--dark">
-                            </div>
-                    <div class="module module--1-1">
-                        <div class="module__text">
-                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                        </div> <!-- /end text-section -->
-                    </div>
-                    <div class="module module--1-1 module--dark">
-                    </div>
-                                </div>
-                                <div class="group group--right">
-                                    <div class="module module--1-1">
-                                        <div class="module__text">
-                                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                                        </div> <!-- /end text-section -->
-                                    </div>
-                                    <div class="module module--1-1 module--dark">
-
-                                    </div>
-                                    <div class="module module--2-2 module--dark">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    <?php
-                        break;
-                    case 6:
-                    ?>
-                </div>
-                <div class="group group--right">
-                    <div class="module module--1-1">
-                        <div class="module__text">
-                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                        </div> <!-- /end text-section -->
-                    </div>
-                    <div class="module module--1-1 module--dark">
-
-                    </div>
-                    <div class="module module--2-2 module--dark">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="group-container">
-                <div class="group group--left">
-                    <div class="module module--2-2 module--dark">
-                    </div>
-            <div class="module module--1-1">
-                <div class="module__text">
-                    <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                </div> <!-- /end text-section -->
-            </div>
-            <div class="module module--1-1 module--dark">
-            </div>
-                        </div>
-                        <div class="group group--right">
-                            <div class="module module--1-1">
-                                <div class="module__text">
-                                    <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                                </div> <!-- /end text-section -->
-                            </div>
-                            <div class="module module--1-1 module--dark">
-
-                            </div>
-                            <div class="module module--2-2 module--dark">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                    <?php
-                        break;
-                    case 7:
-                    ?>
-                    <div class="module module--1-1">
-                        <div class="module__text">
-                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                        </div> <!-- /end text-section -->
-                    </div>
-                    <div class="module module--1-1 module--dark">
-                    </div>
-                </div>
-                <div class="group group--right">
-                    <div class="module module--1-1">
-                        <div class="module__text">
-                            <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                        </div> <!-- /end text-section -->
-                    </div>
-                    <div class="module module--1-1 module--dark">
-
-                    </div>
-                    <div class="module module--2-2 module--dark">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="group-container">
-                <div class="group group--left">
-                    <div class="module module--2-2 module--dark">
-                    </div>
-            <div class="module module--1-1">
-                <div class="module__text">
-                    <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2'  offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                </div> <!-- /end text-section -->
-            </div>
-            <div class="module module--1-1 module--dark">
-            </div>
-                        </div>
-                        <div class="group group--right">
-                            <div class="module module--1-1">
-                                <div class="module__text">
-                                    <?php echo do_shortcode( "[rotatingtweets screen_name='wearetilt' include_rts='1' official_format='2' offset='" . $tweet . "'  tweet_count='1' show_follow='0' timeout='3000' rotation_type='fade']" ) ?>
-                                </div> <!-- /end text-section -->
-                            </div>
-                            <div class="module module--1-1 module--dark">
-
-                            </div>
-                            <div class="module module--2-2 module--dark">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <?php the_posts_pagination( array(
-                    'prev_text'          => __( '&#8249; Prev', 'twentyfifteen' ),
-                    'next_text'          => __( 'Next &#8250;', 'twentyfifteen' ),
-                    'screen_reader_text' => __( '' )
-                ) );
-
-?>
-
-                
-                    <?php
-                        break;
-                    default:
-                }
-            }
-
             ?>
             </div>
-            <?php
- 
-            // Previous/next page navigation.
-            /*the_posts_pagination( array(
-            'prev_text'          => __( '&#8249; Prev', 'twentyfifteen' ),
-            'next_text'          => __( 'Next <span class="paginate_arrows">&#8250;</span>', 'twentyfifteen' ),
-            'screen_reader_text' => __( '' )
-            ) );*/
- 
-?>
+
             <div class="group-container">
 
                 <?php 

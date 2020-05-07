@@ -85,6 +85,8 @@ function twentyfifteen_setup() {
 	set_post_thumbnail_size( 825, 510, true );
 
 	add_image_size( 'team', 624, 624, true);
+	add_image_size( 'talk-thumb', 683, 400, true);
+  add_image_size( 'logo', 9999, 87, false);
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
@@ -306,7 +308,7 @@ add_action( 'wp_enqueue_scripts', 'twentyfifteen_post_nav_background' );
  */
 function add_custom_taxonomies() {
   // Add new "Locations" taxonomy to Posts
-  register_taxonomy('work', 'page', array(
+  register_taxonomy('work', ['page', 'work'], array(
     // Hierarchical taxonomy (like categories)
     'hierarchical' => true,
     // This array of options controls the labels displayed in the WordPress Admin UI
@@ -325,7 +327,7 @@ function add_custom_taxonomies() {
     ),
     // Control the slugs used for this taxonomy
     'rewrite' => array(
-	      'slug' => 'asdfg', // This controls the base slug that will display before each term
+	      'slug' => '', // This controls the base slug that will display before each term
       'with_front' => false, // Don't display the category base before "/locations/"
       'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
     ),
@@ -355,8 +357,49 @@ function add_custom_taxonomies() {
     ),
   ));
 
+  register_taxonomy('content_group', 'work_item', array(
+    // Hierarchical taxonomy (like categories)
+    'hierarchical' => true,
+    // This array of options controls the labels displayed in the WordPress Admin UI
+    'labels' => array(
+      'name' => _x( 'Content Group', 'taxonomy general name' ),
+      'singular_name' => _x( 'Group', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Content Groupings' ),
+      'all_items' => __( 'All Content Groups' ),
+      'parent_item' => __( 'None' ),
+      'parent_item_colon' => __( 'None:' ),
+      'edit_item' => __( 'Edit Content Group' ),
+      'update_item' => __( 'Update Content Group' ),
+      'add_new_item' => __( 'Add New Content Group' ),
+      'new_item_name' => __( 'New Content Group name' ),
+      'menu_name' => __( 'Content Groups' ),
+      'show_admin_column' => true, //see this line
+    ),
+    // Control the slugs used for this taxonomy
+    'rewrite' => array(
+      'with_front' => false, // Don't display the category base before "/locations/"
+      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+    ),
+  ));
+
+
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
+
+add_rewrite_rule( 'web/?$', 'index.php?work=web', 'top' );
+add_rewrite_rule( 'motion/?$', 'index.php?work=motion', 'top' );
+add_rewrite_rule( 'film/?$', 'index.php?work=film', 'top' );
+
+function __custom_work_link( $link, $term, $taxonomy )
+{
+    if ( $taxonomy !== 'work' )
+        return $link;
+
+    return str_replace( 'work/', '', $link );
+}
+add_filter( 'term_link', '__custom_work_link', 10, 3 );
+
+
 
 function work_item_post_type() {
 
@@ -383,7 +426,7 @@ function work_item_post_type() {
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
 		'taxonomies'          => array( 'work' ),
-		'hierarchical'        => true,
+		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
@@ -391,12 +434,12 @@ function work_item_post_type() {
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
-		'has_archive'         => true,
+		'has_archive'         => false,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 		'rewrite' => array(
-	      'slug' => 'hellomiles', // This controls the base slug that will display before each term
+	      'slug' => false, // This controls the base slug that will display before each term
 	      'with_front' => false, // Don't display the category base before "/locations/"
 	      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
 	    ),
@@ -405,6 +448,94 @@ function work_item_post_type() {
 
 }
 add_action( 'init', 'work_item_post_type', 0 );
+
+
+function tilt_talks_post_type() {
+
+	$labels = array(
+		'name'                => 'Tilt Talks',
+		'singular_name'       => 'Tilt Talk',
+		'menu_name'           => 'Tilt Talks',
+		'name_admin_bar'      => 'Tilt Talks',
+		'parent_item_colon'   => 'Parent Item:',
+		'all_items'           => 'All Tilt Talks',
+		'add_new_item'        => 'Add Tilt Talk',
+		'add_new'             => 'Add New Tilt Talk',
+		'new_item'            => 'New Tilt Talk',
+		'edit_item'           => 'Edit Tilt Talk',
+		'update_item'         => 'Update Tilt Talk',
+		'view_item'           => 'View Tilt Talk',
+		'search_items'        => 'Search Tilt Talk',
+		'not_found'           => 'Not found',
+		'not_found_in_trash'  => 'Not found in Trash',
+	);
+	$args = array(
+		'label'               => 'Tilt Talk',
+		'description'         => 'Tilt Talks go here',
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
+		'taxonomies'          => array( 'talk' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => false,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+	      'slug' => false, // This controls the base slug that will display before each term
+	      'with_front' => false, // Don't display the category base before "/locations/"
+	      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+	    ),
+	);
+	register_post_type( 'tilt-talks', $args );
+
+}
+add_action( 'init', 'tilt_talks_post_type', 0 );
+
+
+/**
+ * Remove the slug from published post permalinks. Only affect our custom post type, though.
+ */
+function gp_remove_cpt_slug( $post_link, $post ) {
+    if ( $post->post_type === "work_item" && 'publish' === $post->post_status ) {
+        $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+    }
+    return $post_link;
+}
+add_filter( 'post_type_link', 'gp_remove_cpt_slug', 10, 2 );
+/**
+ * Have WordPress match postname to any of our public post types (post, page, race).
+ * All of our public post types can have /post-name/ as the slug, so they need to be unique across all posts.
+ * By default, WordPress only accounts for posts and pages where the slug is /post-name/.
+ *
+ * @param $query The current query.
+ */
+function gp_add_cpt_post_names_to_main_query( $query ) {
+	// Bail if this is not the main query.
+	if ( ! $query->is_main_query() ) {
+		return;
+	}
+	// Bail if this query doesn't match our very specific rewrite rule.
+	if ( ! isset( $query->query['page'] ) || 2 !== count( $query->query ) ) {
+		return;
+	}
+	// Bail if we're not querying based on the post name.
+	if ( empty( $query->query['name'] ) ) {
+		return;
+	}
+	// Add CPT to the list of post types WP will include when it queries based on the post name.
+	$query->set( 'post_type', array( 'post', 'page', 'work_item' ) );
+}
+add_action( 'pre_get_posts', 'gp_add_cpt_post_names_to_main_query' );
+
+
+
 
 
 
@@ -455,7 +586,6 @@ function team_post_type() {
 
 }
 add_action( 'init', 'team_post_type', 0 );
-
 
 /**
  * Display descriptions in main navigation.
@@ -550,3 +680,78 @@ function getPageSibling($link) {
 
     // if ($link == 'prev' || $link == 'next') { return ; } else { return $closest; }
 }
+
+
+function my_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o = '<div class="container area-dark contact--page pw-protect-login-form">
+    		<div class="container container-headline-text area-dark"> 
+            <section class="text-section">
+              <h2>Client area</h2>
+              <div class="text-section__para">
+              <p>To view this post, please enter your password</p>
+              <form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+   				<input class="password_entry" placeholder="Password" name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
+   				<button id="password_button" type="submit" class="input-btn" name="Submit">Go</button>
+   				</div>
+    		  </form>
+    		  </div>
+            </section>
+            </div>
+          </div>
+    ';
+    return $o;
+
+}
+add_filter( 'the_password_form', 'my_password_form' );
+
+add_filter( 'the_password_form', 'wpse_71284_custom_post_password_msg' );
+
+/**
+ * Add a message to the password form.
+ */
+function wpse_71284_custom_post_password_msg( $o )
+{
+    // No cookie, the user has not sent anything until now.
+    if ( ! isset ( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] ) )
+        return $o;
+
+$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    // We have a cookie, but it doesn’t match the password.
+    $msg = '<div class="container area-dark contact--page pw-protect-login-form">
+        <div class="container container-headline-text area-dark"> 
+            <section class="text-section">
+              <h2>Client area</h2>
+              <div class="text-section__para">
+              <p>To view this post, please enter your password</p>
+              <form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+          <input class="password_entry" placeholder="Password" name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
+          <button id="password_button" type="submit" class="input-btn" name="Submit">Go</button>
+          </div>
+          </form>
+          <p class="custom-password-message"> Sorry, your password is incorrect. </p>
+          </div>
+            </section>
+            </div>
+          </div>';
+
+    return $msg;
+
+}
+
+function wpb_password_post_filter( $where = '' ) {
+    if (!is_single() && !is_admin() && !is_page()) {
+        $where .= " AND post_password = ''";
+    }
+    return $where;
+}
+add_filter( 'posts_where', 'wpb_password_post_filter' );
+
+
+/// oembed skip function to use og tags for linkedin sharing
+
+remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
+remove_action('wp_head', 'wp_oembed_add_host_js');
+
+

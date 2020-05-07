@@ -73,7 +73,7 @@
     height: 69.5%;
     width: 92.5%;
     overflow: hidden;
-    background-color: darkorchid;
+    background-color: transparent;
     video {
         height: 100%;
         width: 100%;
@@ -134,6 +134,14 @@ header {
         height: 69%;
         left: 3.5%;
         width: 93%;
+        @media screen and (min-width: $bp-desktop) {
+            top: 0;
+            height: auto;
+            left: 0;
+            width: 100%;
+            padding: 3%;
+        }
+        
         img {
             height: 100%;
             width: 100%;

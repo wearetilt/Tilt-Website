@@ -34,6 +34,10 @@
   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 	<?php wp_head(); ?>
+
+	<!-- Minified Cookie Consent served from our CDN -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 <body <?php body_class(); ?>>
