@@ -2224,4 +2224,7 @@
 [Thu Apr 30 10:31:45.693366 2020] [php7:error] [pid 3822] [client 127.0.0.1:53715] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /Users/joshhudson/Sites/Tilt-Website/wp-content/themes/tilt-site/page-about.php on line 120
 [Thu Apr 30 10:31:50.199900 2020] [php7:error] [pid 3822] [client 127.0.0.1:53715] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /Users/joshhudson/Sites/Tilt-Website/wp-content/themes/tilt-site/page-about.php on line 120
 [Thu Apr 30 10:32:36.035601 2020] [php7:error] [pid 203] [client 127.0.0.1:53931] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /Users/joshhudson/Sites/Tilt-Website/wp-content/themes/tilt-site/page-about.php on line 123
+<<<<<<< HEAD
+=======
 [Wed May 06 16:05:40.704258 2020] [php7:error] [pid 202] [client 127.0.0.1:54860] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /Users/joshhudson/Sites/Tilt-Website/wp-content/themes/tilt-site/single-work_item.php on line 49, referer: http://wearetilt.local/wp-admin/post.php?post=5584&action=edit
+>>>>>>> develop

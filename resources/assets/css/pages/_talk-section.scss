@@ -1,0 +1,220 @@
+/* stylesheet for tilt talk section pages */
+
+.talk-sections {
+
+	.talk-item-header {
+		z-index: 1;
+
+		.header-image {
+
+			background-size: cover;
+			height: 300px;
+			min-height: 60%;
+			background-position: 50% 50%;
+
+			@media screen and (min-width: $bp-desktop) {
+				background-position: 50% 0;
+				height: 577px;
+			}
+
+		}
+	}
+
+	.main-talk-content {
+
+		.container {
+			
+			&:first-child {
+				padding: 30px 40px 75px 40px;
+
+				@media handheld, screen and (min-width: $bp-desktop) {
+					padding: 60px 0px 75px 0px;	
+				}
+
+			}
+			
+			.header-text {
+				width: 100%;
+				max-width: 684px;
+				margin: 0 auto;
+
+				h2 {
+					@include font-size(30);
+
+					@media handheld, screen and (min-width: $bp-desktop) {
+						@include font-size(60);
+					}
+
+				}
+
+				p {
+					@include font-size(20);
+					font-family: $f-merriweather;
+					font-weight: lighter;
+					color: #949393;
+					margin-top: 18px;
+
+					@media handheld, screen and (min-width: $bp-desktop) {
+						@include font-size(24);
+					}
+
+
+					&.date {
+						@include font-size(15);
+						font-family: $f-seroot-lt;	
+						text-transform: uppercase;
+						letter-spacing: 1.2px;
+						margin-top: 0;
+
+						@media handheld, screen and (min-width: $bp-desktop) {
+							@include font-size(16);
+						}
+					}
+				}
+
+				.lighter-content {
+					margin-top: 44px;
+					p {
+						@include font-size(14);
+						color: #fff;
+						line-height: 28px;
+					}
+
+					@media handheld, screen and (min-width: $bp-desktop) {
+						margin-top: 88px;
+
+						p {
+							@include font-size(15);
+						}
+					}
+
+				}
+
+				.speaker {
+					@include font-size(15);
+					line-height: 32px;
+					font-family: $f-seroot-lt;	
+					color: #fff;
+					text-transform: uppercase;
+					letter-spacing: 1.2px;
+
+					@media handheld, screen and (min-width: $bp-desktop) {
+						@include font-size(16);
+					}
+
+				}
+
+
+				a {
+					&:before {
+						content: '';
+						display: block;
+						width: 100%;
+						height: 1px;
+						background: transparent;
+						transition: width .2s;
+						position: relative;
+						bottom: -40px;
+					}	
+				}
+			}
+		}
+
+		.video-blog:nth-child(even) {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		.video-blog {
+			padding: 0;
+			justify-content: center;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row-reverse;
+
+
+			.video-half {
+				width: 100%;
+
+				@media handheld, screen and (min-width: $bp-desktop) {
+					width: 50%;
+				}
+
+				.video-wrapper{
+
+					position: relative;
+					padding-bottom: 56.25%; /* 16:9 */
+					height: 0;
+
+					iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+			}
+
+			.blog-half {
+
+				width: 100%;
+				height: 360px;
+				background: #272727;
+				@media handheld, screen and (min-width: $bp-desktop) {
+					width: 50%;
+					height: auto;
+
+					&:hover {
+
+						.blog-titles {
+							h2 {
+								color: #949393;
+								transition: color ease 0.5s;
+							}
+						}
+
+					}
+
+				}
+
+				.blog-titles {
+
+					position: relative;
+					top: 45%;
+					margin: 0 40px;
+					width: 70%;
+					transform: translateY(-50%);
+
+					h2 {
+						@include font-size(30);
+
+						@media handheld, screen and (min-width: $bp-desktop) {
+							@include font-size(32);
+						}
+					}
+
+					p {
+						color: #949393;
+						font-family: SeroOT-Light;
+						@include font-size(15);
+						text-transform: uppercase;
+						letter-spacing: 1.2px;
+
+						@media handheld, screen and (min-width: $bp-desktop) {
+							@include font-size(16);
+						}
+					}
+
+				}
+
+			}
+
+
+		}
+
+	}
+
+}

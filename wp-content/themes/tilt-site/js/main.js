@@ -1175,39 +1175,6 @@ $('.close-btn').on('click', function(){
     $('.modal-container').removeClass('visible');
 });
 
-
-// new work page template functions
-
-$(document).ready(function(){
-  $('.image_carousel').slick({
-    centerMode: true,
-    initialSlide: 1,
-    infinite: true,
-    dots: true,
-    slidesToShow: 3,
-    nextArrow: false,
-    prevArrow: false,
-    slidesToScroll: 1,
-    responsive: [
-    {
-            breakpoint: 980, // tablet breakpoint
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480, // mobile breakpoint
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        ]
-    });
-
-});
-
 $(document).ready(function(){
 
     var playVideo = function (video) {
@@ -1298,6 +1265,32 @@ $(document).ready(function(){
     }
 
 
+
+    if($('body').hasClass('page-template-page-about')){
+
+        $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+        $(window).scroll(function(){
+
+            if ( $('.about-full-height-video').isInViewport() ) {
+                $('#full--video').addClass('fixed');
+
+        } else {
+            $('#full--video').removeClass('fixed');
+        }
+        });
+    }
+
+
+
     if(screen.width <= 768){
 
         $('.project_container').each(function(){
@@ -1340,9 +1333,37 @@ $(document).ready(function(){
 
     $("p:empty").remove();
 
-
-
-
 });
 
+$(window).on('load', function() {
+
+    //init slick carousel on work items
+  $('.image_carousel').slick({
+    centerMode: true,
+    initialSlide: 1,
+    infinite: true,
+    dots: true,
+    slidesToShow: 3,
+    nextArrow: false,
+    prevArrow: false,
+    slidesToScroll: 1,
+    responsive: [
+    {
+            breakpoint: 980, // tablet breakpoint
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480, // mobile breakpoint
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        ]
+    });
+
+});
 

@@ -420,9 +420,9 @@ body{
                 @media screen and (min-width: 1025px)and(max-width: 1300px){
                     .module__text{
                         h2 {
-                           @include font-size(26);
-                       }
-                       p {
+                         @include font-size(26);
+                     }
+                     p {
                         @include font-size(12);
                     }
                     .cube {
@@ -1404,10 +1404,10 @@ a {
     }
 
     &:hover::before {
-       width: 0%;
-   }
+     width: 0%;
+ }
 
-   &:after {
+ &:after {
     content: '';
     display: block;
     width: 0%;
@@ -1419,7 +1419,7 @@ a {
 }
 
 &:hover::after {
-   width: 100%;
+ width: 100%;
 }
 
 
@@ -1726,6 +1726,7 @@ a {
         }
     }
 }
+
 .image_carousel {
     display: flex;
     padding: 0px 0 60px 0;
