@@ -64,11 +64,28 @@ header {
         }
     }
     .header-image {
+        display: none;
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
+            display: block;
         height: 100%;
         width: 100%;
         position: relative;
         background-size: cover;
         background-position: center center;
+        }
+
+    }
+    .header-image-mobile {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
+            display: none;
+        }
     }
     .scroll-down {
         position: absolute;

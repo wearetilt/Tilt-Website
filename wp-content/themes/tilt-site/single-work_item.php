@@ -39,18 +39,19 @@ if( have_rows('work_items') ):
       $arrTerms = array();
 
       $image = get_sub_field('header_image'); 
+      $mobileImage = get_sub_field('mobile_header_image'); 
       $video = get_sub_field('video');
       $award = get_sub_field('award_logo');
-
-      $award_image = wp_get_attachment_image_src($award, 'logo')[0];
 
       ?>
 
       <header class="work-item area-dark" >
 
+
         <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
           <!--           <img src="<?php echo $image['url']?>"> -->
         </div>
+        <div class="header-image-mobile" style="background-image: url(<?php echo $mobileImage['url']?>);"></div>
 
         <?php 
 
@@ -83,7 +84,7 @@ if( have_rows('work_items') ):
               endif;
               ?>
               <div class="award-logo">
-                <img src="<?php echo $award_image ?>"/>
+                <img src="<?php echo $award['sizes']['logo'] ?>"/>
               </div>
               <?php 
               if($arrTerms) : 
@@ -314,8 +315,8 @@ if( have_rows('work_items') ):
                       <p><?php echo $text_section_content; ?></p>
                     </div>
                     <div class="text_right">
-                      <h2><?php echo $second_header; ?> </h2>
-                      <p><?php echo $second_text_content; ?></p>
+                        <h2><?php echo $second_header; ?> </h2>
+                        <p><?php echo $second_text_content; ?></p>
                     </div>
                   </div>
                   <?php else: ?>
