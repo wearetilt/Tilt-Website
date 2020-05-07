@@ -179,13 +179,19 @@ header {
     }
     &.work-item {
         .container--header {
-            padding-bottom: 5%;
             padding-top: 1%;
-            position: absolute;
-            bottom: -1px;
+            position: fixed;
+            bottom: 30%;
             width: 100%;
-            background-color: rgba(0,0,0,0.6);
-        } // .monitor-wrapper+.container--header {
+            background-color: transparent;
+
+            @media screen and(min-width: $bp-desktop ){
+                bottom: 35%;
+            }
+
+        }
+
+        // .monitor-wrapper+.container--header {
         //     position: relative;
         //     padding-top: 3%;
         // }
