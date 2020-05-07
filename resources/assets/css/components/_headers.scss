@@ -191,17 +191,17 @@ header {
 
         }
         // .monitor-wrapper+.container--header {
-        //     position: relative;
-        //     padding-top: 3%;
-        // }
-        @media handheld,
-        screen and (min-width: $bp-desktop) {
-            .header-title {
-                width: 50%;
-                float: left;
+                //     position: relative;
+                //     padding-top: 3%;
+                // }
+                @media handheld,
+                screen and (min-width: $bp-desktop) {
+                    .header-title {
+                        width: 50%;
+                        float: left;
+                    }
+                }
             }
-        }
-    }
     &.work-item {
         .container--reel {
             padding: 0;
