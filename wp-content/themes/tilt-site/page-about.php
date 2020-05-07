@@ -71,7 +71,7 @@ get_header(); ?>
 						<div class="video-container">
 
 						<video id="full--video" class="vjs-default-skin" autoplay loop muted playsinline poster="<?php echo get_template_directory_uri(); ?>/images/contact_poster.jpg">
-							<source src="https://player.vimeo.com/external/414675649.hd.mp4?s=9fd1380861da521e262775527f629149d7f5392e&profile_id=175" type="video/mp4">
+							<source src="https://player.vimeo.com/external/415841167.hd.mp4?s=272187621b68ad261884734ea1b4f88c67d22544&profile_id=175" type="video/mp4">
 							</video>
 						</div>
 
