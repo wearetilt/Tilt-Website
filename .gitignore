@@ -11,3 +11,8 @@ npm-debug.log
 wp-content/uploads
 wp-content/uploads/
 /logs
+wp-config.php
+global.min.css
+global.min.css.map
+global.css
+/resources/package-lock.json
