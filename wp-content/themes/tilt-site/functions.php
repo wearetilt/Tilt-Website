@@ -374,6 +374,7 @@ function add_custom_taxonomies() {
       'new_item_name' => __( 'New Content Group name' ),
       'menu_name' => __( 'Content Groups' ),
       'show_admin_column' => true, //see this line
+      'has_archive' => false, //Dont show archive of this taxonomy
     ),
     // Control the slugs used for this taxonomy
     'rewrite' => array(
