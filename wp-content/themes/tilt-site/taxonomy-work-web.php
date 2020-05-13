@@ -39,6 +39,12 @@ get_header(); ?>
                     <a class="list-film" href="/film">Film</a>
                 </header>
 
+            <div class="web-show-reel area-dark">
+                <div class="embed-container">
+                    <iframe src="https://player.vimeo.com/video/414888147" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+
                 <div class="group-container area-dark">
                     <?php
                     while (have_posts()) :
