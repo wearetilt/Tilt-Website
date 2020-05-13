@@ -1347,6 +1347,7 @@ $(window).on('load', function() {
     nextArrow: false,
     prevArrow: false,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     responsive: [
     {
             breakpoint: 980, // tablet breakpoint

@@ -1297,7 +1297,7 @@ section.text-section--centre h2, section.text-section--centre a { display: block
 
 .image_carousel .carousel-image.slick-current img { opacity: 1; }
 
-.image_carousel .slick-dots { position: absolute; display: block; bottom: 32%; text-align: center; margin: 0 auto; width: 100%; }
+.image_carousel .slick-dots { position: absolute; display: block; bottom: 30%; text-align: center; margin: 0 auto; width: 100%; }
 
 @media screen and (min-width: 1900px) { .image_carousel .slick-dots { bottom: 20%; } }
 
@@ -1307,7 +1307,7 @@ section.text-section--centre h2, section.text-section--centre a { display: block
 
 @media screen and (min-width: 1024px) { .image_carousel .slick-dots li button { font-size: 0; line-height: 0; display: block; width: 20px; height: 20px; padding: 5px; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; } }
 
-@media screen and (min-width: 1024px) { .image_carousel .slick-dots li button:before { font-family: 'slick'; font-size: 28px; line-height: 20px; position: absolute; top: 30px; left: 0; width: 20px; height: 20px; content: '•'; text-align: center; opacity: .25; color: white; -webkit-font-smoothing: antialiased; } }
+@media screen and (min-width: 1024px) { .image_carousel .slick-dots li button:before { font-family: 'slick'; font-size: 38px; line-height: 20px; position: absolute; top: 30px; left: 0; width: 20px; height: 20px; content: '•'; text-align: center; opacity: .25; color: white; -webkit-font-smoothing: antialiased; } }
 
 @media screen and (min-width: 1024px) { .image_carousel .slick-dots li.slick-active button:before { opacity: 1; color: white; } }
 

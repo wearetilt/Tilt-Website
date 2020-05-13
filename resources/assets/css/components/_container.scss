@@ -1012,8 +1012,9 @@ body{
         p {
             color: $c-tilt-pink;
             text-transform: uppercase;
-            @include font-size(14);
+            @include font-size(20);
             font-family: $f-seroot-lt;
+            letter-spacing: 0.75px;
         }
     }
 
@@ -1758,7 +1759,7 @@ a {
     .slick-dots {
         position: absolute;
         display: block;
-        bottom: 32%;
+        bottom: 30%;
         text-align: center;
         margin: 0 auto;
         width: 100%;
@@ -1793,7 +1794,7 @@ a {
                 &:before {
                     @media screen and (min-width: $bp-desktop) {
                         font-family: 'slick';
-                        font-size: 28px;
+                        font-size: 38px;
                         line-height: 20px;
                         position: absolute;
                         top: 30px;
