@@ -871,6 +871,10 @@ body{
 
           .main-work-content {
 
+            .container:last-of-type{
+                padding-bottom: 60px !important;
+            }
+
             .work-item {
                 display: block;
                 @media screen and (min-width: $bp-desktop){
