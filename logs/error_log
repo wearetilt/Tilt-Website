@@ -2229,3 +2229,4 @@
 [Wed May 06 16:05:40.704258 2020] [php7:error] [pid 202] [client 127.0.0.1:54860] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /Users/joshhudson/Sites/Tilt-Website/wp-content/themes/tilt-site/single-work_item.php on line 49, referer: http://wearetilt.local/wp-admin/post.php?post=5584&action=edit
 >>>>>>> develop
 [Wed May 13 10:05:53.435366 2020] [php7:warn] [pid 2119] [client 127.0.0.1:53672] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /Users/joshhudson/Sites/Tilt-Website/wp-includes/pomo/plural-forms.php on line 210
+[Thu May 14 17:06:19.876943 2020] [php7:warn] [pid 9386] [client 127.0.0.1:54368] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /Users/joshhudson/Sites/Tilt-Website/wp-includes/pomo/plural-forms.php on line 210

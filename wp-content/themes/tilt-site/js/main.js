@@ -1343,7 +1343,7 @@ $(window).on('load', function() {
     initialSlide: 1,
     infinite: true,
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     nextArrow: false,
     prevArrow: false,
     slidesToScroll: 1,
@@ -1352,7 +1352,7 @@ $(window).on('load', function() {
     {
             breakpoint: 980, // tablet breakpoint
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         },
