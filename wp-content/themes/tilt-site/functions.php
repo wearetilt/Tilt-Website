@@ -86,7 +86,8 @@ function twentyfifteen_setup() {
 
 	add_image_size( 'team', 624, 624, true);
 	add_image_size( 'talk-thumb', 683, 400, true);
-  add_image_size( 'logo', 9999, 87, false);
+  	add_image_size( 'award_size', 9999, 87, false);
+  	add_image_size('award_mobile_size', 9999, 67, false);
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(

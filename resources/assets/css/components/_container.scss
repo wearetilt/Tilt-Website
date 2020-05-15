@@ -1141,6 +1141,22 @@ body{
         }
         .award-logo {
             margin-top: 15px;
+
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                 display: block;
+            }    
+
+
+            &.mobile{
+                display: block;
+                
+                @media screen and (min-width: $bp-desktop) {
+                    display: none;
+                }
+            }
+
         }
     }
 }

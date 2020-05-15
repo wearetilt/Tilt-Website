@@ -41,7 +41,10 @@ if( have_rows('work_items') ):
       $image = get_sub_field('header_image'); 
       $mobileImage = get_sub_field('mobile_header_image'); 
       $video = get_sub_field('video');
-      $award = get_sub_field('award_logo');
+      $awardLogo = get_sub_field('award_logo');
+      $award = wp_get_attachment_image_src( $awardLogo, 'award_size' )[0]; 
+      $awardMobile = wp_get_attachment_image_src( $awardLogo, 'award_mobile_size' )[0]; 
+ 
 
       ?>
 
@@ -84,7 +87,10 @@ if( have_rows('work_items') ):
               endif;
               ?>
               <div class="award-logo">
-                <img src="<?php echo $award['sizes']['logo'] ?>"/>
+                <img src="<?php echo $award?>"/>
+              </div>
+              <div class="award-logo mobile">
+                <img src="<?php echo $awardMobile?>"/>
               </div>
               <?php 
               if($arrTerms) : 
