@@ -1329,7 +1329,7 @@ $(document).ready(function(){
                 $('img').css('opacity', '1');
                 $('.overlay', this.element).css('opacity', '1');
                 $('img', this.element).css('opacity', '0.7');
-                }, offset:'45%'
+                }, offset:'0%'
             })
         });
 
@@ -1340,7 +1340,7 @@ $(document).ready(function(){
                 $('img').css('opacity', '1');
                 $('.overlay', this.element).css('opacity', '1');
                 $('img', this.element).css('opacity', '0.7');
-                }, offset:'45%'
+                }, offset:'40%'
             })
         });
 

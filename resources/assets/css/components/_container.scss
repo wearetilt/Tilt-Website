@@ -443,7 +443,6 @@ body{
             }
 
         }
-
     }
 
     @media handheld,
@@ -873,6 +872,11 @@ body{
 
             .container:last-of-type{
                 padding-bottom: 60px !important;
+
+                &.full_image_container {
+                    padding-bottom: 0px !important;
+                }
+
             }
 
             .work-item {
@@ -1463,6 +1467,11 @@ a {
         margin-left: 50px;
 
     }
+
+    &.no_header {
+        margin-top: 42px;
+    }
+
 }
 .text_single {
     display: block;

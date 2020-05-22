@@ -75,17 +75,17 @@ if( have_rows('work_items') ):
           <!-- title section -->
           <div class="container container--header" <?php echo get_sub_field('type') == 'monitor' ? 'style="background-color: transparent"' : ''; ?> >
             <div class="header-title">
-              <p class="tag--work-body"><?php echo get_sub_field('category');?></p>
-              <h1>
-                <?php echo get_sub_field('title_bold');?>
-              </h1>
-              <?php 
+                            <?php 
               if(get_sub_field('title')) : 
                 ?> 
                 <p><?php echo get_sub_field('title'); ?></p>
                 <?php
               endif;
               ?>
+              <h1>
+                <?php echo get_sub_field('title_bold');?>
+              </h1>
+              <p class="tag--work-body"><?php echo get_sub_field('category');?></p>
               <div class="award-logo">
                 <img src="<?php echo $award?>"/>
               </div>
@@ -317,13 +317,27 @@ if( have_rows('work_items') ):
                   ?>
                   <div class="container text_section_container area-dark">
                     <div class="text_mid">
-                      <h2><?php echo $text_section_header; ?> </h2>
+
+                      <?php if( $text_section_header != ''){ ?>
+                        <h2><?php echo $text_section_header; ?> </h2>
+                      <?php } else {} ?>
+
                       <p><?php echo $text_section_content; ?></p>
+
                     </div>
-                    <div class="text_right">
-                        <h2><?php echo $second_header; ?> </h2>
+
+                    <?php if( $second_header != ''){ ?>
+                      <div class="text_right">
+                          <h2><?php echo $second_header; ?> </h2>
+                          <p><?php echo $second_text_content; ?></p>
+                      </div
+
+                    <?php } else { ?>
+                      <div class="text_right no_header">
                         <p><?php echo $second_text_content; ?></p>
-                    </div>
+                      </div>
+                    <?php } ?>
+                  </div>
                   </div>
                   <?php else: ?>
                     <div class="container text_section_container area-dark">
@@ -450,7 +464,7 @@ if( have_rows('work_items') ):
                         <div class="left-project"><a href="<?php echo get_permalink($leftproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($left);?>" alt="<?php echo $alt_left; ?>"></a>
                           <div class="related-titles">
                             <?php if($tax_left[0]->name != ''):?>
-                              <p class="tag"><?php echo $tax_left[0]->name; ?></p>
+                              <p><?php echo $tax_left[0]->name; ?></p>
                               <?php else: endif;?>
 
                               <h2><?php echo get_the_title($left);?></h2>
@@ -464,7 +478,7 @@ if( have_rows('work_items') ):
                           <div class="right-project"><a href="<?php echo get_permalink($rightproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($right);?>" alt="<?php echo $alt_right; ?>"></a>
                             <div class="related-titles">
                               <?php if($tax_right[0]->name != ''): ?>
-                                <p class="tag"><?php echo $tax_right[0]->name; ?></p>
+                                <p><?php echo $tax_right[0]->name; ?></p>
                                 <?php else: endif;?>
                                 <h2><?php echo get_the_title($right);?></h2>
                                 <p><?php 
