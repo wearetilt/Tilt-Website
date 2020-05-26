@@ -358,35 +358,48 @@ function add_custom_taxonomies() {
     ),
   ));
 
-  register_taxonomy('content_group', 'work_item', array(
-    // Hierarchical taxonomy (like categories)
-    'hierarchical' => true,
-    // This array of options controls the labels displayed in the WordPress Admin UI
-    'labels' => array(
-      'name' => _x( 'Content Group', 'taxonomy general name' ),
-      'singular_name' => _x( 'Group', 'taxonomy singular name' ),
-      'search_items' =>  __( 'Search Content Groupings' ),
-      'all_items' => __( 'All Content Groups' ),
-      'parent_item' => __( 'None' ),
-      'parent_item_colon' => __( 'None:' ),
-      'edit_item' => __( 'Edit Content Group' ),
-      'update_item' => __( 'Update Content Group' ),
-      'add_new_item' => __( 'Add New Content Group' ),
-      'new_item_name' => __( 'New Content Group name' ),
-      'menu_name' => __( 'Content Groups' ),
-      'show_admin_column' => true, //see this line
-      'has_archive' => false, //Dont show archive of this taxonomy
-    ),
-    // Control the slugs used for this taxonomy
-    'rewrite' => array(
-      'with_front' => false, // Don't display the category base before "/locations/"
-      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
-    ),
-  ));
-
-
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
+
+// Register Custom Taxonomy
+function content_group() {
+
+	$labels = array(
+		'name'                       => _x( 'Content Groups', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Content Group', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Content Group', 'text_domain' ),
+		'all_items'                  => __( 'All Items', 'text_domain' ),
+		'parent_item'                => __( 'Parent Item', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
+		'new_item_name'              => __( 'New Item Name', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Item', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Item', 'text_domain' ),
+		'update_item'                => __( 'Update Item', 'text_domain' ),
+		'view_item'                  => __( 'View Item', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+		'popular_items'              => __( 'Popular Items', 'text_domain' ),
+		'search_items'               => __( 'Search Items', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+		'no_terms'                   => __( 'No items', 'text_domain' ),
+		'items_list'                 => __( 'Items list', 'text_domain' ),
+		'items_list_navigation'      => __( 'Items list navigation', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => false,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+		'rewrite'                    => false,
+	);
+	register_taxonomy( 'content_group', array( 'work_item' ), $args );
+
+}
+add_action( 'init', 'content_group', 0 );
 
 add_rewrite_rule( 'web/?$', 'index.php?work=web', 'top' );
 add_rewrite_rule( 'motion/?$', 'index.php?work=motion', 'top' );
