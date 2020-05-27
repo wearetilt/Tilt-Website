@@ -134,8 +134,8 @@ if (have_posts()) : ?>
         <div class="pagination">
 
     <?php 
-        $prev_link = get_previous_posts_link(__('<span>‹</span> Prev'));
-        $next_link = get_next_posts_link(__('Next <span>›</span>'));
+        $prev_link = get_previous_posts_link(__('Prev'));
+        $next_link = get_next_posts_link(__('Next'));
 
             if($prev_link) {
                 echo str_replace('<a ', '<a class="project-navigation paginate_prev" ', $prev_link);

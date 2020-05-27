@@ -256,7 +256,7 @@ footer {
             display: block;
             float: left;
             text-align: center;
-            line-height: 1.8;
+            line-height: 0.7;
             @media handheld,
             screen and (min-width: $bp-desktop) {
                 padding: 12px 0px 10px 0px;
@@ -266,6 +266,29 @@ footer {
                 opacity: 0.5;
             }
         }
+
+        .paginate_next {
+            background-color: #fff !important;
+            color: black;
+
+            &:after {
+                content: '›';
+                display: inline-block;
+                font-size: 33px;
+                margin-left: 25px;
+            }
+
+        }
+
+        .paginate_prev {
+            &:before {
+                content: '‹';
+                display: inline-block;
+                font-size: 33px;
+                margin-right: 25px;
+            }
+        }
+
 
         .numbers {
             width: 40%;
@@ -277,7 +300,7 @@ footer {
                 height: 100%;
                 padding: 12px 0px 10px 0px;
                 font-family: $f-seroot-thn;
-                line-height: 1.5;
+                line-height: 1.7;
                 @include font-size(20);
                 color: #fff;
 
