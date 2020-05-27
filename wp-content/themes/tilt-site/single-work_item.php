@@ -54,7 +54,11 @@ if( have_rows('work_items') ):
         <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
           <!--           <img src="<?php echo $image['url']?>"> -->
         </div>
+        <?php if( $mobileImage ){ ?>
         <div class="header-image-mobile" style="background-image: url(<?php echo $mobileImage['url']?>);"></div>
+        <?php } else { ?>
+          <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
+        <?php } ?>
 
         <?php 
 
@@ -85,7 +89,7 @@ if( have_rows('work_items') ):
               <h1>
                 <?php echo get_sub_field('title_bold');?>
               </h1>
-              <p class="tag--work-body"><?php echo get_sub_field('category');?></p>
+              <p><?php echo get_sub_field('category');?></p>
               <div class="award-logo">
                 <img src="<?php echo $award?>"/>
               </div>
@@ -330,14 +334,13 @@ if( have_rows('work_items') ):
                       <div class="text_right">
                           <h2><?php echo $second_header; ?> </h2>
                           <p><?php echo $second_text_content; ?></p>
-                      </div
+                      </div>
 
                     <?php } else { ?>
                       <div class="text_right no_header">
                         <p><?php echo $second_text_content; ?></p>
                       </div>
                     <?php } ?>
-                  </div>
                   </div>
                   <?php else: ?>
                     <div class="container text_section_container area-dark">
@@ -552,13 +555,16 @@ if( have_rows('work_items') ):
                             ?>
                             <div class="container full_image_container area-dark  <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
                               <img class="full-size" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
-                              <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
+                              
+                                <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
+
                               <?php 
                             else : 
                               ?>
                               <div class="container padded_image_container area-dark container--no-padding <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
                                 <img src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
                                 <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
+
                                 <?php
                               endif;
                               ?>
