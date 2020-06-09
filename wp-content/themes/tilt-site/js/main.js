@@ -1322,7 +1322,7 @@ $(document).ready(function(){
             })
         });
 
-        $('.group-container .group--left').each(function(){
+        $('.group-container .news--icon').each(function(){
             $(this).waypoint({
               handler: function(direction) {
                 $('overlay').css('opacity', '0');
@@ -1332,18 +1332,6 @@ $(document).ready(function(){
                 }, offset:'40%'
             })
         });
-
-        $('.group-container .group--right').each(function(){
-            $(this).waypoint({
-              handler: function(direction) {
-                $('overlay').css('opacity', '0');
-                $('img').css('opacity', '1');
-                $('.overlay', this.element).css('opacity', '1');
-                $('img', this.element).css('opacity', '0.7');
-                }, offset:'40%'
-            })
-        });
-
 
     }
     else {

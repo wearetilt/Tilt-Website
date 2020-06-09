@@ -54,11 +54,11 @@ if( have_rows('work_items') ):
         <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
           <!--           <img src="<?php echo $image['url']?>"> -->
         </div>
-        <?php if( $mobileImage ){ ?>
+        <?php if( $mobileImage ) : ?>
         <div class="header-image-mobile" style="background-image: url(<?php echo $mobileImage['url']?>);"></div>
-        <?php } else { ?>
+        <?php else : ?>
           <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
-        <?php } ?>
+        <?php endif; ?>
 
         <?php 
 
