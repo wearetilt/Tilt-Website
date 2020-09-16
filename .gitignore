@@ -9,6 +9,7 @@ wp-content/themes/tilt-site/css/video-js.min.css
 /tilt-site_tidy/
 npm-debug.log
 wp-content/uploads
+wp-content/uploads.old
 wp-content/uploads/
 /logs
 wp-config.php
