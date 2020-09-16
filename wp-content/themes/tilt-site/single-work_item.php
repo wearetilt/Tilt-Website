@@ -546,6 +546,7 @@ if( have_rows('work_items') ):
                       elseif( get_row_layout() == 'image'):
                         $image = wp_get_attachment_image_src(get_sub_field('image'), false);
                         $mobile_image = wp_get_attachment_image_src(get_sub_field('mobile_image'), false);
+
                         $image_id = attachment_url_to_postid($image[0]);
                         $mobile_image_id = attachment_url_to_postid($mobile_image[0]);
                         $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
@@ -554,17 +555,18 @@ if( have_rows('work_items') ):
                           if( get_sub_field('image_full_size')) : 
                             ?>
                             <div class="container full_image_container area-dark  <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
-                              <img class="full-size" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
-                              
-                                <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
-
+                                  <img class="full-size" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php if( $mobile_image) : ?>
+                                  <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php endif; ?>
                               <?php 
                             else : 
                               ?>
                               <div class="container padded_image_container area-dark container--no-padding <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
-                                <img src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
-                                <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
-
+                                  <img class="img-contained" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php if( $mobile_image) : ?>
+                                  <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php endif; ?>
                                 <?php
                               endif;
                               ?>
