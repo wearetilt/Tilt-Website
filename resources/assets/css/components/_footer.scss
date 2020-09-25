@@ -30,15 +30,17 @@ footer {
             background:url('../images/button_arrow_white.png') center right no-repeat;
         }
         .container {
-            padding: 16% 18.75%;
-            height: 250px;
-            background: linear-gradient(270deg, #ff4c61, #ff594c, #ff4c74);
-            background-size: 600% 600%;
-            animation: AnimationName 30s ease infinite;
+            padding: 16% 5.5%;
+            height: 314px;
+            background: #FE4C74;
             @media handheld,
             screen and (min-width: $bp-desktop) {
+                padding: 16% 18.75%;
                 height: 478px;
                 padding: 0 percentage(381/2032);
+                background: linear-gradient(270deg, #ff4c61, #ff594c, #ff4c74);
+                background-size: 600% 600%;
+                animation: AnimationName 30s ease infinite;
             }
         }
         @keyframes AnimationName {
@@ -55,27 +57,29 @@ footer {
         }
     }
     #popup{
-        display: inline-block;
+        display: flex;
+        flex-grow: 0.2;
         color: #ffffff;
         background: transparent;
         cursor: pointer;
-        font-family: $f-seroot;
-        font-weight: 300;
-        font-size: 15px;
+        font-family: $f-seroot-lt;
+        @include font-size(12);
         letter-spacing: 0.020em;
         line-height: $icon-size;
-        margin-bottom: 14px;
-        text-align: center;
         text-transform: none;
-        width: 12rem;
         border: none;
         outline: none;
+        padding: 0;
+
         @media screen and (min-width: $bp-desktop){
             margin-bottom: $icon-size;
-        }
-        @media screen and (max-width: 800px){
-            display: block;
-            width: 100%;
+            display: inline-block;
+            width: 12rem;
+            margin-bottom: 14px;
+            @include font-size(15);
+            font-weight: 300;
+            font-family: $f-seroot;
+            text-align: center;
         }
     }
     &.password-footer {
@@ -85,15 +89,25 @@ footer {
             position: fixed;
         }
     }
+    .footer-lower {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $bp-desktop ) { 
+            display: block;
+        }
+    }
     .footer-upper{
-        border-bottom: 1px solid $c-grey-3a;
-        text-align: center;
-        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        order: 1;
         @media screen and (min-width: 1144px){
             padding-bottom: 24px;
             display: inline-block;
             width: 100%;
             text-align: left;
+            border-bottom: 1px solid #3a3a3a;
         }
         .footer-links {
             display: none;
@@ -121,20 +135,19 @@ footer {
         }
     }
     .footer-item--logo {
-        display: block;
+        display: flex;
+        align-items: center;
         @media screen and (min-width: $bp-desktop){
             display: inline-block;
             vertical-align: middle;
         }
     }
     .phone-container{
-        padding: 0;
+        display: flex;
+        align-items: center;
         @media screen and (min-width: $bp-desktop){
             display: inline-block;
             padding-left: 33px;
-        }
-        @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
-            float: none;
         }
     }
 
@@ -156,10 +169,13 @@ footer {
     }
     #footnote-1{
         clear: both;
-        padding-top: 14px;
+        padding-top: 34px;
         font-family: $f-seroot;
         @include font-size(10);
-        color: #616161; 
+        color: #ffffff;
+        opacity: 0.5; 
+        display: flex;
+        order: 2;
         @media screen and (min-width: $bp-desktop){
             padding-top: 44px;
             @include font-size(12);
@@ -190,31 +206,43 @@ footer {
 
 .privacy_policy{
     color: #ffffff;
-    font-family: $f-seroot;
+    font-family: $f-seroot-lt;
     font-size: 12px;
     line-height: 25px;
     letter-spacing: 0.025em;
     margin-top: 17px;
     float: left;
     text-transform: capitalize;
+    @media screen and (min-width: $bp-desktop){
+        font-family: $f-seroot;
+    }
 }
 
 .health_and_safety {
     color: #ffffff;
-    font-family: $f-seroot;
+    font-family: $f-seroot-lt;
     font-size: 12px;
     line-height: 25px;
     letter-spacing: 0.025em;
     margin-top: 17px;
-    float: left;
+    float: right;
     text-transform: capitalize;
+    padding: 0;
+
+  @media screen and (min-width: $bp-desktop){
+    float: left;
     padding: 0 1rem;
+    font-family: $f-seroot;
+  }
+
 }
 
 #footer-contacts {
   @extend %clearfix;
-  text-align: center;
-  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    order: 1;
   @media screen and (min-width: $bp-desktop){
       float: right;
       display: inline-block;
@@ -233,7 +261,7 @@ footer {
 #signoff {
     @extend %clearfix;
     background-color: $c-bg;
-    padding: 10px 4%;
+    padding: 45px 5.066%;
     @media screen and (min-width: $bp-desktop){
         padding: 33px 4%;
     }
@@ -340,28 +368,31 @@ footer {
 
     #footer-icons {
         @extend %clearfix;
-        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+
         @media screen and (min-width: $bp-desktop){
             margin-bottom: $icon-size;
-        }
-        padding: 0;
-        display: inline-block;
-        text-align: center;
-        vertical-align: top;
-        @media all and(max-width: 600px) {
+            padding: 0;
+            display: inline-block;
             text-align: center;
-            .footer-icon {
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
+            vertical-align: top;
         }
+
+        &:after {
+            content: none !important;
+        }
+
     }
 
     .footer-icon {
-        display: inline-block;
-        width: $icon-size;
-        height: $icon-size;
+
+        @media screen and (min-width: $bp-desktop){
+                display: inline-block;
+                width: $icon-size;
+                height: $icon-size;
+        }
         &:hover {
             opacity: 0.7;
         }
@@ -369,16 +400,6 @@ footer {
             height: 100%;
             width: 100%;
             display: block;
-        }
-        &.footer-icon {
-            margin-left: $icon-size;
-            &:first-child {
-                margin-left: 5px;
-            }
-            @media handheld,
-            screen and (min-width: 0px) and (max-width:1024px) {
-                margin-left: $icon-size;
-            }
         }
     }
 

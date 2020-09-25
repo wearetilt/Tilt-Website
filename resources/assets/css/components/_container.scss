@@ -341,16 +341,15 @@ body{
 }
 
 .text-container {
-    position: relative;
     &.center {
         text-align: center;
     }
     footer & {
-        top: 69%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
+        position: absolute;
+        top: 95px;
         @media handheld,
         screen and (min-width: $bp-desktop) {
+            position: relative;
             top: 68%;
         }
         } // top: 50%;
@@ -1135,6 +1134,7 @@ body{
             @media screen and (min-width: $bp-desktop) {
                 line-height: 20px;
                 @include font-size(20);
+                letter-spacing: 1px;
             }
 
         }
@@ -1144,6 +1144,8 @@ body{
             padding: 6.5px 0;
             @media screen and (min-width: $bp-desktop) {
                 font-size: 70px;
+                line-height: 1;
+                padding: 0 0 6px 0;
             }
         }
         .award-logo {

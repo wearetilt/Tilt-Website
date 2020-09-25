@@ -65,12 +65,15 @@ header {
     }
 
     .header-image {
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        background-size: cover;
-        background-position: center center;
+        display: none;
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+        }
 
     }
     
@@ -80,6 +83,9 @@ header {
         position: relative;
         background-size: cover;
         background-position: center center;
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
     }
 
     .scroll-down {
@@ -222,9 +228,9 @@ header {
         height: 100vh;
         z-index: 1;
         .container--header {
-            padding-top: 1%;
+            padding: 0 5.6%;
             position: fixed;
-            bottom: 43%;
+            bottom: 40.5%;
             width: 100%;
             background-color: transparent;
 

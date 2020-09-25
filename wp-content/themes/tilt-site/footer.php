@@ -21,7 +21,7 @@ $blog_id = get_current_blog_id();
 <footer id="footer" class="area-dark">
 	<div class="container">
 		<div class="text-container">
-			<p class="first-para sans-serif"><strong class="highlight">Like what you see?</strong> Feel free to get in touch to see how we can help shape your story.</p>
+			<p class="first-para sans-serif"><strong class="highlight">Like what you see?</strong> See how we can help shape your story.</p>
 			<a class="cube--link" href="<?php echo site_url(); ?>/contact">
 				<div class="cube">
 					<div class="cube--front">
