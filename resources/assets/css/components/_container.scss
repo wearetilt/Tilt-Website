@@ -443,7 +443,6 @@ body{
             }
 
         }
-
     }
 
     @media handheld,
@@ -871,6 +870,15 @@ body{
 
           .main-work-content {
 
+            .container:last-of-type{
+                padding-bottom: 60px !important;
+
+                &.full_image_container {
+                    padding-bottom: 0px !important;
+                }
+
+            }
+
             .work-item {
                 display: block;
                 @media screen and (min-width: $bp-desktop){
@@ -903,7 +911,7 @@ body{
                         top: 37%;
                     }
                     p {
-                        @include font-size(16);
+                        @include font-size(20);
                         font-family: $f-seroot-lt;
                         letter-spacing: 1px;
                         text-transform: uppercase;
@@ -1012,8 +1020,9 @@ body{
         p {
             color: $c-tilt-pink;
             text-transform: uppercase;
-            @include font-size(14);
+            @include font-size(20);
             font-family: $f-seroot-lt;
+            letter-spacing: 0.75px;
         }
     }
 
@@ -1121,7 +1130,6 @@ body{
             font-size: 20px;
             font-family: $f-seroot-lt;
             line-height: 26px;
-            padding: 0 4px;
             text-transform: uppercase;
             @media screen and (min-width: $bp-desktop) {
                 line-height: 20px;
@@ -1136,6 +1144,22 @@ body{
         }
         .award-logo {
             margin-top: 15px;
+
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                 display: block;
+            }    
+
+
+            &.mobile{
+                display: block;
+                
+                @media screen and (min-width: $bp-desktop) {
+                    display: none;
+                }
+            }
+
         }
     }
 }
@@ -1290,7 +1314,7 @@ body{
 }
 
 .looping-video {
-    padding: 12.0570866142% 0%;
+    padding: 0px 0 180px 0;
     video {
         width: 100%;
         height: 100vh;
@@ -1442,6 +1466,11 @@ a {
         margin-left: 50px;
 
     }
+
+    &.no_header {
+        margin-top: 42px;
+    }
+
 }
 .text_single {
     display: block;
@@ -1585,10 +1614,21 @@ a {
         padding: 0px 0px 180px 0px;
     }
     .full-size {
+        display: none;
+        @media screen and (min-width: $bp-desktop) {
         width: 100%;
         height: auto;
+        display: block;
+
+        }
+    }
+    .mobile-image {
+
+        width: 100%;
+        height: auto;
+
         @media screen and (min-width: $bp-desktop) {
-            height: auto;
+            display: none;
 
         }
     }
@@ -1599,12 +1639,30 @@ a {
     @media screen and (min-width: $bp-desktop) {
         padding: 0px 6.25% 180px 6.25%;
     }
-    img {
+    .img-contained {
+
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+
+    .mobile-image {
+
+        width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto;
-        max-width: 100%;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+
+        }
     }
+
 }
 
 .padded_image_container_long {
@@ -1751,8 +1809,8 @@ a {
         text-align: center;
         margin: 0 auto;
         width: 100%;
-        @media screen and (min-width: 1900px) {
-            bottom: 20%;
+        @media screen and (min-width: 1350px) {
+            bottom: 18%;
         }
         li {
             display: none;
@@ -1782,7 +1840,7 @@ a {
                 &:before {
                     @media screen and (min-width: $bp-desktop) {
                         font-family: 'slick';
-                        font-size: 28px;
+                        font-size: 38px;
                         line-height: 20px;
                         position: absolute;
                         top: 30px;

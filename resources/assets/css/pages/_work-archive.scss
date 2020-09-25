@@ -64,7 +64,7 @@
     .fullpage-overlay {
         z-index: 1000000;
     }
-    .film-show-reel, .motion-show-reel {
+    .film-show-reel, .motion-show-reel, .web-show-reel {
         z-index: 6;
         top: 60px;
         position: relative;
@@ -126,7 +126,7 @@
                 top: 37%;
             }
             p {
-                @include font-size(16);
+                @include font-size(20);
                 font-family: $f-seroot-lt;
                 letter-spacing: 1px;
                 text-transform: uppercase;

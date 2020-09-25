@@ -41,7 +41,10 @@ if( have_rows('work_items') ):
       $image = get_sub_field('header_image'); 
       $mobileImage = get_sub_field('mobile_header_image'); 
       $video = get_sub_field('video');
-      $award = get_sub_field('award_logo');
+      $awardLogo = get_sub_field('award_logo');
+      $award = wp_get_attachment_image_src( $awardLogo, 'award_size' )[0]; 
+      $awardMobile = wp_get_attachment_image_src( $awardLogo, 'award_mobile_size' )[0]; 
+ 
 
       ?>
 
@@ -51,7 +54,11 @@ if( have_rows('work_items') ):
         <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
           <!--           <img src="<?php echo $image['url']?>"> -->
         </div>
+        <?php if( $mobileImage ) : ?>
         <div class="header-image-mobile" style="background-image: url(<?php echo $mobileImage['url']?>);"></div>
+        <?php else : ?>
+          <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
+        <?php endif; ?>
 
         <?php 
 
@@ -72,19 +79,22 @@ if( have_rows('work_items') ):
           <!-- title section -->
           <div class="container container--header" <?php echo get_sub_field('type') == 'monitor' ? 'style="background-color: transparent"' : ''; ?> >
             <div class="header-title">
-              <p class="tag--work-body"><?php echo get_sub_field('category');?></p>
-              <h1>
-                <?php echo get_sub_field('title_bold');?>
-              </h1>
-              <?php 
+                            <?php 
               if(get_sub_field('title')) : 
                 ?> 
                 <p><?php echo get_sub_field('title'); ?></p>
                 <?php
               endif;
               ?>
+              <h1>
+                <?php echo get_sub_field('title_bold');?>
+              </h1>
+              <p><?php echo get_sub_field('category');?></p>
               <div class="award-logo">
-                <img src="<?php echo $award['sizes']['logo'] ?>"/>
+                <img src="<?php echo $award?>"/>
+              </div>
+              <div class="award-logo mobile">
+                <img src="<?php echo $awardMobile?>"/>
               </div>
               <?php 
               if($arrTerms) : 
@@ -311,13 +321,26 @@ if( have_rows('work_items') ):
                   ?>
                   <div class="container text_section_container area-dark">
                     <div class="text_mid">
-                      <h2><?php echo $text_section_header; ?> </h2>
+
+                      <?php if( $text_section_header != ''){ ?>
+                        <h2><?php echo $text_section_header; ?> </h2>
+                      <?php } else {} ?>
+
                       <p><?php echo $text_section_content; ?></p>
+
                     </div>
-                    <div class="text_right">
-                        <h2><?php echo $second_header; ?> </h2>
+
+                    <?php if( $second_header != ''){ ?>
+                      <div class="text_right">
+                          <h2><?php echo $second_header; ?> </h2>
+                          <p><?php echo $second_text_content; ?></p>
+                      </div>
+
+                    <?php } else { ?>
+                      <div class="text_right no_header">
                         <p><?php echo $second_text_content; ?></p>
-                    </div>
+                      </div>
+                    <?php } ?>
                   </div>
                   <?php else: ?>
                     <div class="container text_section_container area-dark">
@@ -444,7 +467,7 @@ if( have_rows('work_items') ):
                         <div class="left-project"><a href="<?php echo get_permalink($leftproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($left);?>" alt="<?php echo $alt_left; ?>"></a>
                           <div class="related-titles">
                             <?php if($tax_left[0]->name != ''):?>
-                              <p class="tag"><?php echo $tax_left[0]->name; ?></p>
+                              <p><?php echo $tax_left[0]->name; ?></p>
                               <?php else: endif;?>
 
                               <h2><?php echo get_the_title($left);?></h2>
@@ -458,7 +481,7 @@ if( have_rows('work_items') ):
                           <div class="right-project"><a href="<?php echo get_permalink($rightproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($right);?>" alt="<?php echo $alt_right; ?>"></a>
                             <div class="related-titles">
                               <?php if($tax_right[0]->name != ''): ?>
-                                <p class="tag"><?php echo $tax_right[0]->name; ?></p>
+                                <p><?php echo $tax_right[0]->name; ?></p>
                                 <?php else: endif;?>
                                 <h2><?php echo get_the_title($right);?></h2>
                                 <p><?php 
@@ -522,19 +545,28 @@ if( have_rows('work_items') ):
                         <?php
                       elseif( get_row_layout() == 'image'):
                         $image = wp_get_attachment_image_src(get_sub_field('image'), false);
+                        $mobile_image = wp_get_attachment_image_src(get_sub_field('mobile_image'), false);
+
                         $image_id = attachment_url_to_postid($image[0]);
+                        $mobile_image_id = attachment_url_to_postid($mobile_image[0]);
                         $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
                         if($image) :
 
                           if( get_sub_field('image_full_size')) : 
                             ?>
                             <div class="container full_image_container area-dark  <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
-                              <img class="full-size" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
+                                  <img class="full-size" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php if( $mobile_image) : ?>
+                                  <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php endif; ?>
                               <?php 
                             else : 
                               ?>
                               <div class="container padded_image_container area-dark container--no-padding <?php get_sub_field('padding_bottom') ? 'container--half-bot':'';?>">
-                                <img src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
+                                  <img class="img-contained" src="<?php echo $image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php if( $mobile_image) : ?>
+                                  <img class="mobile-image" src="<?php echo $mobile_image[0];?>" alt="<?php echo $alt; ?>">
+                                <?php endif; ?>
                                 <?php
                               endif;
                               ?>

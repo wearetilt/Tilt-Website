@@ -16,36 +16,36 @@
  */
 
 get_header(); ?>
-        <?php
+<?php
 
-            query_posts('cat=-9&paged=' . $paged);
-        if (have_posts()) : ?>
+query_posts('cat=-9&paged=' . $paged);
+if (have_posts()) : ?>
 
-            <?php
+    <?php
             // Start the Loop.
 
-            $numberOfPosts = $wp_query->post_count;
-            $postsLeftOver = $numberOfPosts % 8;
+    $numberOfPosts = $wp_query->post_count;
+    $postsLeftOver = $numberOfPosts % 8;
 
-            $i = 0;
-            ?>
+    $i = 0;
+    ?>
 
-            <div class="container container--no-padding">
+    <div class="container container--no-padding">
 
-            <?php
+        <?php
 
-            while (have_posts()) :
-                the_post();
+        while (have_posts()) :
+            the_post();
 
-                $i++;
-                if ($i === 1) {
-                    ?>
-                        <div class="group-container">
-                            <div class="group group--left">
-                                <div class="module module--2-2  news--icon">
-                                    <?php get_template_part( 'content', 'blog-post-large' ); ?>
-                                </div>
-                            </div>
+            $i++;
+            if ($i === 1) {
+                ?>
+                <div class="group-container">
+                    <div class="group group--left">
+                        <div class="module module--2-2  news--icon">
+                            <?php get_template_part( 'content', 'blog-post-large' ); ?>
+                        </div>
+                    </div>
                     <?php
                 } elseif ($i === 2) {
                     ?>
@@ -53,65 +53,65 @@ get_header(); ?>
                         <div class="module module--1-1 news--icon">
                             <?php get_template_part( 'content', 'blog-post' ); ?>
                         </div>
-                    <?php
-                } elseif ($i === 3) {
-                    ?>
+                        <?php
+                    } elseif ($i === 3) {
+                        ?>
                         <div class="module module--1-1 news--icon news-noimg">
                             <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
                         </div>
-                    <?php
-                } elseif ($i === 4) {
+                        <?php
+                    } elseif ($i === 4) {
+                        ?>
+                        <div class="module module--1-1  news--icon news-noimg">
+                           <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+                       </div>
+                       <?php
+                   } elseif ($i === 5) {
                     ?>
-                            <div class="module module--1-1  news--icon news-noimg">
-                                 <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
-                            </div>
-                    <?php
-                } elseif ($i === 5) {
-                    ?>
-                            <div class="module module--1-1  news--icon">
-                                <?php   get_template_part( 'content', 'blog-post' ); ?>
-                            </div>
-                        </div>
-                    <?php
-                } elseif ($i === 6) {
-                    ?>
-                        <div class="group group--right">
-                            <div class="module module--2-2  news--icon">
-                                <?php   get_template_part( 'content', 'blog-post' ); ?>
-                            </div>
-                        </div>
-                    <?php
-                } elseif ($i === 7) {
-                    ?>
-                    <div class="group group--left">
-                        <div class="module module--1-1 news--icon">
-                            <?php get_template_part( 'content', 'blog-post' ); ?>
-                        </div>
+                    <div class="module module--1-1  news--icon">
+                        <?php   get_template_part( 'content', 'blog-post' ); ?>
+                    </div>
+                </div>
+                <?php
+            } elseif ($i === 6) {
+                ?>
+                <div class="group group--right">
+                    <div class="module module--2-2  news--icon">
+                        <?php   get_template_part( 'content', 'blog-post' ); ?>
+                    </div>
+                </div>
+                <?php
+            } elseif ($i === 7) {
+                ?>
+                <div class="group group--left">
+                    <div class="module module--1-1 news--icon">
+                        <?php get_template_part( 'content', 'blog-post' ); ?>
+                    </div>
                     <?php
                 } elseif ($i === 8) {
                     ?>
-                        <div class="module module--1-1 news--icon news-noimg">
-                             <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
-                        </div>
-                    <?php
-                } elseif ($i === 9) {
-                    ?>
-                        <div class="module module--1-1  news--icon news-noimg">
-                             <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
-                        </div>
-                    <?php
-                } elseif ($i === 10) {
-                    ?>
-                        <div class="module module--1-1  news--icon">
-                            <?php   get_template_part( 'content', 'blog-post' ); ?>
-                        </div>
-                    </div>
+                    <div class="module module--1-1 news--icon news-noimg">
+                       <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+                   </div>
+                   <?php
+               } elseif ($i === 9) {
+                ?>
+                <div class="module module--1-1  news--icon news-noimg">
+                   <?php   get_template_part( 'content', 'blog-post-noimg' ); ?>
+               </div>
+               <?php
+           } elseif ($i === 10) {
+            ?>
+            <div class="module module--1-1  news--icon">
+                <?php   get_template_part( 'content', 'blog-post' ); ?>
+            </div>
+        </div>
 
-                    <?php
-                }
-                    ?>
+        <?php
+    }
+    ?>
 
-                <?php
+    <?php
                 /*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
@@ -123,42 +123,48 @@ get_header(); ?>
                 if ($i === 10) {
                     $i = 0;
                     ?>
-                    </div>
-                    <?php
-                }
-            endwhile;
-            ?>
-            </div>
+                </div>
+                <?php
+            }
+        endwhile;
+        ?>
+    </div>
 
-            <div class="group-container">
+    <div class="group-container">
+        <div class="pagination">
 
-                <?php 
+    <?php 
+        $prev_link = get_previous_posts_link(__('Prev'));
+        $next_link = get_next_posts_link(__('Next'));
 
-				$prev_link = get_previous_posts_link(__('<span>‹</span> Prev'));
-				$next_link = get_next_posts_link(__('Next <span>›</span>'));
+            if($prev_link) {
+                echo str_replace('<a ', '<a class="project-navigation paginate_prev" ', $prev_link);
+            } else {
+                echo '<a class="project-navigation button--disabled" href="">&nbsp;</a>';
+            }
+    ?>
 
-				if($prev_link) {
-				 	echo str_replace('<a ', '<a class="project-navigation paginate_prev" ', $prev_link);
-				} else {
-					echo '<a class="project-navigation button--disabled" href="">&nbsp;</a>';
-				}
+       <div class="numbers">
+            <?php pagination_bar(); ?>
+        </div>
 
-				if($next_link) {
-				 	echo str_replace('<a ', '<a class="project-navigation paginate_next" ', $next_link);
-				} else {
-					echo '<a class="project-navigation button--disabled" href="">&nbsp;</a>';
-				}
-
-				?>
-            </div>
+    <?php
+            if($next_link) {
+                echo str_replace('<a ', '<a class="project-navigation paginate_next" ', $next_link);
+            } else {
+                echo '<a class="project-navigation button--disabled" href="">&nbsp;</a>';
+            }
+    ?>
+</div>
+</div>
 
 <?php
 
         // If no content, include the "No posts found" template.
-        else :
-                get_template_part( 'content', 'none' );
-        endif;
-        ?>
+else :
+    get_template_part( 'content', 'none' );
+endif;
+?>
 </div>
 
 <?php get_footer(); ?>

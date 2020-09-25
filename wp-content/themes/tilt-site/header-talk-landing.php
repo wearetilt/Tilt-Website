@@ -94,10 +94,19 @@
 		</symbol>
 	</svg>
 	<nav>
-		<div id="tilt--logo" class="header-item header-item--logo-talk">
-<!-- 			<a aria-label="Homepage link" href="<?php echo site_url(); ?>"> -->
-				<img src="<?php echo get_template_directory_uri(); ?>/images/tt.png"/>
-<!-- 			</a> -->
+		<div id="tilt--logo" class="header-item header-item--logo">
+			<a aria-label="Homepage link" href="<?php echo site_url(); ?>">
+				<svg class="svg-icon logout">
+					<defs>
+						<filter id="boxShadow" x="0" y="0" width="200%" height="200%">
+							<feOffset result="offOut" in="SourceAlpha" dx="1" dy="1" />
+							<feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+							<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+						</filter>
+					</defs>
+					<use xlink:href="#tilt"></use>
+				</svg>
+			</a>
         </div>
 
 

@@ -75,8 +75,9 @@
 
 					.project_name {
 						text-transform: uppercase;
-						@include font-size(16);
+						@include font-size(20);
 						line-height: 22px;
+    					padding-bottom: 5px;
 					}
 
 					h2 {
@@ -86,7 +87,7 @@
 					.excerpt {
 						font-family: $f-seroot-lt;
 						text-transform: uppercase;
-						@include font-size(16);
+						@include font-size(20);
 						line-height: 22px;
 					}
 
