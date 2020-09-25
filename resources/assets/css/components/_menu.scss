@@ -138,11 +138,17 @@ a#workButton:hover {
     text-align: center;
     .menu__item {
         display: block;
+
+        &:first-child {
+            @media handheld, screen and (max-width: $bp-desktop) {
+                display: none;
+            }
+        }
         &+.menu__item {
             margin-top: 20px;
             @media handheld,
             screen and (min-width: 0px) and (max-width: $phone-breaks) {
-                margin-top: 8px;
+                margin-top: 0px;
             }
             @media handheld,
             screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {
@@ -151,12 +157,12 @@ a#workButton:hover {
         }
         a {
             color: white;
-            padding-bottom: 15px;
-            font-family: $f-seroot-thn;
+            font-family: $f-seroot-lt;
+            line-height: 80px;
+            @include font-size(40);
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-desktop) {
                 display: block;
-                padding-bottom: 10px;
             }
             &:after {
                 content: "";

@@ -1127,17 +1127,21 @@ body{
     }
     .header-title {
         p {
-            font-size: 20px;
+            @include font-size(16);
             font-family: $f-seroot-lt;
-            line-height: 26px;
+            line-height: 12px;
             text-transform: uppercase;
+            letter-spacing: 1.2px;
             @media screen and (min-width: $bp-desktop) {
                 line-height: 20px;
+                @include font-size(20);
             }
 
         }
         h1 {
-            font-size: 50px;
+            @include font-size(44);
+            line-height: 44px;
+            padding: 6.5px 0;
             @media screen and (min-width: $bp-desktop) {
                 font-size: 70px;
             }
