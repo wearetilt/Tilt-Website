@@ -62,7 +62,7 @@ h1 {
         }
     }
     .strapline-container & {
-        @include font-size(35);
+        @include font-size(44);
         color: $c-tilt-pink;
         @media handheld,
         screen and (min-width: $bp-phone) {

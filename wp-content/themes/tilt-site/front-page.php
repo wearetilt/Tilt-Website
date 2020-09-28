@@ -65,7 +65,7 @@ get_header('home'); ?>
         if(get_row_layout() == 'frontpage_work_items'):
 
           $left_project = get_sub_field('work_item_left');
-          $right_project = get_sub_field('work_item_right');
+          $right_project = get_sub_field('work_item_right');  
           $post_image_left = get_the_post_thumbnail($left_project);
           $post_image_right = get_the_post_thumbnail($right_project);
           $bold_left = get_post_meta($left_project->ID, 'work_items_0_title_bold');
@@ -77,7 +77,7 @@ get_header('home'); ?>
           ?>
           <div class="work-item area-dark" >
 
-        <?php $image_attributes = wp_get_attachment_image_src(get_field('image'), $size = 'about-grid' );
+        <?php $image_attributes = wp_get_attachment_image_src(get_field('image'));
         $retina_desktop_image = $image_attributes[0];
         if (function_exists('wr2x_get_retina_from_url')) {
           $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);

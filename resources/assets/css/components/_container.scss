@@ -89,9 +89,6 @@ body{
     #carreers & {
         padding: percentage(245/2032) percentage(381/2032);
     }
-    #homePage & {
-        background-color: transparent;
-    }
     &.container--double-side-pad {
         padding: percentage(245/2032) percentage(375/2032);
         &.contact--page {
@@ -903,22 +900,26 @@ body{
                 }
                 .related-links {
                     position: absolute;
-                    top: 25%;
-                    padding: 0 12.4015748031%;
+                    top: 37%;
+                    padding: 0 5.56%;
                     opacity: 0;
                     transition: all 0.5s ease-in-out;
                     pointer-events: none;
-                    @media screen and (min-width: $bp-phone){
-                        top: 37%;
+                    @media screen and (min-width: $bp-desktop){
+                        top: 25%;
+                        padding: 0 12.4015748031%;
                     }
                     p {
-                        @include font-size(20);
+                        @include font-size(16);
                         font-family: $f-seroot-lt;
                         letter-spacing: 1px;
                         text-transform: uppercase;
                         color: white;
                         line-height: 22px;
                         padding-bottom: 5px;
+                        @media screen and (min-width: $bp-desktop){
+                            @include font-size(20);
+                        }
                     }
                     .excerpt {
                         width: 100%;
@@ -929,6 +930,10 @@ body{
                     }
                     .entry-title {
                         padding-bottom: 5px;
+                        @include font-size(24);
+                        @media screen and (min-width: $bp-desktop){
+                          @include font-size(32);  
+                        }
                     }
                 }
                 &:hover {
@@ -950,11 +955,11 @@ body{
                 position: relative;
                 z-index: 999999;
                 color: white;
-                text-align: center;
                 text-transform: uppercase;
-                padding: 10% 0;
+                padding: 30px 5.56% 40px 5.56%;
                 @media screen and (min-width: $bp-desktop){
                     padding: 58px 0 124px 0;
+                    text-align: center;
                 }
 
                 .our_work_button {
@@ -966,6 +971,13 @@ body{
                         letter-spacing: 0.075;
                         font-family: $f-seroot-lt;
                     }
+                }
+                .cube {
+                    margin-top: 0;
+                    @media screen and (min-width: $bp-desktop){
+                        margin-top: 30px;
+                    }
+
                 }
             }
 
@@ -982,8 +994,16 @@ body{
                 @include font-size(32);
                 text-transform: uppercase;
                 font-family: $f-seroot-blck;
-                &:nth-child(odd) {
+                &:nth-child(1) {
                     background: #1f1f1f;
+                }
+                &:nth-child(4) {
+                    background: #1f1f1f;
+                }
+                @media screen and (min-width: $bp-desktop){
+                    &:nth-child(2) {
+                        background: #1f1f1f;
+                    } 
                 }
                 &:hover {
                     .news_text span{

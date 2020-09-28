@@ -26,6 +26,9 @@ footer {
             position: relative;
             max-height: none;
         }
+        .cube {
+            margin-top: 14px;
+        }
         .cube--front {
             background:url('../images/button_arrow_white.png') center right no-repeat;
         }
@@ -58,7 +61,7 @@ footer {
     }
     #popup{
         display: flex;
-        flex-grow: 0.2;
+        flex-grow: 0.4;
         color: #ffffff;
         background: transparent;
         cursor: pointer;
@@ -149,24 +152,37 @@ footer {
             display: inline-block;
             padding-left: 33px;
         }
+
+        .telephone {
+            font-size: 1.2rem;
+            color: white;
+            display: inline-block;
+            margin-bottom: 5px;
+            font-family: $f-seroot;
+            font-weight: 300;
+            line-height: $icon-size;
+            letter-spacing: 0.020em;
+            @media screen and (min-width: $bp-desktop){
+                margin-bottom: 1rem;
+            }
+
+            span {
+                display: none;
+                @media screen and (min-width: $bp-desktop){
+                    display: block;
+                }
+            }
+
+            img {
+                display: block;
+                    @media screen and (min-width: $bp-desktop){
+                        display: none;
+                    }         
+            }
+
+        }
     }
 
-    .telephone {
-        font-size: 1.2rem;
-        color: white;
-        display: inline-block;
-        margin-bottom: 5px;
-        font-family: $f-seroot;
-        font-weight: 300;
-        line-height: $icon-size;
-        letter-spacing: 0.020em;
-        @media screen and (min-width: $bp-desktop){
-            margin-bottom: 1rem;
-        }
-        a {
-            color: $c-tilt-pink;
-        }
-    }
     #footnote-1{
         clear: both;
         padding-top: 34px;
@@ -188,7 +204,7 @@ footer {
         @include font-size(25);
         @media handheld,
         screen and (min-width: 0px) and (max-width: $bp-phone) {
-            @include font-size(16);
+            @include font-size(20);
         }
     }
     p.button {
@@ -208,13 +224,15 @@ footer {
     color: #ffffff;
     font-family: $f-seroot-lt;
     font-size: 12px;
-    line-height: 25px;
+    line-height: 12px;
     letter-spacing: 0.025em;
-    margin-top: 17px;
+    margin-top: 35px;
     float: left;
     text-transform: capitalize;
     @media screen and (min-width: $bp-desktop){
         font-family: $f-seroot;
+        margin-top: 17px;
+        line-height: 25px;
     }
 }
 
@@ -222,9 +240,9 @@ footer {
     color: #ffffff;
     font-family: $f-seroot-lt;
     font-size: 12px;
-    line-height: 25px;
+    line-height: 12px;
     letter-spacing: 0.025em;
-    margin-top: 17px;
+    margin-top: 35px;
     float: right;
     text-transform: capitalize;
     padding: 0;
@@ -233,6 +251,8 @@ footer {
     float: left;
     padding: 0 1rem;
     font-family: $f-seroot;
+    margin-top: 17px;
+    line-height: 25px;
   }
 
 }

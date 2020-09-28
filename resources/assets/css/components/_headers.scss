@@ -89,6 +89,7 @@ header {
     }
 
     .scroll-down {
+        display: none;
         position: absolute;
         top: 100vh;
         left: 0;
@@ -124,6 +125,7 @@ header {
         }
         @media handheld,
         screen and (min-width: $bp-desktop) {
+            display: block;
             margin-top: -70px;
             span {
                 &:before,
@@ -791,13 +793,17 @@ header {
                 padding: 15% 17% 12% 15%;
                 @media handheld,
                 screen and (min-width: 0px) and (max-width:$bp-phone) {
-                    padding:15% 9% 12% 9%;
+                        padding: 20% 5.56% 5% 5.56%;
                 }
             }
             .text-container {
                 top: auto;
                 position: relative;
                 transform: none;
+            
+                p {
+                    @include font-size(20);
+                }
             }
         }
 
@@ -827,6 +833,7 @@ header {
                 @media handheld,
                 screen and (min-width: 0px) and (max-width:$bp-phone) {
                     padding: 12% 9% 12% 9%;
+                    top: 38%;
                 }
             }
         }

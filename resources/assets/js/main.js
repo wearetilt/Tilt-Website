@@ -1297,7 +1297,7 @@ $(document).ready(function(){
                 $('.related-links').css('opacity', '0');
                 $('img').css('opacity', '1');
                 $('.related-links', this.element).css('opacity', '1');
-                $('img', this.element).css('opacity', '0.7');
+                $('img', this.element).css('opacity', '0.3');
                 }, offset:'50%'
             })
         });

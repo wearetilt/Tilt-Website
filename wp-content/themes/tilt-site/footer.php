@@ -55,12 +55,7 @@ $blog_id = get_current_blog_id();
 
     <div class="phone-container">
       <div class="telephone">
-        <?php if($blog_id == 1) : ?>
-          <span>+44(0)1273 675 700</span>
-        <?php endif;?>
-        <?php if($blog_id == 3) : ?>
-          <span>+1 (778) 835-6414</span>
-        <?php endif;?>
+          <a href="tel:+44(0)1273 675 700"><span>+44(0)1273 675 700</span><img src="/wp-content/themes/tilt-site/images/phone-icon.svg"/></a>
       </div>
     </div>
 
