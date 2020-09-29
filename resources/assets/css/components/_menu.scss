@@ -127,13 +127,27 @@ a#workButton:hover {
     transition: opacity 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 
     .telephone {
-        position: absolute;
-        bottom: 40px;
-        width: 100%;
-        text-align: center;
+        position: relative;
+        bottom: 100%;
+        transform: translateY(100%);
+        background-image: url("/wp-content/themes/tilt-site/images/phone-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        a {
+            color: transparent !important;
+             
+            &:hover {
+                &:after {
+                    width: 0 !important;
+                }
+            }
+        }
+
         @media screen and (min-width: $bp-desktop){
             display: none;
         }
+
     }
 }
 
@@ -168,11 +182,13 @@ a#workButton:hover {
         a {
             color: white;
             font-family: $f-seroot-lt;
-            line-height: 80px;
+            line-height: 40px;
             @include font-size(40);
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-desktop) {
                 display: block;
+                width: fit-content;
+                margin: 40px auto;
             }
             &:after {
                 content: "";
@@ -189,7 +205,7 @@ a#workButton:hover {
                     width: 15%;
                     @media handheld,
                     screen and (min-width: 0px) and (max-width: $bp-phone) {
-                        width: 22%;
+                        width: 100%;
                     }
                     @media handheld,
                     screen and (min-width:$bp-phone) and (max-width: $bp-desktop) {

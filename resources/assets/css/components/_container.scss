@@ -199,7 +199,7 @@ body{
 
 /* Client logo container on work archive pages */
 .new_client_logos {
-    padding: 80px 0 160px 0;
+    padding: 0px 5.56% 160px 5.56%;
     top: 60px;
     @media screen and (min-width: $bp-desktop) {
         padding: 80px 0 160px 0;
@@ -209,7 +209,10 @@ body{
 
     h2 {
         color: white;
-        text-align: center;
+        
+        @media screen and (min-width: $bp-desktop) {
+            text-align: center;
+        }
     }
     .logos {
         text-align: center;
@@ -248,13 +251,6 @@ body{
 
 
 .news-wrapper {
-    & .intro-text {
-        margin: 45px 0px 45px 0px;
-        @media handheld,
-        screen and (min-width: $bp-desktop) {
-            margin: 0;
-        }
-    }
     & #social {
         @media handheld,
         screen and (max-width: $bp-desktop) {
@@ -418,9 +414,9 @@ body{
                 @media screen and (min-width: 1025px)and(max-width: 1300px){
                     .module__text{
                         h2 {
-                         @include font-size(26);
-                     }
-                     p {
+                           @include font-size(26);
+                       }
+                       p {
                         @include font-size(12);
                     }
                     .cube {
@@ -521,8 +517,8 @@ body{
 
                 @media handheld,
                 screen and (min-width: 0px) and (max-width: $bp-phone) {
-                    padding-left: 9%;
-                    padding-right: 9%;
+                    padding-left: 6.25%;
+                    padding-right: 6.25%;
                 }
                 @media handheld,
                 screen and (min-width: $bp-phone) and (max-width: $bp-desktop) {
@@ -886,6 +882,7 @@ body{
 
             .project_container {
                 width: 100%;
+                height: 270px;
                 position: relative;
                 background-color: rgba(32, 32, 32, 1);
                 z-index: 999999;
@@ -893,20 +890,22 @@ body{
                 transition: all 0.5s ease;
                 @media screen and (min-width: $bp-desktop){
                     width: 50%;
+                    height: auto;
                 }
                 img {
                     transition: transform ease 0.5s;
                     width: 100%;
+                    height: 100%;
                 }
                 .related-links {
                     position: absolute;
-                    top: 37%;
+                    top: 50%;
+                    transform: translateY(-50%);
                     padding: 0 5.56%;
                     opacity: 0;
                     transition: all 0.5s ease-in-out;
                     pointer-events: none;
                     @media screen and (min-width: $bp-desktop){
-                        top: 25%;
                         padding: 0 12.4015748031%;
                     }
                     p {
@@ -923,7 +922,7 @@ body{
                     }
                     .excerpt {
                         width: 100%;
-                        line-height: 26px;
+                        line-height: 1.25px;
                         @media screen and (min-width: $bp-phone){
                             width: 80%;
                         }
@@ -933,95 +932,95 @@ body{
                         @include font-size(24);
                         @media screen and (min-width: $bp-desktop){
                           @include font-size(32);  
-                        }
-                    }
-                }
-                &:hover {
-                    .related-links{
-                        opacity: 1;
-
-                    }
-                    img {
-                        opacity: 0.4;
-                        transform: scale(1.1,1.1);
-                        transition: transform ease 0.5s;
-                    }
-                }
-
-
-            }
-
-            .goto_projects{
-                position: relative;
-                z-index: 999999;
-                color: white;
-                text-transform: uppercase;
-                padding: 30px 5.56% 40px 5.56%;
-                @media screen and (min-width: $bp-desktop){
-                    padding: 58px 0 124px 0;
-                    text-align: center;
-                }
-
-                .our_work_button {
-                    font-family: $f-seroot-lt;
-                    letter-spacing: 0.075;
-                    color: white;
-                    &_black {
-                        color: black;
-                        letter-spacing: 0.075;
-                        font-family: $f-seroot-lt;
-                    }
-                }
-                .cube {
-                    margin-top: 0;
-                    @media screen and (min-width: $bp-desktop){
-                        margin-top: 30px;
-                    }
-
-                }
-            }
-
-            .news-line {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .news-item{
-                width: 50%;
-                z-index: 999999;
-                position: relative;
-                color: white;
-                background: #272727;
-                @include font-size(32);
-                text-transform: uppercase;
-                font-family: $f-seroot-blck;
-                &:nth-child(1) {
-                    background: #1f1f1f;
-                }
-                &:nth-child(4) {
-                    background: #1f1f1f;
-                }
-                @media screen and (min-width: $bp-desktop){
-                    &:nth-child(2) {
-                        background: #1f1f1f;
-                    } 
-                }
-                &:hover {
-                    .news_text span{
-                        opacity: 0.8;
-                    }
-                }
-
-                @media (min-width: 62rem) {
-                  width: 25%;
-                  &:not(:nth-child(4n)) {
+                      }
                   }
               }
-              &:before {
-                  content: "";
-                  float: left;
-                  padding-top: 100%;
+              &:hover {
+                .related-links{
+                    opacity: 1;
+
+                }
+                img {
+                    opacity: 0.4;
+                    transform: scale(1.1,1.1);
+                    transition: transform ease 0.5s;
+                }
+            }
+
+
+        }
+
+        .goto_projects{
+            position: relative;
+            z-index: 999999;
+            color: white;
+            text-transform: uppercase;
+            padding: 30px 5.56% 40px 5.56%;
+            @media screen and (min-width: $bp-desktop){
+                padding: 58px 0 124px 0;
+                text-align: center;
+            }
+
+            .our_work_button {
+                font-family: $f-seroot-lt;
+                letter-spacing: 0.075;
+                color: white;
+                &_black {
+                    color: black;
+                    letter-spacing: 0.075;
+                    font-family: $f-seroot-lt;
+                }
+            }
+            .cube {
+                margin-top: 0;
+                @media screen and (min-width: $bp-desktop){
+                    margin-top: 30px;
+                }
+
+            }
+        }
+
+        .news-line {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .news-item{
+            width: 50%;
+            z-index: 999999;
+            position: relative;
+            color: white;
+            background: #272727;
+            @include font-size(32);
+            text-transform: uppercase;
+            font-family: $f-seroot-blck;
+            &:nth-child(1) {
+                background: #1f1f1f;
+            }
+            &:nth-child(4) {
+                background: #1f1f1f;
+            }
+            @media screen and (min-width: $bp-desktop){
+                &:nth-child(2) {
+                    background: #1f1f1f;
+                } 
+            }
+            &:hover {
+                .news_text span{
+                    opacity: 0.8;
+                }
+            }
+
+            @media (min-width: 62rem) {
+              width: 25%;
+              &:not(:nth-child(4n)) {
               }
-              .news_text {
+            }
+            &:before {
+                content: "";
+                float: left;
+                padding-top: 100%;
+             }
+            .news_text {
                 padding: 0% 15px 0 15px;
                 @include font-size(20);
                 height: 100%;
@@ -1030,23 +1029,24 @@ body{
                 justify-content: center;
                 align-items: center;
                 @media screen and (min-width: 768px){
-                  padding: 0% 60px 0 60px;
-                  @include font-size(32);
-
-              }
-              @media screen and (min-width: $bp-desktop){
-                padding: 0% 40px 0 40px;
+                    padding: 0% 60px 0 60px;
+                    @include font-size(32);
+                }
+                @media screen and (min-width: $bp-desktop){
+                    padding: 0% 40px 0 40px;
+                }
+            }
+            p {
+                color: $c-tilt-pink;
+                text-transform: uppercase;
+                @include font-size(16);
+                font-family: $f-seroot-lt;
+                letter-spacing: 0.75px;
+                @media screen and (min-width: $bp-desktop){
+                    @include font-size(20);
+                }
             }
         }
-        p {
-            color: $c-tilt-pink;
-            text-transform: uppercase;
-            @include font-size(20);
-            font-family: $f-seroot-lt;
-            letter-spacing: 0.75px;
-        }
-    }
-
 
 }
 
@@ -1172,24 +1172,22 @@ body{
         }
         .award-logo {
             margin-top: 15px;
-
             display: none;
 
             @media screen and (min-width: $bp-desktop) {
-                 display: block;
-            }    
+               display: block;
+           }    
 
 
-            &.mobile{
-                display: block;
-                
-                @media screen and (min-width: $bp-desktop) {
-                    display: none;
-                }
+           &.mobile{
+            display: block;
+            @media screen and (min-width: $bp-desktop) {
+                display: none;
             }
-
         }
+
     }
+}
 }
 
 .main-work-content > :last-child img {
@@ -1227,8 +1225,11 @@ body{
         }
         .text-section__para {
             float: none;
-            width: 85%;
+            width: 100%;
             color: #d2d2d2;
+            @media screen and (min-width: $bp-desktop) {
+              width: 85%;  
+            }
         }
         &:last-child {
             margin-bottom: 0px;
@@ -1456,10 +1457,10 @@ a {
     }
 
     &:hover::before {
-     width: 0%;
- }
+       width: 0%;
+   }
 
- &:after {
+   &:after {
     content: '';
     display: block;
     width: 0%;
@@ -1471,7 +1472,7 @@ a {
 }
 
 &:hover::after {
- width: 100%;
+   width: 100%;
 }
 
 
@@ -1524,17 +1525,26 @@ a {
     }
     h2 {
         margin-bottom: 9px;
-        @include font-size(30);
+        @media screen and (min-width: $bp-desktop) {
+            @include font-size(30);
+        }
     }
     h3 {
         margin: 35px 0px 5px;
     }
     p {
         color: #d2d2d2;
-        @include font-size(30);
-        width: 80%;
+        @include font-size(24);
+        width: 100%;
         line-height: 1.5;
-        display: inline-block;
+        letter-spacing: -0.24px;
+        display: block;
+        @media screen and (min-width: $bp-desktop) {
+            @include font-size(30);
+            width: 80%;
+            display: inline-block;
+        }
+
         strong {
             font-family: $f-merriweather;
             font-weight: 600;
@@ -1547,9 +1557,12 @@ a {
             content: '\25CF';
             padding: 10px 10px 0 0;
             color: #ff0066;
-            font-size: 30px;
+            font-size: 24px;
             display: inline-block;
             float: left;
+                @media screen and (min-width: $bp-desktop) {
+                    font-size: 30px;
+                }
         }
 
         @media screen and (min-width: $bp-desktop) {
@@ -1644,9 +1657,9 @@ a {
     .full-size {
         display: none;
         @media screen and (min-width: $bp-desktop) {
-        width: 100%;
-        height: auto;
-        display: block;
+            width: 100%;
+            height: auto;
+            display: block;
 
         }
     }
@@ -1710,7 +1723,7 @@ a {
 }
 
 .quote-outer {
-    padding: 0px 0 90px 0;
+    padding: 0px 0 114px 0;
     @media screen and (min-width: $bp-desktop) {
         padding: 0px 0 180px 0;
     }
@@ -1723,11 +1736,14 @@ a {
             color: $c-tilt-pink;
             font-size: 80px;
             font-family: "SeroOT-Bold", "Helvetica", "Arial", sans-serif;
-            height: 60px;
+            height: 30px;
+            @media screen and (min-width: $bp-desktop) {
+                height: 60px;   
+            }
         }
         p{
             margin-top: 18px;
-            letter-spacing: 0px;
+            letter-spacing: -0.24px;
         }
     }
     .quote-attribute {

@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 /*
 Template Name: About page
 */
@@ -25,7 +25,7 @@ get_header(); ?>
 					<source src="https://player.vimeo.com/external/141399412.hd.mp4?s=3f1574fa69a9ae469f325e2b05972a6e&profile_id=113" type="video/mp4">
 					</video>
 				</div>
-			</div> <!-- /end module -->
+			</div> 
 	</header>
 
 

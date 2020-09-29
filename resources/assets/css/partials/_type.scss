@@ -97,7 +97,7 @@ h2 {
     }
     @media handheld,
     screen and (min-width:0px) and (max-width:$bp-phone) {
-        @include font-size(18);
+        @include font-size(24);
         line-height: 1.2;
     }
     @media handheld,
@@ -125,19 +125,6 @@ h2 {
         screen and (min-width: $bp-desktop) {
             @include font-size(22);
             margin-top: 16px;
-        }
-    }
-    &.news-date {
-        padding-top: 10px;
-        @include font-size(16);
-        font-family: $f-seroot-lt;
-        color: $c-grey-94;
-        opacity: 0;
-        letter-spacing: 1px;
-        width: 50%;
-        @media handheld,
-        screen and (min-width: 0px) and (max-width: $bp-phone) {
-            @include font-size(14);
         }
     }
     &#staff-member__position,
@@ -221,18 +208,10 @@ em {
 }
 p {
     @include font-size(16);
-    @media handheld,
-    screen and (min-width: 0px) and (max-width: $bp-phone) {
-        @include font-size(14);
-    }
-    @media handheld,
-    screen and (min-width:$bp-phone) and (max-width: $bp-desktop) {
-        @include font-size(16);
-    }
     font-family: $f-merriweather;
     font-weight: 300;
     text-transform: none;
-    line-height:1.75;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     a {
@@ -347,7 +326,7 @@ p {
         }
         #homePage &,
         .work-container & {
-            line-height: 20px;
+            line-height: 1.2;
             @media screen and (min-width: $bp-desktop) {
                 line-height: 1.2;
             }
@@ -699,10 +678,10 @@ blockquote p {
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.45;
+    line-height: 36px;
     @media handheld,
     screen and (min-width: 0px) and (max-width: $bp-phone) {
-        @include font-size(18);
+        @include font-size(24);
     }
     @media handheld,
     screen and (min-width:$bp-phone) and (max-width: $bp-desktop) {

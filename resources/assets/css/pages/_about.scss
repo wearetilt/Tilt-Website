@@ -6,15 +6,18 @@ header {
 
 .about-header-container {
 
-    padding: 12.0570866142% 40px;
+    padding: 12.0570866142% 6.25%;
 
     @media handheld, screen and (min-width: $bp-desktop) {
         padding: 12.0570866142% 18.4547244094%;
     }
 
     .text-container {
-        max-width: 780px;
         margin: 0 auto;
+
+        @media handheld, screen and (min-width: $bp-desktop) {
+            max-width: 780px;
+        }
 
         p {
             @include font-size(20);
@@ -27,15 +30,13 @@ header {
         }
 
         .header-content {
-            margin-top: 51px;
-
-            @media handheld, screen and (min-width: $bp-desktop) {
-                margin-top: 81px;
-            }
-
+                margin-top: 48px;
+                @media handheld, screen and (min-width: $bp-desktop) {
+                    margin-top: 81px;
+                }
             p {
-                @include font-size(15);
-                line-height: 26px;
+                @include font-size(16);
+                line-height: 34px;
                 font-family: $f-merriweather;
                 font-weight: 300;
                 text-transform: none;
@@ -75,7 +76,6 @@ header {
     }
 }
 
-
     .about-video-overlay {
         top: 0;
         position: absolute;
@@ -85,27 +85,19 @@ header {
         overflow: hidden;
 
         .text-container {
-
             top: 50%;
-            transform: translateY(-50%);
-            padding: 0 40px;
-
+            transform: translateY(50%);
+            padding: 0 6.25%;
             @media handheld, screen and (min-width: $bp-desktop) {
                 padding: 0 18.4547244094%;
             }
 
-
-
-
             .text {
-
                 max-width: 780px;
                 margin: 0 auto;
                 color: #ffffff;
-                font-size: 7rem;
                 position: relative;
                 z-index: 1;
-
 
                 p {
                     color: #fff;
@@ -120,7 +112,6 @@ header {
                         line-height: 26px;
                         margin-bottom: 15px;
                         margin-left: 20px;
-
                     }
                 }
 
@@ -167,11 +158,11 @@ header {
     position: relative;
 
     .text-container {
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-            padding: 0 40px;
-
+        bottom: 50%;
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        padding: 0 6.25%;
+        position: absolute;
             @media handheld, screen and (min-width: $bp-desktop) {
                 padding: 0 18.4547244094%;
             }
@@ -234,6 +225,7 @@ header {
 
     .left-container {
         width: 100%;
+        height: 270px;
         position: relative;
         overflow: hidden;
 
@@ -244,6 +236,7 @@ header {
         img {
             transition: transform ease 0.5s;
             width: 100%;
+            height: 100%;
         }
 
         .related-titles {
@@ -287,6 +280,7 @@ header {
 
     .right-container{
         width: 100%;
+        height: 270px;
         position: relative;
         overflow: hidden;
 
@@ -297,6 +291,7 @@ header {
         img {
             transition: transform ease 0.5s;
             width: 100%;
+            height: 100%;
         }
 
         .related-titles {
@@ -342,7 +337,7 @@ header {
 .about-work-button {
     text-align: left;
     text-transform: uppercase;
-    padding: 60px 40px 100px;
+    padding: 20px 6.25% 80px;
     position: relative;
 
     @media handheld, screen and (min-width: $bp-desktop) { 

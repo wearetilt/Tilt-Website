@@ -1311,6 +1311,37 @@ $(document).ready(function(){
             })
         });
 
+        // $('.group-container .module--staff').each(function(){
+        //     $(this).waypoint({
+        //       handler: function(direction) {
+        //         $('.overlay').css('opacity', '0');
+        //         $('.overlay', this.element).css('opacity', '1');
+        //         }, offset: '50%'
+        //     })
+        // });
+
+
+        $('.about-related-container .left-container').each(function(){
+            $(this).waypoint({
+              handler: function(direction) {
+                $('.related-titles').css('opacity', '0');
+                $('img').css('opacity', '1');
+                $('.related-titles', this.element).css('opacity', '1');
+                $('img', this.element).css('opacity', '0.7');
+                }, offset:'45%'
+            })
+        });
+        $('.about-related-container .right-container').each(function(){
+            $(this).waypoint({
+              handler: function(direction) {
+                $('.related-titles').css('opacity', '0');
+                $('img').css('opacity', '1');
+                $('.related-titles', this.element).css('opacity', '1');
+                $('img', this.element).css('opacity', '0.7');
+                }, offset:'45%'
+            })
+        });
+
         $('.group-container .work_item').each(function(){
             $(this).waypoint({
               handler: function(direction) {

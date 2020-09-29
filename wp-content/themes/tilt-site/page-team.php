@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
-		<p class="sans-serif"><strong class="highlight">GREAT IDEAS</strong> COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS. MEET THE TILT TEAM:</p>
+		<p class="sans-serif"><strong class="highlight"> MEET THE TEAM</strong> GREAT IDEAS COME FROM COLLECTIONS OF CURIOUS UNINHIBITED MINDS.</p>
 	</div>
 </div> <!-- /end container -->
 

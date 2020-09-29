@@ -299,15 +299,17 @@ footer {
 
         .project-navigation {
             padding: 12px 0px 10px 0px;
-            background-color: #272727;
-            width: 30%;
+            background-color: #949393;
+            width: 50%;
             display: block;
             float: left;
             text-align: center;
             line-height: 0.7;
-            @media handheld,
-            screen and (min-width: $bp-desktop) {
+            color: #000000;
+
+            @media handheld, screen and (min-width: $bp-desktop) {
                 padding: 12px 0px 10px 0px;
+                width: 30%;
             }
             /* span { font-size:24px; } */
             &:hover {
@@ -316,8 +318,7 @@ footer {
         }
 
         .paginate_next {
-            background-color: #fff !important;
-            color: black;
+            background-color: $c-tilt-pink;
 
             &:after {
                 content: '›';
@@ -341,6 +342,11 @@ footer {
         .numbers {
             width: 40%;
             text-align: center;
+            display: none;
+            @media handheld,
+            screen and (min-width: $bp-desktop) {
+                display: block;
+            }
 
             .page-numbers {
                 display: inline-block;

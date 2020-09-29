@@ -19,7 +19,4 @@
 
     echo str_replace('menu-item', 'menu-item menu__item', $menu);
     ?>
-        <div class="telephone">
-           <a href="tel:+44(0)1273 675 700"><img src="/wp-content/themes/tilt-site/images/phone-icon.svg"/></a>
-        </div>
 </div>
