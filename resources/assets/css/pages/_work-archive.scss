@@ -107,9 +107,13 @@
             width: 50%;
         }
         img {
+            object-fit: cover;
             width: 100%;
-            height: auto;
+            height: 270px;
             transition: transform ease 0.5s;
+            @media screen and (min-width: $bp-desktop){
+                height: auto;
+            }
         }
         .link {
             position: relative;

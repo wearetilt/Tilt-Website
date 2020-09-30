@@ -220,18 +220,17 @@ a{
     background:url('../images/button_arrow.png') center right no-repeat;
     border: 1px solid white;
     background-size: 32px 13px;
-	height: 54px;   
+	height: 54px; 
+    width: 207px;  
     border-radius: 2px;
-    padding: 15px 72px 0px 24px;
-
-	@media handheld, screen and (min-width: $bp-desktop){
-		height: 54px;
-		padding: 15px 72px 0px 24px;
-	}
 
     p{
         text-align: left;
-
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 24px;
+        line-height: 1;
 
         @media handheld, screen and (min-width:0px)  and (max-width:$bp-phone) {
         	font-size: 15px !important;

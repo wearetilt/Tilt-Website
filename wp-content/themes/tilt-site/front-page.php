@@ -25,7 +25,7 @@ get_header('home'); ?>
           </div>
         </a>
       </div>
-      <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted playsinline poster="<?php echo get_template_directory_uri(); ?>/images/home/header_poster_image.jpg">
+      <video id="header-video-player" class="video-js vjs-default-skin" autoplay controls="false" loop muted playsinline poster="<?php echo get_template_directory_uri(); ?>/images/home/header_poster_image.jpg">
         <source id="header-video" src="https://player.vimeo.com/external/144378575.hd.mp4?s=9126a5c2a202cb2d55ecf33fefe42a3a&profile_id=113" type="video/mp4">
         </video>
       </div>
