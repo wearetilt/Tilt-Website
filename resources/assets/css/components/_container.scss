@@ -1166,7 +1166,7 @@ body{
         h1 {
             @include font-size(44);
             line-height: 44px;
-            padding: 6.5px 0;
+            padding: 6.5px 0 4px 0;
             @media screen and (min-width: $bp-desktop) {
                 font-size: 70px;
                 line-height: 1;
