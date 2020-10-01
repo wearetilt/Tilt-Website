@@ -127,9 +127,6 @@ a#workButton:hover {
     transition: opacity 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 
     .telephone {
-        position: relative;
-        bottom: 100%;
-        transform: translateY(100%);
         background-image: url("/wp-content/themes/tilt-site/images/phone-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -145,7 +142,7 @@ a#workButton:hover {
         }
 
         @media screen and (min-width: $bp-desktop){
-            display: none;
+            display: none !important;
         }
 
     }
@@ -153,13 +150,18 @@ a#workButton:hover {
 
 .menu__items {
     @extend %clearfix;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
     display: block;
     margin: 0 auto;
     text-align: center;
+    height: 100vh;
+    padding: 60px 0 0 0;
+    @media handheld, screen and (min-width: $bp-desktop) {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        height: auto;
+    }
     .menu__item {
         display: block;
 
@@ -182,13 +184,13 @@ a#workButton:hover {
         a {
             color: white;
             font-family: $f-seroot-lt;
-            line-height: 40px;
             @include font-size(40);
+            line-height: 1;
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-desktop) {
                 display: block;
                 width: fit-content;
-                margin: 40px auto;
+                margin: 0 auto 40px auto;
             }
             &:after {
                 content: "";
