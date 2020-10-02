@@ -293,6 +293,16 @@ a.hover {
     }
 }*/
 
+.news--icon {
+
+    .overlay-text {
+        @include font-size(22);
+            @media handheld, screen and (min-width: $bp-phone) {
+                @include font-size(32); 
+            }
+    }
+}
+
 .news-noimg {
 
     .tag--home-title {
@@ -415,7 +425,7 @@ a.hover {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    padding: 0 6.25%;
+    padding: 0 20px;
     @media handheld, screen and (min-width: $bp-desktop) {
         padding: 0 percentage(126/1016);
     }
@@ -450,7 +460,7 @@ a.hover {
 .entry-title {
     padding-bottom: 5px;
     @include font-size(24);
-    @media handheld, screen and (min-width: $bp-desktop) {
+    @media handheld, screen and (min-width: $bp-phone) {
      @include font-size(32); 
  }
 }

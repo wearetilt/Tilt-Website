@@ -155,7 +155,7 @@ a#workButton:hover {
     text-align: center;
     height: 100vh;
     padding: 60px 0 0 0;
-    @media handheld, screen and (min-width: $bp-desktop) {
+    @media handheld, screen and (min-width: $bp-phone) {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -184,10 +184,10 @@ a#workButton:hover {
         a {
             color: white;
             font-family: $f-seroot-lt;
-            @include font-size(40);
-            line-height: 1;
-            @media handheld,
-            screen and (min-width: 0px) and (max-width: $bp-desktop) {
+            @include font-size(34);
+            line-height: 2.1;
+            @media screen and (min-width: $bp-desktop) {
+                @include font-size(40);
                 display: block;
                 width: fit-content;
                 margin: 0 auto 40px auto;
@@ -217,8 +217,7 @@ a#workButton:hover {
             }
         }
     }
-    @media handheld,
-    screen and (min-width: $bp-desktop-large-nav) {
+    @media handheld, screen and (min-width: $bp-desktop) {
         .menu__item {
             display: inline-block;
             &+.menu__item {

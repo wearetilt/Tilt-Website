@@ -286,14 +286,14 @@ a{
 
 .map-overlay .cube--front,.map-overlay .cube--top {
 
-    background:url('../images/button_arrow.png') center right no-repeat;
+    background:url('../images/button_arrow.png') 100% 51% no-repeat;
     background-size: 32px 13px;
     border: 1px solid white;
 	height: 44px;
     border-radius: 2px;
-    padding: 14px 72px 0px 24px;
 
-    @media handheld, screen and (min-width: $bp-desktop){
+    @media handheld, screen and (min-width: $bp-phone){
+        background:url('../images/button_arrow.png') 100% 48% no-repeat;
         height: 54px;
     }
 
