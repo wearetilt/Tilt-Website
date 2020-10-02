@@ -108,7 +108,7 @@
     .work-film, .work-motion, .work-web {
         width: 100%;
 
-        @media screen and (min-width: $bp-desktop) {
+        @media screen and (min-width: $bp-phone) {
             width: 50%;
         }
         img {

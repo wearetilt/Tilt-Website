@@ -217,13 +217,15 @@ a{
 /* The two faces of the cube */
 .cube--front,.cube--top {
 
-    background:url('../images/button_arrow.png') center right no-repeat;
+    background:url('../images/button_arrow.png') 100% 51% no-repeat;
     border: 1px solid white;
     background-size: 32px 13px;
 	height: 54px; 
-    width: 207px;  
+    padding: 12px 24px 12px 0;  
     border-radius: 2px;
-
+    @media handheld, screen and (min-width: $bp-desktop){
+        background:url('../images/button_arrow.png') 100% 48% no-repeat;
+    }
     p{
         text-align: left;
         position: relative;
@@ -247,6 +249,10 @@ a{
 
 		span { @media handheld, screen and (min-width:0px)  and (max-width:$bp-phone) { display:none; } }
 
+    }
+
+    .work-container & {
+            width: 207px;
     }
 
     .map-overlay & {

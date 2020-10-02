@@ -103,7 +103,7 @@
     .work-film, .work-motion, .work-web {
         width: 100%;
 
-        @media screen and (min-width: $bp-desktop) {
+        @media screen and (min-width: $bp-phone) {
             width: 50%;
         }
         img {
@@ -121,13 +121,15 @@
         }
         .related-links {
             position: absolute;
-            top: 25%;
+            top: 50%;
+            transform: translateY(-50%);
             padding: 0 12.4015748031%;
             opacity: 0;
             transition: all 0.5s ease-in-out;
             pointer-events: none;
             @media screen and (min-width: $bp-phone){
-                top: 37%;
+                top: 50%;
+                transform: translateY(-50%);
             }
             p {
                 @include font-size(20);
