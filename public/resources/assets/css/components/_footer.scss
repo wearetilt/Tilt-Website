@@ -1,0 +1,423 @@
+$icon-size: 24px;
+$form-width: 800px;
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: #171717;
+    // @media screen and (min-width: 320px)and(max-width: 480px){
+        // background-image: none !important;
+        // }
+        @media handheld,
+        screen and (min-width: 0px) and (max-width: $bp-desktop) {
+            background-position: center center;
+            background-size: auto;
+            position: relative;
+        }
+        #contact & {
+            position: relative;
+            max-height: none;
+        }
+        .cube--front {
+            background:url('../images/button_arrow_white.png') center right no-repeat;
+        }
+        .container {
+            padding: 16% 18.75%;
+            height: 250px;
+            background: linear-gradient(270deg, #ff4c61, #ff594c, #ff4c74);
+            background-size: 600% 600%;
+            animation: AnimationName 30s ease infinite;
+            @media handheld,
+            screen and (min-width: $bp-desktop) {
+                height: 478px;
+                padding: 0 percentage(381/2032);
+            }
+        }
+        @keyframes AnimationName {
+         0%{background-position:0% 50%}
+         50%{background-position:100% 50%}
+         100%{background-position:0% 50%}
+     }
+     .first-para {
+        &:before {
+            display: none;
+        }
+        strong {
+            color: black
+        }
+    }
+    #popup{
+        display: inline-block;
+        color: #ffffff;
+        background: transparent;
+        cursor: pointer;
+        font-family: $f-seroot;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 0.020em;
+        line-height: $icon-size;
+        margin-bottom: 14px;
+        text-align: center;
+        text-transform: none;
+        width: 12rem;
+        border: none;
+        outline: none;
+        @media screen and (min-width: $bp-desktop){
+            margin-bottom: $icon-size;
+        }
+        @media screen and (max-width: 800px){
+            display: block;
+            width: 100%;
+        }
+    }
+    &.password-footer {
+        position: static;
+        
+        @media screen and(min-width: 698px) and(max-width: $bp-desktop){
+            position: fixed;
+        }
+    }
+    .footer-upper{
+        border-bottom: 1px solid $c-grey-3a;
+        text-align: center;
+        padding-bottom: 10px;
+        @media screen and (min-width: 1144px){
+            padding-bottom: 24px;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+        .footer-links {
+            display: none;
+            @media screen and (min-width: $bp-desktop ) {
+                display: inline-block;
+                float: none;
+            }
+            @media screen and (min-width: 1144px){
+                display: inline-block;
+                float: right;
+                line-height: 2;
+            }
+            a {
+                color: white;
+                font-family: $f-seroot-lt;
+                font-size: 20px;
+                letter-spacing: 0.075em;
+                padding: 0px 15px;
+
+                @media screen and (min-width: $bp-desktop){
+                    padding-left: 35px;
+
+                }
+            }
+        }
+    }
+    .footer-item--logo {
+        display: block;
+        @media screen and (min-width: $bp-desktop){
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .phone-container{
+        padding: 0;
+        @media screen and (min-width: $bp-desktop){
+            display: inline-block;
+            padding-left: 33px;
+        }
+        @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
+            float: none;
+        }
+    }
+
+    .telephone {
+        font-size: 1.2rem;
+        color: white;
+        display: inline-block;
+        margin-bottom: 5px;
+        font-family: $f-seroot;
+        font-weight: 300;
+        line-height: $icon-size;
+        letter-spacing: 0.020em;
+        @media screen and (min-width: $bp-desktop){
+            margin-bottom: 1rem;
+        }
+        a {
+            color: $c-tilt-pink;
+        }
+    }
+    #footnote-1{
+        clear: both;
+        padding-top: 14px;
+        font-family: $f-seroot;
+        @include font-size(10);
+        color: #616161; 
+        @media screen and (min-width: $bp-desktop){
+            padding-top: 44px;
+            @include font-size(12);
+            width: 60%;
+            display: inline-block;
+        }
+
+    }
+    p.sans-serif {
+        @include font-size(25);
+        @media handheld,
+        screen and (min-width: 0px) and (max-width: $bp-phone) {
+            @include font-size(16);
+        }
+    }
+    p.button {
+        @include font-size(18);
+        @media handheld,
+        screen and (min-width: 0px) and (max-width: $bp-phone) {
+            @include font-size(15);
+        }
+        @media handheld,
+        screen and (min-width: $bp-desktop) {
+            @include font-size(20);
+        }
+    }
+}
+
+.privacy_policy{
+    color: #ffffff;
+    font-family: $f-seroot;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin-top: 17px;
+    float: left;
+    text-transform: capitalize;
+}
+
+.health_and_safety {
+    color: #ffffff;
+    font-family: $f-seroot;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin-top: 17px;
+    float: left;
+    text-transform: capitalize;
+    padding: 0 1rem;
+}
+
+#footer-contacts {
+  @extend %clearfix;
+  text-align: center;
+  padding: 10px;
+  @media screen and (min-width: $bp-desktop){
+      float: right;
+      display: inline-block;
+      text-align: end;
+      padding: 44px 0;
+  }
+  @media all and(max-width: 800px) {
+      text-align: center;
+      .telephone {
+          display: block;
+          width: 100%;
+      }
+  }
+}
+
+#signoff {
+    @extend %clearfix;
+    background-color: $c-bg;
+    padding: 10px 4%;
+    @media screen and (min-width: $bp-desktop){
+        padding: 33px 4%;
+    }
+    border-top: 1px solid #171717;
+    // #contact & {
+        //     height: auto;
+        //     padding: percentage(46/2032) percentage(126/2032);
+        // }
+    }
+
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        height: 54px;
+
+        .project-navigation {
+            padding: 12px 0px 10px 0px;
+            background-color: #272727;
+            width: 30%;
+            display: block;
+            float: left;
+            text-align: center;
+            line-height: 0.7;
+            @media handheld,
+            screen and (min-width: $bp-desktop) {
+                padding: 12px 0px 10px 0px;
+            }
+            /* span { font-size:24px; } */
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        .paginate_next {
+            background-color: #fff !important;
+            color: black;
+
+            &:after {
+                content: '›';
+                display: inline-block;
+                font-size: 33px;
+                margin-left: 25px;
+            }
+
+        }
+
+        .paginate_prev {
+            &:before {
+                content: '‹';
+                display: inline-block;
+                font-size: 33px;
+                margin-right: 25px;
+            }
+        }
+
+
+        .numbers {
+            width: 40%;
+            text-align: center;
+
+            .page-numbers {
+                display: inline-block;
+                width: 54px;
+                height: 100%;
+                padding: 12px 0px 10px 0px;
+                font-family: $f-seroot-thn;
+                line-height: 1.7;
+                @include font-size(20);
+                color: #fff;
+
+                &.prev {
+                        display: none;
+                }
+                &.next {
+                        display: none;
+                }
+
+                &.current {
+                    color: #fd4c75;
+                    background: #3e3e3e;
+                }
+
+                &:hover {
+                    opacity: 0.5;
+                }
+
+            }
+
+        }
+
+    }
+
+    .nav-links span,
+    .nav-links a {
+        padding: 14px 0px 10px 0px;
+        background-color: $c-tilt-pink;
+        display: block;
+        float: left;
+        line-height: 1.8;
+        &:hover {
+            color: $c-grey-7d;
+        }
+    }
+
+    #footer-icons {
+        @extend %clearfix;
+        margin-bottom: 0px;
+        @media screen and (min-width: $bp-desktop){
+            margin-bottom: $icon-size;
+        }
+        padding: 0;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        @media all and(max-width: 600px) {
+            text-align: center;
+            .footer-icon {
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .footer-icon {
+        display: inline-block;
+        width: $icon-size;
+        height: $icon-size;
+        &:hover {
+            opacity: 0.7;
+        }
+        a {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+        &.footer-icon {
+            margin-left: $icon-size;
+            &:first-child {
+                margin-left: 5px;
+            }
+            @media handheld,
+            screen and (min-width: 0px) and (max-width:1024px) {
+                margin-left: $icon-size;
+            }
+        }
+    }
+
+    .f-ico_facebook {
+        margin-left: 0;
+        height: 21px;
+        width: 11px;
+    }
+
+    .f-ico_mail {
+        margin-left: 0;
+        height: 25px;
+        width: 25px;
+    }
+
+    .f-ico_twitter {
+        margin-top: 3px;
+        height: 19px;
+        width: 25px;
+    }
+
+    .f-ico_vimeo {
+        margin-top: 1px;
+        height: 21px;
+        width: 24px;
+    }
+
+    .f-ico_instagram {
+        height: 23px;
+        width: 23px;
+    }
+
+    .f-ico_youtube {
+        margin-top: 1px;
+        height: 21px;
+        width: 29px;
+    }
+
+    .f-ico_tumblr {
+        height: 25px;
+        width: 25px;
+    }

@@ -11,6 +11,7 @@ npm-debug.log
 wp-content/uploads
 wp-content/uploads.old
 wp-content/uploads/
+uploads
 /logs
 /logs/error_log
 wp-config.php

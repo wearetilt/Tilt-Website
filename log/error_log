@@ -1,0 +1,46 @@
+[Fri Nov 06 10:09:17.151660 2020] [php7:error] [pid 1071] [client 127.0.0.1:53608] script '/Users/josh/Sites/Tilt-Website/public/wp-admin.php' not found or unable to stat
+[Fri Nov 06 13:49:38.532255 2020] [core:alert] [pid 3720] [client 127.0.0.1:65180] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/options-permalink.php
+[Fri Nov 06 13:49:38.543444 2020] [core:alert] [pid 3719] [client 127.0.0.1:65181] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/options-permalink.php
+[Fri Nov 06 13:49:38.613055 2020] [core:alert] [pid 3729] [client 127.0.0.1:65179] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/options-permalink.php
+[Fri Nov 06 13:49:38.632842 2020] [core:alert] [pid 3782] [client 127.0.0.1:65182] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/options-permalink.php
+[Fri Nov 06 13:49:38.642772 2020] [core:alert] [pid 3717] [client 127.0.0.1:65192] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/options-permalink.php
+[Fri Nov 06 13:49:45.268701 2020] [core:alert] [pid 3791] [client 127.0.0.1:65197] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/options-permalink.php
+[Fri Nov 06 13:51:31.125544 2020] [core:alert] [pid 3865] [client 127.0.0.1:65262] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 13:54:02.388222 2020] [core:alert] [pid 3721] [client 127.0.0.1:65412] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 13:54:02.502383 2020] [core:alert] [pid 3720] [client 127.0.0.1:65413] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 13:54:07.112041 2020] [core:alert] [pid 3719] [client 127.0.0.1:65414] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 13:54:07.178572 2020] [core:alert] [pid 3729] [client 127.0.0.1:65415] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 13:54:14.323652 2020] [core:alert] [pid 3782] [client 127.0.0.1:65422] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 13:54:14.409567 2020] [core:alert] [pid 3717] [client 127.0.0.1:65423] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 13:54:40.452284 2020] [core:alert] [pid 3791] [client 127.0.0.1:65439] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 13:54:41.990558 2020] [core:alert] [pid 3792] [client 127.0.0.1:65440] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 13:55:27.546124 2020] [core:alert] [pid 3903] [client 127.0.0.1:65516] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 13:55:27.692493 2020] [core:alert] [pid 3719] [client 127.0.0.1:65517] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 14:09:10.814887 2020] [core:alert] [pid 3782] [client 127.0.0.1:49760] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:09:10.867627 2020] [core:alert] [pid 3717] [client 127.0.0.1:49761] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 14:24:28.184016 2020] [core:alert] [pid 4056] [client 127.0.0.1:50334] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:24:28.240534 2020] [core:alert] [pid 4057] [client 127.0.0.1:50335] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 14:24:49.427575 2020] [core:alert] [pid 4058] [client 127.0.0.1:50350] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:24:49.476519 2020] [core:alert] [pid 4059] [client 127.0.0.1:50351] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 14:29:56.604041 2020] [core:alert] [pid 4060] [client 127.0.0.1:50543] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:29:56.668662 2020] [core:alert] [pid 4056] [client 127.0.0.1:50544] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 14:55:19.423094 2020] [core:alert] [pid 4057] [client 127.0.0.1:51635] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:55:19.475040 2020] [core:alert] [pid 4058] [client 127.0.0.1:51636] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 14:55:47.100052 2020] [core:alert] [pid 4059] [client 127.0.0.1:51653] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:55:47.155549 2020] [core:alert] [pid 4060] [client 127.0.0.1:51654] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/wp-admin/
+[Fri Nov 06 14:55:54.309545 2020] [core:alert] [pid 4056] [client 127.0.0.1:51658] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:55:54.379182 2020] [core:alert] [pid 4057] [client 127.0.0.1:51659] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 14:56:04.365571 2020] [core:alert] [pid 4058] [client 127.0.0.1:51668] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:56:04.458979 2020] [core:alert] [pid 4059] [client 127.0.0.1:51669] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 14:56:06.592710 2020] [core:alert] [pid 4060] [client 127.0.0.1:51670] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:56:06.641075 2020] [core:alert] [pid 4154] [client 127.0.0.1:51671] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 14:59:36.376038 2020] [core:alert] [pid 4163] [client 127.0.0.1:51794] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 14:59:36.470560 2020] [core:alert] [pid 4165] [client 127.0.0.1:51795] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 15:02:37.014098 2020] [core:alert] [pid 4164] [client 127.0.0.1:51931] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 15:02:37.127218 2020] [core:alert] [pid 4166] [client 127.0.0.1:51932] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 15:02:41.043155 2020] [core:alert] [pid 4290] [client 127.0.0.1:51937] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 15:02:41.122358 2020] [core:alert] [pid 4291] [client 127.0.0.1:51938] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 15:02:45.276245 2020] [core:alert] [pid 4292] [client 127.0.0.1:51942] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 15:02:45.386111 2020] [core:alert] [pid 4293] [client 127.0.0.1:51943] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/
+[Fri Nov 06 15:02:51.663251 2020] [core:alert] [pid 4294] [client 127.0.0.1:51955] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL
+[Fri Nov 06 15:02:51.788911 2020] [core:alert] [pid 4290] [client 127.0.0.1:51956] /Users/josh/Sites/Tilt-Website/public/.htaccess: RewriteBase: argument is not a valid URL, referer: http://wearetilt.local/

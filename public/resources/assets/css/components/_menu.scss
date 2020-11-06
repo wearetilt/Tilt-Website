@@ -1,0 +1,251 @@
+body.ios a:after {
+    display: none !important;
+}
+
+nav {
+    @extend %clearfix;
+}
+
+.header-item {
+    position: fixed;
+    z-index: 6;
+    will-change: transform;
+}
+
+.header-item--logo {
+    margin-left: 30px;
+    margin-top: 17px;
+    img {
+        height: 30px;
+    }
+}
+
+.header-item--logo-talk{
+    margin-left: 30px;
+    margin-top: 25px;
+    img {
+        height: 19px;
+    }
+
+}
+
+.header-item--menu,
+#workButton {
+    right: 0;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#backButton {
+    display: block;
+    padding-top: 41px;
+    padding-left: 88px;
+    padding-right: 5px;
+    width: 0;
+    height: 0;
+    background: url('../images/back_to_work.png') 10px 7.5px no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#menuButton {
+    display: block;
+    padding-top: 41px;
+    width: 0px;
+    padding-left: 48px;
+    height: 0;
+    background: url('../images/menu-burger_v3.png') 10px 10px no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+a#menuButton:hover {
+    background: url('../images/menu-burger_v3.png') 10px -34px no-repeat;
+}
+
+#closeButton {
+    display: none;
+    right: 10px;
+    cursor: pointer;
+    margin-right: 25px;
+    margin-top: 25px;
+    width: 17px;
+    height: 17px;
+    background: url('../images/close_btn.png') top left no-repeat;
+    background-size: 17px 17px;
+    overflow: hidden;
+    text-indent: -9999px;
+    transition: all .2s;
+    cursor: pointer;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 17px;
+        height: 17px;
+        background: url('../images/close_btn_hover.png') top left no-repeat;
+        background-size: 17px 17px;
+        transition: all .2s;
+        opacity: 0;
+    }
+    &:hover:before {
+        opacity: 1;
+    }
+}
+
+#workButton {
+    display: block;
+    padding-top: 39px;
+    width: 0px;
+    padding-left: 31px;
+    height: 0;
+    background: url('../images/work-burger_v5.png') 10px 10px no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    right: 40px;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+a#workButton:hover {
+    background: url('../images/work-burger_v5.png') 10px -39px no-repeat;
+}
+
+.menu {
+    height: 100vh;
+    width: 100%;
+    background-color: $c-tilt-pink;
+    background-size: cover;
+    position: fixed;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.5, 1.5);
+    transition: opacity 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+
+.menu__items {
+    @extend %clearfix;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    .menu__item {
+        display: block;
+        &+.menu__item {
+            margin-top: 20px;
+            @media handheld,
+            screen and (min-width: 0px) and (max-width: $phone-breaks) {
+                margin-top: 8px;
+            }
+            @media handheld,
+            screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {
+                margin-top: 15px;
+            }
+        }
+        a {
+            color: white;
+            padding-bottom: 15px;
+            font-family: $f-seroot-thn;
+            @media handheld,
+            screen and (min-width: 0px) and (max-width: $bp-desktop) {
+                display: block;
+                padding-bottom: 10px;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 0px;
+                height: 2px;
+                background-color: white;
+                transition: width 0.3s;
+                margin: 0 auto;
+                margin-top: 5px;
+            }
+            &:hover {
+                &:after {
+                    width: 15%;
+                    @media handheld,
+                    screen and (min-width: 0px) and (max-width: $bp-phone) {
+                        width: 22%;
+                    }
+                    @media handheld,
+                    screen and (min-width:$bp-phone) and (max-width: $bp-desktop) {
+                        width: 12%;
+                    }
+                }
+            }
+        }
+    }
+    @media handheld,
+    screen and (min-width: $bp-desktop-large-nav) {
+        .menu__item {
+            display: inline-block;
+            &+.menu__item {
+                margin-left: 40px;
+                margin-bottom: 0px;
+            }
+            a {
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.work-item-title {
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding-top: 26px;
+    font-family: $f-seroot-thn;
+    letter-spacing: 1px;
+    margin: 0 25px;
+    user-select: none;
+    color: #fff;
+    @media handheld,
+    screen and (min-width: $bp-desktop) {
+        display: inline-block;
+    }
+    @include font-size(19);
+    @media handheld,
+    screen and (min-width:0px) and (max-width: $bp-phone) {
+        margin-right: 10px;
+        @include font-size(14);
+    }
+    @media handheld,
+    screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+        margin-right: 30px;
+        @include font-size(20);
+    }
+    &:hover {
+        color: $c-tilt-pink2;
+    }
+    &:after {
+        content: " ";
+        transition: all .5s;
+        margin-top: 3px;
+        height: 2px;
+        display: block;
+        content: " ";
+        width: 0;
+        transform: translate3d(0, 0, 0);
+        background-color: $c-tilt-pink2;
+    }
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+#services--list span.work-item--selected {
+    color: $c-tilt-pink2;
+}
