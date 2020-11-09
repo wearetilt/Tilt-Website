@@ -251,12 +251,14 @@ footer {
 
         .project-navigation {
             padding: 12px 0px 10px 0px;
-            background-color: #272727;
-            width: 30%;
+            background-color: #fff;
+            color: black;
+            width: 50%;
             display: block;
             float: left;
             text-align: center;
             line-height: 0.7;
+            font-family: $f-seroot-lt;
             @media handheld,
             screen and (min-width: $bp-desktop) {
                 padding: 12px 0px 10px 0px;
@@ -267,8 +269,11 @@ footer {
             }
         }
 
+        .button--disabled {
+            background-color: #939393;
+        }
+
         .paginate_next {
-            background-color: #fff !important;
             color: black;
 
             &:after {
@@ -287,41 +292,6 @@ footer {
                 font-size: 33px;
                 margin-right: 25px;
             }
-        }
-
-
-        .numbers {
-            width: 40%;
-            text-align: center;
-
-            .page-numbers {
-                display: inline-block;
-                width: 54px;
-                height: 100%;
-                padding: 12px 0px 10px 0px;
-                font-family: $f-seroot-thn;
-                line-height: 1.7;
-                @include font-size(20);
-                color: #fff;
-
-                &.prev {
-                        display: none;
-                }
-                &.next {
-                        display: none;
-                }
-
-                &.current {
-                    color: #fd4c75;
-                    background: #3e3e3e;
-                }
-
-                &:hover {
-                    opacity: 0.5;
-                }
-
-            }
-
         }
 
     }

@@ -1449,6 +1449,15 @@ a {
 
 
 }
+.text_headings {
+    h2 {
+        width: 40%;
+        display:inline-block;
+            &:nth-child(2) {
+                margin-left: 50px;
+            }
+    }
+}
 .text_mid {
     display: block;
     @media screen and (min-width: $bp-desktop) {

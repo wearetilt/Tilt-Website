@@ -320,27 +320,27 @@ if( have_rows('work_items') ):
                 if($second_column == true) :
                   ?>
                   <div class="container text_section_container area-dark">
-                    <div class="text_mid">
 
+                    <div class="text_headings">
                       <?php if( $text_section_header != ''){ ?>
                         <h2><?php echo $text_section_header; ?> </h2>
                       <?php } else {} ?>
+
+                      <?php if( $second_header != ''){ ?>
+                        <h2><?php echo $second_header; ?> </h2>
+                      <?php } else {} ?>
+                    </div>
+
+
+                    <div class="text_mid">
 
                       <p><?php echo $text_section_content; ?></p>
 
                     </div>
 
-                    <?php if( $second_header != ''){ ?>
                       <div class="text_right">
-                          <h2><?php echo $second_header; ?> </h2>
                           <p><?php echo $second_text_content; ?></p>
                       </div>
-
-                    <?php } else { ?>
-                      <div class="text_right no_header">
-                        <p><?php echo $second_text_content; ?></p>
-                      </div>
-                    <?php } ?>
                   </div>
                   <?php else: ?>
                     <div class="container text_section_container area-dark">
