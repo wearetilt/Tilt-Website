@@ -250,13 +250,14 @@ footer {
         height: 54px;
 
         .project-navigation {
-            padding: 12px 0px 10px 0px;
+            padding: 0px;
             background-color: #fff;
             color: black;
             width: 50%;
-            display: block;
-            float: left;
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
             line-height: 0.7;
             font-family: $f-seroot-lt;
             @media handheld,

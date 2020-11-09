@@ -140,7 +140,7 @@ if (have_posts()) : ?>
             if($prev_link) {
                 echo str_replace('<a ', '<a class="project-navigation paginate_prev" ', $prev_link);
             } else {
-                echo '<a class="project-navigation paginate_prev button--disabled" href="">prev</a>';
+                echo '<a class="project-navigation paginate_prev button--disabled" href="">prev </a>';
             }
     ?>
 
