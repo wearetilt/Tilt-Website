@@ -38,8 +38,6 @@
   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.lazy.min.js"></script>
-
 <?php 
 
 $htmltitle = wp_title('&raquo;',false);
