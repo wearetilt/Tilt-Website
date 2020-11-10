@@ -63,6 +63,7 @@ get_header(); ?>
             <div class="new_client_logos container area-dark">
                 <h2> Featured Clients</h2>
                     <div class="logos">
+                        
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/1_bp.png" alt="bp logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/2_bbc.png" alt="bbc logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />

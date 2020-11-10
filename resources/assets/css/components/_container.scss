@@ -1131,6 +1131,8 @@ body{
             font-family: $f-seroot-lt;
             line-height: 26px;
             text-transform: uppercase;
+            line-height: 1;
+            padding-bottom: 7px;
             @media screen and (min-width: $bp-desktop) {
                 line-height: 20px;
             }
