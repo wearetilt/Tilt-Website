@@ -255,6 +255,7 @@ footer {
             color: black;
             width: 50%;
             display: flex;
+            position: relative;
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -282,6 +283,13 @@ footer {
                 display: inline-block;
                 font-size: 33px;
                 margin-left: 25px;
+                position: absolute;
+                top: 25%;
+                right: 25%;
+
+                @media screen and (min-width: $bp-desktop){
+                    right: 35%;
+                }
             }
 
         }
@@ -292,6 +300,13 @@ footer {
                 display: inline-block;
                 font-size: 33px;
                 margin-right: 25px;
+                position: absolute;
+                top: 25%;
+                left: 25%;
+
+                @media screen and (min-width: $bp-desktop){
+                    left: 35%;
+                }
             }
         }
 

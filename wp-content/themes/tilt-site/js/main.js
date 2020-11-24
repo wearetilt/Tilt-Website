@@ -613,6 +613,8 @@ if (document.getElementById('header-video-player')) { // if has header video
 
 
 
+document.getElementById("header-video-player_html5_api").controls = false;
+
 /**
  * MENU FUNCTIONS
  *
