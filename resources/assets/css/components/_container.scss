@@ -202,7 +202,7 @@ body{
 
 /* Client logo container on work archive pages */
 .new_client_logos {
-    padding: 80px 0 160px 0;
+    padding: 0px 20px 160px 20px;
     top: 60px;
     @media screen and (min-width: $bp-desktop) {
         padding: 80px 0 160px 0;
@@ -212,15 +212,37 @@ body{
 
     h2 {
         color: white;
-        text-align: center;
+        text-align: left;
+        @include font-size(24);
+        @media screen and (min-width: $bp-desktop) {
+          text-align: center;  
+        }
     }
     .logos {
         text-align: center;
+        display: none;
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
         img {
             width: 32%;
             @media screen and (min-width: $bp-desktop) {
                 width: 19%;
             }
+        }
+    }
+    .logos-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+        div {
+            flex-basis: 33.33%;
+            text-align: center;
+            margin: 10% 0 10% 0;
         }
     }
 }

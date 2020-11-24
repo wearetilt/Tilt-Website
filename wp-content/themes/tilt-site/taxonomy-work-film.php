@@ -63,7 +63,6 @@ get_header(); ?>
             <div class="new_client_logos container area-dark">
                 <h2> Featured Clients</h2>
                     <div class="logos">
-                        
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/1_bp.png" alt="bp logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/2_bbc.png" alt="bbc logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />
@@ -85,6 +84,53 @@ get_header(); ?>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/8_tui.png" alt="Tui logo" />
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/3_a&o.png" alt="Allen and Overy logo" />
                     </div>
+                    <div class="logos-mobile">
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bp.png" alt="bp logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bbc.png" alt="bbc logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/allen.png" alt="allen & overy logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bnp.png" alt="bnp paribas logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logo/mobile/nick.png" alt="nickelodeon logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/ford.png" alt="ford logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/visitbrighton.png" alt="Visit brighton logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/tui.png" alt="TUI logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/alzheimers.png" alt="alzheimers research UK logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/barclays.png" alt="barclays paribas logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/sainsburys.png" alt="Sainsburys logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/redbull.png" alt="redbull logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/sdnp.png" alt="south downs national park logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/landrover.png" alt="land rover logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/o2.png" alt="o2 mobile network logo" />
+    </div>
+  </div>
             </div>
 
     </main>
