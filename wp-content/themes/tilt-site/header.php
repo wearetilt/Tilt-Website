@@ -37,6 +37,7 @@
       a.appendChild(r);
   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<<<<<<< Updated upstream
 <?php 
 
 $htmltitle = wp_title('&raquo;',false);
@@ -69,6 +70,8 @@ $htmltitle = wp_title('&raquo;',false);
 		<meta name="description" content="Motion Graphics has no borders, if you can imagine it, we can build it. Vivid 2D and 3D pieces that explain ideas and spark interest in eye catching ways.">
 
 <?php } ?>
+=======
+>>>>>>> Stashed changes
 
 	<?php wp_head(); ?>
 
