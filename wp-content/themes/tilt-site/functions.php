@@ -790,3 +790,9 @@ function pagination_bar() {
 }
 
 
+add_action( 'wp_head', 'prefix_add_og_image', 10, 1 );
+function prefix_add_og_image( $img ) {
+    if( is_post_type_archive( 'work_item' ) ) {
+	    echo '<meta property="og:image" content="http://example.com/my-image.jpg" />';
+    }
+}

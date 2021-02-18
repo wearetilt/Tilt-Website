@@ -2,11 +2,11 @@ $icon-size: 24px;
 $form-width: 800px;
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 0;
+    z-index: 4;
     will-change: transform;
     transform: translate3d(0, 0, 0);
     background-size: cover;
