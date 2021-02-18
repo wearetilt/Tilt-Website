@@ -11,11 +11,12 @@ npm-debug.log
 wp-content/uploads
 wp-content/uploads.old
 wp-content/uploads/
-/logs
-/logs/error_log
+uploads
 wp-config.php
 global.min.css
 global.min.css.map
 global.css
 global.css.map
 /resources/package-lock.json
+.DS_Store
+
