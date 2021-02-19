@@ -278,7 +278,7 @@ if(has_post_thumbnail()){
 </div>
 
 
-<div class="group-container">
+<!-- <div class="group-container">
 
     <?php
     $next_post = get_next_post(true);
@@ -306,7 +306,7 @@ if(has_post_thumbnail()){
     <?php endif; ?>
 
 
-  </div>
+  </div> -->
 
 </div>
 
