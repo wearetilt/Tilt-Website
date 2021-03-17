@@ -1,0 +1,1 @@
+This certificate is a self signed cert for the development IDP container. It is not used in production, and is housed here for developers to easily add it to their white list for localhost. 
