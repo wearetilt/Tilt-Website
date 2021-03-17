@@ -140,19 +140,15 @@ if (have_posts()) : ?>
             if($prev_link) {
                 echo str_replace('<a ', '<a class="project-navigation paginate_prev" ', $prev_link);
             } else {
-                echo '<a class="project-navigation button--disabled" href="">&nbsp;</a>';
+                echo '<a class="project-navigation paginate_prev button--disabled" href="">prev </a>';
             }
     ?>
-
-       <div class="numbers">
-            <?php pagination_bar(); ?>
-        </div>
 
     <?php
             if($next_link) {
                 echo str_replace('<a ', '<a class="project-navigation paginate_next" ', $next_link);
             } else {
-                echo '<a class="project-navigation button--disabled" href="">&nbsp;</a>';
+                echo '<a class="project-navigation paginate_next button--disabled" href="">next</a>';
             }
     ?>
 </div>

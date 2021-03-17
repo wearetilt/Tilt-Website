@@ -154,6 +154,7 @@ get_header('home'); ?>
               'author'     => '',
               'author_name'    => '',
               'post_status'      => 'publish',
+              'has_password' => false,
               'suppress_filters' => true,
               'fields'           => '',
             );

@@ -278,36 +278,6 @@ if(has_post_thumbnail()){
 </div>
 
 
-<div class="group-container">
-
-    <?php
-    $next_post = get_next_post(true);
-    $previous_post = get_previous_post(true);
-
-    if (!empty( $previous_post )): ?>
-      <a class="project-navigation  paginate_prev" href="<?php echo get_permalink( $previous_post->ID ); ?>"><span>&#8249;</span> Previous</a>
-    <?php endif;
-
-    if (empty( $previous_post )): ?>
-      <a class="project-navigation button--disabled" href="">&nbsp;</a>
-    <?php endif;
-    ?>
-
-    <?php
-
-    if (!empty( $next_post )): ?>
-      <a class="project-navigation paginate_next" href="<?php echo get_permalink( $next_post->ID ); ?>">Next <span>&#8250;</span></a>
-    <?php endif; ?>
-
-    <?php
-
-    if (empty( $next_post )): ?>
-      <a class="project-navigation button--disabled" href="">&nbsp;</a>
-    <?php endif; ?>
-
-
-  </div>
-
 </div>
 
 <?php get_footer(); ?>
