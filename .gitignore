@@ -13,8 +13,6 @@ wp-content/uploads.old
 wp-content/uploads/
 /logs
 /logs/error_log
-/log
-/log/*
 uploads
 wp-config.php
 global.min.css
@@ -24,3 +22,8 @@ global.css.map
 /resources/package-lock.json
 httpd.conf
 .DS_Store
+.env
+dbdata/
+dbdata/*
+log/
+log/*
