@@ -30,17 +30,17 @@ $entries_left = array(1);
 $entries_right = array(0,2);
 ?>
 <div class="work-wrapper">
-<?php if($work_groups) : ?>
- <?php foreach($work_groups as $work_group) : ?>
+  <?php if($work_groups) : ?>
+   <?php foreach($work_groups as $work_group) : ?>
 
-  <?php if($work_group['work_entries']) : ?>
-   <div class="work-container container container--no-padding">
+    <?php if($work_group['work_entries']) : ?>
+     <div class="work-container container container--no-padding">
 
-     <div class="group-container">
+       <div class="group-container">
 
-       <div class="module module--2-1  module--dark module--mobile-double-height">
-        <div class="module__text">
-          <div>
+         <div class="module module--2-1  module--dark module--mobile-double-height">
+          <div class="module__text">
+            <div>
              <h2 class="underlined"><?= $work_group['work_headline'];?></h2>
              <p class="tag--work-title"><?= $work_group['work_text'];?></p>
 
@@ -55,36 +55,36 @@ $entries_right = array(0,2);
             </div>
           </a>
         </div>
+      </div>
+
     </div>
 
-  </div>
-
-  <?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
-    <?php if(in_array($k, $entries_left)) : ?>
-     <?php
-     $link = get_permalink($work_item['work_item_post']->ID);
-     $arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
-     ?>
-     <div class="module area-dark module--2-1">
-      <a href="<?= $link;?>">
-       <div class="overlay area-dark">
-        <div class="overlay-text">
-          <p class="project_name"><?= $work_item['work_item_headline2'];?></p>
-          <h2 class="entry-title"><?= $work_item['work_item_headline'];?></h2>
-          <?php if($work_item['work_item_text']): ?>
-            <p class="excerpt"><?= $work_item['work_item_text'];?></p>
-          <?php endif;?>
+    <?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
+      <?php if(in_array($k, $entries_left)) : ?>
+       <?php
+       $link = get_permalink($work_item['work_item_post']->ID);
+       $arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
+       ?>
+       <div class="module area-dark module--2-1">
+        <a href="<?= $link;?>">
+         <div class="overlay area-dark">
+          <div class="overlay-text">
+            <p class="project_name"><?= $work_item['work_item_headline2'];?></p>
+            <h2 class="entry-title"><?= $work_item['work_item_headline'];?></h2>
+            <?php if($work_item['work_item_text']): ?>
+              <p class="excerpt"><?= $work_item['work_item_text'];?></p>
+            <?php endif;?>
+          </div>
         </div>
-      </div>
-      <div class="ratio" style="background-image: url('<?= $arrImage[0];?>')">
-      </div>
-    </a>
-  </div>
-<?php endif;?>
+        <div class="ratio" style="background-image: url('<?= $arrImage[0];?>')">
+        </div>
+      </a>
+    </div>
+  <?php endif;?>
 <?php endforeach;?>
 
 
- <?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
+<?php foreach($work_group['work_entries'] as $k => $work_item) : ?>
   <?php if(in_array($k, $entries_right)) : ?>
    <?php
    $link = get_permalink($work_item['work_item_post']->ID);
@@ -127,31 +127,78 @@ $entries_right = array(0,2);
 </div>
 </div>
 
-            <div class="new_client_logos container area-dark">
-                <h2> Featured Clients</h2>
-                    <div class="logos">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/1_bp.png" alt="bp logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/2_bbc.png" alt="bbc logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/10_barclays.png" alt="barclays bank logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/5_nick.png" alt="Nickelodeon logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/6_ford.png" alt="ford logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/19_Bupa_logo.png" alt="Bupa logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/17_Reuters_logo.png" alt="Reuters logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/13_sdnp.png" alt="southdowns national park logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/16_Open-Unievrsity_logo.png" alt="open university logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/4_bnp.png" alt="bnp paribas logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/11_sainos.png" alt="Sainsburys logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/12_rb.png" alt="redbull logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/18_Shell_logo.png" alt="Shell logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/14_land_rover.png" alt="land rover logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/15_02.png" alt="o2 mobile network logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/9_alzheimers.png" alt="alzheimers research UK logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/7_visit_brighton.png" alt="visit brighton logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/8_tui.png" alt="Tui logo" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/3_a&o.png" alt="Allen and Overy logo" />
-                    </div>
-            </div>
+<div class="new_client_logos container area-dark">
+  <h2> Featured Clients</h2>
+  <div class="logos">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/1_bp.png" alt="bp logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/2_bbc.png" alt="bbc logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/10_barclays.png" alt="barclays bank logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/5_nick.png" alt="Nickelodeon logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/6_ford.png" alt="ford logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/19_Bupa_logo.png" alt="Bupa logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/17_Reuters_logo.png" alt="Reuters logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/13_sdnp.png" alt="southdowns national park logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/16_Open-Unievrsity_logo.png" alt="open university logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/4_bnp.png" alt="bnp paribas logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/11_sainos.png" alt="Sainsburys logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/12_rb.png" alt="redbull logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/18_Shell_logo.png" alt="Shell logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/14_land_rover.png" alt="land rover logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/15_02.png" alt="o2 mobile network logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/9_alzheimers.png" alt="alzheimers research UK logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/7_visit_brighton.png" alt="visit brighton logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/8_tui.png" alt="Tui logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/3_a&o.png" alt="Allen and Overy logo" />
+  </div>
+  <div class="logos-mobile">
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bp.png" alt="bp logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bbc.png" alt="bbc logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/allen.png" alt="allen & overy logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bnp.png" alt="bnp paribas logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logo/mobile/nick.png" alt="nickelodeon logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/ford.png" alt="ford logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/visitbrighton.png" alt="Visit brighton logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/tui.png" alt="TUI logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/alzheimers.png" alt="alzheimers research UK logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/barclays.png" alt="barclays paribas logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/sainsburys.png" alt="Sainsburys logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/redbull.png" alt="redbull logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/sdnp.png" alt="south downs national park logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/landrover.png" alt="land rover logo" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/o2.png" alt="o2 mobile network logo" />
+    </div>
+  </div>
+</div>
 
 </div>
 

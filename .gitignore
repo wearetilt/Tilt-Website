@@ -15,6 +15,7 @@ wp-content/uploads/
 /logs/error_log
 /log
 /log/*
+uploads
 wp-config.php
 global.min.css
 global.min.css.map
@@ -22,3 +23,4 @@ global.css
 global.css.map
 /resources/package-lock.json
 httpd.conf
+.DS_Store
