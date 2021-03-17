@@ -1,0 +1,6 @@
+<VirtualHost *:80>
+    DocumentRoot "[BUILD_DIR]"
+    ServerName [BUILD_URL]
+    ErrorLog "[BUILD_DIR]/log/error_log"
+    CustomLog "[BUILD_DIR]/log/custom_log" common
+</VirtualHost>
