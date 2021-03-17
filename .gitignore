@@ -14,6 +14,7 @@ wp-content/uploads/
 /logs
 /logs/error_log
 /log
+/log/*
 wp-config.php
 global.min.css
 global.min.css.map
