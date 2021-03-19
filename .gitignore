@@ -11,8 +11,7 @@ npm-debug.log
 wp-content/uploads
 wp-content/uploads.old
 wp-content/uploads/
-/logs
-/logs/error_log
+uploads
 wp-config.php
 global.min.css
 global.min.css.map
@@ -27,3 +26,4 @@ dbdata/*
 log/
 log/*
 .idea/
+.DS_Store
