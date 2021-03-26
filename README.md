@@ -48,7 +48,7 @@ To stop the project from running, run `./stop.sh`. You can run this script as `s
 :exclamation: **WARNING! `./stop.sh -c` will remove all unused docker images from your system, be sure you want to do this before using the -c flag.** :exclamation:
 
 You'll need to import the database to your local db and configure your wp-config settings accordingly. Docker settings are as follows:
-- DB Host: wcv-marketing-site_database
+- DB Host: Tilt-Website_database
 - DB Name: homestead
 - DB User: homestead
 - DB Password: secret
