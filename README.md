@@ -30,7 +30,11 @@ To install this project you must have already installed on your machine.
 ## :ghost: `Setup`
 
 Pull the repository locally to your development machine.
-There are 2 bash scripts `start.sh` and `stop.sh`.
+There are 3 bash scripts `nfs-setup.sh` `start.sh` and `stop.sh`.
+
+To configure your system to use NFS (which should provide speed improvements in Docker), run the `nfs-setup.sh` script
+
+
 
 To start the project run `./start.sh`. This script will do several things:
 - If run as `./start.sh -c` then the `dbdata`, and the docker images will be rebuilt.

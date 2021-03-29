@@ -8,7 +8,7 @@ services:
     container_name: tilt-website_app
     working_dir: /var/www
     volumes:
-      - ./:/var/www
+      - nfsmount:/var/www
     environment:
       DB_PORT: 3306
       DB_HOST: tilt-website_database
@@ -30,7 +30,7 @@ services:
     container_name: tilt-website_database
     command: --lower_case_table_names=1
     volumes:
-      - ./dbdata/:/var/lib/mysql
+      - ./dbdata/:/var/lib/mysql:delegated
     environment:
       MYSQL_DATABASE: "homestead"
       MYSQL_USER: "homestead"
@@ -43,8 +43,8 @@ services:
     image: kristophjunge/test-saml-idp
     container_name: tilt-website_idp
     volumes:
-      - ./config/certs/server.crt:/etc/ssl/cert/cert.crt
-      - ./config/certs/server.pem:/etc/ssl/private/private.key
+      - ./config/certs/server.crt:/etc/ssl/cert/cert.crt:delegated
+      - ./config/certs/server.pem:/etc/ssl/private/private.key:delegated
     environment:
       SIMPLESAMLPHP_SP_ENTITY_ID: "https://localhost"
       SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE: "https://localhost/sso/acs"
@@ -54,3 +54,11 @@ services:
     ports:
       - 8081:8080
       - 8443:8443
+
+volumes:
+  nfsmount:
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=host.docker.internal,rw,nolock,hard,nointr,nfsvers=3
+      device: ":$PWD"
