@@ -1,8 +1,10 @@
 FROM php:7.4-fpm
 
-RUN echo "deb [check-valid-until=no] http://archive.debian.org/debian jessie-backports main" > /etc/apt/sources.list.d/jessie-backports.list
+RUN echo "deb [check-valid-until=no] http://deb.debian.org/debian stretch main" > /etc/apt/sources.list.d/stretch.list
+RUN echo "deb [check-valid-until=no] http://deb.debian.org/debian stretch-updates main" > /etc/apt/sources.list.d/stretch-updates.list
 
-RUN sed -i '/deb http:\/\/deb.debian.org\/debian jessie-updates main/d' /etc/apt/sources.list
+RUN sed -i '/deb http:\/\/deb.debian.org\/debian stretch main/d' /etc/apt/sources.list
+RUN sed -i '/deb http:\/\/deb.debian.org\/debian stretch-updates main/d' /etc/apt/sources.list
 
 RUN echo "Acquire::Check-Valid-Until \"false\";" >> /etc/apt/apt.conf
 
