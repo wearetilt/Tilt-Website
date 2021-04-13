@@ -29,11 +29,14 @@ To install this project you must have already installed on your machine.
 
 ## :ghost: `Setup`
 
-Pull the repository locally to your development machine.
-There are 2 bash scripts `start.sh` and `stop.sh`.
+
+Pull the repository locally to your development machine. There are 2 bash scripts `start.sh` and `stop.sh`.
 
 To start the project run `./start.sh`. This script will do several things:
-- If run as `./start.sh -c` then the `dbdata`, and the docker images will be rebuilt.
+
+- To configure your system to use NFS (which should provide speed improvements in Docker), run `./start.sh --n`
+- To set your environment (development/staging/production) run `./start.sh --e=[ENVIRONMENT]`
+- If run as `./start.sh --c` then the `dbdata`, and the docker images will be rebuilt.
 - Create a `.env` file if one does not exist, based off of the `.env.example` file.
 - Start the docker containers to serve up the project locally.
 - Create the default database if it does not exist.

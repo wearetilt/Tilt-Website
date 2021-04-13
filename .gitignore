@@ -27,3 +27,8 @@ log/
 log/*
 .idea/
 .DS_Store
+
+## Docker
+docker-compose.yml
+.docker/config/
+.docker/config/*

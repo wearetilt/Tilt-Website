@@ -1,11 +1,12 @@
-version: '2'
+version: '3.8'
 
 services:
   app:
     build:
       context: ./
-      dockerfile: app.dockerfile
+      dockerfile: .docker/config/dockerfiles/app.dockerfile
     container_name: tilt-website_app
+
     working_dir: /var/www
     volumes:
       - ./:/var/www
@@ -16,13 +17,13 @@ services:
   web:
     build:
       context: ./
-      dockerfile: web.dockerfile
+      dockerfile: .docker/config/dockerfiles/web.dockerfile
     container_name: tilt-website_web
     working_dir: /var/www
     volumes_from:
       - app
     ports:
-      - 80:80
+      - 84:84
       - 443:443
 
   database:
@@ -30,21 +31,21 @@ services:
     container_name: tilt-website_database
     command: --lower_case_table_names=1
     volumes:
-      - ./dbdata/:/var/lib/mysql
+      - ./dbdata/:/var/lib/mysql:delegated
     environment:
       MYSQL_DATABASE: "homestead"
       MYSQL_USER: "homestead"
       MYSQL_PASSWORD: "secret"
       MYSQL_ROOT_PASSWORD: "secret"
     ports:
-      - 33061:3306
+        - 33061:3306
 
   idp:
     image: kristophjunge/test-saml-idp
     container_name: tilt-website_idp
     volumes:
-      - ./config/certs/server.crt:/etc/ssl/cert/cert.crt
-      - ./config/certs/server.pem:/etc/ssl/private/private.key
+      - ./.docker/config/certs/server.crt:/etc/ssl/cert/cert.crt:delegated
+      - ./.docker/config/certs/server.pem:/etc/ssl/private/private.key:delegated
     environment:
       SIMPLESAMLPHP_SP_ENTITY_ID: "https://localhost"
       SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE: "https://localhost/sso/acs"
