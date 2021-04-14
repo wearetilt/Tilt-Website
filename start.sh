@@ -16,7 +16,6 @@ setup_project_clean_folders() {
 setup_project_create_env() {
   if [ ! -f ./.env ]; then
     cp ./.docker/config/envs/env.example.$ENVIRONMENT ./.env
-    echo "* ENCRYPTION KEY SET IN .env FILE. PLEASE BACK THIS UP AS YOU WILL NEED IT TO RECOVER ANY DATA IN AN EMERGENCY."
   fi
 }
 
