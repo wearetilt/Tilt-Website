@@ -41,115 +41,162 @@ setup_project() {
 
 # Create the docker-compose.yml file if it doesn't exist
 setup_docker_docker_compose_yml() {
-  echo "  * POPULATING ./docker-compose.yml FILE"
-  if [ ! -f ./docker-compose.yml ]; then
-    echo "    * NO docker-compose.yml FILE, COPYING DEFAULT."
-    cp ./.docker/templates/docker-composes/docker-compose.yml.example.$(get_operating_system) ./docker-compose.yml
-  fi
+    if [ ! -d ./.docker/config/docker-composes ]; then
+        echo "  * CREATING ./.docker/config/docker-composes/ FOLDER"
+        mkdir -p ./.docker/config/docker-composes
+    fi
+
+    if [ ! -f ./.docker/config/docker-composes/docker-compose.yml ]; then
+        echo "  * CREATING docker-compose.yml FILE"
+        cp ./.docker/templates/docker-composes/docker-compose.yml.example.$ENVIRONMENT.$(get_operating_system) ./.docker/config/docker-composes/docker-compose.yml
+    fi
+
+    if [ ! -f ./docker-compose.yml ]; then
+        echo "  * CREATING docker-compose.yml FILE"
+        cp ./.docker/config/docker-composes/docker-compose.yml ./docker-compose.yml
+    fi
+}
+
+
+# Create the mutagen.yml file if it doesn't exist
+setup_docker_mutagen_yml() {
+    if [ "$(get_operating_system)" == "osx" ]; then
+        if [ ! -d ./.docker/config/mutagens ]; then
+            echo "  * CREATING ./.docker/config/mutagens/ FOLDER"
+            mkdir -p ./.docker/config/mutagens
+        fi
+
+        if [ ! -f ./.docker/config/mutagens/mutagen.yml ]; then
+            echo "  * CREATING ./.docker/config/mutagens/mutagen.yml FILE"
+            cp ./.docker/templates/mutagens/mutagen.yml.example.$ENVIRONMENT ./.docker/config/mutagens/mutagen.yml
+        fi
+
+        if [ ! -f ./mutagen.yml ]; then
+            echo "  * CREATING mutagen.yml FILE"
+            cp ./.docker/config/mutagens/mutagen.yml ./mutagen.yml
+        fi
+    fi
 }
 
 # Create dockerfiles from templates if they don't already exist
 setup_docker_dockerfiles() {
-  echo "  * POPULATING ./.docker/config/dockerfiles/ FOLDER"
-  if [ ! -d ./.docker/config/dockerfiles ]; then
-    mkdir -p ./.docker/config/dockerfiles
-  fi
+    if [ ! -d ./.docker/config/dockerfiles ]; then
+        echo "  * CREATING ./.docker/config/dockerfiles/ FOLDER"
+        mkdir -p ./.docker/config/dockerfiles
+    fi
 
-  if [ ! -f ./.docker/config/dockerfiles/app.dockerfile ]; then
-    echo "    * NO app.dockerfile FILE, COPYING DEFAULT."
-    cp ./.docker/templates/dockerfiles/app.dockerfile.example.$ENVIRONMENT ./.docker/config/dockerfiles/app.dockerfile
-  fi
+    if [ ! -f ./.docker/config/dockerfiles/app.dockerfile ]; then
+        echo "  * CREATING app.dockerfile FILE"
+        cp ./.docker/templates/dockerfiles/app.dockerfile.example.$ENVIRONMENT ./.docker/config/dockerfiles/app.dockerfile
+    fi
 
-  if [ ! -f ./.docker/config/dockerfiles/web.dockerfile ]; then
-    echo "    * NO web.dockerfile FILE, COPYING DEFAULT."
-    cp ./.docker/templates/dockerfiles/web.dockerfile.example.$ENVIRONMENT ./.docker/config/dockerfiles/web.dockerfile
-  fi
+    if [ ! -f ./.docker/config/dockerfiles/web.dockerfile ]; then
+        echo "  * CREATING web.dockerfile FILE"
+        cp ./.docker/templates/dockerfiles/web.dockerfile.example.$ENVIRONMENT ./.docker/config/dockerfiles/web.dockerfile
+    fi
+
+    if [ "$(get_operating_system)" == "osx" ]; then
+        if [ ! -f ./.docker/config/dockerfiles/mutagen.dockerfile ]; then
+            echo "  * CREATING mutagen.dockerfile FILE"
+            cp ./.docker/templates/dockerfiles/mutagen.dockerfile.example.$ENVIRONMENT ./.docker/config/dockerfiles/mutagen.dockerfile
+        fi
+    fi
 }
 
 # Create certs info from templates if they don't already exist
 setup_docker_certs() {
-  echo "  * POPULATING ./.docker/config/certs/ FOLDER"
-  if [ ! -d ./.docker/config/certs ]; then
-    mkdir -p ./.docker/config/certs
-  fi
+    if [ ! -d ./.docker/config/certs ]; then
+        echo "  * CREATING ./.docker/config/certs/ FOLDER"
+        mkdir -p ./.docker/config/certs
+    fi
 
-  if [ ! -f ./.docker/config/certs/README.md ]; then
-    echo "    * NO README.md FILE, COPYING DEFAULT."
-    cp ./.docker/templates/certs/README.md.example ./.docker/config/certs/README.md
-  fi
+    if [ ! -f ./.docker/config/certs/README.md ]; then
+        echo "  * CREATING README.md FILE"
+        cp ./.docker/templates/certs/README.md.example.$ENVIRONMENT ./.docker/config/certs/README.md
+    fi
 
-  if [ ! -f ./.docker/config/certs/server.pem ]; then
-    echo "    * NO server.pem FILE, COPYING DEFAULT."
-    cp ./.docker/templates/certs/server.pem.example ./.docker/config/certs/server.pem
-  fi
+    if [ ! -f ./.docker/config/certs/server.pem ]; then
+        echo "  * CREATING server.pem FILE"
+        cp ./.docker/templates/certs/server.pem.example.$ENVIRONMENT ./.docker/config/certs/server.pem
+    fi
 
-  if [ ! -f ./.docker/config/certs/server.crt ]; then
-    echo "    * NO server.crt FILE, COPYING DEFAULT."
-    cp ./.docker/templates/certs/server.crt.example ./.docker/config/certs/server.crt
-  fi
+    if [ ! -f ./.docker/config/certs/server.crt ]; then
+        echo "  * CREATING server.crt FILE, COPYING DEFAULT."
+        cp ./.docker/templates/certs/server.crt.example.$ENVIRONMENT ./.docker/config/certs/server.crt
+    fi
 }
 
 # Create and populate vhosts folder if it doesn't already exist
 setup_docker_vhosts() {
-  echo "  * POPULATING ./.docker/config/vhosts/ FOLDER"
-  if [ ! -d ./.docker/config/vhosts ]; then
-    mkdir -p ./.docker/config/vhosts
-  fi
+    if [ ! -d ./.docker/config/vhosts ]; then
+        echo "  * CREATING ./.docker/config/vhosts/ FOLDER"
+        mkdir -p ./.docker/config/vhosts
+    fi
 
-  if [ ! -f ./.docker/config/vhosts/vhost.conf ]; then
-    echo "    * NO vhost.conf FILE, COPYING DEFAULT."
-    cp ./.docker/templates/vhosts/vhost.conf.example.$ENVIRONMENT ./.docker/config/vhosts/vhost.conf
-  fi
+    if [ ! -f ./.docker/config/vhosts/vhost.conf ]; then
+        echo "  * CREATING vhost.conf FILE"
+        cp ./.docker/templates/vhosts/vhost.conf.example.$ENVIRONMENT ./.docker/config/vhosts/vhost.conf
+    fi
 }
 
 # Create and populate envs folder if it doesn't already exist
 setup_docker_envs() {
-  echo "  * POPULATING ./.docker/config/envs/ FOLDER"
-  if [ ! -d ./.docker/config/envs ]; then
-    mkdir -p ./.docker/config/envs
-  fi
+    if [ ! -d ./.docker/config/envs ]; then
+        echo "  * CREATING ./.docker/config/envs/ FOLDER"
+        mkdir -p ./.docker/config/envs
+    fi
 
-  if [ ! -f ./.docker/config/envs/.env ]; then
-    echo "    * NO .env FILE FOR ENVIRONMENT, COPYING DEFAULT."
-    cp ./.docker/templates/envs/.env.example.$ENVIRONMENT ./.docker/config/envs/.env
-  fi
+    if [ ! -f ./.docker/config/envs/.env ]; then
+        echo "  * CREATING .env FILE FOR ENVIRONMENT"
+        cp ./.docker/templates/envs/.env.example.$ENVIRONMENT ./.docker/config/envs/.env
+    fi
 
-  if [ ! -f ./.env ]; then
-    echo "    * NO .env FILE, COPYING DEFAULT."
-    cp ./.docker/config/envs/.env ./.env
-  fi
+    if [ ! -f ./.env ]; then
+        echo "  * CREATING .env FILE"
+        cp ./.docker/config/envs/.env ./.env
+    fi
 }
 
 # Create and populate extensions folder if it doesn't already exist
 setup_docker_extensions() {
-  echo "  * POPULATING ./.docker/config/extensions/ FOLDER"
-  if [ ! -d ./.docker/config/extensions ]; then
-    mkdir -p ./.docker/config/extensions
-  fi
+    if [ ! -d ./.docker/config/extensions ]; then
+        echo "  * CREATING ./.docker/config/extensions/ FOLDER"
+        mkdir -p ./.docker/config/extensions
+    fi
 
-  if [ ! -f ./.docker/config/extensions/xdebug.ini ]; then
-    echo "    * NO xdebug.ini FILE, COPYING DEFAULT."
-    cp ./.docker/templates/extensions/xdebug.ini.example ./.docker/config/extensions/xdebug.ini
-  fi
+    if [ ! -f ./.docker/config/extensions/xdebug.ini ]; then
+        echo "  * CREATING xdebug.ini FILE"
+        cp ./.docker/templates/extensions/xdebug.ini.example.$ENVIRONMENT ./.docker/config/extensions/xdebug.ini
+    fi
 }
 
-# Set up NFS if the NFS_SETUP flag is set to true
-setup_docker_nfs() {
-  if [[ "$NFS_SETUP" == "true" ]]; then
-    ./.docker/scripts/nfs-setup.sh
-  fi
+# Installs mutagen if OS is OSX
+setup_docker_mutagen_setup() {
+    if [ "$(get_operating_system)" == "osx" ]; then
+        echo "  * INSTALLING  mutagen"
+        brew install mutagen-io/mutagen/mutagen
+    fi
+}
+
+# Start sync session
+setup_docker_mutagen_sync_session_start() {
+    if [ "$(get_operating_system)" == "osx" ]; then
+        echo "  * STARTING  mutagen SYNC SESSION"
+        mutagen project start
+    fi
 }
 
 # Populate and create various docker files based on templates if they don't already exist
 setup_docker() {
-  echo "* SETTING UP DOCKER ENVIRONMENT"
-  setup_docker_dockerfiles
-  setup_docker_docker_compose_yml
-  setup_docker_certs
-  setup_docker_vhosts
-  setup_docker_extensions
-  setup_docker_envs
-  setup_docker_nfs
+    echo "* SETTING UP DOCKER ENVIRONMENT"
+    setup_docker_mutagen_setup
+    setup_docker_dockerfiles
+    setup_docker_mutagen_yml
+    setup_docker_docker_compose_yml
+    setup_docker_certs
+    setup_docker_vhosts
+    setup_docker_extensions
+    setup_docker_envs
 }
 
 ############################
@@ -207,7 +254,6 @@ ARGS="$@"
 SUDO_ACCESS=""
 IS_LINUX=false
 CLEAN_FOLDERS=false
-NFS_SETUP=false
 ENVIRONMENT="development"
 
 run() {
@@ -216,6 +262,7 @@ run() {
     stop_container
     setup_project
     start_container
+    setup_docker_mutagen_sync_session_start
 
     echo "* PLEASE CHECK README.md FOR SETUP INSTRUCTIONS"
     echo "* APP READY on $(read_var APP_URL .env)"

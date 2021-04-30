@@ -32,3 +32,6 @@ log/*
 docker-compose.yml
 .docker/config/
 .docker/config/*
+mutagen.yml
+mutagen.yml.lock
+html/
