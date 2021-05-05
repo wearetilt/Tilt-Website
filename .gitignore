@@ -17,7 +17,6 @@ global.min.css
 global.min.css.map
 global.css
 global.css.map
-/resources/package-lock.json
 /logs
 /logs/error_log
 .env

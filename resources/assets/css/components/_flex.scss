@@ -1,0 +1,36 @@
+.flex-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	.flex-item {
+		background-color: #252525;
+		padding: 60px;
+		flex-basis: 50%;
+	}
+
+	&.flex-odd {
+		.flex-item:last-child {
+			flex-basis: 100%;
+		}
+	}
+}
+
+.image-grid {
+	.image-item {
+		padding:150px;
+		&_1 {
+			background-image: url('/wp-content/themes/tilt-site/images/contact_poster.jpg');
+		}
+		&_2 {
+			background-image: url('/wp-content/themes/tilt-site/images/contact_poster.jpg');
+		}
+		&_3 {
+			background-image: url('/wp-content/themes/tilt-site/images/contact_poster.jpg');
+		}
+		&_4 {
+			background-image: url('/wp-content/themes/tilt-site/images/contact_poster.jpg');
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+.careers-page__wrapper {
+	.header-container {
+		&.sub-header {
+			padding-top: 30px !important;
+		}
+
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	.career-container {
+		.group-container {
+			.module {
+				padding-bottom: 5px;
+			}
+		}
+	}
+}
