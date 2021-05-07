@@ -1,0 +1,11 @@
+.is-style-first-line {
+  strong {
+    color: #ff4c74;
+  }
+}
+
+.text-container.first-para + .text-container.first-para {
+  .header-content {
+    margin-top: 40px;
+  }
+}

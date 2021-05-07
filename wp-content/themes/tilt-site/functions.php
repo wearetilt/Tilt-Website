@@ -701,7 +701,7 @@ function my_password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<div class="container area-dark contact--page pw-protect-login-form">
-    		<div class="container container-headline-text area-dark"> 
+    		<div class="container container-headline-text area-dark">
             <section class="text-section">
               <h2>Client area</h2>
               <div class="text-section__para">
@@ -735,7 +735,7 @@ function wpse_71284_custom_post_password_msg( $o )
 $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     // We have a cookie, but it doesn’t match the password.
     $msg = '<div class="container area-dark contact--page pw-protect-login-form">
-        <div class="container container-headline-text area-dark"> 
+        <div class="container container-headline-text area-dark">
             <section class="text-section">
               <h2>Client area</h2>
               <div class="text-section__para">
@@ -770,16 +770,16 @@ remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('wp_head', 'wp_oembed_add_host_js');
 
 
-//numbered pagination 
+//numbered pagination
 
 function pagination_bar() {
     global $wp_query;
- 
+
     $total_pages = $wp_query->max_num_pages;
- 
+
     if ($total_pages > 1){
         $current_page = max(1, get_query_var('paged'));
- 
+
         echo paginate_links(array(
             'base' => get_pagenum_link(1) . '%_%',
             'format' => '/page/%#%',
@@ -795,4 +795,67 @@ function prefix_add_og_image( $img ) {
     if( is_post_type_archive( 'work_item' ) ) {
 	    echo '<meta property="og:image" content="http://example.com/my-image.jpg" />';
     }
+}
+
+add_action('acf/init', 'tilt_acf_init_block_types');
+function tilt_acf_init_block_types() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'Job posting',
+            'title'             => __('Job posting'),
+            'description'       => __('A custom job posting block.'),
+            'render_template'   => 'template-parts/blocks/job-posting.php',
+            'category'          => 'formatting',
+            'icon'              => 'welcome-add-page',
+            'keywords'          => array( 'career', 'job', 'posting' ),
+        ));
+    }
+}
+
+
+function tilt_gutenberg_scripts() {
+
+	wp_enqueue_script(
+		'be-editor',
+		get_stylesheet_directory_uri() . '/js/editor.js',
+		array( 'wp-blocks', 'wp-dom' ),
+		filemtime( get_stylesheet_directory() . '/js/editor.js' ),
+		true
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'tilt_gutenberg_scripts' );
+
+add_filter( 'render_block', 'wrap_paragraph_block', 10, 2 );
+function wrap_paragraph_block( $block_content, $block ) {
+	// var_dump($block);
+  if ( 'core/heading' === $block['blockName'] || ('core/paragraph' === $block['blockName'] && $block['attrs']['className'] == 'is-style-first-line')  ) {
+    $block_content = '<div class="text-container first-para sans-serif">' . $block_content . '</div>';
+  }
+
+	if ( 'core/paragraph' === $block['blockName'] && $block['attrs']['className'] == 'is-style-header-para'  ) {
+    $block_content = '<div class="text-container first-para sans-serif"><div class="header-content">' . $block_content . '</div></div>';
+  }
+  return $block_content;
+}
+
+add_filter( 'render_block', 'rewrite_cube_button', 10, 2 );
+function rewrite_cube_button( $block_content, $block ) {
+	// var_dump($block);
+  if ( 'core/button' === $block['blockName']  && $block['attrs']['className'] == 'is-style-cube'  ) {
+
+
+				$url = preg_match('/href="(.+)"/', $block_content, $match);
+				$url = $match[1];
+
+
+     		$block_content = '<a class="cube--link" href="'.$url.'"><div class="cube"><div class="cube--front cube--front__no-bg"><p class="sans-serif">Send us your details</p></div></div></a>';
+
+  }
+
+
+  return $block_content;
 }
