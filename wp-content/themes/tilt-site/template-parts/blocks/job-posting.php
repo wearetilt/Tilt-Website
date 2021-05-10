@@ -14,7 +14,7 @@ if( !empty($block['align']) ) {
 
 <div class="header-container sub-header container area-dark">
     <div class="text-container first-para sans-serif">
-        <p><strong><?php echo get_field('career_title'); ?></strong></p>
+        <h2 class=""><?php echo get_field('career_title'); ?></h2>
     </div>
 </div>
 
