@@ -1,0 +1,33 @@
+.careers-page__wrapper {
+
+	.careers-page {
+		img {
+			width: 100% !important;
+			height: auto;
+		}
+	}
+
+	.header-container {
+		&.sub-header {
+			padding-top: 30px !important;
+			padding-bottom: 70px !important;
+		}
+
+		padding-top: 70px;
+		padding-bottom: 70px;
+
+		.wp-block-buttons {
+		    max-width: 780px;
+		    margin: 25px auto;
+		}
+
+	}
+
+	.career-container {
+		.group-container {
+			.module {
+				padding-bottom: 5px;
+			}
+		}
+	}
+}

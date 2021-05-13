@@ -1349,7 +1349,7 @@ $(document).ready(function(){
     // $('.text_section_container').each(function(){
     //     if ( $('.text_right h2').text() == ''){
     //         $('.text_right h2').css('margin-bottom','40px');
-        
+
     //     } else {};
     // });
 
@@ -1387,4 +1387,3 @@ $(window).on('load', function() {
     });
 
 });
-

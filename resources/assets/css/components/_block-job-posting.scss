@@ -1,0 +1,40 @@
+.flex-grid {
+  .career-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -5px;
+    .module.module--dark {
+      background-color: transparent;
+    }
+  }
+  .career-container:nth-child(1n+1) {
+      background-image: url('../images/careers/1.jpg');
+      &:hover {
+        background-image: url('../images/careers/1_2.jpg');
+      }
+  }
+  .career-container:nth-child(2n+1) {
+    background-image: url('../images/careers/2.jpg');
+    &:hover {
+      background-image: url('../images/careers/2_2.jpg');
+    }
+  }
+  .career-container:nth-child(3n+1) {
+    background-image: url('../images/careers/3.jpg');
+    &:hover {
+      background-image: url('../images/careers/3_2.jpg');
+    }
+  }
+  .career-container:nth-child(4n+1) {
+    background-image: url('../images/careers/4.jpg');
+    &:hover {
+      background-image: url('../images/careers/4_2.jpg');
+    }
+  }
+  .career-container:nth-child(5n+1) {
+    background-image: url('../images/careers/5.jpg');
+    &:hover {
+      background-image: url('../images/careers/5_2.jpg');
+    }
+  }
+}

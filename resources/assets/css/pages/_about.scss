@@ -4,8 +4,7 @@ header {
     z-index: 1;
 }
 
-.about-header-container {
-
+.about-header-container, .header-container {
     padding: 12.0570866142% 40px;
 
     @media handheld, screen and (min-width: $bp-desktop) {

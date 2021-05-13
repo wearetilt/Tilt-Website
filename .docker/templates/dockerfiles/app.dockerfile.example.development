@@ -39,3 +39,7 @@ RUN apt-get install -y \
 # Install XDebug
 RUN pecl install xdebug-2.8.1 && docker-php-ext-enable xdebug
 COPY ./.docker/config/extensions/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+
+RUN usermod -u 82 www-data
+RUN groupmod -g 82 www-data
+RUN chown -R www-data:www-data /var/www
