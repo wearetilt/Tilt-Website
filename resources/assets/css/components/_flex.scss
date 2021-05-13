@@ -5,13 +5,14 @@
 
 	.flex-item {
 		background-color: #252525;
-		padding: 60px;
+		padding: 100px 80px;
 		flex-basis: 50%;
 	}
 
 	&.flex-odd {
 		.flex-item:last-child {
 			flex-basis: 100%;
+			padding: 100px 20%;
 		}
 	}
 }

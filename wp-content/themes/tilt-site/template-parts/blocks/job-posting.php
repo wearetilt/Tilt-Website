@@ -35,6 +35,9 @@ if( !empty($block['align']) ) {
                                         <div class="cube--front cube--front__no-bg">
                                             <p class="sans-serif">Find out more</p>
                                         </div>
+                                        <div class="cube--top cube--top__no-bg">
+                                            <p class="sans-serif">Find out more</p>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
