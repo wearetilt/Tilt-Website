@@ -852,7 +852,7 @@ function rewrite_cube_button( $block_content, $block ) {
 				$url = $match[1];
 
 
-     		$block_content = '<a class="cube--link" href="'.$url.'"><div class="cube"><div class="cube--front cube--front__no-bg"><p class="sans-serif">Send us your details</p></div></div></a>';
+     		$block_content = '<a class="cube--link" href="'.$url.'"><div class="cube"><div class="cube--front cube--front__no-bg"><p class="sans-serif">Send us your details</p></div><div class="cube--top cube--top__no-bg"><p class="sans-serif">Send us your details</p></div></div></a>';
 
   }
 
