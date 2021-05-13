@@ -12,11 +12,6 @@ if( !empty($block['align']) ) {
 
 ?>
 
-<div class="header-container sub-header container area-dark">
-    <div class="text-container first-para sans-serif">
-        <h2 class=""><?php echo get_field('career_title'); ?></h2>
-    </div>
-</div>
 
 <div class="flex-grid <?php echo ((count($career_items) % 2 == 0) ? 'flex-even' : 'flex-odd') ?>">
 
