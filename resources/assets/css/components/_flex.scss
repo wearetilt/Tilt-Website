@@ -6,7 +6,13 @@
 	.flex-item {
 		background-color: #252525;
 		padding: 100px 80px;
-		flex-basis: 50%;
+		flex-basis: 100%;
+
+		@media handheld,
+		screen and (min-width: $bp-phone) {
+			flex-basis: 50%;
+
+		}
 	}
 
 	&.flex-odd {
