@@ -111,7 +111,7 @@
 				</svg>
 			</a>
         </div>
-        <?php if(post_has_category('jobs-board')) { ?>
+        <?php if(has_category('jobs-board')) { ?>
 	        <a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/careers">Careers</a>
 	    <?php } else { ?>
             <a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/news">News</a>
