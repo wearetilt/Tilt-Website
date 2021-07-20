@@ -13,8 +13,3 @@ sync:
     alpha: "./"
     beta: "docker://tilt-website_mutagen/var/www"
     mode: "two-way-resolved"
-    ignore:
-      paths:
-        - "/dbdata/"
-        - "/node_modules/"
-        - "/vendor/"
