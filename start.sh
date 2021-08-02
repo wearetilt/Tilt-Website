@@ -49,6 +49,7 @@ setup_docker_docker_compose_yml() {
     if [ ! -f ./.docker/config/docker-composes/docker-compose.yml ]; then
         echo "  * CREATING docker-compose.yml FILE"
         cp ./.docker/templates/docker-composes/docker-compose.yml.example.$ENVIRONMENT.$(get_operating_system) ./.docker/config/docker-composes/docker-compose.yml
+        sed -i "" 's/DOCKER_PROJECT_NAME/'"$(read_var DOCKER_PROJECT_NAME .env)"'/' ./.docker/config/docker-composes/docker-compose.yml
     fi
 
     if [ ! -f ./docker-compose.yml ]; then
@@ -69,6 +70,7 @@ setup_docker_mutagen_yml() {
         if [ ! -f ./.docker/config/mutagens/mutagen.yml ]; then
             echo "  * CREATING ./.docker/config/mutagens/mutagen.yml FILE"
             cp ./.docker/templates/mutagens/mutagen.yml.example.$ENVIRONMENT ./.docker/config/mutagens/mutagen.yml
+            sed -i "" 's/DOCKER_PROJECT_NAME/'"$(read_var DOCKER_PROJECT_NAME .env)"'/' ./.docker/config/docker-composes/docker-compose.yml
         fi
 
         if [ ! -f ./mutagen.yml ]; then
@@ -189,6 +191,7 @@ setup_docker_mutagen_sync_session_start() {
 # Populate and create various docker files based on templates if they don't already exist
 setup_docker() {
     echo "* SETTING UP DOCKER ENVIRONMENT"
+    setup_docker_envs
     setup_docker_mutagen_setup
     setup_docker_dockerfiles
     setup_docker_mutagen_yml
@@ -196,7 +199,6 @@ setup_docker() {
     setup_docker_certs
     setup_docker_vhosts
     setup_docker_extensions
-    setup_docker_envs
 }
 
 ############################
