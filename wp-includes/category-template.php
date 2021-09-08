@@ -99,22 +99,6 @@ function get_the_category( $post_id = false ) {
 }
 
 /**
- * Check if a post has a particular category by category slug
- *
- * @param $categorySlug
- *
- * @return bool
- */
-function post_has_category($categorySlug) {
-    foreach (get_the_category() as $category) {
-        if ($category->slug == $categorySlug) {
-            return true;
-        }
-    }
-    return false;
-}
-
-/**
  * Retrieves category name based on category ID.
  *
  * @since 0.71

@@ -9,12 +9,7 @@ sync:
       defaultDirectoryMode: 755
       defaultOwner: "id:82"
       defaultGroup: "id:82"
-  tilt-website-mutagensync-volume:
+  DOCKER_PROJECT_NAME-mutagensync-volume:
     alpha: "./"
-    beta: "docker://tilt-website_mutagen/var/www"
+    beta: "docker://DOCKER_PROJECT_NAME_mutagen/var/www"
     mode: "two-way-resolved"
-    ignore:
-      paths:
-        - "/dbdata/"
-        - "/node_modules/"
-        - "/vendor/"
