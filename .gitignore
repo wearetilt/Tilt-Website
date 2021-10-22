@@ -19,3 +19,4 @@ global.min.css.map
 global.css
 global.css.map
 /resources/package-lock.json
+.DS_Store
