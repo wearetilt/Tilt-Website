@@ -37,38 +37,6 @@
       a.appendChild(r);
   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<?php 
-
-$htmltitle = wp_title('&raquo;',false);
-
-	if($htmltitle == 'web Archives - We Are Tilt') { 
-		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
-?>
-
-		<title>Web & Interactive - We Are Tilt - Brighton</title>
-		<meta name="description" content="Brilliant digital experiences that are bold, beautiful and put users first and always. We think beyond one way traffic and create online experiences that change behaviours.">
-
-<?php
-
-	} 
-	elseif($htmltitle == 'film Archives - We Are Tilt' ) { 
-		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
-?>
-
-		<title>Film - We Are Tilt - Brighton</title>
-		<meta name="description" content="Beautiful short films that tell stories about people, places and ideas.">
-
-<?php
-
-	}
-	elseif($htmltitle == 'motion Archives - We Are Tilt' ) { 
-		remove_action( 'wp_head', '_wp_render_title_tag', 1 );
-?>
-
-		<title>Motion Graphics - We Are Tilt - Brighton</title>
-		<meta name="description" content="Motion Graphics has no borders, if you can imagine it, we can build it. Vivid 2D and 3D pieces that explain ideas and spark interest in eye catching ways.">
-
-<?php } ?>
 
 	<?php wp_head(); ?>
 
@@ -76,6 +44,35 @@ $htmltitle = wp_title('&raquo;',false);
 
 	<!-- Minified Cookie Consent served from our CDN -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+
+	<?php
+	#twitter cards hack
+	if(is_single() || is_page()) {
+	  $twitter_url    = get_permalink();
+	 $twitter_title  = get_the_title();
+	 $twitter_desc   = get_the_excerpt();
+	   $twitter_thumbs = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), full );
+	    $twitter_thumb  = $twitter_thumbs[0];
+	      if(!$twitter_thumb) {
+	      $twitter_thumb = 'http://www.gravatar.com/avatar/8eb9ee80d39f13cbbad56da88ef3a6ee?rating=PG&size=75';
+	    }
+	  $twitter_name   = str_replace('@', '', get_the_author_meta('twitter'));
+	?>
+	<meta name="twitter:card" value="summary" />
+	<meta name="twitter:url" value="<?php echo $twitter_url; ?>" />
+	<meta name="twitter:title" value="<?php echo $twitter_title; ?>" />
+	<meta name="twitter:description" value="<?php echo $twitter_desc; ?>" />
+	<meta name="twitter:image" value="<?php echo $twitter_thumb; ?>" />
+	<meta name="twitter:site" value="@wearetilt" />
+	<?
+	  if($twitter_name) {
+	?>
+	<meta name="twitter:creator" value="@wearetilt" />
+	<?
+	  }
+	}
+	?>
 
 </head>
 

@@ -9,6 +9,12 @@
 
 get_header(); ?>
 
+<?php
+
+    if ( ! post_password_required( $post ) ) {
+          // Your custom code should here
+      ?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -44,6 +50,12 @@ get_header(); ?>
 
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
-	
+<?php 
+    }else{
+        // we will show password form here
+        echo get_the_password_form();
+    }
+
+?>
 
 <?php get_footer(); ?>

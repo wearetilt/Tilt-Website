@@ -111,9 +111,13 @@
 				</svg>
 			</a>
         </div>
-	   <a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/news">News</a>
-	   
-	   <?php get_template_part('content-header-menu');?>
+        <?php if(has_category('jobs-board')) { ?>
+	        <a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/careers">Careers</a>
+	    <?php } else { ?>
+            <a id="workButton" class="header-item header-item--menu" href="<?php echo site_url(); ?>/news">News</a>
+        <?php } ?>
+
+	    <?php get_template_part('content-header-menu');?>
 	   
     </nav>
 	<div class="wrapper wrapper--dark area-dark"> <!-- Open Wrapper -->
