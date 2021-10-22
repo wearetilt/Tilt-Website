@@ -144,6 +144,10 @@ $blog_id = get_current_blog_id();
   </div>
 </div>
 
+<!-- lead forensics tracking -->
+<script type="text/javascript" src="https://secure.bass2poll.com/js/217139.js" ></script>
+<noscript><img alt="" src="https://secure.bass2poll.com/217139.png" style="display:none;" /></noscript>
+
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
