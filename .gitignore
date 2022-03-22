@@ -20,5 +20,4 @@ global.css
 global.css.map
 /resources/package-lock.json
 .env
-.docker/
 dbdata/
