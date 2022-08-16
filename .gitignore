@@ -17,20 +17,8 @@ global.min.css
 global.min.css.map
 global.css
 global.css.map
-/logs
-/logs/error_log
+=======
+/resources/package-lock.json
 .env
 dbdata/
-dbdata/*
-log/
-log/*
-.idea/
-.DS_Store
 
-## Docker
-docker-compose.yml
-.docker/config/
-.docker/config/*
-mutagen.yml
-mutagen.yml.lock
-html/
