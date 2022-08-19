@@ -18,6 +18,11 @@
         p {
             color: white;
         }
+        .cube--top {
+            p {
+                color: black;
+            }
+        }
     }
     &.module--dark-mobile {
         @media handheld,

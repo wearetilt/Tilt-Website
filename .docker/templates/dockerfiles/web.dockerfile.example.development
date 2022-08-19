@@ -1,0 +1,5 @@
+FROM nginx:1.10
+
+ADD ./.docker/config/certs/server.crt /etc/nginx/certs/server.crt
+ADD ./.docker/config/certs/server.pem /etc/nginx/certs/server.pem
+ADD ./.docker/config/vhosts/vhost.conf /etc/nginx/conf.d/default.conf

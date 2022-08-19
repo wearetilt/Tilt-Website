@@ -613,6 +613,8 @@ if (document.getElementById('header-video-player')) { // if has header video
 
 
 
+// document.getElementById("header-video-player_html5_api").controls = false;
+
 /**
  * MENU FUNCTIONS
  *
@@ -1347,7 +1349,7 @@ $(document).ready(function(){
     // $('.text_section_container').each(function(){
     //     if ( $('.text_right h2').text() == ''){
     //         $('.text_right h2').css('margin-bottom','40px');
-        
+
     //     } else {};
     // });
 
@@ -1385,4 +1387,3 @@ $(window).on('load', function() {
     });
 
 });
-

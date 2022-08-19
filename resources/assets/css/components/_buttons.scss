@@ -6,7 +6,7 @@ a{
         border: 1px solid white;
         color: white;
         display: inline-block;
-        padding: 13px 18px 11px 18px; 
+        padding: 13px 18px 11px 18px;
 
         .text-section & {
             display: inline-block;
@@ -207,7 +207,7 @@ a{
 	transform-style: preserve-3d; /* <-NB */
     margin-top:25px;
 
-    &.about--cube { margin-top:23px; }  
+    &.about--cube { margin-top:23px; }
 
     .map-overlay & {
         background: transparent;
@@ -220,7 +220,7 @@ a{
     background:url('../images/button_arrow.png') center right no-repeat;
     border: 1px solid white;
     background-size: 32px 13px;
-	height: 54px;   
+	height: 54px;
     border-radius: 2px;
     padding: 18px 72px 0px 24px;
 
@@ -234,7 +234,7 @@ a{
 
 
         @media handheld, screen and (min-width:0px)  and (max-width:$bp-phone) {
-        	@include font-size(15);
+        	@include font-size(12);
         }
 
         @media handheld, screen and (min-width:$bp-phone)  and (max-width:$bp-desktop) {
@@ -426,7 +426,7 @@ a{
     }
 
     input[name=post_password] {
-            padding: 13px 35px 11px 18px; 
+            padding: 13px 35px 11px 18px;
             @include font-size(20);
             font-family: $f-merriweather;
             font-weight: 300;
@@ -437,7 +437,7 @@ a{
             color: #fff;
 
             @media screen and (min-width: $bp-desktop) {
-                padding: 13px 35% 11px 18px; 
+                padding: 13px 35% 11px 18px;
                 width: 80%;
             }
     }
@@ -450,7 +450,7 @@ a{
             border: 1px solid white;
             color: white;
             background: transparent;
-            padding: 13px 65px 11px 18px; 
+            padding: 13px 65px 11px 18px;
             background: url(../images/button_arrow.png) center right no-repeat;
             background-position: 100% 54%;
             background-repeat: no-repeat;
