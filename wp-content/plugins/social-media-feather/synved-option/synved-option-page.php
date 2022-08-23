@@ -164,7 +164,7 @@ function synved_option_page_add($id, $name, $item)
 		$page_slug = $id . '_' . $name;
 		
 		$addfunc = 'add_' . /* */ 'subm' . 'enu_page';
-		$page = $addfunc($parent, $label, $label, $role, $page_slug, create_function('', 'return synved_option_page_cb(\'' . $id . '\', \'' . $name . '\', synved_option_item_find(\'' . $id . '\', \'' . $name . '\'));'));
+		$page = $addfunc($parent, $label, $label, $role, $page_slug, function() use ($id, $name) { synved_option_page_cb('' . $id . '', '' . $name . '', synved_option_item_find('' . $id . '', '' . $name . '')); });
 		
 		$synved_option_list[$id]['pages'][$name]['wp-page-slug'] = $page_slug;
 		$synved_option_list[$id]['pages'][$name]['wp-page'] = $page;

@@ -695,7 +695,7 @@ function rotatingtweets_settings_check() {
 		$msgString = __('Please update <a href="%2$s">your settings for Rotating Tweets</a>. The Twitter API <a href="%1$s">changed on June 11, 2013</a> and new settings are needed for Rotating Tweets to continue working.','rotatingtweets');
 		// add_settings_error( 'rotatingtweets_settings_needed', esc_attr('rotatingtweets_settings_needed'), sprintf($msgString,'https://dev.twitter.com/calendar',$optionslink), 'error');
 		echo "<div class='error'><p><strong>".sprintf($msgString,'https://dev.twitter.com/blog/api-v1-is-retired',$optionslink)."</strong></p></div>";
-	elseif($error[0]['code'] == 32 ):
+	elseif($error && isset($error[0]) && isset($error[0]['code']) && $error[0]['code'] == 32 ):
 		// add_settings_error( 'rotatingtweets_settings_needed', esc_attr('rotatingtweets_settings_needed'), sprintf(__('Please update <a href="%1$s">your settings for Rotating Tweets</a>. Currently Twitter cannot authenticate you with the details you have given.','rotatingtweets'),$optionslink), 'error');
 		echo "<div class='error'><p><strong>".sprintf(__('Please update <a href="%1$s">your settings for Rotating Tweets</a>. Currently Rotating Tweets cannot authenticate you with Twitter using the details you have given.','rotatingtweets'),$optionslink)."</strong></p></div>";
 	endif;

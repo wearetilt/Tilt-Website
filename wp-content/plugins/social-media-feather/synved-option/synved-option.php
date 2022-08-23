@@ -305,7 +305,7 @@ function synved_option_callback_create($callback_code, $callback_parameters = nu
 			}
 		}
 		
-		$callback = create_function($function_params, $callback_code);
+		$callback = function($function_params) use ($callback_code){ return $callback_code($function_params); };
 		
 		return synved_option_callback($callback, null, $callback_parameters);
 	}
@@ -592,7 +592,7 @@ function synved_option_wp_handle_setting($id, $page, $section, $name, $item)
 	else if ($type == 'options-section')
 	{
 		add_settings_section($name, $label,
-			create_function('', 'return synved_option_settings_section_cb(\'' . $name . '\', synved_option_item_find(\'' . $id . '\', \'' . $name . '\'));'),
+			function() use ($name, $id) {synved_option_settings_section_cb('' . $name . '', synved_option_item_find('' . $id . '', '' . $name . ''));},
 			$page);
 		
 		if ($settings != null)
@@ -823,7 +823,7 @@ function synved_option_wp_admin_init()
 			$dbname = synved_option_name_default($id);
 			$group = synved_option_group_default($id);
 
-			register_setting($group, $dbname, create_function('$value', 'return synved_option_setting_sanitize_cb(\'' . $id . '\', $value);'));
+			register_setting($group, $dbname, function($value) use ($id) {return synved_option_setting_sanitize_cb('' . $id . '', $value);});
 		
 			$items = synved_option_item_list($id);
 		
