@@ -46,9 +46,9 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
             nvm use 13.13.0
-            cd ${{ secrets.TESTING_REMOTE_REPO_DIRECTORY }}
-            npm run production
-            composer install --ignore-platform-reqs
+            cd ${{ secrets.TESTING_REMOTE_REPO_DIRECTORY }}/resources
+            npm install
+            ./node_modules/.bin/gulp
       - name: REQUIRED - Reset permissions
         uses: fifsky/ssh-action@master
         with:
