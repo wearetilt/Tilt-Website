@@ -1,0 +1,59 @@
+name: Deploy to Master
+
+on:
+  push:
+    branches: [ master ]
+  workflow_run:
+    workflows: [ "Sync environments" ]
+    types:
+      - completed
+
+jobs:
+  deploy-to-master:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.ref == 'refs/heads/master' }}
+    name: Deploy to Master
+    runs-on: ubuntu-latest
+    steps:
+      - name: REQUIRED - Set repo permissions for deployment
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.PRODUCTION_REMOTE_HOST }}
+          user: ${{ secrets.PRODUCTION_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.PRODUCTION_REMOTE_PRIVATE_KEY}}
+          command: |
+            sudo chown -R ${{ secrets.PRODUCTION_REMOTE_DEPLOYMENT_USER }}:${{ secrets.PRODUCTION_REMOTE_DEPLOYMENT_USER }} ${{ secrets.PRODUCTION_REMOTE_REPO_DIRECTORY }}
+      - name: REQUIRED - Checkout latest
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.PRODUCTION_REMOTE_HOST }}
+          user: ${{ secrets.PRODUCTION_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.PRODUCTION_REMOTE_PRIVATE_KEY}}
+          command: |
+            cd ${{ secrets.PRODUCTION_REMOTE_REPO_DIRECTORY }}
+            git fetch
+            git stash
+            git checkout master
+            git merge origin/master
+      - name: REQUIRED - Build assets and dependencies
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.PRODUCTION_REMOTE_HOST }}
+          user: ${{ secrets.PRODUCTION_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.PRODUCTION_REMOTE_PRIVATE_KEY}}
+          command: |
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+            nvm use 13.13.0
+            cd ${{ secrets.PRODUCTION_REMOTE_REPO_DIRECTORY }}/resources
+            npm install
+            ./node_modules/.bin/gulp
+      - name: REQUIRED - Reset permissions
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.PRODUCTION_REMOTE_HOST }}
+          user: ${{ secrets.PRODUCTION_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.PRODUCTION_REMOTE_PRIVATE_KEY}}
+          command: |
+            sudo chown -R ${{ secrets.PRODUCTION_REMOTE_WEB_USER }}:${{ secrets.PRODUCTION_REMOTE_WEB_USER }} ${{ secrets.PRODUCTION_REMOTE_REPO_DIRECTORY }}

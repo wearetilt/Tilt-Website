@@ -1,0 +1,60 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches: [ staging ]
+  workflow_run:
+    workflows: [ "Sync environments" ]
+    types:
+      - completed
+
+jobs:
+  deploy-to-staging:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.ref == 'refs/heads/staging' }}
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    steps:
+      - name: REQUIRED - Set repo permissions for deployment
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.STAGING_REMOTE_HOST }}
+          user: ${{ secrets.STAGING_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.STAGING_REMOTE_PRIVATE_KEY}}
+          command: |
+            sudo chown -R ${{ secrets.STAGING_REMOTE_DEPLOYMENT_USER }}:${{ secrets.STAGING_REMOTE_DEPLOYMENT_USER }} ${{ secrets.STAGING_REMOTE_REPO_DIRECTORY }}
+      - name: REQUIRED - Checkout latest
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.STAGING_REMOTE_HOST }}
+          user: ${{ secrets.STAGING_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.STAGING_REMOTE_PRIVATE_KEY}}
+          command: |
+            cd ${{ secrets.STAGING_REMOTE_REPO_DIRECTORY }}
+            git fetch
+            git stash
+            git checkout staging
+            git merge origin/staging
+      - name: REQUIRED - Build assets and dependencies
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.STAGING_REMOTE_HOST }}
+          user: ${{ secrets.STAGING_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.STAGING_REMOTE_PRIVATE_KEY}}
+          command: |
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+            nvm use 13.13.0
+            cd ${{ secrets.STAGING_REMOTE_REPO_DIRECTORY }}/resources
+            npm install
+            ./node_modules/.bin/gulp
+      - name: REQUIRED - Reset permissions
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.STAGING_REMOTE_HOST }}
+          user: ${{ secrets.STAGING_REMOTE_DEPLOYMENT_USER }}
+          key: ${{ secrets.STAGING_REMOTE_PRIVATE_KEY}}
+          command: |
+            sudo chown -R ${{ secrets.STAGING_REMOTE_WEB_USER }}:${{ secrets.STAGING_REMOTE_WEB_USER }} ${{ secrets.STAGING_REMOTE_REPO_DIRECTORY }}
+            sudo chown -R root:root ${{ secrets.STAGING_REMOTE_REPO_DIRECTORY }}/.htpasswd
