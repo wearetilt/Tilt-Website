@@ -41,6 +41,12 @@ class Generic_Plugin_Admin {
 		add_action( 'admin_init_w3tc_dashboard', array(
 				'\W3TC\Generic_WidgetServices',
 				'admin_init_w3tc_dashboard' ) );
+		add_action( 'admin_init_w3tc_dashboard', array(
+			'\W3TC\Generic_WidgetCommunity',
+			'admin_init_w3tc_dashboard' ) );
+		add_action( 'admin_init_w3tc_dashboard', array(
+				'\W3TC\Generic_WidgetBoldGrid',
+				'admin_init_w3tc_dashboard' ) );
 
 		add_action( 'admin_enqueue_scripts', array(
 				$this,
@@ -173,15 +179,15 @@ class Generic_Plugin_Admin {
 
 		try {
 			$base_capability = apply_filters( 'w3tc_ajax_base_capability_', 'manage_options' );
-			$capability = apply_filters( 'w3tc_ajax_capability_' . $_REQUEST['w3tc_action'],
+			$capability = apply_filters( 'w3tc_ajax_capability_' . Util_Request::get_string( 'w3tc_action' ),
 				$base_capability );
 			if ( !empty( $capability ) && !current_user_can( $capability ) )
 				throw new \Exception( 'no permissions' );
 
 			do_action( 'w3tc_ajax' );
-			do_action( 'w3tc_ajax_' . $_REQUEST['w3tc_action'] );
+			do_action( 'w3tc_ajax_' . Util_Request::get_string( 'w3tc_action' ) );
 		} catch ( \Exception $e ) {
-			echo $e->getMessage();
+			echo esc_html( $e->getMessage() );
 		}
 
 		exit();
@@ -197,8 +203,8 @@ class Generic_Plugin_Admin {
 		$score = apply_filters( 'w3tc_monitoring_score', $score );
 
 		header( "Content-Type: application/x-javascript; charset=UTF-8" );
-		echo 'document.getElementById("w3tc_monitoring_score").innerHTML = "' .
-			strtr( $score, '"', '.' ) . '";';
+		echo 'document.getElementById("w3tc_monitoring_score") && ( document.getElementById("w3tc_monitoring_score").innerHTML = "' .
+			esc_html( strtr( $score, '"', '.' ) ) . '" );';
 
 		exit();
 	}
@@ -214,11 +220,16 @@ class Generic_Plugin_Admin {
 			Util_Activation::deactivate_plugin();
 		}
 
-		if ( isset( $_REQUEST['page'] ) )
-			do_action( 'admin_init_' . $_REQUEST['page'] );
+		$page_val = Util_Request::get_string( 'page' );
+		if ( ! empty( $page_val ) ) {
+			do_action( 'admin_init_' . $page_val );
+		}
 	}
 
-	function admin_enqueue_scripts() {
+	/**
+	 * Enqueue admin scripts.
+	 */
+	public function admin_enqueue_scripts() {
 		wp_register_style( 'w3tc-options', plugins_url( 'pub/css/options.css', W3TC_FILE ), array(), W3TC_VERSION );
 		wp_register_style( 'w3tc-lightbox', plugins_url( 'pub/css/lightbox.css', W3TC_FILE ), array(), W3TC_VERSION );
 		wp_register_style( 'w3tc-widget', plugins_url( 'pub/css/widget.css', W3TC_FILE ), array(), W3TC_VERSION );
@@ -229,30 +240,56 @@ class Generic_Plugin_Admin {
 		wp_register_script( 'w3tc-widget', plugins_url( 'pub/js/widget.js', W3TC_FILE ), array(), W3TC_VERSION );
 		wp_register_script( 'w3tc-jquery-masonry', plugins_url( 'pub/js/jquery.masonry.min.js', W3TC_FILE ), array( 'jquery' ), W3TC_VERSION );
 
+		// New feature count for the Feature Showcase.
+		wp_register_script( 'w3tc-feature-counter', plugins_url( 'pub/js/feature-counter.js', W3TC_FILE ), array(), W3TC_VERSION, true );
+
+		wp_localize_script(
+			'w3tc-feature-counter',
+			'W3TCFeatureShowcaseData',
+			array(
+				'unseenCount' => FeatureShowcase_Plugin_Admin::get_unseen_count(),
+			)
+		);
+
+		wp_enqueue_script( 'w3tc-feature-counter' );
+
+		// Messages.
 		if ( !is_null( $this->w3tc_message ) &&
 			isset( $this->w3tc_message['actions'] ) &&
 			is_array( $this->w3tc_message['actions'] ) ) {
 			foreach ( $this->w3tc_message['actions'] as $action )
 				do_action( 'w3tc_message_action_' . $action );
 		}
-		// for testing
-		if ( isset( $_REQUEST['w3tc_message_action'] ) )
-			do_action( 'w3tc_message_action_' . $_REQUEST['w3tc_message_action'] );
-
+		// for testing.
+		$w3tc_message_action_val = Util_Request::get_string( 'w3tc_message_action' );
+		if ( ! empty( $w3tc_message_action_val ) ) {
+			do_action( 'w3tc_message_action_' . $w3tc_message_action_val );
+		}
 	}
 
 	// Define icon styles for the custom post type
 	function admin_head() {
-		if ( isset( $_GET['page'] ) && $_GET['page'] == 'w3tc_dashboard' ) {
+		$page = Util_Request::get_string( 'page', null );
+
+		if ( ( ! is_multisite() || is_super_admin() ) && false !== strpos( $page, 'w3tc' ) && 'w3tc_setup_guide' !== $page && ! get_site_option( 'w3tc_setupguide_completed' ) ) {
+			$config       = new Config();
+			$state_master = Dispatcher::config_state_master();
+
+			if ( ! $config->get_boolean( 'pgcache.enabled' ) && $state_master->get_integer( 'common.install' ) > strtotime( 'NOW - 1 WEEK' ) ) {
+				wp_redirect( esc_url( network_admin_url( 'admin.php?page=w3tc_setup_guide' ) ) );
+			}
+		}
+
+		if ( 'w3tc_dashboard' === $page ) {
 ?>
-            <script type="text/javascript">
-            jQuery(function() {
-                jQuery('#normal-sortables').masonry({
-                    itemSelector: '.postbox'
-                });
-            });
-            </script>
-            <?php
+			<script type="text/javascript">
+			jQuery(function() {
+				jQuery('#normal-sortables').masonry({
+					itemSelector: '.postbox'
+				});
+			});
+			</script>
+			<?php
 		}
 
 		if ( $this->_config->get_boolean( 'common.track_usage' ) && $this->is_w3tc_page ) {
@@ -266,67 +303,54 @@ class Generic_Plugin_Admin {
 			else
 				$profile = 'UA-2264433-8';
 
+			$state = Dispatcher::config_state();
 ?>
-            <script type="text/javascript">
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			<script type="text/javascript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://api.w3-edge.com/v1/analytics','w3tc_ga');
 
-            ga('create', '<?php echo $profile ?>', 'auto');
-            ga('set', {
-                'dimension1': 'w3-total-cache',
-                'dimension2': '<?php echo W3TC_VERSION ?>',
-                'dimension3': '<?php global $wp_version; echo $wp_version; ?>',
-                'dimension4': 'php<?php echo phpversion() ?>',
-                'dimension5': '<?php echo esc_attr( $_SERVER["SERVER_SOFTWARE"] ) ?>',
-                'dimension6': 'mysql<?php global $wpdb; echo $wpdb->db_version() ?>',
-                'dimension7': '<?php echo Util_Environment::home_url_host() ?>',
-                'userId': '<?php echo $current_user->user_email ?>',
-                'page': '<?php echo $page ?>'
-            });
+			if (window.w3tc_ga) {
+				w3tc_ga('create', '<?php echo esc_html( $profile ); ?>', 'auto');
+				w3tc_ga('set', {
+					'dimension1': 'w3-total-cache',
+					'dimension2': '<?php echo esc_html( W3TC_VERSION ); ?>',
+					'dimension3': '<?php global $wp_version; echo esc_html( $wp_version ); ?>',
+					'dimension4': 'php<?php echo esc_html( phpversion() ); ?>',
+					'dimension5': '<?php echo esc_attr( isset( $_SERVER['SERVER_SOFTWARE'] ) ? sanitize_text_field( wp_unslash( $_SERVER['SERVER_SOFTWARE'] ) ) : '' ); ?>',
+					'dimension6': 'mysql<?php global $wpdb; echo esc_attr( $wpdb->db_version() ); ?>',
+					'dimension7': '<?php echo esc_url( Util_Environment::home_url_host() ); ?>',
+					'dimension9': '<?php echo esc_attr( $state->get_string( 'common.install_version' ) ); ?>',
+					'dimension10': '<?php echo esc_attr( Util_Environment::w3tc_edition( $this->_config ) ); ?>',
+					'dimension11': '<?php echo esc_attr( Util_Widget::list_widgets() ); ?>',
 
-            ga('send', 'pageview');
+					'page': '<?php echo esc_attr( $page ); ?>'
+				});
 
-            </script>
-            <?php
+				w3tc_ga('send', 'pageview');
+			}
+
+			</script>
+			<?php
 		}
 
 ?>
-        <style type="text/css" media="screen">
-        #toplevel_page_w3tc_dashboard .wp-menu-image {
-            background: url(<?php echo plugins_url( 'pub/img/w3tc-sprite.png', W3TC_FILE )?>) no-repeat 0 -32px !important;
-        }
-        #toplevel_page_w3tc_dashboard:hover .wp-menu-image,
-        #toplevel_page_w3tc_dashboard.wp-has-current-submenu .wp-menu-image {
-            background-position:0 0 !important;
-        }
-        #icon-edit.icon32-posts-casestudy {
-            background: url(<?php echo plugins_url( 'pub/img/w3tc-sprite.png', W3TC_FILE ) ?>) no-repeat;
-        }
-        /**
-        * HiDPI Displays
-        */
-        @media print,
-        (-o-min-device-pixel-ratio: 5/4),
-        (-webkit-min-device-pixel-ratio: 1.25),
-        (min-resolution: 120dpi) {
-
-            #toplevel_page_w3tc_dashboard .wp-menu-image {
-                background-image: url(<?php echo plugins_url( 'pub/img/w3tc-sprite-retina.png', W3TC_FILE )?>) !important;
-                background-size: 30px 64px !important;
-            }
-            #toplevel_page_w3tc_dashboard:hover .wp-menu-image,
-            #toplevel_page_w3tc_dashboard.wp-has-current-submenu .wp-menu-image {
-                background-position:0 0 !important;
-            }
-            #icon-edit.icon32-posts-casestudy {
-                background-image: url(<?php echo plugins_url( 'pub/img/w3tc-sprite-retina.png', W3TC_FILE ) ?>) !important;
-                background-size: 30px 64px !important;
-            }
-        }
-        </style>
-        <?php
+		<style type="text/css" media="screen">
+		li.toplevel_page_w3tc_dashboard .wp-menu-image:before{
+			content:'\0041';
+			top: 2px;
+			font-family: 'w3tc';
+		}
+		</style>
+		<script>
+		jQuery(document).ready( function($) {
+			$('#toplevel_page_w3tc_dashboard ul li').find('a[href*="w3tc_faq"]')
+				.prop('target','_blank')
+				.prop('href', <?php echo json_encode(W3TC_FAQ_URL) ?>);
+		});
+		</script>
+		<?php
 	}
 
 
@@ -372,10 +396,10 @@ class Generic_Plugin_Admin {
 			}
 
 			global $pagenow;
-			if ( $pagenow == 'plugins.php' || $this->is_w3tc_page ||
-				isset( $_REQUEST['w3tc_note'] ) ||
-				isset( $_REQUEST['w3tc_error'] ) ||
-				isset( $_REQUEST['w3tc_message'] ) ) {
+			if ( 'plugins.php' === $pagenow || $this->is_w3tc_page ||
+				! empty( Util_Request::get_string( 'w3tc_note' ) ) ||
+				! empty( Util_Request::get_string( 'w3tc_error' ) ) ||
+				! empty( Util_Request::get_string( 'w3tc_message' ) ) ) {
 				/**
 				 * Only admin can see W3TC notices and errors
 				 */
@@ -402,9 +426,7 @@ class Generic_Plugin_Admin {
 	}
 
 	/**
-	 * Print scripts
-	 *
-	 * @return void
+	 * Print scripts.
 	 */
 	function admin_print_scripts() {
 		wp_enqueue_script( 'w3tc-metadata' );
@@ -412,15 +434,56 @@ class Generic_Plugin_Admin {
 		wp_enqueue_script( 'w3tc-lightbox' );
 
 		if ( $this->is_w3tc_page ) {
-			wp_localize_script( 'w3tc-options', 'w3tc_nonce',
-				wp_create_nonce( 'w3tc' ) );
-		}
+			wp_localize_script(
+				'w3tc-options',
+				'w3tc_nonce',
+				array( wp_create_nonce( 'w3tc' ) )
+			);
 
+			wp_localize_script(
+				'w3tc-options',
+				'w3tcData',
+				array(
+					'cdnEnabled'       => $this->_config->get_boolean( 'cdn.enabled' ),
+					'cdnEngine'        => $this->_config->get_string( 'cdn.engine' ),
+					'cdnFlushManually' => $this->_config->get_boolean( 'cdn.flush_manually' ),
+					'cfWarning'        => wp_kses(
+						sprintf(
+							// translators: 1: HTML break, 2: HTML anchor open tag, 3: HTML anchor close tag, 4: HTML anchor open tag.
+							__(
+								'Please see %2$sAmazon\'s CloudFront documentation -- Paying for file invalidation%3$s:%1$sThe first 1,000 invalidation paths that you submit per month are free; you pay for each invalidation path over 1,000 in a month.%1$sYou can disable automatic purging by enabling %4$sOnly purge CDN manually%3$s.',
+								'w3-total-cache'
+							),
+							'<br />',
+							'<a target="_blank" href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html#PayingForInvalidation">',
+							'</a>',
+							'<a href="' . esc_url( admin_url( 'admin.php?page=w3tc_cdn#advanced' ) ) . '">'
+						),
+						array(
+							'a'  => array(
+								'target' => array(),
+								'href'   => array(),
+							),
+							'br' => array(),
+						)
+					),
+				)
+			);
+		}
 
 		switch ( $this->_page ) {
 		case 'w3tc_minify':
-		case 'w3tc_mobile':
-		case 'w3tc_referrer':
+		case 'w3tc_cachegroups':
+			wp_enqueue_script(
+				'w3tc_cachegroups',
+				plugins_url( 'CacheGroups_Plugin_Admin_View.js', W3TC_FILE ),
+				array(
+					'jquery',
+					'jquery-ui-sortable',
+				),
+				W3TC_VERSION,
+				true
+			);
 		case 'w3tc_cdn':
 			wp_enqueue_script( 'jquery-ui-sortable' );
 			break;
@@ -438,30 +501,30 @@ class Generic_Plugin_Admin {
 
 	function print_plugins_page_css() {
 		echo "
-            <style type=\"text/css\">
-            .w3tc-missing-files ul {
-                margin-left: 20px;
-                list-style-type: disc;
-            }
-            #w3tc {
-                padding: 0;
-            }
-            #w3tc span {
-                font-size: 0.6em;
-                font-style: normal;
-                text-shadow: none;
-            }
-            ul.w3tc-incomp-plugins, ul.w3-bullet-list {
-                list-style: disc outside;
-                margin-left: 17px;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            ul.w3tc-incomp-plugins li div {
-                width: 170px;
-                display: inline-block;
-            }
-            </style>";
+			<style type=\"text/css\">
+			.w3tc-missing-files ul {
+				margin-left: 20px;
+				list-style-type: disc;
+			}
+			#w3tc {
+				padding: 0;
+			}
+			#w3tc span {
+				font-size: 0.6em;
+				font-style: normal;
+				text-shadow: none;
+			}
+			ul.w3tc-incomp-plugins, ul.w3-bullet-list {
+				list-style: disc outside;
+				margin-left: 17px;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			ul.w3tc-incomp-plugins li div {
+				width: 170px;
+				display: inline-block;
+			}
+			</style>";
 	}
 
 	/**
@@ -489,7 +552,7 @@ class Generic_Plugin_Admin {
 	}
 
 	public function w3tc_ajax_faq() {
-		$section = $_REQUEST['section'];
+		$section = Util_Request::get_string( 'section' );
 
 		$entries = Generic_Faq::parse( $section );
 		$response = array();
@@ -580,7 +643,7 @@ class Generic_Plugin_Admin {
 
 		$changelog = (array) preg_split( '~[\r\n]+~', trim( $matches[1] ) );
 
-		echo '<div style="color: #f00;">' . __( 'Take a minute to update, here\'s why:', 'w3-total-cache' ) . '</div><div style="font-weight: normal;height:300px;overflow:auto">';
+		echo '<div style="color: #f00;">' . esc_html__( 'Take a minute to update, here\'s why:', 'w3-total-cache' ) . '</div><div style="font-weight: normal;height:300px;overflow:auto">';
 		$ul = false;
 
 		foreach ( $changelog as $index => $line ) {
@@ -590,7 +653,7 @@ class Generic_Plugin_Admin {
 					$ul = true;
 				}
 				$line = preg_replace( '~^\s*\*\s*~', '', htmlspecialchars( $line ) );
-				echo '<li style="width: 50%; margin: 0; float: left; ' . ( $index % 2 == 0 ? 'clear: left;' : '' ) . '">' . $line . '</li>';
+				echo '<li style="width: 50%; margin: 0; float: left; ' . ( $index % 2 == 0 ? 'clear: left;' : '' ) . '">' . esc_html( $line ) . '</li>';
 			} else {
 				if ( $ul ) {
 					echo '</ul><div style="clear: left;"></div>';
@@ -706,15 +769,15 @@ class Generic_Plugin_Admin {
 		}
 
 		/*
-         * Filesystem environment fix, if needed
-         */
+		 * Filesystem environment fix, if needed
+		 */
 		try {
 			$environment = Dispatcher::component( 'Root_Environment' );
 			$environment->fix_in_wpadmin( $this->_config );
 
-			if ( isset( $_REQUEST['upgrade'] ) )
-				$notes[] = __( 'Required files and directories have been automatically created',
-					'w3-total-cache' );
+			if ( ! empty( Util_Request::get_string( 'upgrade' ) ) ) {
+				$notes[] = __( 'Required files and directories have been automatically created', 'w3-total-cache' );
+			}
 		} catch ( Util_Environment_Exceptions $exs ) {
 			$r = Util_Activation::parse_environment_exceptions( $exs );
 			$n = 1;
@@ -771,27 +834,47 @@ class Generic_Plugin_Admin {
 			}
 
 			foreach ( $r['later_errors'] as $e ) {
-				$errors['generic_env_' . $n] = $e;
+				$errors[ 'generic_env_' . $n ] = $e;
 				$n++;
 			}
 		}
 
 		$errors = apply_filters( 'w3tc_errors', $errors );
-		$notes = apply_filters( 'w3tc_notes', $notes );
+		$notes  = apply_filters( 'w3tc_notes', $notes );
 
 		/**
-		 * Show messages
+		 * Show messages.
 		 */
 		foreach ( $notes as $key => $note ) {
-			echo sprintf(
-				'<div class="updated w3tc_note" id="%s"><p>%s</p></div>',
-				$key,
-				$note );
+			echo wp_kses(
+				sprintf(
+					'<div class="updated w3tc_note" id="%1$s"><p>%2$s</p></div>',
+					esc_attr( $key ),
+					$note
+				),
+				array(
+					'div'   => array(
+						'class' => array(),
+						'id'    => array(),
+					),
+					'input' => array(
+						'class'   => array(),
+						'name'    => array(),
+						'onclick' => array(),
+						'type'    => array(),
+						'value'   => array(),
+					),
+					'p'     => array(),
+				)
+			);
 		}
 
 		foreach ( $errors as $key => $error ) {
-			echo sprintf( '<div class="error w3tc_error" id="%s"><p>%s</p></div>',
-				$key, $error );
+				printf(
+					'<div class="error w3tc_error" id="%1$s"><p>%2$s</p></div>',
+					esc_attr( $key ),
+					$error // phpcs:ignore
+				);
 		}
 	}
 }
