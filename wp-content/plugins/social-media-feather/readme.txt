@@ -1,9 +1,10 @@
 === Social Media Feather | social media sharing ===
-Contributors: socialmediafeather
+Contributors: socialmediafeather, scottstorebloom, scottmweaver
 Tags: social media, social sharing, social buttons, Facebook, Share, Like, twitter, google, Reddit, youtube, instagram, pinterest, social media buttons, button, shortcode, sidebar, sharing buttons, follow buttons
 Requires at least: 3.1
-Tested up to: 4.7
-Stable tag: 1.8.4
+Tested up to: 5.9.1
+Stable tag: 2.1.1
+Version: 2.1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,11 +22,11 @@ What sets WordPress Social Media Feather aside from the plethora of other social
 
 Given the widespread focus on WordPress social media integration, your site will still provide social bookmarks and share buttons to improve visibility of your posts and content and improve your overall global reach on social platforms.
 
-The **WordPress social media sharing** offered by the plugin includes all major social sharing buttons providers like Facebook, Twitter, Google+, reddit, Pinterest, tumblr, Linkedin and even e-mail.
+The **WordPress social media sharing** offered by the plugin includes all major social sharing buttons providers like Facebook, Twitter, reddit, Pinterest, tumblr, Linkedin and even e-mail.
 
-It will show social buttons that your users can click to share to facebook or tweet your posts and pages on your site or submit it to reddit and google plus or publish it on tumblr and all other social sharing networks.
+It will show social buttons that your users can click to share to facebook or tweet your posts and pages on your site or submit it to reddit or publish it on tumblr and all other social sharing networks.
 
-The **WordPress social media following** offered by the plugin includes all major social network providers and tools like Facebook, Twitter, Google+, Pinterest, Linkedin, YouTube, tumblr, instagram, flickr, foursquare, vimeo or RSS.
+The **WordPress social media following** offered by the plugin includes all major social network providers and tools like Facebook, Twitter, Pinterest, Linkedin, YouTube, tumblr, instagram, flickr, foursquare, vimeo or RSS.
 
 Our social media plugin also offers widgets for sharing and following buttons that you can place in any widgetized area in your site and the widgets also expose some settings and parameters to tweak the appearance of the social buttons. The plugin also provides shortcodes that can be used for the same purpose, creating both share and follow buttons and allowing selection of visibility of different social media networks or reordering how the various social networks appear (see example shortcodes at the bottom).
 
@@ -36,8 +37,8 @@ You can disable automatic rendering of social icons for specific posts by using 
 * Full support for **Retina** and high resolution displays
 * WordPress social sharing and following widgets
 * Supports all major providers of social features
-* Sharing with Facebook, Twitter, Google+, reddit, Pinterest, tumblr, Linkedin and e-mail
-* Following on Facebook, Twitter, Google+, Pinterest, Linkedin, YouTube, tumblr, instagram, flickr, foursquare, vimeo or RSS Feed
+* Sharing with Facebook, Twitter, Reddit, Pinterest, Tumblr, Linkedin and E-mail
+* Following on Facebook, Twitter, Pinterest, Linkedin, YouTube, Tumblr, Instagram, Flickr, Foursquare, Vimeo or RSS Feed
 * Each social provider can be enabled or disabled
 * Ability to select what services each provider will be exposed for
 * Full customization for titles and URLs for each provider
@@ -45,18 +46,18 @@ You can disable automatic rendering of social icons for specific posts by using 
 * Comes with a default modern icon set
 * For further customization more [social icons skins](http://socialmediafeather.com/products/extra-social-icons/ "Add 8 extra social icon skins to the Social Media Feather plugin!") are available. Free from the version 1.8.2!
 * Available skins can be customized with cool effects like [fading and greying out](http://socialmediafeather.com/products/grey-fade-effect/ "Customize any of the available social icon skins with 2 cool effects!") social icons
-* If you like them you can get [social sharing counters](http://socialmediafeather.com/products/light-prompt/ "Nice lightweight social sharing counters using the Light Prompt addon") that load dynamically, only when necessary, thus not weighing in on visitors who don't use them
+* If you like them, you can get [social sharing counters](http://socialmediafeather.com/products/light-prompt/ "Nice lightweight social sharing counters using the Light Prompt addon") that load dynamically, only when necessary, thus not weighing in on visitors who don't use them
 
 = Example Shortcodes =
 
 This shortcode will create a list of social sharing buttons to share content on your site:
 `[feather_share]`
 
-This shortcode will create a list of social media sharing buttons to share content on your site, only showing Google+, Twitter and Facebook, in that specific order:
-`[feather_share show="google_plus, twitter, facebook" hide="reddit, pinterest, linkedin, tumblr, mail"]`
+This shortcode will create a list of social media sharing buttons to share content on your site, only showing Twitter and Facebook, in that specific order:
+`[feather_share show="twitter, facebook" hide="reddit, pinterest, linkedin, tumblr, mail"]`
 
 You can change the order of displayed buttons by changing the order of keywords:
-`[feather_share show="twitter, google_plus, facebook" hide="reddit, pinterest, linkedin, tumblr, mail"]`
+`[feather_share show="twitter, facebook" hide="reddit, pinterest, linkedin, tumblr, mail"]`
 
 This shortcode will create a list of social sharing buttons to share content on your site using the "Wheel" icons skin:
 `[feather_share skin="wheel"]`
@@ -67,8 +68,8 @@ This shortcode will create a list of social media sharing buttons to share conte
 You can add a custom CSS class to your share buttons using the "class" attribute:
 `[feather_share class="myclass"]`
 
-You can combine all the parameters above to customize the look, for instance using the "Wheel" icon skin at a size of 64 pixels and only showing Google+, Twitter and Facebook, in that specific order:
-`[feather_share skin="wheel" size="64" show="google_plus, twitter, facebook" hide="reddit, pinterest, linkedin, tumblr, mail"]`
+You can combine all the parameters above to customize the look, for instance using the "Wheel" icon skin at a size of 64 pixels and only showing Twitter and Facebook, in that specific order:
+`[feather_share skin="wheel" size="64" show="twitter, facebook" hide="reddit, pinterest, linkedin, tumblr, mail"]`
 
 The next shortcode will create a list of social following buttons that allow visitors to follow you:
 `[feather_follow]`
@@ -181,15 +182,54 @@ margin-left: 10px;
 
 == Screenshots ==
 
-1. An example of how the sharing or following buttons appear in the front-end at 64 pixel resolution
-2. An example of how the share or follow icons appear in the front-end at 24 pixel resolution
-3. An example of how the following or sharing links appear in the front-end using the [Extra Social Icons addon](http://socialmediafeather.com/products/extra-social-icons/ "Add 8 extra social icon skins to the Social Media Feather plugin!")
-4. Showing how using the [Grey Fade addon](http://socialmediafeather.com/products/grey-fade-effect/ "Customize any of the available social icon skins with 2 cool effects!") transforms the sharing or following buttons in the front-end
-5. A demo of how social media providers can be customized in the back-end
-6. An view of some of the settings that can be customized in Social Media the back-end
-7. This shows the available social sharing and following widgets and their settings
+1. A demo of how social media providers can be customized in the back-end.
+2. A view of some of the settings that can be customized in Social Media the back-end.
+3. This shows the available social sharing and following widgets and their settings.
+4. An illustration of sharing functionality.
+5. An illustration of following functionality.
 
 == Changelog ==
+
+= 2.1.1 =
+* Fix bug with follow
+
+= 2.1.0 =
+* New settings interface.
+* Sanitize everything!
+
+= 2.0.7 =
+* Add more sanitization.
+
+= 2.0.6 =
+* Update screenshots.
+
+= 2.0.5 =
+* Strengthen sanitization for inputs and outputs.
+* Fix warnings, remove unnecessary files.
+* Remove Google+ entirely.
+
+= 2.0.4 =
+* Test with WordPress 5.9.
+* Update media assets.
+
+= 2.0.3 =
+* Test with WordPress 5.8.
+
+= 2.0.2 =
+* New WP version test.
+
+= 2.0.1 =
+* Replace http links with https.
+
+= 2.0.0 =
+* Fixed missing index error.
+* Added review us dismissable popup.
+* Tested WP 5.4.1 compatability.
+
+= 1.9.4 =
+* Removed deprecated function "create_function".
+* Utilizing WP Settings API.
+* WP 5+ compatability tests.
 
 = 1.8.4 =
 * Added option to decline terms of service after having accepted
