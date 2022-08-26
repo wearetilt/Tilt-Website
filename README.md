@@ -15,5 +15,7 @@
 
 ## :ghost: Dependencies
 
+To install this project you must have already installed on your machine
+
 - PHP 7.4
 - Node 13.13.0
