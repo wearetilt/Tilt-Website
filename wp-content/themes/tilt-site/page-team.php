@@ -11,7 +11,18 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header();
+
+$args = array(
+    'numberposts' => 999,
+    'post_type'   => 'team_item',
+    'orderby'     => 'menu_order',
+    'order'       => 'ASC'
+);
+
+$team_items = get_posts( $args );
+
+?>
 
 <div class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
@@ -19,85 +30,57 @@ get_header(); ?>
 	</div>
 </div> <!-- /end container -->
 
-<?php
 
-$args = array(
-  'numberposts' => 999,
-  'post_type'   => 'team_item'
-);
+<div class="container container--no-padding area-dark">
+    <div class="group-container">
+        <?php
+        if ($team_items) {
+            $i = 1;
 
-$team_items = get_posts( $args );
-
-?>
-
-	<div class="container container--no-padding area-dark">
-		<div class="group-container">
-
-			<?php if($team_items) : ?>
-			<?php $i=1;foreach($team_items as $team) : ?>
-
-			<?php
-			$name = $team->post_title;
-			$position = get_field('position', $team);
-			$isLinks = get_field('show_links', $team);
-			$teamImage = get_the_post_thumbnail_url($team, 'team');
-			$email = get_field('emaill_add', $team);
-			$linkedin = get_field('linkedin_add', $team);
-
-			$cssClass = "module module--staff module--video";
+            foreach ($team_items as $team) {
+                $name = $team->post_title;
+                $position = get_field('position', $team);
+                $isLinks = get_field('show_links', $team);
+                $teamImage = get_the_post_thumbnail_url($team, 'team');
+                $email = get_field('emaill_add', $team);
+                $linkedin = get_field('linkedin_add', $team);
+                $cssClass = "module module--staff module--video";
 
 
-      $image_attributes = wp_get_attachment_image_src($teamImage, $size = 'team' );
-        $retina_desktop_image = $image_attributes[0];
-        if (function_exists('wr2x_get_retina_from_url')) {
-          $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);
-       }
+                $image_attributes = wp_get_attachment_image_src($teamImage, $size = 'team' );
+                $retina_desktop_image = $image_attributes[0];
+                if (function_exists('wr2x_get_retina_from_url')) {
+                    $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);
+                }
 
 
-			?>
-
-			<div id="staff-<?= $i;?>" class="<?= $cssClass; ?>" style="background-image: url('<?= $teamImage;?>'); background-size: cover; background-position: 50% 50%;   background-image: 
-    image-set( url('<?= $teamImage; ?>') 1x, url('<?= $teamImage; ?>') 2x, );">
-				<div class="overlay overlay--staff area-dark">
-					<div class="overlay-text">
-						<h2 class="underlined"><?= $name;?></h2>
-						<p class="sans-serif">
-							<?= $position;?>
-						</p>
-							<ul>
-								<li class="email"><a href="mailto:<?php echo $email; ?>">Email</a></li>
-								<?php if($isLinks) { ?>
-								<li class="linkedin"><a href="<?php echo $linkedin; ?>" target="_blank">Linkedin</a></li>
-							<?php } ?>
-
-							</ul>
-					</div>
-				</div>
-				<div class="bottom-border" aria-hidden="true"></div>
-			</div>
-
-
-			<?php $i++;endforeach;?>
-			<?php endif;?>
-
-		</div>
-	</div>
-
-
-
-
-<?php /*
-	<?php $staffData = file_get_contents(get_template_directory_uri().'/data/staff.json');?>
-	<script>
-		var staffData = <?= $staffData;?>;
-	</script>
-	*/?>
-
-	<script type="text/javascript">
-
-	</script>
-
+            ?>
+                <div id="staff-<?= $i;?>" class="<?= $cssClass; ?>" style="background-image: url('<?= $teamImage;?>'); background-size: cover; background-position: 50% 50%;   background-image:
+        image-set( url('<?= $teamImage; ?>') 1x, url('<?= $teamImage; ?>') 2x, );">
+                    <div class="overlay overlay--staff area-dark">
+                        <div class="overlay-text">
+                            <h2 class="underlined"><?= $name;?></h2>
+                            <p class="sans-serif">
+                                <?= $position;?>
+                            </p>
+                            <ul>
+                                <li class="email"><a href="mailto:<?php echo $email; ?>">Email</a></li>
+                                <?php if ($isLinks) { ?>
+                                    <li class="linkedin"><a href="<?php echo $linkedin; ?>" target="_blank">Linkedin</a></li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom-border" aria-hidden="true"></div>
+                </div>
+            <?php } ?>
+        <?php } ?>
+    </div>
 </div>
+
+<script type="text/javascript">
+
+</script>
 
 <div id="staff-member">
 	<div id="staff-member__wrapper">
