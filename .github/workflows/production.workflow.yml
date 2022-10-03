@@ -1,7 +1,7 @@
 name: Deploy to WP Engine
 on:
   push:
-    branches: [ master,staging,testing ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -10,21 +10,22 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v2
 
-#      - name: Install Node.js
-#        uses: actions/setup-node@v1
-#        with:
-#          node-version: '6.8.0'
-#
-#      - name: Building assets
-#        run: |
-#          npm install
-#          ./node_modules/.bin/gulp
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '6.8.0'
+
+      - name: Building assets
+        run: |
+          cd resources
+          npm install
+          ./node_modules/.bin/gulp
 
       - name: GitHub Action Deploy to WP Engine
         uses: wpengine/github-action-wpe-site-deploy@v2.3.3
         with:
           # Deploy vars
-          WPE_SSHG_KEY_PRIVATE: ${{ secrets.STAGING_WPE_SSHG_KEY_PRIVATE }}
+          WPE_SSHG_KEY_PRIVATE: ${{ secrets.PRODUCTION_WPE_SSHG_KEY_PRIVATE }}
           PHP_LINT: false
           CACHE_CLEAR: TRUE
 
