@@ -30,7 +30,7 @@ jobs:
           CACHE_CLEAR: TRUE
 
           # GITHUB file location
-          SRC_PATH: "public/wp-content/themes/"
+          SRC_PATH: "wp-content/themes/"
 
           # WPEngine server location
           REMOTE_PATH: "wp-content/themes/"
