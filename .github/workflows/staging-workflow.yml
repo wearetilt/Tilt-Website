@@ -30,11 +30,10 @@ jobs:
           CACHE_CLEAR: TRUE
 
           # GITHUB file location
-          TPO_SRC_PATH: "public/wp-content/themes/"
+          SRC_PATH: "public/wp-content/themes/"
 
           # WPEngine server location
-          TPO_PATH: "wp-content/themes/"
+          REMOTE_PATH: "wp-content/themes/"
 
           # Branches & Environments
-          STG_BRANCH: staging
           STG_ENV: wearetiltstg
