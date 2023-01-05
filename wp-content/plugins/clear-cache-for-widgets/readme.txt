@@ -1,14 +1,14 @@
 === Clear Cache for Me ===
 Contributors: webheadllc
 Donate link: https://webheadcoder.com/donate-clear-cache-for-me
-Tags: wpengine, widget, menu, cache, clear, purge, w3t, W3 Total Cache, WP Super Cache, WP Fastest Cache, refresh, update, empty, performance, optimization, contact form 7, woothemes, ngg, gallery, Qode, theme, cache buster
+Tags: wpengine, cache, clear, purge, js, css, widget
 Requires at least: 3.8
-Tested up to: 4.9.1
-Stable tag: 1.0
+Tested up to: 6.0
+Stable tag: 1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Purges all cache on WPEngine, W3 Total Cache, WP Super Cache, WP Fastest Cache when updating widgets, menus, settings.  Forces a browser to reload a theme's CSS and JS files.
+Purges all cache on WPEngine, W3 Total Cache, WP Super Cache, WP Fastest Cache when updating widgets, menus, settings.  Forces a browser to reload CSS and JS files.
 
 == Description ==
 
@@ -20,29 +20,95 @@ The popular Qode themes has a options to set your own custom CSS and JS.  Someti
 
 Works with the following caching systems:
 
-* W3 Total Cache
-* WP Super Cache
+* Autoptimize
+* Breeze Cache
+* Cache Enabler
+* GoDaddy Cache
+* Kinsta Cache
+* LiteSpeed Cache
+* SiteGround SuperCacher
 * WP Fastest Cache
-* WPEngine hosting
+* WP Super Cache
+* WP Optimize Cache
+* W3 Total Cache
+* WPEngine Cache
 
-Clears all cache for following actions:
 
-* When Widgets are saved
-* When Customizer is saved
-* When Menus are saved
-* When Settings from a settings page is saved.
+Clears all cache for following actions (requires a caching system above to be active):
+
+* When Widgets are saved.
+* When Customizer is saved.
+* When Menus are saved.
+* When a fields in Advanced Custom Fields are saved.
 * When a Contact Form 7 form is saved.
+* When a Formidable Form form is saved.
 * When WooThemes settings are saved.
 * When NextGen Gallery albums and galleries are updated (beta - may not clear cache on all actions).
 * When Qode options are saved this plugin forces browsers to reload the custom css and custom js.
+* When a WP Forms forms or settings are saved.
+* When WooCommerce settings are saved. (Cache should already be clearing when products are saved.)
+* When settings from the Insert Headers and Footers plugin by WPBeginner are saved.  
+* When Settings from a settings page is saved.  This includes settings from WordPress core, Yoast SEO, and most other plugins using the Settings API.
+* When WordPress is updated.
+* When plugins are updated, activated, and deactivated.
 
-There is a convenient clear cache button on the dashboard for users with the right capability.  Admins (users with the 'manage_options' capability) can set which capability a user needs to view the button.  If you are using this button often, please consider submitting a request to have this plugin do your button-pushing for you.  This plugin is meant to work behind the scenes to make your life easier and less frustrating.
+[See the plugin's homepage for more details](https://webheadcoder.com/clear-cache-for-me/).
 
 == Screenshots ==
 
-1. The mythical button.  
+1. The button on the dashboard.  
 
 == Changelog ==
+
+= 1.8 =
+Updated cache clearing for LiteSpeed Cache.  
+
+= 1.7 =
+Added cache clearing when fields in Advanced Custom Fields are updated.  
+
+= 1.6 =
+Added cache clearing when WordPress core is updated.
+Added cache clearing when plugins are activated, deactivated, and updated.  
+Added cache clearing support for Insert Headers and Footers plugin.  
+Fixed admin-bar loading when admin bar is not present.    
+
+= 1.5.1 =
+Remove ajax from admin bar when jQuery is not available.  
+
+= 1.5 =
+Updated admin bar link to clear cache in place.  
+Added cache clearing support for Cache Enabler.  
+Fixed cache clearing for Breeze.  
+
+= 1.4.1 =
+Updated Clear Cache For Me button in admin bar.  
+Updated clearing WP Fastest Cache to include clearing minified cache.  
+(thanks to Ov3rfly)  
+
+= 1.4 =
+Added cache clearing for LiteSpeed Cache.  
+Added cache clearing for SiteGround SuperCacher.  
+Added cache clearing for Autoptimize.  
+Added Clear Cache For Me button in admin bar.  
+Added Development Mode to always load a fresh copy of javascript and stylesheet files.  
+
+= 1.3 =
+Added cache clearing for Breeze cache.
+Added cache clearing when WP Forms is saved
+Added cache clearing when WooCommerce settings are saved.
+Moved the settings to its own page under Settings.  
+Fixed cache clearing for GoDaddy so all pages are cleared.
+
+= 1.2 =
+Added cache clearing for WP Optimize cache.
+
+= 1.1.1 =
+removed hosting notice, fixed js error.  
+
+= 1.1 =
+Added cache clearing for Kinsta hosting.  
+Added cache clearing for GoDaddy manged hosting.  
+Added cache clearing for Formidable Forms.  
 
 = 1.0 =
 Added clearing cache for all JS and CSS theme files.  
@@ -110,7 +176,7 @@ Use this filter to determine if this plugin should do anything including showing
 Default: True if any of the supported caching systems is active.  
 See Example 1 below.
 
-= ccfm_admin_init =  
+= ccfm_admin_init or ccfm_init_actions =  
 Use this action to add hooks when cache is to be cleared.  Or do any other setup activity.  
 
 = ccfm_clear_cache_for_me_before = 
@@ -120,49 +186,20 @@ Use this action to clear cache from an unsupported caching system before the def
 Use this action to clear cache from an unsupported caching system after the default caching systems clear their cache.
 
 
-= Example 1 = 
-Thanks to Benjamin Pick - If you are using Autoptimize and need to clear the CSS or JS files automatically, you can add the code below to your theme's functions.php file.  This code also demonstrates how you can add an unsupported caching system and have its cache cleared for you.  
-https://gist.github.com/benjaminpick/94b487ce995454797143  
-also pasted below:  
+= Example = 
+If you were using an unsupported caching system you'll need to identify the caching plugin's class or function which clears the cache.  As an example, if the unsupported caching system called the `MyOtherCache::clear_all()` function, you would use the following code to get this plugin to clear the cache.
+
 `<?php
-function yt_cache_enable($return) {
-    if (class_exists('autoptimizeCache'))
+function my_other_cache_enable( $return = false ) {
+    if ( class_exists( 'MyOtherCache' ) )
         return true;
-    
     return $return;
 }
-add_filter('ccfm_supported_caching_exists', 'yt_cache_enable');
+add_filter('ccfm_supported_caching_exists', 'my_other_cache_enable');
 
-function yt_cache_clear() {
-    if (class_exists('autoptimizeCache'))
-        autoptimizeCache::clearall();
+function my_other_cache_clear() {
+    if ( my_other_cache_enable() )
+        MyOtherCache::clear_all();
 }
-add_action('ccfm_clear_cache_for_me', 'yt_cache_clear');`
+add_action('ccfm_clear_cache_for_me', 'my_other_cache_clear');`
 
-
-= Example 2 =
-Thanks to Benjamin Pick - If you have an automatic deployment setup and need a webhook to clear the caches, you can add this code to your theme's functions.php file.  
-https://gist.github.com/benjaminpick/67b6b9a49ef7991172f9  
-also pasted below:  
-`<?php
-if (!defined('CLEAR_CACHE_HOOK_KEY'))
-    define('CLEAR_CACHE_HOOK_KEY', 'some_secret_key_please');
-
-function yt_cache_clear_web_hook() {
-    if (isset($_GET['key']) && $_GET['key'] == CLEAR_CACHE_HOOK_KEY) {
-        if (function_exists('ccfm_clear_cache_for_me')) {
-            ccfm_clear_cache_for_me( 'ajax' );
-            echo 'Cache was cleared.';
-        } else {
-            echo 'Install the plugin "Clear Cache For Me" first';
-        }
-        exit;
-    }
-}
-
-// Call this URL to clear the cache:
-// /wp-admin/admin-ajax.php?action=clear_cache&key=some_secret_key_please
-
-add_action( 'wp_ajax_clear_cache', 'yt_cache_clear_web_hook' );
-add_action( 'wp_ajax_nopriv_clear_cache', 'yt_cache_clear_web_hook' );
-`

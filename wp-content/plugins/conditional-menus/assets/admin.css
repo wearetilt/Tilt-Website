@@ -3,7 +3,7 @@
 	font: normal 13px/150% Arial, Helvetica, sans-serif;
 	color: #666;
 	border: none;
-	width: 760px;
+	max-width: 700px;
 	padding: 20px 25px;
 	margin: auto;
 	position: absolute;
@@ -13,6 +13,8 @@
 	z-index: 9999999;
 	display: none;
 	height: 530px;
+	border-radius: 8px;
+	box-shadow: 0 3px 15px rgba(0,0,0,.3);
 }
 .themify-cm-close {
 	position: absolute;
@@ -94,6 +96,7 @@
 	padding: 0;
 	margin: 0 0 10px;
 	font-size: 1em;
+	border-radius: 6px;
 }
 #visibility-tabs > .ui-tabs-nav {
 	margin: 0;
@@ -103,6 +106,7 @@
 	background: #bbb;
 	box-shadow: none;
 	border: none;
+	border-radius: 5px 5px 0 0;
 }
 #visibility-tabs > .ui-tabs-nav > li {
 	list-style: none;
@@ -115,6 +119,7 @@
 	border-radius: 0;
 	border: none;
 	background: none;
+	border-radius: 5px 5px 0 0;
 }
 #visibility-tabs > .ui-tabs-nav > li > .ui-tabs-anchor {
 	float: left;
@@ -138,7 +143,7 @@
 	border: none;
 }
 .themify-visibility-inner-tabs .inline-tabs {
-	margin: -10px 0 0;
+	margin: -10px 0 10px;
 	padding: 0;
 	background: none;
 	border: none;
@@ -173,6 +178,10 @@
 	color: #fff;
 	border: none;
 	background: #bbb;
+}
+.themify-visibility-inner-tabs .inline-tabs li a:focus {
+	box-shadow: none;
+	outline: none;
 }
 
 .ui-state-hover,
@@ -212,6 +221,7 @@
 }
 .themify-cm-conditions-container .themify-visibility-inner-tabs .ui-tabs-panel {
 	max-height: 290px;
+	overflow-y: inherit;
 }
 
 .themify-cm-conditions-container .themify-visibility-options label {
@@ -220,6 +230,10 @@
 	float: left;
 	margin-right: 1%;
 	margin-bottom: 5px;
+}
+.themify-cm-conditions-container .themify-visibility-options .tf_cm_select_sub{
+	width:100%;
+	margin-bottom:20px;
 }
 .cm-location td {
 	border-top: 1px solid #ccc;
@@ -243,6 +257,7 @@ p.button-controls {
 	float: right;
 	padding-right: 20px;
 }
+
 /* Themify Search and Pagination
 ---------------------------------------------------------------*/
 .themify-visibility-items-search {
@@ -339,4 +354,88 @@ p.button-controls {
 .themify_lightbox_uncheck_container {
 	position: relative;
 	margin: 0;
+}
+.themify_all_condition_checked{
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+/* Tooltip */
+.themify-cm-conditions-container [data-tooltip]{
+	position: relative;
+	cursor: pointer;
+}
+.themify-cm-conditions-container [data-tooltip]:before,
+.themify-cm-conditions-container [data-tooltip]:after{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out, 
+	visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	transform: translate3d(0, 28px, 0);
+	pointer-events: none;
+	bottom: 100%;
+	left: 0;
+}
+.themify-cm-conditions-container [data-tooltip]:hover:before,
+.themify-cm-conditions-container [data-tooltip]:hover:after,
+.themify-cm-conditions-container [data-tooltip]:focus:before,
+.themify-cm-conditions-container [data-tooltip]:focus:after {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(20px);
+}
+.themify-cm-conditions-container [data-tooltip]:before {
+	content: "";
+	background: transparent;
+	border: 6px solid transparent;
+	border-top-width: 0;
+	border-bottom-color: #000;
+	border-bottom-color: hsla(0, 0%, 20%, 0.9);
+	top: -3px;
+	left: 6px;
+	z-index: 1001;
+}
+.themify-cm-conditions-container [data-tooltip]:after {
+	width: 270px;
+	content: attr(data-tooltip);
+	padding: 8px;
+	background-color: #000;
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.2;
+	border-radius: 5px;
+	margin-left: -1.75em;
+	margin-bottom: 5px;
+	z-index: 1000;
+	top: 3px;
+	left: -1px;
+	bottom: auto;
+    word-break: break-word;	
+}
+
+/* Media Queries
+---------------------------------------------------------------*/
+@media only screen and (max-width:900px){
+	.themify-admin-lightbox {
+		width: 80%;
+		padding: 20px 5%;
+		left: 0;
+		margin-left: 0;
+		height: auto;
+	}
+    .themify-cm-conditions-container [data-tooltip]:after {
+    	width: 230px;
+    }
+}
+@media only screen and (max-width:782px){
+	.themify-admin-lightbox {
+		left: 5%;
+	}
+}
+@media only screen and (max-width:680px){
+    .themify-cm-conditions-container [data-tooltip]:after {
+    	width: 160px;
+    }
 }

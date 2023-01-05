@@ -2,9 +2,9 @@
 Contributors: freemp
 Tags: author, archives, pages, links, disable, remove, 404
 Requires at least: 2.9
-Tested up to: 5.1
-Stable tag: 1.2.1
-License: GPLv2
+Tested up to: 6.1
+Stable tag: trunk
+License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Disable Author Archives completely removes author archives and makes the web server return status code 404 ('Not Found') instead.
@@ -24,9 +24,16 @@ The plugin does not require any configuration. Once activated, it will start doi
 
 = Where can I find the plugin's configuration settings? =
 
-The plugin does not require any kind of configuration. Author archives will be disabled as soon as the plugin was activated.
+The plugin does not require any kind of configuration. Author archives are disabled as soon as the plugin is activated.
 
 == Changelog ==
+
+= 1.3.1 =
+* Removed View link from admin's Users list. Suggested by @khaiknievel. Thanks!
+
+= 1.3.0 =
+* Opened plugin for translations.
+* Set filter callback priorities to lowest possible value.
 
 = 1.2.1 =
 * Subtle optimization.

@@ -1,15 +1,19 @@
 <?php
-/*
-Plugin Name: Disable Author Archives
-Plugin URI: https://wordpress.org/plugins/disable-author-archives
-Description: Disables author archives and makes the web server return status code 404 ('Not Found') instead.
-Version: 1.2.1
-Author: freemp
-Author URI: https://profiles.wordpress.org/freemp
-License: GPL2
-*/
+/**
+ * Plugin Name: Disable Author Archives
+ * Plugin URI: https://wordpress.org/plugins/disable-author-archives
+ * Description: Disables author archives and makes the web server return status code 404 ('Not Found') instead.
+ * Version: 1.3.1
+ * Author: freemp
+ * Author URI: https://profiles.wordpress.org/freemp
+ * Text Domain: disable-author-archives
+ * License: GPL v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
+
+load_plugin_textdomain( 'disable-author-archives', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 /* Return status code 404 for existing and non-existing author archives. */
 add_action( 'template_redirect',
@@ -22,5 +26,11 @@ add_action( 'template_redirect',
 		}
 	}, 1 );
 /* Remove author links. */
-add_filter( 'author_link', function() { return '#'; }, 99 );
-add_filter( 'the_author_posts_link', '__return_empty_string', 99 );
+add_filter( 'user_row_actions',
+	function( $actions ) {
+		if ( isset( $actions['view'] ) )
+			unset( $actions['view'] );
+		return $actions;
+	}, PHP_INT_MAX, 2 );
+add_filter( 'author_link', function() { return '#'; }, PHP_INT_MAX );
+add_filter( 'the_author_posts_link', '__return_empty_string', PHP_INT_MAX );

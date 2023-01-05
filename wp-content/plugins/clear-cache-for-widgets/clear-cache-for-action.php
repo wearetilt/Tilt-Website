@@ -77,6 +77,69 @@ function ccfm_clear_cache_for_ngg() {
     ccfm_clear_cache_for_me( 'ngg' );
 }
 
+/**
+ * Clear cache when Formdiable forms and settings are updated.
+ */
+function ccfm_clear_cache_for_formidable() {
+    ccfm_clear_cache_for_me( 'formidable' );
+}
+
+/**
+ * Clear cache when WPForms contact forms are updated.
+ */
+function ccfm_clear_cache_for_wpforms() {
+    ccfm_clear_cache_for_me( 'wpforms' );
+}
+
+/**
+ * Clear cache when WooCommerce is updated.
+ */
+function ccfm_clear_cache_for_woocommerce() {
+    ccfm_clear_cache_for_me( 'woocommerce' );
+}
+
+/**
+ * Clear cache when Insert Headers and Footers is updated.
+ */
+function ccfm_insert_headers_and_footers() {
+    ccfm_clear_cache_for_me( 'insert-headers-and-footers' );
+}
+
+/**
+ * Clear cache when ACF fields are updated
+ */
+function ccfm_acf_update_fields( $post_id, $post ) {
+    if ( $post->post_type == 'acf-field-group' || $post->post_type == 'acf-field' ) {
+        ccfm_clear_cache_for_me( 'acf_update_fields' );
+        remove_action( 'save_post', 'ccfm_acf_update_fields', 10, 2 );
+    }
+}
+
+
+/**
+ * Add all urls to be purged and purge it in GoDaddy Cache.
+ */
+function ccfm_godaddy_purge() {
+    if ( ! class_exists( '\WPaaS\Cache' ) ) {
+        return;
+    }
+
+    if ( \WPaaS\Cache::has_ban() ) {
+
+        return;
+
+    }
+    remove_action( 'shutdown', [ '\WPaaS\Cache', 'purge' ], PHP_INT_MAX );
+    add_action( 'shutdown', [ '\WPaaS\Cache', 'ban' ], PHP_INT_MAX );
+}
+
+/**
+ * Clear cache for wp activities like plugin updates, deletes, activations, core updates.
+ */
+function ccfm_clear_cache_for_wp_activity() {
+    ccfm_clear_cache_for_me( 'wp_activity' );
+}
+
 /*** code for if qode was outside of theme and not saved by saving options. ***/
 /**
  * "clear cache" for custom qode js and css files.
