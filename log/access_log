@@ -226,3 +226,19 @@
 127.0.0.1 - - [25/Oct/2022:09:54:45 +0100] "GET /wp-content/plugins/wordpress-seo-premium/js/dist/wp-seo-edit-page-1430.js?ver=14.3 HTTP/1.1" 200 391
 127.0.0.1 - - [25/Oct/2022:09:54:45 +0100] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 47
 127.0.0.1 - - [25/Oct/2022:09:55:00 +0100] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 47
+<<<<<<< HEAD
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-content/themes/tilt-site/css/global.css?ver=1673002529 HTTP/1.1" 200 482675
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-includes/css/dist/block-library/style.min.css?ver=5.5.3 HTTP/1.1" 200 53907
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-content/plugins/rotatingtweets/css/style.css?ver=5.5.3 HTTP/1.1" 200 3192
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-includes/js/wp-emoji-release.min.js?ver=5.5.3 HTTP/1.1" 200 14246
+127.0.0.1 - - [06/Jan/2023:11:30:48 +0000] "GET / HTTP/1.1" 200 21364
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-content/themes/tilt-site/js/main.js?ver=1664786270 HTTP/1.1" 200 50736
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-content/themes/tilt-site/images/play_button_v3.png HTTP/1.1" 200 694
+127.0.0.1 - - [06/Jan/2023:11:31:00 +0000] "GET /wp-content/themes/tilt-site/fonts/SeroOT/SeroOT-Black.woff HTTP/1.1" 200 58640
+127.0.0.1 - - [06/Jan/2023:11:31:00 +0000] "GET /wp-content/themes/tilt-site/fonts/SeroOT/SeroOT-Thin.woff HTTP/1.1" 200 58452
+127.0.0.1 - - [06/Jan/2023:11:31:00 +0000] "GET /wp-content/themes/tilt-site/fonts/SeroOT/SeroOT-Light.woff HTTP/1.1" 200 59728
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-content/themes/tilt-site/js/libs.js?ver=20150330 HTTP/1.1" 200 38933
+127.0.0.1 - - [06/Jan/2023:11:30:59 +0000] "GET /wp-content/themes/tilt-site/js/video.js HTTP/1.1" 200 645994
+127.0.0.1 - - [06/Jan/2023:11:32:14 +0000] "GET / HTTP/1.1" 200 21364
+=======
+>>>>>>> staging
