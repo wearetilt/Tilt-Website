@@ -1,7 +1,7 @@
-name: Deploy to Tilt Production
+name: Deploy to Tilt Staging
 on:
   push:
-    branches: master
+    branches: staging
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
         uses: wpengine/github-action-wpe-site-deploy@v3.1.1
         with:
           # Deploy vars
-          WPE_SSHG_KEY_PRIVATE: ${{ secrets.PRODUCTION_WPE_SSHG_KEY_PRIVATE }}
+          WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
           PHP_LINT: false
           CACHE_CLEAR: TRUE
 
@@ -36,4 +36,4 @@ jobs:
           REMOTE_PATH: "wp-content/themes/"
 
           # Branches & Environments
-          PRD_ENV: wearetilt
+          STG_ENV: wearetiltstg

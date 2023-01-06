@@ -1,23 +1,26 @@
+# Node
 node_modules
+npm-debug.log
+/resources/package-lock.json
+dbdata/
+
 .sass-cache
+
+#wordpress core
 wp-config.php
 .htaccess
+wp-content/uploads
+wp-content/uploads/
+uploads
+
+#styling
 wp-content/themes/tilt-site/css/global.min.css
 wp-content/themes/tilt-site/css/global.min.css.map
 wp-content/themes/tilt-site/css/video-js.min.css
-/Tilt Website/nbproject/private/
-/tilt-site_tidy/
-npm-debug.log
-wp-content/uploads
-wp-content/uploads.old
-wp-content/uploads/
-uploads
 global.min.css
 global.min.css.map
 global.css
 global.css.map
-/resources/package-lock.json
-dbdata/
 
 log
 log/*
