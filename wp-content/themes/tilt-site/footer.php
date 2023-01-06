@@ -61,10 +61,10 @@ if (!post_password_required($post)) {
             <div class="phone-container">
               <div class="telephone">
                 <?php if ($blog_id == 1) : ?>
-                  <span>+44(0)1273 675 700</span>
+                  <a href="tel:+441273-675-700">+44(0)1273 675 700</a>
                 <?php endif; ?>
                 <?php if ($blog_id == 3) : ?>
-                  <span>+1 (778) 835-6414</span>
+                  <a href="tel:+1778-835-6414">+1 (778) 835-6414</a>
                 <?php endif; ?>
               </div>
             </div>
