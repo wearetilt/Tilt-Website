@@ -54,31 +54,6 @@ footer {
             color: black
         }
     }
-    #popup{
-        display: inline-block;
-        color: #ffffff;
-        background: transparent;
-        cursor: pointer;
-        font-family: $f-seroot;
-        font-weight: 300;
-        font-size: 15px;
-        letter-spacing: 0.020em;
-        line-height: $icon-size;
-        margin-bottom: 14px;
-        text-align: center;
-        text-transform: none;
-        width: 12rem;
-        border: none;
-        outline: none;
-        @media screen and (min-width: $bp-desktop){
-            margin-bottom: $icon-size;
-        }
-        @media screen and (max-width: 800px){
-            display: block;
-            width: 100%;
-            text-align: left;
-        }
-    }
     &.password-footer {
         position: static;
         
@@ -100,30 +75,6 @@ footer {
             display: inline-block;
             width: 100%;
             text-align: left;
-        }
-        .footer-links {
-            display: none;
-            @media screen and (min-width: $bp-desktop ) {
-                display: inline-block;
-                float: none;
-            }
-            @media screen and (min-width: 1144px){
-                display: inline-block;
-                float: right;
-                line-height: 2;
-            }
-            a {
-                color: white;
-                font-family: $f-seroot-lt;
-                font-size: 20px;
-                letter-spacing: 0.075em;
-                padding: 0px 15px;
-
-                @media screen and (min-width: $bp-desktop){
-                    padding-left: 35px;
-
-                }
-            }
         }
     }
     .footer-item--logo {
@@ -160,19 +111,6 @@ footer {
             color: $c-tilt-pink;
         }
     }
-    #footnote-1{
-        clear: both;
-        padding-top: 14px;
-        font-family: $f-seroot;
-        @include font-size(10);
-        color: #616161; 
-        @media screen and (min-width: $bp-desktop){
-            padding-top: 44px;
-            @include font-size(12);
-            display: inline-block;
-        }
-
-    }
     p.sans-serif {
         @include font-size(25);
         @media handheld,
@@ -193,36 +131,6 @@ footer {
     }
 }
 
-.privacy_policy{
-    color: #ffffff;
-    font-family: $f-seroot;
-    font-size: 12px;
-    line-height: 25px;
-    letter-spacing: 0.025em;
-    float: left;
-    text-transform: capitalize;
-    padding: 34px 0 0 0;
-    @media screen and (min-width: $bp-desktop){
-        padding: 0;
-        margin-top: 17px;
-    }
-}
-
-.health_and_safety {
-    color: #ffffff;
-    font-family: $f-seroot;
-    font-size: 12px;
-    line-height: 25px;
-    letter-spacing: 0.025em;
-    float: right;
-    text-transform: capitalize;
-    padding: 34px 0 0 0;
-    @media screen and (min-width: $bp-desktop){
-        float: left;
-        padding: 0;
-        margin-top: 17px;
-    }
-}
 
 .footer-lower {
     display: flex;
@@ -235,44 +143,6 @@ footer {
     }
 }
 
-#footer-connections {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    padding: 40px 0;
-    @media screen and (min-width: $bp-desktop){
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-    }
-}
-
-#footer-contacts {
-  @extend %clearfix;
-  text-align: center;
-  @media screen and (min-width: $bp-desktop){
-      float: right;
-      display: inline-block;
-      text-align: end;
-      padding: 44px 0;
-  }
-  @media all and(max-width: 800px) {
-      text-align: center;
-      .telephone {
-          display: block;
-          width: 100%;
-      }
-  }
-}
-
-.footer-b-cert{
-
-    @media screen and (min-width: $bp-desktop){
-        padding: 44px 0;
-    }
-  }
 
 #signoff {
     @extend %clearfix;
@@ -454,13 +324,232 @@ footer {
 
 
 #signoff {
-
     .sign-off-desktop{
-        display: ;
-
+        display: none;
+        @media screen and (min-width: $bp-desktop){
+        display: flex;
+        flex-direction: row;
+        }
+        
         .left_section {
+            width: 50%;
+            flex-direction: column;
             .left_top{
+               flex-direction: row;
 
+            }
+            .left_bottom {
+                flex-direction: column;
+                text-align: left;
+                
+                .footnote{
+                    clear: both;
+                    font-family: $f-seroot;
+                    color: #616161; 
+                        padding-top: 44px;
+                        @include font-size(12);
+                }
+                .privacy_policy{
+                    color: #ffffff;
+                    font-family: $f-seroot;
+                    font-size: 12px;
+                    line-height: 25px;
+                    letter-spacing: 0.025em;
+                    text-transform: capitalize;
+                    padding-right: 1rem;
+                }
+                
+                .health_and_safety {
+                    color: #ffffff;
+                    font-family: $f-seroot;
+                    font-size: 12px;
+                    line-height: 25px;
+                    letter-spacing: 0.025em;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .right_section {
+            width:50%;
+            flex-direction: column;
+            padding: 0 44px;
+
+            .right_top {
+                .footer_links {
+                    display: flex;
+                    line-height: 2;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    a {
+                        color: white;
+                        font-family: $f-seroot-lt;
+                        font-size: 20px;
+                        letter-spacing: 0.075em;
+                    }
+                }
+            }
+
+            .right_bottom{
+                #footer-connections {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 40px 0;
+                    @media screen and (min-width: $bp-desktop){
+                        padding: 0;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: start;
+                    }
+                }
+                
+                #footer-contacts {
+                  @extend %clearfix;
+                  text-align: center;
+                  @media screen and (min-width: $bp-desktop){
+                      float: right;
+                      display: inline-block;
+                      text-align: end;
+                      padding: 44px 0;
+                  }
+                  @media all and(max-width: 800px) {
+                      text-align: center;
+                      .telephone {
+                          display: block;
+                          width: 100%;
+                      }
+                  }
+
+                #popup{
+                    display: inline-block;
+                    color: #ffffff;
+                    background: transparent;
+                    cursor: pointer;
+                    font-family: $f-seroot;
+                    font-weight: 300;
+                    font-size: 15px;
+                    letter-spacing: 0.020em;
+                    line-height: $icon-size;
+                    margin-bottom: 14px;
+                    text-transform: none;
+                    border: none;
+                    outline: none;
+                    @media screen and (min-width: $bp-desktop){
+                        margin-bottom: $icon-size;
+                    }
+                    @media screen and (max-width: 800px){
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+
+                }
+                
+                .footer-b-cert{
+                
+                    @media screen and (min-width: $bp-desktop){
+                        padding: 44px 0;
+                    }
+                  }
+            }
+        }
+        
+    }
+    
+    .sign-off-mobile {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $bp-desktop){
+            display: none;
+        }
+    
+        .top_section {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .mid_section {
+            padding-top: 40px;
+
+            #footer-connections {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            #footer-contacts {
+                @extend %clearfix;
+                text-align: center;
+                @media screen and (min-width: $bp-desktop){
+                    float: right;
+                    display: inline-block;
+                    text-align: end;
+                    padding: 44px 0;
+                }
+                @media all and(max-width: 800px) {
+                    text-align: center;
+                    .telephone {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+
+                #popup{
+                    display: inline-block;
+                    color: #ffffff;
+                    background: transparent;
+                    cursor: pointer;
+                    font-family: $f-seroot;
+                    font-weight: 300;
+                    font-size: 15px;
+                    letter-spacing: 0.020em;
+                    line-height: $icon-size;
+                    margin-bottom: 14px;
+                    text-transform: none;
+                    border: none;
+                    outline: none;
+                    @media screen and (min-width: $bp-desktop){
+                        margin-bottom: $icon-size;
+                    }
+                    @media screen and (max-width: 800px){
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .bottom_section {
+            .footnote{
+                clear: both;
+                padding: 34px 0;
+                font-family: $f-seroot;
+                @include font-size(10);
+                color: #616161; 
+            }
+
+            .privacy_policy{
+                color: #ffffff;
+                font-family: $f-seroot;
+                font-size: 12px;
+                line-height: 25px;
+                letter-spacing: 0.025em;
+                text-transform: capitalize;
+                padding-right: 1rem;
+            }
+            
+            .health_and_safety {
+                color: #ffffff;
+                float: right;
+                font-family: $f-seroot;
+                font-size: 12px;
+                line-height: 25px;
+                letter-spacing: 0.025em;
+                text-transform: capitalize;
             }
         }
     }
