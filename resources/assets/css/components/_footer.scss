@@ -76,6 +76,7 @@ footer {
         @media screen and (max-width: 800px){
             display: block;
             width: 100%;
+            text-align: left;
         }
     }
     &.password-footer {
@@ -86,10 +87,15 @@ footer {
         }
     }
     .footer-upper{
-        border-bottom: 1px solid $c-grey-3a;
         text-align: center;
         padding-bottom: 10px;
+
+        @media screen and (min-width: $bp-desktop){
+            border-bottom: 1px solid $c-grey-3a;
+        }
+
         @media screen and (min-width: 1144px){
+            border-bottom: 1px solid $c-grey-3a;
             padding-bottom: 24px;
             display: inline-block;
             width: 100%;
@@ -163,7 +169,6 @@ footer {
         @media screen and (min-width: $bp-desktop){
             padding-top: 44px;
             @include font-size(12);
-            width: 60%;
             display: inline-block;
         }
 
@@ -194,9 +199,13 @@ footer {
     font-size: 12px;
     line-height: 25px;
     letter-spacing: 0.025em;
-    margin-top: 17px;
     float: left;
     text-transform: capitalize;
+    padding: 34px 0 0 0;
+    @media screen and (min-width: $bp-desktop){
+        padding: 0;
+        margin-top: 17px;
+    }
 }
 
 .health_and_safety {
@@ -205,16 +214,44 @@ footer {
     font-size: 12px;
     line-height: 25px;
     letter-spacing: 0.025em;
-    margin-top: 17px;
-    float: left;
+    float: right;
     text-transform: capitalize;
-    padding: 0 1rem;
+    padding: 34px 0 0 0;
+    @media screen and (min-width: $bp-desktop){
+        float: left;
+        padding: 0;
+        margin-top: 17px;
+    }
+}
+
+.footer-lower {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: space-between;
+
+    @media screen and (min-width: $bp-desktop){
+        flex-direction: row;
+    }
+}
+
+#footer-connections {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 0;
+    @media screen and (min-width: $bp-desktop){
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
 }
 
 #footer-contacts {
   @extend %clearfix;
   text-align: center;
-  padding: 10px;
   @media screen and (min-width: $bp-desktop){
       float: right;
       display: inline-block;
@@ -230,10 +267,17 @@ footer {
   }
 }
 
+.footer-b-cert{
+
+    @media screen and (min-width: $bp-desktop){
+        padding: 44px 0;
+    }
+  }
+
 #signoff {
     @extend %clearfix;
     background-color: $c-bg;
-    padding: 10px 4%;
+    padding: 45px 4%;
     @media screen and (min-width: $bp-desktop){
         padding: 33px 4%;
     }
