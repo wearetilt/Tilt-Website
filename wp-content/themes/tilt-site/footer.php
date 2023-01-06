@@ -38,8 +38,62 @@ if (!post_password_required($post)) {
 
     <div id="signoff" class="group-container group-container--no-bg">
 
+
+      <div class="sign-off-desktop">
+
+        <div class="left_section">
+
+          <div class="left_top">
+            <div id="tilt--logo" class="footer-item footer-item--logo">
+              <a aria-label="Homepage link" href="<?php echo site_url(); ?>">
+                <svg class="svg-icon logout">
+                  <defs>
+                    <filter id="boxShadow" x="0" y="0" width="200%" height="200%">
+                      <feOffset result="offOut" in="SourceAlpha" dx="1" dy="1" />
+                      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+                      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                    </filter>
+                  </defs>
+                  <use xlink:href="#tilt"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="phone-container">
+              <div class="telephone">
+                <?php if ($blog_id == 1) : ?>
+                  <span>+44(0)1273 675 700</span>
+                <?php endif; ?>
+                <?php if ($blog_id == 3) : ?>
+                  <span>+1 (778) 835-6414</span>
+                <?php endif; ?>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="right_section">
+          <div class="right_top">
+            <div class="footer-links">
+              <a href="/work">work</a>
+              <a href="/about">about</a>
+              <a href="/news">news</a>
+              <a href="/team">team</a>
+              <!--       <a href="/careers">careers</a> -->
+              <a href="/contact">contact</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sign-off-mobile">
+
+      </div>
+
       <div class="footer-upper">
-        <div id="tilt--logo" class="footer-item footer-item--logo">
+        <!-- <div id="tilt--logo" class="footer-item footer-item--logo">
           <a aria-label="Homepage link" href="<?php echo site_url(); ?>">
             <svg class="svg-icon logout">
               <defs>
@@ -52,9 +106,9 @@ if (!post_password_required($post)) {
               <use xlink:href="#tilt"></use>
             </svg>
           </a>
-        </div>
+        </div> -->
 
-        <div class="phone-container">
+        <!-- <div class="phone-container">
           <div class="telephone">
             <?php if ($blog_id == 1) : ?>
               <span>+44(0)1273 675 700</span>
@@ -63,16 +117,15 @@ if (!post_password_required($post)) {
               <span>+1 (778) 835-6414</span>
             <?php endif; ?>
           </div>
-        </div>
+        </div> -->
 
-        <div class="footer-links">
+        <!-- <div class="footer-links">
           <a href="/work">work</a>
           <a href="/about">about</a>
           <a href="/news">news</a>
           <a href="/team">team</a>
-          <!--       <a href="/careers">careers</a> -->
           <a href="/contact">contact</a>
-        </div>
+        </div> -->
       </div>
 
       <div class="footer-lower">

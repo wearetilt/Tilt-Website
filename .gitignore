@@ -19,3 +19,5 @@ global.css.map
 /resources/package-lock.json
 dbdata/
 
+log
+log/*x
