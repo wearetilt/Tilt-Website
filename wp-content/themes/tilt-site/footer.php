@@ -105,7 +105,7 @@ if (!post_password_required($post)) {
           </div><!-- /end footer-contacts -->
 
           <div class="footer-b-cert">
-            <a href="" aria-label="Check out B certified's website" target="_blank">
+            <a href="https://www.bcorporation.net/en-us/find-a-b-corp/company/we-are-tilt" aria-label="Check out B certified's website" target="_blank">
               <img src="<?php echo get_template_directory_uri(); ?>/images/b-cert.svg" />
             </a>
           </div>
