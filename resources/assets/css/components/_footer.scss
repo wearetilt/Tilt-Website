@@ -484,7 +484,7 @@ footer {
         padding: 34px 0 34px 0;
         @include font-size(10);
         @media screen and (min-width: $bp-desktop){
-            padding: 44px 0 0 0;
+            padding: 44px 50px 0 0;
             @include font-size(12);  
         }
     }
