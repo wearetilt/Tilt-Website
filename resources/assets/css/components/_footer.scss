@@ -357,7 +357,7 @@ footer {
                     border: none;
                     outline: none;
                     @media screen and (min-width: $bp-desktop){
-                        margin-bottom: $icon-size;
+                        margin: 0 19px 24px 0;
                         padding: 0;
                     }
                     @media screen and (max-width: 800px){
