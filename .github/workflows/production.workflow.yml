@@ -1,7 +1,7 @@
-name: Deploy to WP Engine
+name: Deploy to Tilt Production
 on:
   push:
-    branches: [ master ]
+    branches: master
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '6.8.0'
+          node-version: "13.13.0"
 
       - name: Building assets
         run: |
@@ -22,7 +22,7 @@ jobs:
           ./node_modules/.bin/gulp
 
       - name: GitHub Action Deploy to WP Engine
-        uses: wpengine/github-action-wpe-site-deploy@v2.3.3
+        uses: wpengine/github-action-wpe-site-deploy@v3.1.1
         with:
           # Deploy vars
           WPE_SSHG_KEY_PRIVATE: ${{ secrets.PRODUCTION_WPE_SSHG_KEY_PRIVATE }}
@@ -30,11 +30,10 @@ jobs:
           CACHE_CLEAR: TRUE
 
           # GITHUB file location
-          TPO_SRC_PATH: "public/wp-content/themes/"
+          SRC_PATH: "wp-content/themes/"
 
           # WPEngine server location
-          TPO_PATH: "wp-content/themes/"
+          REMOTE_PATH: "wp-content/themes/"
 
           # Branches & Environments
-          PRD_BRANCH: master
           PRD_ENV: wearetilt
