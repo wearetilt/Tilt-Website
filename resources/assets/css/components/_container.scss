@@ -686,7 +686,10 @@ body{
                             width: auto;
                         }
                     }
-                    p{
+                    .submitted-message {
+                        min-height: 50vh;
+                    }
+                    label, .submitted-message p {
                         font-size: 45px;
                         color: #ffffff;
                         font-family: $f-seroot-thn;
@@ -709,6 +712,9 @@ body{
                             font-size: 30px;
                         }
                     }
+                    .submitted-message p {
+                        margin-top: 0;
+                    }
                     .join-list{
                         font-size: 12px;
                         line-height: 30px;
@@ -718,8 +724,7 @@ body{
                         text-transform: uppercase;
                         padding: 0 0 2px 2px;
                     }
-                    .tick-section{
-                        padding-bottom: 40px;
+                    .legal-consent-container{
                         @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
                             padding-bottom: 0px;
                         }
@@ -741,7 +746,7 @@ body{
                             }
 
                         }
-                        .tick-text{
+                        .tick-text {
                             display: inline-block;
                             vertical-align: middle;
                             letter-spacing: 0.8px;
@@ -749,18 +754,32 @@ body{
                                 font-size: 24px;
                             }
                         }
-                        .tick-content{
+
+                        .tick-content, label, input, .hs-richtext, li, span{
                             font-size: 14px;
                             line-height: 18px;
                             font-family: SeroOT-Thin;
                             width: 100%;
                             margin-top: -3px;
+                            font-weight: bold;
                             color: #75787b;
                             a{
                                 color: #ff406a;
                                 text-transform: none;
                             }
                         }
+
+                        .hs-richtext, li {
+                            margin-bottom: 30px;
+                        }
+
+                        input {
+                            width: auto;
+                            padding: 0;
+                            margin: 0;
+                            margin-top: 2px;
+                        }
+
                         .tick{
                             background: transparent;
                             width: 15px;
@@ -774,7 +793,7 @@ body{
                         }
                     }
                 }
-                #subForm{
+                .hbspt-form{
                     position: relative;
                 }
                 input{
@@ -806,7 +825,7 @@ body{
                         }
                     }
                 }
-                button.cube-newsletter{
+                .hs-button.primary.large {
                     align-items: flex-start;
                     text-align: center;
                     cursor: default;
@@ -815,21 +834,28 @@ body{
                     border-image: none;
                     border: none;
                     padding: 0;
+                    cursor: pointer;
                     outline: 0;
-                    .cube--front{
-                        border: 1px solid grey;
-                    }
+                    border: 1px solid grey;
+                    width: auto;
+                    font-size: 20px;
+                    color: #808080;
+                    text-transform: uppercase;
+                    background: url(../images/button_arrow.png) center right no-repeat;
+                    background-size: 32px 13px;
+                    padding: 18px 72px 0px 24px;
                 }
-                button:not(.cube-newsletter){
+                .hs-button.primary.large:not(.cube-newsletter){
                     cursor: pointer;
                     outline: none;
+
+                    float: left;
                     min-width: 135px;
                     font-size: 20px;
                     font-family: $f-seroot-thn;
                     padding: 15px 72px 14px 24px;
                     letter-spacing: 1px;
                     text-align: left;
-                    float: right;
                     &:disabled{
                         cursor: auto;
                         color: #75787b;
@@ -841,6 +867,7 @@ body{
                 }
                 .close-btn{
                     min-width: 25px;
+                    float: right;
                     height: 25px;
                     background: url(../images/close-pink.png) center right no-repeat;
                     border: none;
@@ -856,11 +883,11 @@ body{
                     }
 
                 }
-                .error{ /* added to input boxes by check_empty function in main.js */
+                .hs-error-msg.hs-main-font-element{ /* added to input boxes by check_empty function in main.js */
                     color: #e84c64;
                     text-align: left;
-                    background: url(../images/close-pink.png) right no-repeat;
                     background-position: 100% 8px;
+                    font-size: 14px !important;
                 }
                 #errors{
                     display: block;
