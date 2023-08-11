@@ -681,6 +681,7 @@ body{
                     }
 
                     .subscribe-wrapper{
+                        position: relative;
                         width: 875px;
                         @media handheld, screen and (max-width: $bp-phone){
                             width: auto;
@@ -868,10 +869,13 @@ body{
                 .close-btn{
                     min-width: 25px;
                     float: right;
+                    z-index: 100000;
+                    display: block;
                     height: 25px;
                     background: url(../images/close-pink.png) center right no-repeat;
                     border: none;
-                    top: -100px;
+                    position: absolute;
+                    top: 0px;
                     left: 100%;
                     @media handheld, screen and (min-width: 0px) and (max-width: 420px) {
                         left: 45%;
