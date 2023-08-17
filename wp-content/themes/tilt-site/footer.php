@@ -217,33 +217,14 @@ if (!post_password_required($post)) {
   <div id="subscribe">
     <div class="subscribe-wrapper">
       <button class="close-btn"></button>
-      <p class="join-list">Join our mailing list</p>
-      <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E724ECA1B6796EADF65AC759B144112BD8BD6F3C5686E6DB5068B5C5B63F05A873EA988D4992C4B6E542E62E633F34061">
-        <p>Hi, my name is</p>
-        <input autocomplete="off" id="fieldName" name="cm-name" type="text">
-        <p>My email is</p>
-        <input autocomplete="off" id="fieldEmail" class="js-cm-email-input" name="cm-ukjhuyk-ukjhuyk" type="text">
-        <div id="errors">
-          <span id="error-email" class="error-msg">This doesn't look like a valid email</span>
-        </div>
-        <div class="tick-section">
-          <input id="tick-box" class="tick" type="checkbox"><span class="check-box"></span>
-          <p class="tick-text">Tick this box</p>
-          <p class="tick-content">By ticking this box you are giving us your consent to use your details for Tilt’s email marketing. We use a third party, Campaign Monitor to deliver our quarterly e-newsletter. We gather statistics around email opening and clicks using industry standard technologies to help us monitor and improve our e-newsletter. For more information, please see our <a href="/privacy-policy" target="_blank">privacy policy</a></p>
-        </div>
-        <button class="cube--link cube-newsletter js-cm-submit-button" type="submit">
-          <div class="cube">
-            <div class="cube--front">
-              <p class="sans-serif button newsletter">SUBSCRIBE ME</p>
-            </div>
-            <div class="cube--top">
-              <p class="sans-serif button newsletter-next">SUBSCRIBE ME</p>
-            </div>
-          </div>
-        </button>
-        <!-- <button disabled class="js-cm-submit-button cube--front" type="submit"><span class="sans-serif button">SUBSCRIBE ME</span></button> -->
-      </form>
-      <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+      <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          region: "eu1",
+          portalId: "26948535",
+          formId: "14524af0-6ce2-4524-8f48-dee75903eda1"
+        });
+      </script>
     </div>
   </div>
 </div>
