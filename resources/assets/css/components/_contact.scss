@@ -43,47 +43,104 @@
 
 .contact-form-page {
   background-color: #030303;
-  margin: 0 0 50px 0;
-  padding: 100px 200px;
+
+  h2 {  
+    text-align: left;
+  }
+
+  .form-box {
+    margin: 0 auto 50px;
+    padding: 180px 34px 140px;
+    max-width: 900px;
+  }
+
+  form {
+    gap: 32px;
+  }
+
+  .hs-form-field {
+    padding: 5px 0;
+  }
 
   input,
   select,
   textarea {
     background-color: #030303;
-    width: 438px;
-    color: #878787;
-    margin: 5px 0;
-    padding: 15px;
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 15px 20px 14px 20px;
     border: 1px solid $c-grey-5e;
     outline: $c-tilt-pink;
+    border-radius: 3px;
     &:focus {
-      border: 1px solid $c-tilt-pink;
+      border: 1px solid white;
+    }
+    ::placeholder {
+      color: #878787;
+      opacity: 1; /* Firefox */
+    }
+
+    ::-ms-input-placeholder { /* Edge 12 -18 */
+      color: #878787;
     }
   }
 
-  .form-box {
-    max-width: 1000px;
-    margin: auto;
+  legend {
+    text-align: left;
   }
 
-  .hs-button {
-    width: 127px;
+  .hs-fieldtype-select div {
+    border: 1px solid $c-grey-5e;
+    padding-right: 10px;
+
+    select, option {
+      border: none;
+    }
   }
+
+  input[type=submit] {
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid grey;
+    padding: 16px 59px 15px 22px;
+    text-transform: uppercase;
+    background: url(../images/button_arrow.png) center right no-repeat;
+    background-size: 32px 13px;
+    float: right;
+    min-width: 135px;
+    font-family: "SeroOT-Thin", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    border-color: white;
+    width: auto;
+    margin-top: 28px;
+  }
+
+  option {
+    line-height: 1.75;
+  }
+
+
+
+  .hs-button {
+  }
+
   textarea {
-    height: 225px;
+    min-height: 255px;
   }
 
   form {
-    columns: 2;
+    @media (min-width: 900px) {
+      columns: 2;
+
+    }
   }
 
   legend {
     color: #878787;
     justify-content: left;
-  }
-
-  #attach_your_brief-a9990d45-2108-4386-9a59-6c6e2ca49ddc {
-    border: none;
   }
 }
 

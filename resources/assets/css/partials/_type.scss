@@ -219,7 +219,7 @@ h3 {
 em {
     font-style: italic;
 }
-p {
+p, input, select, textarea, legend {
     @include font-size(16);
     @media handheld,
     screen and (min-width: 0px) and (max-width: $bp-phone) {
