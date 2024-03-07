@@ -89,6 +89,33 @@
                             "disabled": 0
                         },
                         {
+                            "key": "field_65ea278d42c97",
+                            "label": "Overlaid title colour",
+                            "name": "overlaid_title_colour",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "white": "White",
+                                "dark-grey": "Dark Grey"
+                            },
+                            "default_value": [
+                                "white"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_5cde9ce738d37",
                             "label": "overview title",
                             "name": "overview_title",
@@ -1264,5 +1291,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1709843696
+    "modified": 1709844472
 }

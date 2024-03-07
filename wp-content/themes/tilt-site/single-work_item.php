@@ -48,7 +48,16 @@ if( have_rows('work_items') ):
 
       ?>
 
-      <header class="work-item area-dark" >
+        <?php
+        if (get_sub_field('overlaid_title_colour') == 'dark-grey'){
+            $title_class = 'area-light';
+        }
+        else{
+            $title_class = 'area-dark';
+        }
+        ?>
+
+      <header class="work-item <?php echo $title_class; ?>" >
 
 
         <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
