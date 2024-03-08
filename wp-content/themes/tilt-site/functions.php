@@ -859,3 +859,15 @@ function rewrite_cube_button( $block_content, $block ) {
 
   return $block_content;
 }
+
+
+//Change ACF Local JSON save location to /acf folder inside this plugin
+add_filter('acf/settings/save_json', function() {
+    return dirname(__FILE__) . '/field-config';
+});
+
+//Include the /acf folder in the places to look for ACF Local JSON files
+add_filter('acf/settings/load_json', function() {
+    $paths[] = dirname(__FILE__) . '/field-config';
+    return $paths;
+});

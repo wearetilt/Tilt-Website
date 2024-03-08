@@ -1,0 +1,177 @@
+{
+    "key": "group_5c7ea837c6d13",
+    "title": "New front page",
+    "fields": [
+        {
+            "key": "field_5c7ea891183e1",
+            "label": "Front page content",
+            "name": "front_page_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5c7ea8c2c36f3": {
+                    "key": "5c7ea8c2c36f3",
+                    "name": "frontpage_work_items",
+                    "label": "Frontpage work items",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c8f6cd277513",
+                            "label": "work item left",
+                            "name": "work_item_left",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "work_item"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5c8f6cef77514",
+                            "label": "work item right",
+                            "name": "work_item_right",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "work_item"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5c93614ac7e26": {
+                    "key": "5c93614ac7e26",
+                    "name": "news_row",
+                    "label": "news row",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c936155c7e27",
+                            "label": "news items",
+                            "name": "news_items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 4,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5c936169c7e28",
+                                    "label": "news item",
+                                    "name": "news_item",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "object",
+                                    "ui": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5ce2c1369eab7": {
+                    "key": "5ce2c1369eab7",
+                    "name": "see_all",
+                    "label": "See All",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ce2c1369eab8",
+                            "label": "Our Work",
+                            "name": "our_work",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "4"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1709843685
+}
