@@ -182,13 +182,27 @@ get_header('contact'); ?>
 <div class="container area-dark contact--page">
 	<section class="contact-section">
 
-		<div class="contact-section-info">
+		<div class="contact-form-page">
+			<div class="form-box">
+			<div class="form-title">
+				<h2>SEE HOW WE CAN HELP SHAPE YOUR STORY</h2>
+			</div>
+			<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+			<script>
+				hbspt.forms.create({
+					region: "eu1",
+					portalId: "26948535",
+					formId: "a9990d45-2108-4386-9a59-6c6e2ca49ddc"
+ 					 });
+			</script>
+			</div>
+		</div>
 
-			<h2>Brighton HQ</h2>
+		<div class="contact-section-info">
 
 			<div class="contact-title"><span class="light">Jobs &amp; Internships</span></div>
 			<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
-			<div class="contact-title"><span class="light">New projects</span></div>
+			<div class="contact-title"><span class="light">New Business Opportunities (for Tilt)</span></div>
 			<a class="contact-email" href="mailto:emma.depolnay@wearetilt.com">emma.depolnay@wearetilt.com</a>
 			<div class="contact-title"><span class="light">General Enquiries</span></div>
 			<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
