@@ -127,6 +127,7 @@ $entries_right = array(0,2);
 </div>
 </div>
 
+
 <div class="new_client_logos container area-dark">
   <h2> Featured Clients</h2>
   <div class="logos">
