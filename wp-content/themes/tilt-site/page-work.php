@@ -130,26 +130,26 @@ $entries_right = array(0,2);
 <div class="new_client_logos container area-dark">
   <h2> Featured Clients</h2>
   <div class="logos">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/1_bp.png" alt="bp logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/2_bbc.png" alt="bbc logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/20_Deloitte_logo.png" alt="Deloitte logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/10_barclays.png" alt="barclays bank logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/5_nick.png" alt="Nickelodeon logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/6_ford.png" alt="ford logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/19_Bupa_logo.png" alt="Bupa logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/17_Reuters_logo.png" alt="Reuters logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/13_sdnp.png" alt="southdowns national park logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/16_Open-Unievrsity_logo.png" alt="open university logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/4_bnp.png" alt="bnp paribas logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/11_sainos.png" alt="Sainsburys logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/12_rb.png" alt="redbull logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/18_Shell_logo.png" alt="Shell logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/14_land_rover.png" alt="land rover logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/15_02.png" alt="o2 mobile network logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/9_alzheimers.png" alt="alzheimers research UK logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/7_visit_brighton.png" alt="visit brighton logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/8_tui.png" alt="Tui logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/3_a&o.png" alt="Allen and Overy logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_1_vodafone.png" alt="Vodafone logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_2_bbc.png" alt="bbc logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_3_barclays.png" alt="Barclays bank logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_4_deloitte.png" alt="Deloitte logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_5_nickelodeon.png" alt="Nickelodeon logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_6_bupa.png" alt="BUPA logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_7_reuters.png" alt="Reuters logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_8_diageo.png" alt="Diageo logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_9_open_uni.png" alt="Open University logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_10_kpmg.png" alt="KPMG logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_11_sdnp.png" alt="SDNP logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_12_ab_world_foods.png" alt="AB World Foods logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_13_frontline_aids.png" alt="Frontline Aids logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_14_ivf_network.png" alt="IVF Network logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_15_novartis.png" alt="Novartis logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_16_raindance.png" alt="Raindance logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_17_roja.png" alt="Roja logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_18_smiths.png" alt="Smiths logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_bp.png" alt="BP logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo" />
   </div>
   <div class="logos-mobile">
     <div>
