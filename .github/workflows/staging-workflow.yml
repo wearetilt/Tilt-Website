@@ -36,4 +36,4 @@ jobs:
           REMOTE_PATH: "wp-content/themes/"
 
           # Branches & Environments
-          STG_ENV: wearetiltstg
+          STG_ENV: tiltwebsitestg
