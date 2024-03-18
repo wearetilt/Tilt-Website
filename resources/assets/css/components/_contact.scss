@@ -97,7 +97,39 @@
     color: #878787;
   }
   .hs_attach_your_brief{
-    margin-top: 35px;
+    margin-top: 0;
+    text-align: left;
+    input[type="file"]{
+      display: none;
+    }
+    label{
+      display: inline-block;
+      border-radius: 3px;
+      background: #333;
+      color: #fff;
+      letter-spacing: 0.6px;
+      padding: 6px 10px;
+      font-size: 12px;
+      line-height: 16px;
+      &:hover{
+        cursor: pointer;
+        background: #555;
+      }
+    }
+  }
+
+  .hs-richtext{
+    color: #fff;
+    opacity: 0.5;
+    display: block;
+    text-align: left;
+    margin-top: 28px;
+    line-height: 1.2;
+  }
+  .hs_recaptcha{
+    position: fixed;
+    right: 0;
+    bottom: 0;
   }
 
   input[type="file"]{
@@ -169,13 +201,33 @@
   form {
     @media (min-width: 900px) {
       columns: 2;
-
+      .hs_attach_your_brief{
+        margin-bottom: 175px;
+      }
     }
   }
 
   legend {
     color: #878787;
     justify-content: left;
+  }
+  .hs-error-msgs{
+    text-align: left;
+    margin: 20px 0;
+    line-height: 1.2;
+  }
+
+  .submitted-message{
+    text-align: left;
+    h2{
+      span{
+        font-family: "SeroOT-Black", "Helvetica", "Arial", sans-serif !important;
+      }
+
+    }
+    p span{
+      font-family: "Merriweather", serif !important;
+    }
   }
 }
 
@@ -184,5 +236,5 @@
 }
 
 .hs-main-font-element {
-  display: none;
+  //display: none;
 }

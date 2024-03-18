@@ -1401,8 +1401,9 @@ $(window).on('load', function() {
 window.addEventListener('message', function(event) {
     if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormReady') {
 
-        setPlaceholders();
+        //setPlaceholders();
         errorValidate();
+        fileUploadText();
 
 
 
@@ -1410,12 +1411,23 @@ window.addEventListener('message', function(event) {
     }
 })
 
-
+const fileUploadText = function() {
+    const actualBtn = document.querySelector('.hs_attach_your_brief input[type="file"]');
+    const fakeBtn = document.querySelector('.hs_attach_your_brief label');
+    actualBtn.addEventListener("change", function(e){
+        var fileName = this.files[0].name;
+        if (fileName){
+            fakeBtn.textContent = "File: "+fileName;
+        }
+        else{
+            fakeBtn.textContent = "CHOOSE FILE";
+        }
+    })
+}
 
 const setPlaceholders = function(){
     const textarea = document.querySelector('textarea[name="brief_overview"]');
     var placeholder = textarea.value;
-    console.log(placeholder);
     textarea.placeholder = 'Message Share info about your query, creative challenge, goal or objectives here';
     textarea.value = '';
 }
