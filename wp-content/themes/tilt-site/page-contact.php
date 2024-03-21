@@ -199,40 +199,35 @@ get_header('contact'); ?>
 		</div>
 
 		<div class="contact-section-info">
-
-			<div class="contact-title"><span class="light">Jobs &amp; Internships</span></div>
-			<a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
-			<div class="contact-title"><span class="light">New Business Opportunities (for Tilt)</span></div>
-			<a class="contact-email" href="mailto:emma.depolnay@wearetilt.com">emma.depolnay@wearetilt.com</a>
-			<div class="contact-title"><span class="light">General Enquiries</span></div>
-			<a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
+            <div class="section-info-container">
+                <div class="left-col">
+                    <div class="contact-item">
+                        <h4>New Business Inquiries</h4>
+                        <a class="contact-email" href="mailto:emma.depolnay@wearetilt.com">emma.depolnay@wearetilt.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Jobs &amp; Internships</h4>
+                        <a class="contact-email" href="mailto:recruitment@wearetilt.com">recruitment@wearetilt.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>General Enquiries</h4>
+                        <a class="contact-email" href="mailto:studio@wearetilt.com">studio@wearetilt.com</a>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="address">
+                        WEARETILT LTD<br />
+                        41 NEW ENGLAND STREET,<br />
+                        BRIGHTON, EAST SUSSEX,<br />
+                        BN1 4GQ, UK
+                    </div>
+                    <div class="google-link"><a class="contact-email" href="https://www.google.co.uk/maps/dir//50.8319498,-0.1392226/@50.8321729,-0.1393055,19z/data=!4m2!4m1!3e0?hl=en&entry=ttu" target="_blank">Google maps</a></div>
+                    <div class="tel"><a class="tel-link" href="tel:+441273675700">+44(0)1273 675 700</a></div>
+                </div>
+            </div>
 
 		</div>
 
-<div class="container container--no-padding">
-	<div class="map" id="map">
-	</div>
-	<div class="map-overlay">
-		<h3 class="light marker">Call us</h3>
-		<span>+44(0)1273 675 700</span>
-		<h3 class="light marker">Our address</h3>
-		<span>Unit 1, Pullman haul,</span>
-		<span>41 New England Street,</span>
-		<span>Brighton, East Sussex,</span>
-		<span>BN1 4GQ, UK</span>
-		<a href="https://www.google.co.uk/maps/dir//50.8319498,-0.1392226/@50.8321729,-0.1393055,19.51z/data=!4m2!4m1!3e0?hl=en">
-			<div class="cube">
-					<div class="cube--front">
-						<p class="sans-serif">Get Directions</p>
-					</div>
-					<div class="cube--top">
-						<p class="sans-serif">Get Directions</p>
-					</div>
-			</div>
-		</a>
-	</div>
-
-</div>
 
 </div>
 
