@@ -246,9 +246,7 @@
   form {
     @media (min-width: 900px) {
       columns: 2;
-      .hs_attach_your_brief{
-        margin-bottom: 175px;
-      }
+
     }
   }
 
@@ -272,6 +270,13 @@
     }
     p span{
       font-family: "Merriweather", serif !important;
+    }
+  }
+  .form-gdpr-message{
+    text-align: left;
+    margin-top: 40px;
+    p{
+      font-size: 0.8rem;
     }
   }
 }
