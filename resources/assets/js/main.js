@@ -1504,8 +1504,7 @@ const prepareClearErrors = function() {
         field.addEventListener("focus", function(e){
 
             var name = e.currentTarget.getAttribute("name");
-            console.log(name);
-            console.log(msgArea.dataset.field);
+
             if (msgArea.dataset.field == name){
                 clearError();
             }
@@ -1515,8 +1514,6 @@ const prepareClearErrors = function() {
 
 const setFormError = function(el, msg){
     el.classList.add("form-error");
-    console.log(el.classList);
-    console.log(el);
     var msgArea = document.querySelector('.hs_submit .hs-field-desc');
     msgArea.dataset.field = el.getAttribute('name');
     msgArea.innerHTML = msg;
