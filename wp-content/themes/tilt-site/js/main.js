@@ -1414,14 +1414,36 @@ window.addEventListener('message', function(event) {
 const fileUploadText = function() {
     const actualBtn = document.querySelector('.hs_attach_your_brief input[type="file"]');
     const fakeBtn = document.querySelector('.hs_attach_your_brief label');
+    const fileArea = document.querySelector('.hs_attach_your_brief .hs-field-desc');
+    const fileContainer = document.querySelector('.hs_attach_your_brief');
+    fileArea.style.display = "block";
     actualBtn.addEventListener("change", function(e){
-        var fileName = this.files[0].name;
-        if (fileName){
-            fakeBtn.textContent = "File: "+fileName;
-        }
-        else{
-            fakeBtn.textContent = "CHOOSE FILE";
-        }
+        var files = this.files;
+        var margin_bottom = 0;
+        var i = 0;
+        var file_html = '';
+        [].map.call(files, function(file){
+            margin_bottom += 60;
+            file_html += '<div class="file">' + file.name + '</div>';
+            i++;
+        });
+        fileArea.innerHTML = file_html;
+        fileContainer.style.marginBottom = margin_bottom +'px';
+        /*
+        var removeFileLinks = document.querySelectorAll('.remove-file');
+        [].map.call(removeFileLinks, function(removeLink){
+            removeLink.addEventListener("click", function(e){
+                var fileIndex = this.dataset.fileId;
+                actualBtn.files.delete(fileIndex);
+                console.log(files);
+                //actualBtn.files = files;
+            });
+
+
+        });
+
+         */
+
     })
 }
 
