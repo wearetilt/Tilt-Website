@@ -198,6 +198,11 @@
     }
   }
 
+  .hs-submit{
+    display: flex;
+    justify-content: flex-end;
+  }
+
   input[type=submit] {
     border-radius: 0;
     text-align: left;
@@ -208,7 +213,6 @@
     text-transform: uppercase;
     background: url(../images/button_arrow.png) center right no-repeat;
     background-size: 32px 13px;
-    float: right;
     min-width: 135px;
     font-family: "SeroOT-Thin", "Helvetica", "Arial", sans-serif;
     letter-spacing: 1px;
