@@ -1404,6 +1404,7 @@ window.addEventListener('message', function(event) {
         //setPlaceholders();
         errorValidate();
         fileUploadText();
+        setPlaceholders();
 
 
 
@@ -1449,9 +1450,10 @@ const fileUploadText = function() {
 
 const setPlaceholders = function(){
     const textarea = document.querySelector('textarea[name="brief_overview"]');
-    var placeholder = textarea.value;
-    textarea.placeholder = 'Message Share info about your query, creative challenge, goal or objectives here';
-    textarea.value = '';
+    var placeholder = textarea.placeholder;
+    var new_placeholder = placeholder.replace(':::', '\n');
+    console.log(new_placeholder);
+    textarea.placeholder = new_placeholder;
 }
 
 const errorValidate = function(){
