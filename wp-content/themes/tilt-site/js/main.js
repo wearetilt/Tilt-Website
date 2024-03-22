@@ -1462,6 +1462,7 @@ const errorValidate = function(){
     const lastname = document.querySelector('input[name="lastname"]');
     const company = document.querySelector('input[name="company"]');
     const email = document.querySelector('input[name="email"]');
+    const textarea = document.querySelector('textarea[name="brief_overview"]');
     phone.addEventListener("focusout", function(event) {
         var val = event.target.value;
         if (val && !val.match(/^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$/im)){
@@ -1471,6 +1472,7 @@ const errorValidate = function(){
     setRequired(firstname, 'Please enter First Name');
     setRequired(lastname, 'Please enter a Last Name');
     setRequired(company, 'Please enter a Company name');
+    setRequired(textarea, 'Please enter a message');
 
     email.addEventListener("focusout", function(event) {
         var val = event.target.value;
