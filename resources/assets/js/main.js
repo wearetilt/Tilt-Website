@@ -1419,6 +1419,7 @@ const fileUploadText = function() {
     const fileContainer = document.querySelector('.hs_attach_your_brief');
     fileArea.style.display = "block";
     actualBtn.addEventListener("change", function(e){
+        clearError();
         var files = this.files;
         var margin_bottom = 0;
         var i = 0;
@@ -1428,22 +1429,16 @@ const fileUploadText = function() {
             file_html += '<div class="file">' + file.name + '</div>';
             i++;
         });
+        if (i > 3){
+            //error
+            setFormError(fileContainer, 'Maximum of 3 file uploads');
+        }
+        else{
+            prepareClearErrors();
+        }
         fileArea.innerHTML = file_html;
         fileContainer.style.marginBottom = margin_bottom +'px';
-        /*
-        var removeFileLinks = document.querySelectorAll('.remove-file');
-        [].map.call(removeFileLinks, function(removeLink){
-            removeLink.addEventListener("click", function(e){
-                var fileIndex = this.dataset.fileId;
-                actualBtn.files.delete(fileIndex);
-                console.log(files);
-                //actualBtn.files = files;
-            });
 
-
-        });
-
-         */
 
     })
 }
@@ -1452,7 +1447,7 @@ const setPlaceholders = function(){
     const textarea = document.querySelector('textarea[name="brief_overview"]');
     var placeholder = textarea.placeholder;
     var new_placeholder = placeholder.replace(':::', '\n');
-    console.log(new_placeholder);
+
     textarea.placeholder = new_placeholder;
 }
 
@@ -1468,6 +1463,7 @@ const errorValidate = function(){
         if (val && !val.match(/^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$/im)){
             setFormError(phone, 'Please enter a valid phone number');
         }
+        updateBtn();
     });
     setRequired(firstname, 'Please enter First Name');
     setRequired(lastname, 'Please enter a Last Name');
@@ -1489,7 +1485,9 @@ const setRequired = function(elem, msg){
         var val = event.target.value;
         if (!val){
             setFormError(elem, msg);
+
         }
+        updateBtn();
     });
 }
 
@@ -1514,15 +1512,36 @@ const prepareClearErrors = function() {
             }
         });
     });
+
+    updateBtn();
 }
 
 const setFormError = function(el, msg){
+
     el.classList.add("form-error");
     var msgArea = document.querySelector('.hs_submit .hs-field-desc');
+
     msgArea.dataset.field = el.getAttribute('name');
     msgArea.innerHTML = msg;
     msgArea.style.display = "block";
+    updateBtn();
+
     prepareClearErrors();
+
+}
+
+const updateBtn = function() {
+    var btn = document.querySelector('input.hs-button');
+    var msgArea = document.querySelector('.hs_submit .hs-field-desc');
+
+    if (msgArea.dataset.field && msgArea.dataset.field != ''){
+        btn.disabled = true;
+
+    }
+    else{
+        btn.disabled = false;
+
+    }
 }
 
 const clearError = function(){
