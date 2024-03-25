@@ -1400,8 +1400,7 @@ $(window).on('load', function() {
 
 window.addEventListener('message', function(event) {
     if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormReady') {
-
-        //setPlaceholders();
+        clearForm();
         errorValidate();
         fileUploadText();
         setPlaceholders();
@@ -1411,6 +1410,10 @@ window.addEventListener('message', function(event) {
 
     }
 })
+
+const clearForm = function() {
+    document.querySelector('form.hs-form').reset();
+}
 
 const fileUploadText = function() {
     const actualBtn = document.querySelector('.hs_attach_your_brief input[type="file"]');
