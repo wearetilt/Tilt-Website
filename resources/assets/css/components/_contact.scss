@@ -131,6 +131,10 @@
 
     &.error{
       border-color: #EC1968;
+      background-image:  url(../images/error.svg);
+      background-repeat: no-repeat;
+      background-position: right 15px center;
+
     }
   }
   select:invalid{
