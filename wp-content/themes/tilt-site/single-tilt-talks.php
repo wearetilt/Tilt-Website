@@ -120,7 +120,7 @@ get_header('tilt-talks'); ?>
             ?>
 
           </main>
-          <?php get_the_content(); ?>
+          <?php echo get_the_content(); ?>
 
           <?php 
         }else{
