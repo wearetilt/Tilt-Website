@@ -120,6 +120,8 @@ get_header('tilt-talks'); ?>
             ?>
 
           </main>
+          <?php the_content(); ?>
+
           <?php 
         }else{
         // we will show password form here
