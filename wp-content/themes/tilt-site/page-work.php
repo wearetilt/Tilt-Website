@@ -148,51 +148,40 @@ $entries_right = array(0, 2);
     <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo" />
   </div>
   <div class="logos-mobile">
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bp.png" alt="bp logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bbc.png" alt="bbc logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/allen.png" alt="allen & overy logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bnp.png" alt="bnp paribas logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logo/mobile/nick.png" alt="nickelodeon logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/ford.png" alt="ford logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/visitbrighton.png" alt="Visit brighton logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/tui.png" alt="TUI logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/alzheimers.png" alt="alzheimers research UK logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/barclays.png" alt="barclays paribas logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/sainsburys.png" alt="Sainsburys logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/redbull.png" alt="redbull logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/sdnp.png" alt="south downs national park logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/landrover.png" alt="land rover logo" />
-    </div>
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/o2.png" alt="o2 mobile network logo" />
-    </div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_1_vodafone.png" alt="Vodafone logo"/>
+      </div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_2_bbc.png" alt="bbc logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_3_barclays.png"
+                alt="Barclays bank logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_4_deloitte.png" alt="Deloitte logo"/>
+      </div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_5_nickelodeon.png"
+                alt="Nickelodeon logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_6_bupa.png" alt="BUPA logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_7_reuters.png" alt="Reuters logo"/>
+      </div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_8_diageo.png" alt="Diageo logo"/>
+      </div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_9_open_uni.png"
+                alt="Open University logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_10_kpmg.png" alt="KPMG logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_11_sdnp.png" alt="SDNP logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_12_ab_world_foods.png"
+                alt="AB World Foods logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_13_frontline_aids.png"
+                alt="Frontline Aids logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_14_ivf_network.png"
+                alt="IVF Network logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_15_novartis.png"
+                alt="Novartis logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_16_raindance.png"
+                alt="Raindance logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_17_roja.png" alt="Roja logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_18_smiths.png" alt="Smiths logo"/>
+      </div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_bp.png" alt="BP logo"/></div>
+      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo"/>
+      </div>
   </div>
 </div>
 
