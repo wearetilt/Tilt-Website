@@ -319,3 +319,7 @@
 .hs-main-font-element {
   //display: none;
 }
+
+div:has(> .hs-richtext.hs-main-font-element){
+  break-inside: avoid;
+}
