@@ -48,7 +48,16 @@ if( have_rows('work_items') ):
 
       ?>
 
-      <header class="work-item area-dark" >
+        <?php
+        if (get_sub_field('overlaid_title_colour') == 'dark-grey'){
+            $title_class = 'area-light';
+        }
+        else{
+            $title_class = 'area-dark';
+        }
+        ?>
+
+      <header class="work-item <?php echo $title_class; ?>" >
 
 
         <div class="header-image" style="background-image: url(<?php echo $image['url']?>);">
@@ -466,29 +475,12 @@ if( have_rows('work_items') ):
                       <div class="related-container">
                         <div class="left-project"><a href="<?php echo get_permalink($leftproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($left);?>" alt="<?php echo $alt_left; ?>"></a>
                           <div class="related-titles">
-                            <?php if($tax_left[0]->name != ''):?>
-                              <p><?php echo $tax_left[0]->name; ?></p>
-                              <?php else: endif;?>
-
                               <h2><?php echo get_the_title($left);?></h2>
-                              <p><?php 
-                              $string = $leftproject->post_name;
-                              $leftItem = str_replace("-", " ", $string);
-                              echo $leftItem;
-                              ?></p>
                             </div>
                           </div>
                           <div class="right-project"><a href="<?php echo get_permalink($rightproject); ?>"><img src="<?php echo get_the_post_thumbnail_url($right);?>" alt="<?php echo $alt_right; ?>"></a>
                             <div class="related-titles">
-                              <?php if($tax_right[0]->name != ''): ?>
-                                <p><?php echo $tax_right[0]->name; ?></p>
-                                <?php else: endif;?>
                                 <h2><?php echo get_the_title($right);?></h2>
-                                <p><?php 
-                                $string = $rightproject->post_name;
-                                $rightItem = str_replace("-", " ", $string);
-                                echo $rightItem;
-                                ?></p>
                               </div>
                             </div>
                           </div>

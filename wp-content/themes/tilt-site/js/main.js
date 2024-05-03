@@ -1055,6 +1055,11 @@ if (document.getElementById('contact-form')) {
 
 
 
+
+
+
+
+
 /**
  * FOOTER FUNCTIONS
  *
@@ -1387,3 +1392,165 @@ $(window).on('load', function() {
     });
 
 });
+
+
+/**
+ * Hubspot contact form
+ */
+
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormReady') {
+        clearForm();
+        errorValidate();
+        fileUploadText();
+        setPlaceholders();
+
+
+
+
+    }
+})
+
+const clearForm = function() {
+    document.querySelector('form.hs-form').reset();
+}
+
+const fileUploadText = function() {
+    const actualBtn = document.querySelector('.hs_attach_your_brief input[type="file"]');
+    const fakeBtn = document.querySelector('.hs_attach_your_brief label');
+    const fileArea = document.querySelector('.hs_attach_your_brief .hs-field-desc');
+    const fileContainer = document.querySelector('.hs_attach_your_brief');
+    fileArea.style.display = "block";
+    actualBtn.addEventListener("change", function(e){
+        clearError();
+        var files = this.files;
+        var margin_bottom = 0;
+        var i = 0;
+        var file_html = '';
+        [].map.call(files, function(file){
+            margin_bottom += 60;
+            file_html += '<div class="file">' + file.name + '</div>';
+            i++;
+        });
+        if (i > 3){
+            //error
+            setFormError(fileContainer, 'Maximum of 3 file uploads');
+        }
+        else{
+            prepareClearErrors();
+        }
+        fileArea.innerHTML = file_html;
+        fileContainer.style.marginBottom = margin_bottom +'px';
+
+
+    })
+}
+
+const setPlaceholders = function(){
+    const textarea = document.querySelector('textarea[name="brief_overview"]');
+    var placeholder = textarea.placeholder;
+    var new_placeholder = placeholder.replace(':::', '\n');
+
+    textarea.placeholder = new_placeholder;
+}
+
+const errorValidate = function(){
+    const phone = document.querySelector('input[name="phone"]');
+    const firstname = document.querySelector('input[name="firstname"]');
+    const lastname = document.querySelector('input[name="lastname"]');
+    const company = document.querySelector('input[name="company"]');
+    const email = document.querySelector('input[name="email"]');
+    const textarea = document.querySelector('textarea[name="brief_overview"]');
+    phone.addEventListener("focusout", function(event) {
+        var val = event.target.value;
+        if (val && !val.match(/^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$/im)){
+            setFormError(phone, 'Please enter a valid phone number');
+        }
+        updateBtn();
+    });
+    setRequired(firstname, 'Please enter First Name');
+    setRequired(lastname, 'Please enter a Last Name');
+    setRequired(company, 'Please enter a Company name');
+    setRequired(textarea, 'Please enter a message');
+
+    email.addEventListener("focusout", function(event) {
+        var val = event.target.value;
+        if (!val || !validateEmail(val)){
+            setFormError(email, 'Please enter a valid email');
+        }
+    });
+
+
+}
+
+const setRequired = function(elem, msg){
+    elem.addEventListener("focusout", function(event) {
+        var val = event.target.value;
+        if (!val){
+            setFormError(elem, msg);
+
+        }
+        updateBtn();
+    });
+}
+
+const validateEmail = function(email) {
+    return String(email)
+        .toLowerCase()
+        .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+}
+
+const prepareClearErrors = function() {
+    const errorFields = document.querySelectorAll('input.form-error');
+    var msgArea = document.querySelector('.hs_submit .hs-field-desc');
+    [].map.call(errorFields, function(field){
+        field.addEventListener("focus", function(e){
+
+            var name = e.currentTarget.getAttribute("name");
+
+            if (msgArea.dataset.field == name){
+                clearError();
+            }
+        });
+    });
+
+    updateBtn();
+}
+
+const setFormError = function(el, msg){
+
+    el.classList.add("form-error");
+    var msgArea = document.querySelector('.hs_submit .hs-field-desc');
+
+    msgArea.dataset.field = el.getAttribute('name');
+    msgArea.innerHTML = msg;
+    msgArea.style.display = "block";
+    updateBtn();
+
+    prepareClearErrors();
+
+}
+
+const updateBtn = function() {
+    var btn = document.querySelector('input.hs-button');
+    var msgArea = document.querySelector('.hs_submit .hs-field-desc');
+
+    if (msgArea.dataset.field && msgArea.dataset.field != ''){
+        btn.disabled = true;
+
+    }
+    else{
+        btn.disabled = false;
+
+    }
+}
+
+const clearError = function(){
+    var msgArea = document.querySelector('.hs_submit .hs-field-desc');
+    msgArea.innerHTML = '';
+    msgArea.dataset.field = '';
+}
+
+
