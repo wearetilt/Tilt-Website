@@ -98,8 +98,8 @@ if (!post_password_required($post)) {
                 <!-- subscribe -->
 
                 <div id="footer-icons">
-                  <div class="footer-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank"><svg class="f-ico_facebook">
-                        <use xlink:href="#facebook"></use>
+                  <div class="footer-icon"><a href="https://www.linkedin.com/company/wearetilt/" aria-label="Check out our linkedin page" target="_blank"><svg class="f-ico_linkedin">
+                        <use xlink:href="#linkedin"></use>
                       </svg></a></div>
                   <div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank"><svg class="f-ico_twitter">
                         <use xlink:href="#twitter"></use>
@@ -168,9 +168,9 @@ if (!post_password_required($post)) {
               <!-- subscribe -->
 
               <div id="footer-icons">
-                <div class="footer-icon"><a href="https://www.facebook.com/wearetilt" aria-label="Check out our facebook page" target="_blank"><svg class="f-ico_facebook">
-                      <use xlink:href="#facebook"></use>
-                    </svg></a></div>
+                <div class="footer-icon"><a href="https://www.linkedin.com/company/wearetilt/" aria-label="Check out our facebook page" target="_blank"><svg class="f-ico_linkedin">
+                        <use xlink:href="#linkedin"></use>
+                      </svg></a></div>
                 <div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank"><svg class="f-ico_twitter">
                       <use xlink:href="#twitter"></use>
                     </svg></a></div>
