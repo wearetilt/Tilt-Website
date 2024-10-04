@@ -22,7 +22,7 @@
 
     <div class="nav-icons">
         <div class="nav-icon"><a href="https://www.linkedin.com/company/wearetilt/" aria-label="Check out our linkedin page" target="_blank" ><svg class="f-ico_linkedin"> <use xlink:href="#linkedin"></use></svg></a></div>  
-        <div class="nav-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a></div>
+        <div class="nav-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our X page" target="_blank" ><svg class="f-ico_twitter"> <use xlink:href="#twitter"></use></svg></a></div>
         <div class="nav-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank" ><svg class="f-ico_vimeo"> <use xlink:href="#vimeo"></use></svg></a></div>
         <div class="nav-icon"><a href="https://instagram.com/we_are_tilt" aria-label="Check out our instagram page" target="_blank" ><svg class="f-ico_instagram"> <use xlink:href="#instagram"></use></svg></a></div>
         <div class="nav-icon"><a href="https://www.youtube.com/channel/UC0JTRabxxDhTzUUBd9CatiQ" aria-label="Check out our youtube page" target="_blank" ><svg class="f-ico_youtube"> <use xlink:href="#youtube"></use></svg></a></div>
