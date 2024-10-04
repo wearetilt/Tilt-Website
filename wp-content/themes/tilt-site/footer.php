@@ -101,7 +101,7 @@ if (!post_password_required($post)) {
                   <div class="footer-icon"><a href="https://www.linkedin.com/company/wearetilt/" aria-label="Check out our linkedin page" target="_blank"><svg class="f-ico_linkedin">
                         <use xlink:href="#linkedin"></use>
                       </svg></a></div>
-                  <div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank"><svg class="f-ico_twitter">
+                  <div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our X page" target="_blank"><svg class="f-ico_twitter">
                         <use xlink:href="#twitter"></use>
                       </svg></a></div>
                   <div class="footer-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank"><svg class="f-ico_vimeo">
@@ -171,7 +171,7 @@ if (!post_password_required($post)) {
                 <div class="footer-icon"><a href="https://www.linkedin.com/company/wearetilt/" aria-label="Check out our linkedin page" target="_blank"><svg class="f-ico_linkedin">
                         <use xlink:href="#linkedin"></use>
                       </svg></a></div>
-                <div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our twitter page" target="_blank"><svg class="f-ico_twitter">
+                <div class="footer-icon"><a href="https://twitter.com/wearetilt" aria-label="Check out our X page" target="_blank"><svg class="f-ico_twitter">
                       <use xlink:href="#twitter"></use>
                     </svg></a></div>
                 <div class="footer-icon"><a href="https://vimeo.com/wearetilt/" aria-label="Check out our vimeo page" target="_blank"><svg class="f-ico_vimeo">
