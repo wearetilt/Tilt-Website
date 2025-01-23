@@ -1372,6 +1372,17 @@ body{
     }
 }
 
+.looping-video-content {
+    padding: 0px 0 60px 0;
+    @media screen and (min-width: $bp-desktop) {
+        padding: 0px 0 180px 0;
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
