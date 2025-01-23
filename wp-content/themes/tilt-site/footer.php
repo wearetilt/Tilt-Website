@@ -74,6 +74,7 @@ if (!post_password_required($post)) {
             <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-2019 We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 6, Riverside Business Centre, Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RE. <br />Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
             <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
             <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
+            <a class="privacy_policy" href="/supplier-code-of-conduct">Supplier code of conduct</a>
           </div>
 
 
