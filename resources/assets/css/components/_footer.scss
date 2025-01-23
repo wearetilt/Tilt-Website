@@ -511,9 +511,6 @@ footer {
         line-height: 25px;
         letter-spacing: 0.025em;
         text-transform: capitalize;
-        float: right;
-        @media screen and (min-width: $bp-desktop){
-            float: none;
-        }
+        padding-right: 1rem;
     }
 }
