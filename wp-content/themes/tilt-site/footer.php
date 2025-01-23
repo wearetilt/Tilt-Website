@@ -71,7 +71,7 @@ if (!post_password_required($post)) {
           </div>
 
           <div class="left_bottom">
-            <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-2019 We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 6, Riverside Business Centre, Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RE. <br />Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
+            <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-<?php echo date("Y");?> We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 6, Riverside Business Centre, Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RE. <br />Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
             <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
             <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
             <a class="privacy_policy" href="/supplier-code-of-conduct">Supplier code of conduct</a>
@@ -196,7 +196,7 @@ if (!post_password_required($post)) {
         </div>
 
         <div class="bottom_section">
-          <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-2019 We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 6, Riverside Business Centre, Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RE. <br />Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
+          <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-2019 We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 1, 41 New England Street, Brighton, BN1 4GQ. <br />Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
           <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
           <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
         </div>
