@@ -309,19 +309,24 @@ if( have_rows('work_items') ):
                 $loop = get_sub_field('video_loop');
                 $loopcontent = get_sub_field('video_loop_content');
                 ?>
-                <!--- Video loop background - covers available space -->
-                <div class="container area-dark looping-video">
-                  <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted playsinline >
-                    <source id="header-video" src="<?php echo $loop; ?>" type="video/mp4">
-                  </video>
-                </div>
 
-                <!--- Video loop in page - scales with content --> 
-                <div class="container area-dark looping-video-content">
-                  <video class="video-js vjs-default-skin" autoplay loop muted playsinline >
-                    <source src="<?php echo $loopcontent; ?>" type="video/mp4">
-                  </video>
-                </div>
+                <?php if($loop): ?>
+                  <!--- Video loop background - covers available space -->
+                  <div class="container area-dark looping-video">
+                    <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted playsinline >
+                      <source id="header-video" src="<?php echo $loop; ?>" type="video/mp4">
+                    </video>
+                  </div>
+                <?php endif; ?>
+
+                <?php if($loopcontent): ?>
+                  <!--- Video loop in page - scales with content --> 
+                  <div class="container area-dark looping-video-content">
+                    <video class="video-js vjs-default-skin" autoplay loop muted playsinline >
+                      <source src="<?php echo $loopcontent; ?>" type="video/mp4">
+                    </video>
+                  </div>
+                <?php endif; ?>
 
                 <!--- full text section -->
 
