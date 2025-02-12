@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: front page
  *
@@ -27,228 +28,230 @@ get_header('home'); ?>
       </div>
       <video id="header-video-player" class="video-js vjs-default-skin" autoplay loop muted playsinline poster="<?php echo get_template_directory_uri(); ?>/images/home/header_poster_image.jpg">
         <source id="header-video" src="https://player.vimeo.com/external/144378575.hd.mp4?s=9126a5c2a202cb2d55ecf33fefe42a3a&profile_id=113" type="video/mp4">
-        </video>
-      </div>
-      <a class="scroll-down" href="#"><span><p>Scroll down</p></span></a>
+      </video>
     </div>
-  </header>
-
-  <div id="header-overlay" class="container container--header area-dark">
-    <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">About this video</a>
-    <div class="text-container">
-      <p class="sans-serif"><strong class="highlight">CRAFTED DIGITAL EXPERIENCES</strong> FROM AN OBSESSIVE BUNCH OF STRATEGISTS, ARTISTS, FILMMAKERS, ANIMATORS, PRODUCERS, ILLUSTRATORS, WRITERS, CODERS AND CREATIVES.</p>
-
-
-      <a class="cube--link" href="<?php echo site_url(); ?>/about/">
-        <div class="cube">
-          <div class="cube--front">
-            <p class="sans-serif">More about us</p>
-          </div>
-          <div class="cube--top">
-            <p class="sans-serif">More about us</p>
-          </div>
-        </div>
-      </a>
-    </div>
+    <a class="scroll-down" href="#"><span>
+        <p>Scroll down</p>
+      </span></a>
   </div>
+</header>
 
-  <main class="main-work-content">
+<div id="header-overlay" class="container container--header area-dark">
+  <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">About this video</a>
+  <div class="text-container">
+    <p class="sans-serif"><strong class="highlight">A thinking & doing studio</strong> that creates flagship learning & marketing experiences for complex organisations. From professional services and engineering, to global drinks brands and the UN.</p>
 
-    <?php
 
-    if( have_rows('front_page_content') ):
-      while ( have_rows('front_page_content') ) : the_row();
+    <a class="cube--link" href="<?php echo site_url(); ?>/about/">
+      <div class="cube">
+        <div class="cube--front">
+          <p class="sans-serif">More about us</p>
+        </div>
+        <div class="cube--top">
+          <p class="sans-serif">More about us</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
 
-        ?>
+<main class="main-work-content">
 
-        <?php
-        if(get_row_layout() == 'frontpage_work_items'):
+  <?php
 
-          $left_project = get_sub_field('work_item_left');
-          $right_project = get_sub_field('work_item_right');
-          $post_image_left = get_the_post_thumbnail($left_project);
-          $post_image_right = get_the_post_thumbnail($right_project);
-          $bold_left = get_post_meta($left_project->ID, 'work_items_0_title_bold');
-          $bold_right = get_post_meta($right_project->ID, 'work_items_0_title_bold');
-          $title_left = get_post_meta($left_project->ID, 'work_items_0_title');
-          $title_right = get_post_meta($right_project->ID, 'work_items_0_title');
-          $left_excerpt = get_the_excerpt($left_project->ID);
-          $right_excerpt = get_the_excerpt($right_project->ID);
-          ?>
-          <div class="work-item area-dark" >
+  if (have_rows('front_page_content')):
+    while (have_rows('front_page_content')) : the_row();
 
-        <?php $image_attributes = wp_get_attachment_image_src(get_field('image'), $size = 'about-grid' );
-        $retina_desktop_image = $image_attributes[0];
-        if (function_exists('wr2x_get_retina_from_url')) {
-          $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);
-        } ?>
+  ?>
 
-            <div class="left_container project_container">
-              <a href='<?php echo get_permalink($left_project); ?>'>
-                <?php if($post_image_left  != '') {
-                  echo $post_image_left ;
-                } else { ?>
-                  <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg"/>
-                <?php } ?>
-              </a>
+      <?php
+      if (get_row_layout() == 'frontpage_work_items'):
 
-              <div class="related-links">
-                <p class="project_name"><?php echo $title_left[0]; ?></p>
-                <h2 class="entry-title"><?php echo $bold_left[0]; ?></h2>
-                <p class="sans-serif excerpt"><?php echo $left_excerpt; ?></p>
-              </div>
-            </div>
+        $left_project = get_sub_field('work_item_left');
+        $right_project = get_sub_field('work_item_right');
+        $post_image_left = get_the_post_thumbnail($left_project);
+        $post_image_right = get_the_post_thumbnail($right_project);
+        $bold_left = get_post_meta($left_project->ID, 'work_items_0_title_bold');
+        $bold_right = get_post_meta($right_project->ID, 'work_items_0_title_bold');
+        $title_left = get_post_meta($left_project->ID, 'work_items_0_title');
+        $title_right = get_post_meta($right_project->ID, 'work_items_0_title');
+        $left_excerpt = get_the_excerpt($left_project->ID);
+        $right_excerpt = get_the_excerpt($right_project->ID);
+      ?>
+        <div class="work-item area-dark">
 
-            <div class="right_container project_container">
-              <a href='<?php echo get_permalink($right_project); ?>'>
-                <?php if($post_image_right != '') {
-                  echo $post_image_right;
-                } else { ?>
-                  <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg"/>
-                <?php } ?>
-              </a>
+          <?php $image_attributes = wp_get_attachment_image_src(get_field('image'), $size = 'about-grid');
+          $retina_desktop_image = $image_attributes[0];
+          if (function_exists('wr2x_get_retina_from_url')) {
+            $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);
+          } ?>
 
-              <div class="related-links">
-                <p class="project_name"><?php echo $title_right[0]; ?></p>
-                <h2 class="entry-title"><?php echo $bold_right[0]; ?></h2>
-                <p class="sans-serif excerpt"><?php echo $right_excerpt; ?></p>
-              </div>
-            </div>
-
-          </div>
-
-          <?php
-
-        elseif(get_row_layout() == 'see_all'):
-          $our_work = get_sub_field('our_work');
-          ?>
-          <div class=" goto_projects area-dark">
-
-            <a class="cube--link" href="<?php echo site_url(); ?>/work">
-              <div class="cube">
-                <div class="cube--front">
-                  <p class="our_work_button sans-serif button"><?php echo $our_work; ?> </p>
-                </div>
-                <div class="cube--top">
-                  <p class="our_work_button_black sans-serif button"><?php echo $our_work; ?> </p>
-                </div>
-              </div>
+          <div class="left_container project_container">
+            <a href='<?php echo get_permalink($left_project); ?>'>
+              <?php if ($post_image_left  != '') {
+                echo $post_image_left;
+              } else { ?>
+                <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg" />
+              <?php } ?>
             </a>
+
+            <div class="related-links">
+              <p class="project_name"><?php echo $title_left[0]; ?></p>
+              <h2 class="entry-title"><?php echo $bold_left[0]; ?></h2>
+              <p class="sans-serif excerpt"><?php echo $left_excerpt; ?></p>
+            </div>
           </div>
 
+          <div class="right_container project_container">
+            <a href='<?php echo get_permalink($right_project); ?>'>
+              <?php if ($post_image_right != '') {
+                echo $post_image_right;
+              } else { ?>
+                <img src="/wp-content/themes/tilt-site/images/404_poster_loop.jpg" />
+              <?php } ?>
+            </a>
 
-            <?php $args = array(
-              'posts_per_page'   => 4,
-              'offset'           => 0,
-              'cat'         => '',
-              'category_name'    => '',
-              'orderby'          => 'date',
-              'order'            => 'DESC',
-              'include'          => '',
-              'exclude'          => '',
-              'meta_key'         => '',
-              'meta_value'       => '',
-              'post_type'        => 'post',
-              'post_mime_type'   => '',
-              'post_parent'      => '',
-              'author'     => '',
-              'author_name'    => '',
-              'post_status'      => 'publish',
-              'has_password' => false,
-              'suppress_filters' => true,
-              'fields'           => '',
-            );
-
-            $news = get_posts( $args ); ?>
-
-            <div class="news-line area-dark">
-
-              <a href="<?php echo get_permalink($news[0]);?>" class="news-item">
-                <div class="news_text">
-                  <div>
-                    <p>News</p>
-                    <span><?php echo $news[0]->post_title; ?></span>
-                  </div>
-                </div>
-              </a>
-
-              <a href="<?php echo get_permalink($news[1]);?>" class="news-item">
-                <div class="news_text">
-                  <div>
-                    <p>News</p>
-                    <span><?php echo $news[1]->post_title; ?></span>
-                  </div>
-                </div>
-              </a>
-
-              <a href="<?php echo get_permalink($news[2]);?>" class="news-item">
-                <div class="news_text">
-                  <div>
-                    <p>News</p>
-                    <span><?php echo $news[2]->post_title; ?></span>
-                  </div>
-                </div>
-              </a>
-
-              <a href="<?php echo get_permalink($news[3]);?>" class="news-item">
-                <div class="news_text">
-                  <div>
-                    <p>News</p>
-                    <span><?php echo $news[3]->post_title; ?></span>
-                  </div>
-                </div>
-              </a>
-
+            <div class="related-links">
+              <p class="project_name"><?php echo $title_right[0]; ?></p>
+              <h2 class="entry-title"><?php echo $bold_right[0]; ?></h2>
+              <p class="sans-serif excerpt"><?php echo $right_excerpt; ?></p>
             </div>
+          </div>
 
-            <?php
-        endif;
+        </div>
 
-      endwhile;
-    else :
-    // no rows found
-    endif;
-    ?>
+      <?php
 
-  </main>
+      elseif (get_row_layout() == 'see_all'):
+        $our_work = get_sub_field('our_work');
+      ?>
+        <div class=" goto_projects area-dark">
+
+          <a class="cube--link" href="<?php echo site_url(); ?>/work">
+            <div class="cube">
+              <div class="cube--front">
+                <p class="our_work_button sans-serif button"><?php echo $our_work; ?> </p>
+              </div>
+              <div class="cube--top">
+                <p class="our_work_button_black sans-serif button"><?php echo $our_work; ?> </p>
+              </div>
+            </div>
+          </a>
+        </div>
 
 
-  <?php get_footer(); ?>
+        <?php $args = array(
+          'posts_per_page'   => 4,
+          'offset'           => 0,
+          'cat'         => '',
+          'category_name'    => '',
+          'orderby'          => 'date',
+          'order'            => 'DESC',
+          'include'          => '',
+          'exclude'          => '',
+          'meta_key'         => '',
+          'meta_value'       => '',
+          'post_type'        => 'post',
+          'post_mime_type'   => '',
+          'post_parent'      => '',
+          'author'     => '',
+          'author_name'    => '',
+          'post_status'      => 'publish',
+          'has_password' => false,
+          'suppress_filters' => true,
+          'fields'           => '',
+        );
 
-  <script type="text/javascript">
+        $news = get_posts($args); ?>
 
-    var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
-    var maxLoops = wordArray.length;
-    var counter = 0;
+        <div class="news-line area-dark">
+
+          <a href="<?php echo get_permalink($news[0]); ?>" class="news-item">
+            <div class="news_text">
+              <div>
+                <p>News</p>
+                <span><?php echo $news[0]->post_title; ?></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="<?php echo get_permalink($news[1]); ?>" class="news-item">
+            <div class="news_text">
+              <div>
+                <p>News</p>
+                <span><?php echo $news[1]->post_title; ?></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="<?php echo get_permalink($news[2]); ?>" class="news-item">
+            <div class="news_text">
+              <div>
+                <p>News</p>
+                <span><?php echo $news[2]->post_title; ?></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="<?php echo get_permalink($news[3]); ?>" class="news-item">
+            <div class="news_text">
+              <div>
+                <p>News</p>
+                <span><?php echo $news[3]->post_title; ?></span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+  <?php
+      endif;
+
+    endwhile;
+  else :
+  // no rows found
+  endif;
+  ?>
+
+</main>
 
 
-    jQuery(document).ready(function(){
+<?php get_footer(); ?>
 
-      (function next() {
+<script type="text/javascript">
+  var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
+  var maxLoops = wordArray.length;
+  var counter = 0;
 
-        if (counter < maxLoops) {
 
-          setTimeout(function() {
+  jQuery(document).ready(function() {
 
-            jQuery('#strapline-text').fadeOut(500, function(){
+    (function next() {
 
-              document.getElementById('strapline-text').innerHTML = wordArray[counter];
-              jQuery('#strapline-text').fadeIn(500);
-              next();
-              counter++;
-              if(counter == maxLoops) { counter = 0; }
+      if (counter < maxLoops) {
 
-            });
+        setTimeout(function() {
 
-          }, 2000);
+          jQuery('#strapline-text').fadeOut(500, function() {
 
-        } else {
-          counter = 0;
-          next();
-        }
+            document.getElementById('strapline-text').innerHTML = wordArray[counter];
+            jQuery('#strapline-text').fadeIn(500);
+            next();
+            counter++;
+            if (counter == maxLoops) {
+              counter = 0;
+            }
 
-      })();
+          });
 
-    });
+        }, 2000);
 
-  </script>
+      } else {
+        counter = 0;
+        next();
+      }
+
+    })();
+
+  });
+</script>
