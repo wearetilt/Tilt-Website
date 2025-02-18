@@ -16,13 +16,13 @@ $work_groups = get_field('work_items');
 
 get_header(); ?>
 
-<div id="services--list" class="container container--header container--work-list">
+<!-- <div id="services--list" class="container container--header container--work-list">
   <p> View work by: </p>
   <a class='list-all' href="/work">All</a>
   <a class="list-web" href="/web">Web</a>
   <a class="list-motion" href="/motion">Motion</a>
   <a class="list-film" href="/film">Film</a>
-</div>
+</div> -->
 
 <!-- All work overview -->
 
@@ -148,40 +148,40 @@ $entries_right = array(0, 2);
     <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo" />
   </div>
   <div class="logos-mobile">
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_1_vodafone.png" alt="Vodafone logo"/>
-      </div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_2_bbc.png" alt="bbc logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_3_barclays.png"
-                alt="Barclays bank logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_4_deloitte.png" alt="Deloitte logo"/>
-      </div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_5_nickelodeon.png"
-                alt="Nickelodeon logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_6_bupa.png" alt="BUPA logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_7_reuters.png" alt="Reuters logo"/>
-      </div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_8_diageo.png" alt="Diageo logo"/>
-      </div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_9_open_uni.png"
-                alt="Open University logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_10_kpmg.png" alt="KPMG logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_11_sdnp.png" alt="SDNP logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_12_ab_world_foods.png"
-                alt="AB World Foods logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_13_frontline_aids.png"
-                alt="Frontline Aids logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_14_ivf_network.png"
-                alt="IVF Network logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_15_novartis.png"
-                alt="Novartis logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_16_raindance.png"
-                alt="Raindance logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_17_roja.png" alt="Roja logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_18_smiths.png" alt="Smiths logo"/>
-      </div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_bp.png" alt="BP logo"/></div>
-      <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo"/>
-      </div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_1_vodafone.png" alt="Vodafone logo" />
+    </div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_2_bbc.png" alt="bbc logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_3_barclays.png"
+        alt="Barclays bank logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_4_deloitte.png" alt="Deloitte logo" />
+    </div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_5_nickelodeon.png"
+        alt="Nickelodeon logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_6_bupa.png" alt="BUPA logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_7_reuters.png" alt="Reuters logo" />
+    </div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_8_diageo.png" alt="Diageo logo" />
+    </div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_9_open_uni.png"
+        alt="Open University logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_10_kpmg.png" alt="KPMG logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_11_sdnp.png" alt="SDNP logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_12_ab_world_foods.png"
+        alt="AB World Foods logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_13_frontline_aids.png"
+        alt="Frontline Aids logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_14_ivf_network.png"
+        alt="IVF Network logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_15_novartis.png"
+        alt="Novartis logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_16_raindance.png"
+        alt="Raindance logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_17_roja.png" alt="Roja logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_18_smiths.png" alt="Smiths logo" />
+    </div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_bp.png" alt="BP logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo" />
+    </div>
   </div>
 </div>
 
