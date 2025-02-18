@@ -27,8 +27,8 @@ get_header(); ?>
 <!-- All work overview -->
 
 <?php
-$entries_left = array(1);
-$entries_right = array(0, 2);
+// $entries_left = array(1);
+// $entries_right = array(0, 2);
 ?>
 <div class="work-wrapper">
   <?php if ($work_groups) : ?>
@@ -45,7 +45,7 @@ $entries_right = array(0, 2);
                   <h2 class="underlined"><?= $work_group['work_headline']; ?></h2>
                   <p class="tag--work-title"><?= $work_group['work_text']; ?></p>
 
-                  <a class="cube--link" href="<?= $work_group['work_link']; ?>">
+                  <!-- <a class="cube--link" href="<?= $work_group['work_link']; ?>">
                     <div class="cube">
                       <div class="cube--front cube--front__no-bg">
                         <p class="sans-serif">All <?php echo $work_group['work_headline'] ?> work</p>
@@ -54,59 +54,36 @@ $entries_right = array(0, 2);
                         <p class="sans-serif">All <?php echo $work_group['work_headline'] ?> work</p>
                       </div>
                     </div>
-                  </a>
+                  </a> -->
                 </div>
               </div>
 
             </div>
 
             <?php foreach ($work_group['work_entries'] as $k => $work_item) : ?>
-              <?php if (in_array($k, $entries_left)) : ?>
-                <?php
-                $link = get_permalink($work_item['work_item_post']->ID);
-                $arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
-                ?>
-                <div class="module area-dark module--2-1">
-                  <a href="<?= $link; ?>">
-                    <div class="overlay area-dark">
-                      <div class="overlay-text">
-                        <p class="project_name"><?= $work_item['work_item_headline2']; ?></p>
-                        <h2 class="entry-title"><?= $work_item['work_item_headline']; ?></h2>
-                        <?php if ($work_item['work_item_text']) : ?>
-                          <p class="excerpt"><?= $work_item['work_item_text']; ?></p>
-                        <?php endif; ?>
-                      </div>
+              <?php #if (in_array($k, $entries_left)) : 
+              ?>
+              <?php
+              $link = get_permalink($work_item['work_item_post']->ID);
+              $arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
+              ?>
+              <div class="module area-dark module--2-1">
+                <a href="<?= $link; ?>">
+                  <div class="overlay area-dark">
+                    <div class="overlay-text">
+                      <p class="project_name"><?= $work_item['work_item_headline2']; ?></p>
+                      <h2 class="entry-title"><?= $work_item['work_item_headline']; ?></h2>
+                      <?php if ($work_item['work_item_text']) : ?>
+                        <p class="excerpt"><?= $work_item['work_item_text']; ?></p>
+                      <?php endif; ?>
                     </div>
-                    <div class="ratio" style="background-image: url('<?= $arrImage[0]; ?>')">
-                    </div>
-                  </a>
-                </div>
-              <?php endif; ?>
-            <?php endforeach; ?>
-
-
-            <?php foreach ($work_group['work_entries'] as $k => $work_item) : ?>
-              <?php if (in_array($k, $entries_right)) : ?>
-                <?php
-                $link = get_permalink($work_item['work_item_post']->ID);
-                $arrImage = wp_get_attachment_image_src($work_item['work_item_image'], '');
-                ?>
-                <div class="module area-dark module--2-1">
-                  <a href="<?= $link; ?>">
-                    <div class="overlay area-dark">
-                      <div class="overlay-text">
-                        <p class="project_name"><?= $work_item['work_item_headline2']; ?></p>
-                        <h2 class="entry-title"><?= $work_item['work_item_headline']; ?></h2>
-                        <?php if ($work_item['work_item_text']) : ?>
-                          <p class="excerpt"><?= $work_item['work_item_text']; ?></p>
-                        <?php endif; ?>
-                      </div>
-                    </div>
-                    <div class="ratio" style="background-image: url('<?= $arrImage[0]; ?>')">
-                    </div>
-                  </a>
-                </div>
-              <?php endif; ?>
+                  </div>
+                  <div class="ratio" style="background-image: url('<?= $arrImage[0]; ?>')">
+                  </div>
+                </a>
+              </div>
+              <?php #endif; 
+              ?>
             <?php endforeach; ?>
 
 
