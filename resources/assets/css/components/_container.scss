@@ -42,7 +42,7 @@ body{
     overflow: hidden;
 
     .custom-password-message {
-        color: #ff4c74 !important;
+        color: #ff0066 !important;
         animation: shake 0.3s alternate;
         padding-top: 2px;
     }
@@ -90,7 +90,6 @@ body{
         padding: percentage(245/2032) percentage(381/2032);
     }
     #homePage & {
-        background-color: transparent;
     }
     &.container--double-side-pad {
         padding: percentage(245/2032) percentage(375/2032);
@@ -404,7 +403,7 @@ body{
                 margin-bottom: 3%;
                 @media handheld,
                 screen and (min-width: 0px) and (max-width: $bp-desktop) {
-                    font-family: $f-seroot-blck;
+                    font-family: $f-instrumentserif; /*THIN */
                 }
             }
             h2,
@@ -552,13 +551,13 @@ body{
             }
 
             .quote-text{
-                font-family: $f-merriweather;
+                font-family: $f-splinesans;
                 font-style: italic;
                 font-size: 25px;
                 line-height: 40px;
             }
             .quote-author{
-                font-family: $f-seroot-lt;
+                font-family: $f-instrumentserif; /* thin */
                 font-size: 17px;
                 color: #828282 !important;
                 line-height: 40px;
@@ -689,7 +688,7 @@ body{
                     label, .submitted-message p {
                         font-size: 45px;
                         color: #ffffff;
-                        font-family: $f-seroot-thn;
+                        font-family: $f-instrumentserif; /* thin */
                         &.newsletter{
                             font-size: 20px;
                             color: #808080;
@@ -716,7 +715,7 @@ body{
                         font-size: 12px;
                         line-height: 30px;
                         letter-spacing: 0.15em;
-                        font-family: $f-merriweather;
+                        font-family: $f-splinesans;
                         color: #ff406a;
                         text-transform: uppercase;
                         padding: 0 0 2px 2px;
@@ -755,10 +754,11 @@ body{
                         .tick-content, label, input, .hs-richtext, li, span{
                             font-size: 14px;
                             line-height: 18px;
-                            font-family: SeroOT-Thin;
+                            font-family: $f-splinesans; 
                             width: 100%;
                             margin-top: -3px;
-                            font-weight: bold;
+                            font-weight: 100;
+                            line-height: 1.13;
                             color: #75787b;
                             a{
                                 color: #ff406a;
@@ -803,7 +803,6 @@ body{
                     border: none;
                     border-bottom: 1px solid #999999;
                     font-size: 45px;
-                    font-family: $f-seroot-thn;
                     background-color: transparent;
                     color: #ffffff;
                     width: 100%;
@@ -849,7 +848,6 @@ body{
                     float: left;
                     min-width: 135px;
                     font-size: 20px;
-                    font-family: $f-seroot-thn;
                     padding: 15px 72px 14px 24px;
                     letter-spacing: 1px;
                     text-align: left;
@@ -893,7 +891,7 @@ body{
                     display: block;
                     position: absolute;
                     font-size: 11px;
-                    font-family: $f-merriweather;
+                    font-family: $f-splinesans;
                     letter-spacing: 0.05em;
                     margin: auto;
                     text-align: left;
@@ -910,7 +908,6 @@ body{
                   float: right;
                   display: none;
                   font-size: 14px;
-                  font-family: $f-seroot-thn;
               }
 
           }
@@ -961,9 +958,6 @@ body{
                     }
                     p {
                         @include font-size(20);
-                        font-family: $f-seroot-lt;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
                         color: white;
                         line-height: 22px;
                         padding-bottom: 5px;
@@ -976,7 +970,11 @@ body{
                         }
                     }
                     .entry-title {
-                        padding-bottom: 5px;
+                        font-family: $f-splinesans;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
                     }
                 }
                 &:hover {
@@ -1006,13 +1004,11 @@ body{
                 }
 
                 .our_work_button {
-                    font-family: $f-seroot-lt;
                     letter-spacing: 0.075;
                     color: white;
                     &_black {
                         color: black;
                         letter-spacing: 0.075;
-                        font-family: $f-seroot-lt;
                     }
                 }
             }
@@ -1028,8 +1024,7 @@ body{
                 color: white;
                 background: #272727;
                 @include font-size(32);
-                text-transform: uppercase;
-                font-family: $f-seroot-blck;
+                font-family: $f-instrumentserif; /* black */
                 &:nth-child(odd) {
                     background: #1f1f1f;
                 }
@@ -1059,7 +1054,10 @@ body{
                 align-items: center;
                 @media screen and (min-width: 768px){
                   padding: 0% 60px 0 60px;
-                  @include font-size(32);
+                  @include font-size(40);
+                  font-weight: 400;
+                  font-weight: normal;
+                  letter-spacing: -0.5px;
 
               }
               @media screen and (min-width: $bp-desktop){
@@ -1068,9 +1066,8 @@ body{
         }
         p {
             color: $c-tilt-pink;
-            text-transform: uppercase;
             @include font-size(20);
-            font-family: $f-seroot-lt;
+            font-family: $f-splinesans;
             letter-spacing: 0.75px;
         }
     }
@@ -1119,14 +1116,14 @@ body{
         position: absolute;
         top: 10%;
         font-size: 25px;
-        font-family: $f-seroot;
+        font-family: $f-instrumentserif; /* thin */
         color: white;
         letter-spacing: 1px;
         text-transform: uppercase;
         opacity: 0;
         text-shadow: 2px 2px rgba(0,0,0,0.1);
         p {
-            font-family: $f-seroot;
+            font-family: $f-instrumentserif; 
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -1151,7 +1148,7 @@ body{
         margin-top: 30%;
         padding: 0 15px;
         color: $c-tilt-pink;
-        font-family: $f-seroot;
+        font-family: $f-instrumentserif; 
         text-transform: uppercase;
     }
 }
@@ -1177,7 +1174,7 @@ body{
     .header-title {
         p {
             font-size: 20px;
-            font-family: $f-seroot-lt;
+            font-family: $f-instrumentserif; /* thin */
             line-height: 26px;
             text-transform: uppercase;
             line-height: 1;
@@ -1474,7 +1471,7 @@ body{
 }
 a {
     color: #d2d2d2;
-    font-family: $f-merriweather;
+    font-family: $f-splinesans;
     text-transform: none;
     display: inline-block;
 
@@ -1579,7 +1576,7 @@ a {
         line-height: 1.5;
         display: inline-block;
         strong {
-            font-family: $f-merriweather;
+            font-family: $f-splinesans;
             font-weight: 600;
         }
     }
@@ -1765,7 +1762,7 @@ a {
             display: block;
             color: $c-tilt-pink;
             font-size: 80px;
-            font-family: "SeroOT-Bold", "Helvetica", "Arial", sans-serif;
+            font-family: $f-instrumentserif;
             height: 60px;
         }
         p{
@@ -1817,7 +1814,7 @@ a {
             }
             p{
                 font-size: 25px;
-                font-family: $f-seroot;
+                font-family: $f-instrumentserif;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }

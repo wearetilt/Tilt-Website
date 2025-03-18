@@ -423,7 +423,7 @@
     padding: 0 percentage(126/1016);
     p{
         @include font-size(16);
-        font-family: $f-seroot-lt;
+        font-family: $f-instrumentserif; /* thin */
         letter-spacing: 1px;
         text-transform: uppercase;
         color: white;
@@ -614,7 +614,7 @@
         background: url('../images/close_btn_video.png') 0px -67px no-repeat;
     }
     & p {
-        font-family: $f-seroot;
+        font-family: $f-instrumentserif; /*  */
     }
 }
 

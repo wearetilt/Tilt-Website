@@ -1,19 +1,10 @@
-@import 'fonts-rooney-pro';
-@import 'fonts-seroot';
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Spline+Sans:wght@300..700&display=swap');
+
+
 
 $f-rooney-bd-it: 'rooney_probold_italic', 'Helvetica', 'Arial', sans-serif;
 $f-rooney-lt-it: 'rooney_prolight_italic', 'Helvetica', 'Arial', sans-serif;
 
-$f-seroot: 'SeroOT', 'Helvetica', 'Arial', sans-serif;
-$f-seroot-blck: 'SeroOT-Black', 'Helvetica', 'Arial', sans-serif;
-$f-seroot-bd: 'SeroOT-Bold', 'Helvetica', 'Arial', sans-serif;
-$f-seroot-extrlt-it: 'SeroOT-ExtraLightItalic', 'Helvetica', 'Arial', sans-serif;
-$f-seroot-lt: 'SeroOT-Light', 'Helvetica', 'Arial', sans-serif;
-$f-seroot-lt-it: 'SeroOT-LightItalic', 'Helvetica', 'Arial', sans-serif;
-$f-seroot-thn: 'SeroOT-Thin', 'Helvetica', 'Arial', sans-serif;
+$f-instrumentserif: 'Instrument Serif', 'Helvetica', 'Arial', serif;
 
-$f-merriweather: 'Merriweather', serif;
-/*
-$f-merriweather-lt: 'merriweather-light',  'Times New Roman', 'Georgia', serif;
-$f-merriweather-rg: 'merriweather-regular',  'Times New Roman', 'Georgia', serif;
-*/
+$f-splinesans: 'Spline Sans', sans-serif;

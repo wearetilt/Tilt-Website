@@ -85,7 +85,7 @@
 					}
 
 					.excerpt {
-						font-family: $f-seroot-lt;
+						font-family: $f-instrumentserif; /* thin */
 						text-transform: uppercase;
 						@include font-size(20);
 						line-height: 22px;

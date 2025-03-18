@@ -28,7 +28,7 @@
       font-size: 25px;
       line-height: 32px;
       font-weight: 300;
-      font-family: $f-seroot-lt;
+      font-family: $f-instrumentserif; /* thin */
     }
     a{
       text-transform: none;
@@ -40,7 +40,7 @@
       font-size: 25px;
       line-height: 32px;
       font-weight: 300;
-      font-family: $f-seroot-lt;
+      font-family: $f-instrumentserif; /* thin */
       color: #fff;
     }
     .google-link{
@@ -53,7 +53,7 @@
         font-size: 25px;
         line-height: 32px;
         font-weight: 300;
-        font-family: $f-seroot-lt;
+        font-family: $f-instrumentserif; /* thin */
         &:hover{
           color: $c-tilt-pink;
         }
@@ -98,7 +98,7 @@
   }
 
   form.hs-form{
-    font-family: $f-merriweather;
+    font-family: $f-splinesans;
     font-weight: 300;
   }
 
@@ -152,7 +152,7 @@
       background: #333;
       color: #fff;
       letter-spacing: 0.0375rem;
-      font-family: $f-seroot-thn;
+      font-family: $f-instrumentserif; /* thin */
       padding: 6px 10px;
       font-size: 12px;
       line-height: 16px;
@@ -218,7 +218,7 @@
     background: url(../images/button_arrow.png) center right no-repeat;
     background-size: 32px 13px;
     min-width: 135px;
-    font-family: "SeroOT-Thin", "Helvetica", "Arial", sans-serif;
+    font-family: $f-instrumentserif; /* thin */
     letter-spacing: 1px;
     color: white;
     border-color: white;
@@ -252,7 +252,7 @@
       line-height: 1.2;
       width: 60%;
       font-weight: 300;
-      font-family: $f-merriweather;
+      font-family: $f-splinesans;
       position: absolute;
       top: 35px;
       left: 0;
@@ -280,12 +280,12 @@
     text-align: left;
     h2{
       span{
-        font-family: "SeroOT-Black", "Helvetica", "Arial", sans-serif !important;
+        font-family: $f-instrumentserif; /* black */
       }
 
     }
     p span{
-      font-family: "Merriweather", serif !important;
+      font-family: $f-splinesans;
     }
   }
   .form-gdpr-message{

@@ -132,7 +132,7 @@
             }
             p {
                 @include font-size(20);
-                font-family: $f-seroot-lt;
+                font-family: $f-instrumentserif; /* thin */
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: white;

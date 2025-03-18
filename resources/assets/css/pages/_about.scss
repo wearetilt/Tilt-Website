@@ -35,7 +35,7 @@ header {
             p {
                 @include font-size(15);
                 line-height: 26px;
-                font-family: $f-merriweather;
+                font-family: $f-splinesans;
                 font-weight: 300;
                 text-transform: none;
 
@@ -184,7 +184,7 @@ header {
                 @include font-size(20);
                 line-height: 30px;
                 letter-spacing: 0.9px;
-                font-family: $f-merriweather;
+                font-family: $f-splinesans;
                 @media handheld, screen and (min-width: $bp-desktop) {
                     @include font-size(30);
                     line-height: 48px;
