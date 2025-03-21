@@ -23,10 +23,10 @@ get_header(); ?>
         <a class="cube--link" href="<?php echo site_url(); ?>/work">
           <div class="cube">
             <div class="cube--front cube--front__no-bg">
-              <p class="sans-serif">See our work</p>
+              <p class="">See our work</p>
             </div>
             <div class="cube--top cube--top__no-bg">
-              <p class="sans-serif">See our work</p>
+              <p class="">See our work</p>
             </div>
           </div>
         </a>

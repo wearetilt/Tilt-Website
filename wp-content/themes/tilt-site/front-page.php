@@ -14,14 +14,14 @@ get_header('home'); ?>
   <div class="module--video module--header">
     <div class="ratio">
       <div class="container container--header strapline-container">
-        <h1>We Are <strong id="strapline-text">Tilt</strong></h1>
+        <h1>We are <strong id="strapline-text">tilt</strong></h1>
         <a class="cube--link" href="<?php echo site_url(); ?>/work">
           <div class="cube">
             <div class="cube--front cube--front__no-bg">
-              <p class="sans-serif">See our work</p>
+              <p class="">See our work</p>
             </div>
             <div class="cube--top cube--top__no-bg">
-              <p class="sans-serif">See our work</p>
+              <p class="">See our work</p>
             </div>
           </div>
         </a>
@@ -45,10 +45,10 @@ get_header('home'); ?>
     <a class="cube--link" href="<?php echo site_url(); ?>/about/">
       <div class="cube">
         <div class="cube--front">
-          <p class="sans-serif">More about us</p>
+          <p class="">More about us</p>
         </div>
         <div class="cube--top">
-          <p class="sans-serif">More about us</p>
+          <p class="">More about us</p>
         </div>
       </div>
     </a>
@@ -81,9 +81,9 @@ get_header('home'); ?>
         <div class="work-item area-dark">
 
           <?php $image_attributes = wp_get_attachment_image_src(get_field('image'), $size = 'about-grid');
-          $retina_desktop_image = $image_attributes[0];
+          $retina_desktop_image = $image_attributes ? $image_attributes[0] : '';
           if (function_exists('wr2x_get_retina_from_url')) {
-            $retina_desktop_image = wr2x_get_retina_from_url($image_attributes[0]);
+            $retina_desktop_image = wr2x_get_retina_from_url($image_attributes ? $image_attributes[0] : '');
           } ?>
 
           <div class="left_container project_container">
@@ -98,7 +98,7 @@ get_header('home'); ?>
             <div class="related-links">
               <p class="project_name"><?php echo $title_left[0]; ?></p>
               <h2 class="entry-title"><?php echo $bold_left[0]; ?></h2>
-              <p class="sans-serif excerpt"><?php echo $left_excerpt; ?></p>
+              <p class="excerpt"><?php echo $left_excerpt; ?></p>
             </div>
           </div>
 
@@ -114,7 +114,7 @@ get_header('home'); ?>
             <div class="related-links">
               <p class="project_name"><?php echo $title_right[0]; ?></p>
               <h2 class="entry-title"><?php echo $bold_right[0]; ?></h2>
-              <p class="sans-serif excerpt"><?php echo $right_excerpt; ?></p>
+              <p class="excerpt"><?php echo $right_excerpt; ?></p>
             </div>
           </div>
 
@@ -130,10 +130,10 @@ get_header('home'); ?>
           <a class="cube--link" href="<?php echo site_url(); ?>/work">
             <div class="cube">
               <div class="cube--front">
-                <p class="our_work_button sans-serif button"><?php echo $our_work; ?> </p>
+                <p class="button"><?php echo $our_work; ?> </p>
               </div>
               <div class="cube--top">
-                <p class="our_work_button_black sans-serif button"><?php echo $our_work; ?> </p>
+                <p class="button"><?php echo $our_work; ?> </p>
               </div>
             </div>
           </a>
@@ -219,7 +219,7 @@ get_header('home'); ?>
 <?php get_footer(); ?>
 
 <script type="text/javascript">
-  var wordArray = ['Thinkers', 'Crafters', 'Grafters', 'Tilt', 'Time-Travellers', 'Navigators', 'Gymnasts', 'Firestarters', 'Geeks', 'Tilt', 'All Ears', 'Entertainers', 'Tea Drinkers'];
+  var wordArray = ['thinkers', 'crafters', 'grafters', 'tilt', 'time-travellers', 'navigators', 'gymnasts', 'firestarters', 'geeks', 'tilt', 'all ears', 'entertainers', 'tea drinkers'];
   var maxLoops = wordArray.length;
   var counter = 0;
 

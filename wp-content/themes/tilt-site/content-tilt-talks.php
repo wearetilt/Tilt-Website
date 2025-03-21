@@ -42,7 +42,7 @@
         $title = get_post_meta($project_id, 'talk_items_1_text_section_title');
       ?>
       <div class="title-container">
-        <p class="sans-serif excerpt">#0<?php echo $_SESSION['start']?></p><p><?php echo $speaker[0];?></p>
+        <p class="excerpt">#0<?php echo $_SESSION['start']?></p><p><?php echo $speaker[0];?></p>
 <!--         <h2 ><?php echo $speaker[0];?></h2> -->
         <h2><?php echo $title[0];?></h2>
       </div>

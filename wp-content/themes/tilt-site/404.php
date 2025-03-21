@@ -35,10 +35,10 @@ get_header('404'); ?>
 	<a class="cube--link cube--float-left" href="<?php echo site_url(); ?>/">
 		<div class="cube">
 			<div class="cube--front">
-				<p class="sans-serif button">Return to home</p>
+				<p class="button">Return to home</p>
 			</div>
 			<div class="cube--top">
-				<p class="sans-serif button">Return to home</p>
+				<p class="button">Return to home</p>
 			</div>
 		</div>
 	</a>
