@@ -14,7 +14,7 @@ get_header('home'); ?>
   <div class="module--video module--header">
     <div class="ratio">
       <div class="container container--header strapline-container">
-        <h1>We are <strong id="strapline-text">tilt</strong></h1>
+        <h1>We are <strong id="strapline-text">Tilt</strong></h1>
         <a class="cube--link" href="<?php echo site_url(); ?>/work">
           <div class="cube">
             <div class="cube--front cube--front__no-bg">
