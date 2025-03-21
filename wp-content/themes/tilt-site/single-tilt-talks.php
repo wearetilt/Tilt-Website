@@ -104,7 +104,7 @@ get_header('tilt-talks'); ?>
 
                   <a class="blog-half" href="<?php echo get_permalink($rightproject); ?>">
                       <div class="blog-titles">
-                          <p><?php echo substr($text_section_date, 0, -3);?></p>
+                          <p><?php echo $text_section_date; ?></p>
                           <h2><?php echo get_the_title($right);?></h2>
                         </div>
                   </a>

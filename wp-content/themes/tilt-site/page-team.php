@@ -26,7 +26,7 @@ $team_items = get_posts( $args );
 
 <div class="container container--double-side-pad area-dark container--mobile-header-spacing">
 	<div class="text-container">
-		<p class="sans-serif"><strong class="highlight">Greats ideas</strong> come from collections of curious unhibited minds. Meet the Tilt team:</p>
+		<p class="sans-serif"><strong class="highlight">Great ideas</strong> come from collections of curious uninhibited minds. Meet the Tilt team:</p>
 	</div>
 </div> <!-- /end container -->
 
