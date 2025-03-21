@@ -435,7 +435,6 @@ p, input, select, textarea, legend {
         @include font-size(20);
         font-family: $f-instrumentserif; /* LIGHT */
         line-height: 1.1;
-        text-transform: uppercase;
         @media handheld,
         screen and (min-width: 0px) and (max-width: $bp-phone) {
             @include font-size(16);

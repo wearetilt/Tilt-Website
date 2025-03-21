@@ -16,11 +16,11 @@ header {
         margin: 0 auto;
 
         p {
-            @include font-size(20);
-            line-height: 25px;
+            @include font-size(32);
+            line-height: 1.13;
+
             @media handheld, screen and (min-width: $bp-desktop) {
-                @include font-size(25);
-                line-height: 30px;
+                @include font-size(46);
             }
 
         }
@@ -29,7 +29,7 @@ header {
             margin-top: 12.0570866142%;
 
             @media handheld, screen and (min-width: $bp-desktop) {
-                margin-top: 81px;
+                margin-top: 36px;
             }
 
             p {
@@ -108,17 +108,13 @@ header {
 
                 p {
                     color: #fff;
-                    @include font-size(15);
-                    text-transform: uppercase;
-                    line-height: 11px;
-                    letter-spacing: 1.35px;
-                    font-family: SeroOT-Light;
+                    @include font-size(32);
+                    line-height: 1.13;
+                    font-family: $f-instrumentserif;
 
                     @media handheld, screen and (min-width: $bp-desktop) {
-                        @include font-size(18);
-                        line-height: 26px;
-                        margin-bottom: 15px;
-                        margin-left: 20px;
+                        @include font-size(46);
+                        margin-bottom: 36px;
 
                     }
                 }
@@ -133,16 +129,16 @@ header {
 
                     li {
                         color: #fff;
-                        @include font-size(20);
-                        line-height: 30px;
+                        @include font-size(16);
+                        line-height: 2;
                         margin-top: 0;
                         position: relative;
                         margin-bottom: 10px;
                         margin-left: 20px;
 
                         @media handheld, screen and (min-width: $bp-desktop) {
-                            @include font-size(30);
-                            line-height: 46px;
+                            @include font-size(20);
+                            line-height: 2;
                         }
 
                         &:before {
@@ -181,28 +177,22 @@ header {
             margin: 0 auto;
 
             p {
-                @include font-size(20);
-                line-height: 30px;
-                letter-spacing: 0.9px;
+                @include font-size(16);
+                line-height: 1.5;
                 font-family: $f-splinesans;
                 @media handheld, screen and (min-width: $bp-desktop) {
-                    @include font-size(30);
-                    line-height: 48px;
-                    margin-left: 20px;
+                    @include font-size(20);
                 }
             }
 
             p:first-child {
-                @include font-size(15);
-                text-transform: uppercase;
-                font-family: SeroOT-Light;
-                line-height: 11px;
+                font-family: $f-instrumentserif;
+                @include font-size(32);
 
                 @media handheld, screen and (min-width: $bp-desktop) {
-                    @include font-size(18);
-                    line-height: 26px;
-                    margin-bottom: 15px;
-                    margin-left: 20px;
+                    @include font-size(46);
+                    line-height: 1.13;
+                    margin-bottom: 36px;
                 }
 
             }
