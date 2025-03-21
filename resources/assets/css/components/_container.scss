@@ -971,9 +971,6 @@ body{
                         }
                     }
                     .entry-title {
-                        font-family: $f-splinesans;
-                        text-transform: uppercase;
-                        font-weight: 700;
                         padding-top: 10px;
                         padding-bottom: 10px;
                     }
@@ -1178,10 +1175,7 @@ body{
     .header-title {
         p {
             font-size: 20px;
-            font-family: $f-instrumentserif; /* thin */
-            line-height: 26px;
-            text-transform: uppercase;
-            line-height: 1;
+            line-height: 1.5;
             padding-bottom: 7px;
             @media screen and (min-width: $bp-desktop) {
                 line-height: 20px;
