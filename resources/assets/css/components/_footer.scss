@@ -28,7 +28,7 @@ footer {
         }
         .container {
             padding: 16% 18.75%;
-            height: 250px;
+            height: 400px;
             background: #ff0066;
             @media handheld,
             screen and (min-width: $bp-desktop) {
@@ -73,7 +73,7 @@ footer {
         @include font-size(46);
         @media handheld,
         screen and (min-width: 0px) and (max-width: $bp-phone) {
-            @include font-size(20);
+            @include font-size(32);
         }
     }
     p.button {

@@ -61,8 +61,7 @@ h1 {
         }
     }
     .strapline-container & {
-        @include font-size(35);
-        color: $c-tilt-pink;
+        @include font-size(60);
         @media handheld,
         screen and (min-width: $bp-phone) {
             @include font-size(100);
@@ -73,7 +72,8 @@ h1 {
         }
         strong#strapline-text {
             display: block;
-            color: $c-white;
+            color: $c-tilt-pink;
+            font-style: italic;
             @media handheld,
             screen and (min-width: $bp-desktop-large) {
                 display: inline;
@@ -87,7 +87,7 @@ h1 {
 
 h2 {
     color: $c-bg;
-    @include font-size(32);
+    @include font-size(40);
     @media handheld,
     screen and (min-width: $bp-desktop) {
         &#staff-member__position, &#staff-member__department {
@@ -589,9 +589,9 @@ a {
 
 strong,
 b {
-    font-family: $f-instrumentserif; /* BOLD */
+    font-family: $f-instrumentserif;
     &.highlight {
-        color: $c-tilt-pink;
+        font-style: italic;
     }
 }
 

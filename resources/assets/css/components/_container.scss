@@ -1046,13 +1046,16 @@ body{
               }
               .news_text {
                 padding: 0% 15px 0 15px;
-                @include font-size(20);
+                @include font-size(24);
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                @media screen and (min-width: 768px){
+                @media screen and (min-width: $job-breaks){
+                  @include font-size(36);
+                }
+                @media screen and (min-width: $bp-desktop){
                   padding: 0% 60px 0 60px;
                   @include font-size(40);
                   font-weight: 400;
