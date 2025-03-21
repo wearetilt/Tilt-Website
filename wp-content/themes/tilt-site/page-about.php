@@ -172,10 +172,10 @@ get_header(); ?>
             <a class="cube--link" href="<?php echo site_url(); ?>/work">
               <div class="cube">
                 <div class="cube--front">
-                  <p class="our_work_button sans-serif button"><?php echo $our_work; ?> </p>
+                  <p class="button"><?php echo $our_work; ?> </p>
                 </div>
                 <div class="cube--top">
-                  <p class="our_work_button_black sans-serif button"><?php echo $our_work; ?> </p>
+                  <p class="button"><?php echo $our_work; ?> </p>
                 </div>
               </div>
             </a>

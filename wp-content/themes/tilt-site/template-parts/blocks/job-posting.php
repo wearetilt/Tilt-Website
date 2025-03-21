@@ -28,10 +28,10 @@ if( !empty($block['align']) ) {
                                 <a class="cube--link" href="<?= get_permalink($career_item['career_link']);?>">
                                     <div class="cube">
                                         <div class="cube--front cube--front__no-bg">
-                                            <p class="sans-serif">Find out more</p>
+                                            <p class="">Find out more</p>
                                         </div>
                                         <div class="cube--top cube--top__no-bg">
-                                            <p class="sans-serif">Find out more</p>
+                                            <p class="">Find out more</p>
                                         </div>
                                     </div>
                                 </a>

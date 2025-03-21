@@ -24,7 +24,7 @@ get_header('contact'); ?>
 		<div class="contact-form-page">
 			<div class="form-box">
 			<div class="form-title">
-				<h2>SEE HOW WE CAN HELP SHAPE YOUR STORY</h2>
+				<h2>See how we can help shape your story</h2>
 			</div>
 			<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
 			<script>
@@ -59,9 +59,9 @@ get_header('contact'); ?>
                 </div>
                 <div class="right-col">
                     <div class="address">
-                        WEARETILT LTD<br />
-                        41 NEW ENGLAND STREET,<br />
-                        BRIGHTON, EAST SUSSEX,<br />
+                        We Are Tilt<br />
+                        41 New England Street,<br />
+                        Brighton, East Sussex,<br />
                         BN1 4GQ, UK
                     </div>
                     <div class="google-link"><a class="contact-email" href="https://www.google.co.uk/maps/dir//50.8319498,-0.1392226/@50.8321729,-0.1393055,19z/data=!4m2!4m1!3e0?hl=en&entry=ttu" target="_blank">Google maps</a></div>
@@ -97,10 +97,10 @@ get_header('contact'); ?>
 				<a class="cube--link" target="_blank" href="https://www.google.co.uk/maps/dir//1061+Marine+Dr+%23216,+North+Vancouver,+BC+V7P+3M6,+Canada/@49.3237127,-123.1388464,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x548671d288618c47:0xa410c94e2a818608!2m2!1d-123.1037413!2d49.3236621!3e0?hl=en">
 					<div class="cube">
 						<div class="cube--front">
-							<p class="sans-serif">Get directions</p>
+							<p class="">Get directions</p>
 						</div>
 						<div class="cube--top">
-							<p class="sans-serif">Get directions</p>
+							<p class="">Get directions</p>
 						</div>
 					</div>
 				</a>

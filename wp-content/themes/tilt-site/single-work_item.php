@@ -42,8 +42,8 @@ if( have_rows('work_items') ):
       $mobileImage = get_sub_field('mobile_header_image'); 
       $video = get_sub_field('video');
       $awardLogo = get_sub_field('award_logo');
-      $award = wp_get_attachment_image_src( $awardLogo, 'award_size' )[0]; 
-      $awardMobile = wp_get_attachment_image_src( $awardLogo, 'award_mobile_size' )[0]; 
+      $award = wp_get_attachment_image_src( $awardLogo, 'award_size' ) ? wp_get_attachment_image_src( $awardLogo, 'award_size' )[0]:""; 
+      $awardMobile = wp_get_attachment_image_src( $awardLogo, 'award_mobile_size' ) ? wp_get_attachment_image_src( $awardLogo, 'award_mobile_size' )[0]:""; 
  
 
       ?>

@@ -55,10 +55,10 @@ get_header(); ?>
               <a class="cube--link" href="<?= $work_group['work_link'];?>">
                 <div class="cube">
                   <div class="cube--front cube--front__no-bg">
-                    <p class="sans-serif">More Info</p>
+                    <p class="">More Info</p>
                   </div>
                   <div class="cube--top cube--top__no-bg">
-                    <p class="sans-serif">More Info</p>
+                    <p class="">More Info</p>
                   </div>
                 </div>
               </a>

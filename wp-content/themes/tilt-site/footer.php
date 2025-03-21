@@ -26,10 +26,10 @@ if (!post_password_required($post)) {
         <a class="cube--link" href="<?php echo site_url(); ?>/contact">
           <div class="cube">
             <div class="cube--front">
-              <p class="sans-serif button">Contact us</p>
+              <p class="button">Contact us</p>
             </div>
             <div class="cube--top">
-              <p class="sans-serif button">Contact us</p>
+              <p class="button">Contact us</p>
             </div>
           </div>
         </a>
@@ -71,7 +71,7 @@ if (!post_password_required($post)) {
           </div>
 
           <div class="left_bottom">
-            <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-<?php echo date("Y");?> We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 1, 41 New England Street, Brighton, BN1 4GQ. <br />Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
+            <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Instrument Serif and Spline Sans. All content © 2010-<?php echo date("Y");?> We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 1, 41 New England Street, Brighton, BN1 4GQ. <br /> <br /></p>
             <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
             <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
             <a class="privacy_policy" href="/supplier-code-of-conduct">Supplier code of conduct</a>
@@ -196,7 +196,7 @@ if (!post_password_required($post)) {
         </div>
 
         <div class="bottom_section">
-          <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-<?php echo date("Y");?> We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 1, 41 New England Street, Brighton, BN1 4GQ. <br />Offices located at: 41 New England Street, Brighton, East Sussex, BN1 4GQ.</p>
+          <p class="footnote">Designed and built on tea using pens, paper and pixels. Set in Sero and Merriweather. All content © 2010-<?php echo date("Y");?> We Are Tilt Ltd. All rights reserved. <br />Registered in England & Wales under Reg. No 07280900. Registered Office: Unit 1, 41 New England Street, Brighton, BN1 4GQ.<br /></p>
           <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
           <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
           <a class="privacy_policy" href="/supplier-code-of-conduct">Supplier code of conduct</a>
