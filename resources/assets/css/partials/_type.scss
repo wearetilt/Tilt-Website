@@ -172,7 +172,7 @@ h2 {
 
 h3 {
     color: $c-bg;
-    @include font-size(20);
+    @include font-size(32);
     transition: all ease 0.5s;
     &.marker {
         &:before {
@@ -214,6 +214,11 @@ h3 {
             width: 100%;
         }
     }
+}
+
+h4 {
+    @include font-size(30);
+    font-weight: 100;
 }
 
 em {

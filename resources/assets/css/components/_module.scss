@@ -444,7 +444,8 @@
     }
     .entry-title {
         padding-bottom: 5px;
-        @include font-size(36);
+        @include font-size(40);
+        color: red;
     }
 }
 

@@ -219,7 +219,7 @@ get_header('home'); ?>
 <?php get_footer(); ?>
 
 <script type="text/javascript">
-  var wordArray = ['thinkers', 'crafters', 'grafters', 'tilt', 'time-travellers', 'navigators', 'gymnasts', 'firestarters', 'geeks', 'tilt', 'all ears', 'entertainers', 'tea drinkers'];
+  var wordArray = ['thinkers', 'crafters', 'grafters', 'Tilt', 'time-travellers', 'navigators', 'gymnasts', 'firestarters', 'geeks', 'Tilt', 'all ears', 'entertainers', 'tea drinkers'];
   var maxLoops = wordArray.length;
   var counter = 0;
 
