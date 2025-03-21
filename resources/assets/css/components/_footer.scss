@@ -51,7 +51,8 @@ footer {
             display: none;
         }
         strong {
-            color: black
+            font-style: italic;
+            font-weight: 100;
         }
     }
     &.password-footer {

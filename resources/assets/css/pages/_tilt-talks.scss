@@ -25,7 +25,11 @@
 			.title-section {
 
 				p {
-					line-height: 30px;
+					@include font-size(64);
+					strong {
+						font-weight: 100;
+						font-style: italic;
+					}
 				}
 
 			}
@@ -111,10 +115,8 @@
 
 					p{
 						color: #949393;
-						font-family: SeroOT-Light;
 						@include font-size(16);
 						text-transform: uppercase;
-						letter-spacing: 1.2px;
 						line-height: 32px;
 						display: inline-block;
 

@@ -792,6 +792,12 @@ header {
                 top: auto;
                 position: relative;
                 transform: none;
+                strong {
+                    font-family: $f-instrumentserif;
+                    font-weight: 100;
+                    font-style: italic;
+                }
+
             }
         }
 

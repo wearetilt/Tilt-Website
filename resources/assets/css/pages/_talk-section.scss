@@ -51,7 +51,6 @@
 					@include font-size(20);
 					font-family: $f-splinesans;
 					font-weight: lighter;
-					color: #949393;
 					margin-top: 18px;
 
 					@media handheld, screen and (min-width: $bp-desktop) {
@@ -60,8 +59,7 @@
 
 
 					&.date {
-						@include font-size(15);
-						font-family: $f-instrumentserif; /* thin */	
+						@include font-size(16);
 						text-transform: uppercase;
 						letter-spacing: 1.2px;
 						margin-top: 0;
@@ -84,19 +82,17 @@
 						margin-top: 63px;
 
 						p {
-							@include font-size(15);
+							@include font-size(16);
 						}
 					}
 
 				}
 
 				.speaker {
-					@include font-size(15);
+					@include font-size(16);
 					line-height: 32px;
-					font-family: $f-instrumentserif; /* thin */	
-					color: #fff;
 					text-transform: uppercase;
-					letter-spacing: 1.2px;
+					color: #fff;
 
 					@media handheld, screen and (min-width: $bp-desktop) {
 						@include font-size(16);
@@ -198,8 +194,7 @@
 
 					p {
 						color: #949393;
-						font-family: $f-instrumentserif; /* thin */
-						@include font-size(15);
+						@include font-size(16);
 						text-transform: uppercase;
 						letter-spacing: 1.2px;
 

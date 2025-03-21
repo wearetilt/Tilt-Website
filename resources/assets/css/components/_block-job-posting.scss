@@ -6,6 +6,15 @@
     .module.module--dark {
       background-color: transparent;
     }
+
+    h2 {
+      margin-bottom: 36px;
+    }
+
+    p {
+      @include font-size(20);
+      line-height: 1.5;
+    }
   }
   .career-container:nth-child(1n+1) {
       background-image: url('../images/careers/1.jpg');

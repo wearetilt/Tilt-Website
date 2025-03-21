@@ -23,6 +23,11 @@ header {
                 @include font-size(46);
             }
 
+            strong {
+                font-weight: 100;
+                font-style: italic;
+            }
+
         }
 
         .header-content {
@@ -245,9 +250,6 @@ header {
 
             p {
                 font-size: 1rem;
-                font-family: "SeroOT-Light", "Helvetica", "Arial", sans-serif;
-                letter-spacing: 1px;
-                text-transform: uppercase;
                 color: white;
                 line-height: 22px;
                 padding-bottom: 5px;
@@ -298,9 +300,6 @@ header {
 
             p {
                 font-size: 1rem;
-                font-family: "SeroOT-Light", "Helvetica", "Arial", sans-serif;
-                letter-spacing: 1px;
-                text-transform: uppercase;
                 color: white;
                 line-height: 22px;
                 padding-bottom: 5px;
