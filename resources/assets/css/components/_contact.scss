@@ -24,36 +24,30 @@
         }
       }
     }
-    h4{
-      font-size: 25px;
-      line-height: 32px;
-      font-weight: 300;
-      font-family: $f-seroot-lt;
+    h4 {
+      margin-bottom: 20px;
+    }
+    h4, .address, .tel {
+      color: white;
+      @include font-size(46);
+      line-height: 1.13;
+      font-family: $f-instrumentserif; 
+      font-weight: 100;
     }
     a{
       text-transform: none;
-      font-size: 25px;
-      line-height: 32px;
-      font-weight: bold;
-    }
-    .address{
-      font-size: 25px;
-      line-height: 32px;
-      font-weight: 300;
-      font-family: $f-seroot-lt;
-      color: #fff;
+      @include font-size(24);
     }
     .google-link{
       margin-top: 11px;
     }
     .tel{
       margin-top:41px;
+      margin-bottom: 38px;
       a.tel-link{
         color: #fff;
-        font-size: 25px;
-        line-height: 32px;
-        font-weight: 300;
-        font-family: $f-seroot-lt;
+        @include font-size(46);
+        line-height: 1.13;
         &:hover{
           color: $c-tilt-pink;
         }
@@ -85,6 +79,7 @@
 
   h2 {  
     text-align: left;
+    @include font-size(64);
   }
 
   .form-box {
@@ -98,7 +93,7 @@
   }
 
   form.hs-form{
-    font-family: $f-merriweather;
+    font-family: $f-splinesans;
     font-weight: 300;
   }
 
@@ -151,9 +146,8 @@
       border-radius: 3px;
       background: #333;
       color: #fff;
-      letter-spacing: 0.0375rem;
-      font-family: $f-seroot-thn;
       padding: 6px 10px;
+      text-transform: none;
       font-size: 12px;
       line-height: 16px;
       &:hover{
@@ -218,7 +212,6 @@
     background: url(../images/button_arrow.png) center right no-repeat;
     background-size: 32px 13px;
     min-width: 135px;
-    font-family: "SeroOT-Thin", "Helvetica", "Arial", sans-serif;
     letter-spacing: 1px;
     color: white;
     border-color: white;
@@ -252,7 +245,7 @@
       line-height: 1.2;
       width: 60%;
       font-weight: 300;
-      font-family: $f-merriweather;
+      font-family: $f-splinesans;
       position: absolute;
       top: 35px;
       left: 0;
@@ -280,12 +273,12 @@
     text-align: left;
     h2{
       span{
-        font-family: "SeroOT-Black", "Helvetica", "Arial", sans-serif !important;
+        font-family: $f-instrumentserif; /* black */
       }
 
     }
     p span{
-      font-family: "Merriweather", serif !important;
+      font-family: $f-splinesans;
     }
   }
   .form-gdpr-message{

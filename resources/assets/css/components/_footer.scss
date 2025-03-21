@@ -13,9 +13,6 @@ footer {
     background-position: center right;
     background-repeat: no-repeat;
     background-color: #171717;
-    // @media screen and (min-width: 320px)and(max-width: 480px){
-        // background-image: none !important;
-        // }
         @media handheld,
         screen and (min-width: 0px) and (max-width: $bp-desktop) {
             background-position: center center;
@@ -31,10 +28,8 @@ footer {
         }
         .container {
             padding: 16% 18.75%;
-            height: 250px;
-            background: linear-gradient(270deg, #ff4c61, #ff594c, #ff4c74);
-            background-size: 600% 600%;
-            animation: AnimationName 30s ease infinite;
+            height: 400px;
+            background: #ff0066;
             @media handheld,
             screen and (min-width: $bp-desktop) {
                 height: 478px;
@@ -46,12 +41,18 @@ footer {
          50%{background-position:100% 50%}
          100%{background-position:0% 50%}
      }
+
+     a {
+        font-family: $f-splinesans;
+     }
+
      .first-para {
         &:before {
             display: none;
         }
         strong {
-            color: black
+            font-style: italic;
+            font-weight: 100;
         }
     }
     &.password-footer {
@@ -70,10 +71,10 @@ footer {
     }
 
     p.sans-serif {
-        @include font-size(25);
+        @include font-size(46);
         @media handheld,
         screen and (min-width: 0px) and (max-width: $bp-phone) {
-            @include font-size(16);
+            @include font-size(32);
         }
     }
     p.button {
@@ -119,7 +120,6 @@ footer {
             justify-content: center;
             align-items: center;
             line-height: 0.7;
-            font-family: $f-seroot-lt;
             @media handheld,
             screen and (min-width: $bp-desktop) {
                 padding: 12px 0px 10px 0px;
@@ -309,9 +309,9 @@ footer {
                     justify-content: space-between;
                     a {
                         color: white;
-                        font-family: $f-seroot-lt;
-                        font-size: 20px;
-                        letter-spacing: 0.075em;
+                        font-size: 24px;
+                        font-weight: 100;
+                        text-transform: uppercase;
                     }
                 }
             }
@@ -353,7 +353,6 @@ footer {
                     color: #ffffff;
                     background: transparent;
                     cursor: pointer;
-                    font-family: $f-seroot;
                     font-weight: 300;
                     font-size: 15px;
                     letter-spacing: 0.020em;
@@ -430,7 +429,6 @@ footer {
                     color: #ffffff;
                     background: transparent;
                     cursor: pointer;
-                    font-family: $f-seroot;
                     font-weight: 300;
                     font-size: 15px;
                     letter-spacing: 0.020em;
@@ -469,7 +467,6 @@ footer {
             color: white;
             display: inline-block;
             margin-bottom: 5px;
-            font-family: $f-seroot;
             font-weight: 300;
             line-height: $icon-size;
             letter-spacing: 0.020em;
@@ -485,7 +482,6 @@ footer {
 
     .footnote{
         clear: both;
-        font-family: $f-seroot;
         color: #616161; 
         padding: 34px 0 34px 0;
         @include font-size(10);
@@ -496,7 +492,6 @@ footer {
     }
     .privacy_policy{
         color: #ffffff;
-        font-family: $f-seroot;
         font-size: 12px;
         line-height: 25px;
         letter-spacing: 0.025em;
@@ -506,7 +501,6 @@ footer {
     
     .health_and_safety {
         color: #ffffff;
-        font-family: $f-seroot;
         font-size: 12px;
         line-height: 25px;
         letter-spacing: 0.025em;

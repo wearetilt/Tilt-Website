@@ -254,7 +254,7 @@ header {
                     text-align: center;
                     background-color: transparent;
                     p {
-                        font-family: $f-seroot-blck;
+                        font-family: $f-instrumentserif; /* blk */
                         @include font-size(33);
                         @media handheld,
                         screen and (min-width: $bp-desktop) {
@@ -390,14 +390,14 @@ header {
 
         .cc_banner.cc_container.cc_container--open{
             .cc_message{
-                font-family: $f-seroot-lt;
+                font-family: $f-instrumentserif; /* thin */
                 font-size: 14px;
                 margin-top: 6px;
             }
             .cc_btn{
                 background: #ff0066;
                 color: $c-white;
-                font-family: $f-seroot-lt;
+                font-family: $f-instrumentserif; /* thin */
                 font-size: 14px;
                 border-radius: 0;
                 margin-bottom: 6px
@@ -413,7 +413,7 @@ header {
                 margin-bottom: 12px;
                 font-size: 13px;
                 color: #ff0066;
-                font-family: $f-seroot-bd;
+                font-family: $f-instrumentserif; /* bold */
                 text-transform: inherit;
             }
         }
@@ -630,7 +630,7 @@ header {
             }
             p {
                 display: none;
-                font-family: $f-seroot-lt;
+                font-family: $f-instrumentserif; /* thin */
                 text-transform: uppercase;
                 @media screen and (min-width: $bp-desktop) {
                     display: inline-block;
@@ -792,6 +792,12 @@ header {
                 top: auto;
                 position: relative;
                 transform: none;
+                strong {
+                    font-family: $f-instrumentserif;
+                    font-weight: 100;
+                    font-style: italic;
+                }
+
             }
         }
 
@@ -848,7 +854,7 @@ header {
                 color: white;
                 margin-top: 0px;
                 clear: both;
-                font-family: $f-merriweather;
+                font-family: $f-splinesans;
                 font-weight: 300;
                 @media handheld,
                 screen and (min-width: $bp-desktop) {

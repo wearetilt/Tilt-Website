@@ -136,8 +136,9 @@ a#workButton:hover {
     display: block;
     margin: 0 auto;
     text-align: center;
-    .menu__item {
-        display: block;
+    .menu__item {    
+        display: inline-block;
+        padding: 0px 10px;
         &+.menu__item {
             margin-top: 20px;
             @media handheld,
@@ -152,7 +153,9 @@ a#workButton:hover {
         a {
             color: white;
             padding-bottom: 15px;
-            font-family: $f-seroot-thn;
+            font-family: $f-splinesans; 
+            font-weight: 100;
+            text-transform: uppercase;
             @media handheld,
             screen and (min-width: 0px) and (max-width: $bp-desktop) {
                 display: block;
@@ -207,7 +210,7 @@ a#workButton:hover {
     cursor: pointer;
     text-transform: uppercase;
     padding-top: 26px;
-    font-family: $f-seroot-thn;
+    font-family: $f-instrumentserif; /* thin */
     letter-spacing: 1px;
     margin: 0 25px;
     user-select: none;

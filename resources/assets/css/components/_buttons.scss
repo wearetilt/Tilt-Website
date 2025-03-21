@@ -48,7 +48,7 @@ a {
     @include font-size(16);
     letter-spacing: 1px;
     color: white;
-    font-family: $f-seroot-thn;
+    font-family: $f-instrumentserif; /*THIN */
 
     @media handheld, screen and (min-width: $bp-desktop) {
       @include font-size(20);
@@ -125,7 +125,7 @@ a {
 }
 
 .nav-links a.next:hover {
-  font-family: $f-seroot-thn;
+  font-family: $f-instrumentserif; /*THIN */
 }
 
 .nav-links a.prev {
@@ -148,12 +148,12 @@ a {
 }
 
 .nav-links a.prev:hover {
-  font-family: $f-seroot-thn;
+  font-family: $f-instrumentserif; /*THIN */
 }
 
 .nav-links a.next:hover,
 .nav-links a.page-numbers:hover {
-  font-family: $f-seroot-thn;
+  font-family: $f-instrumentserif; /*THIN */
   color: $c-bg;
 }
 
@@ -167,7 +167,7 @@ a {
   top: -45px;
   right: 30px;
   padding: 0px 0px 1px 0px;
-  font-family: $f-seroot-thn;
+  font-family: $f-instrumentserif; /*THIN */
   @include font-size(15);
   letter-spacing: 1px;
 
@@ -186,7 +186,7 @@ a {
   transition: transform 0.5s; /* Animate the transform properties */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; /* <-NB */
-  margin-top: 25px;
+  margin-top: 40px;
 
   &.about--cube {
     margin-top: 23px;
@@ -209,11 +209,13 @@ a {
 
   @media handheld, screen and (min-width: $bp-desktop) {
     height: 54px;
-    padding: 15px 72px 0px 24px;
+    padding: 8px 72px 0px 24px;
   }
 
   p {
     text-align: left;
+    text-transform: uppercase;
+    font-weight: 300;
 
     @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
       @include font-size(12);
@@ -224,7 +226,6 @@ a {
       @include font-size(18);
     }
 
-    letter-spacing: 1px;
     @media handheld, screen and (min-width: $bp-desktop) {
       @include font-size(20);
     }
@@ -306,6 +307,7 @@ a {
       background-color: white;
       p {
         color: #1f1f1f;
+
       }
     }
   }
@@ -411,7 +413,7 @@ a {
   input[name="post_password"] {
     padding: 13px 35px 11px 18px;
     @include font-size(20);
-    font-family: $f-merriweather;
+    font-family: $f-splinesans;
     font-weight: 300;
     border: 1px solid #4f4f4f;
     margin-right: 5px;
@@ -427,7 +429,7 @@ a {
 
   .input-btn {
     @include font-size(18);
-    font-family: $f-seroot-lt;
+    font-family: $f-instrumentserif;
     border-radius: 2px;
     position: relative;
     border: 1px solid white;
