@@ -48,7 +48,9 @@ a {
     @include font-size(16);
     letter-spacing: 1px;
     color: white;
-    font-family: $f-instrumentserif; /*THIN */
+    font-family: $f-splinesans; 
+    text-transform: uppercase;
+    font-weight: 100;
 
     @media handheld, screen and (min-width: $bp-desktop) {
       @include font-size(20);
@@ -216,6 +218,7 @@ a {
     text-align: left;
     text-transform: uppercase;
     font-weight: 300;
+    letter-spacing: 0.8px;
 
     @media handheld, screen and (min-width: 0px) and (max-width: $bp-phone) {
       @include font-size(12);

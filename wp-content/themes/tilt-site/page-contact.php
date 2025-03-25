@@ -64,7 +64,7 @@ get_header('contact'); ?>
                         Brighton, East Sussex,<br />
                         BN1 4GQ, UK
                     </div>
-                    <div class="google-link"><a class="contact-email" href="https://www.google.co.uk/maps/dir//50.8319498,-0.1392226/@50.8321729,-0.1393055,19z/data=!4m2!4m1!3e0?hl=en&entry=ttu" target="_blank">Google maps</a></div>
+                    <div class="google-link"><a class="contact-email" href="https://www.google.co.uk/maps/dir//50.8319498,-0.1392226/@50.8321729,-0.1393055,19z/data=!4m2!4m1!3e0?hl=en&entry=ttu" target="_blank">Google Maps</a></div>
                     <div class="tel"><a class="tel-link" href="tel:+441273675700">+44(0)1273 675 700</a></div>
                 </div>
             </div>

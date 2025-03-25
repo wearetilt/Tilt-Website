@@ -39,7 +39,7 @@ get_header('home'); ?>
 <div id="header-overlay" class="container container--header area-dark">
   <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">About this video</a>
   <div class="text-container">
-    <p class="sans-serif"><strong class="highlight">A thinking & doing studio</strong> that creates flagship learning & marketing experiences for complex organisations. From professional services and engineering, to global drinks brands and the UN.</p>
+    <p class="sans-serif">A <strong class="highlight">thinking</strong> & <strong class="highlight">doing</strong> studio that creates flagship learning & marketing experiences for complex organisations. From professional services and engineering, to global drinks brands and the UN.</p>
 
 
     <a class="cube--link" href="<?php echo site_url(); ?>/about/">
