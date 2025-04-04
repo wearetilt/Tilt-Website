@@ -121,7 +121,7 @@ get_header(); ?>
     <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_16_raindance.png" alt="Raindance logo" />
     <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_17_roja.png" alt="Roja logo" />
     <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_18_smiths.png" alt="Smiths logo" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_bp.png" alt="BP logo" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_lr.png" alt="LR logo" />
     <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo" />
   </div>
   <div class="logos-mobile">
@@ -156,7 +156,7 @@ get_header(); ?>
     <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_17_roja.png" alt="Roja logo" /></div>
     <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_18_smiths.png" alt="Smiths logo" />
     </div>
-    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_bp.png" alt="BP logo" /></div>
+    <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_lr.png" alt="LR logo" /></div>
     <div><img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_20_npower.png" alt="NPower logo" />
     </div>
   </div>

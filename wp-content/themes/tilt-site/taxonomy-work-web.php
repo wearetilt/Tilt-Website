@@ -95,7 +95,7 @@ get_header(); ?>
                 </div>
                 <div class="logos-mobile">
                     <div>
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bp.png" alt="bp logo" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_19_lr.png" alt="lr logo" />
                   </div>
                   <div>
                       <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mobile/bbc.png" alt="bbc logo" />
