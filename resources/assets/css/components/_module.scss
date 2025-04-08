@@ -298,6 +298,22 @@
     }
 }*/
 
+.news--icon {
+    h2 {
+        @media screen and (min-width: 0px) and (max-width: $phone-breaks) {
+            @include font-size(18);
+        }
+        @media handheld,
+        screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {
+            @include font-size(24);
+        }
+        @media handheld,
+        screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+            @include font-size(38);
+        }
+    }
+}
+
 .news-noimg {
 
     .tag--home-title {
@@ -429,9 +445,18 @@
         line-height: 1.5;
         letter-spacing: -0.4px;
         padding-bottom: 5px;
-            @media handheld, screen and (min-width: $bp-desktop) {
-                @include font-size(16);
-            }
+
+        @media screen and (min-width: 0px) and (max-width: $phone-breaks) {
+            @include font-size(14);
+        }
+        @media handheld,
+        screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {
+            @include font-size(14);
+        }
+        @media handheld,
+        screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+            @include font-size(16);
+        }
     }
     .tag--home-title {
         color: #949494;
@@ -446,6 +471,18 @@
     .entry-title {
         padding-bottom: 5px;
         @include font-size(40);
+
+        @media screen and (min-width: 0px) and (max-width: $phone-breaks) {
+            @include font-size(24);
+        }
+        @media handheld,
+        screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {
+            @include font-size(32);
+        }
+        @media handheld,
+        screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+            @include font-size(40);
+        }
     }
 }
 

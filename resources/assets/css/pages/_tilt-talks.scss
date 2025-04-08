@@ -5,8 +5,9 @@
 	.talk-section-header {
 
     	padding: 12.0570866142% 18.4547244094%;
-		margin: 0 40px;
 		background: #1f1f1f;
+
+
 
 		@media handheld, screen and (min-width: $bp-desktop) {
 			margin: 0;
@@ -25,7 +26,18 @@
 			.title-section {
 
 				p {
-					@include font-size(64);
+		            @include font-size(64);
+
+			        @media screen and (min-width: 0px) and (max-width: $phone-breaks) {
+			            @include font-size(24);
+			        }
+			        @media handheld,
+			        screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {
+			            @include font-size(46);
+			        }
+			        @media handheld,
+			        screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+			        }
 					strong {
 						font-weight: 100;
 						font-style: italic;
@@ -37,11 +49,25 @@
 				margin-top: 50px;
 				p {
 					@include font-size(16);
+					line-height: 1.1;
 					font-family: $f-splinesans !important;
 					font-weight: 300;
 						@media handheld, screen and (min-width: $bp-desktop) {
-						@include font-size(20);
 					}
+
+
+		            
+			        @media screen and (min-width: 0px) and (max-width: $phone-breaks) {
+			            @include font-size(16);
+			        }
+			        @media handheld,
+			        screen and (min-width:$phone-breaks) and (max-width:$bp-phone) {
+			            @include font-size(16);
+			        }
+			        @media handheld,
+			        screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+						@include font-size(20);			        
+			        }
 
 				}
 

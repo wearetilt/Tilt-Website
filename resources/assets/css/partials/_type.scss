@@ -97,12 +97,12 @@ h2 {
     }
     @media handheld,
     screen and (min-width:0px) and (max-width:$bp-phone) {
-        @include font-size(18);
+        @include font-size(32);
         line-height: 1.2;
     }
     @media handheld,
     screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
-        @include font-size(25);
+        @include font-size(24);
     }
     &.underlined {
         &:after {
@@ -353,10 +353,19 @@ p, input, select, textarea, legend {
         #homePage &,
         .work-container & {
             margin-bottom: 10px;
-            @include font-size(46);
+            @media handheld,
+            screen and (min-width: 0px) and (max-width: $bp-phone) {
+                @include font-size(24);
+            }
+            @media handheld,
+            screen and (min-width:$bp-phone) and (max-width:$bp-desktop) {
+                @include font-size(32);
+            }
+            @media handheld,
+            screen and (min-width: $bp-desktop) {
+                    @include font-size(46);
+                    line-height: 1.2;
 
-            @media screen and (min-width: $bp-desktop) {
-                line-height: 1.2;
             }
         }
         strong {
