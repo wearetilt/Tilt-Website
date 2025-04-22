@@ -34,14 +34,13 @@ header {
 
             p {
                 @include font-size(15);
-                line-height: 26px;
+                line-height: 1.73;
                 font-family: $f-merriweather;
                 font-weight: 300;
                 text-transform: none;
 
                 @media handheld, screen and (min-width: $bp-desktop) {
                     @include font-size(20);
-                    line-height: 34px;
                 }
 
             }
@@ -59,20 +58,20 @@ header {
     position: relative;
     padding: 0;
 
-.video-container {
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+    .video-container {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
 
-    video  {
-        min-width: 100vw;
-        width: auto;
-        min-height: 100vh;
-        height: auto;
-        margin-left: -50vw;
-        transform: translateX(50vw);
+        video  {
+            min-width: 100vw;
+            width: auto;
+            min-height: 100vh;
+            height: auto;
+            margin-left: -50vw;
+            transform: translateX(50vw);
+        }
     }
-}
 
 
     .about-video-overlay {
@@ -110,13 +109,13 @@ header {
                     color: #fff;
                     @include font-size(15);
                     text-transform: uppercase;
-                    line-height: 11px;
                     letter-spacing: 1.35px;
+                    line-height: 1.4;
                     font-family: SeroOT-Light;
 
                     @media handheld, screen and (min-width: $bp-desktop) {
                         @include font-size(18);
-                        line-height: 26px;
+                        line-height: 1.4;
                         margin-bottom: 15px;
                         margin-left: 20px;
 
