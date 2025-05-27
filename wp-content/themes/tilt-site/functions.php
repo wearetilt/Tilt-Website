@@ -94,6 +94,7 @@ if (! function_exists('twentyfifteen_setup')) :
 		register_nav_menus(array(
 			'primary' => __('Primary Menu',      'twentyfifteen'),
 			'social'  => __('Social Links Menu', 'twentyfifteen'),
+			'work_menu_bar'  => __('Work Menu Bar', 'twentyfifteen'),
 		));
 
 		/*

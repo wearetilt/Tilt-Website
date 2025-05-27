@@ -440,7 +440,7 @@ header {
                 position: fixed;
                 top: 0;
                 background: black;
-                padding: 24px 0;
+                padding: 24px 72px;
                 width: 100%;
                 z-index: 999999;
                 color: white;
@@ -498,7 +498,7 @@ header {
                 position: fixed;
                 top: 0;
                 background: black;
-                padding: 24px 0;
+                padding: 24px 72px;
                 width: 100%;
                 z-index: 999999;
                 color: white;
@@ -555,7 +555,7 @@ header {
                 position: fixed;
                 top: 0;
                 background: black;
-                padding: 24px 0;
+                padding: 24px 72px;
                 width: 100%;
                 z-index: 999999;
                 color: white;
@@ -612,7 +612,7 @@ header {
             position: fixed;
             top: 0;
             background: black;
-            padding: 24px 0;
+            padding: 24px 72px;
             width: 100%;
             z-index: 999999;
             color: white;
@@ -627,6 +627,7 @@ header {
                 z-index: 999999;
                 color: white;
                 text-align: center;
+                line-height: 1;
             }
             p {
                 display: none;
@@ -636,22 +637,27 @@ header {
                     display: inline-block;
                 }
             }
-            a {
+            a,
+            .services-list__item {
                 display: inline-block;
                 padding: 0 5px;
                 color: white;
+                margin-top: 4px;
+                margin-bottom: 4px;
                 @media screen and (min-width: $bp-desktop) {
                     padding: 0 15px;
                     display: inline-block;
                     color: white;
-                }
-                &.list-all {
-                    color: #ec135b;
                     margin-top: 3px;
+                    margin-bottom: 0;
+                }
+                &.list-all,
+                &.active {
+                    color: #ec135b;
                     &:after {
                         content: " ";
                         transition: all .5s;
-                        margin-top: 3px;
+                        margin-top: 0;
                         height: 2px;
                         display: block;
                         content: " ";
