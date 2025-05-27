@@ -23,13 +23,28 @@ get_header(); ?>
 
         <?php if (have_posts()) : ?>
 
-            <header id="services--list" class="container container--header container--work-list">
-                <p> View work by: </p>
-                <a class='list-all' href="/work">All</a>
-                <a class="list-web" href="/web">Web</a>
-                <a class="list-motion" href="/motion">Motion</a>
-                <a class="list-film" href="/film">Film</a>
-            </header>
+          <?php
+              $menu_items = wp_get_nav_menu_items('Work Menu Bar');
+
+              if ($menu_items) {
+                  $current_url = home_url( add_query_arg( null, null ) );
+
+                  echo '<header id="services--list" class="container container--header container--work-list">
+          <p>View work by: </p>';
+
+                  foreach ($menu_items as $item) {
+                      $item_url = $item->url;
+                      $item_title = $item->title;
+
+                      // Compare current URL to item URL
+                      $active_class = (trailingslashit($current_url) === trailingslashit($item_url)) ? 'active' : '';
+
+                      echo '<a href="' . esc_url($item_url) . '" class="services-list__item ' . esc_attr($active_class) . '">' . esc_html($item_title) . '</a>';
+                  }
+
+                  echo '</header>';
+              }
+          ?>
 
             <div class="motion-show-reel area-dark">
                 <div class="embed-container">

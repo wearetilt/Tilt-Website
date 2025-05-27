@@ -6,18 +6,23 @@
 #film-archive {
     #services--list{
         opacity: 1 !important;
-        .list-film {
+        .list-film,
+        .active {
             color: #ec135b;
             &:after {
                 content: " ";
                 transition: all .5s;
-                margin-top: 3px;
+                margin-top: 0;
                 height: 2px;
                 display: block;
                 content: " ";
                 width: 100%;
                 transform: translate3d(0, 0, 0);
                 background-color: #ec135b;
+
+                @media screen and (min-width: $bp-desktop) {
+                    margin-top: 3px;
+                }
             }
         }
     }
@@ -26,18 +31,23 @@
 #motion-archive {
     #services--list{
         opacity: 1 !important;
-        .list-motion {
+        .list-motion,
+        .active {
             color: #ec135b;
             &:after {
                 content: " ";
                 transition: all .5s;
-                margin-top: 3px;
+                margin-top: 0;
                 height: 2px;
                 display: block;
                 content: " ";
                 width: 100%;
                 transform: translate3d(0, 0, 0);
                 background-color: #ec135b;
+
+                @media screen and (min-width: $bp-desktop) {
+                    margin-top: 3px;
+                }
             }
         }
     }
@@ -46,18 +56,23 @@
 #web-archive {
     #services--list{
         opacity: 1 !important;
-        .list-web {
+        .list-web,
+        .active {
             color: #ec135b;
             &:after {
                 content: " ";
                 transition: all .5s;
-                margin-top: 3px;
+                margin-top: 0;
                 height: 2px;
                 display: block;
                 content: " ";
                 width: 100%;
                 transform: translate3d(0, 0, 0);
                 background-color: #ec135b;
+
+                @media screen and (min-width: $bp-desktop) {
+                    margin-top: 3px;
+                }
             }
         }
     }

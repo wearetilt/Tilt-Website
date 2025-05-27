@@ -1,7 +1,11 @@
 
-.dynamic-section-wrapper{
+.dynamic-section-wrapper {
 
-	.dynamic-section-header{
+	#services--list {
+		z-index: 9999991;
+	}
+
+	.dynamic-section-header {
 
 		margin: 0 40px;
 		background: #1f1f1f;
