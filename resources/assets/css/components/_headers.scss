@@ -654,7 +654,6 @@ header {
                 &.list-all,
                 &.active {
                     color: #ec135b;
-                    // margin-top: 3px;
                     &:after {
                         content: " ";
                         transition: all .5s;
@@ -665,10 +664,6 @@ header {
                         width: 100%;
                         transform: translate3d(0, 0, 0);
                         background-color: #ec135b;
-
-                        // @media screen and (min-width: $bp-desktop) {
-                        //     margin-top: 3px;
-                        // }
                     }
                 }
                 &:after {
