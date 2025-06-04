@@ -118,12 +118,10 @@ get_header(); ?>
 					$rightProject = $right->ID;
 
 					$tax_right = wp_get_post_terms( $rightProject, 'work' );
-                    $tax_left = wp_get_post_terms( $leftProject, 'work' );
-
+          $tax_left = wp_get_post_terms( $leftProject, 'work' );
 
 					$alt_left = get_post_meta($left, '_wp_attachment_image_alt', true);
 					$alt_right = get_post_meta($right, '_wp_attachment_image_alt', true);
-
 
 					?>
 
@@ -135,32 +133,31 @@ get_header(); ?>
 								<a href="<?php echo get_permalink($leftProject); ?>"><img src="<?php echo get_the_post_thumbnail_url($left);?>" alt="<?php echo $alt_left; ?>"></a>
 
 								<div class="related-titles">
-                            <?php if($tax_left[0]->name != ''):?>
-                              <p><?php echo $tax_left[0]->name; ?></p>
-                              <?php else: endif;?>
+                  <?php if (!empty($tax_left) && isset($tax_left[0]->name) && $tax_left[0]->name != ''): ?>
+                    <p><?php echo $tax_left[0]->name; ?></p>
+                  <?php endif; ?>
+		
+									<h2><?php echo get_the_title($left);?></h2>
+									<p><?php echo get_the_excerpt($left); ?></p>
+								</div>
+							</div>
 
-                              <h2><?php echo get_the_title($left);?></h2>
-                              <p><?php echo get_the_excerpt($left); ?></p>
-                          </div>
+              <div class="right-container">
+								<a href="<?php echo get_permalink($rightProject); ?>"><img src="<?php echo get_the_post_thumbnail_url($right);?>" alt="<?php echo $alt_right; ?>"></a>
 
-                      </div>
+								<div class="related-titles">
+								
+									<?php if (!empty($tax_right) && isset($tax_right[0]->name) && $tax_right[0]->name != ''): ?>
+										<p><?php echo $tax_right[0]->name; ?></p>
+									<?php endif; ?>
 
-                      <div class="right-container">
-                      	<a href="<?php echo get_permalink($rightProject); ?>"><img src="<?php echo get_the_post_thumbnail_url($right);?>" alt="<?php echo $alt_right; ?>"></a>
+									<h2><?php echo get_the_title($right);?></h2>
+									<p><?php echo get_the_excerpt($right); ?></p>
+								</div>
+							</div>
 
-                      	<div class="related-titles">
-                            <?php if($tax_left[0]->name != ''):?>
-                              <p><?php echo $tax_left[0]->name; ?></p>
-                              <?php else: endif;?>
-
-                              <h2><?php echo get_the_title($right);?></h2>
-                              <p><?php echo get_the_excerpt($right); ?></p>
-                          </div>
-
-                      </div>
-
-                  </div>	
-              </section>
+						</div>
+          </section>
 
 		<?php 
         elseif(get_row_layout() == 'work_button'):
