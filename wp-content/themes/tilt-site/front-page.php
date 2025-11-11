@@ -39,7 +39,7 @@ get_header('home'); ?>
 <div id="header-overlay" class="container container--header area-dark">
   <a id="blog_button" class="button button--no-border" href="<?php echo site_url(); ?>/submotion-orchestra">About this video</a>
   <div class="text-container">
-    <p class="sans-serif"><strong class="highlight">Creative <em>Change Design</em>. </strong>  Using insight and imagination, we design the moment change becomes personal; and the <em>momentum</em> that makes it last.</p>
+  <p class="sans-serif"><strong class="highlight">Strategic Creative Agency.</strong> Life changing stories and experiences in unexpected places.</p>
 
 
     <a class="cube--link" href="<?php echo site_url(); ?>/about/">
