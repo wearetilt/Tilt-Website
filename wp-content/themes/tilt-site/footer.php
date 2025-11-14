@@ -75,6 +75,7 @@ if (!post_password_required($post)) {
             <a class="privacy_policy" href="/privacy-policy">Privacy Policy</a>
             <a class="health_and_safety" href="/health-and-safety">Health & Safety policy</a>
             <a class="privacy_policy" href="/supplier-code-of-conduct">Supplier code of conduct</a>
+            <a class="privacy_policy" href="/diversity-inclusion/">Diversity & Inclusion Policy</a>
           </div>
 
 
