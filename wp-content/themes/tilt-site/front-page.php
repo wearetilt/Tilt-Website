@@ -204,15 +204,31 @@ get_header('home'); ?>
 
         </div>
 
-  <?php
+  <?php elseif (get_row_layout() == 'image_carousel') : ?>
+    <div class="container image_carousel area-dark">
+
+      <?php 
+        $i = 0;
+
+        foreach(get_sub_field('carousel_image') as $image) {
+      ?>
+        <div class="carousel-image slide<?php echo $i+1?>">
+          <div>
+            <img class="slideimage " src="<?php echo $image['url'];?>" alt="<?php echo $image['alt']; ?>">
+          </div>
+        </div>
+      <?php
+        $i++;
+      } ?>
+
+    </div>
+    <?php 
+          endif;
+        endwhile;
+      else :
+      // no rows found
       endif;
-
-    endwhile;
-  else :
-  // no rows found
-  endif;
-  ?>
-
+    ?>
 </main>
 
 

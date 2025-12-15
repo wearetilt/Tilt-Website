@@ -70,6 +70,15 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_694028d94c78e": {
+                    "key": "layout_694028d94c78e",
+                    "name": "",
+                    "label": "",
+                    "display": "row",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
                 "5c93614ac7e26": {
                     "key": "5c93614ac7e26",
                     "name": "news_row",
@@ -149,6 +158,43 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_694028ed4c78f": {
+                    "key": "layout_694028ed4c78f",
+                    "name": "image_carousel",
+                    "label": "Image carousel",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_694028ff4c790",
+                            "label": "carousel image",
+                            "name": "carousel_image",
+                            "type": "gallery",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "insert": "append",
+                            "library": "all",
+                            "min": "",
+                            "max": "",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -173,5 +219,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1709843685
+    "modified": 1765812519
 }
