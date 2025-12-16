@@ -1361,6 +1361,13 @@ $(document).ready(function(){
 });
 
 $(window).on('load', function() {
+    var slidesToShow;
+
+    if ($('body').hasClass('home')) {
+        slidesToShow = 4
+    } else {
+        slidesToShow = 2
+    }
 
     //init slick carousel on work items
   $('.image_carousel').slick({
@@ -1368,7 +1375,7 @@ $(window).on('load', function() {
     initialSlide: 1,
     infinite: true,
     dots: true,
-    slidesToShow: 2,
+    slidesToShow: slidesToShow,
     nextArrow: false,
     prevArrow: false,
     slidesToScroll: 1,

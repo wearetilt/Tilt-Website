@@ -1938,3 +1938,19 @@ a {
 
     }
 }
+
+.home {
+    .image_carousel {
+        .carousel-image {
+            > div {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        img.slideimage {
+            width: auto;
+            max-height: 300px;
+        }
+    }
+}
