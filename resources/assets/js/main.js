@@ -1361,14 +1361,24 @@ $(document).ready(function(){
 });
 
 $(window).on('load', function() {
+    var slidesToShow;
+    var initialSlide;
 
+    if ($('body').hasClass('home')) {
+        slidesToShow = 5
+        initialSlide = 0
+    } else {
+        slidesToShow = 2
+        initialSlide = 1
+    }
+    
     //init slick carousel on work items
   $('.image_carousel').slick({
     centerMode: true,
-    initialSlide: 1,
+    initialSlide: initialSlide,
     infinite: true,
     dots: true,
-    slidesToShow: 2,
+    slidesToShow: slidesToShow,
     nextArrow: false,
     prevArrow: false,
     slidesToScroll: 1,
