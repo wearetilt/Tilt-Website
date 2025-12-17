@@ -170,7 +170,7 @@
                             "label": "carousel image",
                             "name": "carousel_image",
                             "type": "gallery",
-                            "instructions": "",
+                            "instructions": "Please add a minimum of 6 images",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -182,7 +182,7 @@
                             "preview_size": "medium",
                             "insert": "append",
                             "library": "all",
-                            "min": "",
+                            "min": 6,
                             "max": "",
                             "min_width": "",
                             "min_height": "",

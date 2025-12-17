@@ -1362,19 +1362,20 @@ $(document).ready(function(){
 
 $(window).on('load', function() {
     var slidesToShow;
+    var initialSlide;
 
     if ($('body').hasClass('home')) {
-        slidesToShow = 4
+        slidesToShow = 5
+        initialSlide = 0
     } else {
         slidesToShow = 2
+        initialSlide = 1
     }
-
-    console.log(slidesToShow)
-
+    
     //init slick carousel on work items
   $('.image_carousel').slick({
     centerMode: true,
-    initialSlide: 1,
+    initialSlide: initialSlide,
     infinite: true,
     dots: true,
     slidesToShow: slidesToShow,
