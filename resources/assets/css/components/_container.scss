@@ -1940,6 +1940,12 @@ a {
 }
 
 .home {
+    .main-work-content .image_carousel.container:last-of-type {
+        @media screen and (max-width: 980px) {
+            padding-bottom: 0!important;
+        }
+    }
+
     .image_carousel {
         .carousel-image {
             > div {
@@ -1950,7 +1956,15 @@ a {
 
         img.slideimage {
             width: auto;
-            max-height: 20vw;
+            max-width: 80vw;
+
+            @media screen and (min-width: 481px) {
+                max-width: 40vw;
+            }
+
+            @media screen and (min-width: 981px) {
+                max-width: 20vw;
+            }
         }
     }
 }
